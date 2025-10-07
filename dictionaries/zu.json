@@ -1,0 +1,307 @@
+{
+  "meta": {
+    "title": "MD Builders - Izinsiza Zokwakha Ezinobuchwepheshe eGauteng",
+    "description": "Izinsiza zokwakha, ukuphenda, ukupenda, ukwendlala amatshe, ukubeka amathayela, kanye nezinsiza zamanzi eGauteng yonke.",
+    "keywords": "ukwakha, izinsiza zokwakha, ukuphenda, ukupenda, ukwendlala amatshe, ukubeka amathayela, Gauteng, Johannesburg, Pretoria"
+  },
+  "navigation": {
+    "home": "Ikhaya",
+    "about": "Ngathi",
+    "services": "Izinsiza",
+    "work": "Umsebenzi Wethu",
+    "contact": "Xhumana Nathi",
+    "faq": "Imibuzo"
+  },
+  "hero": {
+    "title": "Izinsiza Zokwakha Ezinobuchwepheshe eGauteng",
+    "subtitle": "Izinsiza zokwakha, ukuvuselela, nokunakekela ezithembekile",
+    "callButton": "Shayela Manje",
+    "workButton": "Bona Umsebenzi Wethu"
+  },
+  "trustBar": {
+    "insured": "Kufakwe Inshuwarensi Ephelele",
+    "guaranteed": "Umsebenzi Uqinisekisiwe",
+    "gauteng": "Sisebenzela Lonke iGauteng"
+  },
+  "services": {
+    "title": "Izinsiza Zethu",
+    "description": "Sinikeza izinsiza eziphelele zokwakha nokunakekelwa kuyo yonke iGauteng",
+    "items": {
+      "building": {
+        "name": "Ukwakha",
+        "description": "Ukwakha okusha, ukwandisa, nomsebenzi wesakhiwo"
+      },
+      "plastering": {
+        "name": "Ukuphenda",
+        "description": "Izinsiza zokuphenda ngaphakathi nangaphandle"
+      },
+      "painting": {
+        "name": "Ukupenda",
+        "description": "Ukupenda okungobuchwepheshe ngaphakathi nangaphandle"
+      },
+      "paving": {
+        "name": "Ukwendlala Amatshe",
+        "description": "Izindlela zemoto, izindlela zokuhamba, nokwendlala amatshe ngaphandle"
+      },
+      "tiling": {
+        "name": "Ukubeka Amathayela",
+        "description": "Amathayela aphansi nasezindongeni kuzo zonke izindawo"
+      },
+      "plumbing": {
+        "name": "Izinsiza Zamanzi",
+        "description": "Ukufaka, ukulungisa, nokunakekela"
+      }
+    }
+  },
+  "extendedServices": {
+    "brickwork": {
+      "name": "Umsebenzi Wezitina",
+      "description": "Izinsiza zobuchwepheshe zokubeka izitina kanye nomsebenzi wokwakha izindonga nezakhiwo"
+    },
+    "concrete": {
+      "name": "Umsebenzi Wekhonkrithi",
+      "description": "Izisekelo, amapuleti, izindlela zemoto, nezakhiwo zekhonkrithi eziqinisiwe"
+    },
+    "electrical": {
+      "name": "Ugesi",
+      "description": "Ukufakwa kogesi, ukulungiswa, nokuthobela ukuphepha"
+    },
+    "extensions": {
+      "name": "Ukwandiswa",
+      "description": "Ukwandiswa kwamakhaya nezakhiwo zebhizinisi"
+    },
+    "fencing": {
+      "name": "Ucingo",
+      "description": "Ucingo lokuphepha, izindonga zomngcele, nokufakwa kwamasango"
+    },
+    "flooring": {
+      "name": "Izimpahla Zephansi",
+      "description": "Ukufakwa kwephansi, ukulungiswa, nezinsiza zokuvuselela"
+    },
+    "installation": {
+      "name": "Ukufakwa",
+      "description": "Izinsiza zobuchwepheshe zokufakwa kwezinhlelo ezahlukahlukene nezinto"
+    },
+    "landscaping": {
+      "name": "Ukuhlela Ingadi",
+      "description": "Ukuklama kwengadi, ukuhlela ingadi yangaphandle, nokulungisa umhlaba"
+    },
+    "maintenance": {
+      "name": "Ukunakekelwa",
+      "description": "Izinsiza zokugcina nokunakekela izakhiwo njalo"
+    },
+    "renovation": {
+      "name": "Ukuvuselela",
+      "description": "Ukuvuselela okuphelele kwamakhaya nezakhiwo zebhizinisi"
+    },
+    "repairs": {
+      "name": "Ukulungisa",
+      "description": "Izinsiza zokusiza ngokushesha nezokuhlelwa kokulungisa zonke izidingo zokwakha"
+    },
+    "roofing": {
+      "name": "Uphahla",
+      "description": "Ukufakwa kophahla, ukulungiswa, ukunakekelwa, nokuvimbela amanzi"
+    },
+    "waterproofing": {
+      "name": "Ukuvimbela Amanzi",
+      "description": "Izixazululo zokuvimbela amanzi ephansi, ephahla, nangaphandle"
+    }
+  },
+  "pages": {
+    "about": {
+      "title": "Nge-MD Builders",
+      "subtitle": "Umlingani Wakho Othembekile Wokwakha eGauteng",
+      "heroTitle": "Iminyaka eyi-15+ Yobuhle Bokwakha",
+      "heroSubtitle": "Sakha ukwethembana, iphrojekthi eyodwa ngesikhathi kuyo yonke iGauteng Province",
+      "story": {
+        "title": "Indaba Yethu",
+        "content": "Yasungulwa ngu-Meshack Dlamini, i-MD Builders isebenzele umphakathi waseGauteng iminyaka engaphezu kwe-15. Okwaqala njengephrojekthi encane yokwakha sekukhule kwaba elinye lamagama athembekile kakhulu ekwakheni kwamakhaya nezebhizinisi kuyo yonke iJohannesburg, iPretoria, nezindawo ezizungezile."
+      },
+      "mission": {
+        "title": "Inhloso Yethu",
+        "content": "Ukuhlinzeka ngezinsiza zokwakha eziyingqayizivele ezedlula okulindelwe amakhasimende ethu kuyilapho sigcina amazinga aphezulu ekhwalithi, ukuphepha, nobungcweti. Sikholelwa ekwakheni ubudlelwano obuzophepha ngokuxhumana okungobuqotho nomsebenzi ongcono."
+      },
+      "values": {
+        "title": "Amanani Ethu Ayinhloko",
+        "items": [
+          {
+            "title": "Ikhwalithi Kuqala",
+            "description": "Asikaze senze isivumelwano ngekhwalithi. Yonke iphrojekthi ithola ukunakwa kwethu okuphelele kwimininingwane nokuzibophezela ekubeni ngcono."
+          },
+          {
+            "title": "Ukuthembeka",
+            "description": "Amakhasimende ethu angathembela kithi ukuthi sizoletha amaphrojekthi ngesikhathi nangaphakathi kwesabelomali, njalo."
+          },
+          {
+            "title": "Ubuqotho",
+            "description": "Amanani angobuqotho, ukuxhumana okucacile, nezindlela zebhizinisi ezinomthetho kuholela konke esikwenzayo."
+          },
+          {
+            "title": "Ukuphepha",
+            "description": "Sigcina amazinga aphezulu okuphepha ukuvikela iqembu lethu, amakhasimende, nezakhiwo zawo."
+          }
+        ]
+      },
+      "experience": {
+        "title": "Kungani Ukhethe i-MD Builders?",
+        "items": [
+          "Ngaphezu kweminyaka eyi-15 yolwazi lokwakha",
+          "Kunesitifiketi esigcwele futhi kunenshuwarensi",
+          "Sisebenzela zonke izindawo kuyo yonke iGauteng",
+          "Izintengo zamahhala, azinasibopho",
+          "Umsebenzi wekhwalithi uqinisekisiwe",
+          "Izinsiza zokusiza ngokushesha ziyatholakala"
+        ]
+      }
+    },
+    "services": {
+      "title": "Izinsiza Zethu Zokwakha",
+      "subtitle": "Izixazululo Zokwakha Eziphelele Kuyo Yonke iGauteng",
+      "heroTitle": "Izinsiza Zokwakha Ezinobuchwepheshe",
+      "heroSubtitle": "Kusukela ekulungiseni okuncane kuya emaphrojekthi amakhulu okwakha, sikwazi konke",
+      "process": {
+        "title": "Inqubo Yethu",
+        "steps": [
+          {
+            "title": "Ukubonisana",
+            "description": "Sixoxa ngezidingo zephrojekthi yakho futhi sinikeze izeluleko zobuchwepheshe"
+          },
+          {
+            "title": "Intengo",
+            "description": "Amanani aqondile, acacile ngaphandle kwezindleko ezifihlekile"
+          },
+          {
+            "title": "Ukuhlela",
+            "description": "Ukuhlela iphrojekthi ngokucophelela nokuthuthukisa isikhathi"
+          },
+          {
+            "title": "Ukwenza",
+            "description": "Ukwakha okungobuchwepheshe nezibuyekezo zokuthuthuka njalo"
+          },
+          {
+            "title": "Ukuqeda",
+            "description": "Ukuhlola kokugcina nokudlulisela ngesiqinisekiso sekhwalithi"
+          }
+        ]
+      },
+      "cta": {
+        "title": "Usukulungele Ukuqala Iphrojekthi Yakho?",
+        "subtitle": "Thola intengo yakho yamahhala namuhla",
+        "button": "Thola Intengo Yamahhala"
+      }
+    },
+    "ourWork": {
+      "title": "Umsebenzi Wethu",
+      "subtitle": "Iphothifoliyo Yamaphrojekthi Okwakha Aqediwe",
+      "heroTitle": "Bona Umsebenzi Wethu Wekhwalithi",
+      "heroSubtitle": "Bheka iphothifoliyo yethu yamaphrojekthi aphumelelayo kuyo yonke iGauteng",
+      "filterAll": "Wonke Amaphrojekthi",
+      "projectDetails": "Imininingwane Yephrojekthi",
+      "viewProject": "Bona Iphrojekthi",
+      "categories": "Izigaba",
+      "locations": "Izindawo",
+      "searchPlaceholder": "Sesha amaphrojekthi...",
+      "noResults": "Awekho amaphrojekthi atholakele ahambisana nezidingo zakho",
+      "loadMore": "Layisha Amaphrojekthi Amaningi"
+    },
+    "contact": {
+      "title": "Xhumana Ne-MD Builders",
+      "subtitle": "Xhumana Nathi Ngephrojekthi Yakho Elandelayo Yokwakha",
+      "heroTitle": "Ake Sakhe Okuthile Okukhulu Ndawonye",
+      "heroSubtitle": "Sixhumane namuhla ukuze uthole ukubonisana kwamahhala nentengo",
+      "form": {
+        "title": "Thola Intengo Yakho Yamahhala",
+        "name": "Igama Eliphelele",
+        "email": "Ikheli Le-imeyili",
+        "phone": "Inombolo Yocingo",
+        "service": "Insiza Edingekayo",
+        "location": "Indawo Yephrojekthi",
+        "message": "Incazelo Yephrojekthi",
+        "submit": "Thumela Umlayezo",
+        "sending": "Kuyathunyelwa...",
+        "success": "Umlayezo uthunyelwe ngempumelelo! Sizokuxhumana nawe maduze.",
+        "error": "Yehluleka ukuthumela umlayezo. Sicela uzame futhi noma usishayele ngqo."
+      },
+      "info": {
+        "title": "Ulwazi Lokuxhumana",
+        "phone": "071 933 4063",
+        "email": "info@mdbuilders.co.za",
+        "hours": "Mso - Gwe: 7:00 AM - 6:00 PM\nMga: 8:00 AM - 4:00 PM\nSon: Amashayelo okusiza kuphela",
+        "emergency": "Izinsiza Zokusiza 24/7 Ziyatholakala"
+      },
+      "serviceAreas": {
+        "title": "Izindawo Zensiza",
+        "description": "Sisebenzela ngokuziqhenya amakhasimende akhaya nezebhizinisi kuyo yonke iGauteng Province"
+      }
+    },
+    "faq": {
+      "title": "Imibuzo Ebuzwa Njalo",
+      "subtitle": "Imibuzo Evamile Ngezinsiza Zethu Zokwakha",
+      "heroTitle": "Unemibuzo? Sinezimpendulo",
+      "heroSubtitle": "Thola izimpendulo zemibuzo evame ukubuzwa ngezinsiza zethu",
+      "categories": [
+        {
+          "title": "Imibuzo Ejwayelekile",
+          "items": [
+            {
+              "question": "Ninikeza izintengo zamahhala?",
+              "answer": "Yebo, sinikeza izintengo zamahhala, ezingenasibopho kuzo zonke izinsiza zethu. Sixhumane nje nathi ngemininingwane yephrojekthi yakho futhi sizobeka isikhathi esifanele sokuhlola izidingo zakho."
+            },
+            {
+              "question": "Yiziphi izindawo enizisebenzela?",
+              "answer": "Sisebenzela zonke izindawo kuyo yonke iGauteng Province, kufaka phakathi iJohannesburg, iPretoria, iEast Rand, iWest Rand, nezindawo ezizungezile. Sixhumane nathi ukuze siqinisekise ukumbozwa kwendawo yakho ethile."
+            },
+            {
+              "question": "Ninezitifiketi futhi ninenshuwarensi?",
+              "answer": "Yebo, i-MD Builders inezitifiketi ezigcwele futhi inenshuwarensi. Siphatha inshuwarensi yesibopho esiphelele ukuvikela kokubili amakhasimende ethu neqembu lethu ngesikhathi sawo wonke amaphrojekthi."
+            }
+          ]
+        }
+      ],
+      "stillHaveQuestions": {
+        "title": "Usanemibuzo?",
+        "subtitle": "Ungangabazi ukufinyelela - silapha ukusiza!",
+        "button": "Sixhumane"
+      }
+    }
+  },
+  "about": {
+    "title": "Ngo-Meshack Dlamini",
+    "description": "Enamava angaphezu kweminyaka eyi-15 embonini yokwakha, u-Meshack Dlamini wakhe igama lokusebenza kahle nokusebenza okuthembekile kuyo yonke iGauteng.",
+    "experience": "Kusukela ekulungiseni amakhaya amancane kuya emiphakathini emikhulu yokwakha, sinikeza imiphumela eyingqayizivele ehlala isikhathi eside."
+  },
+  "testimonials": {
+    "title": "Okushiwo Amakhasimende Ethu",
+    "subtitle": "Ungathathi igama lethu kuphela",
+    "items": [
+      {
+        "text": "U-Meshack neqembu lakhe benze umsebenzi omuhle kakhulu ekuvuseleni ikhishi lethu. Abangobuchwepheshe, abathembekile, futhi banakekela imininingwane.",
+        "name": "Sarah Johnson",
+        "location": "Sandton"
+      },
+      {
+        "text": "Umsebenzi omangalisayo wokwendlala amatshe endleleni yethu yemoto. Waqedwa ngesikhathi futhi ngaphakathi kwesabelomali. Kunconywa kakhulu!",
+        "name": "David Smith",
+        "location": "Pretoria"
+      },
+      {
+        "text": "Umsebenzi wokuphenda wawuphelele. Uhlanzekile, ungobuchwepheshe, futhi ikhwalithi yokuqeda yadlula okulindelwe yithi.",
+        "name": "Maria Gonzalez",
+        "location": "Johannesburg"
+      }
+    ]
+  },
+  "contact": {
+    "callNow": "Shayela Manje",
+    "call": "Shayela",
+    "phone": "071 933 4063",
+    "email": "info@mdbuilders.co.za",
+    "address": "Sisebenzela Zonke Izindawo ZaseGauteng"
+  },
+  "footer": {
+    "mission": "Ukuhlinzeka ngezinsiza zokwakha ezikhwalithile kuyo yonke iGauteng ngobuqotho, ubungcweti, nokunakekela imininingwane.",
+    "quickLinks": "Izixhumanisi Ezisheshayo",
+    "ourServices": "Izinsiza Zethu",
+    "contactInfo": "Ulwazi Lokuxhumana"
+  }
+}

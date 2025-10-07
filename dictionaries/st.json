@@ -1,0 +1,307 @@
+{
+  "meta": {
+    "title": "MD Builders - Ditshebeletso tsa Kaho tse Tshwanelang Gauteng",
+    "description": "Ditshebeletso tsa kaho, ho roala, ho penta, ho beha majwe, ho beha lithaele, le metsi Gauteng kaofela.",
+    "keywords": "kaho, ditshebeletso tsa kaho, ho roala, ho penta, ho beha majwe, ho beha lithaele, Gauteng, Johannesburg, Pretoria"
+  },
+  "navigation": {
+    "home": "Hae",
+    "about": "Ka Rona",
+    "services": "Ditshebeletso",
+    "work": "Mosebetsi wa Rona",
+    "contact": "Ikopanye le Rona",
+    "faq": "Dipotso"
+  },
+  "hero": {
+    "title": "Ditshebeletso tsa Kaho tse Tshwanelang Gauteng",
+    "subtitle": "Ditshebeletso tsa kaho, ho nchafatsa, le tlhokomelo tseo o ka di tshepang",
+    "callButton": "Letsetsa Hona Joale",
+    "workButton": "Sheba Mosebetsi wa Rona"
+  },
+  "trustBar": {
+    "insured": "E Sireletsehile ka Botlalo",
+    "guaranteed": "Mosebetsi o Tiisitswe",
+    "gauteng": "Re Sebeletsa Gauteng Kaofela"
+  },
+  "services": {
+    "title": "Ditshebeletso tsa Rona",
+    "description": "Re fana ka ditshebeletso tse felletseng tsa kaho le tlhokomelo Gauteng kaofela",
+    "items": {
+      "building": {
+        "name": "Kaho",
+        "description": "Kaho e ncha, ho atolosa, le mosebetsi wa sebopeho"
+      },
+      "plastering": {
+        "name": "Ho Roala",
+        "description": "Ditshebeletso tsa ho roala ka hare le kantle"
+      },
+      "painting": {
+        "name": "Ho Penta",
+        "description": "Ho penta ha setsebi ka hare le kantle"
+      },
+      "paving": {
+        "name": "Ho Beha Majwe",
+        "description": "Ditsela tsa dikoloi, ditsela tsa ho tsamaea, le ho beha majwe kantle"
+      },
+      "tiling": {
+        "name": "Ho Beha Lithaele",
+        "description": "Lithaele tsa fatše le marako bakeng sa libaka tsohle"
+      },
+      "plumbing": {
+        "name": "Ditshebeletso tsa Metsi",
+        "description": "Ho kenya, ho lokisa, le tlhokomelo"
+      }
+    }
+  },
+  "extendedServices": {
+    "brickwork": {
+      "name": "Mosebetsi wa Litene",
+      "description": "Ditshebeletso tsa setsebi tsa ho beha litene le mosebetsi wa ho aha marako le meaho"
+    },
+    "concrete": {
+      "name": "Mosebetsi wa Konkreite",
+      "description": "Motheo, li-slab, ditsela tsa dikoloi, le meaho ea konkreite e matlafalitsoeng"
+    },
+    "electrical": {
+      "name": "Motlakase",
+      "description": "Ho kenya motlakase, ho lokisa, le ho latela polokeho"
+    },
+    "extensions": {
+      "name": "Ho Atolosa",
+      "description": "Ho atolosa matlo le meaho ea khoebo"
+    },
+    "fencing": {
+      "name": "Terata",
+      "description": "Terata ea tšireletso, marako a meeli, le ho kenya masango"
+    },
+    "flooring": {
+      "name": "Fatše",
+      "description": "Ho kenya fatše, ho lokisa, le ditshebeletso tsa ho nchafatsa"
+    },
+    "installation": {
+      "name": "Ho Kenya",
+      "description": "Ditshebeletso tsa setsebi tsa ho kenya mekhoa e fapaneng le lisebelisoa"
+    },
+    "landscaping": {
+      "name": "Ho Hlophisa Serapa",
+      "description": "Moralo oa serapa, ho hlophisa serapa sa kantle, le ho lokisa mobu"
+    },
+    "maintenance": {
+      "name": "Tlhokomelo",
+      "description": "Ditshebeletso tsa tlhokomelo le ho boloka meaho kamehla"
+    },
+    "renovation": {
+      "name": "Ho Nchafatsa",
+      "description": "Ho nchafatsa ka botlalo matlo le meaho ea khoebo"
+    },
+    "repairs": {
+      "name": "Ho Lokisa",
+      "description": "Ditshebeletso tsa tšohanyetso le tse hlophisitsoeng tsa ho lokisa ditlhoko tsohle tsa kaho"
+    },
+    "roofing": {
+      "name": "Marulelo",
+      "description": "Ho kenya marulelo, ho lokisa, tlhokomelo, le ho thibela metsi"
+    },
+    "waterproofing": {
+      "name": "Ho Thibela Metsi",
+      "description": "Ditharollo tsa ho thibela metsi tlas'a mobu, marulellong, le kantle"
+    }
+  },
+  "pages": {
+    "about": {
+      "title": "Ka MD Builders",
+      "subtitle": "Molekane wa Hao ea Tshepehang oa Kaho Gauteng",
+      "heroTitle": "Lilemo tse 15+ tsa Botle ba Kaho",
+      "heroSubtitle": "Re aha tšepo, morero o le mong ka nako Gauteng Province kaofela",
+      "story": {
+        "title": "Pale ea Rona",
+        "content": "E thehiloe ke Meshack Dlamini, MD Builders e sebeletse sechaba sa Gauteng lilemo tse fetang 15. Seo se qalileng e le khoebo e nyenyane ea kaho se holile sa ba e 'ngoe ea mabitso a tšepahalang ka ho fetisisa kahong ea matlo le ea khoebo Johannesburg, Pretoria, le libaka tse haufi."
+      },
+      "mission": {
+        "title": "Sepheo sa Rona",
+        "content": "Ho fana ka ditshebeletso tsa kaho tse ikhethang tse fetang tse lebeletsoeng ke bareki ba rona ha re ntse re boloka maemo a phahameng a boleng, polokeho, le botshebi. Re lumela ho aha likamano tse tšoarellang ka puisano e hloekileng le mosebetsi o motle."
+      },
+      "values": {
+        "title": "Litekanyetso tsa Rona tsa Mantlha",
+        "items": [
+          {
+            "title": "Boleng Pele",
+            "description": "Ha re ke re etse kompromaise ka boleng. Morero o mong le o mong o fumana tlhokomelo ea rona e felletseng ea lintlha le boitlamo ba botle."
+          },
+          {
+            "title": "Ho Tšepahala",
+            "description": "Bareki ba rona ba ka tšepa ho rona ho fana ka merero ka nako le ka har'a tekanyetso ea chelete, nako le nako."
+          },
+          {
+            "title": "Botšepehi",
+            "description": "Litheko tse hloekileng, puisano e hlakileng, le mekhoa ea khoebo ea boitšoaro e tataisa tsohle tseo re li etsang."
+          },
+          {
+            "title": "Polokeho",
+            "description": "Re boloka maemo a phahameng a polokeho ho sireletsa sehlopha sa rona, bareki, le thepa ea bona."
+          }
+        ]
+      },
+      "experience": {
+        "title": "Hobaneng o Khethe MD Builders?",
+        "items": [
+          "Ho feta lilemo tse 15 tsa boiphihlelo ba kaho",
+          "E na le laesense e felletseng 'me e sireletsehile",
+          "Re sebeletsa libaka tsohle Gauteng kaofela",
+          "Litheko tsa mahala, tse se nang boitlamo",
+          "Mosebetsi oa boleng o tiisitsoe",
+          "Ditshebeletso tsa tšohanyetso tsa ho lokisa li fumaneha"
+        ]
+      }
+    },
+    "services": {
+      "title": "Ditshebeletso tsa Rona tsa Kaho",
+      "subtitle": "Ditharollo tse Felletseng tsa Kaho Gauteng Kaofela",
+      "heroTitle": "Ditshebeletso tsa Kaho tsa Setsebi",
+      "heroSubtitle": "Ho tloha ho lokiseng ha manyenyane ho ea ho merero e meholo ea kaho, re sebetsana le tsohle",
+      "process": {
+        "title": "Mokhoa oa Rona",
+        "steps": [
+          {
+            "title": "Puisano",
+            "description": "Re buisana ka ditlhoko tsa morero oa hao 'me re fane ka keletso ea setsebi"
+          },
+          {
+            "title": "Tekanyetso",
+            "description": "Litheko tse qaqileng, tse hlakileng ntle le litšenyehelo tse patiloeng"
+          },
+          {
+            "title": "Ho Rala",
+            "description": "Ho rala morero ka hloko le ho hlahisa nako ea ho sebetsa"
+          },
+          {
+            "title": "Ho Phethahatsa",
+            "description": "Kaho ea setsebi le lintlafatso tsa tsoelo-pele kamehla"
+          },
+          {
+            "title": "Ho Qeta",
+            "description": "Tlhahlobo ea ho qetela le ho fana ka tiiso ea boleng"
+          }
+        ]
+      },
+      "cta": {
+        "title": "O Ikemiselitse ho Qala Morero oa Hao?",
+        "subtitle": "Fumana tekanyetso ea hao ea mahala kajeno",
+        "button": "Fumana Tekanyetso ea Mahala"
+      }
+    },
+    "ourWork": {
+      "title": "Mosebetsi wa Rona",
+      "subtitle": "Portfolio ea Merero ea Kaho e Phethiloeng",
+      "heroTitle": "Sheba Mosebetsi wa Rona oa Boleng",
+      "heroSubtitle": "Sheba portfolio ea rona ea merero e atlehileng Gauteng kaofela",
+      "filterAll": "Merero Eohle",
+      "projectDetails": "Lintlha tsa Morero",
+      "viewProject": "Sheba Morero",
+      "categories": "Mekhahlelo",
+      "locations": "Libaka",
+      "searchPlaceholder": "Batla merero...",
+      "noResults": "Ha ho merero e fumanoeng e lumellanang le litekanyetso tsa hao",
+      "loadMore": "Jara Merero e Mengata"
+    },
+    "contact": {
+      "title": "Ikopanye le MD Builders",
+      "subtitle": "Ikopanye le Rona bakeng sa Morero oa Hao o Latelang oa Kaho",
+      "heroTitle": "Ha Re Aheng Ntho e Kholo Hammoho",
+      "heroSubtitle": "Ikopanye le rona kajeno bakeng sa puisano ea mahala le tekanyetso",
+      "form": {
+        "title": "Fumana Tekanyetso ea Hao ea Mahala",
+        "name": "Lebitso le Felletseng",
+        "email": "Aterese ea Imeile",
+        "phone": "Nomoro ea Mohala",
+        "service": "Tshebeletso e Hlokahalang",
+        "location": "Sebaka sa Morero",
+        "message": "Tlhaloso ea Morero",
+        "submit": "Romela Molaetsa",
+        "sending": "E romela...",
+        "success": "Molaetsa o rometsoe ka katleho! Re tla ikopanya le uena haufinyane.",
+        "error": "Ho hloleha ho romela molaetsa. Ka kopo leka hape kapa o re letsetse ka kotloloho."
+      },
+      "info": {
+        "title": "Tlhahisoleseling ea ho Ikopanya",
+        "phone": "071 933 4063",
+        "email": "info@mdbuilders.co.za",
+        "hours": "Mos - Lab: 7:00 AM - 6:00 PM\nMok: 8:00 AM - 4:00 PM\nSon: Mehala ea tšohanyetso feela",
+        "emergency": "Ditshebeletso tsa Tšohanyetso tsa 24/7 li Fumaneha"
+      },
+      "serviceAreas": {
+        "title": "Libaka tsa Tshebeletso",
+        "description": "Re sebeletsa ka boikgantšo bareki ba matlo le ba khoebo Gauteng Province kaofela"
+      }
+    },
+    "faq": {
+      "title": "Dipotso tse Botsoa Hangata",
+      "subtitle": "Dipotso tse Tloaelehileng ka Ditshebeletso tsa Rona tsa Kaho",
+      "heroTitle": "O na le Dipotso? Re na le Dikarabo",
+      "heroSubtitle": "Fumana dikarabo tsa dipotso tse tloaelehileng ka ditshebeletso tsa rona",
+      "categories": [
+        {
+          "title": "Dipotso tse Tloaelehileng",
+          "items": [
+            {
+              "question": "Na le fana ka litheko tsa mahala?",
+              "answer": "E, re fana ka litheko tsa mahala, tse se nang boitlamo bakeng sa ditshebeletso tsohle tsa rona. Ikopanye le rona feela ka lintlha tsa morero oa hao 'me re tla hlophisa nako e loketseng ea ho hlahloba ditlhoko tsa hao."
+            },
+            {
+              "question": "Ke libaka life tseo le li sebeletsa?",
+              "answer": "Re sebeletsa libaka tsohle Gauteng Province kaofela, ho kenyelletsa Johannesburg, Pretoria, East Rand, West Rand, le libaka tse haufi. Ikopanye le rona ho netefatsa phihlello ea sebaka sa hao se itseng."
+            },
+            {
+              "question": "Na le na le laesense 'me le sireletsehile?",
+              "answer": "E, MD Builders e na le laesense e felletseng 'me e sireletsehile. Re jara inshorense e felletseng ea boikarabelo ho sireletsa bareki ba rona le sehlopha sa rona nakong ea merero eohle."
+            }
+          ]
+        }
+      ],
+      "stillHaveQuestions": {
+        "title": "O sa na le Dipotso?",
+        "subtitle": "Se ke oa tsilatsila ho fihlela - re teng ho thusa!",
+        "button": "Ikopanye le Rona"
+      }
+    }
+  },
+  "about": {
+    "title": "Ka Meshack Dlamini",
+    "description": "Ka boiphihlelo ba lilemo tse fetang 15 indastering ea kaho, Meshack Dlamini o hahile lebitso la mosebetsi o motle le tshebeletso e tshepehang Gauteng kaofela.",
+    "experience": "Ho tloha ho lokiseng matlo a manyenyane ho ea ho merero e meholo ea kaho, re fana ka liphetho tse ikhethang tse etsang hore nako e fete."
+  },
+  "testimonials": {
+    "title": "Seo Bareki ba Rona ba se Buang",
+    "subtitle": "Se ke wa nka lentswe la rona feela",
+    "items": [
+      {
+        "text": "Meshack le sehlopha sa hae ba entse mosebetsi o motle haholo ho nchafatsa kichineng ea rona. Ba setsebi, ba tshepehang, 'me ba hlokomela lintlha.",
+        "name": "Sarah Johnson",
+        "location": "Sandton"
+      },
+      {
+        "text": "Mosebetsi o makatsang oa ho beha majwe tseleng ea rona ea koloi. O phethiloe ka nako 'me ka har'a tekanyetso ea chelete. Ho kgothaletswa haholo!",
+        "name": "David Smith",
+        "location": "Pretoria"
+      },
+      {
+        "text": "Mosebetsi oa ho roala o ne o phethahetseng. O hloekile, oa setsebi, 'me boleng ba ho qeta bo fetile seo re neng re se lebella.",
+        "name": "Maria Gonzalez",
+        "location": "Johannesburg"
+      }
+    ]
+  },
+  "contact": {
+    "callNow": "Letsetsa Hona Joale",
+    "call": "Letsetsa",
+    "phone": "071 933 4063",
+    "email": "info@mdbuilders.co.za",
+    "address": "Re Sebeletsa Libaka Tsohle tsa Gauteng"
+  },
+  "footer": {
+    "mission": "Ho fana ka ditshebeletso tsa kaho tsa boleng Gauteng kaofela ka botšepehi, botshebi, le tlhokomelo ea lintlha.",
+    "quickLinks": "Lihokelo tse Potlakang",
+    "ourServices": "Ditshebeletso tsa Rona",
+    "contactInfo": "Tlhahisoleseling ea ho Ikopanya"
+  }
+}

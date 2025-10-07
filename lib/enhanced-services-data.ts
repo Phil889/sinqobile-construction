@@ -1,0 +1,218 @@
+import {
+  Wrench,
+  Hammer,
+  PaintBucket,
+  Droplets,
+  Square,
+  Home,
+  HardHat,
+  Zap,
+  Plus,
+  Shield,
+  Layers,
+  Settings,
+  TreePine,
+  RefreshCw,
+  Wrench as RepairTool,
+  Grid
+} from 'lucide-react'
+
+export interface ServiceCategory {
+  slug: string
+  name: string
+  description: string
+  icon: any
+  imageCount: number
+  featured: boolean
+  seoKeywords: string[]
+}
+
+export const enhancedServices: ServiceCategory[] = [
+  // Core Featured Services
+  {
+    slug: 'building',
+    name: 'Building',
+    description: 'New construction, extensions, and structural work',
+    icon: Hammer,
+    imageCount: 3,
+    featured: true,
+    seoKeywords: ['building construction', 'new builds', 'structural work', 'construction services']
+  },
+  {
+    slug: 'concrete',
+    name: 'Concrete Work',
+    description: 'Foundations, slabs, driveways, and reinforced concrete structures',
+    icon: HardHat,
+    imageCount: 8,
+    featured: true,
+    seoKeywords: ['concrete work', 'foundations', 'concrete slabs', 'driveways']
+  },
+  {
+    slug: 'paving',
+    name: 'Paving',
+    description: 'Driveways, walkways, and outdoor paving solutions',
+    icon: Home,
+    imageCount: 8,
+    featured: true,
+    seoKeywords: ['paving', 'driveways', 'walkways', 'outdoor paving']
+  },
+  {
+    slug: 'plumbing',
+    name: 'Plumbing',
+    description: 'Installation, repairs, and maintenance services',
+    icon: Wrench,
+    imageCount: 7,
+    featured: true,
+    seoKeywords: ['plumbing', 'pipe installation', 'plumbing repairs', 'water systems']
+  },
+  
+  // Additional Services
+  {
+    slug: 'waterproofing',
+    name: 'Waterproofing',
+    description: 'Basement, roof, and exterior waterproofing solutions',
+    icon: Droplets,
+    imageCount: 6,
+    featured: false,
+    seoKeywords: ['waterproofing', 'basement waterproofing', 'roof waterproofing', 'damp proofing']
+  },
+  {
+    slug: 'extensions',
+    name: 'Extensions',
+    description: 'Home and commercial property extensions and additions',
+    icon: Plus,
+    imageCount: 5,
+    featured: false,
+    seoKeywords: ['home extensions', 'property extensions', 'building additions', 'house extensions']
+  },
+  {
+    slug: 'fencing',
+    name: 'Fencing',
+    description: 'Security fencing, boundary walls, and gate installations',
+    icon: Shield,
+    imageCount: 5,
+    featured: false,
+    seoKeywords: ['fencing', 'security fencing', 'boundary walls', 'gates']
+  },
+  {
+    slug: 'flooring',
+    name: 'Flooring',
+    description: 'Floor installation, repairs, and refinishing services',
+    icon: Layers,
+    imageCount: 5,
+    featured: false,
+    seoKeywords: ['flooring', 'floor installation', 'floor repairs', 'floor refinishing']
+  },
+  {
+    slug: 'installation',
+    name: 'Installation',
+    description: 'Professional installation services for various systems and fixtures',
+    icon: Settings,
+    imageCount: 5,
+    featured: false,
+    seoKeywords: ['installation services', 'system installation', 'fixture installation']
+  },
+  {
+    slug: 'renovation',
+    name: 'Renovation',
+    description: 'Complete home and commercial property renovations',
+    icon: RefreshCw,
+    imageCount: 5,
+    featured: false,
+    seoKeywords: ['renovation', 'home renovation', 'property renovation', 'remodeling']
+  },
+  {
+    slug: 'repairs',
+    name: 'Repairs',
+    description: 'Emergency and scheduled repair services for all construction needs',
+    icon: RepairTool,
+    imageCount: 5,
+    featured: false,
+    seoKeywords: ['repairs', 'emergency repairs', 'maintenance repairs', 'construction repairs']
+  },
+  {
+    slug: 'roofing',
+    name: 'Roofing',
+    description: 'Roof installation, repairs, maintenance, and waterproofing',
+    icon: Home,
+    imageCount: 5,
+    featured: false,
+    seoKeywords: ['roofing', 'roof installation', 'roof repairs', 'roof maintenance']
+  },
+  {
+    slug: 'brickwork',
+    name: 'Brickwork',
+    description: 'Professional bricklaying and masonry services for walls and structures',
+    icon: Square,
+    imageCount: 4,
+    featured: false,
+    seoKeywords: ['brickwork', 'bricklaying', 'masonry', 'brick walls']
+  },
+  {
+    slug: 'painting',
+    name: 'Painting',
+    description: 'Interior and exterior painting services with premium finishes',
+    icon: PaintBucket,
+    imageCount: 4,
+    featured: false,
+    seoKeywords: ['painting', 'interior painting', 'exterior painting', 'house painting']
+  },
+  {
+    slug: 'plastering',
+    name: 'Plastering',
+    description: 'Interior and exterior plastering services with smooth finishes',
+    icon: Square,
+    imageCount: 4,
+    featured: false,
+    seoKeywords: ['plastering', 'wall plastering', 'interior plastering', 'exterior plastering']
+  },
+  {
+    slug: 'maintenance',
+    name: 'Maintenance',
+    description: 'Regular maintenance and upkeep services for all property types',
+    icon: Settings,
+    imageCount: 4,
+    featured: false,
+    seoKeywords: ['maintenance', 'property maintenance', 'building maintenance', 'upkeep']
+  },
+  {
+    slug: 'landscaping',
+    name: 'Landscaping',
+    description: 'Garden design, outdoor landscaping, and ground preparation',
+    icon: TreePine,
+    imageCount: 3,
+    featured: false,
+    seoKeywords: ['landscaping', 'garden design', 'outdoor landscaping', 'ground preparation']
+  },
+  {
+    slug: 'tiling',
+    name: 'Tiling',
+    description: 'Floor and wall tiling for bathrooms, kitchens, and all spaces',
+    icon: Grid,
+    imageCount: 3,
+    featured: false,
+    seoKeywords: ['tiling', 'floor tiling', 'wall tiling', 'bathroom tiling']
+  },
+  {
+    slug: 'electrical',
+    name: 'Electrical',
+    description: 'Electrical installations, repairs, and safety compliance services',
+    icon: Zap,
+    imageCount: 2,
+    featured: false,
+    seoKeywords: ['electrical', 'electrical installation', 'electrical repairs', 'wiring']
+  }
+]
+
+// Get featured services only
+export const getFeaturedServices = () => enhancedServices.filter(service => service.featured)
+
+// Get all services
+export const getAllServices = () => enhancedServices
+
+// Get service by slug
+export const getServiceBySlug = (slug: string) => enhancedServices.find(service => service.slug === slug)
+
+// Get services by category (featured/non-featured)
+export const getServicesByCategory = (featured: boolean) => 
+  enhancedServices.filter(service => service.featured === featured)

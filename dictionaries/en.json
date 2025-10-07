@@ -1,0 +1,343 @@
+{
+  "meta": {
+    "title": "MD Builders - Professional Construction Services in Gauteng",
+    "description": "Expert building, plastering, painting, paving, tiling, and plumbing services across Gauteng. Quality workmanship guaranteed.",
+    "keywords": "construction, building, plastering, painting, paving, tiling, plumbing, Gauteng, Johannesburg, Pretoria"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "work": "Our Work",
+    "calculator": "Cost Calculator",
+    "blog": "Blog",
+    "contact": "Contact",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "title": "Professional Construction Services in Gauteng",
+    "subtitle": "Quality building, renovation, and maintenance services you can trust",
+    "callButton": "Call Now",
+    "workButton": "View Our Work"
+  },
+  "trustBar": {
+    "insured": "Fully Insured",
+    "guaranteed": "Work Guaranteed",
+    "gauteng": "Serving All Gauteng"
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "We provide comprehensive construction and maintenance services across Gauteng",
+    "items": {
+      "building": {
+        "name": "Building",
+        "description": "New construction, extensions, and structural work"
+      },
+      "plastering": {
+        "name": "Plastering",
+        "description": "Interior and exterior plastering services"
+      },
+      "painting": {
+        "name": "Painting",
+        "description": "Professional interior and exterior painting"
+      },
+      "paving": {
+        "name": "Paving",
+        "description": "Driveways, walkways, and outdoor paving"
+      },
+      "tiling": {
+        "name": "Tiling",
+        "description": "Floor and wall tiling for all spaces"
+      },
+      "plumbing": {
+        "name": "Plumbing",
+        "description": "Installation, repairs, and maintenance"
+      }
+    }
+  },
+  "extendedServices": {
+    "brickwork": {
+      "name": "Brickwork",
+      "description": "Professional bricklaying and masonry services for walls, boundaries, and structures"
+    },
+    "concrete": {
+      "name": "Concrete Work",
+      "description": "Foundations, slabs, driveways, and reinforced concrete structures"
+    },
+    "electrical": {
+      "name": "Electrical",
+      "description": "Electrical installations, repairs, and safety compliance"
+    },
+    "extensions": {
+      "name": "Extensions",
+      "description": "Home and commercial property extensions and additions"
+    },
+    "fencing": {
+      "name": "Fencing",
+      "description": "Security fencing, boundary walls, and gate installations"
+    },
+    "flooring": {
+      "name": "Flooring",
+      "description": "Floor installation, repairs, and refinishing services"
+    },
+    "installation": {
+      "name": "Installation",
+      "description": "Professional installation services for various systems and fixtures"
+    },
+    "landscaping": {
+      "name": "Landscaping",
+      "description": "Garden design, outdoor landscaping, and ground preparation"
+    },
+    "maintenance": {
+      "name": "Maintenance",
+      "description": "Regular maintenance and upkeep services for properties"
+    },
+    "renovation": {
+      "name": "Renovation",
+      "description": "Complete home and commercial property renovations"
+    },
+    "repairs": {
+      "name": "Repairs",
+      "description": "Emergency and scheduled repair services for all construction needs"
+    },
+    "roofing": {
+      "name": "Roofing",
+      "description": "Roof installation, repairs, maintenance, and waterproofing"
+    },
+    "waterproofing": {
+      "name": "Waterproofing",
+      "description": "Basement, roof, and exterior waterproofing solutions"
+    }
+  },
+  "pages": {
+    "about": {
+      "title": "About MD Builders",
+      "subtitle": "Your Trusted Construction Partner in Gauteng",
+      "heroTitle": "15+ Years of Excellence in Construction",
+      "heroSubtitle": "Building trust, one project at a time across Gauteng Province",
+      "story": {
+        "title": "Our Story",
+        "content": "Founded by Meshack Dlamini, MD Builders has been serving the Gauteng community for over 15 years. What started as a small construction business has grown into one of the most trusted names in residential and commercial construction across Johannesburg, Pretoria, and surrounding areas."
+      },
+      "mission": {
+        "title": "Our Mission",
+        "content": "To provide exceptional construction services that exceed our clients' expectations while maintaining the highest standards of quality, safety, and professionalism. We believe in building lasting relationships through honest communication and superior workmanship."
+      },
+      "values": {
+        "title": "Our Core Values",
+        "items": [
+          {
+            "title": "Quality First",
+            "description": "We never compromise on quality. Every project receives our full attention to detail and commitment to excellence."
+          },
+          {
+            "title": "Reliability",
+            "description": "Our clients can count on us to deliver projects on time and within budget, every time."
+          },
+          {
+            "title": "Integrity",
+            "description": "Honest pricing, transparent communication, and ethical business practices guide everything we do."
+          },
+          {
+            "title": "Safety",
+            "description": "We maintain the highest safety standards to protect our team, clients, and their properties."
+          }
+        ]
+      },
+      "experience": {
+        "title": "Why Choose MD Builders?",
+        "items": [
+          "Over 15 years of construction experience",
+          "Fully licensed and insured",
+          "Serving all areas across Gauteng",
+          "Free, no-obligation quotes",
+          "Quality workmanship guaranteed",
+          "Emergency repair services available"
+        ]
+      }
+    },
+    "services": {
+      "title": "Our Construction Services",
+      "subtitle": "Comprehensive Building Solutions Across Gauteng",
+      "heroTitle": "Professional Construction Services",
+      "heroSubtitle": "From small repairs to major construction projects, we handle it all",
+      "process": {
+        "title": "Our Process",
+        "steps": [
+          {
+            "title": "Consultation",
+            "description": "We discuss your project requirements and provide expert advice"
+          },
+          {
+            "title": "Quote",
+            "description": "Detailed, transparent pricing with no hidden costs"
+          },
+          {
+            "title": "Planning",
+            "description": "Careful project planning and timeline development"
+          },
+          {
+            "title": "Execution",
+            "description": "Professional construction with regular progress updates"
+          },
+          {
+            "title": "Completion",
+            "description": "Final inspection and handover with quality guarantee"
+          }
+        ]
+      },
+      "cta": {
+        "title": "Ready to Start Your Project?",
+        "subtitle": "Get your free quote today",
+        "button": "Get Free Quote"
+      }
+    },
+    "ourWork": {
+      "title": "Our Work",
+      "subtitle": "Portfolio of Completed Construction Projects",
+      "heroTitle": "See Our Quality Work",
+      "heroSubtitle": "Browse through our portfolio of successful projects across Gauteng",
+      "filterAll": "All Projects",
+      "projectDetails": "Project Details",
+      "viewProject": "View Project",
+      "categories": "Categories",
+      "locations": "Locations",
+      "searchPlaceholder": "Search projects...",
+      "noResults": "No projects found matching your criteria",
+      "loadMore": "Load More Projects"
+    },
+    "contact": {
+      "title": "Contact MD Builders",
+      "subtitle": "Get in Touch for Your Next Construction Project",
+      "heroTitle": "Let's Build Something Great Together",
+      "heroSubtitle": "Contact us today for a free consultation and quote",
+      "form": {
+        "title": "Get Your Free Quote",
+        "name": "Full Name",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "service": "Service Needed",
+        "location": "Project Location",
+        "message": "Project Description",
+        "submit": "Send Message",
+        "sending": "Sending...",
+        "success": "Message sent successfully! We'll contact you soon.",
+        "error": "Failed to send message. Please try again or call us directly."
+      },
+      "info": {
+        "title": "Contact Information",
+        "phone": "071 933 4063",
+        "email": "info@mdbuilders.co.za",
+        "hours": "Mon - Fri: 7:00 AM - 6:00 PM\nSat: 8:00 AM - 4:00 PM\nSun: Emergency calls only",
+        "emergency": "24/7 Emergency Services Available"
+      },
+      "serviceAreas": {
+        "title": "Service Areas",
+        "description": "We proudly serve residential and commercial clients throughout Gauteng Province"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Common Questions About Our Construction Services",
+      "heroTitle": "Got Questions? We Have Answers",
+      "heroSubtitle": "Find answers to the most common questions about our services",
+      "categories": [
+        {
+          "title": "General Questions",
+          "items": [
+            {
+              "question": "Do you provide free quotes?",
+              "answer": "Yes, we provide free, no-obligation quotes for all our services. Simply contact us with your project details and we'll schedule a convenient time to assess your needs."
+            },
+            {
+              "question": "What areas do you service?",
+              "answer": "We service all areas across Gauteng Province, including Johannesburg, Pretoria, East Rand, West Rand, and surrounding areas. Contact us to confirm coverage for your specific location."
+            },
+            {
+              "question": "Are you licensed and insured?",
+              "answer": "Yes, MD Builders is fully licensed and insured. We carry comprehensive liability insurance to protect both our clients and our team during all projects."
+            }
+          ]
+        },
+        {
+          "title": "Project & Pricing",
+          "items": [
+            {
+              "question": "How long do projects typically take?",
+              "answer": "Project timelines vary depending on scope and complexity. Small repairs may take 1-2 days, while larger construction projects can take several weeks. We provide detailed timelines with every quote."
+            },
+            {
+              "question": "What payment methods do you accept?",
+              "answer": "We accept cash, bank transfers, and card payments. For larger projects, we typically require a deposit to begin work, with the balance due upon completion."
+            },
+            {
+              "question": "Do you offer warranties on your work?",
+              "answer": "Yes, we stand behind our work with comprehensive warranties. Warranty periods vary by service type, and we'll provide full warranty details with your quote."
+            }
+          ]
+        },
+        {
+          "title": "Services & Materials",
+          "items": [
+            {
+              "question": "Do you supply materials or do I need to purchase them?",
+              "answer": "We can supply all materials as part of our service, or work with materials you've purchased. We'll advise on the best approach based on your project and budget."
+            },
+            {
+              "question": "Can you work on weekends or evenings?",
+              "answer": "Yes, we offer flexible scheduling including weekend and evening work for urgent projects or client convenience. Additional charges may apply for after-hours work."
+            },
+            {
+              "question": "Do you handle emergency repairs?",
+              "answer": "Yes, we provide 24/7 emergency repair services for urgent issues like burst pipes, electrical problems, or structural damage. Contact us immediately for emergency assistance."
+            }
+          ]
+        }
+      ],
+      "stillHaveQuestions": {
+        "title": "Still Have Questions?",
+        "subtitle": "Don't hesitate to reach out - we're here to help!",
+        "button": "Contact Us"
+      }
+    }
+  },
+  "about": {
+    "title": "About Meshack Dlamini",
+    "description": "With over 15 years of experience in the construction industry, Meshack Dlamini has built a reputation for quality workmanship and reliable service across Gauteng.",
+    "experience": "From small home repairs to large construction projects, we deliver exceptional results that stand the test of time."
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Don't just take our word for it",
+    "items": [
+      {
+        "text": "Meshack and his team did an excellent job renovating our kitchen. Professional, reliable, and great attention to detail.",
+        "name": "Sarah Johnson",
+        "location": "Sandton"
+      },
+      {
+        "text": "Outstanding paving work on our driveway. Completed on time and within budget. Highly recommended!",
+        "name": "David Smith",
+        "location": "Pretoria"
+      },
+      {
+        "text": "The plastering work was perfect. Clean, professional, and the finish quality exceeded our expectations.",
+        "name": "Maria Gonzalez",
+        "location": "Johannesburg"
+      }
+    ]
+  },
+  "contact": {
+    "callNow": "Call Now",
+    "call": "Call",
+    "phone": "071 933 4063",
+    "email": "info@mdbuilders.co.za",
+    "address": "Serving All Gauteng Areas"
+  },
+  "footer": {
+    "mission": "Providing quality construction services across Gauteng with integrity, professionalism, and attention to detail.",
+    "quickLinks": "Quick Links",
+    "ourServices": "Our Services",
+    "contactInfo": "Contact Info"
+  }
+}

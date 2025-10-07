@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="yellowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD600;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFC400;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="#1a1a1a" stroke="url(#yellowGradient)" stroke-width="8"/>
+  
+  <!-- Construction hard hat shape -->
+  <path d="M 256 120 L 180 180 L 180 200 L 332 200 L 332 180 Z" fill="url(#yellowGradient)"/>
+  <ellipse cx="256" cy="200" rx="76" ry="12" fill="#FFD600"/>
+  <path d="M 180 200 Q 180 215 256 215 Q 332 215 332 200" fill="#FFA500"/>
+  
+  <!-- MD Text -->
+  <text x="256" y="290" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="url(#yellowGradient)" text-anchor="middle">MD</text>
+  
+  <!-- BUILDERS Text -->
+  <text x="256" y="340" font-family="Arial, sans-serif" font-size="32" font-weight="600" fill="#FFD600" text-anchor="middle" letter-spacing="4">BUILDERS</text>
+  
+  <!-- Construction tools - hammer and wrench crossed -->
+  <g transform="translate(256, 380)">
+    <!-- Wrench -->
+    <path d="M -40 -10 L -35 -15 L -25 -5 L -20 -10 L -15 -5 L -25 5 L -35 -5 Z" fill="#FFD600"/>
+    <rect x="-40" y="-10" width="25" height="8" fill="#FFD600" transform="rotate(-45 -27.5 -6)"/>
+    
+    <!-- Hammer -->
+    <rect x="15" y="-15" width="8" height="30" fill="#FFD600" transform="rotate(45 19 0)"/>
+    <rect x="25" y="-20" width="20" height="12" fill="#FFD600" transform="rotate(45 35 -14)"/>
+  </g>
+  
+  <!-- Decorative corner elements -->
+  <rect x="80" y="80" width="30" height="4" fill="#FFD600" opacity="0.6"/>
+  <rect x="80" y="80" width="4" height="30" fill="#FFD600" opacity="0.6"/>
+  
+  <rect x="402" y="80" width="30" height="4" fill="#FFD600" opacity="0.6"/>
+  <rect x="428" y="80" width="4" height="30" fill="#FFD600" opacity="0.6"/>
+  
+  <rect x="80" y="428" width="30" height="4" fill="#FFD600" opacity="0.6"/>
+  <rect x="80" y="402" width="4" height="30" fill="#FFD600" opacity="0.6"/>
+  
+  <rect x="402" y="428" width="30" height="4" fill="#FFD600" opacity="0.6"/>
+  <rect x="428" y="402" width="4" height="30" fill="#FFD600" opacity="0.6"/>
+</svg>
