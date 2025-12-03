@@ -1,10 +1,10 @@
 /**
- * MD Builders Business Information
+ * Sinqobile Construction Business Information
  * Professional construction company based in Bryanston, Johannesburg
  */
 
 export const BUSINESS_INFO = {
-  name: "MD Builders",
+  name: "Sinqobile Construction",
   address: {
     street: "47 Bryanston Drive",
     suburb: "Bryanston",
@@ -16,7 +16,7 @@ export const BUSINESS_INFO = {
   fullAddress: "47 Bryanston Drive, Bryanston, Johannesburg, 2021",
   contact: {
     phone: "+27719334063",
-    email: "meshackdlamini32@gmail.com",
+    email: "info@sinqobileconstruction.co.za",
     website: "www.mdbuilders.co.za",
   },
   coordinates: {

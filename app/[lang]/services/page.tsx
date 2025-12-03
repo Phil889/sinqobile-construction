@@ -4,6 +4,7 @@ import { Locale } from '@/i18n.config'
 import { enhancedServices, getFeaturedServices, getServicesByCategory } from '@/lib/enhanced-services-data'
 import { CheckCircle, ArrowRight, Phone } from 'lucide-react'
 import Link from 'next/link'
+import Breadcrumb from '@/components/breadcrumb'
 
 export default async function ServicesPage({
   params: { lang },
@@ -16,6 +17,13 @@ export default async function ServicesPage({
 
   return (
     <div className="pt-20">
+      <Breadcrumb
+        items={[
+          { label: dict.navigation.services, href: `/${lang}/services` }
+        ]}
+        lang={lang}
+        dict={dict}
+      />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-accent text-white">
         <div className="container mx-auto px-4 text-center">
@@ -23,17 +31,17 @@ export default async function ServicesPage({
             {(dict as any).pages.services.heroTitle}
           </h1>
           <div className="inline-block bg-yellow-400 text-secondary px-6 py-3 rounded-lg font-bold mb-6">
-            <span className="text-lg">⚠️ R400 Call-Out Fee</span>
+            <span className="text-lg">{(dict as any).callOutBanner.message}</span>
           </div>
           <p className="text-xl max-w-3xl mx-auto mb-8">
             {(dict as any).pages.services.heroSubtitle}
           </p>
           <a
-            href="tel:0719334063"
+            href="tel:+27828688396"
             className="inline-flex items-center space-x-2 bg-white text-secondary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
           >
             <Phone size={20} />
-            <span>Get Free Quote: 071 933 4063</span>
+            <span>{(dict as any).pages.services.getFreeQuote}</span>
           </a>
         </div>
       </section>
@@ -43,10 +51,10 @@ export default async function ServicesPage({
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">
-              Our Core Services
+              {(dict as any).pages.services.coreServicesTitle}
             </h2>
             <p className="text-secondary text-lg max-w-2xl mx-auto">
-              Professional construction services with guaranteed quality and competitive pricing
+              {(dict as any).pages.services.coreServicesSubtitle}
             </p>
           </div>
 
@@ -70,7 +78,7 @@ export default async function ServicesPage({
                     {serviceDict?.description || service.description}
                   </p>
                   <div className="text-center">
-                    <span className="text-sm text-gray-500">{service.imageCount} projects completed</span>
+                    <span className="text-sm text-gray-500">{service.imageCount} {(dict as any).pages.services.projectsCompleted}</span>
                   </div>
                 </div>
               )
@@ -84,10 +92,10 @@ export default async function ServicesPage({
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">
-              Additional Services
+              {(dict as any).pages.services.additionalServicesTitle}
             </h2>
             <p className="text-secondary text-lg max-w-2xl mx-auto">
-              Comprehensive construction solutions for all your building needs
+              {(dict as any).pages.services.additionalServicesSubtitle}
             </p>
           </div>
 
@@ -107,7 +115,7 @@ export default async function ServicesPage({
                       <h3 className="font-heading text-lg font-bold text-primary">
                         {serviceDict?.name || service.name}
                       </h3>
-                      <span className="text-sm text-gray-500">{service.imageCount} projects</span>
+                      <span className="text-sm text-gray-500">{service.imageCount} {(dict as any).pages.services.projects}</span>
                     </div>
                   </div>
                   <p className="text-secondary text-sm">
@@ -128,7 +136,7 @@ export default async function ServicesPage({
               {(dict as any).pages.services.process.title}
             </h2>
             <p className="text-secondary text-lg max-w-2xl mx-auto">
-              Our proven 5-step process ensures quality results every time
+              {(dict as any).pages.services.processSubtitle}
             </p>
           </div>
 
@@ -161,10 +169,10 @@ export default async function ServicesPage({
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-6">
-                Serving All Gauteng Areas
+                {(dict as any).pages.services.serviceAreasTitle}
               </h2>
               <p className="text-secondary text-lg mb-6">
-                We provide professional construction services across Gauteng Province, including:
+                {(dict as any).pages.services.serviceAreasDescription}
               </p>
               <div className="grid grid-cols-2 gap-4 mb-8">
                 {[
@@ -182,24 +190,15 @@ export default async function ServicesPage({
                 href={`/${lang}/areas`}
                 className="inline-block bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
               >
-                View All Service Areas
+                {(dict as any).pages.services.viewAllServiceAreas}
               </Link>
             </div>
             <div className="bg-white rounded-lg p-8 shadow-lg">
               <h3 className="font-heading text-2xl font-bold text-primary mb-6">
-                Why Choose MD Builders?
+                {(dict as any).pages.services.whyChooseTitle}
               </h3>
               <ul className="space-y-4">
-                {[
-                  'Over 15 years of experience',
-                  'Fully licensed and insured',
-                  'Free, no-obligation quotes',
-                  'Quality workmanship guaranteed',
-                  'Competitive pricing',
-                  'Emergency services available',
-                  'Professional, reliable team',
-                  'Customer satisfaction focus'
-                ].map((benefit, index) => (
+                {(dict as any).pages.services.whyChooseBenefits.map((benefit: string, index: number) => (
                   <li key={index} className="flex items-center space-x-3">
                     <CheckCircle className="text-accent flex-shrink-0" size={20} />
                     <span className="text-secondary">{benefit}</span>
@@ -222,11 +221,11 @@ export default async function ServicesPage({
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:0719334063"
+              href="tel:+27828688396"
               className="inline-flex items-center justify-center space-x-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors"
             >
               <Phone size={20} />
-              <span>Call Now: 071 933 4063</span>
+              <span>{(dict as any).pages.services.callNow}</span>
             </a>
             <Link
               href={`/${lang}/contact`}

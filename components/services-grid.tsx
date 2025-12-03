@@ -45,7 +45,7 @@ const ServicesGrid = ({ dict, lang }: ServicesGridProps) => {
                   {serviceInfo?.description || service.description}
                 </p>
                 <div className="text-center">
-                  <span className="text-xs text-gray-500">{service.imageCount} projects completed</span>
+                  <span className="text-xs text-gray-500">{service.imageCount} {dict.services.projectsCompleted}</span>
                 </div>
               </div>
             )
@@ -57,7 +57,7 @@ const ServicesGrid = ({ dict, lang }: ServicesGridProps) => {
             href={`/${lang}/services`}
             className="inline-block bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
           >
-            View All Services (19+ total)
+            {dict.services.viewAllServices} (19+ {dict.services.totalServices})
           </Link>
         </div>
       </div>

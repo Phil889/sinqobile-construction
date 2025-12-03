@@ -14,12 +14,15 @@ const HeroSection = ({ dict }: HeroSectionProps) => {
           <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6 text-balance">
             {dict.hero.title}
           </h1>
+          <div className="inline-block bg-primary text-white px-6 py-2 rounded-full font-bold mb-6">
+            <span className="text-sm">{dict.callOutBanner.message}</span>
+          </div>
           <p className="text-xl md:text-2xl mb-8 text-balance opacity-90">
             {dict.hero.subtitle}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="tel:0719334063"
+              href="tel:+27828688396"
               className="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-orange-700 transition-colors flex items-center space-x-2"
             >
               <Phone size={20} />

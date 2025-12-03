@@ -12,7 +12,7 @@ interface TrackedPhoneButtonProps {
 export default function TrackedPhoneButton({ 
   className = '',
   showIcon = true,
-  text = 'Call Now: 071 933 4063'
+  text = 'Call Now: +27 82 868 8396'
 }: TrackedPhoneButtonProps) {
   
   const handleCall = () => {
@@ -26,7 +26,7 @@ export default function TrackedPhoneButton({
     }
     
     // Make the call
-    window.location.href = 'tel:0719334063'
+    window.location.href = 'tel:+27828688396'
   }
 
   return (

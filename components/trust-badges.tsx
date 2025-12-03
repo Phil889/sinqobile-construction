@@ -1,36 +1,40 @@
 import { Shield, Award, Clock, ThumbsUp, Users, CheckCircle } from 'lucide-react'
 
-export default function TrustBadges() {
+interface TrustBadgesProps {
+  dict: any
+}
+
+export default function TrustBadges({ dict }: TrustBadgesProps) {
   const badges = [
     {
       icon: Shield,
-      title: 'Fully Insured',
-      description: 'Comprehensive liability coverage'
+      title: dict.trustBadges.badges.insured.title,
+      description: dict.trustBadges.badges.insured.description
     },
     {
       icon: Award,
-      title: 'Quality Guaranteed',
-      description: 'Workmanship warranty on all projects'
+      title: dict.trustBadges.badges.guaranteed.title,
+      description: dict.trustBadges.badges.guaranteed.description
     },
     {
       icon: Clock,
-      title: '15+ Years Experience',
-      description: 'Trusted by Gauteng residents'
+      title: dict.trustBadges.badges.experience.title,
+      description: dict.trustBadges.badges.experience.description
     },
     {
       icon: ThumbsUp,
-      title: '500+ Projects',
-      description: 'Successfully completed'
+      title: dict.trustBadges.badges.projects.title,
+      description: dict.trustBadges.badges.projects.description
     },
     {
       icon: Users,
-      title: 'Expert Team',
-      description: 'Certified professionals'
+      title: dict.trustBadges.badges.team.title,
+      description: dict.trustBadges.badges.team.description
     },
     {
       icon: CheckCircle,
-      title: 'PTY LTD Registered',
-      description: 'Legitimate business entity'
+      title: dict.trustBadges.badges.registered.title,
+      description: dict.trustBadges.badges.registered.description
     }
   ]
 
@@ -38,7 +42,7 @@ export default function TrustBadges() {
     <section className="py-16 bg-lightBackground">
       <div className="container mx-auto px-4">
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary text-center mb-12">
-          Why Choose MD Builders?
+          {dict.trustBadges.title}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {badges.map((badge, index) => {

@@ -1,36 +1,40 @@
 import { Shield, Award, CheckCircle, FileCheck, HardHat, Star } from 'lucide-react';
 
-export default function TrustCertifications() {
+interface TrustCertificationsProps {
+  dict: any
+}
+
+export default function TrustCertifications({ dict }: TrustCertificationsProps) {
   const certifications = [
     {
       icon: Shield,
-      title: 'NHBRC Registered',
-      description: 'National Home Builders Registration Council',
+      title: dict.trustCertifications.certifications.nhbrc.title,
+      description: dict.trustCertifications.certifications.nhbrc.description,
     },
     {
       icon: CheckCircle,
-      title: 'Insured & Bonded',
-      description: 'Full liability coverage',
+      title: dict.trustCertifications.certifications.insured.title,
+      description: dict.trustCertifications.certifications.insured.description,
     },
     {
       icon: Award,
-      title: '10 Year Guarantee',
-      description: 'Structural warranty included',
+      title: dict.trustCertifications.certifications.guarantee.title,
+      description: dict.trustCertifications.certifications.guarantee.description,
     },
     {
       icon: FileCheck,
-      title: 'Licensed Contractor',
-      description: 'Fully certified & compliant',
+      title: dict.trustCertifications.certifications.licensed.title,
+      description: dict.trustCertifications.certifications.licensed.description,
     },
     {
       icon: HardHat,
-      title: 'Safety Compliant',
-      description: 'ISO safety standards',
+      title: dict.trustCertifications.certifications.safety.title,
+      description: dict.trustCertifications.certifications.safety.description,
     },
     {
       icon: Star,
-      title: 'Quality Assured',
-      description: 'Premium workmanship',
+      title: dict.trustCertifications.certifications.quality.title,
+      description: dict.trustCertifications.certifications.quality.description,
     },
   ];
 
@@ -39,10 +43,10 @@ export default function TrustCertifications() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Professional Certifications & Guarantees
+            {dict.trustCertifications.title}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Your peace of mind is our priority. We're fully certified, insured, and committed to excellence.
+            {dict.trustCertifications.subtitle}
           </p>
         </div>
 
@@ -78,7 +82,7 @@ export default function TrustCertifications() {
           <div className="inline-flex items-center space-x-2 bg-white px-6 py-3 rounded-full shadow-md">
             <Shield className="w-5 h-5 text-[#FFD600]" />
             <span className="text-gray-900 font-semibold">
-              Trusted by 500+ Satisfied Clients Across Gauteng
+              {dict.trustCertifications.footer}
             </span>
           </div>
         </div>

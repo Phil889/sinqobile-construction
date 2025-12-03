@@ -3,20 +3,31 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { X, MapPin, Calendar } from 'lucide-react'
-import { getAllProjects, getAllCategories, getFeaturedProjects } from '@/lib/all-projects-data'
-import type { ProjectData } from '@/lib/all-projects-data'
+import type { TranslatedProjectData } from '@/lib/multilingual-projects'
 
-export default function ProjectGallery() {
+interface ProjectGalleryProps {
+  dict: any
+  lang: string
+  projects: TranslatedProjectData[]
+  allProjectsCount: number
+  categories: string[]
+}
+
+export default function ProjectGallery({
+  dict,
+  lang,
+  projects,
+  allProjectsCount,
+  categories: allCategories
+}: ProjectGalleryProps) {
   const [selectedCategory, setSelectedCategory] = useState('all')
-  const [selectedProject, setSelectedProject] = useState<ProjectData | null>(null)
+  const [selectedProject, setSelectedProject] = useState<TranslatedProjectData | null>(null)
 
-  // Get featured projects for home page display
-  const featuredProjects = getFeaturedProjects()
-  const allProjects = getAllProjects()
-  const displayProjects = featuredProjects.length > 0 ? featuredProjects : allProjects.slice(0, 9)
+  // Use the provided translated projects
+  const displayProjects = projects
   
-  // Get unique categories from all projects
-  const categories = ['all', ...getAllCategories()]
+  // Get unique categories
+  const categories = ['all', ...allCategories]
 
   const filteredProjects = selectedCategory === 'all'
     ? displayProjects
@@ -27,10 +38,10 @@ export default function ProjectGallery() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-primary mb-4">
-            Our Recent Projects
+            {dict.projectGallery.title}
           </h2>
           <p className="text-secondary text-lg max-w-2xl mx-auto">
-            Browse through our portfolio of completed construction and renovation projects across Gauteng
+            {dict.projectGallery.subtitle}
           </p>
         </div>
 
@@ -46,7 +57,7 @@ export default function ProjectGallery() {
                   : 'bg-lightBackground text-secondary hover:bg-primary hover:text-white'
               }`}
             >
-              {category === 'all' ? 'All Projects' : category.charAt(0).toUpperCase() + category.slice(1)}
+              {category === 'all' ? dict.projectGallery.allProjects : (dict.categories[category] || category.charAt(0).toUpperCase() + category.slice(1))}
             </button>
           ))}
         </div>
@@ -60,10 +71,14 @@ export default function ProjectGallery() {
               className="group cursor-pointer relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all"
             >
               <div className="aspect-[4/3] relative bg-gray-100">
-                <img
+                <Image
                   src={project.image}
                   alt={project.seoAlt}
-                  className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                  quality={85}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
@@ -84,13 +99,13 @@ export default function ProjectGallery() {
               </div>
               <div className="absolute top-4 right-4">
                 <span className="bg-accent text-white px-3 py-1 rounded-full text-xs font-medium">
-                  {project.category}
+                  {dict.categories[project.category] || project.category}
                 </span>
               </div>
               {project.featured && (
                 <div className="absolute top-4 left-4">
                   <span className="bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">
-                    Featured
+                    {dict.projectGallery.featured}
                   </span>
                 </div>
               )}
@@ -101,10 +116,10 @@ export default function ProjectGallery() {
         {/* View All Projects Link */}
         <div className="text-center mt-12">
           <a
-            href="/en/our-work"
+            href={`/${lang}/our-work`}
             className="inline-block bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
           >
-            View All Projects ({allProjects.length} total)
+            {dict.projectGallery.viewAll} ({allProjectsCount} {dict.projectGallery.total})
           </a>
         </div>
 
@@ -120,10 +135,14 @@ export default function ProjectGallery() {
                   <X size={24} className="text-secondary" />
                 </button>
                 <div className="relative h-96 bg-gray-100">
-                  <img
+                  <Image
                     src={selectedProject.image}
                     alt={selectedProject.seoAlt}
-                    className="absolute inset-0 w-full h-full object-contain rounded-t-lg"
+                    fill
+                    sizes="(max-width: 1200px) 100vw, 1200px"
+                    className="object-contain rounded-t-lg"
+                    priority
+                    quality={90}
                   />
                 </div>
               </div>
@@ -133,27 +152,27 @@ export default function ProjectGallery() {
                     {selectedProject.title}
                   </h2>
                   <span className="bg-lightBackground text-secondary px-4 py-2 rounded-full text-sm font-medium">
-                    {selectedProject.category}
+                    {dict.categories[selectedProject.category] || selectedProject.category}
                   </span>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
                   <div>
-                    <p className="text-sm text-gray-500">Location</p>
+                    <p className="text-sm text-gray-500">{dict.projectGallery.modal.location}</p>
                     <p className="font-medium text-secondary">{selectedProject.location}</p>
                   </div>
                   {selectedProject.duration && (
                     <div>
-                      <p className="text-sm text-gray-500">Duration</p>
+                      <p className="text-sm text-gray-500">{dict.projectGallery.modal.duration}</p>
                       <p className="font-medium text-secondary">{selectedProject.duration}</p>
                     </div>
                   )}
                   <div>
-                    <p className="text-sm text-gray-500">Type</p>
+                    <p className="text-sm text-gray-500">{dict.projectGallery.modal.type}</p>
                     <p className="font-medium text-secondary capitalize">{selectedProject.clientType}</p>
                   </div>
                   {selectedProject.completionYear && (
                     <div>
-                      <p className="text-sm text-gray-500">Completed</p>
+                      <p className="text-sm text-gray-500">{dict.projectGallery.modal.completed}</p>
                       <p className="font-medium text-secondary">{selectedProject.completionYear}</p>
                     </div>
                   )}
@@ -172,10 +191,10 @@ export default function ProjectGallery() {
                   </div>
                 )}
                 <a
-                  href="tel:0719334063"
+                  href="tel:+27828688396"
                   className="inline-block bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors"
                 >
-                  Get Similar Work Done
+                  {dict.projectGallery.modal.getSimilarWork}
                 </a>
               </div>
             </div>

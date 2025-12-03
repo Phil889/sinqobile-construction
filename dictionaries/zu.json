@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "MD Builders - Izinsiza Zokwakha Ezinobuchwepheshe eGauteng",
+    "title": "Sinqobile Construction - Izinsiza Zokwakha Ezinobuchwepheshe eGauteng",
     "description": "Izinsiza zokwakha, ukuphenda, ukupenda, ukwendlala amatshe, ukubeka amathayela, kanye nezinsiza zamanzi eGauteng yonke.",
     "keywords": "ukwakha, izinsiza zokwakha, ukuphenda, ukupenda, ukwendlala amatshe, ukubeka amathayela, Gauteng, Johannesburg, Pretoria"
   },
@@ -9,6 +9,8 @@
     "about": "Ngathi",
     "services": "Izinsiza",
     "work": "Umsebenzi Wethu",
+    "calculator": "Isibali Sezindleko",
+    "blog": "Ibhulogi",
     "contact": "Xhumana Nathi",
     "faq": "Imibuzo"
   },
@@ -22,6 +24,97 @@
     "insured": "Kufakwe Inshuwarensi Ephelele",
     "guaranteed": "Umsebenzi Uqinisekisiwe",
     "gauteng": "Sisebenzela Lonke iGauteng"
+  },
+  "callOutBanner": {
+    "message": "⚠️ Imali yokushayela engu-R400 yokuvakashela indawo ukuze kuhlolwe"
+  },
+  "trustBadges": {
+    "title": "Kungani Ukhethe i-Sinqobile Construction?",
+    "badges": {
+      "insured": {
+        "title": "Kufakwe Inshuwarensi Ephelele",
+        "description": "Ukumbozwa kwesibopho esiphelele"
+      },
+      "guaranteed": {
+        "title": "Ikhwalithi Iqinisekisiwe",
+        "description": "Isiqinisekiso somsebenzi kuwo wonke amaphrojekthi"
+      },
+      "experience": {
+        "title": "Iminyaka eyi-15+ Yolwazi",
+        "description": "Kuthenjwa izakhamuzi zaseGauteng"
+      },
+      "projects": {
+        "title": "Amaphrojekthi angu-500+",
+        "description": "Aqediwe ngempumelelo"
+      },
+      "team": {
+        "title": "Iqembu Elinobuchwepheshe",
+        "description": "Ochwepheshe abanesitifiketi"
+      },
+      "registered": {
+        "title": "PTY LTD Ibhalisiwe",
+        "description": "Ibhizinisi elisemthethweni"
+      }
+    }
+  },
+  "trustCertifications": {
+    "title": "Izitifiketi Zobuchwepheshe Neziqinisekiso",
+    "subtitle": "Ukuthula kwakho kwengqondo kuyinto yethu ephambili. Sinesitifiketi esigcwele, sinenshuwarensi, futhi sizinikele ekubeni ngcono.",
+    "certifications": {
+      "nhbrc": {
+        "title": "NHBRC Ibhalisiwe",
+        "description": "Umkhandlu Wokubhalisa Abakhi Bamakhaya Kazwelonke"
+      },
+      "insured": {
+        "title": "Kunenshuwarensi Futhi Kuboshiwe",
+        "description": "Ukumbozwa kwesibopho esigcwele"
+      },
+      "guarantee": {
+        "title": "Isiqinisekiso Seminyaka eyi-10",
+        "description": "Isiqinisekiso sesakhiwo sifakiwe"
+      },
+      "licensed": {
+        "title": "Umakhi Onelayisensi",
+        "description": "Unesitifiketi esigcwele futhi uyalandela"
+      },
+      "safety": {
+        "title": "Uyalandela Ukuphepha",
+        "description": "Amazinga okuphepha e-ISO"
+      },
+      "quality": {
+        "title": "Ikhwalithi Iqinisekisiwe",
+        "description": "Umsebenzi wezinga eliphezulu"
+      }
+    },
+    "footer": "Kuthenjwa Amakhasimende angu-500+ Anelisekile Kuyo Yonke iGauteng"
+  },
+  "projectGallery": {
+    "title": "Amaphrojekthi Ethu Akamuva",
+    "subtitle": "Bheka iphothifoliyo yethu yamaphrojekthi okwakha nokuvuselela aqediwe kuyo yonke iGauteng",
+    "allProjects": "Wonke Amaphrojekthi",
+    "viewAll": "Bona Wonke Amaphrojekthi",
+    "total": "isamba",
+    "featured": "Okuvelele",
+    "modal": {
+      "location": "Indawo",
+      "duration": "Isikhathi",
+      "type": "Uhlobo",
+      "completed": "Kuqediwe",
+      "getSimilarWork": "Thola Umsebenzi Ofanayo Owenziwe"
+    }
+  },
+  "googleReviews": {
+    "title": "Okushiwo Amakhasimende Ethu",
+    "reviews": "Ukubuyekezwa kwe-Google",
+    "readAll": "Funda Konke Ukubuyekezwa",
+    "verifiedOn": "Kuqinisekisiwe ku-Google",
+    "trustedProfile": "Iphrofayela Yebhizinisi Elithembekile"
+  },
+  "googleBusinessCTA": {
+    "title": "Sithole ku-Google",
+    "subtitle": "Bheka ukubuyekezwa kwethu kusuka kumakhasimende anelisekile kulo lonke iGauteng",
+    "leaveReview": "Sishiyele Ukubuyekezwa",
+    "findOnMaps": "Sithole Emaphini"
   },
   "services": {
     "title": "Izinsiza Zethu",
@@ -51,7 +144,19 @@
         "name": "Izinsiza Zamanzi",
         "description": "Ukufaka, ukulungisa, nokunakekela"
       }
-    }
+    },
+    "viewAllServices": "Bona Zonke Izinsiza",
+    "totalServices": "isamba",
+    "projectsCompleted": "amaphrojekthi aqediwe"
+  },
+  "mobileCTA": {
+    "callNow": "Shayela Manje",
+    "whatsapp": "WhatsApp"
+  },
+  "whatsappFloat": {
+    "chatWithUs": "Xoxa nathi",
+    "needHelp": "Udinga usizo? Xoxa no-Dingwayo Reason Ndlovu ku-WhatsApp",
+    "startChat": "Qala Ingxoxo"
   },
   "extendedServices": {
     "brickwork": {
@@ -107,15 +212,34 @@
       "description": "Izixazululo zokuvimbela amanzi ephansi, ephahla, nangaphandle"
     }
   },
+  "categories": {
+    "roofing": "Uphahla",
+    "building": "Ukwakha",
+    "tiling": "Ukubeka Amathayela",
+    "extensions": "Ukwandiswa",
+    "fencing": "Ucingo",
+    "plumbing": "Izinsiza Zamanzi",
+    "paving": "Ukwendlala Amatshe",
+    "flooring": "Izimpahla Zephansi",
+    "installation": "Ukufakwa",
+    "concrete": "Ikhonkrithi",
+    "plastering": "Ukuphenda",
+    "painting": "Ukupenda",
+    "maintenance": "Ukunakekelwa",
+    "renovation": "Ukuvuselela",
+    "repairs": "Ukulungisa",
+    "brickwork": "Umsebenzi Wezitina",
+    "waterproofing": "Ukuvimbela Amanzi"
+  },
   "pages": {
     "about": {
-      "title": "Nge-MD Builders",
+      "title": "Nge-Sinqobile Construction",
       "subtitle": "Umlingani Wakho Othembekile Wokwakha eGauteng",
       "heroTitle": "Iminyaka eyi-15+ Yobuhle Bokwakha",
       "heroSubtitle": "Sakha ukwethembana, iphrojekthi eyodwa ngesikhathi kuyo yonke iGauteng Province",
       "story": {
         "title": "Indaba Yethu",
-        "content": "Yasungulwa ngu-Meshack Dlamini, i-MD Builders isebenzele umphakathi waseGauteng iminyaka engaphezu kwe-15. Okwaqala njengephrojekthi encane yokwakha sekukhule kwaba elinye lamagama athembekile kakhulu ekwakheni kwamakhaya nezebhizinisi kuyo yonke iJohannesburg, iPretoria, nezindawo ezizungezile."
+        "content": "Yasungulwa ngu-Dingwayo Reason Ndlovu, i-Sinqobile Construction isebenzele umphakathi waseGauteng iminyaka engaphezu kwe-15. Okwaqala njengephrojekthi encane yokwakha sekukhule kwaba elinye lamagama athembekile kakhulu ekwakheni kwamakhaya nezebhizinisi kuyo yonke iJohannesburg, iPretoria, nezindawo ezizungezile."
       },
       "mission": {
         "title": "Inhloso Yethu",
@@ -143,7 +267,7 @@
         ]
       },
       "experience": {
-        "title": "Kungani Ukhethe i-MD Builders?",
+        "title": "Kungani Ukhethe i-Sinqobile Construction?",
         "items": [
           "Ngaphezu kweminyaka eyi-15 yolwazi lokwakha",
           "Kunesitifiketi esigcwele futhi kunenshuwarensi",
@@ -159,6 +283,29 @@
       "subtitle": "Izixazululo Zokwakha Eziphelele Kuyo Yonke iGauteng",
       "heroTitle": "Izinsiza Zokwakha Ezinobuchwepheshe",
       "heroSubtitle": "Kusukela ekulungiseni okuncane kuya emaphrojekthi amakhulu okwakha, sikwazi konke",
+      "coreServicesTitle": "Izinsiza Zethu Eziyinhloko",
+      "coreServicesSubtitle": "Izinsiza zokwakha ezinobuchwepheshe ezinekhwalithi eqinisekisiwe nezintengo ezincintisanayo",
+      "additionalServicesTitle": "Izinsiza Ezengeziwe",
+      "additionalServicesSubtitle": "Izixazululo zokwakha eziphelele kuzo zonke izidingo zakho zokwakha",
+      "projectsCompleted": "amaphrojekthi aqediwe",
+      "projects": "amaphrojekthi",
+      "processSubtitle": "Inqubo yethu efakazelwe yezinyathelo ezi-5 iqinisekisa imiphumela yekhwalithi njalo",
+      "serviceAreasTitle": "Sisebenzela Zonke Izindawo ZaseGauteng",
+      "serviceAreasDescription": "Sinikeza izinsiza zokwakha ezinobuchwepheshe kuyo yonke iGauteng Province, kufaka phakathi:",
+      "viewAllServiceAreas": "Bona Zonke Izindawo Zensiza",
+      "whyChooseTitle": "Kungani Ukhethe i-Sinqobile Construction?",
+      "whyChooseBenefits": [
+        "Ngaphezu kweminyaka eyi-15 yolwazi",
+        "Kunesitifiketi esigcwele futhi kunenshuwarensi",
+        "Izintengo zamahhala, azinasibopho",
+        "Umsebenzi wekhwalithi uqinisekisiwe",
+        "Izintengo ezincintisanayo",
+        "Izinsiza zokusiza ngokushesha ziyatholakala",
+        "Iqembu elinobuchwepheshe, elithembekile",
+        "Ukugxila ekuneliseni kwekhasimende"
+      ],
+      "getFreeQuote": "Thola Intengo Yamahhala: +27 82 868 8396",
+      "callNow": "Shayela Manje: +27 82 868 8396",
       "process": {
         "title": "Inqubo Yethu",
         "steps": [
@@ -193,19 +340,199 @@
     "ourWork": {
       "title": "Umsebenzi Wethu",
       "subtitle": "Iphothifoliyo Yamaphrojekthi Okwakha Aqediwe",
-      "heroTitle": "Bona Umsebenzi Wethu Wekhwalithi",
+      "heroTitle": "Amaphrojekthi Ethu Okwakha",
       "heroSubtitle": "Bheka iphothifoliyo yethu yamaphrojekthi aphumelelayo kuyo yonke iGauteng",
-      "filterAll": "Wonke Amaphrojekthi",
-      "projectDetails": "Imininingwane Yephrojekthi",
-      "viewProject": "Bona Iphrojekthi",
-      "categories": "Izigaba",
-      "locations": "Izindawo",
+      "projectsCompleted": "Amaphrojekthi Aqediwe",
+      "serviceCategories": "Izigaba Zensiza",
+      "locationsServed": "Izindawo",
       "searchPlaceholder": "Sesha amaphrojekthi...",
+      "filters": "Izihlungi",
+      "allCategories": "Zonke Izigaba",
+      "allLocations": "Zonke Izindawo",
+      "category": "Isigaba",
+      "location": "Indawo",
+      "search": "Sesha",
+      "clearAllFilters": "Susa Zonke Izihlungi",
+      "showing": "Kubonisa",
+      "of": "kwa",
+      "projects": "amaphrojekthi",
+      "show": "Bonisa",
+      "all": "Konke",
+      "featured": "Okuvelele",
       "noResults": "Awekho amaphrojekthi atholakele ahambisana nezidingo zakho",
-      "loadMore": "Layisha Amaphrojekthi Amaningi"
+      "loadingMore": "Kulayisha amaphrojekthi engeziwe...",
+      "previous": "Okwedlule",
+      "next": "Okulandelayo",
+      "backToTop": "↑ Buyela Phezulu",
+      "modalLocation": "Indawo",
+      "modalDuration": "Isikhathi",
+      "modalType": "Uhlobo",
+      "modalCompleted": "Kuqediwe",
+      "getSimilarWork": "Thola Umsebenzi Ofanayo Owenziwe",
+      "ctaTitle": "Usukulungele Ukuqala Iphrojekthi Yakho?",
+      "ctaSubtitle": "Joyina amakhasimende ethu anelisekile futhi ubone izinsiza zokwakha ezikhwalithile",
+      "callNow": "Shayela Manje: +27 82 868 8396",
+      "getFreeQuote": "Thola Intengo Yamahhala"
+    },
+    "costCalculator": {
+      "title": "Isibali Sezindleko Zokwakha",
+      "subtitle": "Thola isilinganiso ngokushesha sephrojekthi yakho yokwakha eGauteng",
+      "description": "Isibali sethu samahhala sinikeza izindleko ezinembile ezisekelwe eminyakeni eyi-15+ yolwazi namaphrojekthi angu-500+ aqediwe",
+      "howItWorks": {
+        "title": "Indlela Isibali Sethu Esisebenza Ngayo",
+        "steps": [
+          {
+            "title": "Khetha Insiza",
+            "description": "Khetha uhlobo lwensiza yakho yokwakha"
+          },
+          {
+            "title": "Imininingwane Yephrojekthi",
+            "description": "Faka ubukhulu, indawo, nokuphuthuma"
+          },
+          {
+            "title": "Thola Isilinganiso",
+            "description": "Thola izindleko ngokushesha"
+          },
+          {
+            "title": "Cela Intengo",
+            "description": "Thola intengo enemininingwane enembile"
+          }
+        ]
+      },
+      "whyUse": {
+        "title": "Kungani Usebenzisa Isibali Sethu Sezindleko?",
+        "benefits": [
+          {
+            "title": "Imiphumela Ngokushesha",
+            "description": "Thola izilinganiso zezindleko ngemizuzwana, akulindile okudingekayo"
+          },
+          {
+            "title": "Izintengo Ezinembile",
+            "description": "Kusekelwe kudatha yephrojekthi yangempela nezinga lemakethe lamanje"
+          },
+          {
+            "title": "Akukho Sibopho",
+            "description": "Kumahhala ukusebenzisa ngaphandle kwesibopho noma ukuxhumana okudingekayo"
+          },
+          {
+            "title": "Kusekelwe Kochwepheshe",
+            "description": "Izibalo ezivela eminyakeni eyi-15+ yolwazi lokwakha"
+          }
+        ]
+      },
+      "understanding": {
+        "title": "Ukuqonda Isilinganiso Sakho",
+        "included": {
+          "title": "Okufakiwe Esilinganisweni",
+          "items": [
+            "Izindleko zabasebenzi ezisekelwe ekuxakekeni kwephrojekthi",
+            "Izinto ezijwayelekile nezimpahla",
+            "Imishini eyisisekelo namathuluzi",
+            "Ukuphathwa kwephrojekthi nokubhekwa",
+            "Ukuhlanza nokususa imfucuza"
+          ]
+        },
+        "factors": {
+          "title": "Izici Ezingathinta Izindleko Zokugcina",
+          "items": [
+            "Ukukhetha izinto ezithile (premium vs. ejwayelekile)",
+            "Ukufinyeleleka kwendawo nezimo",
+            "Izinkinga zesakhiwo ezitholakala ngesikhathi somsebenzi",
+            "Izidingo zokuklama okwenzelwe wena",
+            "Izimvume nezidingo zokulandela",
+            "Isidingo senkathi yonyaka nokutholakala kwezinto"
+          ]
+        },
+        "accurateQuote": {
+          "title": "Thola Intengo Enembile",
+          "description": "Nakuba isibali sethu sinikeza isilinganiso esithembekile, iphrojekthi ngayinye iyingqayizivele. Ukuze uthole izintengo ezinembile kakhulu ezilungiselelwe izidingo zakho ezithile, sincoma ukucela intengo enemininingwane. Iqembu lethu lizokwenza:",
+          "benefits": [
+            "Vakashela indawo yakho ukuze kuhlolwe kahle",
+            "Xoxa ngezidingo zakho ezithile nezintandokazi",
+            "Nikeza ukwahlukaniswa okwemininingwane kwazo zonke izindleko",
+            "Nikeza izincomo zobuchwepheshe",
+            "Phendula yonke imibuzo yakho"
+          ],
+          "button": "Cela Intengo Enemininingwane Yamahhala"
+        }
+      },
+      "whyChoose": {
+        "title": "Kungani Ukhetha i-Sinqobile Construction?",
+        "stats": [
+          {
+            "value": "15+",
+            "label": "Iminyaka Yolwazi"
+          },
+          {
+            "value": "500+",
+            "label": "Amaphrojekthi Enziwe"
+          },
+          {
+            "value": "4.9★",
+            "label": "Isilinganiso Sekhasimende"
+          },
+          {
+            "value": "100%",
+            "label": "Ukwaneliseka"
+          }
+        ]
+      },
+      "cta": {
+        "title": "Usukulungele Ukuqala Iphrojekthi Yakho?",
+        "subtitle": "Thola intengo enemininingwane, enembile kusuka eqenjini lethu elinolwazi",
+        "requestQuote": "Cela Intengo Yamahhala",
+        "call": "Shayela: +27 82 868 8396"
+      },
+      "calculator": {
+        "header": "Isibali Sezindleko",
+        "subheader": "Thola isilinganiso ngokushesha sephrojekthi yakho",
+        "serviceType": "Uhlobo Lwensiza",
+        "serviceTypePlaceholder": "Khetha insiza...",
+        "projectSize": "Ubukhulu Bephrojekthi",
+        "projectSizePlaceholder": "Khetha ubukhulu bephrojekthi...",
+        "location": "Indawo (Ongakhetha)",
+        "locationPlaceholder": "Khetha indawo yakho...",
+        "urgency": "Ukuphuthuma Kwephrojekthi",
+        "standard": "Okujwayelekile",
+        "urgent": "Okuphuthumayo (+20%)",
+        "calculateButton": "Bala Isilinganiso",
+        "estimatedCost": "Izindleko Ezilinganiselwe",
+        "basedOn": "Kusekelwe ku",
+        "project": "iphrojekthi",
+        "locationLabel": "Indawo",
+        "urgentTimeline": "Isikhathi esiphuthumayo",
+        "standardTimeline": "Isikhathi esijwayelekile",
+        "includesCallout": "Kufaka phakathi imali yokushayela engu-R400",
+        "note": "Qaphela:",
+        "noteText": "Lesi yisilinganiso esisekelwe kumaphrojekthi avamile. Izindleko zokugcina zingahluka kuye ngezidingo ezithile, izinto, nezimo zendawo.",
+        "getAccurateQuote": "Thola Intengo Enembile",
+        "trustIndicators": {
+          "projects": "Amaphrojekthi",
+          "years": "Iminyaka",
+          "rating": "Isilinganiso"
+        },
+        "services": {
+          "building": "Ukwakha Okusha Kwesakhiwo",
+          "renovation": "Ukuvuselela Ikhaya",
+          "roofing": "Izinsiza Zophahla",
+          "paving": "Ukwendlala Amatshe Nezindlela Zemoto",
+          "painting": "Izinsiza Zokupenda",
+          "plumbing": "Umsebenzi Wamanzi",
+          "tiling": "Izinsiza Zamathayela",
+          "waterproofing": "Ukuvimbela Amanzi",
+          "extensions": "Ukwandiswa Kwekhaya",
+          "landscaping": "Ukuhlela Ingadi"
+        },
+        "sizes": {
+          "small": "Encane (< 50m²)",
+          "medium": "Ephakathi (50-150m²)",
+          "large": "Enkulu (150-300m²)",
+          "xlarge": "Enkulu Kakhulu (> 300m²)"
+        }
+      }
     },
     "contact": {
-      "title": "Xhumana Ne-MD Builders",
+      "title": "Xhumana Ne-Sinqobile Construction",
       "subtitle": "Xhumana Nathi Ngephrojekthi Yakho Elandelayo Yokwakha",
       "heroTitle": "Ake Sakhe Okuthile Okukhulu Ndawonye",
       "heroSubtitle": "Sixhumane namuhla ukuze uthole ukubonisana kwamahhala nentengo",
@@ -220,18 +547,28 @@
         "submit": "Thumela Umlayezo",
         "sending": "Kuyathunyelwa...",
         "success": "Umlayezo uthunyelwe ngempumelelo! Sizokuxhumana nawe maduze.",
-        "error": "Yehluleka ukuthumela umlayezo. Sicela uzame futhi noma usishayele ngqo."
+        "error": "Yehluleka ukuthumela umlayezo. Sicela uzame futhi noma usishayele ngqo.",
+        "otherLocation": "Okunye (sicela ucacise emlayezweni)"
       },
       "info": {
         "title": "Ulwazi Lokuxhumana",
-        "phone": "071 933 4063",
+        "phone": "+27 82 868 8396",
+        "phone2": "+27 81 569 2985",
         "email": "info@mdbuilders.co.za",
+        "emailLabel": "I-imeyili",
         "hours": "Mso - Gwe: 7:00 AM - 6:00 PM\nMga: 8:00 AM - 4:00 PM\nSon: Amashayelo okusiza kuphela",
-        "emergency": "Izinsiza Zokusiza 24/7 Ziyatholakala"
+        "emergency": "Izinsiza Zokusiza 24/7 Ziyatholakala",
+        "emergencyDescription": "Ngezimo eziphuthumayo zokwakha ezifana namapayipi aphukile, izinkinga zikagesi, noma umonakalo wesakhiwo.",
+        "emergencyLine": "Umugqa Wokusiza Ngokushesha"
+      },
+      "callOutFee": {
+        "title": "Ulwazi Lwemali Yokushayela",
+        "description": "Le mali ihlanganisa ukuvakashela kwethu kobuchwepheshe endaweni ukuze kuhlolwe ukuthi yimuphi umsebenzi odingeka ephrojekthini yakho."
       },
       "serviceAreas": {
         "title": "Izindawo Zensiza",
-        "description": "Sisebenzela ngokuziqhenya amakhasimende akhaya nezebhizinisi kuyo yonke iGauteng Province"
+        "description": "Sisebenzela ngokuziqhenya amakhasimende akhaya nezebhizinisi kuyo yonke iGauteng Province",
+        "notListed": "Awuboni indawo yakho ohlwini? Sixhumane - singase sikwazi ukusiza!"
       }
     },
     "faq": {
@@ -253,7 +590,41 @@
             },
             {
               "question": "Ninezitifiketi futhi ninenshuwarensi?",
-              "answer": "Yebo, i-MD Builders inezitifiketi ezigcwele futhi inenshuwarensi. Siphatha inshuwarensi yesibopho esiphelele ukuvikela kokubili amakhasimende ethu neqembu lethu ngesikhathi sawo wonke amaphrojekthi."
+              "answer": "Yebo, i-Sinqobile Construction inezitifiketi ezigcwele futhi inenshuwarensi. Siphatha inshuwarensi yesibopho esiphelele ukuvikela kokubili amakhasimende ethu neqembu lethu ngesikhathi sawo wonke amaphrojekthi."
+            }
+          ]
+        },
+        {
+          "title": "Iphrojekthi Nezintengo",
+          "items": [
+            {
+              "question": "Amaphrojekthi athatha isikhathi esingakanani ngokuvamile?",
+              "answer": "Izikhathi zamaphrojekthi ziyahluka kuye ngokubanzi nobunkimbinkimbi. Ukulungisa okuncane kungathatha izinsuku ezi-1-2, kuyilapho amaphrojekthi amakhulu okwakha angathatha amasonto ambalwa. Sinikeza izikhathi ezinemininingwane ngentengo ngayinye."
+            },
+            {
+              "question": "Yiziphi izindlela zokukhokha enizamukelayo?",
+              "answer": "Samukela imali, ukudluliswa kwemali yasebhange, nezinkokhelo zamakhadi. Kumaphrojekthi amakhulu, sivame ukudinga idiphozithi ukuze siqale umsebenzi, futhi ibhalansi ikhokhelwa lapho umsebenzi uqediwe."
+            },
+            {
+              "question": "Ninikeza iziqinisekiso emsebenzini wenu?",
+              "answer": "Yebo, sima ngemuva komsebenzi wethu ngeziqinisekiso eziphelele. Izikhathi zesiqinisekiso ziyahluka ngohlobo lwensiza, futhi sizonikezela ngemininingwane ephelele yesiqinisekiso ngentengo yakho."
+            }
+          ]
+        },
+        {
+          "title": "Izinsiza Nezinto",
+          "items": [
+            {
+              "question": "Ninikeza izinto noma kufanele ngizithenga?",
+              "answer": "Singanikezela zonke izinto njengengxenye yensiza yethu, noma sisebenze ngezinto ozithenga wena. Sizoneluleka ngendlela engcono kakhulu ngokusekelwe ephrojekthini yakho nasesabelweni sakho semali."
+            },
+            {
+              "question": "Ningasebenza ngempelasonto noma ntambama?",
+              "answer": "Yebo, sinikeza ukuhlelwa kwesikhathi okuguquguqukayo okufaka phakathi umsebenzi wempelasonto nentambama kumaphrojekthi aphuthumayo noma ukwaneliseka kwekhasimende. Izindleko ezengeziwe zingasebenza emsebenzini wangemuva kwamahora."
+            },
+            {
+              "question": "Niphatha ukulungiswa kwezimo eziphuthumayo?",
+              "answer": "Yebo, sinikeza izinsiza zokulungisa eziphuthumayo ze-24/7 zezinkinga eziphuthumayo ezifana namapayipi aphukile, izinkinga zikagesi, noma umonakalo wesakhiwo. Sixhumane ngokushesha ukuze uthole usizo lwesimo esiphuthumayo."
             }
           ]
         }
@@ -263,12 +634,113 @@
         "subtitle": "Ungangabazi ukufinyelela - silapha ukusiza!",
         "button": "Sixhumane"
       }
+    },
+    "blog": {
+      "title": "Imininingwane Yokwakha Namathiphu",
+      "subtitle": "Izeluleko zobuchwepheshe, imihlahlandlela, nemininingwane yemboni kusuka ku-Sinqobile Construction. Funda ngezindleko zokwakha, imibono yokuvuselela, imithetho yokwakha, nokunye.",
+      "searchPlaceholder": "Sesha izindatshana...",
+      "readMore": "Funda Kabanzi",
+      "previous": "Okwedlule",
+      "next": "Okulandelayo",
+      "noResults": "Azikho izindatshana ezitholakele ezihambisana nezidingo zakho. Zama ukulungisa ukusesha kwakho noma izihlungi.",
+      "ctaTitle": "Udinga Izeluleko Zobuchwepheshe Zokwakha?",
+      "ctaSubtitle": "Iqembu lethu e-Sinqobile Construction lilapha ukusiza ngephrojekthi yakho yokwakha. Thola ukubonisana kwamahhala nentengo namuhla.",
+      "call": "Shayela: +27 82 868 8396",
+      "getFreeQuote": "Thola Intengo Yamahhala",
+      "categories": {
+        "all": "Konke",
+        "buildingCosts": "Izindleko Zokwakha",
+        "contractorTips": "Amathiphu Omakhi",
+        "renovations": "Ukuvuselela",
+        "regulations": "Imithetho",
+        "roofing": "Uphahla",
+        "maintenance": "Ukunakekelwa",
+        "designIdeas": "Imibono Yokuklama"
+      }
+    }
+  },
+  "aboutPage": {
+    "heroStats": {
+      "experience": "Iminyaka eyi-15+ Yolwazi",
+      "insured": "Kufakwe Inshuwarensi Ephelele",
+      "allAreas": "Zonke Izindawo ZaseGauteng"
+    },
+    "getFreeQuote": "Thola Intengo Yamahhala",
+    "serviceAreas": {
+      "title": "Sisebenzela Zonke Izindawo ZaseGauteng",
+      "description": "Kusukela eJohannesburg kuya ePretoria, iEast Rand kuya eWest Rand - siletha izinsiza zokwakha ezikhwalithile emnyango wakho.",
+      "viewAll": "Bona Zonke Izindawo Zensiza"
+    },
+    "finalCTA": {
+      "title": "Usukulungele Ukuqala Iphrojekthi Yakho?",
+      "description": "Xhumana ne-Sinqobile Construction namuhla ukuze uthole ukubonisana kwamahhala nentengo. Ake sakhe okuthile okukhulu ndawonye!"
     }
   },
   "about": {
-    "title": "Ngo-Meshack Dlamini",
-    "description": "Enamava angaphezu kweminyaka eyi-15 embonini yokwakha, u-Meshack Dlamini wakhe igama lokusebenza kahle nokusebenza okuthembekile kuyo yonke iGauteng.",
+    "title": "Ngo-Dingwayo Reason Ndlovu",
+    "description": "Enamava angaphezu kweminyaka eyi-15 embonini yokwakha, u-Dingwayo Reason Ndlovu wakhe igama lokusebenza kahle nokusebenza okuthembekile kuyo yonke iGauteng.",
     "experience": "Kusukela ekulungiseni amakhaya amancane kuya emiphakathini emikhulu yokwakha, sinikeza imiphumela eyingqayizivele ehlala isikhathi eside."
+  },
+  "testimonialsEnhanced": {
+    "title": "Okushiwo Amakhasimende Ethu",
+    "subtitle": "Ungathathi igama lethu kuphela",
+    "basedOn": "Kusekelwe ku",
+    "verifiedReviews": "ukubuyekezwa okuqinisekisiwe kusuka kumakhasimende anelisekile",
+    "verifiedCustomer": "Ikhasimende Eliqinisekisiwe",
+    "stats": {
+      "projectsCompleted": "Amaphrojekthi Aqediwe",
+      "averageRating": "Isilinganiso Esijwayelekile",
+      "yearsExperience": "Iminyaka Yolwazi",
+      "satisfactionRate": "Isilinganiso Sokuneliseka"
+    }
+  },
+  "whyChooseUs": {
+    "title": "Kungani Ukhethe i-Sinqobile Construction Ephrojekthini Yakho Yokwakha?",
+    "subtitle": "Izinsiza zokwakha ezinobuchwepheshe eGauteng ezinolwazi oluqinisekisiwe ekwakheni, ukuvuselela, ukuphenda, ukupenda, ukwendlala amatshe, ukubeka amathayela, izinsiza zamanzi, nokunye. Nansi indlela abanikazi bezakhiwo kuyo yonke iJohannesburg, iPretoria, neSandton bethemba i-Sinqobile Construction:",
+    "reasons": {
+      "experience": {
+        "title": "Iminyaka eyi-15+ Yolwazi",
+        "description": "Ngaphezu kweminyaka eyi-15 yolwazi lokwakha okungobuchwepheshe sisebenzela iGauteng. Siqedile amaphrojekthi angu-500+ aphumelelayo kuyo yonke iJohannesburg, iPretoria, iSandton, nezindawo ezizungezile."
+      },
+      "licensed": {
+        "title": "Kunesitifiketi Esigcwele Futhi Kunenshuwarensi",
+        "description": "Kubhalisiwe ku-NHBRC futhi kunenshuwarensi ephelele enokumbozwa kwesibopho esiphelele. Impahla yakho nokutshala kwakho imali kuvikelekile kuwo wonke amaphrojekthi esiwenzayo."
+      },
+      "quality": {
+        "title": "Umsebenzi Wekhwalithi Uqinisekisiwe",
+        "description": "Sima ngemuva komsebenzi wethu ngeziqinisekiso eziphelele. Yonke iphrojekthi ihlangabezana namazinga aphezulu ekhwalithi, kusukela ekuphendeni nasekupendeni kuya ekuvuseleleni kwamakhaya okuphelele."
+      },
+      "team": {
+        "title": "Iqembu Elinobuchwepheshe Elinochwepheshe",
+        "description": "Ochwepheshe bethu bokwakha abanesitifiketi bachwepheshe ekwakheni, ukubeka amathayela, ukwendlala amatshe, izinsiza zamanzi, uphahla, nokuvimbela amanzi. Izingcweti ezizibophezele ekubeni ngcono."
+      },
+      "onTime": {
+        "title": "Ukulethwa Kwephrojekthi Ngesikhathi",
+        "description": "Siyahlonipha isikhathi sakho nesabelomali sakho. Amaphrojekthi aqedwa ngesikhathi ngamanani acacile futhi ngaphandle kwezindleko ezifihlekile. Imali yokushayela engu-R400 yokubonisana nezintengo."
+      },
+      "allAreas": {
+        "title": "Sisebenzela Zonke Izindawo ZaseGauteng",
+        "description": "Kusukela eJohannesburg CBD kuya eSandton, ePretoria kuya eCenturion, eMidrand kuya eFourways - sinikeza izinsiza zokwakha ezinobuchwepheshe kuzo zonke izindawo zaseGauteng."
+      },
+      "rating": {
+        "title": "Isilinganiso Sekhasimende esingungu-4.9★",
+        "description": "Kulinganiswe izinkanyezi ezi-4.9 ngamakhasimende anelisekile. Funda ukubuyekezwa kwethu kwe-Google ukuze ubone ukuthi kungani abanikazi bamakhaya namabhizinisi bethemba i-Sinqobile Construction ngezidingo zabo zokwakha."
+      },
+      "emergency": {
+        "title": "Izinsiza Zokusiza 24/7",
+        "description": "Izinsiza zokwakha eziphuthumayo ziyatholakala zokulungisa okuphuthumayo okufaka phakathi amapayipi aphukile, izinkinga zikagesi, ukuvuza kophahla, nomonakalo wesakhiwo. Shayela u-+27 82 868 8396 noma +27 81 569 2985 noma nini."
+      }
+    },
+    "comprehensiveTitle": "Izinsiza Zokwakha Eziphelele Kuyo Yonke iGauteng",
+    "comprehensiveContent": {
+      "para1": "I-Sinqobile Construction ingumlingani wakho wokwakha othembekile osebenzela zonke izindawo zaseGauteng Province. Noma udinga abakhi eJohannesburg, ochwepheshe bokuvuselela eSandton, noma izinsiza zokwakha ePretoria, iqembu lethu elinolwazi liletha imiphumela eyingqayizivele.",
+      "para2": "Izinsiza zethu eziphelele zifaka phakathi ukwakha kwamakhaya, ukwakha okwezebhizinisi, ukuvuselela kwamakhaya, ukuphenda nokupenda, ukwendlala amatshe nezindlela zemoto, izinsiza zamathayela, ukufakwa kwamanzi nokulungiswa, uphahla nokuvimbela amanzi, nokunakekelwa okujwayelekile.",
+      "para3": "Ngeminyaka eyi-15+ yolwazi lokwakha namaphrojekthi angu-500+ aqediwe, sakhe igama lomsebenzi wekhwalithi, insiza ethembekile, namanani ancintisanayo. Isilinganiso sethu sekhasimende esingungu-4.9-star sibonisa ukuzibophezela kwethu ekuneliseni kwekhasimende.",
+      "para4": "Sisebenzela amakhasimende akhaya nezebhizinisi eJohannesburg, eSandton, ePretoria, eCenturion, eMidrand, eRandburg, eFourways, eRoodepoort, nakuzo zonke izindawo ezizungezile zaseGauteng. Ulwazi lwethu lwendawo luqinisekisa ukuthi siyaqonda izidingo eziyingqayizivele zokwakha zendawo ngayinye.",
+      "para5": "Izintengo zamahhala ziyatholakala ngemali yokushayela engu-R400 ecacile yokubonisana. Sixhumane ku-+27 82 868 8396 noma +27 81 569 2985 ukuze sixoxe ngephrojekthi yakho yokwakha. Sinesitifiketi esigcwele, sibhalisiwe ku-NHBRC, futhi sinenshuwarensi ephelele ukuze uphile ngokuthula kwengqondo."
+    },
+    "callButton": "Shayela: +27 82 868 8396",
+    "quoteButton": "Thola Intengo Yamahhala"
   },
   "testimonials": {
     "title": "Okushiwo Amakhasimende Ethu",
@@ -294,14 +766,399 @@
   "contact": {
     "callNow": "Shayela Manje",
     "call": "Shayela",
-    "phone": "071 933 4063",
+    "phone": "+27 82 868 8396",
     "email": "info@mdbuilders.co.za",
     "address": "Sisebenzela Zonke Izindawo ZaseGauteng"
+  },
+  "areaPage": {
+    "coverageArea": "Indawo Yokumboza",
+    "callUs": "Sishayele",
+    "businessHours": "Amahora Ebhizinisi",
+    "monFri": "Mso-Gwe: 7AM-6PM",
+    "sat": "Mgi: 8AM-4PM",
+    "sun": "Son: Kuphela Okushesha",
+    "allGautengSuburbs": "Zonke izindawo zasemadolobheni aseGauteng kufaka phakathi",
+    "constructionServicesIn": "Izinsiza Zokwakha e",
+    "whyChoose": "Kungani Ukhethe i-Sinqobile Construction e",
+    "ourServicesIn": "Izinsiza Zethu e",
+    "comprehensiveSolutions": "Izixazululo eziphelele zokwakha zezakhiwo zasekhaya nezebhizinisi",
+    "suburbsWeServe": "Amadolobha Esiwasebenzela e",
+    "professionalServices": "Izinsiza zokwakha ezinobuchwepheshe kuwo wonke amadolobha ase",
+    "readyToStart": "Usukulungele Ukuqala Iphrojekthi Yakho e",
+    "contactToday": "Xhumana ne-Sinqobile Construction namuhla ukuze uthole ukubonisana kwamahhala nentengo. Imali yokushayela engu-R400 iyasebenza.",
+    "callNow": "Shayela Manje",
+    "requestFreeQuote": "Cela Intengo Yamahhala",
+    "fullyInsured": "Kufakwe Inshuwarensi Ephelele",
+    "comprehensiveLiability": "Ukumbozwa kwesibopho esiphelele ukuze uphile ngokuthula kwengqondo",
+    "yearsExperience": "Iminyaka eyi-15+",
+    "extensiveExperience": "Ulwazi olubanzi lokusebenzela",
+    "qualityGuaranteed": "Ikhwalithi Iqinisekisiwe",
+    "workmanshipWarranty": "Isiqinisekiso somsebenzi kuwo wonke amaphrojekthi",
+    "dontSeeArea": "Awuboni Indawo Yakho Ohlwini?",
+    "weServeAllAreas": "Sisebenzela zonke izindawo kuyo yonke iGauteng Province. Sixhumane ukuze sixoxe ngephrojekthi yakho yokwakha!",
+    "getFreeQuote": "Thola Intengo Yamahhala",
+    "andMore": "& okuningi",
+    "allSuburbsIncluding": "Zonke izindawo zasemadolobheni zaseGauteng kufaka phakathi"
   },
   "footer": {
     "mission": "Ukuhlinzeka ngezinsiza zokwakha ezikhwalithile kuyo yonke iGauteng ngobuqotho, ubungcweti, nokunakekela imininingwane.",
     "quickLinks": "Izixhumanisi Ezisheshayo",
     "ourServices": "Izinsiza Zethu",
-    "contactInfo": "Ulwazi Lokuxhumana"
+    "contactInfo": "Ulwazi Lokuxhumana",
+    "businessHours": {
+      "weekdays": "UMsombuluko - ULwesihlanu: 7:00 AM - 5:00 PM",
+      "saturday": "UMgqibelo: 8:00 AM - 1:00 PM",
+      "sunday": "ISonto: Kuvalwe"
+    },
+    "copyright": "© 2024 Sinqobile Construction. Wonke amalungelo agodliwe."
+  },
+  "projects": {
+    "brickwork-alberton-78": {
+      "title": "Iphrojekthi Yokufaka Uphahla",
+      "description": "Ukufakwa kophahla okungobuchwepheshe ngezinto zekhwalithi nobungcweti obuchwepheshe."
+    },
+    "brickwork-lanseria-49": {
+      "title": "Ukwakha Indawo Ye-Braai",
+      "description": "Ukwakha indawo ye-braai ngokwezifiso ngomsebenzi wezitina wekhwalithi nezici zokuzijabulisa ngaphandle."
+    },
+    "brickwork-roodepoort-35": {
+      "title": "Ukufakwa Kwamathayela Ebhafini",
+      "description": "Ukubeka amathayela ebhafini okungobuchwepheshe ngokuvimbela amanzi neziphetho eziphezulu."
+    },
+    "building-edenvale-30": {
+      "title": "Ukwakha Isakhiwo Sasekhaya",
+      "description": "Ukwakha isakhiwo sasekhaya esiphelele ngokuklama kwesimanje neziphetho zekhwalithi."
+    },
+    "building-rosebank-48": {
+      "title": "Ukwandiswa Kwendlu Yasekhaya",
+      "description": "Ukwandiswa kwendlu yasekhaya yekhwalithi ngokuklama kwesimanje nokuhlanganiswa okungenamthungo."
+    },
+    "building-springs-54": {
+      "title": "Insiza Yamathayela Ebhafini",
+      "description": "Ukubeka amathayela ebhafini okungobuchwepheshe ngezinto zekhwalithi nokufakwa okungobuchwepheshe."
+    },
+    "concrete-bedfordview-31": {
+      "title": "Iphrojekthi Yokufaka Ibhafu",
+      "description": "Ukufakwa kwebhafu okuphelele ngamathayela, izinto, neziphetho zesimanje."
+    },
+    "concrete-boksburg-90": {
+      "title": "Ukufakwa Kocingo Nomsebenzi Wekhonkrithi",
+      "description": "Ukufakwa kocingo okungobuchwepheshe ngesisekelo sekhonkrithi nezinto zekhwalithi."
+    },
+    "concrete-johannesburg-86": {
+      "title": "Iphrojekthi Yokufaka Amanzi",
+      "description": "Ukufakwa kwamanzi okungobuchwepheshe ngezinto zesimanje nomsebenzi wekhwalithi."
+    },
+    "concrete-midrand-79": {
+      "title": "Ukufakwa Kwamathayela Ophahla",
+      "description": "Ukufakwa kwamathayela ophahla okungobuchwepheshe ngezinto zekhwalithi nobungcweti obuchwepheshe."
+    },
+    "concrete-sandton-36": {
+      "title": "Ukufakwa Kwesango Nekhonkrithi",
+      "description": "Ukufakwa kwesango nekhonkrithi okungobuchwepheshe ngezinto zekhwalithi nomsebenzi ochwepheshe."
+    },
+    "concrete-soweto-56": {
+      "title": "Iphrojekthi Yokufaka Ikhishi",
+      "description": "Ukufakwa kwekhishi okuphelele ngamakhabhathi enzelwe wena nezinto zesimanje."
+    },
+    "construction-randburg-2": {
+      "title": "Iphrojekthi Yokwendlala Amatshe",
+      "description": "Ukwendlala amatshe okungobuchwepheshe ngezinto zekhwalithi nobungcweti obuchwepheshe."
+    },
+    "construction-sandton-77": {
+      "title": "Iphrojekthi Yokwendlala Amatshe Endleleni Yokuhamba",
+      "description": "Ukwendlala amatshe endleleni yokuhamba okungobuchwepheshe ngezinto zekhwalithi nokuklama kwesimanje."
+    },
+    "electrical-edenvale-29": {
+      "title": "Iphrojekthi Yokufaka Igeya",
+      "description": "Ukufakwa kwegeya okungobuchwepheshe ngokulandela ukuphepha nomsebenzi wekhwalithi."
+    },
+    "extensions-bedfordview-19": {
+      "title": "Iphrojekthi Yokufaka Ibhafu",
+      "description": "Ukufakwa kwebhafu okungobuchwepheshe ngamathayela ekhwalithi nezinto zesimanje."
+    },
+    "extensions-sandton-65": {
+      "title": "Insiza Yamathayela Ebhafini",
+      "description": "Insiza yamathayela ebhafini engobuchwepheshe ngezinto zekhwalithi nokufakwa okungobuchwepheshe."
+    },
+    "fencing-alexandra-93": {
+      "title": "Ukufakwa Kwamathayela Ophahla",
+      "description": "Ukufakwa kwamathayela ophahla okungobuchwepheshe ngezinto zekhwalithi nobungcweti obuchwepheshe."
+    },
+    "fencing-krugersdorp-21": {
+      "title": "Umsebenzi Wokumba Nesisekelo",
+      "description": "Umsebenzi wokumba nesisekelo okungobuchwepheshe ngekhonkrithi yekhwalithi nokwakha okungobuchwepheshe."
+    },
+    "fencing-linden-28": {
+      "title": "Iphrojekthi Yokufaka Uphahla",
+      "description": "Ukufakwa kophahla okungobuchwepheshe ngezinto zekhwalithi nobungcweti obuchwepheshe."
+    },
+    "fencing-randburg-52": {
+      "title": "Ukufakwa Kwesinki Samanzi",
+      "description": "Ukufakwa kwesinki samanzi okungobuchwepheshe ngezinto zekhwalithi nomsebenzi ochwepheshe."
+    },
+    "flooring-alberton-64": {
+      "title": "Iphrojekthi Yokufaka Ishawa",
+      "description": "Ukufakwa kweshawa okungobuchwepheshe ngezinto zesimanje nomsebenzi wamanzi wekhwalithi."
+    },
+    "flooring-fourways-43": {
+      "title": "Ukufakwa Kwephansi Lokhuni Oluqinile",
+      "description": "Iphansi lokhuni oluqinile lwezinga eliphezulu ngokufakwa okungobuchwepheshe nokuqedwa."
+    },
+    "flooring-germiston-71": {
+      "title": "Amathayela Nendlala Yamatshe Endaweni Yedamu",
+      "description": "Amathayela nendlala yamatshe endaweni yedamu okungobuchwepheshe ngezinto ezingashelelisi neziphetho zekhwalithi."
+    },
+    "flooring-midrand-55": {
+      "title": "Iphrojekthi Yokufaka Iphansi",
+      "description": "Ukwendlala amatshe okungobuchwepheshe ngezinto zekhwalithi nobungcweti obuchwepheshe."
+    },
+    "installation-johannesburg-24": {
+      "title": "Ukufakwa Kwephansi Lekhonkrithi",
+      "description": "Ukufakwa kwephansi lekhonkrithi okungobuchwepheshe ngezinto zekhwalithi nomsebenzi ochwepheshe."
+    },
+    "installation-rosebank-72": {
+      "title": "Umsebenzi Wesisekelo Sekhonkrithi",
+      "description": "Umsebenzi wesisekelo sekhonkrithi okungobuchwepheshe ngezinto zekhwalithi nokwakha okungobuchwepheshe."
+    },
+    "installation-rosebank-83": {
+      "title": "Ukwakha Izitebhisi",
+      "description": "Ukwakha izitebhisi okungobuchwepheshe ngezinto zekhwalithi nobungcweti obuchwepheshe."
+    },
+    "landscaping-alberton-39": {
+      "title": "Insiza Yokuphenda Udonga",
+      "description": "Insiza yokuphenda udonga engobuchwepheshe ngokuqeda okushelelayo nezinto zekhwalithi."
+    },
+    "maintenance-alberton-73": {
+      "title": "Insiza Yokunakekelwa Kwempahla",
+      "description": "Ukunakekelwa kwempahla okujwayelekile okufaka phakathi ukulungisa nokunakekela."
+    },
+    "maintenance-centurion-70": {
+      "title": "Iphrojekthi Yokunakekelwa",
+      "description": "Ukufakwa kwethangi lamanzi okungobuchwepheshe ngezinto zekhwalithi nomsebenzi ochwepheshe."
+    },
+    "maintenance-linden-80": {
+      "title": "Iphrojekthi Yamathayela Ekhishini",
+      "description": "Amathayela ekhishini angobuchwepheshe ngezinto zekhwalithi nokufakwa okungobuchwepheshe."
+    },
+    "maintenance-sandton-17": {
+      "title": "Ukufakwa Kwamanzi Nokuchithwa Kwamanzi",
+      "description": "Ukufakwa kwamanzi nokuchithwa kwamanzi okungobuchwepheshe ngezinto zekhwalithi nomsebenzi ochwepheshe."
+    },
+    "painting-alberton-4": {
+      "title": "Iphrojekthi Yokwendlala Amatshe",
+      "description": "Ukwendlala amatshe okungobuchwepheshe ngezinto zekhwalithi nobungcweti obuchwepheshe."
+    },
+    "painting-alberton-53": {
+      "title": "Iphrojekthi Yokwakha Indlala Yamatshe",
+      "description": "Ukwakha indlala yamatshe okungobuchwepheshe ngezinto zekhwalithi nokuklama kwesimanje."
+    },
+    "painting-krugersdorp-76": {
+      "title": "Amathayela Odonga Lweshawa",
+      "description": "Amathayela odonga lweshawa angobuchwepheshe ngezinto zekhwalithi nokuvimbela amanzi."
+    },
+    "painting-soweto-42": {
+      "title": "Iphrojekthi Yendlala Yamatshe Yekhonkrithi",
+      "description": "Indlala yamatshe yekhonkrithi engobuchwepheshe ngezinto zekhwalithi nomsebenzi ochwepheshe."
+    },
+    "paving-alberton-40": {
+      "title": "Iphrojekthi Yamathayela Aphansi",
+      "description": "Amathayela aphansi angobuchwepheshe ngezinto zekhwalithi nokufakwa okungobuchwepheshe."
+    },
+    "paving-alberton-46": {
+      "title": "Ukuvuselela Ikhishi Lesimanje",
+      "description": "Ukuvuselela ikhishi lesimanje okuphelele ngamakhabhathi enzelwe wena, amathayela, nokuklama kwesimanje."
+    },
+    "paving-boksburg-84": {
+      "title": "Amathayela Emuva Kwekhishi",
+      "description": "Amathayela emuva kwekhishi angobuchwepheshe ngamaphethini okuhlobisa nezinto zekhwalithi."
+    },
+    "paving-lanseria-45": {
+      "title": "Iphrojekthi Yokufaka Igeya",
+      "description": "Ukufakwa kwegeya okungobuchwepheshe ngokulandela ukuphepha nomsebenzi wekhwalithi."
+    },
+    "paving-midrand-59": {
+      "title": "Indlala Yamatshe Endaweni Yedamu",
+      "description": "Indlala yamatshe endaweni yedamu ngezinto ezingashelelisi nokuchithwa kwamanzi."
+    },
+    "plastering-fourways-50": {
+      "title": "Ukwakha Udonga Lwezitina",
+      "description": "Ukwakha udonga lwezitina okungobuchwepheshe ngezinto zekhwalithi nobungcweti obuchwepheshe."
+    },
+    "plastering-germiston-74": {
+      "title": "Iphrojekthi Yokufaka Ibhafu",
+      "description": "Ukufakwa kwebhafu okungobuchwepheshe ngezinto zesimanje nomsebenzi wekhwalithi."
+    },
+    "plastering-kempton-park-47": {
+      "title": "Udonga Lwezitina Nokupenda",
+      "description": "Ukwakha udonga lwezitina okungobuchwepheshe ngokupenda nomsebenzi wokuqeda."
+    },
+    "plastering-pretoria-44": {
+      "title": "Umsebenzi Wamathayela Aphansi",
+      "description": "Amathayela aphansi angobuchwepheshe ngamathayela aphethini ompunga nomhlophe nokufakwa kwekhwalithi."
+    },
+    "plumbing-fourways-27": {
+      "title": "Ukufakwa Kwamathayela Odonga Lwebhafu",
+      "description": "Amathayela odonga lwebhafu angobuchwepheshe ngamathayela ephethini le-mosaic nokuklama kwesimanje."
+    },
+    "plumbing-germiston-51": {
+      "title": "Insiza Yamanzi Ekhishini",
+      "description": "Ukufakwa kwamanzi ekhishini okufaka phakathi isinki, isitsha sokugeza izitsha, nemigqa yamanzi."
+    },
+    "plumbing-kempton-park-23": {
+      "title": "Iphrojekthi Yokufaka Isango",
+      "description": "Ukufakwa kwesehlukanisi sengilazi nesango okungobuchwepheshe ngokuklama kwesimanje okucacayo."
+    },
+    "plumbing-lanseria-75": {
+      "title": "Ukufakwa Kwamathayela Aphansi",
+      "description": "Amathayela aphansi angobuchwepheshe ngamathayela abukeka njengemabula emhlophe nokufakwa kwekhwalithi."
+    },
+    "plumbing-melville-10": {
+      "title": "Iphrojekthi Yokufaka Umjelo",
+      "description": "Ukufakwa kwesistimu yomjelo ngokuthambeka okufanele nokuxhumana."
+    },
+    "plumbing-riversands-33": {
+      "title": "Insiza Yokunakekelwa Kwamanzi",
+      "description": "Ukunakekelwa kwamanzi okujwayelekile okufaka phakathi ukuhlolwa nokulungisa."
+    },
+    "renovation-bedfordview-16": {
+      "title": "Iphrojekthi Yokuvuselela Ikhaya",
+      "description": "Ukuvuselela ikhaya okuphelele ngokuthuthukiswa kwesimanje neziphetho zekhwalithi."
+    },
+    "renovation-edenvale-66": {
+      "title": "Insiza Yokuvuselela Impahla",
+      "description": "Ukuvuselela impahla okuphelele okufaka phakathi ukuthuthukiswa kwesakhiwo nokuhlobisa."
+    },
+    "renovation-johannesburg-26": {
+      "title": "Iphrojekthi Yokuvuselela Ikhishi",
+      "description": "Ukuvuselela ikhishi okuphelele ngamakhabhathi amhlophe esimanje nokuklama kwesimanje."
+    },
+    "renovation-midrand-37": {
+      "title": "Iphrojekthi Yokuvuselela Amanzi",
+      "description": "Ukuvuselela amanzi okuphelele ngomsebenzi wamapayipi abonakalayo nokuthuthukiswa kwesistimu."
+    },
+    "renovation-randburg-7": {
+      "title": "Insiza Yokuvuselela Indlu",
+      "description": "Ukuvuselela indlu okujwayelekile okufaka phakathi umsebenzi wangaphakathi nangaphandle."
+    },
+    "repairs-fourways-6": {
+      "title": "Insiza Yokulungisa Ngokushesha",
+      "description": "Insiza yokulungisa ngokushesha ezinkingeni zokwakha eziphuthumayo."
+    },
+    "repairs-fourways-41": {
+      "title": "Iphrojekthi Yokulungisa Isakhiwo",
+      "description": "Ukulungisa isakhiwo okufaka phakathi ukulungisa izikhala nokuqinisa isakhiwo."
+    },
+    "repairs-linden-13": {
+      "title": "Insiza Yokulungisa Ikhaya",
+      "description": "Ukulungisa ikhaya okuphelele okufaka phakathi amanzi, ugesi, nokulungisa okujwayelekile."
+    },
+    "repairs-soweto-87": {
+      "title": "Iphrojekthi Yokulungisa Impahla",
+      "description": "Ukulungisa impahla okufaka phakathi uphahla, izindonga, nomsebenzi wesisekelo."
+    },
+    "roofing-alberton-88": {
+      "title": "Iphrojekthi Yokufaka Ibhafu",
+      "description": "Ukufakwa kwebhafu okuphelele ngezinto zesimanje, ibhavu, namathayela ekhwalithi."
+    },
+    "roofing-centurion-61": {
+      "title": "Ukwakha Idamu Nendlala Yamatshe",
+      "description": "Ukwakha idamu okungobuchwepheshe ngendlala yamatshe ezungezile nokuhlela ingadi."
+    },
+    "roofing-midrand-89": {
+      "title": "Ukwakha Udonga Lwezitina",
+      "description": "Ukwakha udonga lwezitina okungobuchwepheshe ngezinto zekhwalithi nobungcweti obuchwepheshe."
+    },
+    "roofing-pretoria-15": {
+      "title": "Iphrojekthi Yamathayela Odonga Lwebhafu",
+      "description": "Amathayela odonga lwebhafu angobuchwepheshe ngomngcele we-mosaic wokuhlobisa nezinto zekhwalithi."
+    },
+    "tiling-alexandra-12": {
+      "title": "Insiza Yokuphenda Udonga",
+      "description": "Ukuphenda udonga okungobuchwepheshe ngokuqeda okushelelayo nezinto zekhwalithi."
+    },
+    "tiling-edenvale-62": {
+      "title": "Ukufakwa Kwephansi Lokhuni",
+      "description": "Ukufakwa kwephansi lokhuni lwezinga eliphezulu ngobungcweti obuchwepheshe nokuqedwa kwekhwalithi."
+    },
+    "tiling-germiston-1": {
+      "title": "Iphrojekthi Yamathayela Ekhishini",
+      "description": "Amathayela ekhishini afaka phakathi emuva nephansi ngokuklama kwesimanje."
+    },
+    "waterproofing-alberton-60": {
+      "title": "Iphrojekthi Yokufaka Ibhavu",
+      "description": "Ukufakwa kwebhavu okungobuchwepheshe ngezinto zesimanje nomsebenzi wamanzi wekhwalithi."
+    },
+    "waterproofing-krugersdorp-85": {
+      "title": "Ukufakwa Kwamathayela Aphansi",
+      "description": "Amathayela aphansi angobuchwepheshe ngamathayela abukeka njengemabula emhlophe nokufakwa kwekhwalithi."
+    },
+    "waterproofing-lanseria-3": {
+      "title": "Iphrojekthi Yokufaka Igeya",
+      "description": "Ukufakwa kwegeya okungobuchwepheshe ngokulandela ukuphepha nokuhlolwa kwekhwalithi."
+    },
+    "waterproofing-midrand-63": {
+      "title": "Ukufakwa Kwemijabo Yophahla",
+      "description": "Ukufakwa kwemijabo yophahla okungobuchwepheshe ngokusekela kwesakhiwo nokuklama kwesimanje."
+    },
+    "painting-johannesburg-94": {
+      "title": "Ukufakwa Kophahla Lwangaphakathi",
+      "description": "Ukufakwa kophahla lwangaphakathi okungobuchwepheshe ngezinto zekhwalithi nobungcweti obuchwepheshe."
+    },
+    "roofing-sandton-95": {
+      "title": "Ukufakwa Kwezinsika Zophahla",
+      "description": "Ukufakwa kwezinsika zophahla okungobuchwepheshe ngokusekela kwesakhiwo nezinto zekhwalithi."
+    },
+    "waterproofing-johannesburg-96": {
+      "title": "Insiza Yokuvimbela Amanzi Edamu",
+      "description": "Ukuvimbela amanzi edamu okungobuchwepheshe ngezinto zokuvala zekhwalithi nokufakwa okungobuchwepheshe."
+    },
+    "roofing-midrand-97": {
+      "title": "Izinsika Zophahla Nokuvimbela Amanzi",
+      "description": "Ukufakwa kwezinsika zophahla okungobuchwepheshe nge-membrane yokuvimbela amanzi nezinto zekhwalithi."
+    },
+    "plumbing-randburg-98": {
+      "title": "Ukufakwa Kwesistimu Yokuchithwa Kwamanzi",
+      "description": "Ukufakwa kwesistimu yokuchithwa kwamanzi okungobuchwepheshe ngamapayipi ekhwalithi nokuxhumana okufanele."
+    }
+  },
+  "beforeAfter": {
+    "title": "Bona Ukuguquka",
+    "subtitle": "Hudula isilaydha ukuze ubone imiphumela emangalisayo yaphambili nangemuva yamaphrojekthi ethu okwakha",
+    "before": "NGAPHAMBILI",
+    "after": "NGEMUVA",
+    "instruction": "👆 Hudula isilaydha kwesokunxele nakwesokudla ukuze uqhathanise ngaphambili nangemuva",
+    "ctaTitle": "Usukulungele Ukuguquka Kwakho?",
+    "ctaText": "Ake siguqule indawo yakho ngezinsiza zethu zokwakha ezinobuchwepheshe. Thola intengo yamahhala namuhla!",
+    "getQuoteButton": "Thola Intengo Yamahhala",
+    "viewMoreButton": "Bona Amaphrojekthi Engeziwe"
+  },
+  "videoTestimonials": {
+    "title": "Lalela Kumakhasimende Ethu Anelisekile",
+    "subtitle": "Bukela ubufakazi bangempela obuvela kumakhasimende anelisekile abathembe i-Sinqobile Construction ngamaphrojekthi abo okwakha",
+    "cta": "Usukulungele ukuqala iphrojekthi yakho? Joyina amakhasimende ethu anelisekile namuhla!",
+    "getQuoteButton": "Thola Intengo Yamahhala",
+    "viewProjectsButton": "Bona Amaphrojekthi Ethu"
+  },
+  "timeline": {
+    "title": "Inqubo Yethu Yokwakha",
+    "subtitle": "Indlela ecacile, yezinyathelo ngezinyathelo yokuletha iphrojekthi yakho ekuphileni",
+    "totalDuration": "Isikhathi esijwayelekile sephrojekthi: amasonto angu-2-4",
+    "step1Title": "Ukubonisana Kokuqala",
+    "step1Desc": "Ukuvakashela indawo kwamahhala nokuhlolwa kwephrojekthi",
+    "step2Title": "Ukuhlela Nokuklama",
+    "step2Desc": "Ukuhlela iphrojekthi enemininingwane nentengo",
+    "step3Title": "Ukulungiselela",
+    "step3Desc": "Ukulungiselela indawo nokuthola izinto",
+    "step4Title": "Ukwakha",
+    "step4Desc": "Ukwenza okungobuchwepheshe kwephrojekthi",
+    "step5Title": "Ukuqeda Okugcina",
+    "step5Desc": "Imininingwane yokugcina nokuqinisekisa ikhwalithi",
+    "step6Title": "Ukuqedwa Kwephrojekthi",
+    "step6Desc": "Ukuhamba kokugcina nokudlulisela",
+    "ctaTitle": "Usukulungele Ukuqala Iphrojekthi Yakho?",
+    "ctaText": "Iqembu lethu elinolwazi lilungele ukukuholela kuzo zonke izinyathelo zenqubo yokwakha",
+    "scheduleButton": "Hlela Ukubonisana Kwamahhala",
+    "calculateButton": "Bala Izindleko Zephrojekthi"
   }
 }

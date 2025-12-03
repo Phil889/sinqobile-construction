@@ -87,16 +87,16 @@ For a mid-range 150m² house in Johannesburg:
 4. **Use local suppliers** - Reduce transportation costs
 5. **Consider alternative materials** - Explore cost-effective options
 
-## Why Choose MD Builders?
+## Why Choose Sinqobile Construction?
 
-At MD Builders, we provide transparent pricing and quality workmanship. With over 15 years of experience in Gauteng, we help you build your dream home within budget.
+At Sinqobile Construction, we provide transparent pricing and quality workmanship. With over 15 years of experience in Gauteng, we help you build your dream home within budget.
 
-**Contact us today for a free, detailed quote: 071 933 4063**
+**Contact us today for a free, detailed quote: +27 82 868 8396**
     `,
     date: '2024-01-15',
-    author: 'Meshack Dlamini',
+    author: 'Dingwayo Reason Ndlovu',
     category: 'Building Costs',
-    image: '/images/md-construction-building-edenvale-30.jpg',
+    image: '/images/sinqobile-construction-building-edenvale-30.jpg',
     keywords: ['building costs Johannesburg', 'house construction prices', 'building cost per square meter', 'construction budget 2024', 'home building costs Gauteng']
   },
   {
@@ -194,9 +194,9 @@ A good contractor should:
 - Listen to your concerns
 - Offer professional advice
 
-## Why MD Builders Stands Out
+## Why Sinqobile Construction Stands Out
 
-At MD Builders, we pride ourselves on:
+At Sinqobile Construction, we pride ourselves on:
 
 ✅ **15+ years of experience** in Gauteng
 ✅ **Fully licensed and insured**
@@ -217,16 +217,16 @@ Consider these factors when making your choice:
 
 ## Get Started with Confidence
 
-Ready to start your construction project? Contact MD Builders for a free consultation and detailed quote.
+Ready to start your construction project? Contact Sinqobile Construction for a free consultation and detailed quote.
 
-**Call us today: 071 933 4063**
+**Call us today: +27 82 868 8396**
 
 We serve all areas across Gauteng including Johannesburg, Pretoria, East Rand, West Rand, and Midrand.
     `,
     date: '2024-01-22',
-    author: 'Meshack Dlamini',
+    author: 'Dingwayo Reason Ndlovu',
     category: 'Contractor Tips',
-    image: '/images/md-construction-building-lanseria-49.jpg',
+    image: '/images/sinqobile-construction-building-lanseria-49.jpg',
     keywords: ['choosing contractor Gauteng', 'reliable builders Johannesburg', 'construction contractor tips', 'hiring builders South Africa', 'contractor selection guide']
   },
   {
@@ -404,9 +404,9 @@ Modern convenience that buyers love.
 - Prepare for noise and mess
 - Consider temporary accommodation if needed
 
-## Why Choose MD Builders for Your Renovation?
+## Why Choose Sinqobile Construction for Your Renovation?
 
-MD Builders specializes in home renovations across Gauteng:
+Sinqobile Construction specializes in home renovations across Gauteng:
 
 ✅ **15+ years of experience**
 ✅ **Quality workmanship guaranteed**
@@ -416,16 +416,16 @@ MD Builders specializes in home renovations across Gauteng:
 
 ## Ready to Transform Your Home?
 
-Contact MD Builders today for a free consultation and quote.
+Contact Sinqobile Construction today for a free consultation and quote.
 
-**Call: 071 933 4063**
+**Call: +27 82 868 8396**
 
 We serve Johannesburg, Pretoria, and all Gauteng areas.
     `,
     date: '2024-02-05',
-    author: 'Meshack Dlamini',
+    author: 'Dingwayo Reason Ndlovu',
     category: 'Renovations',
-    image: '/images/md-construction-renovation-johannesburg-26.jpg',
+    image: '/images/sinqobile-construction-renovation-johannesburg-26.jpg',
     keywords: ['home renovation ideas', 'house renovation South Africa', 'home improvement projects', 'renovation ROI', 'home upgrades Gauteng']
   },
   {
@@ -631,9 +631,9 @@ After completion, you need:
 - Keep approved plans on site
 - Document all inspections
 
-## How MD Builders Can Help
+## How Sinqobile Construction Can Help
 
-At MD Builders, we handle all aspects of building compliance:
+At Sinqobile Construction, we handle all aspects of building compliance:
 
 ✅ **Experienced with local regulations**
 ✅ **Coordinate with professionals**
@@ -643,16 +643,16 @@ At MD Builders, we handle all aspects of building compliance:
 
 ## Need Help with Building Regulations?
 
-Contact MD Builders for expert guidance on your construction project.
+Contact Sinqobile Construction for expert guidance on your construction project.
 
-**Call: 071 933 4063**
+**Call: +27 82 868 8396**
 
 We ensure your project meets all regulatory requirements from start to finish.
     `,
     date: '2024-02-18',
-    author: 'Meshack Dlamini',
+    author: 'Dingwayo Reason Ndlovu',
     category: 'Regulations',
-    image: '/images/md-construction-building-edenvale-30.jpg',
+    image: '/images/sinqobile-construction-building-edenvale-30.jpg',
     keywords: ['building regulations South Africa', 'building plans approval', 'NHBRC requirements', 'construction compliance', 'building permits Gauteng']
   },
   {
@@ -891,9 +891,9 @@ Total roofing project costs include:
 - Superior aesthetics
 - Excellent insulation
 
-## Why Choose MD Builders for Roofing?
+## Why Choose Sinqobile Construction for Roofing?
 
-MD Builders specializes in roofing across Gauteng:
+Sinqobile Construction specializes in roofing across Gauteng:
 
 ✅ **15+ years of experience**
 ✅ **All roofing materials**
@@ -904,16 +904,16 @@ MD Builders specializes in roofing across Gauteng:
 
 ## Get Your Free Roofing Quote
 
-Contact MD Builders today for expert advice and a detailed quote.
+Contact Sinqobile Construction today for expert advice and a detailed quote.
 
-**Call: 071 933 4063**
+**Call: +27 82 868 8396**
 
 We serve all Gauteng areas including Johannesburg, Pretoria, East Rand, and West Rand.
     `,
     date: '2024-03-01',
-    author: 'Meshack Dlamini',
+    author: 'Dingwayo Reason Ndlovu',
     category: 'Roofing',
-    image: '/images/md-construction-roofing-pretoria-15.jpg',
+    image: '/images/sinqobile-construction-roofing-pretoria-15.jpg',
     keywords: ['roofing materials Gauteng', 'best roof for Johannesburg', 'roof tiles South Africa', 'roofing costs Gauteng', 'hail resistant roofing']
   }
 ]

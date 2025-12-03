@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "MD Builders - Professional Construction Services in Gauteng",
+    "title": "Sinqobile Construction - Professional Construction Services in Gauteng",
     "description": "Expert building, plastering, painting, paving, tiling, and plumbing services across Gauteng. Quality workmanship guaranteed.",
     "keywords": "construction, building, plastering, painting, paving, tiling, plumbing, Gauteng, Johannesburg, Pretoria"
   },
@@ -24,6 +24,97 @@
     "insured": "Fully Insured",
     "guaranteed": "Work Guaranteed",
     "gauteng": "Serving All Gauteng"
+  },
+  "callOutBanner": {
+    "message": "⚠️ R400 Call-Out Fee for on-site assessment visits"
+  },
+  "trustBadges": {
+    "title": "Why Choose Sinqobile Construction?",
+    "badges": {
+      "insured": {
+        "title": "Fully Insured",
+        "description": "Comprehensive liability coverage"
+      },
+      "guaranteed": {
+        "title": "Quality Guaranteed",
+        "description": "Workmanship warranty on all projects"
+      },
+      "experience": {
+        "title": "15+ Years Experience",
+        "description": "Trusted by Gauteng residents"
+      },
+      "projects": {
+        "title": "500+ Projects",
+        "description": "Successfully completed"
+      },
+      "team": {
+        "title": "Expert Team",
+        "description": "Certified professionals"
+      },
+      "registered": {
+        "title": "PTY LTD Registered",
+        "description": "Legitimate business entity"
+      }
+    }
+  },
+  "trustCertifications": {
+    "title": "Professional Certifications & Guarantees",
+    "subtitle": "Your peace of mind is our priority. We're fully certified, insured, and committed to excellence.",
+    "certifications": {
+      "nhbrc": {
+        "title": "NHBRC Registered",
+        "description": "National Home Builders Registration Council"
+      },
+      "insured": {
+        "title": "Insured & Bonded",
+        "description": "Full liability coverage"
+      },
+      "guarantee": {
+        "title": "10 Year Guarantee",
+        "description": "Structural warranty included"
+      },
+      "licensed": {
+        "title": "Licensed Contractor",
+        "description": "Fully certified & compliant"
+      },
+      "safety": {
+        "title": "Safety Compliant",
+        "description": "ISO safety standards"
+      },
+      "quality": {
+        "title": "Quality Assured",
+        "description": "Premium workmanship"
+      }
+    },
+    "footer": "Trusted by 500+ Satisfied Clients Across Gauteng"
+  },
+  "projectGallery": {
+    "title": "Our Recent Projects",
+    "subtitle": "Browse through our portfolio of completed construction and renovation projects across Gauteng",
+    "allProjects": "All Projects",
+    "viewAll": "View All Projects",
+    "total": "total",
+    "featured": "Featured",
+    "modal": {
+      "location": "Location",
+      "duration": "Duration",
+      "type": "Type",
+      "completed": "Completed",
+      "getSimilarWork": "Get Similar Work Done"
+    }
+  },
+  "googleReviews": {
+    "title": "What Our Clients Say",
+    "reviews": "Google Reviews",
+    "readAll": "Read All Reviews",
+    "verifiedOn": "Verified on Google",
+    "trustedProfile": "Trusted Business Profile"
+  },
+  "googleBusinessCTA": {
+    "title": "Find Us on Google",
+    "subtitle": "Check out our reviews from satisfied customers across Gauteng",
+    "leaveReview": "Leave us a Review",
+    "findOnMaps": "Find Us on Maps"
   },
   "services": {
     "title": "Our Services",
@@ -53,7 +144,19 @@
         "name": "Plumbing",
         "description": "Installation, repairs, and maintenance"
       }
-    }
+    },
+    "viewAllServices": "View All Services",
+    "totalServices": "total",
+    "projectsCompleted": "projects completed"
+  },
+  "mobileCTA": {
+    "callNow": "Call Now",
+    "whatsapp": "WhatsApp"
+  },
+  "whatsappFloat": {
+    "chatWithUs": "Chat with us",
+    "needHelp": "Need help? Chat with Dingwayo Reason Ndlovu on WhatsApp",
+    "startChat": "Start Chat"
   },
   "extendedServices": {
     "brickwork": {
@@ -109,15 +212,34 @@
       "description": "Basement, roof, and exterior waterproofing solutions"
     }
   },
+  "categories": {
+    "roofing": "Roofing",
+    "building": "Building",
+    "tiling": "Tiling",
+    "extensions": "Extensions",
+    "fencing": "Fencing",
+    "plumbing": "Plumbing",
+    "paving": "Paving",
+    "flooring": "Flooring",
+    "installation": "Installation",
+    "concrete": "Concrete",
+    "plastering": "Plastering",
+    "painting": "Painting",
+    "maintenance": "Maintenance",
+    "renovation": "Renovation",
+    "repairs": "Repairs",
+    "brickwork": "Brickwork",
+    "waterproofing": "Waterproofing"
+  },
   "pages": {
     "about": {
-      "title": "About MD Builders",
+      "title": "About Sinqobile Construction",
       "subtitle": "Your Trusted Construction Partner in Gauteng",
       "heroTitle": "15+ Years of Excellence in Construction",
       "heroSubtitle": "Building trust, one project at a time across Gauteng Province",
       "story": {
         "title": "Our Story",
-        "content": "Founded by Meshack Dlamini, MD Builders has been serving the Gauteng community for over 15 years. What started as a small construction business has grown into one of the most trusted names in residential and commercial construction across Johannesburg, Pretoria, and surrounding areas."
+        "content": "Founded by Dingwayo Reason Ndlovu, Sinqobile Construction has been serving the Gauteng community for over 15 years. What started as a small construction business has grown into one of the most trusted names in residential and commercial construction across Johannesburg, Pretoria, and surrounding areas."
       },
       "mission": {
         "title": "Our Mission",
@@ -145,7 +267,7 @@
         ]
       },
       "experience": {
-        "title": "Why Choose MD Builders?",
+        "title": "Why Choose Sinqobile Construction?",
         "items": [
           "Over 15 years of construction experience",
           "Fully licensed and insured",
@@ -161,6 +283,29 @@
       "subtitle": "Comprehensive Building Solutions Across Gauteng",
       "heroTitle": "Professional Construction Services",
       "heroSubtitle": "From small repairs to major construction projects, we handle it all",
+      "coreServicesTitle": "Our Core Services",
+      "coreServicesSubtitle": "Professional construction services with guaranteed quality and competitive pricing",
+      "additionalServicesTitle": "Additional Services",
+      "additionalServicesSubtitle": "Comprehensive construction solutions for all your building needs",
+      "projectsCompleted": "projects completed",
+      "projects": "projects",
+      "processSubtitle": "Our proven 5-step process ensures quality results every time",
+      "serviceAreasTitle": "Serving All Gauteng Areas",
+      "serviceAreasDescription": "We provide professional construction services across Gauteng Province, including:",
+      "viewAllServiceAreas": "View All Service Areas",
+      "whyChooseTitle": "Why Choose Sinqobile Construction?",
+      "whyChooseBenefits": [
+        "Over 15 years of experience",
+        "Fully licensed and insured",
+        "Free, no-obligation quotes",
+        "Quality workmanship guaranteed",
+        "Competitive pricing",
+        "Emergency services available",
+        "Professional, reliable team",
+        "Customer satisfaction focus"
+      ],
+      "getFreeQuote": "Get Free Quote: +27 82 868 8396",
+      "callNow": "Call Now: +27 82 868 8396",
       "process": {
         "title": "Our Process",
         "steps": [
@@ -195,19 +340,199 @@
     "ourWork": {
       "title": "Our Work",
       "subtitle": "Portfolio of Completed Construction Projects",
-      "heroTitle": "See Our Quality Work",
+      "heroTitle": "Our Construction Projects",
       "heroSubtitle": "Browse through our portfolio of successful projects across Gauteng",
-      "filterAll": "All Projects",
-      "projectDetails": "Project Details",
-      "viewProject": "View Project",
-      "categories": "Categories",
-      "locations": "Locations",
+      "projectsCompleted": "Projects Completed",
+      "serviceCategories": "Service Categories",
+      "locationsServed": "Locations",
       "searchPlaceholder": "Search projects...",
+      "filters": "Filters",
+      "allCategories": "All Categories",
+      "allLocations": "All Locations",
+      "category": "Category",
+      "location": "Location",
+      "search": "Search",
+      "clearAllFilters": "Clear All Filters",
+      "showing": "Showing",
+      "of": "of",
+      "projects": "projects",
+      "show": "Show",
+      "all": "All",
+      "featured": "Featured",
       "noResults": "No projects found matching your criteria",
-      "loadMore": "Load More Projects"
+      "loadingMore": "Loading more projects...",
+      "previous": "Previous",
+      "next": "Next",
+      "backToTop": "↑ Back to Top",
+      "modalLocation": "Location",
+      "modalDuration": "Duration",
+      "modalType": "Type",
+      "modalCompleted": "Completed",
+      "getSimilarWork": "Get Similar Work Done",
+      "ctaTitle": "Ready to Start Your Project?",
+      "ctaSubtitle": "Join our satisfied clients and experience quality construction services",
+      "callNow": "Call Now: +27 82 868 8396",
+      "getFreeQuote": "Get Free Quote"
+    },
+    "costCalculator": {
+      "title": "Construction Cost Calculator",
+      "subtitle": "Get an instant estimate for your construction project in Gauteng",
+      "description": "Our free calculator provides accurate cost ranges based on 15+ years of experience and 500+ completed projects",
+      "howItWorks": {
+        "title": "How Our Calculator Works",
+        "steps": [
+          {
+            "title": "Select Service",
+            "description": "Choose your construction service type"
+          },
+          {
+            "title": "Project Details",
+            "description": "Enter size, location, and urgency"
+          },
+          {
+            "title": "Get Estimate",
+            "description": "Receive instant cost range"
+          },
+          {
+            "title": "Request Quote",
+            "description": "Get detailed accurate pricing"
+          }
+        ]
+      },
+      "whyUse": {
+        "title": "Why Use Our Cost Calculator?",
+        "benefits": [
+          {
+            "title": "Instant Results",
+            "description": "Get cost estimates in seconds, no waiting required"
+          },
+          {
+            "title": "Accurate Pricing",
+            "description": "Based on real project data and current market rates"
+          },
+          {
+            "title": "No Obligation",
+            "description": "Free to use with no commitment or contact required"
+          },
+          {
+            "title": "Expert Based",
+            "description": "Calculations from 15+ years of construction experience"
+          }
+        ]
+      },
+      "understanding": {
+        "title": "Understanding Your Estimate",
+        "included": {
+          "title": "What's Included in the Estimate",
+          "items": [
+            "Labor costs based on project complexity",
+            "Standard materials and supplies",
+            "Basic equipment and tools",
+            "Project management and supervision",
+            "Cleanup and waste removal"
+          ]
+        },
+        "factors": {
+          "title": "Factors That May Affect Final Cost",
+          "items": [
+            "Specific material choices (premium vs. standard)",
+            "Site accessibility and conditions",
+            "Structural complications discovered during work",
+            "Custom design requirements",
+            "Permits and compliance requirements",
+            "Seasonal demand and material availability"
+          ]
+        },
+        "accurateQuote": {
+          "title": "Get an Accurate Quote",
+          "description": "While our calculator provides a reliable estimate, every project is unique. For the most accurate pricing tailored to your specific needs, we recommend requesting a detailed quote. Our team will:",
+          "benefits": [
+            "Visit your site for proper assessment",
+            "Discuss your specific requirements and preferences",
+            "Provide detailed breakdown of all costs",
+            "Offer professional recommendations",
+            "Answer all your questions"
+          ],
+          "button": "Request Free Detailed Quote"
+        }
+      },
+      "whyChoose": {
+        "title": "Why Choose Sinqobile Construction?",
+        "stats": [
+          {
+            "value": "15+",
+            "label": "Years Experience"
+          },
+          {
+            "value": "500+",
+            "label": "Projects Done"
+          },
+          {
+            "value": "4.9★",
+            "label": "Client Rating"
+          },
+          {
+            "value": "100%",
+            "label": "Satisfaction"
+          }
+        ]
+      },
+      "cta": {
+        "title": "Ready to Start Your Project?",
+        "subtitle": "Get a detailed, accurate quote from our experienced team",
+        "requestQuote": "Request Free Quote",
+        "call": "Call: +27 82 868 8396"
+      },
+      "calculator": {
+        "header": "Cost Calculator",
+        "subheader": "Get an instant estimate for your project",
+        "serviceType": "Service Type",
+        "serviceTypePlaceholder": "Select a service...",
+        "projectSize": "Project Size",
+        "projectSizePlaceholder": "Select project size...",
+        "location": "Location (Optional)",
+        "locationPlaceholder": "Select your area...",
+        "urgency": "Project Urgency",
+        "standard": "Standard",
+        "urgent": "Urgent (+20%)",
+        "calculateButton": "Calculate Estimate",
+        "estimatedCost": "Estimated Cost Range",
+        "basedOn": "Based on",
+        "project": "project",
+        "locationLabel": "Location",
+        "urgentTimeline": "Urgent timeline",
+        "standardTimeline": "Standard timeline",
+        "includesCallout": "Includes R400 call-out fee",
+        "note": "Note:",
+        "noteText": "This is an estimated range based on typical projects. Final costs may vary depending on specific requirements, materials, and site conditions.",
+        "getAccurateQuote": "Get Accurate Quote",
+        "trustIndicators": {
+          "projects": "Projects",
+          "years": "Years",
+          "rating": "Rating"
+        },
+        "services": {
+          "building": "New Building Construction",
+          "renovation": "Home Renovation",
+          "roofing": "Roofing Services",
+          "paving": "Paving & Driveways",
+          "painting": "Painting Services",
+          "plumbing": "Plumbing Work",
+          "tiling": "Tiling Services",
+          "waterproofing": "Waterproofing",
+          "extensions": "Home Extensions",
+          "landscaping": "Landscaping"
+        },
+        "sizes": {
+          "small": "Small (< 50m²)",
+          "medium": "Medium (50-150m²)",
+          "large": "Large (150-300m²)",
+          "xlarge": "Extra Large (> 300m²)"
+        }
+      }
     },
     "contact": {
-      "title": "Contact MD Builders",
+      "title": "Contact Sinqobile Construction",
       "subtitle": "Get in Touch for Your Next Construction Project",
       "heroTitle": "Let's Build Something Great Together",
       "heroSubtitle": "Contact us today for a free consultation and quote",
@@ -222,18 +547,28 @@
         "submit": "Send Message",
         "sending": "Sending...",
         "success": "Message sent successfully! We'll contact you soon.",
-        "error": "Failed to send message. Please try again or call us directly."
+        "error": "Failed to send message. Please try again or call us directly.",
+        "otherLocation": "Other (please specify in message)"
       },
       "info": {
         "title": "Contact Information",
-        "phone": "071 933 4063",
+        "phone": "+27 82 868 8396",
+        "phone2": "+27 81 569 2985",
         "email": "info@mdbuilders.co.za",
+        "emailLabel": "Email",
         "hours": "Mon - Fri: 7:00 AM - 6:00 PM\nSat: 8:00 AM - 4:00 PM\nSun: Emergency calls only",
-        "emergency": "24/7 Emergency Services Available"
+        "emergency": "24/7 Emergency Services Available",
+        "emergencyDescription": "For urgent construction emergencies like burst pipes, electrical issues, or structural damage.",
+        "emergencyLine": "Emergency Line"
+      },
+      "callOutFee": {
+        "title": "Call-Out Fee Information",
+        "description": "This fee covers our professional on-site visit to assess what work needs to be done for your project."
       },
       "serviceAreas": {
         "title": "Service Areas",
-        "description": "We proudly serve residential and commercial clients throughout Gauteng Province"
+        "description": "We proudly serve residential and commercial clients throughout Gauteng Province",
+        "notListed": "Don't see your area listed? Contact us - we may still be able to help!"
       }
     },
     "faq": {
@@ -255,7 +590,7 @@
             },
             {
               "question": "Are you licensed and insured?",
-              "answer": "Yes, MD Builders is fully licensed and insured. We carry comprehensive liability insurance to protect both our clients and our team during all projects."
+              "answer": "Yes, Sinqobile Construction is fully licensed and insured. We carry comprehensive liability insurance to protect both our clients and our team during all projects."
             }
           ]
         },
@@ -299,12 +634,113 @@
         "subtitle": "Don't hesitate to reach out - we're here to help!",
         "button": "Contact Us"
       }
+    },
+    "blog": {
+      "title": "Construction Insights & Tips",
+      "subtitle": "Expert advice, guides, and industry insights from Sinqobile Construction. Learn about construction costs, renovation ideas, building regulations, and more.",
+      "searchPlaceholder": "Search articles...",
+      "readMore": "Read More",
+      "previous": "Previous",
+      "next": "Next",
+      "noResults": "No articles found matching your criteria. Try adjusting your search or filters.",
+      "ctaTitle": "Need Expert Construction Advice?",
+      "ctaSubtitle": "Our team at Sinqobile Construction is here to help with your construction project. Get a free consultation and quote today.",
+      "call": "Call: +27 82 868 8396",
+      "getFreeQuote": "Get Free Quote",
+      "categories": {
+        "all": "All",
+        "buildingCosts": "Building Costs",
+        "contractorTips": "Contractor Tips",
+        "renovations": "Renovations",
+        "regulations": "Regulations",
+        "roofing": "Roofing",
+        "maintenance": "Maintenance",
+        "designIdeas": "Design Ideas"
+      }
+    }
+  },
+  "aboutPage": {
+    "heroStats": {
+      "experience": "15+ Years Experience",
+      "insured": "Fully Insured",
+      "allAreas": "All Gauteng Areas"
+    },
+    "getFreeQuote": "Get Free Quote",
+    "serviceAreas": {
+      "title": "Serving All Gauteng Areas",
+      "description": "From Johannesburg to Pretoria, East Rand to West Rand - we bring quality construction services to your doorstep.",
+      "viewAll": "View All Service Areas"
+    },
+    "finalCTA": {
+      "title": "Ready to Start Your Project?",
+      "description": "Contact Sinqobile Construction today for a free consultation and quote. Let's build something great together!"
     }
   },
   "about": {
-    "title": "About Meshack Dlamini",
-    "description": "With over 15 years of experience in the construction industry, Meshack Dlamini has built a reputation for quality workmanship and reliable service across Gauteng.",
+    "title": "About Dingwayo Reason Ndlovu",
+    "description": "With over 15 years of experience in the construction industry, Dingwayo Reason Ndlovu has built a reputation for quality workmanship and reliable service across Gauteng.",
     "experience": "From small home repairs to large construction projects, we deliver exceptional results that stand the test of time."
+  },
+  "testimonialsEnhanced": {
+    "title": "What Our Customers Say",
+    "subtitle": "Don't just take our word for it",
+    "basedOn": "Based on",
+    "verifiedReviews": "verified reviews from satisfied customers",
+    "verifiedCustomer": "Verified Customer",
+    "stats": {
+      "projectsCompleted": "Projects Completed",
+      "averageRating": "Average Rating",
+      "yearsExperience": "Years Experience",
+      "satisfactionRate": "Satisfaction Rate"
+    }
+  },
+  "whyChooseUs": {
+    "title": "Why Choose Sinqobile Construction for Your Construction Project?",
+    "subtitle": "Professional construction services in Gauteng with proven expertise in building, renovations, plastering, painting, paving, tiling, plumbing, and more. Here's why property owners across Johannesburg, Pretoria, and Sandton trust Sinqobile Construction:",
+    "reasons": {
+      "experience": {
+        "title": "15+ Years Experience",
+        "description": "Over 15 years of professional construction experience serving Gauteng. We've completed 500+ successful projects across Johannesburg, Pretoria, Sandton, and surrounding areas."
+      },
+      "licensed": {
+        "title": "Fully Licensed & Insured",
+        "description": "NHBRC registered and fully insured with comprehensive liability coverage. Your property and investment are protected with every project we undertake."
+      },
+      "quality": {
+        "title": "Quality Workmanship Guaranteed",
+        "description": "We stand behind our work with comprehensive warranties. Every project meets the highest standards of quality, from plastering and painting to complete home renovations."
+      },
+      "team": {
+        "title": "Expert Professional Team",
+        "description": "Our certified construction professionals specialize in building, tiling, paving, plumbing, roofing, and waterproofing. Skilled craftsmen dedicated to excellence."
+      },
+      "onTime": {
+        "title": "On-Time Project Delivery",
+        "description": "We respect your time and budget. Projects are completed on schedule with transparent pricing and no hidden costs. R400 call-out fee for consultations and quotes."
+      },
+      "allAreas": {
+        "title": "Serving All Gauteng Areas",
+        "description": "From Johannesburg CBD to Sandton, Pretoria to Centurion, Midrand to Fourways - we provide professional construction services across all Gauteng suburbs."
+      },
+      "rating": {
+        "title": "4.9★ Customer Rating",
+        "description": "Rated 4.9 stars by satisfied customers. Read our Google reviews to see why homeowners and businesses trust Sinqobile Construction for their construction needs."
+      },
+      "emergency": {
+        "title": "24/7 Emergency Services",
+        "description": "Emergency construction services available for urgent repairs including burst pipes, electrical issues, roof leaks, and structural damage. Call +27 82 868 8396 or +27 81 569 2985 anytime."
+      }
+    },
+    "comprehensiveTitle": "Comprehensive Construction Services Across Gauteng",
+    "comprehensiveContent": {
+      "para1": "Sinqobile Construction is your trusted construction partner serving all areas of Gauteng Province. Whether you need building contractors in Johannesburg, renovation specialists in Sandton, or construction services in Pretoria, our experienced team delivers exceptional results.",
+      "para2": "Our comprehensive services include residential building, commercial construction, home renovations, plastering and painting, paving and driveways, tiling services, plumbing installations and repairs, roofing and waterproofing, and general maintenance.",
+      "para3": "With 15+ years of construction experience and 500+ completed projects, we've built a reputation for quality workmanship, reliable service, and competitive pricing. Our 4.9-star customer rating reflects our commitment to customer satisfaction.",
+      "para4": "We serve residential and commercial clients in Johannesburg, Sandton, Pretoria, Centurion, Midrand, Randburg, Fourways, Roodepoort, and all surrounding Gauteng suburbs. Our local expertise ensures we understand the unique construction requirements of each area.",
+      "para5": "Free quotes available with a transparent R400 call-out fee for consultations. Contact us at +27 82 868 8396 or +27 81 569 2985 to discuss your construction project. We're fully licensed, NHBRC registered, and comprehensively insured for your peace of mind."
+    },
+    "callButton": "Call: +27 82 868 8396",
+    "quoteButton": "Get Free Quote"
   },
   "testimonials": {
     "title": "What Our Clients Say",
@@ -330,14 +766,360 @@
   "contact": {
     "callNow": "Call Now",
     "call": "Call",
-    "phone": "071 933 4063",
+    "phone": "+27 82 868 8396",
     "email": "info@mdbuilders.co.za",
     "address": "Serving All Gauteng Areas"
+  },
+  "areaPage": {
+    "coverageArea": "Coverage Area",
+    "callUs": "Call Us",
+    "businessHours": "Business Hours",
+    "monFri": "Mon-Fri: 7AM-6PM",
+    "sat": "Sat: 8AM-4PM",
+    "sun": "Sun: Emergency Only",
+    "allGautengSuburbs": "All Gauteng suburbs including",
+    "constructionServicesIn": "Construction Services in",
+    "whyChoose": "Why Choose Sinqobile Construction in",
+    "ourServicesIn": "Our Services in",
+    "comprehensiveSolutions": "Comprehensive construction solutions for residential and commercial properties",
+    "suburbsWeServe": "Suburbs We Serve in",
+    "professionalServices": "Professional construction services across all suburbs of",
+    "readyToStart": "Ready to Start Your Project in",
+    "contactToday": "Contact Sinqobile Construction today for a free consultation and quote. R400 call-out fee applies.",
+    "callNow": "Call Now",
+    "requestFreeQuote": "Request Free Quote",
+    "fullyInsured": "Fully Insured",
+    "comprehensiveLiability": "Comprehensive liability coverage for your peace of mind",
+    "yearsExperience": "15+ Years",
+    "extensiveExperience": "Extensive experience serving",
+    "qualityGuaranteed": "Quality Guaranteed",
+    "workmanshipWarranty": "Workmanship warranty on all projects",
+    "dontSeeArea": "Don't See Your Area Listed?",
+    "weServeAllAreas": "We serve all areas across Gauteng Province. Contact us to discuss your construction project!",
+    "getFreeQuote": "Get Free Quote",
+    "andMore": "& more",
+    "allSuburbsIncluding": "All Gauteng suburbs including"
   },
   "footer": {
     "mission": "Providing quality construction services across Gauteng with integrity, professionalism, and attention to detail.",
     "quickLinks": "Quick Links",
     "ourServices": "Our Services",
-    "contactInfo": "Contact Info"
+    "contactInfo": "Contact Info",
+    "businessHours": {
+      "weekdays": "Monday - Friday: 7:00 AM - 5:00 PM",
+      "saturday": "Saturday: 8:00 AM - 1:00 PM",
+      "sunday": "Sunday: Closed"
+    },
+    "copyright": "© 2024 Sinqobile Construction. All rights reserved."
+  },
+  "projects": {
+    "brickwork-alberton-78": {
+      "title": "Roof Installation Project",
+      "description": "Professional roof installation with quality materials and expert craftsmanship."
+    },
+    "brickwork-lanseria-49": {
+      "title": "Braai Area Construction",
+      "description": "Custom braai area construction with quality brickwork and outdoor entertainment features."
+    },
+    "brickwork-roodepoort-35": {
+      "title": "Bathroom Tiling Installation",
+      "description": "Professional bathroom tiling with waterproofing and premium finishes."
+    },
+    "building-edenvale-30": {
+      "title": "Residential Building Construction",
+      "description": "Complete residential building construction with modern design and quality finishes."
+    },
+    "building-rosebank-48": {
+      "title": "Residential House Extension",
+      "description": "Quality residential house extension with modern design and seamless integration."
+    },
+    "building-springs-54": {
+      "title": "Bathroom Tiling Service",
+      "description": "Professional bathroom tiling with quality materials and expert installation."
+    },
+    "concrete-bedfordview-31": {
+      "title": "Bathroom Installation Project",
+      "description": "Complete bathroom installation with tiling, fixtures, and modern finishes."
+    },
+    "concrete-boksburg-90": {
+      "title": "Fence Installation and Concrete Work",
+      "description": "Professional fence installation with concrete foundation and quality materials."
+    },
+    "concrete-johannesburg-86": {
+      "title": "Plumbing Installation Project",
+      "description": "Professional plumbing installation with modern fixtures and quality workmanship."
+    },
+    "concrete-midrand-79": {
+      "title": "Roof Tiling Installation",
+      "description": "Professional roof tiling installation with quality materials and expert craftsmanship."
+    },
+    "concrete-sandton-36": {
+      "title": "Gate and Concrete Installation",
+      "description": "Professional gate and concrete installation with quality materials and expert workmanship."
+    },
+    "concrete-soweto-56": {
+      "title": "Kitchen Installation Project",
+      "description": "Complete kitchen installation with custom cabinetry and modern appliances."
+    },
+    "construction-randburg-2": {
+      "title": "Paving Installation Project",
+      "description": "Professional paving installation with quality materials and expert craftsmanship."
+    },
+    "construction-sandton-77": {
+      "title": "Walkway Paving Project",
+      "description": "Professional walkway paving with quality materials and modern design."
+    },
+    "electrical-edenvale-29": {
+      "title": "Geyser Installation Project",
+      "description": "Professional geyser installation with safety compliance and quality workmanship."
+    },
+    "extensions-bedfordview-19": {
+      "title": "Bathroom Installation Project",
+      "description": "Professional bathroom installation with quality tiling and modern fixtures."
+    },
+    "extensions-sandton-65": {
+      "title": "Bathroom Tiling Service",
+      "description": "Professional bathroom tiling service with quality materials and expert installation."
+    },
+    "fencing-alexandra-93": {
+      "title": "Roof Tiling Installation",
+      "description": "Professional roof tiling installation with quality materials and expert craftsmanship."
+    },
+    "fencing-krugersdorp-21": {
+      "title": "Excavation and Foundation Work",
+      "description": "Professional excavation and foundation work with quality concrete and expert construction."
+    },
+    "fencing-linden-28": {
+      "title": "Roof Installation Project",
+      "description": "Professional roof installation with quality materials and expert craftsmanship."
+    },
+    "fencing-randburg-52": {
+      "title": "Plumbing Basin Installation",
+      "description": "Professional plumbing basin installation with quality fixtures and expert workmanship."
+    },
+    "flooring-alberton-64": {
+      "title": "Shower Installation Project",
+      "description": "Professional shower installation with modern fixtures and quality plumbing work."
+    },
+    "flooring-fourways-43": {
+      "title": "Hardwood Flooring Installation",
+      "description": "Premium hardwood flooring with expert installation and finishing."
+    },
+    "flooring-germiston-71": {
+      "title": "Pool Area Tiling and Paving",
+      "description": "Professional pool area tiling and paving with slip-resistant materials and quality finishes."
+    },
+    "flooring-midrand-55": {
+      "title": "Flooring Installation Project",
+      "description": "Professional paving installation with quality materials and expert craftsmanship."
+    },
+    "installation-johannesburg-24": {
+      "title": "Concrete Flooring Installation",
+      "description": "Professional concrete flooring installation with quality materials and expert workmanship."
+    },
+    "installation-rosebank-72": {
+      "title": "Concrete Foundation Work",
+      "description": "Professional concrete foundation work with quality materials and expert construction."
+    },
+    "installation-rosebank-83": {
+      "title": "Staircase Construction",
+      "description": "Professional staircase construction with quality materials and expert craftsmanship."
+    },
+    "landscaping-alberton-39": {
+      "title": "Wall Plastering Service",
+      "description": "Professional wall plastering service with smooth finish and quality materials."
+    },
+    "maintenance-alberton-73": {
+      "title": "Property Maintenance Service",
+      "description": "Comprehensive property maintenance including repairs and upkeep."
+    },
+    "maintenance-centurion-70": {
+      "title": "Maintenance Project",
+      "description": "Professional water tank installation with quality materials and expert workmanship."
+    },
+    "maintenance-linden-80": {
+      "title": "Kitchen Tiling Project",
+      "description": "Professional kitchen tiling with quality materials and expert installation."
+    },
+    "maintenance-sandton-17": {
+      "title": "Plumbing and Drainage Installation",
+      "description": "Professional plumbing and drainage installation with quality materials and expert workmanship."
+    },
+    "painting-alberton-4": {
+      "title": "Paving Installation Project",
+      "description": "Professional paving installation with quality materials and expert craftsmanship."
+    },
+    "painting-alberton-53": {
+      "title": "Paving Construction Project",
+      "description": "Professional paving construction with quality materials and modern design."
+    },
+    "painting-krugersdorp-76": {
+      "title": "Shower Wall Tiling",
+      "description": "Professional shower wall tiling with quality materials and waterproofing."
+    },
+    "painting-soweto-42": {
+      "title": "Concrete Paving Project",
+      "description": "Professional concrete paving with quality materials and expert workmanship."
+    },
+    "paving-alberton-40": {
+      "title": "Floor Tiling Project",
+      "description": "Professional floor tiling with quality materials and expert installation."
+    },
+    "paving-alberton-46": {
+      "title": "Modern Kitchen Renovation",
+      "description": "Complete modern kitchen renovation with custom cabinetry, tiling, and contemporary design."
+    },
+    "paving-boksburg-84": {
+      "title": "Kitchen Backsplash Tiling",
+      "description": "Professional kitchen backsplash tiling with decorative patterns and quality materials."
+    },
+    "paving-lanseria-45": {
+      "title": "Geyser Installation Project",
+      "description": "Professional geyser installation with safety compliance and quality workmanship."
+    },
+    "paving-midrand-59": {
+      "title": "Pool Area Paving",
+      "description": "Pool area paving with slip-resistant materials and drainage."
+    },
+    "plastering-fourways-50": {
+      "title": "Brick Wall Construction",
+      "description": "Professional brick wall construction with quality materials and expert craftsmanship."
+    },
+    "plastering-germiston-74": {
+      "title": "Bathroom Installation Project",
+      "description": "Professional bathroom installation with modern fixtures and quality workmanship."
+    },
+    "plastering-kempton-park-47": {
+      "title": "Brick Wall and Painting",
+      "description": "Professional brick wall construction with painting and finishing work."
+    },
+    "plastering-pretoria-44": {
+      "title": "Floor Tiling Work",
+      "description": "Professional floor tiling with gray and white patterned tiles and quality installation."
+    },
+    "plumbing-fourways-27": {
+      "title": "Bathroom Wall Tiling Installation",
+      "description": "Professional bathroom wall tiling with mosaic pattern tiles and modern design."
+    },
+    "plumbing-germiston-51": {
+      "title": "Kitchen Plumbing Service",
+      "description": "Kitchen plumbing installation including sink, dishwasher, and water lines."
+    },
+    "plumbing-kempton-park-23": {
+      "title": "Gate Installation Project",
+      "description": "Professional glass partition and gate installation with modern translucent design."
+    },
+    "plumbing-lanseria-75": {
+      "title": "Floor Tiling Installation",
+      "description": "Professional floor tiling with white marble-look tiles and quality installation."
+    },
+    "plumbing-melville-10": {
+      "title": "Drain Installation Project",
+      "description": "Drainage system installation with proper slope and connections."
+    },
+    "plumbing-riversands-33": {
+      "title": "Plumbing Maintenance Service",
+      "description": "Comprehensive plumbing maintenance including inspections and repairs."
+    },
+    "renovation-bedfordview-16": {
+      "title": "Home Renovation Project",
+      "description": "Complete home renovation with modern upgrades and quality finishes."
+    },
+    "renovation-edenvale-66": {
+      "title": "Property Renovation Service",
+      "description": "Full property renovation including structural and cosmetic improvements."
+    },
+    "renovation-johannesburg-26": {
+      "title": "Kitchen Renovation Project",
+      "description": "Complete kitchen renovation with modern white cabinetry and contemporary design."
+    },
+    "renovation-midrand-37": {
+      "title": "Plumbing Renovation Project",
+      "description": "Complete plumbing renovation with exposed pipe work and system upgrades."
+    },
+    "renovation-randburg-7": {
+      "title": "House Renovation Service",
+      "description": "Comprehensive house renovation including interior and exterior work."
+    },
+    "repairs-fourways-6": {
+      "title": "Emergency Repair Service",
+      "description": "Fast emergency repair service for urgent construction issues."
+    },
+    "repairs-fourways-41": {
+      "title": "Building Repairs Project",
+      "description": "Building repairs including crack fixing and structural reinforcement."
+    },
+    "repairs-linden-13": {
+      "title": "Home Repairs Service",
+      "description": "Complete home repairs including plumbing, electrical, and general fixes."
+    },
+    "repairs-soweto-87": {
+      "title": "Property Repairs Project",
+      "description": "Property repairs including roof, walls, and foundation work."
+    },
+    "roofing-alberton-88": {
+      "title": "Bathroom Installation Project",
+      "description": "Complete bathroom installation with modern fixtures, bathtub, and quality tiling."
+    },
+    "roofing-centurion-61": {
+      "title": "Pool Construction and Paving",
+      "description": "Professional pool construction with surrounding paving and landscaping."
+    },
+    "roofing-midrand-89": {
+      "title": "Brick Wall Construction",
+      "description": "Professional brick wall construction with quality materials and expert craftsmanship."
+    },
+    "roofing-pretoria-15": {
+      "title": "Bathroom Wall Tiling Project",
+      "description": "Professional bathroom wall tiling with decorative mosaic border and quality materials."
+    },
+    "tiling-alexandra-12": {
+      "title": "Wall Plastering Service",
+      "description": "Professional wall plastering with smooth finish and quality materials."
+    },
+    "tiling-edenvale-62": {
+      "title": "Wooden Floor Installation",
+      "description": "Premium wooden floor installation with expert craftsmanship and quality finishing."
+    },
+    "tiling-germiston-1": {
+      "title": "Kitchen Tiling Project",
+      "description": "Kitchen tiling including backsplash and floor with modern design."
+    },
+    "waterproofing-alberton-60": {
+      "title": "Bathtub Installation Project",
+      "description": "Professional bathtub installation with modern fixtures and quality plumbing work."
+    },
+    "waterproofing-krugersdorp-85": {
+      "title": "Floor Tiling Installation",
+      "description": "Professional floor tiling with white marble-look tiles and quality installation."
+    },
+    "waterproofing-lanseria-3": {
+      "title": "Geyser Installation Project",
+      "description": "Professional geyser installation with safety compliance and quality testing."
+    },
+    "waterproofing-midrand-63": {
+      "title": "Ceiling Beams Installation",
+      "description": "Professional ceiling beams installation with structural support and modern design."
+    },
+    "painting-johannesburg-94": {
+      "title": "Interior Ceiling Installation",
+      "description": "Professional interior ceiling installation with quality materials and expert craftsmanship."
+    },
+    "roofing-sandton-95": {
+      "title": "Ceiling Truss Installation",
+      "description": "Professional ceiling truss installation with structural support and quality materials."
+    },
+    "waterproofing-johannesburg-96": {
+      "title": "Pool Waterproofing Service",
+      "description": "Professional pool waterproofing with quality sealants and expert application."
+    },
+    "roofing-midrand-97": {
+      "title": "Roof Truss and Waterproofing",
+      "description": "Professional roof truss installation with waterproofing membrane and quality materials."
+    },
+    "plumbing-randburg-98": {
+      "title": "Drainage System Installation",
+      "description": "Professional drainage system installation with quality pipes and proper connections."
+    }
   }
 }

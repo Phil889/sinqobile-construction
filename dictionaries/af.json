@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "MD Bouers - Professionele Konstruksie Dienste in Gauteng",
+    "title": "Sinqobile Construction - Professionele Konstruksie Dienste in Gauteng",
     "description": "Kundige bou, pleister, verf, plavei, teël, en loodgieter dienste regoor Gauteng. Kwaliteit werkmanskap gewaarborg.",
     "keywords": "konstruksie, bou, pleister, verf, plavei, teël, loodgieter, Gauteng, Johannesburg, Pretoria"
   },
@@ -9,6 +9,8 @@
     "about": "Oor Ons",
     "services": "Dienste",
     "work": "Ons Werk",
+    "calculator": "Koste Sakrekenaar",
+    "blog": "Blog",
     "contact": "Kontak",
     "faq": "Vrae"
   },
@@ -22,6 +24,97 @@
     "insured": "Volledig Verseker",
     "guaranteed": "Werk Gewaarborg",
     "gauteng": "Bedien Hele Gauteng"
+  },
+  "callOutBanner": {
+    "message": "⚠️ R400 Uitroep Fooi vir ter plaatse assessering besoeke"
+  },
+  "trustBadges": {
+    "title": "Waarom Kies Sinqobile Construction?",
+    "badges": {
+      "insured": {
+        "title": "Volledig Verseker",
+        "description": "Omvattende aanspreeklikheids dekking"
+      },
+      "guaranteed": {
+        "title": "Kwaliteit Gewaarborg",
+        "description": "Werkmanskap waarborg op alle projekte"
+      },
+      "experience": {
+        "title": "15+ Jaar Ondervinding",
+        "description": "Vertrou deur Gauteng inwoners"
+      },
+      "projects": {
+        "title": "500+ Projekte",
+        "description": "Suksesvol voltooi"
+      },
+      "team": {
+        "title": "Kundige Span",
+        "description": "Gesertifiseerde professionele persone"
+      },
+      "registered": {
+        "title": "PTY LTD Geregistreer",
+        "description": "Wettige besigheids entiteit"
+      }
+    }
+  },
+  "trustCertifications": {
+    "title": "Professionele Sertifikate & Waarborge",
+    "subtitle": "Jou gemoedsrus is ons prioriteit. Ons is volledig gesertifiseer, verseker, en toegewy aan uitnemendheid.",
+    "certifications": {
+      "nhbrc": {
+        "title": "NHBRC Geregistreer",
+        "description": "Nasionale Huis Bouers Registrasie Raad"
+      },
+      "insured": {
+        "title": "Verseker & Gebind",
+        "description": "Volle aanspreeklikheids dekking"
+      },
+      "guarantee": {
+        "title": "10 Jaar Waarborg",
+        "description": "Strukturele waarborg ingesluit"
+      },
+      "licensed": {
+        "title": "Gelisensieerde Kontrakteur",
+        "description": "Volledig gesertifiseer & voldoen"
+      },
+      "safety": {
+        "title": "Veiligheid Voldoen",
+        "description": "ISO veiligheids standaarde"
+      },
+      "quality": {
+        "title": "Kwaliteit Verseker",
+        "description": "Premium werkmanskap"
+      }
+    },
+    "footer": "Vertrou deur 500+ Tevrede Kliënte Regoor Gauteng"
+  },
+  "projectGallery": {
+    "title": "Ons Onlangse Projekte",
+    "subtitle": "Blaai deur ons portefeulje van voltooide konstruksie en renovasie projekte regoor Gauteng",
+    "allProjects": "Alle Projekte",
+    "viewAll": "Sien Alle Projekte",
+    "total": "totaal",
+    "featured": "Uitgelig",
+    "modal": {
+      "location": "Ligging",
+      "duration": "Duur",
+      "type": "Tipe",
+      "completed": "Voltooi",
+      "getSimilarWork": "Kry Soortgelyke Werk Gedoen"
+    }
+  },
+  "googleReviews": {
+    "title": "Wat Ons Kliënte Sê",
+    "reviews": "Google Resensies",
+    "readAll": "Lees Alle Resensies",
+    "verifiedOn": "Geverifieer op Google",
+    "trustedProfile": "Vertroude Besigheids Profiel"
+  },
+  "googleBusinessCTA": {
+    "title": "Vind Ons op Google",
+    "subtitle": "Kyk na ons resensies van tevrede kliënte regoor Gauteng",
+    "leaveReview": "Los vir Ons 'n Resensie",
+    "findOnMaps": "Vind Ons op Kaarte"
   },
   "services": {
     "title": "Ons Dienste",
@@ -51,7 +144,19 @@
         "name": "Loodgieter",
         "description": "Installasie, herstelwerk, en onderhoud"
       }
-    }
+    },
+    "viewAllServices": "Sien Alle Dienste",
+    "totalServices": "totaal",
+    "projectsCompleted": "projekte voltooi"
+  },
+  "mobileCTA": {
+    "callNow": "Bel Nou",
+    "whatsapp": "WhatsApp"
+  },
+  "whatsappFloat": {
+    "chatWithUs": "Gesels met ons",
+    "needHelp": "Benodig hulp? Gesels met Dingwayo Reason Ndlovu op WhatsApp",
+    "startChat": "Begin Gesels"
   },
   "extendedServices": {
     "brickwork": {
@@ -107,15 +212,34 @@
       "description": "Kelder, dak, en buite waterdigting oplossings"
     }
   },
+  "categories": {
+    "roofing": "Dakwerk",
+    "building": "Bou",
+    "tiling": "Teël",
+    "extensions": "Uitbreidings",
+    "fencing": "Heinings",
+    "plumbing": "Loodgieter",
+    "paving": "Plavei",
+    "flooring": "Vloere",
+    "installation": "Installasie",
+    "concrete": "Beton",
+    "plastering": "Pleister",
+    "painting": "Verf",
+    "maintenance": "Onderhoud",
+    "renovation": "Renovasie",
+    "repairs": "Herstelwerk",
+    "brickwork": "Steenwerk",
+    "waterproofing": "Waterdigting"
+  },
   "pages": {
     "about": {
-      "title": "Oor MD Bouers",
+      "title": "Oor Sinqobile Construction",
       "subtitle": "Jou Vertroude Konstruksie Vennoot in Gauteng",
       "heroTitle": "15+ Jaar van Uitnemendheid in Konstruksie",
       "heroSubtitle": "Bou vertroue, een projek op 'n tyd regoor Gauteng Provinsie",
       "story": {
         "title": "Ons Verhaal",
-        "content": "Gestig deur Meshack Dlamini, MD Bouers bedien die Gauteng gemeenskap vir meer as 15 jaar. Wat begin het as 'n klein konstruksie besigheid het gegroei tot een van die mees vertroude name in residensiële en kommersiële konstruksie regoor Johannesburg, Pretoria, en omliggende areas."
+        "content": "Gestig deur Dingwayo Reason Ndlovu, Sinqobile Construction bedien die Gauteng gemeenskap vir meer as 15 jaar. Wat begin het as 'n klein konstruksie besigheid het gegroei tot een van die mees vertroude name in residensiële en kommersiële konstruksie regoor Johannesburg, Pretoria, en omliggende areas."
       },
       "mission": {
         "title": "Ons Missie",
@@ -143,7 +267,7 @@
         ]
       },
       "experience": {
-        "title": "Waarom Kies MD Bouers?",
+        "title": "Waarom Kies Sinqobile Construction?",
         "items": [
           "Meer as 15 jaar konstruksie ondervinding",
           "Volledig gelisensieer en verseker",
@@ -159,6 +283,29 @@
       "subtitle": "Omvattende Bou Oplossings Regoor Gauteng",
       "heroTitle": "Professionele Konstruksie Dienste",
       "heroSubtitle": "Van klein herstelwerk tot groot konstruksie projekte, ons hanteer dit alles",
+      "coreServicesTitle": "Ons Kern Dienste",
+      "coreServicesSubtitle": "Professionele konstruksie dienste met gewaarborgde kwaliteit en mededingende pryse",
+      "additionalServicesTitle": "Addisionele Dienste",
+      "additionalServicesSubtitle": "Omvattende konstruksie oplossings vir al jou bou behoeftes",
+      "projectsCompleted": "projekte voltooi",
+      "projects": "projekte",
+      "processSubtitle": "Ons bewese 5-stap proses verseker kwaliteit resultate elke keer",
+      "serviceAreasTitle": "Bedien Alle Gauteng Areas",
+      "serviceAreasDescription": "Ons verskaf professionele konstruksie dienste regoor Gauteng Provinsie, insluitend:",
+      "viewAllServiceAreas": "Sien Alle Diens Areas",
+      "whyChooseTitle": "Waarom Kies Sinqobile Construction?",
+      "whyChooseBenefits": [
+        "Meer as 15 jaar ondervinding",
+        "Volledig gelisensieer en verseker",
+        "Gratis, geen-verpligting kwotasies",
+        "Kwaliteit werkmanskap gewaarborg",
+        "Mededingende pryse",
+        "Noodgeval dienste beskikbaar",
+        "Professionele, betroubare span",
+        "Kliënt tevredenheid fokus"
+      ],
+      "getFreeQuote": "Kry Gratis Kwotasie: +27 82 868 8396",
+      "callNow": "Bel Nou: +27 82 868 8396",
       "process": {
         "title": "Ons Proses",
         "steps": [
@@ -193,19 +340,199 @@
     "ourWork": {
       "title": "Ons Werk",
       "subtitle": "Portefeulje van Voltooide Konstruksie Projekte",
-      "heroTitle": "Sien Ons Kwaliteit Werk",
+      "heroTitle": "Ons Konstruksie Projekte",
       "heroSubtitle": "Blaai deur ons portefeulje van suksesvolle projekte regoor Gauteng",
-      "filterAll": "Alle Projekte",
-      "projectDetails": "Projek Besonderhede",
-      "viewProject": "Sien Projek",
-      "categories": "Kategorieë",
-      "locations": "Liggings",
+      "projectsCompleted": "Projekte Voltooi",
+      "serviceCategories": "Diens Kategorieë",
+      "locationsServed": "Liggings",
       "searchPlaceholder": "Soek projekte...",
+      "filters": "Filters",
+      "allCategories": "Alle Kategorieë",
+      "allLocations": "Alle Liggings",
+      "category": "Kategorie",
+      "location": "Ligging",
+      "search": "Soek",
+      "clearAllFilters": "Verwyder Alle Filters",
+      "showing": "Wys",
+      "of": "van",
+      "projects": "projekte",
+      "show": "Wys",
+      "all": "Alles",
+      "featured": "Uitgelig",
       "noResults": "Geen projekte gevind wat jou kriteria pas nie",
-      "loadMore": "Laai Meer Projekte"
+      "loadingMore": "Laai meer projekte...",
+      "previous": "Vorige",
+      "next": "Volgende",
+      "backToTop": "↑ Terug na Bo",
+      "modalLocation": "Ligging",
+      "modalDuration": "Duur",
+      "modalType": "Tipe",
+      "modalCompleted": "Voltooi",
+      "getSimilarWork": "Kry Soortgelyke Werk Gedoen",
+      "ctaTitle": "Gereed om Jou Projek te Begin?",
+      "ctaSubtitle": "Sluit aan by ons tevrede kliënte en ervaar kwaliteit konstruksie dienste",
+      "callNow": "Bel Nou: +27 82 868 8396",
+      "getFreeQuote": "Kry Gratis Kwotasie"
+    },
+    "costCalculator": {
+      "title": "Konstruksie Koste Sakrekenaar",
+      "subtitle": "Kry 'n onmiddellike skatting vir jou konstruksie projek in Gauteng",
+      "description": "Ons gratis sakrekenaar verskaf akkurate koste reekse gebaseer op 15+ jaar ondervinding en 500+ voltooide projekte",
+      "howItWorks": {
+        "title": "Hoe Ons Sakrekenaar Werk",
+        "steps": [
+          {
+            "title": "Kies Diens",
+            "description": "Kies jou konstruksie diens tipe"
+          },
+          {
+            "title": "Projek Besonderhede",
+            "description": "Voer grootte, ligging, en dringendheid in"
+          },
+          {
+            "title": "Kry Skatting",
+            "description": "Ontvang onmiddellike koste reeks"
+          },
+          {
+            "title": "Versoek Kwotasie",
+            "description": "Kry gedetailleerde akkurate pryse"
+          }
+        ]
+      },
+      "whyUse": {
+        "title": "Waarom Gebruik Ons Koste Sakrekenaar?",
+        "benefits": [
+          {
+            "title": "Onmiddellike Resultate",
+            "description": "Kry koste skattings in sekondes, geen wag nodig nie"
+          },
+          {
+            "title": "Akkurate Pryse",
+            "description": "Gebaseer op werklike projek data en huidige mark tariewe"
+          },
+          {
+            "title": "Geen Verpligting",
+            "description": "Gratis om te gebruik sonder enige verbintenis of kontak vereis"
+          },
+          {
+            "title": "Kundige Gebaseer",
+            "description": "Berekeninge van 15+ jaar konstruksie ondervinding"
+          }
+        ]
+      },
+      "understanding": {
+        "title": "Verstaan Jou Skatting",
+        "included": {
+          "title": "Wat Ingesluit is in die Skatting",
+          "items": [
+            "Arbeid kostes gebaseer op projek kompleksiteit",
+            "Standaard materiale en voorrade",
+            "Basiese toerusting en gereedskap",
+            "Projek bestuur en toesig",
+            "Skoonmaak en afval verwydering"
+          ]
+        },
+        "factors": {
+          "title": "Faktore wat Finale Koste Kan Beïnvloed",
+          "items": [
+            "Spesifieke materiaal keuses (premium vs. standaard)",
+            "Terrein toeganklikheid en toestande",
+            "Strukturele komplikasies ontdek tydens werk",
+            "Pasgemaakte ontwerp vereistes",
+            "Permitte en nakoming vereistes",
+            "Seisoenale aanvraag en materiaal beskikbaarheid"
+          ]
+        },
+        "accurateQuote": {
+          "title": "Kry 'n Akkurate Kwotasie",
+          "description": "Terwyl ons sakrekenaar 'n betroubare skatting verskaf, is elke projek uniek. Vir die mees akkurate pryse aangepas by jou spesifieke behoeftes, beveel ons aan om 'n gedetailleerde kwotasie te versoek. Ons span sal:",
+          "benefits": [
+            "Jou terrein besoek vir behoorlike assessering",
+            "Jou spesifieke vereistes en voorkeure bespreek",
+            "Gedetailleerde uiteensetting van alle kostes verskaf",
+            "Professionele aanbevelings bied",
+            "Al jou vrae beantwoord"
+          ],
+          "button": "Versoek Gratis Gedetailleerde Kwotasie"
+        }
+      },
+      "whyChoose": {
+        "title": "Waarom Kies Sinqobile Construction?",
+        "stats": [
+          {
+            "value": "15+",
+            "label": "Jaar Ondervinding"
+          },
+          {
+            "value": "500+",
+            "label": "Projekte Gedoen"
+          },
+          {
+            "value": "4.9★",
+            "label": "Kliënt Gradering"
+          },
+          {
+            "value": "100%",
+            "label": "Tevredenheid"
+          }
+        ]
+      },
+      "cta": {
+        "title": "Gereed om Jou Projek te Begin?",
+        "subtitle": "Kry 'n gedetailleerde, akkurate kwotasie van ons ervare span",
+        "requestQuote": "Versoek Gratis Kwotasie",
+        "call": "Bel: +27 82 868 8396"
+      },
+      "calculator": {
+        "header": "Koste Sakrekenaar",
+        "subheader": "Kry 'n onmiddellike skatting vir jou projek",
+        "serviceType": "Diens Tipe",
+        "serviceTypePlaceholder": "Kies 'n diens...",
+        "projectSize": "Projek Grootte",
+        "projectSizePlaceholder": "Kies projek grootte...",
+        "location": "Ligging (Opsioneel)",
+        "locationPlaceholder": "Kies jou area...",
+        "urgency": "Projek Dringendheid",
+        "standard": "Standaard",
+        "urgent": "Dringend (+20%)",
+        "calculateButton": "Bereken Skatting",
+        "estimatedCost": "Geskatte Koste Reeks",
+        "basedOn": "Gebaseer op",
+        "project": "projek",
+        "locationLabel": "Ligging",
+        "urgentTimeline": "Dringende tydlyn",
+        "standardTimeline": "Standaard tydlyn",
+        "includesCallout": "Sluit R400 uitroep fooi in",
+        "note": "Let wel:",
+        "noteText": "Dit is 'n geskatte reeks gebaseer op tipiese projekte. Finale kostes kan wissel afhangende van spesifieke vereistes, materiale, en terrein toestande.",
+        "getAccurateQuote": "Kry Akkurate Kwotasie",
+        "trustIndicators": {
+          "projects": "Projekte",
+          "years": "Jaar",
+          "rating": "Gradering"
+        },
+        "services": {
+          "building": "Nuwe Bou Konstruksie",
+          "renovation": "Huis Renovasie",
+          "roofing": "Dakwerk Dienste",
+          "paving": "Plavei & Opritte",
+          "painting": "Verf Dienste",
+          "plumbing": "Loodgieter Werk",
+          "tiling": "Teël Dienste",
+          "waterproofing": "Waterdigting",
+          "extensions": "Huis Uitbreidings",
+          "landscaping": "Landskapering"
+        },
+        "sizes": {
+          "small": "Klein (< 50m²)",
+          "medium": "Medium (50-150m²)",
+          "large": "Groot (150-300m²)",
+          "xlarge": "Ekstra Groot (> 300m²)"
+        }
+      }
     },
     "contact": {
-      "title": "Kontak MD Bouers",
+      "title": "Kontak Sinqobile Construction",
       "subtitle": "Kom in Aanraking vir Jou Volgende Konstruksie Projek",
       "heroTitle": "Kom Ons Bou Iets Groots Saam",
       "heroSubtitle": "Kontak ons vandag vir 'n gratis konsultasie en kwotasie",
@@ -220,18 +547,28 @@
         "submit": "Stuur Boodskap",
         "sending": "Stuur...",
         "success": "Boodskap suksesvol gestuur! Ons sal jou binnekort kontak.",
-        "error": "Kon nie boodskap stuur nie. Probeer asseblief weer of bel ons direk."
+        "error": "Kon nie boodskap stuur nie. Probeer asseblief weer of bel ons direk.",
+        "otherLocation": "Ander (spesifiseer asseblief in boodskap)"
       },
       "info": {
         "title": "Kontak Inligting",
-        "phone": "071 933 4063",
+        "phone": "+27 82 868 8396",
+        "phone2": "+27 81 569 2985",
         "email": "info@mdbuilders.co.za",
+        "emailLabel": "E-pos",
         "hours": "Ma - Vr: 7:00 VM - 6:00 NM\nSa: 8:00 VM - 4:00 NM\nSo: Slegs noodgeval oproepe",
-        "emergency": "24/7 Noodgeval Dienste Beskikbaar"
+        "emergency": "24/7 Noodgeval Dienste Beskikbaar",
+        "emergencyDescription": "Vir dringende konstruksie noodgevalle soos gebroke pype, elektriese probleme, of strukturele skade.",
+        "emergencyLine": "Noodlyn"
+      },
+      "callOutFee": {
+        "title": "Uitroep Fooi Inligting",
+        "description": "Hierdie fooi dek ons professionele ter plaatse besoek om te assesseer watter werk gedoen moet word vir jou projek."
       },
       "serviceAreas": {
         "title": "Diens Areas",
-        "description": "Ons bedien met trots residensiële en kommersiële kliënte regoor Gauteng Provinsie"
+        "description": "Ons bedien met trots residensiële en kommersiële kliënte regoor Gauteng Provinsie",
+        "notListed": "Sien jy nie jou area gelys nie? Kontak ons - ons kan dalk steeds help!"
       }
     },
     "faq": {
@@ -253,7 +590,41 @@
             },
             {
               "question": "Is julle gelisensieer en verseker?",
-              "answer": "Ja, MD Bouers is volledig gelisensieer en verseker. Ons dra omvattende aanspreeklikheidsversekering om beide ons kliënte en ons span tydens alle projekte te beskerm."
+              "answer": "Ja, Sinqobile Construction is volledig gelisensieer en verseker. Ons dra omvattende aanspreeklikheidsversekering om beide ons kliënte en ons span tydens alle projekte te beskerm."
+            }
+          ]
+        },
+        {
+          "title": "Projek & Pryse",
+          "items": [
+            {
+              "question": "Hoe lank neem projekte tipies?",
+              "answer": "Projek tydlyne wissel afhangende van omvang en kompleksiteit. Klein herstelwerk kan 1-2 dae neem, terwyl groter konstruksie projekte verskeie weke kan neem. Ons verskaf gedetailleerde tydlyne met elke kwotasie."
+            },
+            {
+              "question": "Watter betaalmetodes aanvaar julle?",
+              "answer": "Ons aanvaar kontant, bankoordragte, en kaartbetalings. Vir groter projekte vereis ons tipies 'n deposito om werk te begin, met die balans verskuldig by voltooiing."
+            },
+            {
+              "question": "Bied julle waarborge op julle werk aan?",
+              "answer": "Ja, ons staan agter ons werk met omvattende waarborge. Waarborg periodes wissel volgens diens tipe, en ons sal volle waarborg besonderhede met jou kwotasie verskaf."
+            }
+          ]
+        },
+        {
+          "title": "Dienste & Materiale",
+          "items": [
+            {
+              "question": "Verskaf julle materiale of moet ek dit aankoop?",
+              "answer": "Ons kan alle materiale as deel van ons diens verskaf, of werk met materiale wat jy aangekoop het. Ons sal advies gee oor die beste benadering gebaseer op jou projek en begroting."
+            },
+            {
+              "question": "Kan julle naweke of saans werk?",
+              "answer": "Ja, ons bied buigsame skedulering aan insluitend naweek en aand werk vir dringende projekte of kliënt gerief. Addisionele kostes kan van toepassing wees vir na-ure werk."
+            },
+            {
+              "question": "Hanteer julle noodgeval herstelwerk?",
+              "answer": "Ja, ons verskaf 24/7 noodgeval herstel dienste vir dringende kwessies soos gebarste pype, elektriese probleme, of strukturele skade. Kontak ons onmiddellik vir noodgeval bystand."
             }
           ]
         }
@@ -263,12 +634,113 @@
         "subtitle": "Moenie huiwer om uit te reik nie - ons is hier om te help!",
         "button": "Kontak Ons"
       }
+    },
+    "blog": {
+      "title": "Konstruksie Insigte & Wenke",
+      "subtitle": "Kundige advies, gidse, en bedryfs insigte van Sinqobile Construction. Leer oor konstruksie kostes, renovasie idees, bou regulasies, en meer.",
+      "searchPlaceholder": "Soek artikels...",
+      "readMore": "Lees Meer",
+      "previous": "Vorige",
+      "next": "Volgende",
+      "noResults": "Geen artikels gevind wat jou kriteria pas nie. Probeer jou soektog of filters aanpas.",
+      "ctaTitle": "Benodig Kundige Konstruksie Advies?",
+      "ctaSubtitle": "Ons span by Sinqobile Construction is hier om te help met jou konstruksie projek. Kry vandag 'n gratis konsultasie en kwotasie.",
+      "call": "Bel: +27 82 868 8396",
+      "getFreeQuote": "Kry Gratis Kwotasie",
+      "categories": {
+        "all": "Alles",
+        "buildingCosts": "Bou Kostes",
+        "contractorTips": "Kontrakteur Wenke",
+        "renovations": "Renovasies",
+        "regulations": "Regulasies",
+        "roofing": "Dakwerk",
+        "maintenance": "Onderhoud",
+        "designIdeas": "Ontwerp Idees"
+      }
+    }
+  },
+  "aboutPage": {
+    "heroStats": {
+      "experience": "15+ Jaar Ondervinding",
+      "insured": "Volledig Verseker",
+      "allAreas": "Alle Gauteng Areas"
+    },
+    "getFreeQuote": "Kry Gratis Kwotasie",
+    "serviceAreas": {
+      "title": "Bedien Alle Gauteng Areas",
+      "description": "Van Johannesburg tot Pretoria, Oos Rand tot Wes Rand - ons bring kwaliteit konstruksie dienste na jou voordeur.",
+      "viewAll": "Sien Alle Diens Areas"
+    },
+    "finalCTA": {
+      "title": "Gereed om Jou Projek te Begin?",
+      "description": "Kontak Sinqobile Construction vandag vir 'n gratis konsultasie en kwotasie. Kom ons bou iets groots saam!"
     }
   },
   "about": {
-    "title": "Oor Meshack Dlamini",
-    "description": "Met meer as 15 jaar ondervinding in die konstruksie industrie, het Meshack Dlamini 'n reputasie gebou vir kwaliteit werkmanskap en betroubare diens regoor Gauteng.",
+    "title": "Oor Dingwayo Reason Ndlovu",
+    "description": "Met meer as 15 jaar ondervinding in die konstruksie industrie, het Dingwayo Reason Ndlovu 'n reputasie gebou vir kwaliteit werkmanskap en betroubare diens regoor Gauteng.",
     "experience": "Van klein huis herstelwerk tot groot konstruksie projekte, ons lewer uitsonderlike resultate wat die toets van tyd deurstaan."
+  },
+  "testimonialsEnhanced": {
+    "title": "Wat Ons Kliënte Sê",
+    "subtitle": "Moenie net ons woord daarvoor neem nie",
+    "basedOn": "Gebaseer op",
+    "verifiedReviews": "geverifieerde resensies van tevrede kliënte",
+    "verifiedCustomer": "Geverifieerde Kliënt",
+    "stats": {
+      "projectsCompleted": "Projekte Voltooi",
+      "averageRating": "Gemiddelde Gradering",
+      "yearsExperience": "Jaar Ondervinding",
+      "satisfactionRate": "Tevredenheidskoers"
+    }
+  },
+  "whyChooseUs": {
+    "title": "Waarom Kies Sinqobile Construction vir Jou Konstruksie Projek?",
+    "subtitle": "Professionele konstruksie dienste in Gauteng met bewese kundigheid in bou, renovasies, pleister, verf, plavei, teël, loodgieter, en meer. Hier is waarom eienaar eienaars regoor Johannesburg, Pretoria, en Sandton Sinqobile Construction vertrou:",
+    "reasons": {
+      "experience": {
+        "title": "15+ Jaar Ondervinding",
+        "description": "Meer as 15 jaar professionele konstruksie ondervinding wat Gauteng bedien. Ons het 500+ suksesvolle projekte regoor Johannesburg, Pretoria, Sandton, en omliggende areas voltooi."
+      },
+      "licensed": {
+        "title": "Volledig Gelisensieer & Verseker",
+        "description": "NHBRC geregistreer en volledig verseker met omvattende aanspreeklikheids dekking. Jou eiendom en belegging is beskerm met elke projek wat ons onderneem."
+      },
+      "quality": {
+        "title": "Kwaliteit Werkmanskap Gewaarborg",
+        "description": "Ons staan agter ons werk met omvattende waarborge. Elke projek voldoen aan die hoogste standaarde van kwaliteit, van pleister en verf tot volledige huis renovasies."
+      },
+      "team": {
+        "title": "Kundige Professionele Span",
+        "description": "Ons gesertifiseerde konstruksie professionele persone spesialiseer in bou, teël, plavei, loodgieter, dakwerk, en waterdigting. Bekwame ambagsmanne toegewy aan uitnemendheid."
+      },
+      "onTime": {
+        "title": "Op-Tyd Projek Lewering",
+        "description": "Ons respekteer jou tyd en begroting. Projekte word op skedule voltooi met deursigtige pryse en geen versteekte kostes nie. R400 uitroep fooi vir konsultasies en kwotasies."
+      },
+      "allAreas": {
+        "title": "Bedien Alle Gauteng Areas",
+        "description": "Van Johannesburg CBD tot Sandton, Pretoria tot Centurion, Midrand tot Fourways - ons verskaf professionele konstruksie dienste regoor alle Gauteng voorstede."
+      },
+      "rating": {
+        "title": "4.9★ Kliënt Gradering",
+        "description": "Gegradeer 4.9 sterre deur tevrede kliënte. Lees ons Google resensies om te sien waarom huiseienaars en besighede Sinqobile Construction vertrou vir hul konstruksie behoeftes."
+      },
+      "emergency": {
+        "title": "24/7 Noodgeval Dienste",
+        "description": "Noodgeval konstruksie dienste beskikbaar vir dringende herstelwerk insluitend gebarste pype, elektriese probleme, dak lekke, en strukturele skade. Bel +27 82 868 8396 of +27 81 569 2985 enige tyd."
+      }
+    },
+    "comprehensiveTitle": "Omvattende Konstruksie Dienste Regoor Gauteng",
+    "comprehensiveContent": {
+      "para1": "Sinqobile Construction is jou vertroude konstruksie vennoot wat alle areas van Gauteng Provinsie bedien. Of jy bou kontrakteurs in Johannesburg, renovasie spesialiste in Sandton, of konstruksie dienste in Pretoria nodig het, ons ervare span lewer uitsonderlike resultate.",
+      "para2": "Ons omvattende dienste sluit in residensiële bou, kommersiële konstruksie, huis renovasies, pleister en verf, plavei en opritte, teël dienste, loodgieter installasies en herstelwerk, dakwerk en waterdigting, en algemene onderhoud.",
+      "para3": "Met 15+ jaar konstruksie ondervinding en 500+ voltooide projekte, het ons 'n reputasie gebou vir kwaliteit werkmanskap, betroubare diens, en mededingende pryse. Ons 4.9-ster kliënt gradering weerspieël ons toewyding aan kliënt tevredenheid.",
+      "para4": "Ons bedien residensiële en kommersiële kliënte in Johannesburg, Sandton, Pretoria, Centurion, Midrand, Randburg, Fourways, Roodepoort, en alle omliggende Gauteng voorstede. Ons plaaslike kundigheid verseker dat ons die unieke konstruksie vereistes van elke area verstaan.",
+      "para5": "Gratis kwotasies beskikbaar met 'n deursigtige R400 uitroep fooi vir konsultasies. Kontak ons by +27 82 868 8396 of +27 81 569 2985 om jou konstruksie projek te bespreek. Ons is volledig gelisensieer, NHBRC geregistreer, en omvattend verseker vir jou gemoedsrus."
+    },
+    "callButton": "Bel: +27 82 868 8396",
+    "quoteButton": "Kry Gratis Kwotasie"
   },
   "testimonials": {
     "title": "Wat Ons Kliënte Sê",
@@ -294,14 +766,360 @@
   "contact": {
     "callNow": "Bel Nou",
     "call": "Bel",
-    "phone": "071 933 4063",
+    "phone": "+27 82 868 8396",
     "email": "info@mdbuilders.co.za",
     "address": "Bedien Alle Gauteng Areas"
+  },
+  "areaPage": {
+    "coverageArea": "Dekking Area",
+    "callUs": "Bel Ons",
+    "businessHours": "Besigheidsure",
+    "monFri": "Ma-Vr: 7VM-6NM",
+    "sat": "Sa: 8VM-4NM",
+    "sun": "So: Slegs Noodgevalle",
+    "allGautengSuburbs": "Alle Gauteng voorstede insluitend",
+    "constructionServicesIn": "Konstruksie Dienste in",
+    "whyChoose": "Waarom Kies Sinqobile Construction in",
+    "ourServicesIn": "Ons Dienste in",
+    "comprehensiveSolutions": "Omvattende konstruksie oplossings vir residensiële en kommersiële eiendomme",
+    "suburbsWeServe": "Voorstede Wat Ons Bedien in",
+    "professionalServices": "Professionele konstruksie dienste regoor alle voorstede van",
+    "readyToStart": "Gereed om Jou Projek te Begin in",
+    "contactToday": "Kontak Sinqobile Construction vandag vir 'n gratis konsultasie en kwotasie. R400 uitroep fooi van toepassing.",
+    "callNow": "Bel Nou",
+    "requestFreeQuote": "Versoek Gratis Kwotasie",
+    "fullyInsured": "Volledig Verseker",
+    "comprehensiveLiability": "Omvattende aanspreeklikheids dekking vir jou gemoedsrus",
+    "yearsExperience": "15+ Jaar",
+    "extensiveExperience": "Uitgebreide ondervinding wat bedien",
+    "qualityGuaranteed": "Kwaliteit Gewaarborg",
+    "workmanshipWarranty": "Werkmanskap waarborg op alle projekte",
+    "dontSeeArea": "Sien Jy Nie Jou Area Gelys Nie?",
+    "weServeAllAreas": "Ons bedien alle areas regoor Gauteng Provinsie. Kontak ons om jou konstruksie projek te bespreek!",
+    "getFreeQuote": "Kry Gratis Kwotasie",
+    "andMore": "& meer",
+    "allSuburbsIncluding": "Alle Gauteng voorstede insluitend"
   },
   "footer": {
     "mission": "Verskaf kwaliteit konstruksie dienste regoor Gauteng met integriteit, professionalisme, en aandag aan detail.",
     "quickLinks": "Vinnige Skakels",
     "ourServices": "Ons Dienste",
-    "contactInfo": "Kontak Info"
+    "contactInfo": "Kontak Info",
+    "businessHours": {
+      "weekdays": "Maandag - Vrydag: 7:00 VM - 5:00 NM",
+      "saturday": "Saterdag: 8:00 VM - 1:00 NM",
+      "sunday": "Sondag: Gesluit"
+    },
+    "copyright": "© 2024 Sinqobile Construction. Alle regte voorbehou."
+  },
+  "projects": {
+    "brickwork-alberton-78": {
+      "title": "Dak Installasie Projek",
+      "description": "Professionele dak installasie met kwaliteit materiale en kundige vakmanskap."
+    },
+    "brickwork-lanseria-49": {
+      "title": "Braai Area Konstruksie",
+      "description": "Pasgemaakte braai area konstruksie met kwaliteit steenwerk en buite vermaak kenmerke."
+    },
+    "brickwork-roodepoort-35": {
+      "title": "Badkamer Teël Installasie",
+      "description": "Professionele badkamer teëlwerk met waterdigting en premium afwerkings."
+    },
+    "building-edenvale-30": {
+      "title": "Residensiële Gebou Konstruksie",
+      "description": "Volledige residensiële gebou konstruksie met moderne ontwerp en kwaliteit afwerkings."
+    },
+    "building-rosebank-48": {
+      "title": "Residensiële Huis Uitbreiding",
+      "description": "Kwaliteit residensiële huis uitbreiding met moderne ontwerp en naatlose integrasie."
+    },
+    "building-springs-54": {
+      "title": "Badkamer Teël Diens",
+      "description": "Professionele badkamer teëlwerk met kwaliteit materiale en kundige installasie."
+    },
+    "concrete-bedfordview-31": {
+      "title": "Badkamer Installasie Projek",
+      "description": "Volledige badkamer installasie met teëlwerk, toebehore, en moderne afwerkings."
+    },
+    "concrete-boksburg-90": {
+      "title": "Heining Installasie en Beton Werk",
+      "description": "Professionele heining installasie met beton fondament en kwaliteit materiale."
+    },
+    "concrete-johannesburg-86": {
+      "title": "Loodgieter Installasie Projek",
+      "description": "Professionele loodgieter installasie met moderne toebehore en kwaliteit werkmanskap."
+    },
+    "concrete-midrand-79": {
+      "title": "Dak Teël Installasie",
+      "description": "Professionele dak teël installasie met kwaliteit materiale en kundige vakmanskap."
+    },
+    "concrete-sandton-36": {
+      "title": "Hek en Beton Installasie",
+      "description": "Professionele hek en beton installasie met kwaliteit materiale en kundige werkmanskap."
+    },
+    "concrete-soweto-56": {
+      "title": "Kombuis Installasie Projek",
+      "description": "Volledige kombuis installasie met pasgemaakte kaste en moderne toestelle."
+    },
+    "construction-randburg-2": {
+      "title": "Plavei Installasie Projek",
+      "description": "Professionele plavei installasie met kwaliteit materiale en kundige vakmanskap."
+    },
+    "construction-sandton-77": {
+      "title": "Looppad Plavei Projek",
+      "description": "Professionele looppad plavei met kwaliteit materiale en moderne ontwerp."
+    },
+    "electrical-edenvale-29": {
+      "title": "Geiser Installasie Projek",
+      "description": "Professionele geiser installasie met veiligheids nakoming en kwaliteit werkmanskap."
+    },
+    "extensions-bedfordview-19": {
+      "title": "Badkamer Installasie Projek",
+      "description": "Professionele badkamer installasie met kwaliteit teëlwerk en moderne toebehore."
+    },
+    "extensions-sandton-65": {
+      "title": "Badkamer Teël Diens",
+      "description": "Professionele badkamer teël diens met kwaliteit materiale en kundige installasie."
+    },
+    "fencing-alexandra-93": {
+      "title": "Dak Teël Installasie",
+      "description": "Professionele dak teël installasie met kwaliteit materiale en kundige vakmanskap."
+    },
+    "fencing-krugersdorp-21": {
+      "title": "Uitgrawing en Fondament Werk",
+      "description": "Professionele uitgrawing en fondament werk met kwaliteit beton en kundige konstruksie."
+    },
+    "fencing-linden-28": {
+      "title": "Dak Installasie Projek",
+      "description": "Professionele dak installasie met kwaliteit materiale en kundige vakmanskap."
+    },
+    "fencing-randburg-52": {
+      "title": "Loodgieter Wasbak Installasie",
+      "description": "Professionele loodgieter wasbak installasie met kwaliteit toebehore en kundige werkmanskap."
+    },
+    "flooring-alberton-64": {
+      "title": "Stort Installasie Projek",
+      "description": "Professionele stort installasie met moderne toebehore en kwaliteit loodgieter werk."
+    },
+    "flooring-fourways-43": {
+      "title": "Hardhout Vloer Installasie",
+      "description": "Premium hardhout vloere met kundige installasie en afwerking."
+    },
+    "flooring-germiston-71": {
+      "title": "Swembad Area Teël en Plavei",
+      "description": "Professionele swembad area teël en plavei met glip-weerstandige materiale en kwaliteit afwerkings."
+    },
+    "flooring-midrand-55": {
+      "title": "Vloer Installasie Projek",
+      "description": "Professionele plavei installasie met kwaliteit materiale en kundige vakmanskap."
+    },
+    "installation-johannesburg-24": {
+      "title": "Beton Vloer Installasie",
+      "description": "Professionele beton vloer installasie met kwaliteit materiale en kundige werkmanskap."
+    },
+    "installation-rosebank-72": {
+      "title": "Beton Fondament Werk",
+      "description": "Professionele beton fondament werk met kwaliteit materiale en kundige konstruksie."
+    },
+    "installation-rosebank-83": {
+      "title": "Trap Konstruksie",
+      "description": "Professionele trap konstruksie met kwaliteit materiale en kundige vakmanskap."
+    },
+    "landscaping-alberton-39": {
+      "title": "Muur Pleister Diens",
+      "description": "Professionele muur pleister diens met gladde afwerking en kwaliteit materiale."
+    },
+    "maintenance-alberton-73": {
+      "title": "Eiendom Onderhoud Diens",
+      "description": "Omvattende eiendom onderhoud insluitend herstelwerk en instandhouding."
+    },
+    "maintenance-centurion-70": {
+      "title": "Onderhoud Projek",
+      "description": "Professionele watertenk installasie met kwaliteit materiale en kundige werkmanskap."
+    },
+    "maintenance-linden-80": {
+      "title": "Kombuis Teël Projek",
+      "description": "Professionele kombuis teëlwerk met kwaliteit materiale en kundige installasie."
+    },
+    "maintenance-sandton-17": {
+      "title": "Loodgieter en Dreinering Installasie",
+      "description": "Professionele loodgieter en dreinering installasie met kwaliteit materiale en kundige werkmanskap."
+    },
+    "painting-alberton-4": {
+      "title": "Plavei Installasie Projek",
+      "description": "Professionele plavei installasie met kwaliteit materiale en kundige vakmanskap."
+    },
+    "painting-alberton-53": {
+      "title": "Plavei Konstruksie Projek",
+      "description": "Professionele plavei konstruksie met kwaliteit materiale en moderne ontwerp."
+    },
+    "painting-krugersdorp-76": {
+      "title": "Stort Muur Teëlwerk",
+      "description": "Professionele stort muur teëlwerk met kwaliteit materiale en waterdigting."
+    },
+    "painting-soweto-42": {
+      "title": "Beton Plavei Projek",
+      "description": "Professionele beton plavei met kwaliteit materiale en kundige werkmanskap."
+    },
+    "paving-alberton-40": {
+      "title": "Vloer Teël Projek",
+      "description": "Professionele vloer teëlwerk met kwaliteit materiale en kundige installasie."
+    },
+    "paving-alberton-46": {
+      "title": "Moderne Kombuis Renovasie",
+      "description": "Volledige moderne kombuis renovasie met pasgemaakte kaste, teëlwerk, en kontemporêre ontwerp."
+    },
+    "paving-boksburg-84": {
+      "title": "Kombuis Agtermuur Teëlwerk",
+      "description": "Professionele kombuis agtermuur teëlwerk met dekoratiewe patrone en kwaliteit materiale."
+    },
+    "paving-lanseria-45": {
+      "title": "Geiser Installasie Projek",
+      "description": "Professionele geiser installasie met veiligheids nakoming en kwaliteit werkmanskap."
+    },
+    "paving-midrand-59": {
+      "title": "Swembad Area Plavei",
+      "description": "Swembad area plavei met glip-weerstandige materiale en dreinering."
+    },
+    "plastering-fourways-50": {
+      "title": "Baksteen Muur Konstruksie",
+      "description": "Professionele baksteen muur konstruksie met kwaliteit materiale en kundige vakmanskap."
+    },
+    "plastering-germiston-74": {
+      "title": "Badkamer Installasie Projek",
+      "description": "Professionele badkamer installasie met moderne toebehore en kwaliteit werkmanskap."
+    },
+    "plastering-kempton-park-47": {
+      "title": "Baksteen Muur en Verf",
+      "description": "Professionele baksteen muur konstruksie met verf en afwerking werk."
+    },
+    "plastering-pretoria-44": {
+      "title": "Vloer Teël Werk",
+      "description": "Professionele vloer teëlwerk met grys en wit patroon teëls en kwaliteit installasie."
+    },
+    "plumbing-fourways-27": {
+      "title": "Badkamer Muur Teël Installasie",
+      "description": "Professionele badkamer muur teëlwerk met mosaïek patroon teëls en moderne ontwerp."
+    },
+    "plumbing-germiston-51": {
+      "title": "Kombuis Loodgieter Diens",
+      "description": "Kombuis loodgieter installasie insluitend wasbak, skottelgoedwasser, en waterlyne."
+    },
+    "plumbing-kempton-park-23": {
+      "title": "Hek Installasie Projek",
+      "description": "Professionele glas skeiding en hek installasie met moderne deurskynende ontwerp."
+    },
+    "plumbing-lanseria-75": {
+      "title": "Vloer Teël Installasie",
+      "description": "Professionele vloer teëlwerk met wit marmer-voorkoms teëls en kwaliteit installasie."
+    },
+    "plumbing-melville-10": {
+      "title": "Drein Installasie Projek",
+      "description": "Dreinering sisteem installasie met behoorlike helling en verbindings."
+    },
+    "plumbing-riversands-33": {
+      "title": "Loodgieter Onderhoud Diens",
+      "description": "Omvattende loodgieter onderhoud insluitend inspeksies en herstelwerk."
+    },
+    "renovation-bedfordview-16": {
+      "title": "Huis Renovasie Projek",
+      "description": "Volledige huis renovasie met moderne opgraderings en kwaliteit afwerkings."
+    },
+    "renovation-edenvale-66": {
+      "title": "Eiendom Renovasie Diens",
+      "description": "Volle eiendom renovasie insluitend strukturele en kosmetiese verbeterings."
+    },
+    "renovation-johannesburg-26": {
+      "title": "Kombuis Renovasie Projek",
+      "description": "Volledige kombuis renovasie met moderne wit kaste en kontemporêre ontwerp."
+    },
+    "renovation-midrand-37": {
+      "title": "Loodgieter Renovasie Projek",
+      "description": "Volledige loodgieter renovasie met blootgestelde pypwerk en sisteem opgraderings."
+    },
+    "renovation-randburg-7": {
+      "title": "Huis Renovasie Diens",
+      "description": "Omvattende huis renovasie insluitend binne en buite werk."
+    },
+    "repairs-fourways-6": {
+      "title": "Noodgeval Herstel Diens",
+      "description": "Vinnige noodgeval herstel diens vir dringende konstruksie kwessies."
+    },
+    "repairs-fourways-41": {
+      "title": "Gebou Herstelwerk Projek",
+      "description": "Gebou herstelwerk insluitend kraak regmaak en strukturele versterking."
+    },
+    "repairs-linden-13": {
+      "title": "Huis Herstelwerk Diens",
+      "description": "Volledige huis herstelwerk insluitend loodgieter, elektries, en algemene regmaak."
+    },
+    "repairs-soweto-87": {
+      "title": "Eiendom Herstelwerk Projek",
+      "description": "Eiendom herstelwerk insluitend dak, mure, en fondament werk."
+    },
+    "roofing-alberton-88": {
+      "title": "Badkamer Installasie Projek",
+      "description": "Volledige badkamer installasie met moderne toebehore, bad, en kwaliteit teëlwerk."
+    },
+    "roofing-centurion-61": {
+      "title": "Swembad Konstruksie en Plavei",
+      "description": "Professionele swembad konstruksie met omliggende plavei en landskapering."
+    },
+    "roofing-midrand-89": {
+      "title": "Baksteen Muur Konstruksie",
+      "description": "Professionele baksteen muur konstruksie met kwaliteit materiale en kundige vakmanskap."
+    },
+    "roofing-pretoria-15": {
+      "title": "Badkamer Muur Teël Projek",
+      "description": "Professionele badkamer muur teëlwerk met dekoratiewe mosaïek rand en kwaliteit materiale."
+    },
+    "tiling-alexandra-12": {
+      "title": "Muur Pleister Diens",
+      "description": "Professionele muur pleister met gladde afwerking en kwaliteit materiale."
+    },
+    "tiling-edenvale-62": {
+      "title": "Hout Vloer Installasie",
+      "description": "Premium hout vloer installasie met kundige vakmanskap en kwaliteit afwerking."
+    },
+    "tiling-germiston-1": {
+      "title": "Kombuis Teël Projek",
+      "description": "Kombuis teëlwerk insluitend agtermuur en vloer met moderne ontwerp."
+    },
+    "waterproofing-alberton-60": {
+      "title": "Bad Installasie Projek",
+      "description": "Professionele bad installasie met moderne toebehore en kwaliteit loodgieter werk."
+    },
+    "waterproofing-krugersdorp-85": {
+      "title": "Vloer Teël Installasie",
+      "description": "Professionele vloer teëlwerk met wit marmer-voorkoms teëls en kwaliteit installasie."
+    },
+    "waterproofing-lanseria-3": {
+      "title": "Geiser Installasie Projek",
+      "description": "Professionele geiser installasie met veiligheids nakoming en kwaliteit toetsing."
+    },
+    "waterproofing-midrand-63": {
+      "title": "Plafon Balke Installasie",
+      "description": "Professionele plafon balke installasie met strukturele ondersteuning en moderne ontwerp."
+    },
+    "painting-johannesburg-94": {
+      "title": "Binne Plafon Installasie",
+      "description": "Professionele binne plafon installasie met kwaliteit materiale en kundige vakmanskap."
+    },
+    "roofing-sandton-95": {
+      "title": "Plafon Spante Installasie",
+      "description": "Professionele plafon spante installasie met strukturele ondersteuning en kwaliteit materiale."
+    },
+    "waterproofing-johannesburg-96": {
+      "title": "Swembad Waterdigting Diens",
+      "description": "Professionele swembad waterdigting met kwaliteit seëlmiddels en kundige toepassing."
+    },
+    "roofing-midrand-97": {
+      "title": "Dak Spante en Waterdigting",
+      "description": "Professionele dak spante installasie met waterdigting membraan en kwaliteit materiale."
+    },
+    "plumbing-randburg-98": {
+      "title": "Dreinering Sisteem Installasie",
+      "description": "Professionele dreinering sisteem installasie met kwaliteit pype en behoorlike verbindings."
+    }
   }
 }

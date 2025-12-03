@@ -21,12 +21,12 @@ export async function generateMetadata({
   
   if (!post) {
     return {
-      title: 'Article Not Found | MD Builders',
+      title: 'Article Not Found | Sinqobile Construction',
     }
   }
 
   return {
-    title: `${post.title} | MD Builders Blog`,
+    title: `${post.title} | Sinqobile Construction Blog`,
     description: post.excerpt,
     keywords: post.keywords.join(', '),
     openGraph: {
@@ -68,7 +68,7 @@ export default function BlogPostPage({
     },
     "publisher": {
       "@type": "Organization",
-      "name": "MD Builders",
+      "name": "Sinqobile Construction",
       "logo": {
         "@type": "ImageObject",
         "url": "https://mdbuilders.co.za/logo.svg"
@@ -212,15 +212,15 @@ export default function BlogPostPage({
                 Ready to Start Your Construction Project?
               </h2>
               <p className="text-xl mb-8">
-                Get expert advice and a free quote from MD Builders today
+                Get expert advice and a free quote from Sinqobile Construction today
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="tel:0719334063"
+                  href="tel:+27828688396"
                   className="inline-flex items-center justify-center space-x-2 bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
                 >
                   <Phone size={20} />
-                  <span>Call: 071 933 4063</span>
+                  <span>Call: +27 82 868 8396</span>
                 </a>
                 <Link
                   href={`/${lang}/contact`}

@@ -2,7 +2,7 @@ import { Locale } from '@/i18n.config'
 import { BUSINESS_INFO } from '@/lib/business-info'
 
 interface SchemaMarkupProps {
-  type: 'organization' | 'localBusiness' | 'service' | 'breadcrumb'
+  type: 'organization' | 'localBusiness' | 'service' | 'breadcrumb' | 'faq' | 'website'
   lang: Locale
   data?: any
 }
@@ -14,8 +14,8 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
         return {
           '@context': 'https://schema.org',
           '@type': 'Organization',
-          name: 'MD Builders',
-          alternateName: 'MD Builders - Meshack Dlamini',
+          name: 'Sinqobile Construction',
+          alternateName: 'Sinqobile Construction - Dingwayo Reason Ndlovu',
           url: `https://mdbuilders.co.za/${lang}`,
           logo: 'https://mdbuilders.co.za/logo.png',
           contactPoint: {
@@ -36,7 +36,7 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
           '@context': 'https://schema.org',
           '@type': 'LocalBusiness',
           '@id': 'https://mdbuilders.co.za',
-          name: 'MD Builders',
+          name: 'Sinqobile Construction',
           image: 'https://mdbuilders.co.za/logo.png',
           description: 'Professional construction and handyman services in Gauteng. Building, plastering, painting, paving, tiling, and plumbing.',
           address: {
@@ -53,7 +53,7 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
             longitude: BUSINESS_INFO.coordinates.longitude
           },
           telephone: '+27719334063',
-          email: 'meshackdlamini32@gmail.com',
+          email: 'info@sinqobileconstruction.co.za',
           priceRange: 'R5000-R500000',
           paymentAccepted: ['Cash', 'Credit Card', 'Bank Transfer', 'EFT'],
           areaServed: [
@@ -79,7 +79,7 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
           },
           founder: {
             '@type': 'Person',
-            name: 'Meshack Dlamini'
+            name: 'Dingwayo Reason Ndlovu'
           }
         }
 
@@ -90,7 +90,7 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
           serviceType: data?.serviceName,
           provider: {
             '@type': 'LocalBusiness',
-            name: 'MD Builders'
+            name: 'Sinqobile Construction'
           },
           areaServed: {
             '@type': 'State',
@@ -113,6 +113,42 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
             name: item.name,
             item: item.url
           }))
+        }
+
+      case 'faq':
+        return {
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: data?.questions.map((q: any) => ({
+            '@type': 'Question',
+            name: q.question,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: q.answer
+            }
+          }))
+        }
+
+      case 'website':
+        return {
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          '@id': 'https://mdbuilders.co.za/#website',
+          url: 'https://mdbuilders.co.za',
+          name: 'Sinqobile Construction',
+          description: 'Professional Construction Services in Gauteng',
+          publisher: {
+            '@id': 'https://mdbuilders.co.za/#organization'
+          },
+          potentialAction: {
+            '@type': 'SearchAction',
+            target: {
+              '@type': 'EntryPoint',
+              urlTemplate: 'https://mdbuilders.co.za/search?q={search_term_string}'
+            },
+            'query-input': 'required name=search_term_string'
+          },
+          inLanguage: ['en', 'af', 'zu', 'st']
         }
     }
   }

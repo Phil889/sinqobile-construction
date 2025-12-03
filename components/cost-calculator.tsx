@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Calculator, TrendingUp, MapPin, Clock, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
+import { Locale } from '@/i18n.config'
 
 interface CostEstimate {
   min: number
@@ -10,33 +11,40 @@ interface CostEstimate {
   description: string
 }
 
-export default function CostCalculator() {
+interface CostCalculatorProps {
+  lang: Locale
+  dict: any
+}
+
+export default function CostCalculator({ lang, dict }: CostCalculatorProps) {
   const [serviceType, setServiceType] = useState('')
   const [projectSize, setProjectSize] = useState('')
   const [location, setLocation] = useState('')
   const [urgency, setUrgency] = useState('standard')
   const [estimate, setEstimate] = useState<CostEstimate | null>(null)
 
+  const t = (dict as any).pages?.costCalculator?.calculator || {}
+
   // Service types with base costs (in ZAR)
   const services = [
-    { value: 'building', label: 'New Building Construction', baseMin: 8000, baseMax: 15000 },
-    { value: 'renovation', label: 'Home Renovation', baseMin: 5000, baseMax: 12000 },
-    { value: 'roofing', label: 'Roofing Services', baseMin: 3000, baseMax: 8000 },
-    { value: 'paving', label: 'Paving & Driveways', baseMin: 400, baseMax: 800 },
-    { value: 'painting', label: 'Painting Services', baseMin: 2500, baseMax: 6000 },
-    { value: 'plumbing', label: 'Plumbing Work', baseMin: 1500, baseMax: 5000 },
-    { value: 'tiling', label: 'Tiling Services', baseMin: 200, baseMax: 500 },
-    { value: 'waterproofing', label: 'Waterproofing', baseMin: 3000, baseMax: 7000 },
-    { value: 'extensions', label: 'Home Extensions', baseMin: 10000, baseMax: 20000 },
-    { value: 'landscaping', label: 'Landscaping', baseMin: 2000, baseMax: 8000 },
+    { value: 'building', label: t.services.building, baseMin: 8000, baseMax: 15000 },
+    { value: 'renovation', label: t.services.renovation, baseMin: 5000, baseMax: 12000 },
+    { value: 'roofing', label: t.services.roofing, baseMin: 3000, baseMax: 8000 },
+    { value: 'paving', label: t.services.paving, baseMin: 400, baseMax: 800 },
+    { value: 'painting', label: t.services.painting, baseMin: 2500, baseMax: 6000 },
+    { value: 'plumbing', label: t.services.plumbing, baseMin: 1500, baseMax: 5000 },
+    { value: 'tiling', label: t.services.tiling, baseMin: 200, baseMax: 500 },
+    { value: 'waterproofing', label: t.services.waterproofing, baseMin: 3000, baseMax: 7000 },
+    { value: 'extensions', label: t.services.extensions, baseMin: 10000, baseMax: 20000 },
+    { value: 'landscaping', label: t.services.landscaping, baseMin: 2000, baseMax: 8000 },
   ]
 
   // Project size multipliers
   const sizes = [
-    { value: 'small', label: 'Small (< 50m²)', multiplier: 0.7 },
-    { value: 'medium', label: 'Medium (50-150m²)', multiplier: 1.0 },
-    { value: 'large', label: 'Large (150-300m²)', multiplier: 1.5 },
-    { value: 'xlarge', label: 'Extra Large (> 300m²)', multiplier: 2.0 },
+    { value: 'small', label: t.sizes.small, multiplier: 0.7 },
+    { value: 'medium', label: t.sizes.medium, multiplier: 1.0 },
+    { value: 'large', label: t.sizes.large, multiplier: 1.5 },
+    { value: 'xlarge', label: t.sizes.xlarge, multiplier: 2.0 },
   ]
 
   // Gauteng locations
@@ -109,10 +117,10 @@ export default function CostCalculator() {
         </div>
         <div>
           <h2 className="font-heading font-bold text-2xl text-secondary">
-            Cost Calculator
+            {t.header}
           </h2>
           <p className="text-sm text-gray-600">
-            Get an instant estimate for your project
+            {t.subheader}
           </p>
         </div>
       </div>
@@ -121,7 +129,7 @@ export default function CostCalculator() {
         {/* Service Type */}
         <div>
           <label className="block text-sm font-semibold text-secondary mb-2">
-            Service Type *
+            {t.serviceType} *
           </label>
           <select
             value={serviceType}
@@ -129,7 +137,7 @@ export default function CostCalculator() {
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
             required
           >
-            <option value="">Select a service...</option>
+            <option value="">{t.serviceTypePlaceholder}</option>
             {services.map((service) => (
               <option key={service.value} value={service.value}>
                 {service.label}
@@ -141,7 +149,7 @@ export default function CostCalculator() {
         {/* Project Size */}
         <div>
           <label className="block text-sm font-semibold text-secondary mb-2">
-            Project Size *
+            {t.projectSize} *
           </label>
           <select
             value={projectSize}
@@ -149,7 +157,7 @@ export default function CostCalculator() {
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
             required
           >
-            <option value="">Select project size...</option>
+            <option value="">{t.projectSizePlaceholder}</option>
             {sizes.map((size) => (
               <option key={size.value} value={size.value}>
                 {size.label}
@@ -162,14 +170,14 @@ export default function CostCalculator() {
         <div>
           <label className="block text-sm font-semibold text-secondary mb-2 flex items-center space-x-2">
             <MapPin size={16} />
-            <span>Location (Optional)</span>
+            <span>{t.location}</span>
           </label>
           <select
             value={location}
             onChange={(e) => setLocation(e.target.value)}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
           >
-            <option value="">Select your area...</option>
+            <option value="">{t.locationPlaceholder}</option>
             {locations.map((loc) => (
               <option key={loc} value={loc}>
                 {loc}
@@ -182,7 +190,7 @@ export default function CostCalculator() {
         <div>
           <label className="block text-sm font-semibold text-secondary mb-2 flex items-center space-x-2">
             <Clock size={16} />
-            <span>Project Urgency</span>
+            <span>{t.urgency}</span>
           </label>
           <div className="grid grid-cols-2 gap-4">
             <button
@@ -194,7 +202,7 @@ export default function CostCalculator() {
                   : 'border-gray-300 text-gray-600 hover:border-accent/50'
               }`}
             >
-              Standard
+              {t.standard}
             </button>
             <button
               type="button"
@@ -205,7 +213,7 @@ export default function CostCalculator() {
                   : 'border-gray-300 text-gray-600 hover:border-accent/50'
               }`}
             >
-              Urgent (+20%)
+              {t.urgent}
             </button>
           </div>
         </div>
@@ -216,7 +224,7 @@ export default function CostCalculator() {
           className="w-full bg-primary hover:bg-orange-700 text-white px-6 py-4 rounded-lg font-semibold transition-all flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
         >
           <Calculator size={20} />
-          <span>Calculate Estimate</span>
+          <span>{t.calculateButton}</span>
         </button>
       </form>
 
@@ -226,30 +234,29 @@ export default function CostCalculator() {
           <div className="flex items-center space-x-2 mb-3">
             <TrendingUp className="text-accent" size={24} />
             <h3 className="font-heading font-bold text-xl text-secondary">
-              Estimated Cost Range
+              {t.estimatedCost}
             </h3>
           </div>
           <p className="text-3xl font-bold text-secondary mb-4">
             {estimate.description}
           </p>
           <div className="space-y-2 text-sm text-gray-700 mb-4">
-            <p>✓ Based on {services.find(s => s.value === serviceType)?.label}</p>
-            <p>✓ {sizes.find(s => s.value === projectSize)?.label} project</p>
-            {location && <p>✓ Location: {location}</p>}
-            <p>✓ {urgency === 'urgent' ? 'Urgent timeline' : 'Standard timeline'}</p>
-            <p className="font-semibold text-yellow-800">✓ Includes R400 call-out fee</p>
+            <p>✓ {t.basedOn} {services.find(s => s.value === serviceType)?.label}</p>
+            <p>✓ {sizes.find(s => s.value === projectSize)?.label} {t.project}</p>
+            {location && <p>✓ {t.locationLabel}: {location}</p>}
+            <p>✓ {urgency === 'urgent' ? t.urgentTimeline : t.standardTimeline}</p>
+            <p className="font-semibold text-yellow-800">✓ {t.includesCallout}</p>
           </div>
           <div className="bg-white/80 rounded-lg p-4 mb-4">
             <p className="text-xs text-gray-600 mb-2">
-              <strong>Note:</strong> This is an estimated range based on typical projects. 
-              Final costs may vary depending on specific requirements, materials, and site conditions.
+              <strong>{t.note}</strong> {t.noteText}
             </p>
           </div>
           <Link
-            href="/en/contact"
+            href={`/${lang}/contact`}
             className="w-full bg-secondary hover:bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold transition-all flex items-center justify-center space-x-2"
           >
-            <span>Get Accurate Quote</span>
+            <span>{t.getAccurateQuote}</span>
             <ArrowRight size={20} />
           </Link>
         </div>
@@ -260,15 +267,15 @@ export default function CostCalculator() {
         <div className="grid grid-cols-3 gap-4 text-center">
           <div>
             <p className="text-2xl font-bold text-accent">500+</p>
-            <p className="text-xs text-gray-600">Projects</p>
+            <p className="text-xs text-gray-600">{t.trustIndicators.projects}</p>
           </div>
           <div>
             <p className="text-2xl font-bold text-accent">15+</p>
-            <p className="text-xs text-gray-600">Years</p>
+            <p className="text-xs text-gray-600">{t.trustIndicators.years}</p>
           </div>
           <div>
             <p className="text-2xl font-bold text-accent">4.9★</p>
-            <p className="text-xs text-gray-600">Rating</p>
+            <p className="text-xs text-gray-600">{t.trustIndicators.rating}</p>
           </div>
         </div>
       </div>

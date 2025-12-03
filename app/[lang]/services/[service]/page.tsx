@@ -3,6 +3,8 @@ import { getDictionary } from '@/lib/dictionaries'
 import { Locale } from '@/i18n.config'
 import { getServiceBySlug, enhancedServices } from '@/lib/enhanced-services-data'
 import { getProjectsByCategory } from '@/lib/all-projects-data'
+import ServiceSchema from '@/components/service-schema'
+import Breadcrumb from '@/components/breadcrumb'
 import { CheckCircle, Phone, ArrowLeft, MapPin, Calendar } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -38,24 +40,22 @@ export default async function ServicePage({ params: { lang, service } }: Service
 
   return (
     <div className="pt-20">
-      {/* Breadcrumb */}
-      <section className="py-4 bg-lightBackground border-b">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center space-x-2 text-sm">
-            <Link href={`/${lang}`} className="text-secondary hover:text-primary">
-              Home
-            </Link>
-            <span className="text-gray-400">/</span>
-            <Link href={`/${lang}/services`} className="text-secondary hover:text-primary">
-              Services
-            </Link>
-            <span className="text-gray-400">/</span>
-            <span className="text-primary font-medium">
-              {serviceInfo?.name || serviceData.name}
-            </span>
-          </div>
-        </div>
-      </section>
+      <ServiceSchema
+        serviceName={serviceInfo?.name || serviceData.name}
+        serviceSlug={service}
+        description={serviceInfo?.description || serviceData.description}
+        priceRange="R400 - R50000"
+        lang={lang}
+      />
+      
+      <Breadcrumb
+        items={[
+          { label: dict.navigation.services, href: `/${lang}/services` },
+          { label: serviceInfo?.name || serviceData.name, href: `/${lang}/services/${service}` }
+        ]}
+        lang={lang}
+        dict={dict}
+      />
 
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-accent text-white">
@@ -74,11 +74,11 @@ export default async function ServicePage({ params: { lang, service } }: Service
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:0719334063"
+                href="tel:+27828688396"
                 className="inline-flex items-center justify-center space-x-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors"
               >
                 <Phone size={20} />
-                <span>Get Free Quote: 071 933 4063</span>
+                <span>Get Free Quote: +27 82 868 8396</span>
               </a>
               <Link
                 href={`/${lang}/contact`}
@@ -100,7 +100,7 @@ export default async function ServicePage({ params: { lang, service } }: Service
                 Professional {serviceInfo?.name || serviceData.name} Services
               </h2>
               <p className="text-secondary text-lg leading-relaxed mb-8">
-                At MD Builders, we specialize in high-quality {serviceInfo?.name?.toLowerCase() || serviceData.name.toLowerCase()} services across Gauteng. With over 15 years of experience, our skilled team delivers exceptional results that stand the test of time.
+                At Sinqobile Construction, we specialize in high-quality {serviceInfo?.name?.toLowerCase() || serviceData.name.toLowerCase()} services across Gauteng. With over 15 years of experience, our skilled team delivers exceptional results that stand the test of time.
               </p>
               
               <div className="space-y-4 mb-8">
@@ -305,15 +305,15 @@ export default async function ServicePage({ params: { lang, service } }: Service
             Ready for Your {serviceInfo?.name || serviceData.name} Project?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Contact MD Builders today for a free consultation and quote
+            Contact Sinqobile Construction today for a free consultation and quote
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:0719334063"
+              href="tel:+27828688396"
               className="inline-flex items-center justify-center space-x-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors"
             >
               <Phone size={20} />
-              <span>Call: 071 933 4063</span>
+              <span>Call: +27 82 868 8396</span>
             </a>
             <Link
               href={`/${lang}/contact`}

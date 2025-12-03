@@ -3,6 +3,7 @@ import { getDictionary } from '@/lib/dictionaries'
 import { Locale } from '@/i18n.config'
 import { CheckCircle, Award, Shield, Clock, Users, MapPin } from 'lucide-react'
 import Image from 'next/image'
+import Breadcrumb from '@/components/breadcrumb'
 
 export default async function AboutPage({
   params: { lang },
@@ -13,6 +14,13 @@ export default async function AboutPage({
 
   return (
     <div className="pt-20">
+      <Breadcrumb
+        items={[
+          { label: dict.navigation.about, href: `/${lang}/about` }
+        ]}
+        lang={lang}
+        dict={dict}
+      />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-accent text-white">
         <div className="container mx-auto px-4 text-center">
@@ -25,15 +33,15 @@ export default async function AboutPage({
           <div className="flex flex-wrap justify-center gap-8 text-center">
             <div className="flex items-center space-x-2">
               <Award className="text-accent" size={24} />
-              <span className="font-semibold">15+ Years Experience</span>
+              <span className="font-semibold">{dict.aboutPage.heroStats.experience}</span>
             </div>
             <div className="flex items-center space-x-2">
               <Shield className="text-accent" size={24} />
-              <span className="font-semibold">Fully Insured</span>
+              <span className="font-semibold">{dict.aboutPage.heroStats.insured}</span>
             </div>
             <div className="flex items-center space-x-2">
               <MapPin className="text-accent" size={24} />
-              <span className="font-semibold">All Gauteng Areas</span>
+              <span className="font-semibold">{dict.aboutPage.heroStats.allAreas}</span>
             </div>
           </div>
         </div>
@@ -45,8 +53,8 @@ export default async function AboutPage({
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <Image
-                src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&q=80"
-                alt="Meshack Dlamini - Experienced older Black construction professional and MD Builders owner in work overalls looking directly at camera"
+                src="/images/meshack-dlamini.jpg"
+                alt="Dingwayo Reason Ndlovu - Experienced construction professional and Sinqobile Construction owner in work overalls looking directly at camera"
                 width={600}
                 height={400}
                 className="rounded-lg shadow-lg w-full h-96 object-cover"
@@ -66,7 +74,7 @@ export default async function AboutPage({
               {/* Contact CTA */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:0719334063"
+                  href="tel:+27828688396"
                   className="inline-flex items-center justify-center space-x-2 bg-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors"
                 >
                   <span>{dict.contact.callNow}: {dict.contact.phone}</span>
@@ -75,7 +83,7 @@ export default async function AboutPage({
                   href={`/${lang}/contact`}
                   className="inline-flex items-center justify-center space-x-2 border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors"
                 >
-                  <span>Get Free Quote</span>
+                  <span>{dict.aboutPage.getFreeQuote}</span>
                 </a>
               </div>
             </div>
@@ -167,16 +175,16 @@ export default async function AboutPage({
       <section className="py-20 bg-primary text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
-            Serving All Gauteng Areas
+            {dict.aboutPage.serviceAreas.title}
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            From Johannesburg to Pretoria, East Rand to West Rand - we bring quality construction services to your doorstep.
+            {dict.aboutPage.serviceAreas.description}
           </p>
           <a
             href={`/${lang}/areas`}
             className="inline-block bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors"
           >
-            View All Service Areas
+            {dict.aboutPage.serviceAreas.viewAll}
           </a>
         </div>
       </section>
@@ -185,14 +193,14 @@ export default async function AboutPage({
       <section className="py-20 bg-lightBackground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-6">
-            Ready to Start Your Project?
+            {dict.aboutPage.finalCTA.title}
           </h2>
           <p className="text-secondary text-lg mb-8 max-w-2xl mx-auto">
-            Contact MD Builders today for a free consultation and quote. Let's build something great together!
+            {dict.aboutPage.finalCTA.description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:0719334063"
+              href="tel:+27828688396"
               className="inline-flex items-center justify-center space-x-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors"
             >
               <span>{dict.contact.callNow}: {dict.contact.phone}</span>
@@ -201,7 +209,7 @@ export default async function AboutPage({
               href={`/${lang}/contact`}
               className="inline-flex items-center justify-center space-x-2 border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors"
             >
-              <span>Get Free Quote</span>
+              <span>{dict.aboutPage.getFreeQuote}</span>
             </a>
           </div>
         </div>

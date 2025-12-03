@@ -18,11 +18,85 @@ const Footer = ({ dict, lang }: FooterProps) => {
           {/* Column 1: Logo & Mission */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-white rounded flex items-center justify-center">
-                <span className="text-primary font-bold text-xl">MD</span>
+              <div className="w-10 h-10 bg-primary rounded flex items-center justify-center p-1">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 48 48"
+                  className="w-full h-full"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  {/* House/Building Structure */}
+                  <path
+                    d="M24 8 L8 20 L8 40 L40 40 L40 20 Z"
+                    fill="#FFFFFF"
+                    stroke="#FFFFFF"
+                    strokeWidth="1.5"
+                    strokeLinejoin="miter"
+                  />
+                  
+                  {/* Roof */}
+                  <path
+                    d="M24 6 L6 18 L8 20 L24 10 L40 20 L42 18 Z"
+                    fill="#1a1a1a"
+                    stroke="#FFFFFF"
+                    strokeWidth="1.5"
+                    strokeLinejoin="miter"
+                  />
+                  
+                  {/* Door */}
+                  <rect
+                    x="19"
+                    y="28"
+                    width="10"
+                    height="12"
+                    fill="#1a1a1a"
+                    stroke="#FFFFFF"
+                    strokeWidth="1"
+                  />
+                  
+                  {/* Windows */}
+                  <rect
+                    x="12"
+                    y="24"
+                    width="5"
+                    height="5"
+                    fill="#1a1a1a"
+                    stroke="#FFFFFF"
+                    strokeWidth="1"
+                  />
+                  <rect
+                    x="31"
+                    y="24"
+                    width="5"
+                    height="5"
+                    fill="#1a1a1a"
+                    stroke="#FFFFFF"
+                    strokeWidth="1"
+                  />
+                  
+                  {/* Construction tools - hammer */}
+                  <line
+                    x1="14"
+                    y1="34"
+                    x2="17"
+                    y2="37"
+                    stroke="#1a1a1a"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                  />
+                  <rect
+                    x="16"
+                    y="32"
+                    width="3"
+                    height="2"
+                    fill="#1a1a1a"
+                    transform="rotate(45 17.5 33)"
+                  />
+                </svg>
               </div>
               <span className="font-heading font-bold text-xl text-white">
-                MD Builders
+                Sinqobile Construction
               </span>
             </div>
             <p className="text-white text-sm leading-relaxed">
@@ -71,14 +145,19 @@ const Footer = ({ dict, lang }: FooterProps) => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone size={16} className="text-primary" />
-                <a href="tel:0719334063" className="text-white hover:text-gray-300 transition-colors">
-                  {dict.contact.phone}
-                </a>
+                <div className="flex flex-col">
+                  <a href="tel:+27828688396" className="text-white hover:text-gray-300 transition-colors">
+                    +27 82 868 8396
+                  </a>
+                  <a href="tel:+27815692985" className="text-white hover:text-gray-300 transition-colors text-sm">
+                    +27 81 569 2985
+                  </a>
+                </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={16} className="text-primary" />
-                <a href="mailto:meshackdlamini32@gmail.com" className="text-white hover:text-gray-300 transition-colors">
-                  meshackdlamini32@gmail.com
+                <a href="mailto:info@sinqobileconstruction.co.za" className="text-white hover:text-gray-300 transition-colors">
+                  info@sinqobileconstruction.co.za
                 </a>
               </div>
               <div className="flex items-start space-x-3">
@@ -98,9 +177,9 @@ const Footer = ({ dict, lang }: FooterProps) => {
               <div className="flex items-start space-x-3">
                 <Clock size={16} className="text-primary mt-1 flex-shrink-0" />
                 <div className="text-white text-sm">
-                  <p>{BUSINESS_INFO.businessHours.weekdays}</p>
-                  <p>{BUSINESS_INFO.businessHours.saturday}</p>
-                  <p>{BUSINESS_INFO.businessHours.sunday}</p>
+                  <p>{dict.footer.businessHours.weekdays}</p>
+                  <p>{dict.footer.businessHours.saturday}</p>
+                  <p>{dict.footer.businessHours.sunday}</p>
                 </div>
               </div>
             </div>
@@ -111,11 +190,11 @@ const Footer = ({ dict, lang }: FooterProps) => {
         <div className="border-t border-gray-600 mt-8 pt-8">
           <div className="text-center mb-4">
             <p className="text-yellow-400 text-sm font-semibold">
-              ⚠️ R400 Call-Out Fee applies to all consultations and quotes
+              {dict.callOutBanner.message}
             </p>
           </div>
           <p className="text-gray-300 text-sm text-center">
-            © 2024 MD Builders. All rights reserved.
+            {dict.footer.copyright}
           </p>
         </div>
       </div>

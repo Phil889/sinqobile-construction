@@ -25,10 +25,28 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const dict = await getDictionary(params.lang)
   
+  // Enhanced SEO-optimized description with location keywords and CTA
+  const enhancedDescription = params.lang === 'en'
+    ? 'Professional construction services in Gauteng: Building, renovations, plastering, painting, paving, tiling & plumbing. 15+ years experience. R400 call-out fee. Call +27 82 868 8396 for free quote!'
+    : dict.meta.description
+  
   return {
     title: dict.meta.title,
-    description: dict.meta.description,
+    description: enhancedDescription,
     keywords: dict.meta.keywords,
+    icons: {
+      icon: [
+        { url: '/favicon.ico', sizes: '32x32' },
+        { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+        { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      ],
+      apple: [
+        { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+      ],
+      other: [
+        { rel: 'manifest', url: '/site.webmanifest' },
+      ],
+    },
     alternates: {
       canonical: `https://mdbuilders.co.za/${params.lang}`,
       languages: {
@@ -42,21 +60,35 @@ export async function generateMetadata({
       type: 'website',
       locale: params.lang,
       url: `https://mdbuilders.co.za/${params.lang}`,
-      siteName: 'MD Builders',
-      title: 'MD Builders - Professional Construction Services Gauteng',
-      description: 'Expert construction, renovation, and building services across Gauteng. 15+ years experience. R400 call-out fee. Call 071 933 4063',
+      siteName: 'Sinqobile Construction',
+      title: 'Sinqobile Construction - Professional Construction Services Gauteng | 15+ Years Experience',
+      description: 'Expert construction, renovation, plastering, painting, paving, tiling & plumbing services across Gauteng. 15+ years experience, 500+ projects completed. R400 call-out fee. Call +27 82 868 8396 for free quote!',
       images: [{
         url: 'https://mdbuilders.co.za/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'MD Builders - Professional Construction Services'
+        alt: 'Sinqobile Construction - Professional Construction Services in Johannesburg, Pretoria, Sandton, Gauteng'
       }]
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'MD Builders - Professional Construction Services Gauteng',
-      description: 'Expert construction, renovation, and building services across Gauteng',
+      title: 'Sinqobile Construction - Professional Construction Services Gauteng | 15+ Years Experience',
+      description: 'Expert construction, renovation & building services across Gauteng. 500+ projects completed. Call +27 82 868 8396 for free quote!',
       images: ['https://mdbuilders.co.za/og-image.jpg'],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+    verification: {
+      google: 'your-google-verification-code', // Add your actual Google Search Console verification code
     }
   }
 }
@@ -75,6 +107,7 @@ export default async function RootLayout({
       <head>
         <SchemaMarkup type="organization" lang={params.lang} />
         <SchemaMarkup type="localBusiness" lang={params.lang} />
+        <SchemaMarkup type="website" lang={params.lang} />
         <Analytics />
       </head>
       <body className={`${inter.className} bg-background text-secondary`}>
@@ -83,9 +116,9 @@ export default async function RootLayout({
           {children}
         </main>
         <Footer dict={dict} lang={params.lang} />
-        <WhatsAppFloat />
+        <WhatsAppFloat dict={dict} />
         <LiveChatWidget />
-        <MobileCTABar />
+        <MobileCTABar dict={dict} />
       </body>
     </html>
   )

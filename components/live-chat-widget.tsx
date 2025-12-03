@@ -13,7 +13,7 @@ export default function LiveChatWidget() {
   }
 
   const handleWhatsApp = () => {
-    const message = 'Hi MD Builders, I would like to inquire about your services.'
+    const message = 'Hi Sinqobile Construction, I would like to inquire about your services.'
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
     window.open(url, '_blank')
   }
@@ -32,7 +32,7 @@ export default function LiveChatWidget() {
                 </div>
                 <div>
                   <h4 className="font-heading font-semibold text-secondary text-lg">
-                    Chat with MD Builders
+                    Chat with Sinqobile Construction
                   </h4>
                   <div className="flex items-center space-x-1">
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
@@ -103,7 +103,7 @@ export default function LiveChatWidget() {
                   Available Mon-Fri: 7AM-5PM | Sat: 8AM-1PM
                 </p>
                 <p className="text-xs text-accent text-center font-semibold mt-1">
-                  071 933 4063
+                  +27 82 868 8396
                 </p>
               </div>
             </div>

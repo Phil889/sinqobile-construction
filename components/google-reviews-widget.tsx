@@ -1,6 +1,10 @@
 import { Star, ExternalLink } from 'lucide-react';
 
-export default function GoogleReviewsWidget() {
+interface GoogleReviewsWidgetProps {
+  dict: any
+}
+
+export default function GoogleReviewsWidget({ dict }: GoogleReviewsWidgetProps) {
   const reviews = [
     {
       name: 'Sarah M.',
@@ -46,14 +50,14 @@ export default function GoogleReviewsWidget() {
           {/* Header */}
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              What Our Clients Say
+              {dict.googleReviews.title}
             </h2>
             <div className="flex items-center justify-center space-x-4 mb-6">
               <div className="flex items-center space-x-2">
                 <span className="text-5xl font-bold text-gray-900">4.9</span>
                 <div>
                   {renderStars(5)}
-                  <p className="text-sm text-gray-600 mt-1">127 Google Reviews</p>
+                  <p className="text-sm text-gray-600 mt-1">127 {dict.googleReviews.reviews}</p>
                 </div>
               </div>
             </div>
@@ -63,7 +67,7 @@ export default function GoogleReviewsWidget() {
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-[#FFD600] text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-[#FFD600]/90 transition-colors duration-300 shadow-md hover:shadow-lg"
             >
-              <span>Read All Reviews</span>
+              <span>{dict.googleReviews.readAll}</span>
               <ExternalLink className="w-4 h-4" />
             </a>
           </div>
@@ -99,8 +103,8 @@ export default function GoogleReviewsWidget() {
                 <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
               </svg>
               <div className="text-left">
-                <p className="text-sm font-semibold text-gray-900">Verified on Google</p>
-                <p className="text-xs text-gray-600">Trusted Business Profile</p>
+                <p className="text-sm font-semibold text-gray-900">{dict.googleReviews.verifiedOn}</p>
+                <p className="text-xs text-gray-600">{dict.googleReviews.trustedProfile}</p>
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "MD Builders - Ditshebeletso tsa Kaho tse Tshwanelang Gauteng",
+    "title": "Sinqobile Construction - Ditshebeletso tsa Kaho tse Tshwanelang Gauteng",
     "description": "Ditshebeletso tsa kaho, ho roala, ho penta, ho beha majwe, ho beha lithaele, le metsi Gauteng kaofela.",
     "keywords": "kaho, ditshebeletso tsa kaho, ho roala, ho penta, ho beha majwe, ho beha lithaele, Gauteng, Johannesburg, Pretoria"
   },
@@ -9,6 +9,8 @@
     "about": "Ka Rona",
     "services": "Ditshebeletso",
     "work": "Mosebetsi wa Rona",
+    "calculator": "Sebali sa Litšenyehelo",
+    "blog": "Blog",
     "contact": "Ikopanye le Rona",
     "faq": "Dipotso"
   },
@@ -22,6 +24,97 @@
     "insured": "E Sireletsehile ka Botlalo",
     "guaranteed": "Mosebetsi o Tiisitswe",
     "gauteng": "Re Sebeletsa Gauteng Kaofela"
+  },
+  "callOutBanner": {
+    "message": "⚠️ Tefiso ea R400 ea ho letsetsa bakeng sa maeto a tekolo a sebakeng"
+  },
+  "trustBadges": {
+    "title": "Hobaneng o Khethe Sinqobile Construction?",
+    "badges": {
+      "insured": {
+        "title": "E Sireletsehile ka Botlalo",
+        "description": "Phihlello e felletseng ea boikarabelo"
+      },
+      "guaranteed": {
+        "title": "Boleng bo Tiisitsoe",
+        "description": "Tiiso ea mosebetsi mererong eohle"
+      },
+      "experience": {
+        "title": "Boiphihlelo ba Lilemo tse 15+",
+        "description": "E tšeptjoa ke baahi ba Gauteng"
+      },
+      "projects": {
+        "title": "Merero e 500+",
+        "description": "E phethiloe ka katleho"
+      },
+      "team": {
+        "title": "Sehlopha sa Litsebi",
+        "description": "Litsebi tse nang le setifikeiti"
+      },
+      "registered": {
+        "title": "PTY LTD e Ngodisitsoeng",
+        "description": "Khoebo e molaong"
+      }
+    }
+  },
+  "trustCertifications": {
+    "title": "Ditifikeiti tsa Setsebi le Ditiisetso",
+    "subtitle": "Kgotso ea hao ea kelello ke pele ho rona. Re na le setifikeiti se felletseng, re sireletsehile, 'me re ikemiselitse ho ba ba holimo.",
+    "certifications": {
+      "nhbrc": {
+        "title": "NHBRC e Ngodisitsoeng",
+        "description": "Khansele ea Naha ea ho Ngodisa Baahi ba Matlo"
+      },
+      "insured": {
+        "title": "E Sireletsehile le e Tlamehileng",
+        "description": "Phihlello e felletseng ea boikarabelo"
+      },
+      "guarantee": {
+        "title": "Tiiso ea Lilemo tse 10",
+        "description": "Tiiso ea sebopeho e kentsoe"
+      },
+      "licensed": {
+        "title": "Moahi ea nang le Laesense",
+        "description": "O na le setifikeiti se felletseng 'me o latela"
+      },
+      "safety": {
+        "title": "E Latela Polokeho",
+        "description": "Maemo a polokeho a ISO"
+      },
+      "quality": {
+        "title": "Boleng bo Tiisitsoe",
+        "description": "Mosebetsi oa boleng bo holimo"
+      }
+    },
+    "footer": "E Tšeptjoa ke Bareki ba 500+ ba Kgotsofetseng Gauteng Kaofela"
+  },
+  "projectGallery": {
+    "title": "Merero ea Rona ea Morao-rao",
+    "subtitle": "Sheba portfolio ea rona ea merero ea kaho le ho nchafatsa e phethiloeng Gauteng kaofela",
+    "allProjects": "Merero Eohle",
+    "viewAll": "Sheba Merero Eohle",
+    "total": "kakaretso",
+    "featured": "E Totobetsitsoeng",
+    "modal": {
+      "location": "Sebaka",
+      "duration": "Nako",
+      "type": "Mofuta",
+      "completed": "E Phethiloe",
+      "getSimilarWork": "Fumana Mosebetsi o Tšoanang o Entsoeng"
+    }
+  },
+  "googleReviews": {
+    "title": "Seo Bareki ba Rona ba se Buang",
+    "reviews": "Ditlhahlobo tsa Google",
+    "readAll": "Bala Ditlhahlobo Tsohle",
+    "verifiedOn": "E Netefaditsoeng ho Google",
+    "trustedProfile": "Profaele ea Khoebo e Tšeptjoang"
+  },
+  "googleBusinessCTA": {
+    "title": "Re Fumane ho Google",
+    "subtitle": "Sheba ditlhahlobo tsa rona ho tsoa ho bareki ba kgotsofetseng Gauteng kaofela",
+    "leaveReview": "Re Siee Tlhahlobo",
+    "findOnMaps": "Re Fumane Limmapeng"
   },
   "services": {
     "title": "Ditshebeletso tsa Rona",
@@ -51,7 +144,19 @@
         "name": "Ditshebeletso tsa Metsi",
         "description": "Ho kenya, ho lokisa, le tlhokomelo"
       }
-    }
+    },
+    "viewAllServices": "Sheba Ditshebeletso Tsohle",
+    "totalServices": "kakaretso",
+    "projectsCompleted": "merero e phethiloe"
+  },
+  "mobileCTA": {
+    "callNow": "Letsetsa Hona Joale",
+    "whatsapp": "WhatsApp"
+  },
+  "whatsappFloat": {
+    "chatWithUs": "Buisana le rona",
+    "needHelp": "O hloka thuso? Buisana le Dingwayo Reason Ndlovu ho WhatsApp",
+    "startChat": "Qala Puisano"
   },
   "extendedServices": {
     "brickwork": {
@@ -107,15 +212,34 @@
       "description": "Ditharollo tsa ho thibela metsi tlas'a mobu, marulellong, le kantle"
     }
   },
+  "categories": {
+    "roofing": "Marulelo",
+    "building": "Kaho",
+    "tiling": "Ho Beha Lithaele",
+    "extensions": "Ho Atolosa",
+    "fencing": "Terata",
+    "plumbing": "Ditshebeletso tsa Metsi",
+    "paving": "Ho Beha Majwe",
+    "flooring": "Fatše",
+    "installation": "Ho Kenya",
+    "concrete": "Konkreite",
+    "plastering": "Ho Roala",
+    "painting": "Ho Penta",
+    "maintenance": "Tlhokomelo",
+    "renovation": "Ho Nchafatsa",
+    "repairs": "Ho Lokisa",
+    "brickwork": "Mosebetsi wa Litene",
+    "waterproofing": "Ho Thibela Metsi"
+  },
   "pages": {
     "about": {
-      "title": "Ka MD Builders",
+      "title": "Ka Sinqobile Construction",
       "subtitle": "Molekane wa Hao ea Tshepehang oa Kaho Gauteng",
       "heroTitle": "Lilemo tse 15+ tsa Botle ba Kaho",
       "heroSubtitle": "Re aha tšepo, morero o le mong ka nako Gauteng Province kaofela",
       "story": {
         "title": "Pale ea Rona",
-        "content": "E thehiloe ke Meshack Dlamini, MD Builders e sebeletse sechaba sa Gauteng lilemo tse fetang 15. Seo se qalileng e le khoebo e nyenyane ea kaho se holile sa ba e 'ngoe ea mabitso a tšepahalang ka ho fetisisa kahong ea matlo le ea khoebo Johannesburg, Pretoria, le libaka tse haufi."
+        "content": "E thehiloe ke Dingwayo Reason Ndlovu, Sinqobile Construction e sebeletse sechaba sa Gauteng lilemo tse fetang 15. Seo se qalileng e le khoebo e nyenyane ea kaho se holile sa ba e 'ngoe ea mabitso a tšepahalang ka ho fetisisa kahong ea matlo le ea khoebo Johannesburg, Pretoria, le libaka tse haufi."
       },
       "mission": {
         "title": "Sepheo sa Rona",
@@ -143,7 +267,7 @@
         ]
       },
       "experience": {
-        "title": "Hobaneng o Khethe MD Builders?",
+        "title": "Hobaneng o Khethe Sinqobile Construction?",
         "items": [
           "Ho feta lilemo tse 15 tsa boiphihlelo ba kaho",
           "E na le laesense e felletseng 'me e sireletsehile",
@@ -159,6 +283,29 @@
       "subtitle": "Ditharollo tse Felletseng tsa Kaho Gauteng Kaofela",
       "heroTitle": "Ditshebeletso tsa Kaho tsa Setsebi",
       "heroSubtitle": "Ho tloha ho lokiseng ha manyenyane ho ea ho merero e meholo ea kaho, re sebetsana le tsohle",
+      "coreServicesTitle": "Ditshebeletso tsa Rona tsa Mantlha",
+      "coreServicesSubtitle": "Ditshebeletso tsa kaho tsa setsebi tse nang le boleng bo tiisitsoeng le litheko tse tlholisanang",
+      "additionalServicesTitle": "Ditshebeletso tse Eketsehileng",
+      "additionalServicesSubtitle": "Ditharollo tse felletseng tsa kaho bakeng sa ditlhoko tsohle tsa hao tsa kaho",
+      "projectsCompleted": "merero e phethiloe",
+      "projects": "merero",
+      "processSubtitle": "Mokhoa oa rona oa mehato e 5 o netefatsa liphetho tsa boleng nako le nako",
+      "serviceAreasTitle": "Re Sebeletsa Libaka Tsohle tsa Gauteng",
+      "serviceAreasDescription": "Re fana ka ditshebeletso tsa kaho tsa setsebi Gauteng Province kaofela, ho kenyelletsa:",
+      "viewAllServiceAreas": "Sheba Libaka Tsohle tsa Tshebeletso",
+      "whyChooseTitle": "Hobaneng o Khethe Sinqobile Construction?",
+      "whyChooseBenefits": [
+        "Ho feta lilemo tse 15 tsa boiphihlelo",
+        "E na le laesense e felletseng 'me e sireletsehile",
+        "Litheko tsa mahala, tse se nang boitlamo",
+        "Mosebetsi oa boleng o tiisitsoe",
+        "Litheko tse tlholisanang",
+        "Ditshebeletso tsa tšohanyetso li fumaneha",
+        "Sehlopha sa setsebi, se tšepahalang",
+        "Tlhokomelo ea kgotsofalo ea bareki"
+      ],
+      "getFreeQuote": "Fumana Tekanyetso ea Mahala: +27 82 868 8396",
+      "callNow": "Letsetsa Hona Joale: +27 82 868 8396",
       "process": {
         "title": "Mokhoa oa Rona",
         "steps": [
@@ -193,19 +340,199 @@
     "ourWork": {
       "title": "Mosebetsi wa Rona",
       "subtitle": "Portfolio ea Merero ea Kaho e Phethiloeng",
-      "heroTitle": "Sheba Mosebetsi wa Rona oa Boleng",
+      "heroTitle": "Merero ea Rona ea Kaho",
       "heroSubtitle": "Sheba portfolio ea rona ea merero e atlehileng Gauteng kaofela",
-      "filterAll": "Merero Eohle",
-      "projectDetails": "Lintlha tsa Morero",
-      "viewProject": "Sheba Morero",
-      "categories": "Mekhahlelo",
-      "locations": "Libaka",
+      "projectsCompleted": "Merero e Phethiloe",
+      "serviceCategories": "Mekhahlelo ea Tshebeletso",
+      "locationsServed": "Libaka",
       "searchPlaceholder": "Batla merero...",
+      "filters": "Li-Filter",
+      "allCategories": "Mekhahlelo Eohle",
+      "allLocations": "Libaka Tsohle",
+      "category": "Mofuta",
+      "location": "Sebaka",
+      "search": "Batla",
+      "clearAllFilters": "Tlosa Li-Filter Tsohle",
+      "showing": "E bontša",
+      "of": "ea",
+      "projects": "merero",
+      "show": "Bontša",
+      "all": "Tsohle",
+      "featured": "E Totobetsitsoeng",
       "noResults": "Ha ho merero e fumanoeng e lumellanang le litekanyetso tsa hao",
-      "loadMore": "Jara Merero e Mengata"
+      "loadingMore": "E laela merero e eketsehileng...",
+      "previous": "E Fetileng",
+      "next": "E Latelang",
+      "backToTop": "↑ Khutlela Holimo",
+      "modalLocation": "Sebaka",
+      "modalDuration": "Nako",
+      "modalType": "Mofuta",
+      "modalCompleted": "E Phethiloe",
+      "getSimilarWork": "Fumana Mosebetsi o Tšoanang o Entsoeng",
+      "ctaTitle": "O Ikemiselitse ho Qala Morero oa Hao?",
+      "ctaSubtitle": "Ikopanye le bareki ba rona ba kgotsofetseng 'me u bone ditshebeletso tsa kaho tsa boleng",
+      "callNow": "Letsetsa Hona Joale: +27 82 868 8396",
+      "getFreeQuote": "Fumana Tekanyetso ea Mahala"
+    },
+    "costCalculator": {
+      "title": "Sebali sa Litšenyehelo tsa Kaho",
+      "subtitle": "Fumana tekanyetso ea hang-hang bakeng sa morero oa hao oa kaho Gauteng",
+      "description": "Sebali sa rona sa mahala se fana ka mefuta ea litšenyehelo tse nepahetseng ho ipapisitseng le boiphihlelo ba lilemo tse 15+ le merero e 500+ e phethiloeng",
+      "howItWorks": {
+        "title": "Mokhoa oa Sebali sa Rona o Sebetsang",
+        "steps": [
+          {
+            "title": "Khetha Tshebeletso",
+            "description": "Khetha mofuta oa tshebeletso ea hao ea kaho"
+          },
+          {
+            "title": "Lintlha tsa Morero",
+            "description": "Kenya boholo, sebaka, le potlako"
+          },
+          {
+            "title": "Fumana Tekanyetso",
+            "description": "Fumana mefuta ea litšenyehelo hang-hang"
+          },
+          {
+            "title": "Kopa Tekanyetso",
+            "description": "Fumana litheko tse qaqileng tse nepahetseng"
+          }
+        ]
+      },
+      "whyUse": {
+        "title": "Hobaneng o Sebelisa Sebali sa Rona sa Litšenyehelo?",
+        "benefits": [
+          {
+            "title": "Liphetho tsa Hang-hang",
+            "description": "Fumana litheko tsa litšenyehelo ka metsotsoana, ha ho hlokahale ho emela"
+          },
+          {
+            "title": "Litheko tse Nepahetseng",
+            "description": "Ho ipapisitseng le data ea nnete ea morero le litheko tsa 'maraka tsa hona joale"
+          },
+          {
+            "title": "Ha ho Boitlamo",
+            "description": "Mahala ho sebelisa ntle le boitlamo kapa ho ikopanya ho hlokahalang"
+          },
+          {
+            "title": "Ho Ipapisitseng le Litsebi",
+            "description": "Lipalo ho tsoa ho boiphihlelo ba kaho ba lilemo tse 15+"
+          }
+        ]
+      },
+      "understanding": {
+        "title": "Ho Utloisisa Tekanyetso ea Hao",
+        "included": {
+          "title": "Seo se Kentsoeng Tekanyetsong",
+          "items": [
+            "Litšenyehelo tsa basebetsi ho ipapisitseng le bothata ba morero",
+            "Lisebelisoa tse tloaelehileng le thepa",
+            "Lisebelisoa tsa motheo le lisebelisoa",
+            "Taolo ea morero le tlhokomelo",
+            "Ho hloekisa le ho tlosa litšila"
+          ]
+        },
+        "factors": {
+          "title": "Lintlha tse ka Amang Litšenyehelo tsa ho Qetela",
+          "items": [
+            "Likhetho tse itseng tsa lisebelisoa (premium kapa tloaelehileng)",
+            "Ho fumaneha ha sebaka le maemo",
+            "Mathata a sebopeho a fumanehang nakong ea mosebetsi",
+            "Litlhoko tsa moralo o ikhethileng",
+            "Litumello le litlhoko tsa ho latela",
+            "Tlhoko ea nako ea selemo le ho fumaneha ha lisebelisoa"
+          ]
+        },
+        "accurateQuote": {
+          "title": "Fumana Tekanyetso e Nepahetseng",
+          "description": "Le hoja sebali sa rona se fana ka tekanyetso e tšepahalang, morero o mong le o mong o ikhethile. Bakeng sa litheko tse nepahetseng ka ho fetisisa tse lumellanang le ditlhoko tsa hao tse itseng, re khothaletsa ho kopa tekanyetso e qaqileng. Sehlopha sa rona se tla:",
+          "benefits": [
+            "Etela sebaka sa hao bakeng sa tlhahlobo e nepahetseng",
+            "Buisana ka ditlhoko tsa hao tse itseng le likhetho",
+            "Fana ka karoloana e qaqileng ea litšenyehelo tsohle",
+            "Fana ka likeletso tsa setsebi",
+            "Araba dipotso tsohle tsa hao"
+          ],
+          "button": "Kopa Tekanyetso e Qaqileng ea Mahala"
+        }
+      },
+      "whyChoose": {
+        "title": "Hobaneng o Khethe Sinqobile Construction?",
+        "stats": [
+          {
+            "value": "15+",
+            "label": "Lilemo tsa Boiphihlelo"
+          },
+          {
+            "value": "500+",
+            "label": "Merero e Entsoeng"
+          },
+          {
+            "value": "4.9★",
+            "label": "Tekanyetso ea Bareki"
+          },
+          {
+            "value": "100%",
+            "label": "Kgotsofalo"
+          }
+        ]
+      },
+      "cta": {
+        "title": "O Ikemiselitse ho Qala Morero oa Hao?",
+        "subtitle": "Fumana tekanyetso e qaqileng, e nepahetseng ho tsoa ho sehlopha sa rona se nang le boiphihlelo",
+        "requestQuote": "Kopa Tekanyetso ea Mahala",
+        "call": "Letsetsa: +27 82 868 8396"
+      },
+      "calculator": {
+        "header": "Sebali sa Litšenyehelo",
+        "subheader": "Fumana tekanyetso ea hang-hang bakeng sa morero oa hao",
+        "serviceType": "Mofuta oa Tshebeletso",
+        "serviceTypePlaceholder": "Khetha tshebeletso...",
+        "projectSize": "Boholo ba Morero",
+        "projectSizePlaceholder": "Khetha boholo ba morero...",
+        "location": "Sebaka (Khetho)",
+        "locationPlaceholder": "Khetha sebaka sa hao...",
+        "urgency": "Potlako ea Morero",
+        "standard": "Tloaelehileng",
+        "urgent": "Potlako (+20%)",
+        "calculateButton": "Bala Tekanyetso",
+        "estimatedCost": "Mefuta ea Litšenyehelo e Lebelletsoeng",
+        "basedOn": "Ho ipapisitseng le",
+        "project": "morero",
+        "locationLabel": "Sebaka",
+        "urgentTimeline": "Nako ea potlako",
+        "standardTimeline": "Nako e tloaelehileng",
+        "includesCallout": "E kenyelletsa tefiso ea R400 ea ho letsetsa",
+        "note": "Hlokomela:",
+        "noteText": "Ena ke mefuta e lebelletsoeng e ipapisitseng le merero e tloaelehileng. Litšenyehelo tsa ho qetela li ka fapana ho latela ditlhoko tse itseng, lisebelisoa, le maemo a sebaka.",
+        "getAccurateQuote": "Fumana Tekanyetso e Nepahetseng",
+        "trustIndicators": {
+          "projects": "Merero",
+          "years": "Lilemo",
+          "rating": "Tekanyetso"
+        },
+        "services": {
+          "building": "Kaho e Ncha ea Mohaho",
+          "renovation": "Ho Nchafatsa Lehae",
+          "roofing": "Ditshebeletso tsa Marulelo",
+          "paving": "Ho Beha Majwe & Ditsela tsa Dikoloi",
+          "painting": "Ditshebeletso tsa ho Penta",
+          "plumbing": "Mosebetsi oa Metsi",
+          "tiling": "Ditshebeletso tsa Lithaele",
+          "waterproofing": "Ho Thibela Metsi",
+          "extensions": "Ho Atolosa Lehae",
+          "landscaping": "Ho Hlophisa Serapa"
+        },
+        "sizes": {
+          "small": "E Nyenyane (< 50m²)",
+          "medium": "E Mahareng (50-150m²)",
+          "large": "E Kholo (150-300m²)",
+          "xlarge": "E Kholo Haholo (> 300m²)"
+        }
+      }
     },
     "contact": {
-      "title": "Ikopanye le MD Builders",
+      "title": "Ikopanye le Sinqobile Construction",
       "subtitle": "Ikopanye le Rona bakeng sa Morero oa Hao o Latelang oa Kaho",
       "heroTitle": "Ha Re Aheng Ntho e Kholo Hammoho",
       "heroSubtitle": "Ikopanye le rona kajeno bakeng sa puisano ea mahala le tekanyetso",
@@ -220,18 +547,28 @@
         "submit": "Romela Molaetsa",
         "sending": "E romela...",
         "success": "Molaetsa o rometsoe ka katleho! Re tla ikopanya le uena haufinyane.",
-        "error": "Ho hloleha ho romela molaetsa. Ka kopo leka hape kapa o re letsetse ka kotloloho."
+        "error": "Ho hloleha ho romela molaetsa. Ka kopo leka hape kapa o re letsetse ka kotloloho.",
+        "otherLocation": "Tse ling (ka kopo hlalosa molaetseng)"
       },
       "info": {
         "title": "Tlhahisoleseling ea ho Ikopanya",
-        "phone": "071 933 4063",
+        "phone": "+27 82 868 8396",
+        "phone2": "+27 81 569 2985",
         "email": "info@mdbuilders.co.za",
+        "emailLabel": "Imeile",
         "hours": "Mos - Lab: 7:00 AM - 6:00 PM\nMok: 8:00 AM - 4:00 PM\nSon: Mehala ea tšohanyetso feela",
-        "emergency": "Ditshebeletso tsa Tšohanyetso tsa 24/7 li Fumaneha"
+        "emergency": "Ditshebeletso tsa Tšohanyetso tsa 24/7 li Fumaneha",
+        "emergencyDescription": "Bakeng sa ditšohanyetso tsa kaho tse potlakileng tse kang liphaephe tse phatlohetsoeng, mathata a motlakase, kapa tšenyo ea sebopeho.",
+        "emergencyLine": "Mohala oa Tšohanyetso"
+      },
+      "callOutFee": {
+        "title": "Tlhahisoleseling ea Tefiso ea ho Letsetsa",
+        "description": "Tefiso ena e kenyelletsa ketelo ea rona ea setsebi sebakeng ho hlahloba hore na ke mosebetsi ofe o hlokahalang bakeng sa morero oa hao."
       },
       "serviceAreas": {
         "title": "Libaka tsa Tshebeletso",
-        "description": "Re sebeletsa ka boikgantšo bareki ba matlo le ba khoebo Gauteng Province kaofela"
+        "description": "Re sebeletsa ka boikgantšo bareki ba matlo le ba khoebo Gauteng Province kaofela",
+        "notListed": "Ha o bone sebaka sa hao se ngotsoeng? Ikopanye le rona - re ka kgona ho thusa!"
       }
     },
     "faq": {
@@ -253,7 +590,41 @@
             },
             {
               "question": "Na le na le laesense 'me le sireletsehile?",
-              "answer": "E, MD Builders e na le laesense e felletseng 'me e sireletsehile. Re jara inshorense e felletseng ea boikarabelo ho sireletsa bareki ba rona le sehlopha sa rona nakong ea merero eohle."
+              "answer": "E, Sinqobile Construction e na le laesense e felletseng 'me e sireletsehile. Re jara inshorense e felletseng ea boikarabelo ho sireletsa bareki ba rona le sehlopha sa rona nakong ea merero eohle."
+            }
+          ]
+        },
+        {
+          "title": "Morero & Litheko",
+          "items": [
+            {
+              "question": "Merero e nka nako e kae hangata?",
+              "answer": "Linako tsa merero li fapana ho latela boholo le bothata. Litokiso tse nyenyane li ka nka matsatsi a 1-2, ha merero e meholo ea kaho e ka nka libeke tse 'maloa. Re fana ka linako tse qaqileng ka tekanyetso e 'ngoe le e 'ngoe."
+            },
+            {
+              "question": "Ke mekhoa efe ea tefo eo le e amohelang?",
+              "answer": "Re amohela chelete, liphetisetso tsa banka, le litefo tsa likarete. Bakeng sa merero e meholo, hangata re hloka depositi ho qala mosebetsi, 'me tekanyo e setseng e lokela ho lefshoa ha mosebetsi o phethoa."
+            },
+            {
+              "question": "Na le fana ka ditiisetso mosebetsing oa lona?",
+              "answer": "E, re ema ka morao ho mosebetsi oa rona ka ditiisetso tse felletseng. Linako tsa tiiso li fapana ka mofuta oa tshebeletso, 'me re tla fana ka lintlha tse felletseng tsa tiiso ka tekanyetso ea hao."
+            }
+          ]
+        },
+        {
+          "title": "Ditshebeletso & Lisebelisoa",
+          "items": [
+            {
+              "question": "Na le fana ka lisebelisoa kapa ke tlameha ho li reka?",
+              "answer": "Re ka fana ka lisebelisoa tsohle e le karolo ea tshebeletso ea rona, kapa re sebetse ka lisebelisoa tseo o li rekileng. Re tla fa keletso ea mokhoa o motle o ipapisitseng le morero le tekanyetso ea hao."
+            },
+            {
+              "question": "Na le ka sebetsa mabenkeleng kapa mantsiboya?",
+              "answer": "E, re fana ka ho hlophisa ha nako e feto-fetohang ho kenyelletsa mosebetsi oa mabenkeleng le mantsiboya bakeng sa merero ea tšohanyetso kapa boiketlo ba moreki. Litšenyehelo tse eketsehileng li ka sebetsa bakeng sa mosebetsi oa ka mor'a lihora."
+            },
+            {
+              "question": "Na le sebetsana le litokiso tsa tšohanyetso?",
+              "answer": "E, re fana ka ditshebeletso tsa ho lokisa tsa tšohanyetso tsa 24/7 bakeng sa mathata a tšohanyetso joalo ka liphaephe tse phatloang, mathata a motlakase, kapa tšenyo ea sebopeho. Re letsetse hang-hang bakeng sa thuso ea tšohanyetso."
             }
           ]
         }
@@ -263,12 +634,113 @@
         "subtitle": "Se ke oa tsilatsila ho fihlela - re teng ho thusa!",
         "button": "Ikopanye le Rona"
       }
+    },
+    "blog": {
+      "title": "Lintlha tsa Kaho & Malebela",
+      "subtitle": "Keletso ea setsebi, litataiso, le lintlha tsa indasteri ho tsoa ho Sinqobile Construction. Ithute ka litšenyehelo tsa kaho, mehopolo ea ho nchafatsa, melao ea kaho, le tse ling.",
+      "searchPlaceholder": "Batla lingodiloe...",
+      "readMore": "Bala Haholoanyane",
+      "previous": "E Fetileng",
+      "next": "E Latelang",
+      "noResults": "Ha ho lingodiloe tse fumanoeng tse lumellanang le litekanyetso tsa hao. Leka ho lokisa phuputso ea hao kapa li-filter.",
+      "ctaTitle": "O Hloka Keletso ea Setsebi ea Kaho?",
+      "ctaSubtitle": "Sehlopha sa rona sa Sinqobile Construction se teng ho thusa ka morero oa hao oa kaho. Fumana puisano ea mahala le tekanyetso kajeno.",
+      "call": "Letsetsa: +27 82 868 8396",
+      "getFreeQuote": "Fumana Tekanyetso ea Mahala",
+      "categories": {
+        "all": "Tsohle",
+        "buildingCosts": "Litšenyehelo tsa Kaho",
+        "contractorTips": "Malebela a Moahi",
+        "renovations": "Ho Nchafatsa",
+        "regulations": "Melao",
+        "roofing": "Marulelo",
+        "maintenance": "Tlhokomelo",
+        "designIdeas": "Mehopolo ea Moralo"
+      }
+    }
+  },
+  "aboutPage": {
+    "heroStats": {
+      "experience": "Boiphihlelo ba Lilemo tse 15+",
+      "insured": "E Sireletsehile ka Botlalo",
+      "allAreas": "Libaka Tsohle tsa Gauteng"
+    },
+    "getFreeQuote": "Fumana Tekanyetso ea Mahala",
+    "serviceAreas": {
+      "title": "Re Sebeletsa Libaka Tsohle tsa Gauteng",
+      "description": "Ho tloha Johannesburg ho ea Pretoria, East Rand ho ea West Rand - re tlisa ditshebeletso tsa kaho tsa boleng monyakong oa hao.",
+      "viewAll": "Sheba Libaka Tsohle tsa Tshebeletso"
+    },
+    "finalCTA": {
+      "title": "O Ikemiselitse ho Qala Morero oa Hao?",
+      "description": "Ikopanye le Sinqobile Construction kajeno bakeng sa puisano ea mahala le tekanyetso. Ha re aheng ntho e kholo hammoho!"
     }
   },
   "about": {
-    "title": "Ka Meshack Dlamini",
-    "description": "Ka boiphihlelo ba lilemo tse fetang 15 indastering ea kaho, Meshack Dlamini o hahile lebitso la mosebetsi o motle le tshebeletso e tshepehang Gauteng kaofela.",
+    "title": "Ka Dingwayo Reason Ndlovu",
+    "description": "Ka boiphihlelo ba lilemo tse fetang 15 indastering ea kaho, Dingwayo Reason Ndlovu o hahile lebitso la mosebetsi o motle le tshebeletso e tshepehang Gauteng kaofela.",
     "experience": "Ho tloha ho lokiseng matlo a manyenyane ho ea ho merero e meholo ea kaho, re fana ka liphetho tse ikhethang tse etsang hore nako e fete."
+  },
+  "testimonialsEnhanced": {
+    "title": "Seo Bareki ba Rona ba se Buang",
+    "subtitle": "Se ke wa nka lentswe la rona feela",
+    "basedOn": "Ho ipapisitseng le",
+    "verifiedReviews": "ditlhahlobo tse netefaditsoeng ho tsoa ho bareki ba kgotsofetseng",
+    "verifiedCustomer": "Moreki ea Netefaditsoeng",
+    "stats": {
+      "projectsCompleted": "Merero e Phethiloe",
+      "averageRating": "Tekanyetso e Tloaelehileng",
+      "yearsExperience": "Lilemo tsa Boiphihlelo",
+      "satisfactionRate": "Tekanyetso ea Kgotsofalo"
+    }
+  },
+  "whyChooseUs": {
+    "title": "Hobaneng o Khethe Sinqobile Construction bakeng sa Morero oa Hao oa Kaho?",
+    "subtitle": "Ditshebeletso tsa kaho tsa setsebi Gauteng tse nang le boitsebiso bo netefaditsoeng kahong, ho nchafatsa, ho roala, ho penta, ho beha majwe, ho beha lithaele, ditshebeletso tsa metsi, le tse ling. Mona ke hobaneng baahi ba thepa Johannesburg, Pretoria, le Sandton ba tšepa Sinqobile Construction:",
+    "reasons": {
+      "experience": {
+        "title": "Boiphihlelo ba Lilemo tse 15+",
+        "description": "Ho feta lilemo tse 15 tsa boiphihlelo ba kaho ea setsebi bo sebeletsa Gauteng. Re phethile merero e 500+ e atlehileng Johannesburg, Pretoria, Sandton, le libaka tse haufi."
+      },
+      "licensed": {
+        "title": "E na le Laesense e Felletseng 'me e Sireletsehile",
+        "description": "E ngodisitsoeng ho NHBRC 'me e sireletsehile ka botlalo ka phihlello e felletseng ea boikarabelo. Thepa ea hao le tšebeliso ea hao ea chelete li sireletsehile ka morero o mong le o mong oo re o etsang."
+      },
+      "quality": {
+        "title": "Mosebetsi oa Boleng o Tiisitsoe",
+        "description": "Re ema ka morao ho mosebetsi oa rona ka ditiisetso tse felletseng. Morero o mong le o mong o fihlela maemo a phahameng a boleng, ho tloha ho roala le ho penta ho ea ho ho nchafatsa matlo ka botlalo."
+      },
+      "team": {
+        "title": "Sehlopha sa Litsebi tse Tšoanelang",
+        "description": "Litsebi tsa rona tsa kaho tse nang le setifikeiti li ikhethile kahong, ho beha lithaele, ho beha majwe, ditshebeletso tsa metsi, marulelo, le ho thibela metsi. Litsebi tse nang le boitsebiso tse ikemiselitseng ho ba ba holimo."
+      },
+      "onTime": {
+        "title": "Ho Fana ka Morero ka Nako",
+        "description": "Re hlompha nako ea hao le tekanyetso ea hao ea chelete. Merero e phethoa ka nako ka litheko tse hlakileng 'me ntle le litšenyehelo tse patiloeng. Tefiso ea R400 ea ho letsetsa bakeng sa lipuisano le litheko."
+      },
+      "allAreas": {
+        "title": "Re Sebeletsa Libaka Tsohle tsa Gauteng",
+        "description": "Ho tloha Johannesburg CBD ho ea Sandton, Pretoria ho ea Centurion, Midrand ho ea Fourways - re fana ka ditshebeletso tsa kaho tsa setsebi libakeng tsohle tsa Gauteng."
+      },
+      "rating": {
+        "title": "Tekanyetso ea Bareki ea 4.9★",
+        "description": "E tekanyetsitsoe linaleli tse 4.9 ke bareki ba kgotsofetseng. Bala ditlhahlobo tsa rona tsa Google ho bona hobaneng baahi ba matlo le likhoebo ba tšepa Sinqobile Construction bakeng sa ditlhoko tsa bona tsa kaho."
+      },
+      "emergency": {
+        "title": "Ditshebeletso tsa Tšohanyetso tsa 24/7",
+        "description": "Ditshebeletso tsa kaho tsa tšohanyetso li fumaneha bakeng sa litokiso tse potlakileng ho kenyelletsa liphaephe tse phatlohetsoeng, mathata a motlakase, ho lutla ha marulelo, le tšenyo ea sebopeho. Letsetsa +27 82 868 8396 kapa +27 81 569 2985 nako efe kapa efe."
+      }
+    },
+    "comprehensiveTitle": "Ditshebeletso tse Felletseng tsa Kaho Gauteng Kaofela",
+    "comprehensiveContent": {
+      "para1": "Sinqobile Construction ke molekane oa hao oa kaho ea tšepahalang o sebeletsa libaka tsohle tsa Gauteng Province. Ebang o hloka baahi ba kaho Johannesburg, litsebi tsa ho nchafatsa Sandton, kapa ditshebeletso tsa kaho Pretoria, sehlopha sa rona se nang le boiphihlelo se fana ka liphetho tse ikhethang.",
+      "para2": "Ditshebeletso tsa rona tse felletseng di kenyelletsa kaho ea matlo, kaho ea khoebo, ho nchafatsa matlo, ho roala le ho penta, ho beha majwe le ditsela tsa dikoloi, ditshebeletso tsa lithaele, ho kenya metsi le ho lokisa, marulelo le ho thibela metsi, le tlhokomelo e tloaelehileng.",
+      "para3": "Ka boiphihlelo ba kaho ba lilemo tse 15+ le merero e 500+ e phethiloeng, re hahile lebitso la mosebetsi oa boleng, tshebeletso e tšepahalang, le litheko tse tlholisanang. Tekanyetso ea rona ea bareki ea linaleli tse 4.9 e bontša boitlamo ba rona ho kgotsofalo ea bareki.",
+      "para4": "Re sebeletsa bareki ba matlo le ba khoebo Johannesburg, Sandton, Pretoria, Centurion, Midrand, Randburg, Fourways, Roodepoort, le libaka tsohle tse haufi tsa Gauteng. Tsebo ea rona ea lehae e netefatsa hore re utloisisa ditlhoko tse ikhethang tsa kaho tsa sebaka se seng le se seng.",
+      "para5": "Litheko tsa mahala li fumaneha ka tefiso e hlakileng ea R400 ea ho letsetsa bakeng sa lipuisano. Ikopanye le rona ho +27 82 868 8396 kapa +27 81 569 2985 ho buisana ka morero oa hao oa kaho. Re na le laesense e felletseng, re ngodisitsoeng ho NHBRC, 'me re sireletsehile ka botlalo bakeng sa kgotso ea hao ea kelello."
+    },
+    "callButton": "Letsetsa: +27 82 868 8396",
+    "quoteButton": "Fumana Tekanyetso ea Mahala"
   },
   "testimonials": {
     "title": "Seo Bareki ba Rona ba se Buang",
@@ -294,14 +766,360 @@
   "contact": {
     "callNow": "Letsetsa Hona Joale",
     "call": "Letsetsa",
-    "phone": "071 933 4063",
+    "phone": "+27 82 868 8396",
     "email": "info@mdbuilders.co.za",
     "address": "Re Sebeletsa Libaka Tsohle tsa Gauteng"
+  },
+  "areaPage": {
+    "coverageArea": "Sebaka sa Phihlello",
+    "andMore": "& tse ling",
+    "callUs": "Re Letsetse",
+    "businessHours": "Lihora tsa Khoebo",
+    "monFri": "Mos-Lab: 7AM-6PM",
+    "sat": "Mok: 8AM-4PM",
+    "sun": "Son: Mehala ea Tšohanyetso Feela",
+    "allGautengSuburbs": "Libaka tsohle tsa Gauteng ho kenyelletsa",
+    "constructionServicesIn": "Ditshebeletso tsa Kaho ho",
+    "whyChoose": "Hobaneng o Khethe Sinqobile Construction ho",
+    "ourServicesIn": "Ditshebeletso tsa Rona ho",
+    "comprehensiveSolutions": "Ditharollo tse felletseng tsa kaho bakeng sa thepa ea matlo le ea khoebo",
+    "suburbsWeServe": "Libaka tseo Re li Sebeletsa ho",
+    "professionalServices": "Ditshebeletso tsa kaho tsa setsebi libakeng tsohle tsa",
+    "readyToStart": "O Ikemiselitse ho Qala Morero oa Hao ho",
+    "contactToday": "Ikopanye le Sinqobile Construction kajeno bakeng sa puisano ea mahala le tekanyetso. Tefiso ea R400 ea ho letsetsa e sebetsa.",
+    "callNow": "Letsetsa Hona Joale",
+    "requestFreeQuote": "Kopa Tekanyetso ea Mahala",
+    "fullyInsured": "E Sireletsehile ka Botlalo",
+    "comprehensiveLiability": "Phihlello e felletseng ea boikarabelo bakeng sa kgotso ea hao ea kelello",
+    "yearsExperience": "Lilemo tse 15+",
+    "extensiveExperience": "Boiphihlelo bo pharaletseng bo sebeletsa",
+    "qualityGuaranteed": "Boleng bo Tiisitsoe",
+    "workmanshipWarranty": "Tiiso ea mosebetsi mererong eohle",
+    "dontSeeArea": "Ha o Bone Sebaka sa Hao se Ngotsoeng?",
+    "weServeAllAreas": "Re sebeletsa libaka tsohle Gauteng Province kaofela. Ikopanye le rona ho buisana ka morero oa hao oa kaho!",
+    "getFreeQuote": "Fumana Tekanyetso ea Mahala",
+    "allSuburbsIncluding": "Libaka tsohle tsa Gauteng ho kenyelletsa"
   },
   "footer": {
     "mission": "Ho fana ka ditshebeletso tsa kaho tsa boleng Gauteng kaofela ka botšepehi, botshebi, le tlhokomelo ea lintlha.",
     "quickLinks": "Lihokelo tse Potlakang",
     "ourServices": "Ditshebeletso tsa Rona",
-    "contactInfo": "Tlhahisoleseling ea ho Ikopanya"
+    "contactInfo": "Tlhahisoleseling ea ho Ikopanya",
+    "businessHours": {
+      "weekdays": "Mantaha - Labohlano: 7:00 AM - 5:00 PM",
+      "saturday": "Moqebelo: 8:00 AM - 1:00 PM",
+      "sunday": "Sontaha: E koetswe"
+    },
+    "copyright": "© 2024 Sinqobile Construction. Litokelo tsohle li bolokiloe."
+  },
+  "projects": {
+    "brickwork-alberton-78": {
+      "title": "Morero oa ho Kenya Marulelo",
+      "description": "Ho kenya marulelo ha setsebi ka lisebelisoa tsa boleng le boitsebiso ba setsebi."
+    },
+    "brickwork-lanseria-49": {
+      "title": "Kaho ea Sebaka sa Braai",
+      "description": "Kaho ea sebaka sa braai se ikhethileng ka mosebetsi oa litene oa boleng le likarolo tsa boithabiso ba kantle."
+    },
+    "brickwork-roodepoort-35": {
+      "title": "Ho Kenya Lithaele tsa Bafu",
+      "description": "Ho beha lithaele tsa bafu ha setsebi ka ho thibela metsi le lipheletso tsa premium."
+    },
+    "building-edenvale-30": {
+      "title": "Kaho ea Mohaho oa Lehae",
+      "description": "Kaho e felletseng ea mohaho oa lehae ka moralo oa sejoale-joale le lipheletso tsa boleng."
+    },
+    "building-rosebank-48": {
+      "title": "Ho Atolosa Ntlo ea Lehae",
+      "description": "Ho atolosa ntlo ea lehae ea boleng ka moralo oa sejoale-joale le kopanyo e se nang moeli."
+    },
+    "building-springs-54": {
+      "title": "Tshebeletso ea Lithaele tsa Bafu",
+      "description": "Ho beha lithaele tsa bafu ha setsebi ka lisebelisoa tsa boleng le ho kenya ha setsebi."
+    },
+    "concrete-bedfordview-31": {
+      "title": "Morero oa ho Kenya Bafu",
+      "description": "Ho kenya bafu ka botlalo ka lithaele, lisebelisoa, le lipheletso tsa sejoale-joale."
+    },
+    "concrete-boksburg-90": {
+      "title": "Ho Kenya Terata le Mosebetsi oa Konkreite",
+      "description": "Ho kenya terata ha setsebi ka motheo oa konkreite le lisebelisoa tsa boleng."
+    },
+    "concrete-johannesburg-86": {
+      "title": "Morero oa ho Kenya Metsi",
+      "description": "Ho kenya metsi ha setsebi ka lisebelisoa tsa sejoale-joale le mosebetsi oa boleng."
+    },
+    "concrete-midrand-79": {
+      "title": "Ho Kenya Lithaele tsa Marulelo",
+      "description": "Ho kenya lithaele tsa marulelo ha setsebi ka lisebelisoa tsa boleng le boitsebiso ba setsebi."
+    },
+    "concrete-sandton-36": {
+      "title": "Ho Kenya Lesaka le Konkreite",
+      "description": "Ho kenya lesaka le konkreite ha setsebi ka lisebelisoa tsa boleng le mosebetsi oa setsebi."
+    },
+    "concrete-soweto-56": {
+      "title": "Morero oa ho Kenya Kichine",
+      "description": "Ho kenya kichine ka botlalo ka likhabote tse ikhethileng le lisebelisoa tsa sejoale-joale."
+    },
+    "construction-randburg-2": {
+      "title": "Morero oa ho Beha Majwe",
+      "description": "Ho beha majwe ha setsebi ka lisebelisoa tsa boleng le boitsebiso ba setsebi."
+    },
+    "construction-sandton-77": {
+      "title": "Morero oa ho Beha Majwe a Tsela ea ho Tsamaea",
+      "description": "Ho beha majwe a tsela ea ho tsamaea ha setsebi ka lisebelisoa tsa boleng le moralo oa sejoale-joale."
+    },
+    "electrical-edenvale-29": {
+      "title": "Morero oa ho Kenya Geyser",
+      "description": "Ho kenya geyser ha setsebi ka ho latela polokeho le mosebetsi oa boleng."
+    },
+    "extensions-bedfordview-19": {
+      "title": "Morero oa ho Kenya Bafu",
+      "description": "Ho kenya bafu ha setsebi ka lithaele tsa boleng le lisebelisoa tsa sejoale-joale."
+    },
+    "extensions-sandton-65": {
+      "title": "Tshebeletso ea Lithaele tsa Bafu",
+      "description": "Tshebeletso ea lithaele tsa bafu ea setsebi ka lisebelisoa tsa boleng le ho kenya ha setsebi."
+    },
+    "fencing-alexandra-93": {
+      "title": "Ho Kenya Lithaele tsa Marulelo",
+      "description": "Ho kenya lithaele tsa marulelo ha setsebi ka lisebelisoa tsa boleng le boitsebiso ba setsebi."
+    },
+    "fencing-krugersdorp-21": {
+      "title": "Mosebetsi oa ho Epa le Motheo",
+      "description": "Mosebetsi oa ho epa le motheo oa setsebi ka konkreite ea boleng le kaho ea setsebi."
+    },
+    "fencing-linden-28": {
+      "title": "Morero oa ho Kenya Marulelo",
+      "description": "Ho kenya marulelo ha setsebi ka lisebelisoa tsa boleng le boitsebiso ba setsebi."
+    },
+    "fencing-randburg-52": {
+      "title": "Ho Kenya Sink ea Metsi",
+      "description": "Ho kenya sink ea metsi ha setsebi ka lisebelisoa tsa boleng le mosebetsi oa setsebi."
+    },
+    "flooring-alberton-64": {
+      "title": "Morero oa ho Kenya Shower",
+      "description": "Ho kenya shower ha setsebi ka lisebelisoa tsa sejoale-joale le mosebetsi oa metsi oa boleng."
+    },
+    "flooring-fourways-43": {
+      "title": "Ho Kenya Fatše ea Lehong le Thata",
+      "description": "Fatše ea lehong le thata ea premium ka ho kenya ha setsebi le ho qeta."
+    },
+    "flooring-germiston-71": {
+      "title": "Lithaele le ho Beha Majwe a Sebaka sa Letamo",
+      "description": "Lithaele le ho beha majwe a sebaka sa letamo ha setsebi ka lisebelisoa tse sa thellang le lipheletso tsa boleng."
+    },
+    "flooring-midrand-55": {
+      "title": "Morero oa ho Kenya Fatše",
+      "description": "Ho beha majwe ha setsebi ka lisebelisoa tsa boleng le boitsebiso ba setsebi."
+    },
+    "installation-johannesburg-24": {
+      "title": "Ho Kenya Fatše ea Konkreite",
+      "description": "Ho kenya fatše ea konkreite ha setsebi ka lisebelisoa tsa boleng le mosebetsi oa setsebi."
+    },
+    "installation-rosebank-72": {
+      "title": "Mosebetsi oa Motheo oa Konkreite",
+      "description": "Mosebetsi oa motheo oa konkreite oa setsebi ka lisebelisoa tsa boleng le kaho ea setsebi."
+    },
+    "installation-rosebank-83": {
+      "title": "Kaho ea Makalakala",
+      "description": "Kaho ea makalakala ea setsebi ka lisebelisoa tsa boleng le boitsebiso ba setsebi."
+    },
+    "landscaping-alberton-39": {
+      "title": "Tshebeletso ea ho Roala Marako",
+      "description": "Tshebeletso ea ho roala marako ea setsebi ka pheletso e boreleli le lisebelisoa tsa boleng."
+    },
+    "maintenance-alberton-73": {
+      "title": "Tshebeletso ea Tlhokomelo ea Thepa",
+      "description": "Tlhokomelo e akaretsang ea thepa ho kenyelletsa litokiso le tlhokomelo."
+    },
+    "maintenance-centurion-70": {
+      "title": "Morero oa Tlhokomelo",
+      "description": "Ho kenya tanki ea metsi ha setsebi ka lisebelisoa tsa boleng le mosebetsi oa setsebi."
+    },
+    "maintenance-linden-80": {
+      "title": "Morero oa Lithaele tsa Kichine",
+      "description": "Lithaele tsa kichine tsa setsebi ka lisebelisoa tsa boleng le ho kenya ha setsebi."
+    },
+    "maintenance-sandton-17": {
+      "title": "Ho Kenya Metsi le Drainage",
+      "description": "Ho kenya metsi le drainage ha setsebi ka lisebelisoa tsa boleng le mosebetsi oa setsebi."
+    },
+    "painting-alberton-4": {
+      "title": "Morero oa ho Beha Majwe",
+      "description": "Ho beha majwe ha setsebi ka lisebelisoa tsa boleng le boitsebiso ba setsebi."
+    },
+    "painting-alberton-53": {
+      "title": "Morero oa Kaho ea ho Beha Majwe",
+      "description": "Kaho ea ho beha majwe ea setsebi ka lisebelisoa tsa boleng le moralo oa sejoale-joale."
+    },
+    "painting-krugersdorp-76": {
+      "title": "Lithaele tsa Lebota la Shower",
+      "description": "Lithaele tsa lebota la shower tsa setsebi ka lisebelisoa tsa boleng le ho thibela metsi."
+    },
+    "painting-soweto-42": {
+      "title": "Morero oa ho Beha Majwe a Konkreite",
+      "description": "Ho beha majwe a konkreite ha setsebi ka lisebelisoa tsa boleng le mosebetsi oa setsebi."
+    },
+    "paving-alberton-40": {
+      "title": "Morero oa Lithaele tsa Fatše",
+      "description": "Lithaele tsa fatše tsa setsebi ka lisebelisoa tsa boleng le ho kenya ha setsebi."
+    },
+    "paving-alberton-46": {
+      "title": "Ho Nchafatsa Kichine ea Sejoale-joale",
+      "description": "Ho nchafatsa kichine ea sejoale-joale ka botlalo ka likhabote tse ikhethileng, lithaele, le moralo oa sejoale-joale."
+    },
+    "paving-boksburg-84": {
+      "title": "Lithaele tsa Backsplash ea Kichine",
+      "description": "Lithaele tsa backsplash ea kichine tsa setsebi ka lipaterone tsa khabiso le lisebelisoa tsa boleng."
+    },
+    "paving-lanseria-45": {
+      "title": "Morero oa ho Kenya Geyser",
+      "description": "Ho kenya geyser ha setsebi ka ho latela polokeho le mosebetsi oa boleng."
+    },
+    "paving-midrand-59": {
+      "title": "Ho Beha Majwe a Sebaka sa Letamo",
+      "description": "Ho beha majwe a sebaka sa letamo ka lisebelisoa tse sa thellang le drainage."
+    },
+    "plastering-fourways-50": {
+      "title": "Kaho ea Lebota la Litene",
+      "description": "Kaho ea lebota la litene ea setsebi ka lisebelisoa tsa boleng le boitsebiso ba setsebi."
+    },
+    "plastering-germiston-74": {
+      "title": "Morero oa ho Kenya Bafu",
+      "description": "Ho kenya bafu ha setsebi ka lisebelisoa tsa sejoale-joale le mosebetsi oa boleng."
+    },
+    "plastering-kempton-park-47": {
+      "title": "Lebota la Litene le ho Penta",
+      "description": "Kaho ea lebota la litene ea setsebi ka ho penta le mosebetsi oa ho qeta."
+    },
+    "plastering-pretoria-44": {
+      "title": "Mosebetsi oa Lithaele tsa Fatše",
+      "description": "Lithaele tsa fatše tsa setsebi ka lithaele tse nang le paterone ea grey le tšoeu le ho kenya ha boleng."
+    },
+    "plumbing-fourways-27": {
+      "title": "Ho Kenya Lithaele tsa Lebota la Bafu",
+      "description": "Lithaele tsa lebota la bafu tsa setsebi ka lithaele tsa paterone ea mosaic le moralo oa sejoale-joale."
+    },
+    "plumbing-germiston-51": {
+      "title": "Tshebeletso ea Metsi a Kichine",
+      "description": "Ho kenya metsi a kichine ho kenyelletsa sink, dishwasher, le mela ea metsi."
+    },
+    "plumbing-kempton-park-23": {
+      "title": "Morero oa ho Kenya Lesaka",
+      "description": "Ho kenya karohano ea khalase le lesaka ha setsebi ka moralo oa sejoale-joale o hlakileng."
+    },
+    "plumbing-lanseria-75": {
+      "title": "Ho Kenya Lithaele tsa Fatše",
+      "description": "Lithaele tsa fatše tsa setsebi ka lithaele tse shebaneng le marble e tšoeu le ho kenya ha boleng."
+    },
+    "plumbing-melville-10": {
+      "title": "Morero oa ho Kenya Drain",
+      "description": "Ho kenya tsamaiso ea drainage ka mokatong o nepahetseng le likopanyo."
+    },
+    "plumbing-riversands-33": {
+      "title": "Tshebeletso ea Tlhokomelo ea Metsi",
+      "description": "Tlhokomelo e akaretsang ea metsi ho kenyelletsa litlhahlobo le litokiso."
+    },
+    "renovation-bedfordview-16": {
+      "title": "Morero oa ho Nchafatsa Lehae",
+      "description": "Ho nchafatsa lehae ka botlalo ka lintlafatso tsa sejoale-joale le lipheletso tsa boleng."
+    },
+    "renovation-edenvale-66": {
+      "title": "Tshebeletso ea ho Nchafatsa Thepa",
+      "description": "Ho nchafatsa thepa ka botlalo ho kenyelletsa lintlafatso tsa sebopeho le tsa khabiso."
+    },
+    "renovation-johannesburg-26": {
+      "title": "Morero oa ho Nchafatsa Kichine",
+      "description": "Ho nchafatsa kichine ka botlalo ka likhabote tse tšoeu tsa sejoale-joale le moralo oa sejoale-joale."
+    },
+    "renovation-midrand-37": {
+      "title": "Morero oa ho Nchafatsa Metsi",
+      "description": "Ho nchafatsa metsi ka botlalo ka mosebetsi oa liphaephe tse pepeneneng le lintlafatso tsa tsamaiso."
+    },
+    "renovation-randburg-7": {
+      "title": "Tshebeletso ea ho Nchafatsa Ntlo",
+      "description": "Ho nchafatsa ntlo ka akaretsa ho kenyelletsa mosebetsi oa ka hare le kantle."
+    },
+    "repairs-fourways-6": {
+      "title": "Tshebeletso ea Litokiso tsa Tšohanyetso",
+      "description": "Tshebeletso ea litokiso tsa tšohanyetso e potlakileng bakeng sa mathata a kaho a potlakileng."
+    },
+    "repairs-fourways-41": {
+      "title": "Morero oa Litokiso tsa Mohaho",
+      "description": "Litokiso tsa mohaho ho kenyelletsa ho lokisa likhefu le ho matlafatsa sebopeho."
+    },
+    "repairs-linden-13": {
+      "title": "Tshebeletso ea Litokiso tsa Lehae",
+      "description": "Litokiso tse felletseng tsa lehae ho kenyelletsa metsi, motlakase, le litokiso tse tloaelehileng."
+    },
+    "repairs-soweto-87": {
+      "title": "Morero oa Litokiso tsa Thepa",
+      "description": "Litokiso tsa thepa ho kenyelletsa marulelo, marako, le mosebetsi oa motheo."
+    },
+    "roofing-alberton-88": {
+      "title": "Morero oa ho Kenya Bafu",
+      "description": "Ho kenya bafu ka botlalo ka lisebelisoa tsa sejoale-joale, bath, le lithaele tsa boleng."
+    },
+    "roofing-centurion-61": {
+      "title": "Kaho ea Letamo le ho Beha Majwe",
+      "description": "Kaho ea letamo ea setsebi ka ho beha majwe a maboteng le ho hlophisa serapa."
+    },
+    "roofing-midrand-89": {
+      "title": "Kaho ea Lebota la Litene",
+      "description": "Kaho ea lebota la litene ea setsebi ka lisebelisoa tsa boleng le boitsebiso ba setsebi."
+    },
+    "roofing-pretoria-15": {
+      "title": "Morero oa Lithaele tsa Lebota la Bafu",
+      "description": "Lithaele tsa lebota la bafu tsa setsebi ka moeli oa mosaic oa khabiso le lisebelisoa tsa boleng."
+    },
+    "tiling-alexandra-12": {
+      "title": "Tshebeletso ea ho Roala Marako",
+      "description": "Ho roala marako ha setsebi ka pheletso e boreleli le lisebelisoa tsa boleng."
+    },
+    "tiling-edenvale-62": {
+      "title": "Ho Kenya Fatše ea Lehong",
+      "description": "Ho kenya fatše ea lehong ea premium ka boitsebiso ba setsebi le pheletso ea boleng."
+    },
+    "tiling-germiston-1": {
+      "title": "Morero oa Lithaele tsa Kichine",
+      "description": "Lithaele tsa kichine ho kenyelletsa backsplash le fatše ka moralo oa sejoale-joale."
+    },
+    "waterproofing-alberton-60": {
+      "title": "Morero oa ho Kenya Bath",
+      "description": "Ho kenya bath ha setsebi ka lisebelisoa tsa sejoale-joale le mosebetsi oa metsi oa boleng."
+    },
+    "waterproofing-krugersdorp-85": {
+      "title": "Ho Kenya Lithaele tsa Fatše",
+      "description": "Lithaele tsa fatše tsa setsebi ka lithaele tse shebaneng le marble e tšoeu le ho kenya ha boleng."
+    },
+    "waterproofing-lanseria-3": {
+      "title": "Morero oa ho Kenya Geyser",
+      "description": "Ho kenya geyser ha setsebi ka ho latela polokeho le tlhahlobo ea boleng."
+    },
+    "waterproofing-midrand-63": {
+      "title": "Ho Kenya Maballo a Siling",
+      "description": "Ho kenya maballo a siling ha setsebi ka tšehetso ea sebopeho le moralo oa sejoale-joale."
+    },
+    "painting-johannesburg-94": {
+      "title": "Ho Kenya Siling sa ka Hare",
+      "description": "Ho kenya siling sa ka hare ha setsebi ka lisebelisoa tsa boleng le boitsebiso ba setsebi."
+    },
+    "roofing-sandton-95": {
+      "title": "Ho Kenya Truss ea Siling",
+      "description": "Ho kenya truss ea siling ha setsebi ka tšehetso ea sebopeho le lisebelisoa tsa boleng."
+    },
+    "waterproofing-johannesburg-96": {
+      "title": "Tshebeletso ea ho Thibela Metsi a Letamo",
+      "description": "Ho thibela metsi a letamo ha setsebi ka li-sealant tsa boleng le ts'ebeliso ea setsebi."
+    },
+    "roofing-midrand-97": {
+      "title": "Truss ea Marulelo le ho Thibela Metsi",
+      "description": "Ho kenya truss ea marulelo ha setsebi ka membrane ea ho thibela metsi le lisebelisoa tsa boleng."
+    },
+    "plumbing-randburg-98": {
+      "title": "Ho Kenya Tsamaiso ea Drainage",
+      "description": "Ho kenya tsamaiso ea drainage ha setsebi ka liphaephe tsa boleng le likopanyo tse nepahetseng."
+    }
   }
 }
