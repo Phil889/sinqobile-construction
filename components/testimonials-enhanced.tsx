@@ -173,7 +173,7 @@ export default function TestimonialsEnhanced({ dict }: TestimonialsEnhancedProps
           <div className="max-w-4xl mx-auto">
             {/* Header */}
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">
                 {t.title}
               </h2>
               <div className="flex items-center justify-center space-x-2 mb-4">
@@ -182,7 +182,7 @@ export default function TestimonialsEnhanced({ dict }: TestimonialsEnhancedProps
                     <Star key={star} size={24} fill="#F59E0B" className="text-yellow-500" />
                   ))}
                 </div>
-                <span className="text-2xl font-bold text-primary">4.9</span>
+                <span className="text-2xl font-bold text-secondary">4.9</span>
               </div>
               <p className="text-secondary text-lg">
                 {t.basedOn} {reviews.length} {t.verifiedReviews}
@@ -210,7 +210,7 @@ export default function TestimonialsEnhanced({ dict }: TestimonialsEnhancedProps
 
                 {/* Author Info */}
                 <div className="text-center">
-                  <p className="font-bold text-xl text-primary mb-1">
+                  <p className="font-bold text-xl text-secondary mb-1">
                     {currentReview.author}
                   </p>
                   <p className="text-secondary mb-2">

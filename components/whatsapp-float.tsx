@@ -49,10 +49,20 @@ export default function WhatsAppFloat({ dict }: WhatsAppFloatProps) {
 
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="bg-green-600 text-white p-4 rounded-full shadow-lg hover:bg-green-700 transition-all hover:scale-110"
-          aria-label="WhatsApp Chat"
+          className="bg-green-600 text-white p-4 rounded-full shadow-lg hover:bg-green-700 transition-all hover:scale-110 relative"
+          aria-label="Live Chat"
         >
-          {isOpen ? <X size={28} /> : <MessageCircle size={28} />}
+          {isOpen ? (
+            <X size={28} />
+          ) : (
+            <>
+              <MessageCircle size={28} />
+              {/* Live Chat Badge */}
+              <span className="absolute -top-1 -right-1 bg-accent text-secondary text-xs px-2 py-0.5 rounded-full font-semibold shadow-md">
+                Live Chat
+              </span>
+            </>
+          )}
         </button>
       </div>
     </>

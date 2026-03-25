@@ -29,7 +29,7 @@ export default function HomeFAQ({ dict }: HomeFAQProps) {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-secondary mb-4">
               {dict.pages.faq.title}
             </h2>
             <p className="text-secondary text-lg">
@@ -55,9 +55,9 @@ export default function HomeFAQ({ dict }: HomeFAQProps) {
                   className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
                   aria-expanded={openIndex === index}
                 >
-                  <h3 
+                  <h3
                     itemProp="name"
-                    className="font-semibold text-lg text-primary pr-4"
+                    className="font-semibold text-lg text-secondary pr-4"
                   >
                     {item.question}
                   </h3>

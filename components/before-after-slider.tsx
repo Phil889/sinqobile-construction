@@ -29,6 +29,15 @@ export default function BeforeAfterSlider({ dict, lang }: BeforeAfterSliderProps
   const projects: BeforeAfterImage[] = [
     {
       id: '1',
+      title: 'Building Extension & Construction',
+      location: 'Johannesburg',
+      service: 'Building & Extensions',
+      beforeImage: '/images/sinqobile-construction-building-extension-johannesburg-before.jpg',
+      afterImage: '/images/sinqobile-construction-building-extension-johannesburg-after.jpg',
+      description: 'Professional building extension with quality brickwork, modern design, and expert construction across Johannesburg'
+    },
+    {
+      id: '2',
       title: 'Modern Kitchen Renovation',
       location: 'Sandton',
       service: 'Kitchen Remodeling',
@@ -37,7 +46,7 @@ export default function BeforeAfterSlider({ dict, lang }: BeforeAfterSliderProps
       description: 'Complete kitchen transformation with modern finishes, new cabinetry, and upgraded appliances'
     },
     {
-      id: '2',
+      id: '3',
       title: 'Bathroom Makeover',
       location: 'Johannesburg',
       service: 'Bathroom Renovation',
@@ -46,7 +55,7 @@ export default function BeforeAfterSlider({ dict, lang }: BeforeAfterSliderProps
       description: 'Luxury bathroom renovation featuring premium tiles, modern fixtures, and elegant design'
     },
     {
-      id: '3',
+      id: '4',
       title: 'Exterior Painting & Repairs',
       location: 'Pretoria',
       service: 'Painting & Maintenance',
@@ -55,7 +64,7 @@ export default function BeforeAfterSlider({ dict, lang }: BeforeAfterSliderProps
       description: 'Complete exterior refresh with professional painting and structural repairs'
     },
     {
-      id: '4',
+      id: '5',
       title: 'Paving & Landscaping',
       location: 'Midrand',
       service: 'Paving & Landscaping',
@@ -141,13 +150,15 @@ export default function BeforeAfterSlider({ dict, lang }: BeforeAfterSliderProps
           >
             {/* After Image (Background) */}
             <div className="absolute inset-0">
-              <div className="relative w-full h-full bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <div className="text-8xl mb-4">✨</div>
-                  <p className="text-2xl font-bold">AFTER</p>
-                  <p className="text-lg mt-2">{currentProject.service}</p>
-                </div>
-              </div>
+              <Image
+                src={currentProject.afterImage}
+                alt={`${currentProject.title} after construction - ${currentProject.location} - Sinqobile Construction`}
+                fill
+                className="object-cover"
+                sizes="(max-width: 1200px) 100vw, 1200px"
+                priority
+                quality={90}
+              />
             </div>
 
             {/* Before Image (Overlay with clip) */}
@@ -155,13 +166,15 @@ export default function BeforeAfterSlider({ dict, lang }: BeforeAfterSliderProps
               className="absolute inset-0"
               style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
             >
-              <div className="relative w-full h-full bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <div className="text-8xl mb-4">🏚️</div>
-                  <p className="text-2xl font-bold">BEFORE</p>
-                  <p className="text-lg mt-2">{currentProject.service}</p>
-                </div>
-              </div>
+              <Image
+                src={currentProject.beforeImage}
+                alt={`${currentProject.title} before construction - ${currentProject.location} - Sinqobile Construction`}
+                fill
+                className="object-cover"
+                sizes="(max-width: 1200px) 100vw, 1200px"
+                priority
+                quality={90}
+              />
             </div>
 
             {/* Slider Handle */}

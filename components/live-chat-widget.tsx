@@ -114,16 +114,16 @@ export default function LiveChatWidget() {
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="bg-accent hover:bg-yellow-500 text-secondary p-4 rounded-full shadow-lg transition-all hover:scale-110 relative"
-          aria-label="Open chat"
+          aria-label="Get a quote"
         >
           {isOpen ? (
             <X size={28} />
           ) : (
             <>
               <MessageCircle size={28} />
-              {/* Online Badge */}
+              {/* Get A Quote Badge */}
               <span className="absolute -top-1 -right-1 bg-green-500 text-white text-xs px-2 py-0.5 rounded-full font-semibold shadow-md">
-                Online
+                Get A Quote
               </span>
             </>
           )}

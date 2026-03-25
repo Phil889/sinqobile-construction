@@ -56,7 +56,7 @@ export default function WhyChooseUs({ dict }: WhyChooseUsProps) {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             {t.title}
           </h2>
           <p className="text-secondary text-lg max-w-3xl mx-auto">
@@ -73,7 +73,7 @@ export default function WhyChooseUs({ dict }: WhyChooseUsProps) {
               <div className="text-accent mb-4">
                 {reason.icon}
               </div>
-              <h3 className="text-xl font-bold text-primary mb-3">
+              <h3 className="text-xl font-bold text-secondary mb-3">
                 {reason.title}
               </h3>
               <p className="text-secondary leading-relaxed">
@@ -85,7 +85,7 @@ export default function WhyChooseUs({ dict }: WhyChooseUsProps) {
 
         {/* SEO-Rich Content Section */}
         <div className="max-w-4xl mx-auto bg-lightBackground p-8 rounded-lg">
-          <h3 className="text-2xl font-bold text-primary mb-4">
+          <h3 className="text-2xl font-bold text-secondary mb-4">
             {t.comprehensiveTitle}
           </h3>
           <div className="text-secondary space-y-4 leading-relaxed">

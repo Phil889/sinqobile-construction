@@ -71,7 +71,7 @@ export default async function Home({
               />
             </div>
             <div>
-              <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-6">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-secondary mb-6">
                 {dict.about.title}
               </h2>
               <p className="text-secondary text-lg leading-relaxed mb-6">

@@ -37,7 +37,7 @@ export default function ProjectGallery({
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="font-heading text-4xl md:text-5xl font-bold text-primary mb-4">
+          <h2 className="font-heading text-4xl md:text-5xl font-bold text-secondary mb-4">
             {dict.projectGallery.title}
           </h2>
           <p className="text-secondary text-lg max-w-2xl mx-auto">
@@ -148,7 +148,7 @@ export default function ProjectGallery({
               </div>
               <div className="p-8">
                 <div className="flex items-center justify-between mb-4">
-                  <h2 className="font-heading text-3xl font-bold text-primary">
+                  <h2 className="font-heading text-3xl font-bold text-secondary">
                     {selectedProject.title}
                   </h2>
                   <span className="bg-lightBackground text-secondary px-4 py-2 rounded-full text-sm font-medium">

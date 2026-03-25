@@ -15,7 +15,7 @@ const ServicesGrid = ({ dict, lang }: ServicesGridProps) => {
     <section className="py-20 bg-lightBackground">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-secondary mb-4">
             {dict.services.title}
           </h2>
           <p className="text-secondary text-lg max-w-2xl mx-auto">
