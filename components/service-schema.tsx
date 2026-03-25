@@ -75,7 +75,7 @@ export default function ServiceSchema({
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
-        "reviewCount": "150",
+        "reviewCount": "127",
         "bestRating": "5",
         "worstRating": "1"
       }
@@ -117,7 +117,7 @@ export default function ServiceSchema({
 
 function getServiceFeatures(serviceSlug: string) {
   const features: Record<string, any[]> = {
-    'building-construction': [
+    'building': [
       {
         "@type": "Offer",
         "itemOffered": {

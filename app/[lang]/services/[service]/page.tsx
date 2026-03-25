@@ -1,4 +1,5 @@
 import React from 'react'
+import type { Metadata } from 'next'
 import { getDictionary } from '@/lib/dictionaries'
 import { Locale } from '@/i18n.config'
 import { getServiceBySlug, enhancedServices } from '@/lib/enhanced-services-data'
@@ -10,10 +11,90 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
+// SEO-optimized titles and descriptions per service
+const serviceSEO: Record<string, { title: string; description: string }> = {
+  'building': {
+    title: 'Building Contractors Johannesburg | Home Builders Gauteng',
+    description: 'NHBRC registered building contractors in Johannesburg. New homes, extensions & structural work across Gauteng. 15+ years, 500+ projects. Free quotes — +27 82 868 8396',
+  },
+  'concrete': {
+    title: 'Concrete Contractors Johannesburg | Foundations & Slabs Gauteng',
+    description: 'Expert concrete work in Johannesburg — foundations, slabs, driveways & reinforced structures. Quality workmanship, 15+ years experience. Free quotes — +27 82 868 8396',
+  },
+  'paving': {
+    title: 'Paving Contractors Johannesburg | Driveway Paving Gauteng',
+    description: 'Professional paving contractors in Johannesburg. Driveways, walkways & patios across Gauteng. 15+ years experience, 4.9★ rated. Free quotes — +27 82 868 8396',
+  },
+  'plumbing': {
+    title: 'Plumbing Services Johannesburg | Emergency Plumber Gauteng',
+    description: 'Reliable plumbing services in Johannesburg. Installations, repairs & emergency plumbing across Gauteng. 24/7 available. Free quotes — +27 82 868 8396',
+  },
+  'waterproofing': {
+    title: 'Waterproofing Johannesburg | Damp Proofing Contractors Gauteng',
+    description: 'Expert waterproofing & damp proofing in Johannesburg. Roof waterproofing, basement sealing & rising damp treatment. Free quotes — +27 82 868 8396',
+  },
+  'renovation': {
+    title: 'Home Renovation Johannesburg | Renovation Contractors Gauteng',
+    description: 'Complete home renovation services in Johannesburg. Kitchen, bathroom & whole-house renovations across Gauteng. 15+ years experience. Free quotes — +27 82 868 8396',
+  },
+  'roofing': {
+    title: 'Roofing Contractors Johannesburg | Roof Repairs Gauteng',
+    description: 'Professional roofing contractors in Johannesburg. Roof repairs, installation & waterproofing across Gauteng. 15+ years experience. Free quotes — +27 82 868 8396',
+  },
+  'painting': {
+    title: 'Painting Contractors Johannesburg | House Painters Gauteng',
+    description: 'Professional interior & exterior painting in Johannesburg. Residential & commercial painting across Gauteng. Quality finishes guaranteed. Free quotes — +27 82 868 8396',
+  },
+  'plastering': {
+    title: 'Plastering Services Johannesburg | Skimming Contractors Gauteng',
+    description: 'Expert plastering & skimming services in Johannesburg. Wall plastering, ceiling repairs across Gauteng. 15+ years experience. Free quotes — +27 82 868 8396',
+  },
+  'tiling': {
+    title: 'Tiling Contractors Johannesburg | Floor & Wall Tiling Gauteng',
+    description: 'Professional tiling services in Johannesburg. Floor tiling, wall tiling & outdoor tiling across Gauteng. Quality workmanship. Free quotes — +27 82 868 8396',
+  },
+  'extensions': {
+    title: 'Home Extensions Johannesburg | Room Additions Gauteng',
+    description: 'Professional home extensions in Johannesburg. Room additions, second storey extensions & garage conversions across Gauteng. Free quotes — +27 82 868 8396',
+  },
+  'fencing': {
+    title: 'Fencing Contractors Johannesburg | Security Fencing Gauteng',
+    description: 'Professional fencing installation in Johannesburg. Security fencing, boundary walls & palisade fencing across Gauteng. Free quotes — +27 82 868 8396',
+  },
+  'electrical': {
+    title: 'Electrician Johannesburg | Electrical Contractors Gauteng',
+    description: 'Licensed electrician in Johannesburg. Electrical installations, repairs & compliance certificates across Gauteng. Free quotes — +27 82 868 8396',
+  },
+  'flooring': {
+    title: 'Flooring Contractors Johannesburg | Floor Installation Gauteng',
+    description: 'Professional flooring installation in Johannesburg. Laminate, vinyl, wooden & tile flooring across Gauteng. Free quotes — +27 82 868 8396',
+  },
+  'landscaping': {
+    title: 'Landscaping Services Johannesburg | Garden Design Gauteng',
+    description: 'Professional landscaping services in Johannesburg. Garden design, irrigation & outdoor living spaces across Gauteng. Free quotes — +27 82 868 8396',
+  },
+  'brickwork': {
+    title: 'Brickwork Contractors Johannesburg | Bricklaying Gauteng',
+    description: 'Expert brickwork & bricklaying in Johannesburg. Boundary walls, feature walls & structural brickwork across Gauteng. Free quotes — +27 82 868 8396',
+  },
+  'maintenance': {
+    title: 'Property Maintenance Johannesburg | Building Maintenance Gauteng',
+    description: 'Comprehensive property maintenance services in Johannesburg. Residential & commercial maintenance across Gauteng. Free quotes — +27 82 868 8396',
+  },
+  'repairs': {
+    title: 'Home Repairs Johannesburg | Emergency Repair Services Gauteng',
+    description: 'Fast home repair services in Johannesburg. Emergency repairs, structural fixes & general maintenance across Gauteng. 24/7 available — +27 82 868 8396',
+  },
+  'installation': {
+    title: 'Installation Services Johannesburg | Professional Installations Gauteng',
+    description: 'Professional installation services in Johannesburg. Fixtures, fittings & home installations across Gauteng. Quality workmanship. Free quotes — +27 82 868 8396',
+  },
+}
+
 interface ServicePageProps {
-  params: { 
+  params: {
     lang: Locale
-    service: string 
+    service: string
   }
 }
 
@@ -21,6 +102,22 @@ interface ServicePageProps {
 export async function generateStaticParams() {
   const services = enhancedServices.map(service => ({ service: service.slug }))
   return services
+}
+
+export async function generateMetadata({ params }: ServicePageProps): Promise<Metadata> {
+  const dict = await getDictionary(params.lang)
+  const serviceData = getServiceBySlug(params.service)
+  const seo = serviceSEO[params.service]
+  const serviceInfo = (dict.services.items as any)[params.service]
+  const serviceName = serviceInfo?.name || serviceData?.name || params.service
+
+  return {
+    title: seo?.title || `${serviceName} Services Johannesburg | Sinqobile Construction`,
+    description: seo?.description || `Professional ${serviceName.toLowerCase()} services in Johannesburg & Gauteng. 15+ years experience, 500+ projects. Free quotes — +27 82 868 8396`,
+    alternates: {
+      canonical: `/${params.lang}/services/${params.service}`,
+    },
+  }
 }
 
 export default async function ServicePage({ params: { lang, service } }: ServicePageProps) {
