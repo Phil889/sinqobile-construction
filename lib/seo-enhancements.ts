@@ -88,23 +88,23 @@ export function generateLocalBusinessSchema(lang: Locale): StructuredData {
     '@type': 'LocalBusiness',
     '@id': 'https://www.sinqobileconstruction.co.za/#organization',
     name: 'Sinqobile Construction',
-    alternateName: 'Sinqobile Construction',
-    description: 'Professional construction and renovation services in Gauteng, South Africa',
+    alternateName: 'Sinqobile Construction - Dingwayo Reason Ndlovu',
+    description: 'Professional construction company in Johannesburg & Gauteng. Building, renovations, plastering, painting, paving, tiling, and plumbing services.',
     url: `https://www.sinqobileconstruction.co.za/${lang}`,
-    telephone: '+27-11-234-5678',
+    telephone: '+27-82-868-8396',
     email: 'sinqobileconstruction@gmail.com',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '123 Main Street',
-      addressLocality: 'Johannesburg',
+      streetAddress: '47 Bryanston Drive',
+      addressLocality: 'Bryanston',
       addressRegion: 'Gauteng',
-      postalCode: '2000',
+      postalCode: '2021',
       addressCountry: 'ZA'
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: -26.2041,
-      longitude: 28.0473
+      latitude: -26.0667,
+      longitude: 28.0167
     },
     openingHoursSpecification: [
       {
@@ -131,7 +131,7 @@ export function generateLocalBusinessSchema(lang: Locale): StructuredData {
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '4.9',
-      reviewCount: '150',
+      reviewCount: '127',
       bestRating: '5',
       worstRating: '1'
     },

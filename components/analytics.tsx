@@ -1,7 +1,7 @@
 import Script from 'next/script'
 
 export default function Analytics() {
-  const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX' // Replace with your GA4 ID
+  const GA_MEASUREMENT_ID = 'G-HSX2K6DX0D'
 
   return (
     <>

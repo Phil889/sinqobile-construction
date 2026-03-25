@@ -25,15 +25,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const dict = await getDictionary(params.lang)
   
-  // Enhanced SEO-optimized description with location keywords and CTA
-  const enhancedDescription = params.lang === 'en'
-    ? 'Professional construction services in Gauteng: Building, renovations, plastering, painting, paving, tiling & plumbing. 15+ years experience. R400 call-out fee. Call +27 82 868 8396 for free quote!'
-    : dict.meta.description
-  
   return {
     metadataBase: new URL('https://www.sinqobileconstruction.co.za'),
     title: dict.meta.title,
-    description: enhancedDescription,
+    description: dict.meta.description,
     keywords: dict.meta.keywords,
     icons: {
       icon: [
@@ -62,8 +57,8 @@ export async function generateMetadata({
       locale: params.lang,
       url: `/${params.lang}`,
       siteName: 'Sinqobile Construction',
-      title: 'Sinqobile Construction - Professional Construction Services Gauteng | 15+ Years Experience',
-      description: 'Expert construction, renovation, plastering, painting, paving, tiling & plumbing services across Gauteng. 15+ years experience, 500+ projects completed. R400 call-out fee. Call +27 82 868 8396 for free quote!',
+      title: dict.meta.title,
+      description: dict.meta.description,
       images: [{
         url: '/og-image.jpg',
         width: 1200,
@@ -73,8 +68,8 @@ export async function generateMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Sinqobile Construction - Professional Construction Services Gauteng | 15+ Years Experience',
-      description: 'Expert construction, renovation & building services across Gauteng. 500+ projects completed. Call +27 82 868 8396 for free quote!',
+      title: dict.meta.title,
+      description: dict.meta.description,
       images: ['/og-image.jpg'],
     },
     robots: {

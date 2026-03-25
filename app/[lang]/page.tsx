@@ -1,7 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
+import type { Metadata } from 'next'
 import { getDictionary } from '@/lib/dictionaries'
-import { Locale } from '@/i18n.config'
+import { Locale, i18n } from '@/i18n.config'
 import HeroSection from '@/components/hero-section'
 import ServicesGrid from '@/components/services-grid'
 import TestimonialsSlider from '@/components/testimonials'
@@ -15,8 +16,24 @@ import HomeFAQ from '@/components/home-faq'
 import WhyChooseUs from '@/components/why-choose-us'
 import BeforeAfterSlider from '@/components/before-after-slider'
 import ProjectTimeline from '@/components/project-timeline'
+import SchemaMarkup from '@/components/schema-markup'
 import { getTranslatedProjects, getTranslatedFeaturedProjects } from '@/lib/multilingual-projects'
 import { getAllProjects, getAllCategories } from '@/lib/all-projects-data'
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { lang: Locale }
+}): Promise<Metadata> {
+  const dict = await getDictionary(params.lang)
+  return {
+    title: dict.meta.title,
+    description: dict.meta.description,
+    alternates: {
+      canonical: `/${params.lang}`,
+    },
+  }
+}
 
 export default async function Home({
   params: { lang },
@@ -28,8 +45,30 @@ export default async function Home({
   const allProjectsCount = getAllProjects().length
   const categories = getAllCategories()
 
+  // Build FAQ schema from dictionary data
+  const faqItems = dict.pages.faq.categories
+    .flatMap((category: any) => category.items)
+    .slice(0, 9)
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqItems.map((item: any) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <HeroSection dict={dict} />
       
       {/* Call-Out Fee Banner */}
