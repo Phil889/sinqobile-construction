@@ -165,7 +165,7 @@ export default function FAQClient({ lang, dict }: FAQClientProps) {
             </a>
             
             <a
-              href="https://wa.me/27719334063"
+              href="https://wa.me/27828688396"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center space-x-2 bg-green-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-colors"

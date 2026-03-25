@@ -26,7 +26,7 @@ export default function ServiceSchema({
       "@id": "https://www.sinqobileconstruction.co.za/#organization",
       "name": "Sinqobile Construction",
       "image": "https://www.sinqobileconstruction.co.za/og-image.jpg",
-      "telephone": "+27719334063",
+      "telephone": "+27828688396",
       "priceRange": priceRange,
       "address": {
         "@type": "PostalAddress",

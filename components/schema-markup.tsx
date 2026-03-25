@@ -20,7 +20,7 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
           logo: 'https://www.sinqobileconstruction.co.za/logo.png',
           contactPoint: {
             '@type': 'ContactPoint',
-            telephone: '+27-71-933-4063',
+            telephone: '+27-82-868-8396',
             contactType: 'customer service',
             areaServed: 'ZA',
             availableLanguage: ['English', 'Afrikaans', 'Zulu', 'Sotho']
@@ -52,7 +52,7 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
             latitude: BUSINESS_INFO.coordinates.latitude,
             longitude: BUSINESS_INFO.coordinates.longitude
           },
-          telephone: '+27719334063',
+          telephone: '+27828688396',
           email: 'info@sinqobileconstruction.co.za',
           priceRange: 'R5000-R500000',
           paymentAccepted: ['Cash', 'Credit Card', 'Bank Transfer', 'EFT'],

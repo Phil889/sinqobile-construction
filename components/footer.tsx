@@ -149,9 +149,6 @@ const Footer = ({ dict, lang }: FooterProps) => {
                   <a href="tel:+27828688396" className="text-white hover:text-gray-300 transition-colors">
                     +27 82 868 8396
                   </a>
-                  <a href="tel:+27815692985" className="text-white hover:text-gray-300 transition-colors text-sm">
-                    +27 81 569 2985
-                  </a>
                 </div>
               </div>
               <div className="flex items-center space-x-3">

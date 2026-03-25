@@ -27,7 +27,7 @@ export default function LocalBusinessSchema({
     "image": "https://www.sinqobileconstruction.co.za/og-image.jpg",
     "description": description,
     "url": `https://www.sinqobileconstruction.co.za/${lang}/areas/${areaSlug}`,
-    "telephone": "+27719334063",
+    "telephone": "+27828688396",
     "priceRange": "R400 - R500000",
     "address": {
       "@type": "PostalAddress",

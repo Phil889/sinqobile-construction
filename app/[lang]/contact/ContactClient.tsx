@@ -270,9 +270,6 @@ export default function ContactClient({ lang, dict }: ContactClientProps) {
                         <a href="tel:+27828688396" className="text-primary hover:text-accent font-semibold">
                           +27 82 868 8396
                         </a>
-                        <a href="tel:+27815692985" className="text-primary hover:text-accent">
-                          +27 81 569 2985
-                        </a>
                       </div>
                     </div>
                   </div>
@@ -431,8 +428,8 @@ export default function ContactClient({ lang, dict }: ContactClientProps) {
                   <a href="tel:+27828688396" className="text-accent hover:text-orange-700 font-semibold text-lg">
                     +27 82 868 8396
                   </a>
-                  <a href="tel:+27815692985" className="text-accent hover:text-orange-700 font-semibold">
-                    +27 81 569 2985
+                  <a href="tel:+27828688396" className="text-accent hover:text-orange-700 font-semibold">
+                    +27 82 868 8396
                   </a>
                 </div>
               </div>

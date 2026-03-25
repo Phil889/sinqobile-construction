@@ -6,10 +6,10 @@ import Link from 'next/link'
 
 export default function LiveChatWidget() {
   const [isOpen, setIsOpen] = useState(false)
-  const phoneNumber = '27719334063'
+  const phoneNumber = '27828688396'
 
   const handleCallNow = () => {
-    window.location.href = 'tel:+27719334063'
+    window.location.href = 'tel:+27828688396'
   }
 
   const handleWhatsApp = () => {

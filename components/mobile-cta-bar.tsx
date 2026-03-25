@@ -17,7 +17,7 @@ export function MobileCTABar({ dict }: MobileCTABarProps) {
           <Phone size={20} /> {dict.mobileCTA.callNow}
         </a>
         <a
-          href="https://wa.me/27719334063"
+          href="https://wa.me/27828688396"
           className="flex-1 bg-green-500 text-white px-4 py-3 rounded-lg font-semibold text-center flex items-center justify-center gap-2"
         >
           <MessageCircle size={20} /> {dict.mobileCTA.whatsapp}

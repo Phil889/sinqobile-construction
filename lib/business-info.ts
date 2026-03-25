@@ -15,7 +15,7 @@ export const BUSINESS_INFO = {
   },
   fullAddress: "47 Bryanston Drive, Bryanston, Johannesburg, 2021",
   contact: {
-    phone: "+27719334063",
+    phone: "+27828688396",
     email: "sinqobileconstruction@gmail.com",
     website: "www.sinqobileconstruction.co.za",
   },
