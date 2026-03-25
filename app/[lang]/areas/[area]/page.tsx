@@ -1,4 +1,5 @@
 import React from 'react'
+import type { Metadata } from 'next'
 import { getDictionary } from '@/lib/dictionaries'
 import { Locale } from '@/i18n.config'
 import Breadcrumb from '@/components/breadcrumb'
@@ -115,11 +116,162 @@ const locationData: Record<string, {
       author: 'Johan van der Merwe',
       location: 'Garsfontein, Pretoria'
     }
+  },
+  'centurion': {
+    name: 'Centurion',
+    description: 'Reliable construction and building services in Centurion. Sinqobile Construction has completed 80+ projects across Centurion, delivering quality residential and commercial construction work.',
+    suburbs: ['Eldoraigne', 'Wierdapark', 'Lyttelton', 'The Reeds', 'Hennopspark', 'Zwartkop', 'Clubview', 'Rooihuiskraal'],
+    projects: 80,
+    rating: 4.9,
+    highlights: [
+      'Serving all Centurion suburbs with quality construction',
+      '80+ projects completed in the Centurion area',
+      'Familiar with Centurion municipal building requirements',
+      'Fast response times across Centurion',
+      'Trusted by Centurion homeowners for 15+ years'
+    ],
+    services: ['Residential Building & Extensions', 'Home Renovations', 'Roofing & Waterproofing', 'Plastering & Painting', 'Paving & Driveways', 'Plumbing Services', 'Tiling & Flooring', 'General Maintenance'],
+    testimonial: {
+      text: 'Excellent building work on our Centurion home extension. The team was professional and completed the project on schedule. Very happy with the quality.',
+      author: 'Pieter Joubert',
+      location: 'Eldoraigne, Centurion'
+    }
+  },
+  'midrand': {
+    name: 'Midrand',
+    description: 'Professional construction services in Midrand, connecting Johannesburg and Pretoria. With 90+ completed projects, Sinqobile Construction delivers quality building, renovation, and maintenance services across all Midrand suburbs.',
+    suburbs: ['Carlswald', 'Glen Austin', 'Halfway House', 'Noordwyk', 'Vorna Valley', 'Sagewood', 'Waterfall', 'Blue Hills'],
+    projects: 90,
+    rating: 4.8,
+    highlights: [
+      'Conveniently located to serve all Midrand areas',
+      '90+ projects completed across Midrand',
+      'Experience with Midrand estate developments',
+      'Quick response times throughout Midrand',
+      'Trusted construction partner in the Midrand corridor'
+    ],
+    services: ['Residential Building & Extensions', 'Home Renovations', 'Roofing & Waterproofing', 'Plastering & Painting', 'Paving & Driveways', 'Plumbing Services', 'Tiling & Flooring', 'General Maintenance'],
+    testimonial: {
+      text: 'Sinqobile Construction did a fantastic job on our Midrand property renovation. Professional service from start to finish.',
+      author: 'Nomsa Dlamini',
+      location: 'Waterfall, Midrand'
+    }
+  },
+  'randburg': {
+    name: 'Randburg',
+    description: 'Expert construction and renovation services in Randburg. Sinqobile Construction has been serving Randburg homeowners and businesses for over 15 years with 70+ completed projects across the area.',
+    suburbs: ['Northcliff', 'Linden', 'Ferndale', 'Fontainebleau', 'Blairgowrie', 'Bordeaux', 'Robin Hills', 'Bromhof'],
+    projects: 70,
+    rating: 4.9,
+    highlights: [
+      'Extensive experience in Randburg residential projects',
+      '70+ successful projects across Randburg suburbs',
+      'Quick response across all Randburg areas',
+      'Knowledge of Randburg building regulations',
+      'Trusted by Randburg homeowners for quality work'
+    ],
+    services: ['Residential Building & Extensions', 'Home Renovations', 'Roofing & Waterproofing', 'Plastering & Painting', 'Paving & Driveways', 'Plumbing Services', 'Tiling & Flooring', 'General Maintenance'],
+    testimonial: {
+      text: 'Great plastering and painting work on our Randburg home. The team was neat, professional, and delivered on time. Highly recommend.',
+      author: 'Lisa van Niekerk',
+      location: 'Linden, Randburg'
+    }
+  },
+  'fourways': {
+    name: 'Fourways',
+    description: 'Quality construction services in Fourways and surrounding estates. Sinqobile Construction delivers premium building, renovation, and maintenance services with 65+ completed projects in the Fourways area.',
+    suburbs: ['Fourways Gardens', 'Cedar Lakes', 'Dainfern', 'Lonehill', 'Beverley', 'Chartwell', 'Pineslopes', 'Magaliessig'],
+    projects: 65,
+    rating: 4.8,
+    highlights: [
+      'Experienced in Fourways estate developments',
+      '65+ projects completed in Fourways area',
+      'Understanding of Fourways building standards',
+      'Serving all Fourways suburbs and estates',
+      'Quality construction for Fourways homeowners'
+    ],
+    services: ['Residential Building & Extensions', 'Home Renovations', 'Roofing & Waterproofing', 'Plastering & Painting', 'Paving & Driveways', 'Plumbing Services', 'Tiling & Flooring', 'General Maintenance'],
+    testimonial: {
+      text: 'Sinqobile Construction built a beautiful patio and braai area at our Fourways home. Excellent workmanship and great communication throughout.',
+      author: 'Andrew Mitchell',
+      location: 'Lonehill, Fourways'
+    }
+  },
+  'roodepoort': {
+    name: 'Roodepoort',
+    description: 'Dependable construction and building services in Roodepoort. Sinqobile Construction has completed 55+ projects across Roodepoort, from home renovations to new builds, with quality workmanship guaranteed.',
+    suburbs: ['Florida', 'Honeydew', 'Ruimsig', 'Wilgeheuwel', 'Constantia Kloof', 'Little Falls', 'Horison', 'Weltevredenpark'],
+    projects: 55,
+    rating: 4.7,
+    highlights: [
+      'Serving all Roodepoort suburbs',
+      '55+ projects completed across Roodepoort',
+      'Familiar with Roodepoort municipal requirements',
+      'Quick response times throughout Roodepoort',
+      'Quality construction at competitive rates'
+    ],
+    services: ['Residential Building & Extensions', 'Home Renovations', 'Roofing & Waterproofing', 'Plastering & Painting', 'Paving & Driveways', 'Plumbing Services', 'Tiling & Flooring', 'General Maintenance'],
+    testimonial: {
+      text: 'Very impressed with the renovation work Sinqobile Construction did on our Roodepoort property. Professional, affordable, and high quality.',
+      author: 'Thabo Molefe',
+      location: 'Honeydew, Roodepoort'
+    }
   }
+}
+
+// SEO metadata per area
+const areaSEO: Record<string, { title: string; description: string }> = {
+  'johannesburg': {
+    title: 'Builders in Johannesburg | Construction Services JHB - Sinqobile',
+    description: 'Trusted builders in Johannesburg. NHBRC registered, 150+ projects, 4.9★ rated. Building, renovations, paving, plumbing & more across all JHB suburbs. Free quotes — +27 82 868 8396',
+  },
+  'sandton': {
+    title: 'Construction Services Sandton | Builders & Contractors - Sinqobile',
+    description: 'Premium construction & renovation services in Sandton. 120+ projects across Morningside, Sandhurst, Bryanston & more. 4.9★ rated. Free quotes — +27 82 868 8396',
+  },
+  'pretoria': {
+    title: 'Building Contractors Pretoria | Construction Services - Sinqobile',
+    description: 'Expert building contractors in Pretoria & Centurion. 100+ projects, 15+ years experience. Renovations, building & maintenance. Free quotes — +27 82 868 8396',
+  },
+  'centurion': {
+    title: 'Construction Company Centurion | Builders & Renovations - Sinqobile',
+    description: 'Reliable construction services in Centurion. 80+ projects across Eldoraigne, Wierdapark, Lyttelton & more. NHBRC registered. Free quotes — +27 82 868 8396',
+  },
+  'midrand': {
+    title: 'Builders in Midrand | Construction Services - Sinqobile Construction',
+    description: 'Professional builders in Midrand. 90+ projects across Waterfall, Carlswald, Halfway House & more. 15+ years experience. Free quotes — +27 82 868 8396',
+  },
+  'randburg': {
+    title: 'Construction Services Randburg | Builders & Contractors - Sinqobile',
+    description: 'Expert construction services in Randburg. 70+ projects across Northcliff, Linden, Ferndale & more. Quality workmanship guaranteed. Free quotes — +27 82 868 8396',
+  },
+  'fourways': {
+    title: 'Builders in Fourways | Construction & Renovations - Sinqobile',
+    description: 'Quality builders in Fourways & surrounding estates. 65+ projects across Dainfern, Lonehill, Cedar Lakes & more. Free quotes — +27 82 868 8396',
+  },
+  'roodepoort': {
+    title: 'Construction Services Roodepoort | Builders - Sinqobile Construction',
+    description: 'Dependable construction services in Roodepoort. 55+ projects across Honeydew, Ruimsig, Florida & more. Competitive rates. Free quotes — +27 82 868 8396',
+  },
 }
 
 export async function generateStaticParams() {
   return Object.keys(locationData).map((area) => ({ area }))
+}
+
+export async function generateMetadata({ params }: AreaPageProps): Promise<Metadata> {
+  const location = locationData[params.area]
+  const seo = areaSEO[params.area]
+
+  if (!location) return {}
+
+  return {
+    title: seo?.title || `Construction Services ${location.name} | Sinqobile Construction`,
+    description: seo?.description || `Professional construction services in ${location.name}. ${location.projects}+ projects completed. Free quotes — +27 82 868 8396`,
+    alternates: {
+      canonical: `/${params.lang}/areas/${params.area}`,
+    },
+  }
 }
 
 export default async function AreaDetailPage({ params: { lang, area } }: AreaPageProps) {
