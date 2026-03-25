@@ -26,13 +26,13 @@ const Breadcrumb = ({ items, lang, dict }: BreadcrumbProps) => {
         '@type': 'ListItem',
         'position': 1,
         'name': dict?.navigation?.home || 'Home',
-        'item': `https://mdbuilders.co.za/${lang}`
+        'item': `https://www.sinqobileconstruction.co.za/${lang}`
       },
       ...items.map((item, index) => ({
         '@type': 'ListItem',
         'position': index + 2,
         'name': item.label,
-        'item': `https://mdbuilders.co.za${item.href}`
+        'item': `https://www.sinqobileconstruction.co.za${item.href}`
       }))
     ]
   }

@@ -22,11 +22,11 @@ export default function LocalBusinessSchema({
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": `https://mdbuilders.co.za/${lang}/areas/${areaSlug}#business`,
+    "@id": `https://www.sinqobileconstruction.co.za/${lang}/areas/${areaSlug}#business`,
     "name": `Sinqobile Construction - ${areaName}`,
-    "image": "https://mdbuilders.co.za/og-image.jpg",
+    "image": "https://www.sinqobileconstruction.co.za/og-image.jpg",
     "description": description,
-    "url": `https://mdbuilders.co.za/${lang}/areas/${areaSlug}`,
+    "url": `https://www.sinqobileconstruction.co.za/${lang}/areas/${areaSlug}`,
     "telephone": "+27719334063",
     "priceRange": "R400 - R500000",
     "address": {
@@ -66,8 +66,8 @@ export default function LocalBusinessSchema({
       }
     ],
     "sameAs": [
-      "https://www.facebook.com/mdbuilders",
-      "https://www.instagram.com/mdbuilders"
+      "https://www.facebook.com/sinqobileconstruction",
+      "https://www.instagram.com/sinqobileconstruction"
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",

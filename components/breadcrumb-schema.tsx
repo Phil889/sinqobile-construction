@@ -6,7 +6,7 @@ export function BreadcrumbSchema({ items }: { items: Array<{name: string, url: s
       "@type": "ListItem",
       "position": index + 1,
       "name": item.name,
-      "item": `https://mdbuilders.co.za${item.url}`
+      "item": `https://www.sinqobileconstruction.co.za${item.url}`
     }))
   }
   

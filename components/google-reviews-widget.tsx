@@ -15,7 +15,7 @@ export default function GoogleReviewsWidget({ dict }: GoogleReviewsWidgetProps) 
     {
       name: 'John K.',
       rating: 5,
-      text: 'Outstanding paving work. The attention to detail was impressive and the project was completed on time. Will definitely use MD Construction again.',
+      text: 'Outstanding paving work. The attention to detail was impressive and the project was completed on time. Will definitely use Sinqobile Construction again.',
       date: '1 month ago',
     },
     {
@@ -62,7 +62,7 @@ export default function GoogleReviewsWidget({ dict }: GoogleReviewsWidgetProps) 
               </div>
             </div>
             <a
-              href="https://www.google.com/maps/place/MD+Construction/@-26.1234567,28.1234567,17z/data=!4m7!3m6!1s0x0:0x0!8m2!3d-26.1234567!4d28.1234567!9m1!1b1"
+              href="https://www.google.com/maps/search/Sinqobile+Construction+Bryanston+Johannesburg"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-[#FFD600] text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-[#FFD600]/90 transition-colors duration-300 shadow-md hover:shadow-lg"

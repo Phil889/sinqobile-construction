@@ -41,7 +41,7 @@ export function generateSEOMetadata(params: {
   image?: string
   type?: string
 }): SEOMetadata {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mdbuilders.co.za'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.sinqobileconstruction.co.za'
   const canonical = `${baseUrl}/${params.lang}${params.path}`
   
   const defaultKeywords = [
@@ -86,13 +86,13 @@ export function generateLocalBusinessSchema(lang: Locale): StructuredData {
   return {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    '@id': 'https://mdbuilders.co.za/#organization',
+    '@id': 'https://www.sinqobileconstruction.co.za/#organization',
     name: 'Sinqobile Construction',
     alternateName: 'Sinqobile Construction',
     description: 'Professional construction and renovation services in Gauteng, South Africa',
-    url: `https://mdbuilders.co.za/${lang}`,
+    url: `https://www.sinqobileconstruction.co.za/${lang}`,
     telephone: '+27-11-234-5678',
-    email: 'info@mdbuilders.co.za',
+    email: 'sinqobileconstruction@gmail.com',
     address: {
       '@type': 'PostalAddress',
       streetAddress: '123 Main Street',
@@ -121,12 +121,12 @@ export function generateLocalBusinessSchema(lang: Locale): StructuredData {
       }
     ],
     priceRange: 'R400 - R20000',
-    image: 'https://mdbuilders.co.za/og-image.jpg',
-    logo: 'https://mdbuilders.co.za/logo.svg',
+    image: 'https://www.sinqobileconstruction.co.za/og-image.jpg',
+    logo: 'https://www.sinqobileconstruction.co.za/logo.svg',
     sameAs: [
-      'https://www.facebook.com/mdbuilders',
-      'https://www.instagram.com/mdbuilders',
-      'https://www.linkedin.com/company/mdbuilders'
+      'https://www.facebook.com/sinqobileconstruction',
+      'https://www.instagram.com/sinqobileconstruction',
+      'https://www.linkedin.com/company/sinqobileconstruction'
     ],
     aggregateRating: {
       '@type': 'AggregateRating',
@@ -173,7 +173,7 @@ export function generateServiceSchema(service: {
     provider: {
       '@type': 'LocalBusiness',
       name: 'Sinqobile Construction',
-      url: 'https://mdbuilders.co.za'
+      url: 'https://www.sinqobileconstruction.co.za'
     },
     areaServed: {
       '@type': 'State',
@@ -241,7 +241,7 @@ export function generateReviewSchema(review: {
     itemReviewed: {
       '@type': 'LocalBusiness',
       name: 'Sinqobile Construction',
-      url: 'https://mdbuilders.co.za'
+      url: 'https://www.sinqobileconstruction.co.za'
     }
   }
 }
@@ -273,7 +273,7 @@ export function generateArticleSchema(article: {
       name: 'Sinqobile Construction',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://mdbuilders.co.za/logo.svg'
+        url: 'https://www.sinqobileconstruction.co.za/logo.svg'
       }
     },
     datePublished: article.datePublished,

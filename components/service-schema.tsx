@@ -18,14 +18,14 @@ export default function ServiceSchema({
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": `https://mdbuilders.co.za/${lang}/services/${serviceSlug}#service`,
+    "@id": `https://www.sinqobileconstruction.co.za/${lang}/services/${serviceSlug}#service`,
     "name": serviceName,
     "description": description,
     "provider": {
       "@type": "LocalBusiness",
-      "@id": "https://mdbuilders.co.za/#organization",
+      "@id": "https://www.sinqobileconstruction.co.za/#organization",
       "name": "Sinqobile Construction",
-      "image": "https://mdbuilders.co.za/og-image.jpg",
+      "image": "https://www.sinqobileconstruction.co.za/og-image.jpg",
       "telephone": "+27719334063",
       "priceRange": priceRange,
       "address": {
@@ -81,7 +81,7 @@ export default function ServiceSchema({
       }
     },
     "serviceType": serviceName,
-    "url": `https://mdbuilders.co.za/${lang}/services/${serviceSlug}`,
+    "url": `https://www.sinqobileconstruction.co.za/${lang}/services/${serviceSlug}`,
     "offers": {
       "@type": "Offer",
       "priceRange": priceRange,

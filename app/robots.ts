@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/admin/']
     },
-    sitemap: 'https://mdbuilders.co.za/sitemap.xml'
+    sitemap: 'https://www.sinqobileconstruction.co.za/sitemap.xml'
   }
 }

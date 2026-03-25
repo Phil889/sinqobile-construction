@@ -16,8 +16,8 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
           '@type': 'Organization',
           name: 'Sinqobile Construction',
           alternateName: 'Sinqobile Construction - Dingwayo Reason Ndlovu',
-          url: `https://mdbuilders.co.za/${lang}`,
-          logo: 'https://mdbuilders.co.za/logo.png',
+          url: `https://www.sinqobileconstruction.co.za/${lang}`,
+          logo: 'https://www.sinqobileconstruction.co.za/logo.png',
           contactPoint: {
             '@type': 'ContactPoint',
             telephone: '+27-71-933-4063',
@@ -26,8 +26,8 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
             availableLanguage: ['English', 'Afrikaans', 'Zulu', 'Sotho']
           },
           sameAs: [
-            'https://facebook.com/mdbuilders',
-            'https://instagram.com/mdbuilders'
+            'https://facebook.com/sinqobileconstruction',
+            'https://instagram.com/sinqobileconstruction'
           ]
         }
 
@@ -35,9 +35,9 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
         return {
           '@context': 'https://schema.org',
           '@type': 'LocalBusiness',
-          '@id': 'https://mdbuilders.co.za',
+          '@id': 'https://www.sinqobileconstruction.co.za',
           name: 'Sinqobile Construction',
-          image: 'https://mdbuilders.co.za/logo.png',
+          image: 'https://www.sinqobileconstruction.co.za/logo.png',
           description: 'Professional construction and handyman services in Gauteng. Building, plastering, painting, paving, tiling, and plumbing.',
           address: {
             '@type': 'PostalAddress',
@@ -133,20 +133,12 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
         return {
           '@context': 'https://schema.org',
           '@type': 'WebSite',
-          '@id': 'https://mdbuilders.co.za/#website',
-          url: 'https://mdbuilders.co.za',
+          '@id': 'https://www.sinqobileconstruction.co.za/#website',
+          url: 'https://www.sinqobileconstruction.co.za',
           name: 'Sinqobile Construction',
           description: 'Professional Construction Services in Gauteng',
           publisher: {
-            '@id': 'https://mdbuilders.co.za/#organization'
-          },
-          potentialAction: {
-            '@type': 'SearchAction',
-            target: {
-              '@type': 'EntryPoint',
-              urlTemplate: 'https://mdbuilders.co.za/search?q={search_term_string}'
-            },
-            'query-input': 'required name=search_term_string'
+            '@id': 'https://www.sinqobileconstruction.co.za/#organization'
           },
           inLanguage: ['en', 'af', 'zu', 'st']
         }

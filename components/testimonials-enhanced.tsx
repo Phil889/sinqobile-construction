@@ -127,7 +127,7 @@ export default function TestimonialsEnhanced({ dict }: TestimonialsEnhancedProps
   const reviewSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://mdbuilders.co.za/#organization",
+    "@id": "https://www.sinqobileconstruction.co.za/#organization",
     "name": "Sinqobile Construction",
     "aggregateRating": {
       "@type": "AggregateRating",

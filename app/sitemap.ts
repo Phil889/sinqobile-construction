@@ -3,7 +3,7 @@ import { i18n } from '@/i18n.config'
 import { blogPosts } from '@/lib/blog-data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://mdbuilders.co.za'
+  const baseUrl = 'https://www.sinqobileconstruction.co.za'
   
   const routes = [
     '',
@@ -15,12 +15,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/services/paving',
     '/services/tiling',
     '/services/plumbing',
+    '/services/concrete',
+    '/services/waterproofing',
+    '/services/extensions',
+    '/services/fencing',
+    '/services/flooring',
+    '/services/installation',
+    '/services/renovation',
+    '/services/repairs',
+    '/services/roofing',
+    '/services/brickwork',
+    '/services/maintenance',
+    '/services/landscaping',
+    '/services/electrical',
     '/our-work',
     '/cost-calculator',
     '/blog',
     '/contact',
     '/faq',
-    '/areas'
+    '/areas',
+    '/areas/johannesburg',
+    '/areas/sandton',
+    '/areas/pretoria',
+    '/areas/centurion',
+    '/areas/midrand',
+    '/areas/randburg',
+    '/areas/fourways',
+    '/areas/roodepoort',
   ]
 
   const sitemap: MetadataRoute.Sitemap = []

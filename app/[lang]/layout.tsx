@@ -48,23 +48,23 @@ export async function generateMetadata({
       ],
     },
     alternates: {
-      canonical: `https://mdbuilders.co.za/${params.lang}`,
+      canonical: `https://www.sinqobileconstruction.co.za/${params.lang}`,
       languages: {
-        'en': 'https://mdbuilders.co.za/en',
-        'af': 'https://mdbuilders.co.za/af',
-        'zu': 'https://mdbuilders.co.za/zu',
-        'st': 'https://mdbuilders.co.za/st',
+        'en': 'https://www.sinqobileconstruction.co.za/en',
+        'af': 'https://www.sinqobileconstruction.co.za/af',
+        'zu': 'https://www.sinqobileconstruction.co.za/zu',
+        'st': 'https://www.sinqobileconstruction.co.za/st',
       }
     },
     openGraph: {
       type: 'website',
       locale: params.lang,
-      url: `https://mdbuilders.co.za/${params.lang}`,
+      url: `https://www.sinqobileconstruction.co.za/${params.lang}`,
       siteName: 'Sinqobile Construction',
       title: 'Sinqobile Construction - Professional Construction Services Gauteng | 15+ Years Experience',
       description: 'Expert construction, renovation, plastering, painting, paving, tiling & plumbing services across Gauteng. 15+ years experience, 500+ projects completed. R400 call-out fee. Call +27 82 868 8396 for free quote!',
       images: [{
-        url: 'https://mdbuilders.co.za/og-image.jpg',
+        url: 'https://www.sinqobileconstruction.co.za/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Sinqobile Construction - Professional Construction Services in Johannesburg, Pretoria, Sandton, Gauteng'
@@ -74,7 +74,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: 'Sinqobile Construction - Professional Construction Services Gauteng | 15+ Years Experience',
       description: 'Expert construction, renovation & building services across Gauteng. 500+ projects completed. Call +27 82 868 8396 for free quote!',
-      images: ['https://mdbuilders.co.za/og-image.jpg'],
+      images: ['https://www.sinqobileconstruction.co.za/og-image.jpg'],
     },
     robots: {
       index: true,
@@ -88,7 +88,7 @@ export async function generateMetadata({
       },
     },
     verification: {
-      google: 'your-google-verification-code', // Add your actual Google Search Console verification code
+      google: 'googleb9c0f3d14f1f0f09',
     }
   }
 }

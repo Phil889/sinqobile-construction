@@ -71,12 +71,12 @@ export default function BlogPostPage({
       "name": "Sinqobile Construction",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://mdbuilders.co.za/logo.svg"
+        "url": "https://www.sinqobileconstruction.co.za/logo.svg"
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://mdbuilders.co.za/${lang}/blog/${slug}`
+      "@id": `https://www.sinqobileconstruction.co.za/${lang}/blog/${slug}`
     },
     "keywords": post.keywords.join(', '),
     "articleSection": post.category
