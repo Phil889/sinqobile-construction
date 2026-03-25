@@ -31,6 +31,7 @@ export async function generateMetadata({
     : dict.meta.description
   
   return {
+    metadataBase: new URL('https://www.sinqobileconstruction.co.za'),
     title: dict.meta.title,
     description: enhancedDescription,
     keywords: dict.meta.keywords,
@@ -48,23 +49,22 @@ export async function generateMetadata({
       ],
     },
     alternates: {
-      canonical: `https://www.sinqobileconstruction.co.za/${params.lang}`,
       languages: {
-        'en': 'https://www.sinqobileconstruction.co.za/en',
-        'af': 'https://www.sinqobileconstruction.co.za/af',
-        'zu': 'https://www.sinqobileconstruction.co.za/zu',
-        'st': 'https://www.sinqobileconstruction.co.za/st',
+        'en': '/en',
+        'af': '/af',
+        'zu': '/zu',
+        'st': '/st',
       }
     },
     openGraph: {
       type: 'website',
       locale: params.lang,
-      url: `https://www.sinqobileconstruction.co.za/${params.lang}`,
+      url: `/${params.lang}`,
       siteName: 'Sinqobile Construction',
       title: 'Sinqobile Construction - Professional Construction Services Gauteng | 15+ Years Experience',
       description: 'Expert construction, renovation, plastering, painting, paving, tiling & plumbing services across Gauteng. 15+ years experience, 500+ projects completed. R400 call-out fee. Call +27 82 868 8396 for free quote!',
       images: [{
-        url: 'https://www.sinqobileconstruction.co.za/og-image.jpg',
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Sinqobile Construction - Professional Construction Services in Johannesburg, Pretoria, Sandton, Gauteng'
@@ -74,7 +74,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: 'Sinqobile Construction - Professional Construction Services Gauteng | 15+ Years Experience',
       description: 'Expert construction, renovation & building services across Gauteng. 500+ projects completed. Call +27 82 868 8396 for free quote!',
-      images: ['https://www.sinqobileconstruction.co.za/og-image.jpg'],
+      images: ['/og-image.jpg'],
     },
     robots: {
       index: true,
