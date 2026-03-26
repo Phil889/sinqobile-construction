@@ -39,7 +39,8 @@ const serviceSEO: Record<string, { title: string; description: string; h1?: stri
   },
   'renovation': {
     title: 'Home Renovation Johannesburg | Renovation Contractors Gauteng',
-    description: 'Complete home renovation services in Johannesburg. Kitchen, bathroom & whole-house renovations across Gauteng. 15+ years experience. Free quotes — +27 82 868 8396',
+    description: 'Home renovation contractors in Johannesburg. Kitchen, bathroom & whole-house renovations. NHBRC registered, 15+ years, 4.9★ rated. Free quotes — +27 82 868 8396',
+    h1: 'Home Renovation Contractors in Johannesburg',
   },
   'roofing': {
     title: 'Roofing Contractors Johannesburg | Roof Repairs Gauteng',

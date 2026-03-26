@@ -119,7 +119,7 @@ export const enhancedServices: ServiceCategory[] = [
     icon: RefreshCw,
     imageCount: 5,
     featured: false,
-    seoKeywords: ['renovation', 'home renovation', 'property renovation', 'remodeling']
+    seoKeywords: ['home renovation johannesburg', 'renovation contractors johannesburg', 'kitchen renovation johannesburg', 'bathroom renovation johannesburg', 'house renovation cost south africa', 'renovation companies gauteng', 'home renovation cost johannesburg', 'house remodeling johannesburg']
   },
   {
     slug: 'repairs',

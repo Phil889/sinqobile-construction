@@ -143,21 +143,21 @@ function getServiceFeatures(serviceSlug: string) {
         }
       }
     ],
-    'renovations': [
+    'renovation': [
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Kitchen Renovations",
-          "description": "Complete kitchen remodeling"
+          "name": "Kitchen Renovations Johannesburg",
+          "description": "Complete kitchen renovation and remodeling services in Johannesburg including cabinetry, countertops, flooring and modern design"
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Bathroom Renovations",
-          "description": "Bathroom upgrades and remodeling"
+          "name": "Bathroom Renovations Johannesburg",
+          "description": "Full bathroom renovation services including tiling, plumbing, vanities and modern bathroom design across Gauteng"
         }
       },
       {
@@ -165,7 +165,39 @@ function getServiceFeatures(serviceSlug: string) {
         "itemOffered": {
           "@type": "Service",
           "name": "Whole Home Renovations",
-          "description": "Complete home renovation services"
+          "description": "Complete house renovation and remodeling services from design to completion for residential properties"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Bedroom & Living Area Renovations",
+          "description": "Living room and bedroom renovation services including open-plan conversions, flooring, lighting and modern finishes"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Office & Commercial Renovations",
+          "description": "Commercial property renovation services in Johannesburg including office fit-outs and retail renovations"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Property Renovation for Resale",
+          "description": "Investment property renovation to increase resale value with strategic upgrades for maximum ROI"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Renovation Project Management",
+          "description": "End-to-end renovation project management including design consultation, contractor coordination and budget management"
         }
       }
     ],
