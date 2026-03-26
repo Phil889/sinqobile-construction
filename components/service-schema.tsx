@@ -318,24 +318,64 @@ function getServiceFeatures(serviceSlug: string) {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Plumbing Installation",
-          "description": "New plumbing installations"
+          "name": "Geyser Installation & Repair",
+          "description": "Electric and solar geyser installation, replacement and repair services in Johannesburg"
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Plumbing Repairs",
-          "description": "Emergency and routine plumbing repairs"
+          "name": "Emergency Plumbing",
+          "description": "24/7 emergency plumber in Johannesburg for burst pipes, water leaks and plumbing failures"
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Drain Cleaning",
-          "description": "Drain and sewer cleaning services"
+          "name": "Drain Cleaning & Unblocking",
+          "description": "Blocked drain clearing, sewer cleaning and drain jetting services in Johannesburg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Burst Pipe Repair",
+          "description": "Fast burst pipe detection and repair across Johannesburg with 24/7 emergency response"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Leak Detection",
+          "description": "Professional water leak detection services in Johannesburg for residential and commercial properties"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Plumbing Installations",
+          "description": "New plumbing installations for bathrooms, kitchens and full residential or commercial properties"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Plumbing Repairs & Maintenance",
+          "description": "Routine and emergency plumbing repairs — taps, toilets, pipes, valves and water pressure issues"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Bathroom & Kitchen Plumbing",
+          "description": "Complete bathroom and kitchen plumbing fit-outs for new builds and renovations in Johannesburg"
         }
       }
     ],

@@ -63,7 +63,7 @@ export const enhancedServices: ServiceCategory[] = [
     icon: Wrench,
     imageCount: 7,
     featured: true,
-    seoKeywords: ['plumbing', 'pipe installation', 'plumbing repairs', 'water systems']
+    seoKeywords: ['plumber johannesburg', 'plumbing services johannesburg', 'emergency plumber johannesburg', 'geyser installation johannesburg', 'drain cleaning johannesburg', 'blocked drains johannesburg', '24 hour plumber johannesburg', 'burst pipe repair johannesburg', 'leak detection johannesburg']
   },
   
   // Additional Services

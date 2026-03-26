@@ -30,7 +30,8 @@ const serviceSEO: Record<string, { title: string; description: string; h1?: stri
   },
   'plumbing': {
     title: 'Plumbing Services Johannesburg | Emergency Plumber Gauteng',
-    description: 'Reliable plumbing services in Johannesburg. Installations, repairs & emergency plumbing across Gauteng. 24/7 available. Free quotes — +27 82 868 8396',
+    description: 'Professional plumber in Johannesburg — geyser installation, drain cleaning, burst pipe repairs & 24/7 emergency plumbing. NHBRC registered, 15+ years, 4.9★. Free quotes — +27 82 868 8396',
+    h1: 'Professional Plumber in Johannesburg',
   },
   'waterproofing': {
     title: 'Waterproofing Johannesburg | Damp Proofing Contractors Gauteng',
