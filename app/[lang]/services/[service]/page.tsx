@@ -11,19 +11,22 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
-// SEO-optimized titles and descriptions per service
-const serviceSEO: Record<string, { title: string; description: string }> = {
+// SEO-optimized titles, descriptions, and H1s per service (v2 workflow research-driven)
+const serviceSEO: Record<string, { title: string; description: string; h1?: string }> = {
   'building': {
     title: 'Building Contractors Johannesburg | Home Builders Gauteng',
     description: 'NHBRC registered building contractors in Johannesburg. New homes, extensions & structural work across Gauteng. 15+ years, 500+ projects. Free quotes — +27 82 868 8396',
+    h1: 'Building Contractors in Johannesburg',
   },
   'concrete': {
     title: 'Concrete Contractors Johannesburg | Foundations & Slabs Gauteng',
     description: 'Expert concrete work in Johannesburg — foundations, slabs, driveways & reinforced structures. Quality workmanship, 15+ years experience. Free quotes — +27 82 868 8396',
+    h1: 'Concrete Contractors in Johannesburg',
   },
   'paving': {
     title: 'Paving Contractors Johannesburg | Driveway Paving Gauteng',
     description: 'Professional paving contractors in Johannesburg. Driveways, walkways & patios across Gauteng. 15+ years experience, 4.9★ rated. Free quotes — +27 82 868 8396',
+    h1: 'Paving Contractors Johannesburg',
   },
   'plumbing': {
     title: 'Plumbing Services Johannesburg | Emergency Plumber Gauteng',
@@ -134,6 +137,7 @@ export default async function ServicePage({ params: { lang, service } }: Service
 
   // Get service info from dictionary
   const serviceInfo = (dict.services.items as any)[service] || (dict as any).extendedServices?.[service]
+  const seo = serviceSEO[service]
 
   return (
     <div className="pt-20">
@@ -164,7 +168,7 @@ export default async function ServicePage({ params: { lang, service } }: Service
               </div>
             </div>
             <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6">
-              {serviceInfo?.name || serviceData.name} Services
+              {seo?.h1 || `${serviceInfo?.name || serviceData.name} Services`}
             </h1>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
               {serviceInfo?.description || serviceData.description}

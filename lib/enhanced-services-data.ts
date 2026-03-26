@@ -54,7 +54,7 @@ export const enhancedServices: ServiceCategory[] = [
     icon: Home,
     imageCount: 8,
     featured: true,
-    seoKeywords: ['paving', 'driveways', 'walkways', 'outdoor paving']
+    seoKeywords: ['paving contractors johannesburg', 'driveway paving', 'brick paving', 'interlocking paving', 'patio paving', 'walkway paving', 'paving cost per square meter']
   },
   {
     slug: 'plumbing',

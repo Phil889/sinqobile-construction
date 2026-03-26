@@ -227,7 +227,7 @@ function getServiceFeatures(serviceSlug: string) {
         "itemOffered": {
           "@type": "Service",
           "name": "Driveway Paving",
-          "description": "Driveway installation and paving"
+          "description": "Professional driveway paving installation in Johannesburg"
         }
       },
       {
@@ -235,7 +235,7 @@ function getServiceFeatures(serviceSlug: string) {
         "itemOffered": {
           "@type": "Service",
           "name": "Patio Paving",
-          "description": "Patio and outdoor area paving"
+          "description": "Patio and entertainment area paving"
         }
       },
       {
@@ -243,7 +243,47 @@ function getServiceFeatures(serviceSlug: string) {
         "itemOffered": {
           "@type": "Service",
           "name": "Walkway Paving",
-          "description": "Walkway and pathway paving"
+          "description": "Walkway and pathway paving installation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Pool Area Paving",
+          "description": "Slip-resistant pool surround paving"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Entrance Paving",
+          "description": "Decorative entrance and forecourt paving"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Commercial Paving",
+          "description": "Commercial and industrial parking area paving in Gauteng"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Brick Paving",
+          "description": "Clay and concrete brick paving installation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Interlocking Paving",
+          "description": "Interlocking paver systems for driveways and walkways"
         }
       }
     ],
