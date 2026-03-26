@@ -404,6 +404,56 @@ function getServiceFeatures(serviceSlug: string) {
           "description": "Complete roof replacement"
         }
       }
+    ],
+    'concrete': [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Concrete Foundations",
+          "description": "Raft foundations, strip foundations and excavation for residential and commercial buildings in Johannesburg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Concrete Slabs",
+          "description": "Reinforced concrete slabs, surface beds and suspended slabs for new builds and extensions in Gauteng"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Concrete Driveways",
+          "description": "Durable concrete driveway installation and repair for residential properties in Johannesburg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Reinforced Concrete Structures",
+          "description": "Reinforced concrete beams, columns, staircases and retaining walls engineered to SANS standards"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Concrete Floors",
+          "description": "Industrial concrete flooring, screeded floors and polished concrete for commercial and residential properties"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Concrete Retaining Walls",
+          "description": "Structural concrete retaining walls and boundary walls for sloped sites across Johannesburg and Gauteng"
+        }
+      }
     ]
   }
 

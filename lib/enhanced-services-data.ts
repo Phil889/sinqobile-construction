@@ -45,7 +45,7 @@ export const enhancedServices: ServiceCategory[] = [
     icon: HardHat,
     imageCount: 8,
     featured: true,
-    seoKeywords: ['concrete work', 'foundations', 'concrete slabs', 'driveways']
+    seoKeywords: ['concrete contractors johannesburg', 'concrete slab contractors johannesburg', 'foundation contractors johannesburg', 'concrete driveway johannesburg', 'reinforced concrete johannesburg', 'raft foundation johannesburg', 'concrete work johannesburg', 'concrete floors gauteng']
   },
   {
     slug: 'paving',

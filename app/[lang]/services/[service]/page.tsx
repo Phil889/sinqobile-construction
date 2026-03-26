@@ -20,7 +20,7 @@ const serviceSEO: Record<string, { title: string; description: string; h1?: stri
   },
   'concrete': {
     title: 'Concrete Contractors Johannesburg | Foundations & Slabs Gauteng',
-    description: 'Expert concrete work in Johannesburg — foundations, slabs, driveways & reinforced structures. Quality workmanship, 15+ years experience. Free quotes — +27 82 868 8396',
+    description: 'NHBRC registered concrete contractors in Johannesburg. Foundations, slabs, driveways & reinforced concrete structures across Gauteng. 15+ years, 500+ projects, 4.9★. Free quotes — +27 82 868 8396',
     h1: 'Concrete Contractors in Johannesburg',
   },
   'paving': {
