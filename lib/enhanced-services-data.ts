@@ -155,7 +155,7 @@ export const enhancedServices: ServiceCategory[] = [
     icon: PaintBucket,
     imageCount: 4,
     featured: false,
-    seoKeywords: ['painting', 'interior painting', 'exterior painting', 'house painting']
+    seoKeywords: ['painters johannesburg', 'house painting johannesburg', 'painting contractors johannesburg', 'interior painting johannesburg', 'exterior painting johannesburg', 'painting services johannesburg', 'house painters gauteng', 'commercial painting contractors johannesburg', 'residential painters johannesburg']
   },
   {
     slug: 'plastering',

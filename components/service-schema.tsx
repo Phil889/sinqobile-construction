@@ -232,24 +232,56 @@ function getServiceFeatures(serviceSlug: string) {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Interior Painting",
-          "description": "Professional interior painting"
+          "name": "Interior House Painting Johannesburg",
+          "description": "Professional interior painting for homes in Johannesburg — walls, ceilings and trim with premium paints and flawless finishes across Gauteng"
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Exterior Painting",
-          "description": "Exterior house painting"
+          "name": "Exterior House Painting Johannesburg",
+          "description": "Durable exterior house painting in Johannesburg using weather-resistant coatings for lasting protection against Gauteng UV and storms"
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Commercial Painting",
-          "description": "Commercial property painting"
+          "name": "Commercial Painting Contractors Johannesburg",
+          "description": "Commercial and industrial painting services in Johannesburg — offices, retail spaces, warehouses and multi-storey buildings across Gauteng"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Residential Painting Services",
+          "description": "Complete residential painting packages for Johannesburg homeowners including interior, exterior, walls, ceilings and woodwork"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Ceiling & Trim Painting",
+          "description": "Specialist ceiling painting, skirting board and door frame finishing for a polished look in residential and commercial properties"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Colour Consultation & Design",
+          "description": "Expert colour consultation and paint specification services to help Johannesburg homeowners choose the perfect palette"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Textured & Decorative Finishes",
+          "description": "Decorative wall finishes, feature walls and textured coatings for unique interiors in Johannesburg homes and commercial spaces"
         }
       }
     ],

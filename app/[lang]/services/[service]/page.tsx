@@ -50,7 +50,8 @@ const serviceSEO: Record<string, { title: string; description: string; h1?: stri
   },
   'painting': {
     title: 'Painting Contractors Johannesburg | House Painters Gauteng',
-    description: 'Professional interior & exterior painting in Johannesburg. Residential & commercial painting across Gauteng. Quality finishes guaranteed. Free quotes — +27 82 868 8396',
+    description: 'Professional interior & exterior painting contractors in Johannesburg. Residential & commercial house painters across Gauteng. NHBRC registered, 15+ years, 4.9★. Free quotes — +27 82 868 8396',
+    h1: 'Painting Contractors in Johannesburg',
   },
   'plastering': {
     title: 'Plastering Services Johannesburg | Skimming Contractors Gauteng',
