@@ -1,9 +1,37 @@
 import React from 'react'
+import type { Metadata } from 'next'
 import { getDictionary } from '@/lib/dictionaries'
 import { Locale } from '@/i18n.config'
 import { CheckCircle, Award, Shield, Clock, Users, MapPin } from 'lucide-react'
 import Image from 'next/image'
 import Breadcrumb from '@/components/breadcrumb'
+
+// v2 Workflow: Research-driven metadata for About page (E-E-A-T entity building)
+export async function generateMetadata({
+  params: { lang },
+}: {
+  params: { lang: Locale }
+}): Promise<Metadata> {
+  return {
+    title: lang === 'en'
+      ? 'About Sinqobile Construction | NHBRC Registered Builder Johannesburg'
+      : lang === 'af'
+      ? 'Oor Sinqobile Construction | NHBRC Geregistreerde Bouer Johannesburg'
+      : lang === 'zu'
+      ? 'Mayelana ne-Sinqobile Construction | Umakhi we-NHBRC eGoli'
+      : 'Ka Sinqobile Construction | Moahi ea NHBRC Johannesburg',
+    description: lang === 'en'
+      ? 'Meet Dingwayo Reason Ndlovu, founder of Sinqobile Construction — NHBRC registered builder in Johannesburg with 15+ years experience and 500+ completed projects. Fully insured. Free quotes.'
+      : lang === 'af'
+      ? 'Ontmoet Dingwayo Reason Ndlovu, stigter van Sinqobile Construction — NHBRC-geregistreerde bouer in Johannesburg met 15+ jaar ervaring en 500+ projekte. Gratis kwotasies.'
+      : lang === 'zu'
+      ? 'Hlangana noDingwayo Reason Ndlovu, umsunguli weSinqobile Construction — umakhi we-NHBRC eGoli oneminyaka engu-15+ namaphrojekthi angu-500+. Amacaphuna amahhala.'
+      : 'Kopana le Dingwayo Reason Ndlovu, mothehi oa Sinqobile Construction — moahi ea NHBRC Johannesburg ka lilemo tse 15+ le mesebetsi e 500+. Diquote tsa mahala.',
+    alternates: {
+      canonical: `/${lang}/about`,
+    },
+  }
+}
 
 export default async function AboutPage({
   params: { lang },
