@@ -119,8 +119,8 @@ const locationData: Record<string, {
   },
   'centurion': {
     name: 'Centurion',
-    description: 'Reliable construction and building services in Centurion. Sinqobile Construction has completed 80+ projects across Centurion, delivering quality residential and commercial construction work.',
-    suburbs: ['Eldoraigne', 'Wierdapark', 'Lyttelton', 'The Reeds', 'Hennopspark', 'Zwartkop', 'Clubview', 'Rooihuiskraal'],
+    description: 'NHBRC registered builders in Centurion with 80+ completed projects. Sinqobile Construction delivers quality renovations, extensions, and new builds across Eldoraigne, Irene, Lyttelton, Wierdapark, and all Centurion suburbs. 15+ years experience, 4.9★ rated.',
+    suburbs: ['Eldoraigne', 'Wierdapark', 'Lyttelton', 'The Reeds', 'Hennopspark', 'Zwartkop', 'Clubview', 'Rooihuiskraal', 'Irene', 'Doringkloof', 'Amberfield', 'Pierre van Ryneveld'],
     projects: 80,
     rating: 4.9,
     highlights: [
@@ -139,8 +139,8 @@ const locationData: Record<string, {
   },
   'midrand': {
     name: 'Midrand',
-    description: 'Professional construction services in Midrand, connecting Johannesburg and Pretoria. With 90+ completed projects, Sinqobile Construction delivers quality building, renovation, and maintenance services across all Midrand suburbs.',
-    suburbs: ['Carlswald', 'Glen Austin', 'Halfway House', 'Noordwyk', 'Vorna Valley', 'Sagewood', 'Waterfall', 'Blue Hills'],
+    description: 'NHBRC registered builders in Midrand — the corridor connecting Johannesburg and Pretoria. Sinqobile Construction has completed 90+ projects across Waterfall, Kyalami, Carlswald, Halfway House, and all Midrand suburbs. Specializing in estate construction, residential renovations, and new builds with 15+ years experience.',
+    suburbs: ['Carlswald', 'Glen Austin', 'Halfway House', 'Noordwyk', 'Vorna Valley', 'Sagewood', 'Waterfall', 'Blue Hills', 'Kyalami', 'Beaulieu', 'Crowthorne', 'Halfway Gardens'],
     projects: 90,
     rating: 4.8,
     highlights: [
@@ -159,8 +159,8 @@ const locationData: Record<string, {
   },
   'randburg': {
     name: 'Randburg',
-    description: 'Expert construction and renovation services in Randburg. Sinqobile Construction has been serving Randburg homeowners and businesses for over 15 years with 70+ completed projects across the area.',
-    suburbs: ['Northcliff', 'Linden', 'Ferndale', 'Fontainebleau', 'Blairgowrie', 'Bordeaux', 'Robin Hills', 'Bromhof'],
+    description: 'NHBRC registered builders in Randburg with 70+ completed projects. Sinqobile Construction serves all 32+ Randburg suburbs — from Northcliff and Linden to Ferndale, Northriding, and Randpark Ridge. Specializing in home renovations, extensions, and residential construction with 15+ years experience and a 4.9★ rating.',
+    suburbs: ['Northcliff', 'Linden', 'Ferndale', 'Fontainebleau', 'Blairgowrie', 'Bordeaux', 'Robin Hills', 'Bromhof', 'Northriding', 'Randpark Ridge', 'Fairland', 'Cresta'],
     projects: 70,
     rating: 4.9,
     highlights: [
@@ -234,16 +234,16 @@ const areaSEO: Record<string, { title: string; description: string }> = {
     description: 'Trusted builders in Pretoria & Centurion. NHBRC registered, 100+ projects, 4.8★ rated. Renovations, new builds, roofing, paving & plumbing across Pretoria East & West. Free quotes — +27 82 868 8396',
   },
   'centurion': {
-    title: 'Construction Company Centurion | Builders & Renovations - Sinqobile',
-    description: 'Reliable construction services in Centurion. 80+ projects across Eldoraigne, Wierdapark, Lyttelton & more. NHBRC registered. Free quotes — +27 82 868 8396',
+    title: 'Builders in Centurion | Renovations & Construction - Sinqobile',
+    description: 'Trusted builders in Centurion. NHBRC registered, 80+ projects, 4.9★ rated. Renovations, extensions & new builds across Eldoraigne, Irene, Lyttelton & all suburbs. Free quotes — +27 82 868 8396',
   },
   'midrand': {
-    title: 'Builders in Midrand | Construction Services - Sinqobile Construction',
-    description: 'Professional builders in Midrand. 90+ projects across Waterfall, Carlswald, Halfway House & more. 15+ years experience. Free quotes — +27 82 868 8396',
+    title: 'Builders in Midrand | NHBRC Registered, 90+ Projects - Sinqobile',
+    description: 'Professional builders in Midrand. NHBRC registered, 90+ projects, 4.8★ rated. Waterfall, Kyalami, Carlswald, Halfway House & all Midrand suburbs. Free quotes — +27 82 868 8396',
   },
   'randburg': {
-    title: 'Construction Services Randburg | Builders & Contractors - Sinqobile',
-    description: 'Expert construction services in Randburg. 70+ projects across Northcliff, Linden, Ferndale & more. Quality workmanship guaranteed. Free quotes — +27 82 868 8396',
+    title: 'Builders in Randburg | NHBRC Registered Contractors - Sinqobile',
+    description: 'Expert builders in Randburg. NHBRC registered, 70+ projects, 4.9★ rated. Northcliff, Linden, Ferndale, Northriding & all Randburg suburbs. Free quotes — +27 82 868 8396',
   },
   'fourways': {
     title: 'Builders in Fourways | Construction & Renovations - Sinqobile',
