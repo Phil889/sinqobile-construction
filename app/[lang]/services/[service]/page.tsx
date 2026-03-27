@@ -59,8 +59,9 @@ const serviceSEO: Record<string, { title: string; description: string; h1?: stri
     h1: 'Plastering & Skimming Contractors in Johannesburg',
   },
   'tiling': {
-    title: 'Tiling Contractors Johannesburg | Floor & Wall Tiling Gauteng',
-    description: 'Professional tiling services in Johannesburg. Floor tiling, wall tiling & outdoor tiling across Gauteng. Quality workmanship. Free quotes — +27 82 868 8396',
+    title: 'Tiling Contractors Johannesburg | Floor & Wall Tiler Gauteng',
+    description: 'Professional tiling contractors in Johannesburg — floor, wall, bathroom & kitchen tiling. NHBRC registered, 15+ years, 500+ projects, 4.9★. From R150/m². Free quotes — +27 82 868 8396',
+    h1: 'Tiling Contractors in Johannesburg',
   },
   'extensions': {
     title: 'Home Extensions Johannesburg | Room Additions Gauteng',

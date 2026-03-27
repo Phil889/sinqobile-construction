@@ -388,24 +388,56 @@ function getServiceFeatures(serviceSlug: string) {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Floor Tiling",
-          "description": "Professional floor tiling services"
+          "name": "Floor Tiling Johannesburg",
+          "description": "Professional floor tiling installation for residential and commercial properties in Johannesburg — ceramic, porcelain and natural stone tiles across Gauteng"
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Wall Tiling",
-          "description": "Bathroom and kitchen wall tiling"
+          "name": "Wall Tiling Johannesburg",
+          "description": "Interior and exterior wall tiling for bathrooms, kitchens and feature walls in Johannesburg with precision cutting and waterproof grouting"
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Outdoor Tiling",
-          "description": "Outdoor and patio tiling"
+          "name": "Bathroom Tiling Johannesburg",
+          "description": "Complete bathroom tiling services in Johannesburg including floor-to-ceiling tiles, shower tiling, waterproofing and mosaic accents"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Kitchen Tiling Johannesburg",
+          "description": "Kitchen floor and splashback tiling in Johannesburg — porcelain, ceramic and natural stone installation for modern and classic designs"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Outdoor Tiling Johannesburg",
+          "description": "Non-slip outdoor tiling for patios, pool surrounds, driveways and entertainment areas using frost-resistant and UV-stable tiles"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Commercial Tiling Gauteng",
+          "description": "Large-scale commercial tiling for offices, retail spaces, restaurants and industrial facilities across Johannesburg and Gauteng"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Decorative & Mosaic Tiling",
+          "description": "Custom mosaic and decorative tile installation for feature walls, borders and artistic tiling designs in Johannesburg homes and businesses"
         }
       }
     ],

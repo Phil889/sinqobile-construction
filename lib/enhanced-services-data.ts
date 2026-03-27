@@ -191,7 +191,7 @@ export const enhancedServices: ServiceCategory[] = [
     icon: Grid,
     imageCount: 3,
     featured: false,
-    seoKeywords: ['tiling', 'floor tiling', 'wall tiling', 'bathroom tiling']
+    seoKeywords: ['tiling contractors johannesburg', 'tiler johannesburg', 'floor tiling johannesburg', 'bathroom tiling johannesburg', 'wall tiling johannesburg', 'kitchen tiling johannesburg', 'tile installation johannesburg', 'tiling cost per square meter south africa', 'tiling services gauteng']
   },
   {
     slug: 'electrical',
