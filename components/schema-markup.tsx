@@ -39,11 +39,11 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
           '@id': 'https://www.sinqobileconstruction.co.za',
           name: 'Sinqobile Construction',
           image: 'https://www.sinqobileconstruction.co.za/logo.png',
-          description: 'Professional construction and handyman services in Gauteng. Building, plastering, painting, paving, tiling, and plumbing.',
+          description: 'Professional construction and building services in Gauteng. Building, plastering, painting, paving, tiling, and plumbing.',
           address: {
             '@type': 'PostalAddress',
             streetAddress: BUSINESS_INFO.address.street,
-            addressLocality: BUSINESS_INFO.address.suburb,
+            addressLocality: BUSINESS_INFO.address.city,
             addressRegion: BUSINESS_INFO.address.province,
             postalCode: BUSINESS_INFO.address.postalCode,
             addressCountry: 'ZA'

@@ -1,27 +1,27 @@
 /**
  * Sinqobile Construction Business Information
- * Professional construction company based in Bryanston, Johannesburg
+ * Professional construction company based in Fourways, Sandton
  */
 
 export const BUSINESS_INFO = {
   name: "Sinqobile Construction",
   address: {
-    street: "47 Bryanston Drive",
-    suburb: "Bryanston",
-    city: "Johannesburg",
+    street: "The William 1, Broadacres Drive",
+    suburb: "Fourways",
+    city: "Sandton",
     province: "Gauteng",
-    postalCode: "2021",
+    postalCode: "2191",
     country: "South Africa",
   },
-  fullAddress: "47 Bryanston Drive, Bryanston, Johannesburg, 2021",
+  fullAddress: "The William 1, Broadacres Drive, Fourways, Sandton, 2191",
   contact: {
     phone: "+27828688396",
     email: "sinqobileconstruction@gmail.com",
     website: "www.sinqobileconstruction.co.za",
   },
   coordinates: {
-    latitude: -26.0667,
-    longitude: 28.0167,
+    latitude: -26.0274,
+    longitude: 28.0106,
   },
   businessHours: {
     weekdays: "Monday - Friday: 7:00 AM - 5:00 PM",
