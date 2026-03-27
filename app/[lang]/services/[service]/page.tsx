@@ -55,7 +55,8 @@ const serviceSEO: Record<string, { title: string; description: string; h1?: stri
   },
   'plastering': {
     title: 'Plastering Services Johannesburg | Skimming Contractors Gauteng',
-    description: 'Expert plastering & skimming services in Johannesburg. Wall plastering, ceiling repairs across Gauteng. 15+ years experience. Free quotes — +27 82 868 8396',
+    description: 'Professional plastering & skimming contractors in Johannesburg. Wall plastering, ceiling plastering, skim coating & plaster repairs across Gauteng. NHBRC registered, 15+ years, 4.9★. Free quotes — +27 82 868 8396',
+    h1: 'Plastering & Skimming Contractors in Johannesburg',
   },
   'tiling': {
     title: 'Tiling Contractors Johannesburg | Floor & Wall Tiling Gauteng',

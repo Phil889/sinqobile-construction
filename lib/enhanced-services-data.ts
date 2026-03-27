@@ -164,7 +164,7 @@ export const enhancedServices: ServiceCategory[] = [
     icon: Square,
     imageCount: 4,
     featured: false,
-    seoKeywords: ['plastering', 'wall plastering', 'interior plastering', 'exterior plastering']
+    seoKeywords: ['plastering services johannesburg', 'plasterers johannesburg', 'plastering contractors johannesburg', 'skimming contractors johannesburg', 'ceiling plastering johannesburg', 'wall plastering johannesburg', 'plastering cost per m2 south africa', 'skim coating johannesburg', 'plaster repair johannesburg', 'rhinolite plastering johannesburg']
   },
   {
     slug: 'maintenance',

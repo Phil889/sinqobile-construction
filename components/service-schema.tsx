@@ -206,24 +206,56 @@ function getServiceFeatures(serviceSlug: string) {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Wall Plastering",
-          "description": "Interior and exterior wall plastering"
+          "name": "Wall Plastering Johannesburg",
+          "description": "Interior and exterior wall plastering for residential and commercial properties in Johannesburg — smooth cement plaster finishes by NHBRC registered contractors"
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Ceiling Plastering",
-          "description": "Ceiling repairs and plastering"
+          "name": "Ceiling Plastering Johannesburg",
+          "description": "Professional ceiling plastering, repairs and re-skimming services for homes and offices across Johannesburg and Gauteng"
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Skimming",
-          "description": "Professional skimming services"
+          "name": "Skimming & Skim Coating",
+          "description": "Smooth skim coating and wall skimming services in Johannesburg — perfect preparation for painting and wallpaper application"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Plaster Repairs Johannesburg",
+          "description": "Crack repair, damp-damaged plaster restoration and patch plastering for walls and ceilings in Johannesburg and Gauteng"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Exterior Rendering Johannesburg",
+          "description": "Exterior wall rendering and sand-cement plastering for weatherproofing and curb appeal on Gauteng properties"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Rhinolite Plastering",
+          "description": "Rhinolite skim plaster application for ultra-smooth wall finishes on residential and commercial interiors in Johannesburg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Commercial Plastering Gauteng",
+          "description": "Large-scale plastering and rendering for commercial buildings, apartment complexes and industrial properties across Gauteng"
         }
       }
     ],
