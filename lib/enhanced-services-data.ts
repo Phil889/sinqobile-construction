@@ -74,7 +74,7 @@ export const enhancedServices: ServiceCategory[] = [
     icon: Droplets,
     imageCount: 6,
     featured: false,
-    seoKeywords: ['waterproofing', 'basement waterproofing', 'roof waterproofing', 'damp proofing']
+    seoKeywords: ['waterproofing johannesburg', 'damp proofing johannesburg', 'roof waterproofing johannesburg', 'waterproofing contractors johannesburg', 'basement waterproofing johannesburg', 'rising damp treatment johannesburg', 'bathroom waterproofing johannesburg', 'waterproofing cost per square meter south africa']
   },
   {
     slug: 'extensions',

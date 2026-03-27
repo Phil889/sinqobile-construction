@@ -35,7 +35,8 @@ const serviceSEO: Record<string, { title: string; description: string; h1?: stri
   },
   'waterproofing': {
     title: 'Waterproofing Johannesburg | Damp Proofing Contractors Gauteng',
-    description: 'Expert waterproofing & damp proofing in Johannesburg. Roof waterproofing, basement sealing & rising damp treatment. Free quotes — +27 82 868 8396',
+    description: 'Professional waterproofing & damp proofing in Johannesburg. Roof, basement, bathroom & rising damp solutions. NHBRC registered, 15+ years, 4.9★. Free quotes — +27 82 868 8396',
+    h1: 'Waterproofing Contractors in Johannesburg',
   },
   'renovation': {
     title: 'Home Renovation Johannesburg | Renovation Contractors Gauteng',

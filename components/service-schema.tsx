@@ -437,6 +437,56 @@ function getServiceFeatures(serviceSlug: string) {
         }
       }
     ],
+    'waterproofing': [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Roof Waterproofing Johannesburg",
+          "description": "Torch-on membrane, liquid rubber and bitumen waterproofing for flat roofs, tiled roofs and IBR roofs across Johannesburg and Gauteng"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Basement Waterproofing",
+          "description": "Below-ground waterproofing, tanking and sealing for basements and cellars to prevent water ingress and structural damage"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Damp Proofing & Rising Damp Treatment",
+          "description": "Chemical damp proof course injection and rising damp treatment for residential and commercial properties in Johannesburg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Bathroom Waterproofing",
+          "description": "Waterproof membrane application for bathrooms, showers and wet areas to prevent leaks and moisture damage"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Pool Waterproofing",
+          "description": "Swimming pool waterproofing and re-sealing services using specialist pool membrane systems"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Exterior Wall Waterproofing",
+          "description": "External wall waterproofing and damp proofing to protect against rain penetration and lateral damp in Gauteng properties"
+        }
+      }
+    ],
     'concrete': [
       {
         "@type": "Offer",
