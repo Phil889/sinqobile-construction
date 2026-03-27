@@ -90,8 +90,8 @@ const locationData: Record<string, {
   },
   'pretoria': {
     name: 'Pretoria',
-    description: 'Expert building and construction services across Pretoria and Centurion. Sinqobile Construction brings 15+ years of construction expertise to Pretoria homeowners and businesses, with 100+ completed projects throughout the capital city.',
-    suburbs: ['Centurion', 'Hatfield', 'Brooklyn', 'Menlyn', 'Waterkloof', 'Lynnwood', 'Garsfontein', 'Faerie Glen'],
+    description: 'NHBRC registered builders serving Pretoria, Tshwane and Centurion. Sinqobile Construction brings 15+ years of expertise to Pretoria East, West and North — from luxury renovations in Waterkloof and Mooikloof to new builds in Montana and Garsfontein. 100+ completed projects across South Africa\'s capital city.',
+    suburbs: ['Centurion', 'Hatfield', 'Brooklyn', 'Menlyn', 'Waterkloof', 'Lynnwood', 'Garsfontein', 'Faerie Glen', 'Moreleta Park', 'Silverlakes', 'Mooikloof', 'Montana', 'Sinoville', 'Arcadia', 'Newlands', 'Equestria'],
     projects: 100,
     rating: 4.8,
     highlights: [
@@ -230,8 +230,8 @@ const areaSEO: Record<string, { title: string; description: string }> = {
     description: 'Premium builders in Sandton. NHBRC registered, 120+ projects, 4.9★ rated. Luxury renovations, extensions & construction across Morningside, Sandhurst, Hyde Park & more. Free quotes — +27 82 868 8396',
   },
   'pretoria': {
-    title: 'Building Contractors Pretoria | Construction Services - Sinqobile',
-    description: 'Expert building contractors in Pretoria & Centurion. 100+ projects, 15+ years experience. Renovations, building & maintenance. Free quotes — +27 82 868 8396',
+    title: 'Builders Pretoria | NHBRC Registered, 100+ Projects - Sinqobile',
+    description: 'Trusted builders in Pretoria & Centurion. NHBRC registered, 100+ projects, 4.8★ rated. Renovations, new builds, roofing, paving & plumbing across Pretoria East & West. Free quotes — +27 82 868 8396',
   },
   'centurion': {
     title: 'Construction Company Centurion | Builders & Renovations - Sinqobile',
