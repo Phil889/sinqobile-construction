@@ -1,10 +1,38 @@
 import React from 'react'
+import type { Metadata } from 'next'
 import { getDictionary } from '@/lib/dictionaries'
 import { Locale } from '@/i18n.config'
 import { enhancedServices, getFeaturedServices, getServicesByCategory } from '@/lib/enhanced-services-data'
 import { CheckCircle, ArrowRight, Phone } from 'lucide-react'
 import Link from 'next/link'
 import Breadcrumb from '@/components/breadcrumb'
+
+// v2 Workflow: Research-driven metadata for services hub page
+export async function generateMetadata({
+  params: { lang },
+}: {
+  params: { lang: Locale }
+}): Promise<Metadata> {
+  return {
+    title: lang === 'en'
+      ? 'Construction Services Johannesburg | 19+ Building Services | Sinqobile'
+      : lang === 'af'
+      ? 'Konstruksiedienste Johannesburg | 19+ Boudienste | Sinqobile'
+      : lang === 'zu'
+      ? 'Izinsizakalo Zokwakha Johannesburg | 19+ | Sinqobile'
+      : 'Ditshebeletso tsa Kaho Johannesburg | 19+ | Sinqobile',
+    description: lang === 'en'
+      ? 'Explore 19+ professional construction services in Johannesburg & Gauteng. Building, paving, plumbing, renovation, roofing & more. NHBRC registered, 15+ years experience. Free quotes.'
+      : lang === 'af'
+      ? 'Ontdek 19+ professionele konstruksiedienste in Johannesburg & Gauteng. Bou, plaveisel, loodgieter, renovasie & meer. NHBRC geregistreer, 15+ jaar. Gratis kwotasies.'
+      : lang === 'zu'
+      ? 'Thola izinsizakalo zokwakha ezingaphezu kuka-19 eGoli neGauteng. Ukwakha, ukupeyiva, amapayipi, ukuvuselela nokunye. Amacaphuna amahhala.'
+      : 'Fumana ditshebeletso tsa kaho tse fetang 19 Johannesburg le Gauteng. Ho haha, paving, lipeipi, renovations le tse ding. Diquote tsa mahala.',
+    alternates: {
+      canonical: `/${lang}/services`,
+    },
+  }
+}
 
 export default async function ServicesPage({
   params: { lang },
@@ -15,8 +43,28 @@ export default async function ServicesPage({
   const featuredServices = getFeaturedServices()
   const additionalServices = getServicesByCategory(false)
 
+  // ItemList schema for all services (v2 workflow: research shows no competitor has this)
+  const itemListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Construction Services in Johannesburg',
+    description: 'Complete list of professional construction services offered by Sinqobile Construction in Johannesburg and Gauteng.',
+    numberOfItems: enhancedServices.length,
+    itemListElement: enhancedServices.map((service, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: service.name,
+      description: service.description,
+      url: `https://www.sinqobileconstruction.co.za/${lang}/services/${service.slug}`,
+    })),
+  }
+
   return (
     <div className="pt-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
       <Breadcrumb
         items={[
           { label: dict.navigation.services, href: `/${lang}/services` }
@@ -65,7 +113,7 @@ export default async function ServicesPage({
                                 (dict as any).extendedServices?.[service.slug]
               
               return (
-                <div key={service.slug} className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow group">
+                <Link href={`/${lang}/services/${service.slug}`} key={service.slug} className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow group block">
                   <div className="flex justify-center mb-4">
                     <div className="w-16 h-16 bg-lightBackground rounded-full flex items-center justify-center group-hover:bg-primary transition-colors">
                       <IconComponent className="text-primary group-hover:text-white" size={32} />
@@ -80,7 +128,10 @@ export default async function ServicesPage({
                   <div className="text-center">
                     <span className="text-sm text-gray-500">{service.imageCount} {(dict as any).pages.services.projectsCompleted}</span>
                   </div>
-                </div>
+                  <div className="text-center mt-3">
+                    <span className="text-primary font-semibold text-sm group-hover:text-accent transition-colors">Learn More →</span>
+                  </div>
+                </Link>
               )
             })}
           </div>
@@ -106,10 +157,10 @@ export default async function ServicesPage({
                                 (dict as any).extendedServices?.[service.slug]
               
               return (
-                <div key={service.slug} className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+                <Link href={`/${lang}/services/${service.slug}`} key={service.slug} className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow block group">
                   <div className="flex items-center space-x-4 mb-3">
-                    <div className="w-12 h-12 bg-lightBackground rounded-lg flex items-center justify-center">
-                      <IconComponent className="text-primary" size={24} />
+                    <div className="w-12 h-12 bg-lightBackground rounded-lg flex items-center justify-center group-hover:bg-primary transition-colors">
+                      <IconComponent className="text-primary group-hover:text-white" size={24} />
                     </div>
                     <div>
                       <h3 className="font-heading text-lg font-bold text-primary">
@@ -121,7 +172,7 @@ export default async function ServicesPage({
                   <p className="text-secondary text-sm">
                     {serviceDict?.description || service.description}
                   </p>
-                </div>
+                </Link>
               )
             })}
           </div>
