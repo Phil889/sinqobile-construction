@@ -1,9 +1,35 @@
 import React from 'react'
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getDictionary } from '@/lib/dictionaries'
 import { Locale } from '@/i18n.config'
 import Breadcrumb from '@/components/breadcrumb'
 import { MapPin, Phone, Star } from 'lucide-react'
+
+// v2 Workflow: Research-driven metadata for Areas Hub — no competitor has a dedicated /areas hub
+export async function generateMetadata({
+  params: { lang },
+}: {
+  params: { lang: Locale }
+}): Promise<Metadata> {
+  const titles: Record<string, string> = {
+    en: 'Construction Services Across Gauteng | 8 Areas Served | Sinqobile',
+    af: 'Konstruksiedienste Regoor Gauteng | 8 Gebiede | Sinqobile',
+    zu: 'Izinsizakalo Zokwakha KuGauteng | Izindawo Ezingu-8 | Sinqobile',
+    st: 'Ditshebeletso tsa Kaho Gauteng | Libaka tse 8 | Sinqobile',
+  }
+  const descriptions: Record<string, string> = {
+    en: 'Sinqobile Construction serves 8 areas across Gauteng — Johannesburg, Sandton, Pretoria, Centurion, Midrand, Randburg, Fourways & Roodepoort. 500+ projects, NHBRC registered. Free quotes: +27 82 868 8396.',
+    af: 'Sinqobile Construction bedien 8 gebiede regoor Gauteng — Johannesburg, Sandton, Pretoria, Centurion, Midrand, Randburg, Fourways & Roodepoort. 500+ projekte, NHBRC. Gratis kwotasies.',
+    zu: 'Sinqobile Construction isebenza ezindaweni ezingu-8 eGauteng — eGoli, eSandton, ePitoli, eCenturion, eMidrand, eRandburg, eFourways neRoodepoort. Amaphrojekthi angu-500+.',
+    st: 'Sinqobile Construction e sebeletsa libaka tse 8 Gauteng — Johannesburg, Sandton, Pretoria, Centurion, Midrand, Randburg, Fourways le Roodepoort. Mesebetsi e 500+.',
+  }
+  return {
+    title: titles[lang] || titles.en,
+    description: descriptions[lang] || descriptions.en,
+    alternates: { canonical: `/${lang}/areas` },
+  }
+}
 
 export default async function AreasPage({
   params: { lang },
@@ -79,8 +105,31 @@ export default async function AreasPage({
     }
   ]
 
+  // CollectionPage schema — v2 research: no competitor has a dedicated areas hub page
+  const areasSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Construction Services Across Gauteng',
+    description: 'Professional construction services in 8 areas across Gauteng Province by Sinqobile Construction.',
+    url: `https://www.sinqobileconstruction.co.za/${lang}/areas`,
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: serviceAreas.length,
+      itemListElement: serviceAreas.map((area, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: `Construction Services ${area.name}`,
+        url: `https://www.sinqobileconstruction.co.za/${lang}/areas/${area.slug}`,
+      })),
+    },
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(areasSchema) }}
+      />
       <Breadcrumb
         items={[
           { label: 'Service Areas', href: `/${lang}/areas` }
