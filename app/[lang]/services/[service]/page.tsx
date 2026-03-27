@@ -45,7 +45,8 @@ const serviceSEO: Record<string, { title: string; description: string; h1?: stri
   },
   'roofing': {
     title: 'Roofing Contractors Johannesburg | Roof Repairs Gauteng',
-    description: 'Professional roofing contractors in Johannesburg. Roof repairs, installation & waterproofing across Gauteng. 15+ years experience. Free quotes — +27 82 868 8396',
+    description: 'Expert roofing contractors in Johannesburg — roof repairs, installation, replacement & painting. NHBRC registered, 15+ years, 4.9★ rated. Free quotes — +27 82 868 8396',
+    h1: 'Roofing Contractors in Johannesburg',
   },
   'painting': {
     title: 'Painting Contractors Johannesburg | House Painters Gauteng',

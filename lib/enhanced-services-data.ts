@@ -137,7 +137,7 @@ export const enhancedServices: ServiceCategory[] = [
     icon: Home,
     imageCount: 5,
     featured: false,
-    seoKeywords: ['roofing', 'roof installation', 'roof repairs', 'roof maintenance']
+    seoKeywords: ['roofing contractors johannesburg', 'roof repairs johannesburg', 'roof leak repair johannesburg', 'roof installation johannesburg', 'roof replacement johannesburg', 'roof painting johannesburg', 'IBR roofing johannesburg', 'roofing companies gauteng']
   },
   {
     slug: 'brickwork',

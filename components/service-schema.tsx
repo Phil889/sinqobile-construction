@@ -416,16 +416,16 @@ function getServiceFeatures(serviceSlug: string) {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Roof Installation",
-          "description": "New roof installation services"
+          "name": "Roof Installation Johannesburg",
+          "description": "Complete new roof installation for residential and commercial properties in Johannesburg including IBR, corrugated and tile roofing"
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Roof Repairs",
-          "description": "Roof leak repairs and maintenance"
+          "name": "Roof Repairs Johannesburg",
+          "description": "Professional roof leak repairs, ridge cap replacement and storm damage repairs across Johannesburg and Gauteng"
         }
       },
       {
@@ -433,7 +433,39 @@ function getServiceFeatures(serviceSlug: string) {
         "itemOffered": {
           "@type": "Service",
           "name": "Roof Replacement",
-          "description": "Complete roof replacement"
+          "description": "Full roof replacement and reroofing services for aging or damaged roofs in Johannesburg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Roof Painting",
+          "description": "Roof painting and coating for IBR, corrugated and tile roofs to extend lifespan and improve appearance"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "IBR & Corrugated Roofing",
+          "description": "IBR and corrugated metal roof sheeting installation and repair for residential and commercial properties"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tile Roofing",
+          "description": "Concrete and clay tile roof installation, repairs and re-tiling services in Johannesburg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Roof Truss Installation",
+          "description": "Timber and steel roof truss fabrication and installation for new builds and extensions in Gauteng"
         }
       }
     ],
