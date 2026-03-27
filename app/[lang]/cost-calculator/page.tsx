@@ -1,5 +1,5 @@
 import React from 'react'
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 import { Locale } from '@/i18n.config'
 import { getDictionary } from '@/lib/dictionaries'
 import Breadcrumb from '@/components/breadcrumb'
@@ -11,10 +11,29 @@ interface CostCalculatorPageProps {
   params: { lang: Locale }
 }
 
-export const metadata: Metadata = {
-  title: 'Cost Calculator - Sinqobile Construction | Instant Construction Estimates',
-  description: 'Get instant cost estimates for your construction project in Gauteng. Free online calculator for building, renovation, roofing, paving, and more. Accurate pricing for Johannesburg and surrounding areas.',
-  keywords: 'construction cost calculator, building estimate, renovation cost, Gauteng construction prices, Johannesburg builder quotes, instant estimate',
+// v2 Workflow: Research-driven metadata for Cost Calculator (unique lead magnet — no competitor has multi-service calculator)
+export async function generateMetadata({
+  params: { lang },
+}: CostCalculatorPageProps): Promise<Metadata> {
+  const titles: Record<string, string> = {
+    en: 'Free Construction Cost Calculator Johannesburg | Sinqobile Construction',
+    af: 'Gratis Boukostekalkulator Johannesburg | Sinqobile Construction',
+    zu: 'Isibali Sezindleko Zokwakha eGoli | Sinqobile Construction',
+    st: 'Setshebelisoa sa Litjeho tsa Kaho | Sinqobile Construction',
+  }
+  const descriptions: Record<string, string> = {
+    en: 'Get instant construction cost estimates for Johannesburg & Gauteng. Free calculator for building, renovation, roofing, paving & more — based on 500+ completed projects. NHBRC registered.',
+    af: 'Kry onmiddellike boukosteramings vir Johannesburg & Gauteng. Gratis kalkulator vir bou, renovasie, dakwerk, plaveisel & meer — gebaseer op 500+ projekte. NHBRC geregistreer.',
+    zu: 'Thola izindleko zokwakha ngokushesha eGoli neGauteng. Isibali samahhala sokwakha, ukuvuselela, uphahla nokunye — ngamaphrojekthi angu-500+.',
+    st: 'Fumana litjeho tsa kaho kapele Johannesburg le Gauteng. Setshebelisoa sa mahala sa kaho, ntjhafatso, marulelo le tse ling — mesebetsi e 500+.',
+  }
+  return {
+    title: titles[lang] || titles.en,
+    description: descriptions[lang] || descriptions.en,
+    alternates: {
+      canonical: `/${lang}/cost-calculator`,
+    },
+  }
 }
 
 export default async function CostCalculatorPage({ params: { lang } }: CostCalculatorPageProps) {
@@ -26,8 +45,29 @@ export default async function CostCalculatorPage({ params: { lang } }: CostCalcu
     return <div className="pt-20 p-8 text-center">Loading translations...</div>
   }
 
+  // WebApplication schema — v2 research: no competitor has this for a calculator page
+  const webAppSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Sinqobile Construction Cost Calculator',
+    description: 'Free interactive construction cost calculator for building, renovation, roofing, paving and more in Johannesburg & Gauteng, South Africa.',
+    url: `https://www.sinqobileconstruction.co.za/${lang}/cost-calculator`,
+    applicationCategory: 'UtilityApplication',
+    operatingSystem: 'All',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'ZAR' },
+    provider: {
+      '@type': 'LocalBusiness',
+      name: 'Sinqobile Construction',
+      address: { '@type': 'PostalAddress', addressLocality: 'Johannesburg', addressRegion: 'Gauteng', addressCountry: 'ZA' },
+    },
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }}
+      />
       <Breadcrumb
         items={[
           { label: dict.navigation.calculator, href: `/${lang}/cost-calculator` }
