@@ -61,8 +61,8 @@ const locationData: Record<string, {
   },
   'sandton': {
     name: 'Sandton',
-    description: 'Premium construction and renovation services in Sandton. Specializing in high-end residential and commercial projects across Sandton\'s prestigious suburbs. Sinqobile Construction delivers exceptional quality for Sandton\'s discerning property owners.',
-    suburbs: ['Morningside', 'Sandhurst', 'Bryanston', 'Fourways', 'Sunninghill', 'Rivonia', 'Woodmead', 'Hyde Park'],
+    description: 'Premium construction and renovation services in Sandton — Africa\'s richest square mile. Specializing in high-end residential and commercial projects across Sandton\'s prestigious suburbs including Sandhurst, Morningside, and Hyde Park. Sinqobile Construction delivers exceptional quality for Sandton\'s discerning property owners, with 120+ completed projects and NHBRC registration.',
+    suburbs: ['Morningside', 'Sandhurst', 'Bryanston', 'Sunninghill', 'Rivonia', 'Woodmead', 'Hyde Park', 'Sandown', 'Illovo', 'Parkmore', 'Atholl', 'Wendywood'],
     projects: 120,
     rating: 4.9,
     highlights: [
@@ -226,8 +226,8 @@ const areaSEO: Record<string, { title: string; description: string }> = {
     description: 'Trusted builders in Johannesburg. NHBRC registered, 150+ projects, 4.9★ rated. Building, renovations, paving, plumbing & more across all JHB suburbs. Free quotes — +27 82 868 8396',
   },
   'sandton': {
-    title: 'Construction Services Sandton | Builders & Contractors - Sinqobile',
-    description: 'Premium construction & renovation services in Sandton. 120+ projects across Morningside, Sandhurst, Bryanston & more. 4.9★ rated. Free quotes — +27 82 868 8396',
+    title: 'Builders in Sandton | Construction & Renovation - Sinqobile',
+    description: 'Premium builders in Sandton. NHBRC registered, 120+ projects, 4.9★ rated. Luxury renovations, extensions & construction across Morningside, Sandhurst, Hyde Park & more. Free quotes — +27 82 868 8396',
   },
   'pretoria': {
     title: 'Building Contractors Pretoria | Construction Services - Sinqobile',
