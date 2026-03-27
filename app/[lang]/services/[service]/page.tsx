@@ -64,8 +64,9 @@ const serviceSEO: Record<string, { title: string; description: string; h1?: stri
     h1: 'Tiling Contractors in Johannesburg',
   },
   'extensions': {
-    title: 'Home Extensions Johannesburg | Room Additions Gauteng',
-    description: 'Professional home extensions in Johannesburg. Room additions, second storey extensions & garage conversions across Gauteng. Free quotes — +27 82 868 8396',
+    title: 'Home Extensions Johannesburg | Room Additions & Second Storey Builders Gauteng',
+    description: 'NHBRC registered home extension builders in Johannesburg. Room additions, second storey extensions, granny flats & garage conversions across Gauteng. 15+ years, 500+ projects, 4.9★. Free quotes — +27 82 868 8396',
+    h1: 'Home Extension Builders in Johannesburg',
   },
   'fencing': {
     title: 'Fencing Contractors Johannesburg | Security Fencing Gauteng',

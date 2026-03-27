@@ -665,6 +665,56 @@ function getServiceFeatures(serviceSlug: string) {
         }
       }
     ]
+    'extensions': [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Room Additions Johannesburg",
+          "description": "Extra bedroom, bathroom, kitchen or living room additions to existing homes in Johannesburg — NHBRC registered, council-approved plans included"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Second Storey Extensions Johannesburg",
+          "description": "Add a full second floor to your single-storey home in Johannesburg with structural engineering, foundation assessment and NHBRC compliance"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Granny Flat Construction Johannesburg",
+          "description": "Self-contained granny flat building in Johannesburg — separate entrance, kitchen, bathroom and bedroom with full council approval"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Garage Conversions Johannesburg",
+          "description": "Convert your garage into a liveable room, home office or rental unit in Johannesburg — insulation, flooring, plumbing and electrical included"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Kitchen Extensions Johannesburg",
+          "description": "Extend your kitchen with open-plan living spaces, additional cabinetry and modern finishes across Johannesburg and Gauteng"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Home Office Extensions",
+          "description": "Purpose-built home office extensions with insulation, electrical points, data cabling and separate entrance options for Gauteng homeowners"
+        }
+      }
+    ]
   }
 
   return features[serviceSlug] || []

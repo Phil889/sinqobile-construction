@@ -83,7 +83,7 @@ export const enhancedServices: ServiceCategory[] = [
     icon: Plus,
     imageCount: 5,
     featured: false,
-    seoKeywords: ['home extensions', 'property extensions', 'building additions', 'house extensions']
+    seoKeywords: ['home extensions johannesburg', 'house extension cost south africa', 'building extensions johannesburg', 'room additions johannesburg', 'second storey extension johannesburg', 'granny flat builders johannesburg', 'garage conversion johannesburg', 'home extension builders gauteng']
   },
   {
     slug: 'fencing',
