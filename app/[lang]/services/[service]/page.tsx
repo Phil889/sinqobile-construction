@@ -70,35 +70,43 @@ const serviceSEO: Record<string, { title: string; description: string; h1?: stri
   },
   'fencing': {
     title: 'Fencing Contractors Johannesburg | Security Fencing Gauteng',
-    description: 'Professional fencing installation in Johannesburg. Security fencing, boundary walls & palisade fencing across Gauteng. Free quotes — +27 82 868 8396',
+    description: 'Professional fencing installation in Johannesburg. Security fencing, boundary walls & palisade fencing across Gauteng. NHBRC registered. Free quotes — +27 82 868 8396',
+    h1: 'Fencing Contractors in Johannesburg',
   },
   'electrical': {
     title: 'Electrician Johannesburg | Electrical Contractors Gauteng',
-    description: 'Licensed electrician in Johannesburg. Electrical installations, repairs & compliance certificates across Gauteng. Free quotes — +27 82 868 8396',
+    description: 'Licensed electrician in Johannesburg. Electrical installations, repairs & compliance certificates across Gauteng. NHBRC registered. Free quotes — +27 82 868 8396',
+    h1: 'Licensed Electrician in Johannesburg',
   },
   'flooring': {
     title: 'Flooring Contractors Johannesburg | Floor Installation Gauteng',
-    description: 'Professional flooring installation in Johannesburg. Laminate, vinyl, wooden & tile flooring across Gauteng. Free quotes — +27 82 868 8396',
+    description: 'Professional flooring installation in Johannesburg. Laminate, vinyl, wooden & tile flooring across Gauteng. NHBRC registered. Free quotes — +27 82 868 8396',
+    h1: 'Flooring Contractors in Johannesburg',
   },
   'landscaping': {
     title: 'Landscaping Services Johannesburg | Garden Design Gauteng',
-    description: 'Professional landscaping services in Johannesburg. Garden design, irrigation & outdoor living spaces across Gauteng. Free quotes — +27 82 868 8396',
+    description: 'Professional landscaping services in Johannesburg. Garden design, irrigation & outdoor living spaces across Gauteng. NHBRC registered. Free quotes — +27 82 868 8396',
+    h1: 'Landscaping Services in Johannesburg',
   },
   'brickwork': {
-    title: 'Brickwork Contractors Johannesburg | Bricklaying Gauteng',
-    description: 'Expert brickwork & bricklaying in Johannesburg. Boundary walls, feature walls & structural brickwork across Gauteng. Free quotes — +27 82 868 8396',
+    title: 'Bricklayer Johannesburg | Brickwork & Masonry Contractors Gauteng',
+    description: 'Expert brickwork & bricklaying in Johannesburg. Boundary walls, face brick, retaining walls & masonry across Gauteng. NHBRC registered. Free quotes — +27 82 868 8396',
+    h1: 'Brickwork & Masonry Contractors in Johannesburg',
   },
   'maintenance': {
     title: 'Property Maintenance Johannesburg | Building Maintenance Gauteng',
-    description: 'Comprehensive property maintenance services in Johannesburg. Residential & commercial maintenance across Gauteng. Free quotes — +27 82 868 8396',
+    description: 'Comprehensive property maintenance services in Johannesburg. Residential & commercial maintenance across Gauteng. NHBRC registered. Free quotes — +27 82 868 8396',
+    h1: 'Property Maintenance Services in Johannesburg',
   },
   'repairs': {
     title: 'Home Repairs Johannesburg | Emergency Repair Services Gauteng',
-    description: 'Fast home repair services in Johannesburg. Emergency repairs, structural fixes & general maintenance across Gauteng. 24/7 available — +27 82 868 8396',
+    description: 'Fast home repair services in Johannesburg. Emergency repairs, structural fixes & general maintenance across Gauteng. NHBRC registered. 24/7 available — +27 82 868 8396',
+    h1: 'Home Repair Services in Johannesburg',
   },
   'installation': {
     title: 'Installation Services Johannesburg | Professional Installations Gauteng',
-    description: 'Professional installation services in Johannesburg. Fixtures, fittings & home installations across Gauteng. Quality workmanship. Free quotes — +27 82 868 8396',
+    description: 'Professional installation services in Johannesburg. Doors, windows, ceilings, geysers & kitchen installations across Gauteng. NHBRC registered. Free quotes — +27 82 868 8396',
+    h1: 'Professional Installation Services in Johannesburg',
   },
 }
 

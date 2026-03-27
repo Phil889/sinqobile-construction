@@ -92,7 +92,7 @@ export const enhancedServices: ServiceCategory[] = [
     icon: Shield,
     imageCount: 5,
     featured: false,
-    seoKeywords: ['fencing', 'security fencing', 'boundary walls', 'gates']
+    seoKeywords: ['fencing contractors johannesburg', 'palisade fencing johannesburg', 'security fencing sandton', 'boundary wall fencing fourways', 'electric fence installation gauteng', 'clearview fencing johannesburg']
   },
   {
     slug: 'flooring',
@@ -101,7 +101,7 @@ export const enhancedServices: ServiceCategory[] = [
     icon: Layers,
     imageCount: 5,
     featured: false,
-    seoKeywords: ['flooring', 'floor installation', 'floor repairs', 'floor refinishing']
+    seoKeywords: ['flooring contractors johannesburg', 'laminate flooring installation fourways', 'vinyl flooring sandton', 'tile installation johannesburg', 'wooden floor installation gauteng']
   },
   {
     slug: 'installation',
@@ -110,7 +110,7 @@ export const enhancedServices: ServiceCategory[] = [
     icon: Settings,
     imageCount: 5,
     featured: false,
-    seoKeywords: ['installation services', 'system installation', 'fixture installation']
+    seoKeywords: ['installation services johannesburg', 'home installations fourways', 'fixture installation sandton', 'door and window installation johannesburg', 'ceiling installation fourways', 'geyser installation sandton']
   },
   {
     slug: 'renovation',
@@ -128,7 +128,7 @@ export const enhancedServices: ServiceCategory[] = [
     icon: RepairTool,
     imageCount: 5,
     featured: false,
-    seoKeywords: ['repairs', 'emergency repairs', 'maintenance repairs', 'construction repairs']
+    seoKeywords: ['home repairs johannesburg', 'emergency repair services sandton', 'structural repairs fourways', 'building repairs johannesburg', 'handyman repairs gauteng']
   },
   {
     slug: 'roofing',
@@ -146,7 +146,7 @@ export const enhancedServices: ServiceCategory[] = [
     icon: Square,
     imageCount: 4,
     featured: false,
-    seoKeywords: ['brickwork', 'bricklaying', 'masonry', 'brick walls']
+    seoKeywords: ['brickwork contractors johannesburg', 'bricklayer johannesburg', 'masonry contractor sandton', 'face brick construction fourways', 'boundary wall construction johannesburg', 'retaining wall construction sandton']
   },
   {
     slug: 'painting',
@@ -173,7 +173,7 @@ export const enhancedServices: ServiceCategory[] = [
     icon: Settings,
     imageCount: 4,
     featured: false,
-    seoKeywords: ['maintenance', 'property maintenance', 'building maintenance', 'upkeep']
+    seoKeywords: ['property maintenance johannesburg', 'building maintenance sandton', 'home maintenance fourways', 'facility maintenance gauteng', 'commercial property maintenance johannesburg']
   },
   {
     slug: 'landscaping',
@@ -182,7 +182,7 @@ export const enhancedServices: ServiceCategory[] = [
     icon: TreePine,
     imageCount: 3,
     featured: false,
-    seoKeywords: ['landscaping', 'garden design', 'outdoor landscaping', 'ground preparation']
+    seoKeywords: ['landscaping johannesburg', 'garden design fourways', 'landscaping company sandton', 'irrigation installation johannesburg', 'outdoor living spaces gauteng', 'paving and landscaping johannesburg']
   },
   {
     slug: 'tiling',
@@ -200,7 +200,7 @@ export const enhancedServices: ServiceCategory[] = [
     icon: Zap,
     imageCount: 2,
     featured: false,
-    seoKeywords: ['electrical', 'electrical installation', 'electrical repairs', 'wiring']
+    seoKeywords: ['electrician johannesburg', 'electrical contractors fourways', 'electrical installations sandton', 'electrical compliance certificate johannesburg', 'emergency electrician gauteng', 'COC certificate electrician johannesburg']
   }
 ]
 
