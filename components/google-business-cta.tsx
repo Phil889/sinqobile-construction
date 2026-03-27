@@ -14,7 +14,7 @@ export default function GoogleBusinessCTA({ dict }: GoogleBusinessCTAProps) {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="https://www.google.com/maps/search/Sinqobile+Construction+Bryanston+Johannesburg"
+            href="https://www.google.com/maps?cid=12743093499437970359"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-secondary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
@@ -22,7 +22,7 @@ export default function GoogleBusinessCTA({ dict }: GoogleBusinessCTAProps) {
             {dict.googleBusinessCTA.leaveReview}
           </a>
           <a
-            href="https://www.google.com/maps/search/Sinqobile+Construction+Gauteng"
+            href="https://www.google.com/maps?cid=12743093499437970359"
             target="_blank"
             rel="noopener noreferrer"
             className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-secondary transition-colors"

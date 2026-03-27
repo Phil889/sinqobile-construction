@@ -62,7 +62,7 @@ export default function GoogleReviewsWidget({ dict }: GoogleReviewsWidgetProps) 
               </div>
             </div>
             <a
-              href="https://www.google.com/maps/search/Sinqobile+Construction+Bryanston+Johannesburg"
+              href="https://www.google.com/maps?cid=12743093499437970359"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-[#FFD600] text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-[#FFD600]/90 transition-colors duration-300 shadow-md hover:shadow-lg"

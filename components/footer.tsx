@@ -161,7 +161,7 @@ const Footer = ({ dict, lang }: FooterProps) => {
                 <MapPin size={16} className="text-primary mt-1 flex-shrink-0" />
                 <div>
                   <a
-                    href={`https://www.google.com/maps?q=${BUSINESS_INFO.coordinates.latitude},${BUSINESS_INFO.coordinates.longitude}`}
+                    href="https://www.google.com/maps?cid=12743093499437970359"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-gray-300 transition-colors inline-flex items-center gap-1"

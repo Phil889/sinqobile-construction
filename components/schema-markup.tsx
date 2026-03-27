@@ -26,8 +26,9 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
             availableLanguage: ['English', 'Afrikaans', 'Zulu', 'Sotho']
           },
           sameAs: [
-            'https://facebook.com/sinqobileconstruction',
-            'https://instagram.com/sinqobileconstruction'
+            'https://www.google.com/maps?cid=12743093499437970359',
+            'https://www.facebook.com/sinqobileconstruction',
+            'https://www.instagram.com/sinqobileconstruction'
           ]
         }
 

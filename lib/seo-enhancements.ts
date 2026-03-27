@@ -124,6 +124,7 @@ export function generateLocalBusinessSchema(lang: Locale): StructuredData {
     image: 'https://www.sinqobileconstruction.co.za/og-image.jpg',
     logo: 'https://www.sinqobileconstruction.co.za/logo.svg',
     sameAs: [
+      'https://www.google.com/maps?cid=12743093499437970359',
       'https://www.facebook.com/sinqobileconstruction',
       'https://www.instagram.com/sinqobileconstruction',
       'https://www.linkedin.com/company/sinqobileconstruction'

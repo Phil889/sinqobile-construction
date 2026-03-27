@@ -66,6 +66,7 @@ export default function LocalBusinessSchema({
       }
     ],
     "sameAs": [
+      "https://www.google.com/maps?cid=12743093499437970359",
       "https://www.facebook.com/sinqobileconstruction",
       "https://www.instagram.com/sinqobileconstruction"
     ],
