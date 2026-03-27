@@ -95,16 +95,16 @@ export function generateLocalBusinessSchema(lang: Locale): StructuredData {
     email: 'sinqobileconstruction@gmail.com',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '47 Bryanston Drive',
-      addressLocality: 'Bryanston',
+      streetAddress: 'The William 1, Broadacres Drive',
+      addressLocality: 'Fourways',
       addressRegion: 'Gauteng',
-      postalCode: '2021',
+      postalCode: '2191',
       addressCountry: 'ZA'
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: -26.0667,
-      longitude: 28.0167
+      latitude: -26.0274,
+      longitude: 28.0106
     },
     openingHoursSpecification: [
       {
