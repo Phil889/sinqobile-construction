@@ -29,6 +29,8 @@ const locationData: Record<string, {
     author: string
     location: string
   }
+  localInfo?: string
+  faqs?: { question: string; answer: string }[]
 }> = {
   'johannesburg': {
     name: 'Johannesburg',
@@ -57,7 +59,13 @@ const locationData: Record<string, {
       text: 'Sinqobile Construction transformed our Johannesburg home with a complete renovation. Their attention to detail and professionalism exceeded our expectations. Highly recommend for any construction work in Johannesburg!',
       author: 'Sarah Johnson',
       location: 'Sandton, Johannesburg'
-    }
+    },
+    localInfo: 'Johannesburg is South Africa\'s largest city and economic hub, with a diverse property market ranging from historic homes in Parktown and Houghton to modern developments in Sandton and Bryanston. Building plans in Johannesburg are submitted to the City of Johannesburg Metropolitan Municipality, with approval times typically 4–12 weeks. The city\'s clay soils require careful foundation design — most new homes use raft foundations. Johannesburg\'s summer thunderstorms (October–March) demand quality roofing and waterproofing. Construction costs in Johannesburg range from R10,000–R20,000 per square metre for residential builds in 2026.',
+    faqs: [
+      { question: 'How much does it cost to build in Johannesburg in 2026?', answer: 'Residential construction in Johannesburg costs R10,000–R20,000 per square metre in 2026. A standard 3-bedroom home (120–150 m²) costs approximately R1.2M–R2.5M. Renovation costs range from R7,000–R20,000/m². These prices vary by suburb — Sandton and northern suburbs tend to be 10–15% higher due to premium finishes and material expectations. We provide free, itemised quotes for any project in Johannesburg.' },
+      { question: 'Do I need building plans approved in Johannesburg?', answer: 'Yes. All structural work, new builds, extensions, and major renovations in Johannesburg require building plans approved by the City of Johannesburg Metropolitan Municipality. Plans must be drawn by a SACAP-registered architect. Approval takes 4–12 weeks. Building without approved plans is illegal — the structure cannot be insured, bonded, or sold. We handle the full plans process from architect engagement to council submission.' },
+      { question: 'Which Johannesburg suburbs do you serve?', answer: 'We serve all Johannesburg suburbs including Sandton, Bryanston, Fourways, Randburg, Midrand, Rosebank, Melville, Parktown, Houghton, Northcliff, Linden, Bedfordview, and surrounding areas. Our head office is in Fourways, giving us fast access across the northern suburbs. We also cover the East Rand, West Rand, and southern suburbs.' },
+    ],
   },
   'sandton': {
     name: 'Sandton',
@@ -86,7 +94,13 @@ const locationData: Record<string, {
       text: 'Outstanding service from Sinqobile Construction on our Sandton property. They understood our vision for a modern renovation and delivered beyond expectations. Professional, reliable, and excellent quality.',
       author: 'Michael Chen',
       location: 'Morningside, Sandton'
-    }
+    },
+    localInfo: 'Sandton is Africa\'s financial capital and one of the most affluent areas in South Africa. Properties here demand premium finishes — imported tiles, stone countertops, designer fixtures, and smart home integration. Renovation costs in Sandton run 10–15% above the Gauteng average. The area is also home to exclusive estates (Sandhurst, Hyde Park, Morningside) with strict architectural guidelines. We have experience working within estate design requirements and body corporate approvals. Building plan submissions go through the City of Johannesburg (Sandton falls under CoJ).',
+    faqs: [
+      { question: 'Why are construction costs higher in Sandton?', answer: 'Sandton construction costs are 10–15% above the Gauteng average because property owners expect premium finishes (imported marble, Caesarstone countertops, underfloor heating), homes are larger (300–600 m²), and estates often require specific architects and materials. Skilled contractors in the area charge higher rates due to demand. Our Fourways base gives us competitive access to Sandton without the premium markup of Sandton-only contractors.' },
+      { question: 'Do you work in Sandton security estates?', answer: 'Yes. We have completed projects in Sandhurst, Morningside, Hyde Park, Bryanston, and other Sandton estates. We are familiar with estate access procedures, architectural guidelines, and body corporate approval requirements. We coordinate with estate managers to ensure compliance with all building rules.' },
+      { question: 'What construction services are most popular in Sandton?', answer: 'The most requested services in Sandton are luxury home renovations (kitchen and bathroom upgrades with premium finishes), home extensions and second-storey additions, swimming pool surrounds and outdoor entertainment areas, and security upgrades (boundary walls, electric fencing, gate automation). Smart home integration (automated lighting, HVAC, security) is increasingly popular in Sandton properties.' },
+    ],
   },
   'pretoria': {
     name: 'Pretoria',
@@ -115,7 +129,13 @@ const locationData: Record<string, {
       text: 'We hired Sinqobile Construction for a major renovation in Pretoria East. They were professional, on time, and the quality of work was excellent. Would definitely use them again for future projects.',
       author: 'Johan van der Merwe',
       location: 'Garsfontein, Pretoria'
-    }
+    },
+    localInfo: 'Pretoria (Tshwane) is South Africa\'s administrative capital, with a property market ranging from heritage homes in Arcadia and Brooklyn to modern estates in Mooikloof and Silverlakes. Building plans are submitted to the City of Tshwane Metropolitan Municipality. Pretoria construction costs tend to be 5–10% lower than Johannesburg. The city\'s red soil (iron-rich clay) requires proper foundation design — raft foundations are standard for new builds. Pretoria experiences frost in winter (May–August), which affects construction scheduling for concrete work and plastering.',
+    faqs: [
+      { question: 'How much does building cost in Pretoria in 2026?', answer: 'Construction in Pretoria costs R9,000–R18,000 per square metre in 2026 — approximately 5–10% lower than Johannesburg. A standard 3-bedroom home costs R1.0M–R2.2M. Renovation costs range from R6,000–R18,000/m². Premium builds in estates like Waterkloof and Mooikloof are at the higher end. We provide free quotes for projects across Pretoria and Centurion.' },
+      { question: 'Do Pretoria building plans go through a different council than Johannesburg?', answer: 'Yes. Pretoria building plans are submitted to the City of Tshwane Metropolitan Municipality, not the City of Johannesburg. The process is similar (SACAP architect, plan submission, 4–12 week approval) but the office and requirements differ. We handle plans submissions to both Tshwane and CoJ and know the requirements for each.' },
+      { question: 'Which Pretoria areas do you cover?', answer: 'We serve all Pretoria suburbs: Centurion, Hatfield, Brooklyn, Menlyn, Waterkloof, Lynnwood, Garsfontein, Faerie Glen, Moreleta Park, Silverlakes, Mooikloof, Montana, Sinoville, Arcadia, Newlands, and surrounding areas. Our projects range from Pretoria East to Pretoria North and West.' },
+    ],
   },
   'centurion': {
     name: 'Centurion',
@@ -135,7 +155,13 @@ const locationData: Record<string, {
       text: 'Excellent building work on our Centurion home extension. The team was professional and completed the project on schedule. Very happy with the quality.',
       author: 'Pieter Joubert',
       location: 'Eldoraigne, Centurion'
-    }
+    },
+    localInfo: 'Centurion is a fast-growing residential hub between Johannesburg and Pretoria, popular with families and young professionals. The area offers a mix of established suburbs (Eldoraigne, Lyttelton) and modern estates (Amberfield, The Reeds). Building plans are submitted to the City of Tshwane. Centurion construction costs are similar to Pretoria — R9,000–R16,000/m² for residential builds. The area\'s proximity to the N1 and N14 makes it accessible from both Johannesburg and Pretoria.',
+    faqs: [
+      { question: 'How much does a home renovation cost in Centurion?', answer: 'Home renovation in Centurion costs R6,000–R18,000 per square metre in 2026. Kitchen renovations run R50,000–R250,000, bathroom renovations R15,000–R80,000. Centurion prices are generally 5–10% lower than Johannesburg. We provide free on-site assessments and itemised quotes for all renovation projects in Centurion.' },
+      { question: 'Do you build granny flats in Centurion?', answer: 'Yes. Granny flats are very popular in Centurion due to rental demand from students and young professionals. A 40 m² granny flat costs R350,000–R700,000 and can generate R5,000–R10,000/month rental income. Council-approved plans are required through the City of Tshwane. We handle the full process from design to handover.' },
+      { question: 'Which Centurion suburbs do you serve?', answer: 'We serve all Centurion suburbs: Eldoraigne, Wierdapark, Lyttelton, The Reeds, Hennopspark, Zwartkop, Clubview, Rooihuiskraal, Irene, Doringkloof, Amberfield, Pierre van Ryneveld, and surrounding areas.' },
+    ],
   },
   'midrand': {
     name: 'Midrand',
@@ -155,7 +181,13 @@ const locationData: Record<string, {
       text: 'Sinqobile Construction did a fantastic job on our Midrand property renovation. Professional service from start to finish.',
       author: 'Nomsa Dlamini',
       location: 'Waterfall, Midrand'
-    }
+    },
+    localInfo: 'Midrand is the strategic corridor between Johannesburg and Pretoria, home to Waterfall City, Kyalami, and numerous residential estates. The area has experienced rapid development with modern estates like Waterfall, Sagewood, and Blue Hills attracting new builds and renovations. Building plans go through the City of Johannesburg (southern Midrand) or City of Tshwane (northern Midrand) — we know which municipality your property falls under. Estate builds require compliance with homeowners\' association architectural guidelines.',
+    faqs: [
+      { question: 'Do you build in Midrand estates like Waterfall and Kyalami?', answer: 'Yes. We have completed projects in Waterfall, Kyalami, Beaulieu, Blue Hills, and other Midrand estates. We are familiar with estate architectural guidelines, building material requirements, and homeowners\' association approval processes. We coordinate with estate managers to ensure full compliance with all building rules before starting any work.' },
+      { question: 'Which council handles Midrand building plans?', answer: 'Midrand is split between two municipalities. Properties south of the old Midrand boundary (Halfway House, Carlswald, Vorna Valley) fall under the City of Johannesburg. Properties north (Noordwyk, parts of Kyalami) fall under the City of Tshwane. We determine which municipality your property falls under and submit plans to the correct council.' },
+      { question: 'How much does building cost in Midrand?', answer: 'Construction in Midrand costs R10,000–R18,000 per square metre in 2026. Estate builds tend to be at the higher end due to premium material and design requirements. Renovations cost R7,000–R16,000/m². A granny flat (40 m²) costs R350,000–R650,000. We provide free quotes for all Midrand projects.' },
+    ],
   },
   'randburg': {
     name: 'Randburg',
@@ -175,7 +207,13 @@ const locationData: Record<string, {
       text: 'Great plastering and painting work on our Randburg home. The team was neat, professional, and delivered on time. Highly recommend.',
       author: 'Lisa van Niekerk',
       location: 'Linden, Randburg'
-    }
+    },
+    localInfo: 'Randburg is a well-established residential area in Johannesburg\'s northern suburbs, known for its mix of older homes with renovation potential and modern developments. Suburbs like Northcliff and Linden have character homes from the 1960s–80s that benefit from modernisation — open-plan conversions, kitchen and bathroom upgrades, and energy-efficient improvements. Building plans go through the City of Johannesburg. Randburg offers good value compared to neighbouring Sandton, making it popular with homeowners looking to renovate and add value.',
+    faqs: [
+      { question: 'What renovations are most popular in Randburg?', answer: 'The most requested renovations in Randburg are kitchen modernisation (opening up enclosed kitchens to living areas), bathroom upgrades, painting (interior and exterior), and paving/driveway replacement. Randburg has many older homes from the 1960s–80s that benefit from these upgrades. Open-plan conversions are particularly popular as they modernise the layout and add property value.' },
+      { question: 'How much does renovation cost in Randburg?', answer: 'Renovation in Randburg costs R7,000–R18,000 per square metre in 2026 — slightly below Sandton rates. Kitchen renovations run R50,000–R250,000, bathroom renovations R15,000–R80,000. Full house repaints cost R15,000–R40,000. Randburg offers good value for renovation investment as property prices are rising but still below Sandton and Bryanston.' },
+      { question: 'Do you serve Northcliff and Linden?', answer: 'Yes. Northcliff, Linden, Ferndale, Fontainebleau, Blairgowrie, Bordeaux, Robin Hills, Bromhof, Northriding, Randpark Ridge, Fairland, and Cresta are all within our service area. Our Fourways base is a short drive from all Randburg suburbs.' },
+    ],
   },
   'fourways': {
     name: 'Fourways',
@@ -195,7 +233,13 @@ const locationData: Record<string, {
       text: 'Sinqobile Construction built a beautiful patio and braai area at our Fourways home. Excellent workmanship and great communication throughout.',
       author: 'Andrew Mitchell',
       location: 'Lonehill, Fourways'
-    }
+    },
+    localInfo: 'Fourways is one of Johannesburg\'s fastest-growing suburbs, home to Fourways Mall, numerous residential estates, and a mix of modern cluster developments and freestanding homes. Our head office is based in Fourways (Broadacres Drive), making this our home turf. We have deep knowledge of local estates — Dainfern, Lonehill, Cedar Lakes, Chartwell — and their specific architectural requirements. Building plans go through the City of Johannesburg. Fourways construction costs are comparable to Sandton at R10,000–R20,000/m².',
+    faqs: [
+      { question: 'Is Sinqobile Construction based in Fourways?', answer: 'Yes. Our head office is at The William 1, Broadacres Drive, Fourways, Sandton 2191. This means we have the fastest response times for Fourways projects and deep knowledge of local estates, suburbs, and council requirements. We have completed 65+ projects in the Fourways area alone.' },
+      { question: 'Do you work in Dainfern and other Fourways estates?', answer: 'Yes. We have completed projects in Dainfern, Lonehill, Cedar Lakes, Chartwell, Pineslopes, and other Fourways estates. We are familiar with estate architectural guidelines and homeowners\' association requirements. We coordinate with estate managers to ensure all building rules are met before starting work.' },
+      { question: 'What construction work is common in Fourways?', answer: 'The most requested services in Fourways are home extensions (extra bedrooms, granny flats), patio and braai area construction, boundary wall and fencing upgrades, kitchen and bathroom renovations, and painting. Estate properties often require exterior upgrades to comply with estate standards. New cluster developments sometimes need post-handover modifications and improvements.' },
+    ],
   },
   'roodepoort': {
     name: 'Roodepoort',
@@ -215,7 +259,13 @@ const locationData: Record<string, {
       text: 'Very impressed with the renovation work Sinqobile Construction did on our Roodepoort property. Professional, affordable, and high quality.',
       author: 'Thabo Molefe',
       location: 'Honeydew, Roodepoort'
-    }
+    },
+    localInfo: 'Roodepoort is a large residential area on Johannesburg\'s western edge, offering some of the most affordable property in the greater Johannesburg area. Suburbs like Honeydew, Ruimsig, and Weltevredenpark have seen significant development in recent years. The area\'s lower property prices make renovations and extensions an excellent investment — adding a granny flat or extra bedroom delivers strong ROI. Building plans go through the City of Johannesburg. Roodepoort construction costs are among the most competitive in Gauteng at R8,000–R16,000/m².',
+    faqs: [
+      { question: 'How much does building cost in Roodepoort?', answer: 'Construction in Roodepoort costs R8,000–R16,000 per square metre in 2026 — among the most competitive rates in Gauteng. Renovations cost R6,000–R15,000/m². The lower property values compared to Sandton and Fourways make Roodepoort an excellent area for renovation investment, as upgrades deliver strong returns relative to property price.' },
+      { question: 'Is it worth renovating in Roodepoort?', answer: 'Yes. Roodepoort property prices are rising as more families and young professionals move to the area for affordability. A well-executed kitchen renovation (R50,000–R150,000) or granny flat addition (R300,000–R600,000) can significantly increase your property value and generate rental income. The lower base construction costs in Roodepoort mean better ROI compared to premium suburbs.' },
+      { question: 'Which Roodepoort suburbs do you serve?', answer: 'We serve all Roodepoort suburbs: Florida, Honeydew, Ruimsig, Wilgeheuwel, Constantia Kloof, Little Falls, Horison, Weltevredenpark, Strubens Valley, Radiokop, and surrounding areas. Our Fourways base is a 15–20 minute drive from most Roodepoort suburbs.' },
+    ],
   }
 }
 
@@ -430,6 +480,66 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
             </div>
           </div>
         </section>
+
+        {/* Local Info */}
+        {location.localInfo && (
+          <section className="py-20 bg-white">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary text-center mb-8">
+                  Building & Construction in {location.name}
+                </h2>
+                <p className="text-secondary text-lg leading-relaxed">
+                  {location.localInfo}
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* FAQ Section */}
+        {location.faqs && location.faqs.length > 0 && (
+          <section className="py-20 bg-lightBackground">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary text-center mb-10">
+                  Construction FAQ — {location.name}
+                </h2>
+                <div className="space-y-4">
+                  {location.faqs.map((faq, i) => (
+                    <details key={i} className="bg-white rounded-lg shadow-md overflow-hidden group">
+                      <summary className="px-6 py-4 cursor-pointer flex items-center justify-between hover:bg-gray-50 transition-colors list-none [&::-webkit-details-marker]:hidden">
+                        <h3 className="font-semibold text-secondary pr-4">{faq.question}</h3>
+                        <svg className="text-primary flex-shrink-0 w-6 h-6 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </summary>
+                      <div className="px-6 pb-4">
+                        <div className="border-t border-gray-200 pt-4">
+                          <p className="text-secondary leading-relaxed">{faq.answer}</p>
+                        </div>
+                      </div>
+                    </details>
+                  ))}
+                </div>
+                <script
+                  type="application/ld+json"
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                      '@context': 'https://schema.org',
+                      '@type': 'FAQPage',
+                      mainEntity: location.faqs.map(faq => ({
+                        '@type': 'Question',
+                        name: faq.question,
+                        acceptedAnswer: { '@type': 'Answer', text: faq.answer }
+                      }))
+                    })
+                  }}
+                />
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Testimonial */}
         <section className="py-20 bg-primary text-white">
