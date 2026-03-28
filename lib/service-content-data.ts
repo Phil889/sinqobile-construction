@@ -206,6 +206,101 @@ export const serviceContentData: Record<string, ServiceContent> = {
       'Single-visit repairs — we carry common parts on our vehicles',
     ],
   },
+
+  'renovation': {
+    slug: 'renovation',
+    intro: `Sinqobile Construction is a specialist renovation contractor serving Johannesburg and the greater Gauteng region. Over 15 years we have completed 500+ renovation projects — from single-bathroom makeovers in Sandton to full-house remodels in Fourways and Midrand. Home renovation in Johannesburg costs between R7,000 and R20,000 per square metre in 2026, depending on the scope, finishes, and structural work involved. We manage every trade under one roof: demolition, structural modifications, plumbing, electrical, plastering, tiling, painting, and final finishes — all coordinated by a dedicated project manager. Our team works with SACAP-registered architects when structural plans are needed, and we handle council approvals so you don't have to navigate municipal red tape. Every renovation starts with a free, no-obligation site assessment and ends with a detailed walkthrough before handover.`,
+    subServices: [
+      {
+        name: 'Kitchen Renovations',
+        description: 'Complete kitchen remodels including demolition of existing layout, new cabinetry, countertops (granite, quartz, Caesarstone), plumbing relocation, electrical upgrades, tiling, and appliance installation. We design functional layouts that maximise storage and work-triangle efficiency. Kitchen renovations in Johannesburg cost R60,000–R300,000 depending on size and finishes.'
+      },
+      {
+        name: 'Bathroom Renovations',
+        description: 'Full bathroom upgrades from strip-out to completion: waterproofing, new plumbing rough-in, underfloor heating, wall and floor tiling, shower installation (frameless glass, walk-in, or standard), vanity units, and fixtures. Small bathrooms (under 5 m²) cost R15,000–R45,000, medium bathrooms (5–10 m²) cost R45,000–R90,000.'
+      },
+      {
+        name: 'Whole-House Renovations',
+        description: 'Complete home transformations including open-plan conversions, structural wall removal (with engineer sign-off), new room layouts, updated plumbing and electrical throughout, replastering, new flooring, and full interior/exterior painting. Ideal for older homes in established Johannesburg suburbs like Bryanston, Melville, and Parkhurst.'
+      },
+      {
+        name: 'Open-Plan Conversions',
+        description: 'Remove load-bearing or partition walls to create modern open-plan living spaces. All structural modifications are designed by a registered engineer and submitted for council approval. We install steel beams or lintels, make good surrounding finishes, and match existing flooring and paint so the conversion looks seamless.'
+      },
+      {
+        name: 'Garage & Outbuilding Conversions',
+        description: 'Convert unused garages into home offices, granny flats, entertainment rooms, or rental units. Includes insulation, electrical and plumbing rough-in, plastering, flooring, and finishing. Council-approved plans included where required.'
+      },
+    ],
+    pricingNote: 'Renovation costs in Johannesburg range from R7,000 to R20,000 per square metre in 2026. Kitchen and bathroom renovations cost more per square metre than living areas due to plumbing, tiling, and waterproofing requirements. Sandton and northern suburb renovations tend to be 10–15% higher than other Gauteng areas due to premium material expectations. All quotes are itemised and fixed-price.',
+    pricingTable: [
+      { item: 'Kitchen renovation (mid-range, 14 m²)', range: 'R60,000 – R190,000' },
+      { item: 'Kitchen renovation (high-end)', range: 'R190,000 – R300,000' },
+      { item: 'Bathroom renovation (small, under 5 m²)', range: 'R15,000 – R45,000' },
+      { item: 'Bathroom renovation (medium, 5–10 m²)', range: 'R45,000 – R90,000' },
+      { item: 'Full house renovation (per m²)', range: 'R7,000 – R20,000' },
+      { item: 'Open-plan conversion (wall removal + make-good)', range: 'R25,000 – R80,000' },
+      { item: 'Garage conversion to granny flat', range: 'R120,000 – R350,000' },
+      { item: 'Interior painting (per room, walls + ceiling)', range: 'R3,000 – R6,000' },
+    ],
+    process: [
+      {
+        step: '1',
+        title: 'Free Site Assessment',
+        description: 'We visit your home, discuss your vision, assess the existing structure, and identify any issues (damp, cracks, outdated wiring) that should be addressed during the renovation.'
+      },
+      {
+        step: '2',
+        title: 'Design & Plans',
+        description: 'For structural changes, we engage a SACAP architect to draw plans and submit to your municipality. For cosmetic renovations, we create a detailed scope of work with material specifications and 3D visualisations where helpful.'
+      },
+      {
+        step: '3',
+        title: 'Fixed-Price Quote',
+        description: 'You receive an itemised quote breaking down demolition, structural work, plumbing, electrical, tiling, painting, and materials. Payment milestones are agreed — typically 30% deposit, stage payments, and 10% on completion.'
+      },
+      {
+        step: '4',
+        title: 'Renovation',
+        description: 'A dedicated project manager coordinates all trades on a daily schedule. You receive weekly photo updates. We protect floors and furniture in occupied homes and manage dust and noise to minimise disruption.'
+      },
+      {
+        step: '5',
+        title: 'Walkthrough & Handover',
+        description: 'Final inspection with a detailed snag list. We address every item before handover and provide warranty documentation on workmanship and materials. Post-renovation cleaning is included.'
+      },
+    ],
+    faqs: [
+      {
+        question: 'How much does a home renovation cost in Johannesburg in 2026?',
+        answer: 'Home renovation in Johannesburg costs between R7,000 and R20,000 per square metre in 2026. A mid-range renovation of a 146 m² home totals approximately R1.0M–R1.9M. Kitchen renovations range from R60,000 to R300,000, and bathroom renovations from R15,000 to R90,000 depending on size and finishes. We provide free, itemised quotes so you know the exact cost before work begins — no hidden fees or surprise extras.'
+      },
+      {
+        question: 'How long does a full house renovation take?',
+        answer: 'A full house renovation typically takes 8–16 weeks depending on the scope of work. Kitchen-only renovations take 2–4 weeks, bathroom renovations 2–3 weeks, and open-plan conversions 3–6 weeks including structural sign-off. These timelines assume council-approved plans are in place — the plans approval process adds 4–12 weeks in Johannesburg. We provide a detailed project schedule with your quote and update you weekly on progress.'
+      },
+      {
+        question: 'Do I need building plans approved for a renovation?',
+        answer: 'You need council-approved plans for any structural changes — removing walls, adding rooms, changing the roofline, or altering plumbing and drainage layouts. Cosmetic renovations (new tiles, paint, fixtures, cabinetry) do not require plans. If you are unsure, our team will assess your project during the free site visit and advise on whether plans are needed. We handle the full plans process if required.'
+      },
+      {
+        question: 'Can I live in my house during the renovation?',
+        answer: 'Yes, in most cases you can stay in your home during renovation. We phase the work room by room and protect living areas with dust barriers and floor coverings. For full-house renovations involving structural work, plumbing, or electrical rewiring, we recommend relocating for 2–4 weeks during the most disruptive phase. We will advise on the best approach during your consultation.'
+      },
+      {
+        question: 'Why are Sandton renovation costs higher than other areas?',
+        answer: 'Renovation costs in Sandton are typically 10–15% higher than other Gauteng areas for three reasons: higher property values justify premium finishes (imported tiles, stone countertops, designer fixtures), larger homes require more materials and labour, and skilled contractors in the area charge higher rates due to demand. Our Fourways base gives us competitive access to Sandton projects without the premium markup of exclusive Sandton-only contractors.'
+      },
+    ],
+    whyChoose: [
+      'All trades under one roof — plumbing, electrical, tiling, painting, carpentry managed by one team',
+      'Fixed-price, itemised quotes — you approve every line item before work starts',
+      'Dedicated project manager from design through handover',
+      '500+ completed renovation projects across Gauteng over 15 years',
+      'We handle council plan submissions and architect coordination',
+      'Fully insured with comprehensive construction and liability cover',
+    ],
+  },
 }
 
 export function getServiceContent(slug: string): ServiceContent | undefined {
