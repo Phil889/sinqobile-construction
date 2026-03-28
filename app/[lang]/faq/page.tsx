@@ -29,6 +29,26 @@ export async function generateMetadata({
       : 'Fumana dikarabo tsa dipotso tsa kaho: ditjeo tsa kaho Johannesburg, ngodiso ea NHBRC, linako tsa morero le tse ding. Diquote tsa mahala.',
     alternates: {
       canonical: `/${lang}/faq`,
+      languages: {
+        'en': '/en/faq',
+        'af': '/af/faq',
+        'zu': '/zu/faq',
+        'st': '/st/faq',
+        'x-default': '/en/faq',
+      },
+    },
+    openGraph: {
+      title: 'Construction FAQ — Your Building Questions Answered',
+      description: 'Get answers to common construction questions: building costs in Johannesburg, NHBRC registration, project timelines, permits & more.',
+      url: `/${lang}/faq`,
+      siteName: 'Sinqobile Construction',
+      type: 'website',
+      images: [{
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'FAQ - Sinqobile Construction Johannesburg',
+      }],
     },
   }
 }

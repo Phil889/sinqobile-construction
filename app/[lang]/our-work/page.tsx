@@ -33,6 +33,38 @@ export async function generateMetadata({
       : 'Sheba mesebetsi ea kaho e 77+ e phethiloeng Johannesburg le Gauteng. Marulelo, ntjhafatso, katoloso le tse ling. Moahi ea NHBRC.',
     alternates: {
       canonical: `/${lang}/our-work`,
+      languages: {
+        'en': '/en/our-work',
+        'af': '/af/our-work',
+        'zu': '/zu/our-work',
+        'st': '/st/our-work',
+        'x-default': '/en/our-work',
+      },
+    },
+    openGraph: {
+      title: lang === 'en'
+        ? 'Construction Projects Johannesburg | 77+ Completed Projects | Sinqobile'
+        : lang === 'af'
+        ? 'Konstruksieprojekte Johannesburg | 77+ Voltooide Projekte | Sinqobile'
+        : lang === 'zu'
+        ? 'Amaphrojekthi Okwakha eGoli | 77+ Aqediwe | Sinqobile'
+        : 'Mesebetsi ea Kaho Johannesburg | 77+ e Phethiloeng | Sinqobile',
+      description: lang === 'en'
+        ? 'Browse 77+ completed construction projects across Johannesburg & Gauteng. Roofing, renovations, extensions & more. 17 service categories, 23 locations. NHBRC registered builder.'
+        : lang === 'af'
+        ? 'Blaai deur 77+ voltooide konstruksieprojekte in Johannesburg & Gauteng. Dakwerk, opknappings, uitbreidings & meer. NHBRC-geregistreerde bouer.'
+        : lang === 'zu'
+        ? 'Bheka amaphrojekthi okwakha angu-77+ aqediwe eGoli naseGauteng. Izimpahla, ukuvuselela, izandiso nokunye. Umakhi we-NHBRC.'
+        : 'Sheba mesebetsi ea kaho e 77+ e phethiloeng Johannesburg le Gauteng. Marulelo, ntjhafatso, katoloso le tse ling. Moahi ea NHBRC.',
+      url: `/${lang}/our-work`,
+      siteName: 'Sinqobile Construction',
+      type: 'website',
+      images: [{
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Construction Projects Portfolio | Sinqobile Construction Johannesburg',
+      }],
     },
   }
 }

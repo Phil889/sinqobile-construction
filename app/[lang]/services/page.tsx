@@ -30,6 +30,38 @@ export async function generateMetadata({
       : 'Fumana ditshebeletso tsa kaho tse fetang 19 Johannesburg le Gauteng. Ho haha, paving, lipeipi, renovations le tse ding. Diquote tsa mahala.',
     alternates: {
       canonical: `/${lang}/services`,
+      languages: {
+        'en': '/en/services',
+        'af': '/af/services',
+        'zu': '/zu/services',
+        'st': '/st/services',
+        'x-default': '/en/services',
+      },
+    },
+    openGraph: {
+      title: lang === 'en'
+        ? 'Construction Services Johannesburg | 19+ Building Services | Sinqobile'
+        : lang === 'af'
+        ? 'Konstruksiedienste Johannesburg | 19+ Boudienste | Sinqobile'
+        : lang === 'zu'
+        ? 'Izinsizakalo Zokwakha Johannesburg | 19+ | Sinqobile'
+        : 'Ditshebeletso tsa Kaho Johannesburg | 19+ | Sinqobile',
+      description: lang === 'en'
+        ? 'Explore 19+ professional construction services in Johannesburg & Gauteng. Building, paving, plumbing, renovation, roofing & more. NHBRC registered, 15+ years experience. Free quotes.'
+        : lang === 'af'
+        ? 'Ontdek 19+ professionele konstruksiedienste in Johannesburg & Gauteng. Bou, plaveisel, loodgieter, renovasie & meer. NHBRC geregistreer, 15+ jaar. Gratis kwotasies.'
+        : lang === 'zu'
+        ? 'Thola izinsizakalo zokwakha ezingaphezu kuka-19 eGoli neGauteng. Ukwakha, ukupeyiva, amapayipi, ukuvuselela nokunye. Amacaphuna amahhala.'
+        : 'Fumana ditshebeletso tsa kaho tse fetang 19 Johannesburg le Gauteng. Ho haha, paving, lipeipi, renovations le tse ding. Diquote tsa mahala.',
+      url: `/${lang}/services`,
+      siteName: 'Sinqobile Construction',
+      type: 'website',
+      images: [{
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Construction Services Johannesburg | Sinqobile Construction',
+      }],
     },
   }
 }

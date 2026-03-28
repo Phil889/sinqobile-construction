@@ -27,7 +27,29 @@ export async function generateMetadata({
   return {
     title: titles[lang] || titles.en,
     description: descriptions[lang] || descriptions.en,
-    alternates: { canonical: `/${lang}/areas` },
+    alternates: {
+      canonical: `/${lang}/areas`,
+      languages: {
+        'en': '/en/areas',
+        'af': '/af/areas',
+        'zu': '/zu/areas',
+        'st': '/st/areas',
+        'x-default': '/en/areas',
+      },
+    },
+    openGraph: {
+      title: titles[lang] || titles.en,
+      description: descriptions[lang] || descriptions.en,
+      url: `/${lang}/areas`,
+      siteName: 'Sinqobile Construction',
+      type: 'website',
+      images: [{
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Construction Services Across Gauteng | Sinqobile Construction',
+      }],
+    },
   }
 }
 

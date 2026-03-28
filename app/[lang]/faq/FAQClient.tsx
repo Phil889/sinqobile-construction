@@ -1,8 +1,8 @@
 'use client'
 
-import React, { useState } from 'react'
+import React from 'react'
 import { Locale } from '@/i18n.config'
-import { ChevronDown, ChevronUp, Phone, MessageCircle } from 'lucide-react'
+import { Phone, MessageCircle } from 'lucide-react'
 import Script from 'next/script'
 
 interface FAQClientProps {
@@ -11,16 +11,6 @@ interface FAQClientProps {
 }
 
 export default function FAQClient({ lang, dict }: FAQClientProps) {
-  const [openItems, setOpenItems] = useState<string[]>([])
-
-  const toggleItem = (itemId: string) => {
-    setOpenItems(prev => 
-      prev.includes(itemId) 
-        ? prev.filter(id => id !== itemId)
-        : [...prev, itemId]
-    )
-  }
-
   const faqCategories = dict.pages.faq.categories
 
   // Generate FAQ schema markup
@@ -47,7 +37,7 @@ export default function FAQClient({ lang, dict }: FAQClientProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      
+
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-accent text-white">
         <div className="container mx-auto px-4 text-center">
@@ -63,7 +53,7 @@ export default function FAQClient({ lang, dict }: FAQClientProps) {
         </div>
       </section>
 
-      {/* FAQ Content */}
+      {/* FAQ Content — uses <details>/<summary> for server-rendered, crawlable answers */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -72,40 +62,36 @@ export default function FAQClient({ lang, dict }: FAQClientProps) {
                 <h2 className="font-heading text-2xl md:text-3xl font-bold text-primary mb-8 text-center">
                   {category.title}
                 </h2>
-                
+
                 <div className="space-y-4">
-                  {category.items.map((item: any, itemIndex: number) => {
-                    const itemId = `${categoryIndex}-${itemIndex}`
-                    const isOpen = openItems.includes(itemId)
-                    
-                    return (
-                      <div key={itemIndex} className="bg-white rounded-lg shadow-md overflow-hidden">
-                        <button
-                          onClick={() => toggleItem(itemId)}
-                          className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  {category.items.map((item: any, itemIndex: number) => (
+                    <details
+                      key={itemIndex}
+                      className="bg-white rounded-lg shadow-md overflow-hidden group"
+                    >
+                      <summary className="px-6 py-4 cursor-pointer flex items-center justify-between hover:bg-gray-50 transition-colors list-none [&::-webkit-details-marker]:hidden">
+                        <h3 className="font-semibold text-secondary pr-4">
+                          {item.question}
+                        </h3>
+                        <svg
+                          className="text-primary flex-shrink-0 w-6 h-6 transition-transform group-open:rotate-180"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
                         >
-                          <h3 className="font-semibold text-secondary pr-4">
-                            {item.question}
-                          </h3>
-                          {isOpen ? (
-                            <ChevronUp className="text-primary flex-shrink-0" size={24} />
-                          ) : (
-                            <ChevronDown className="text-primary flex-shrink-0" size={24} />
-                          )}
-                        </button>
-                        
-                        {isOpen && (
-                          <div className="px-6 pb-4">
-                            <div className="border-t border-gray-200 pt-4">
-                              <p className="text-secondary leading-relaxed">
-                                {item.answer}
-                              </p>
-                            </div>
-                          </div>
-                        )}
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </summary>
+                      <div className="px-6 pb-4">
+                        <div className="border-t border-gray-200 pt-4">
+                          <p className="text-secondary leading-relaxed">
+                            {item.answer}
+                          </p>
+                        </div>
                       </div>
-                    )
-                  })}
+                    </details>
+                  ))}
                 </div>
               </div>
             ))}
@@ -146,7 +132,7 @@ export default function FAQClient({ lang, dict }: FAQClientProps) {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             {dict.pages.faq.stillHaveQuestions.subtitle}
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:+27828688396"
@@ -155,7 +141,7 @@ export default function FAQClient({ lang, dict }: FAQClientProps) {
               <Phone size={20} />
               <span>{dict.contact.call}: {dict.contact.phone}</span>
             </a>
-            
+
             <a
               href={`/${lang}/contact`}
               className="inline-flex items-center justify-center space-x-2 border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors"
@@ -163,7 +149,7 @@ export default function FAQClient({ lang, dict }: FAQClientProps) {
               <MessageCircle size={20} />
               <span>{dict.pages.contact.form.submit}</span>
             </a>
-            
+
             <a
               href="https://wa.me/27828688396"
               target="_blank"

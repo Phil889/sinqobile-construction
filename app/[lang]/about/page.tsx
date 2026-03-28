@@ -29,6 +29,28 @@ export async function generateMetadata({
       : 'Kopana le Dingwayo Reason Ndlovu, mothehi oa Sinqobile Construction — moahi ea NHBRC Johannesburg ka lilemo tse 15+ le mesebetsi e 500+. Diquote tsa mahala.',
     alternates: {
       canonical: `/${lang}/about`,
+      languages: {
+        'en': '/en/about',
+        'af': '/af/about',
+        'zu': '/zu/about',
+        'st': '/st/about',
+        'x-default': '/en/about',
+      },
+    },
+    openGraph: {
+      title: lang === 'en'
+        ? 'About Sinqobile Construction | NHBRC Registered Builder Johannesburg'
+        : 'About Sinqobile Construction',
+      description: 'Meet Dingwayo Reason Ndlovu, founder of Sinqobile Construction — NHBRC registered builder in Johannesburg with 15+ years experience.',
+      url: `/${lang}/about`,
+      siteName: 'Sinqobile Construction',
+      type: 'website',
+      images: [{
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'About Sinqobile Construction - NHBRC Registered Builder Johannesburg',
+      }],
     },
   }
 }
@@ -40,8 +62,37 @@ export default async function AboutPage({
 }) {
   const dict = await getDictionary(lang)
 
+  const personSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': 'https://www.sinqobileconstruction.co.za/#founder',
+    name: 'Dingwayo Reason Ndlovu',
+    jobTitle: 'Founder & Managing Director',
+    worksFor: {
+      '@type': 'LocalBusiness',
+      '@id': 'https://www.sinqobileconstruction.co.za/#localbusiness',
+    },
+    knowsAbout: [
+      'Residential Construction',
+      'Building Renovations',
+      'NHBRC Compliance',
+      'Construction Project Management',
+      'Building Regulations South Africa',
+    ],
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Sandton',
+      addressRegion: 'Gauteng',
+      addressCountry: 'ZA',
+    },
+  }
+
   return (
     <div className="pt-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
       <Breadcrumb
         items={[
           { label: dict.navigation.about, href: `/${lang}/about` }

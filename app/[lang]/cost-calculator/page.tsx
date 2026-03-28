@@ -32,6 +32,26 @@ export async function generateMetadata({
     description: descriptions[lang] || descriptions.en,
     alternates: {
       canonical: `/${lang}/cost-calculator`,
+      languages: {
+        'en': '/en/cost-calculator',
+        'af': '/af/cost-calculator',
+        'zu': '/zu/cost-calculator',
+        'st': '/st/cost-calculator',
+        'x-default': '/en/cost-calculator',
+      },
+    },
+    openGraph: {
+      title: titles[lang] || titles.en,
+      description: descriptions[lang] || descriptions.en,
+      url: `/${lang}/cost-calculator`,
+      siteName: 'Sinqobile Construction',
+      type: 'website',
+      images: [{
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Free Construction Cost Calculator | Sinqobile Construction Johannesburg',
+      }],
     },
   }
 }
