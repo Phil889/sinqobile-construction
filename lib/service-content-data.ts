@@ -480,6 +480,96 @@ export const serviceContentData: Record<string, ServiceContent> = {
       'Free site assessment with detailed, itemised quotes',
     ],
   },
+
+  'roofing': {
+    slug: 'roofing',
+    intro: `Sinqobile Construction provides professional roofing services across Johannesburg and Gauteng — from emergency leak repairs to complete roof replacements and new roof installations. With 15+ years of experience, we have repaired and replaced roofs on hundreds of residential and commercial properties across the region. Roofing in Johannesburg costs between R450 and R1,000 per square metre in 2026 for standard installations, with premium materials and Sandton-area projects running 10–15% higher. We work with all major roofing materials: IBR and corrugated steel sheeting, concrete roof tiles, clay tiles, and chromadek/aluminium systems. Every roof we install or repair includes proper flashing, valley work, ridge capping, and gutter integration. Gauteng's summer thunderstorms are intense — a well-installed roof with correct waterproofing is not optional, it is essential. We offer free roof inspections and provide detailed photographic reports of any issues found.`,
+    subServices: [
+      {
+        name: 'Roof Repairs & Leak Fixing',
+        description: 'Emergency and scheduled roof repairs including cracked or broken tiles, corroded sheeting, damaged flashing, leaking valleys, and failed waterproofing membrane. We identify the source of every leak (not just the visible water entry point) and fix the root cause. Roof repairs in Johannesburg cost R88–R100/m² for standard work.'
+      },
+      {
+        name: 'Roof Replacement & Re-roofing',
+        description: 'Complete roof strip-and-replace including removal of old materials, inspection and repair of timber trusses, installation of new battens, underlayment, roofing material, and all flashing and ridge work. Re-roofing costs R550–R1,650/m² depending on the material and roof complexity. Old material removal adds R50–R100/m².'
+      },
+      {
+        name: 'New Roof Installation',
+        description: 'Roof structures for new builds and extensions — from timber truss fabrication and installation to sheeting, tiling, and waterproofing. We coordinate with your builder to ensure the roof is installed on schedule and integrates correctly with the wall plate and ring beam.'
+      },
+      {
+        name: 'Roof Painting & Coating',
+        description: 'Roof cleaning, rust treatment, and application of UV-resistant acrylic or polyurethane roof coatings. Roof painting extends the life of steel roofing by 10–15 years and dramatically improves kerb appeal. We prepare surfaces properly — no painting over rust or flaking paint.'
+      },
+      {
+        name: 'Gutters, Fascias & Downpipes',
+        description: 'Supply and installation of seamless aluminium gutters, uPVC fascia boards, and downpipe systems. Proper gutter sizing and fall are critical for Gauteng\'s heavy summer rainfall. We calculate gutter capacity based on your roof area and local rainfall intensity.'
+      },
+    ],
+    pricingNote: 'Roofing costs in Johannesburg vary by material, roof pitch and complexity, and whether it is a repair, re-roof, or new installation. Sandton and northern suburb projects run 10–15% above average. All quotes include a free roof inspection, materials, labour, and waste removal.',
+    pricingTable: [
+      { item: 'Roof repair (standard, per m²)', range: 'R88 – R200 /m²' },
+      { item: 'IBR / corrugated steel sheeting (new)', range: 'R450 – R650 /m²' },
+      { item: 'Concrete roof tiles (installed)', range: 'R500 – R800 /m²' },
+      { item: 'Clay roof tiles (installed)', range: 'R600 – R1,000 /m²' },
+      { item: 'Complete re-roofing (strip & replace)', range: 'R550 – R1,650 /m²' },
+      { item: 'Roof painting (clean, treat, 2 coats)', range: 'R80 – R150 /m²' },
+      { item: 'Seamless aluminium gutters (per lin. m)', range: 'R250 – R450 /m' },
+      { item: 'Old material removal (per m²)', range: 'R50 – R100 /m²' },
+    ],
+    process: [
+      {
+        step: '1',
+        title: 'Free Roof Inspection',
+        description: 'We inspect your roof from above and inside the ceiling space, photograph problem areas, and provide a detailed report with repair or replacement recommendations and pricing.'
+      },
+      {
+        step: '2',
+        title: 'Quote & Scheduling',
+        description: 'You receive an itemised quote with material specifications, quantities, and labour. For emergency repairs, we can often start same-day or next-day. Larger projects are scheduled around weather forecasts.'
+      },
+      {
+        step: '3',
+        title: 'Repair or Installation',
+        description: 'Our roofing team works efficiently to minimise the time your roof is exposed. We use safety harnesses and scaffolding where required. Temporary weatherproofing is applied if work spans multiple days.'
+      },
+      {
+        step: '4',
+        title: 'Clean-Up & Guarantee',
+        description: 'All debris and old materials are removed from site. We test for leaks with a hose pipe where applicable and provide a workmanship warranty on all repairs and installations.'
+      },
+    ],
+    faqs: [
+      {
+        question: 'How much does a new roof cost in Johannesburg in 2026?',
+        answer: 'A new roof in Johannesburg costs R450–R1,000 per square metre in 2026 for standard installations. IBR steel sheeting is the most affordable at R450–R650/m², concrete tiles cost R500–R800/m², and clay tiles range from R600–R1,000/m². For a typical 150 m² roof, expect to pay R67,500–R150,000. Complete re-roofing (strip old and replace) costs R550–R1,650/m² including old material removal. We provide free inspections and itemised quotes.'
+      },
+      {
+        question: 'How do I know if my roof needs repair or full replacement?',
+        answer: 'Repair is usually sufficient if the damage is localised — a few cracked tiles, a section of corroded sheeting, or failed flashing around a chimney. Full replacement is recommended when more than 30% of the roof is damaged, the timber trusses show rot or termite damage, or the roof is over 30 years old and has had multiple repairs. During our free inspection, we assess the overall condition and give you an honest recommendation — we will never push a full replacement when a repair will solve the problem.'
+      },
+      {
+        question: 'Can you fix a roof leak during the rainy season?',
+        answer: 'Yes. We provide emergency roof repairs year-round, including during Gauteng\'s rainy season (October–March). For active leaks, we apply temporary waterproofing to stop the immediate water ingress, then return for a permanent repair when conditions allow. Emergency repairs can often be done same-day or next-day. Call +27 82 868 8396 for immediate assistance.'
+      },
+      {
+        question: 'What is the best roofing material for Johannesburg?',
+        answer: 'IBR (inverted box rib) steel sheeting is the most popular choice in Johannesburg — it is affordable, lightweight, quick to install, and handles Gauteng\'s hail and heavy rain well. Concrete tiles are a good mid-range option that offers better insulation and a more traditional look. Clay tiles are the premium choice — they last 50+ years and provide excellent thermal and acoustic insulation but cost significantly more. We recommend IBR for budget-conscious projects and concrete or clay tiles for homes where aesthetics and insulation are priorities.'
+      },
+      {
+        question: 'Does roof painting prevent leaks?',
+        answer: 'Roof painting alone does not fix existing leaks — the leak source must be repaired first. However, a quality acrylic or polyurethane roof coating seals micro-cracks, prevents rust on steel roofs, reflects UV radiation, and extends the roof lifespan by 10–15 years. We always clean the roof surface, treat any rust, and apply a primer before coating. Roof painting costs R80–R150/m² and is one of the most cost-effective maintenance investments for a steel roof.'
+      },
+    ],
+    whyChoose: [
+      'Free roof inspection with detailed photographic report',
+      'Emergency leak repairs available same-day across Johannesburg',
+      'All materials: IBR steel, concrete tiles, clay tiles, chromadek, aluminium',
+      '15+ years roofing experience across Gauteng — residential and commercial',
+      'Safety-compliant: harnesses, scaffolding, and insurance on every job',
+      'Workmanship guarantee on all repairs and installations',
+    ],
+  },
 }
 
 export function getServiceContent(slug: string): ServiceContent | undefined {
