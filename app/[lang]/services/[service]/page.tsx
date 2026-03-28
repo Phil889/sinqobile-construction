@@ -4,6 +4,7 @@ import { getDictionary } from '@/lib/dictionaries'
 import { Locale } from '@/i18n.config'
 import { getServiceBySlug, enhancedServices } from '@/lib/enhanced-services-data'
 import { getProjectsByCategory } from '@/lib/all-projects-data'
+import { getServiceContent } from '@/lib/service-content-data'
 import ServiceSchema from '@/components/service-schema'
 import Breadcrumb from '@/components/breadcrumb'
 import { CheckCircle, Phone, ArrowLeft, MapPin, Calendar } from 'lucide-react'
@@ -177,6 +178,7 @@ export default async function ServicePage({ params: { lang, service } }: Service
   // Get service info from dictionary
   const serviceInfo = (dict.services.items as any)[service] || (dict as any).extendedServices?.[service]
   const seo = serviceSEO[service]
+  const content = getServiceContent(service)
 
   return (
     <div className="pt-20">
@@ -240,30 +242,22 @@ export default async function ServicePage({ params: { lang, service } }: Service
                 Professional {serviceInfo?.name || serviceData.name} Services
               </h2>
               <p className="text-secondary text-lg leading-relaxed mb-8">
-                At Sinqobile Construction, we specialize in high-quality {serviceInfo?.name?.toLowerCase() || serviceData.name.toLowerCase()} services across Gauteng. With over 15 years of experience, our skilled team delivers exceptional results that stand the test of time.
+                {content?.intro || `At Sinqobile Construction, we specialize in high-quality ${serviceInfo?.name?.toLowerCase() || serviceData.name.toLowerCase()} services across Gauteng. With over 15 years of experience, our skilled team delivers exceptional results that stand the test of time.`}
               </p>
-              
+
               <div className="space-y-4 mb-8">
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="text-accent" size={20} />
-                  <span className="text-secondary">Professional, experienced team</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="text-accent" size={20} />
-                  <span className="text-secondary">Quality materials and workmanship</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="text-accent" size={20} />
-                  <span className="text-secondary">Competitive pricing</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="text-accent" size={20} />
-                  <span className="text-secondary">Fully insured and licensed</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="text-accent" size={20} />
-                  <span className="text-secondary">Work guarantee provided</span>
-                </div>
+                {(content?.whyChoose || [
+                  'Professional, experienced team',
+                  'Quality materials and workmanship',
+                  'Competitive pricing',
+                  'Fully insured and licensed',
+                  'Work guarantee provided',
+                ]).map((item, i) => (
+                  <div key={i} className="flex items-start space-x-3">
+                    <CheckCircle className="text-accent flex-shrink-0 mt-0.5" size={20} />
+                    <span className="text-secondary">{item}</span>
+                  </div>
+                ))}
               </div>
 
               <div className="bg-lightBackground rounded-lg p-6">
@@ -293,6 +287,7 @@ export default async function ServicePage({ params: { lang, service } }: Service
                         alt={project.seoAlt}
                         fill
                         className="object-cover"
+                        sizes="96px"
                       />
                     </div>
                     <div className="p-4 flex-1">
@@ -318,8 +313,66 @@ export default async function ServicePage({ params: { lang, service } }: Service
         </div>
       </section>
 
+      {/* Sub-Services (rich content pages only) */}
+      {content?.subServices && (
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-10 text-center">
+                Our {serviceInfo?.name || serviceData.name} Services
+              </h2>
+              <div className="space-y-8">
+                {content.subServices.map((sub, i) => (
+                  <div key={i} className="border-l-4 border-accent pl-6">
+                    <h3 className="font-heading text-xl font-bold text-primary mb-2">{sub.name}</h3>
+                    <p className="text-secondary leading-relaxed">{sub.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Pricing Guide (rich content pages only) */}
+      {content?.pricingTable && (
+        <section className="py-20 bg-lightBackground">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4 text-center">
+                {serviceInfo?.name || serviceData.name} Cost Guide — Johannesburg 2026
+              </h2>
+              <p className="text-secondary text-lg text-center mb-10 max-w-3xl mx-auto">
+                {content.pricingNote}
+              </p>
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <table className="w-full">
+                  <thead>
+                    <tr className="bg-primary text-white">
+                      <th className="px-6 py-4 text-left font-semibold">Service</th>
+                      <th className="px-6 py-4 text-left font-semibold">Price Range</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {content.pricingTable.map((row, i) => (
+                      <tr key={i} className={i % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
+                        <td className="px-6 py-4 text-secondary">{row.item}</td>
+                        <td className="px-6 py-4 text-primary font-semibold">{row.range}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              {content.materialsNote && (
+                <p className="text-secondary mt-6 text-sm leading-relaxed">{content.materialsNote}</p>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Service Process */}
-      <section className="py-20 bg-lightBackground">
+      <section className={`py-20 ${content?.pricingTable ? 'bg-white' : 'bg-lightBackground'}`}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">
@@ -330,29 +383,13 @@ export default async function ServicePage({ params: { lang, service } }: Service
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {[
-              {
-                step: '1',
-                title: 'Consultation',
-                description: 'We assess your needs and provide expert recommendations'
-              },
-              {
-                step: '2',
-                title: 'Quote',
-                description: 'Detailed, transparent pricing with no hidden costs'
-              },
-              {
-                step: '3',
-                title: 'Execution',
-                description: 'Professional work with regular progress updates'
-              },
-              {
-                step: '4',
-                title: 'Completion',
-                description: 'Final inspection and quality guarantee'
-              }
-            ].map((item, index) => (
+          <div className={`grid grid-cols-1 ${(content?.process || []).length > 4 ? 'md:grid-cols-5' : 'md:grid-cols-4'} gap-8`}>
+            {(content?.process || [
+              { step: '1', title: 'Consultation', description: 'We assess your needs and provide expert recommendations' },
+              { step: '2', title: 'Quote', description: 'Detailed, transparent pricing with no hidden costs' },
+              { step: '3', title: 'Execution', description: 'Professional work with regular progress updates' },
+              { step: '4', title: 'Completion', description: 'Final inspection and quality guarantee' },
+            ]).map((item, index) => (
               <div key={index} className="text-center">
                 <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">
                   {item.step}
@@ -368,6 +405,50 @@ export default async function ServicePage({ params: { lang, service } }: Service
           </div>
         </div>
       </section>
+
+      {/* FAQ Section (rich content pages only) */}
+      {content?.faqs && (
+        <section className="py-20 bg-lightBackground">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-10 text-center">
+                Frequently Asked Questions — {serviceInfo?.name || serviceData.name}
+              </h2>
+              <div className="space-y-4">
+                {content.faqs.map((faq, i) => (
+                  <details key={i} className="bg-white rounded-lg shadow-md overflow-hidden group">
+                    <summary className="px-6 py-4 cursor-pointer flex items-center justify-between hover:bg-gray-50 transition-colors list-none [&::-webkit-details-marker]:hidden">
+                      <h3 className="font-semibold text-secondary pr-4">{faq.question}</h3>
+                      <svg className="text-primary flex-shrink-0 w-6 h-6 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </summary>
+                    <div className="px-6 pb-4">
+                      <div className="border-t border-gray-200 pt-4">
+                        <p className="text-secondary leading-relaxed">{faq.answer}</p>
+                      </div>
+                    </div>
+                  </details>
+                ))}
+              </div>
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify({
+                    '@context': 'https://schema.org',
+                    '@type': 'FAQPage',
+                    mainEntity: content.faqs.map(faq => ({
+                      '@type': 'Question',
+                      name: faq.question,
+                      acceptedAnswer: { '@type': 'Answer', text: faq.answer }
+                    }))
+                  })
+                }}
+              />
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Projects Gallery */}
       {serviceProjects.length > 0 && (
