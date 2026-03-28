@@ -111,6 +111,101 @@ export const serviceContentData: Record<string, ServiceContent> = {
     ],
     materialsNote: 'We source materials from established Gauteng suppliers including Builders Warehouse, Corobrik, Afrimat, and PPC Cement. For premium builds, we work with imported finishes from your preferred suppliers. All materials are specified in your quote with brand names and quantities — nothing is left vague.',
   },
+
+  'plumbing': {
+    slug: 'plumbing',
+    intro: `Sinqobile Construction provides professional plumbing services across Johannesburg and Gauteng — from emergency burst pipe repairs to complete geyser installations and plumbing compliance certificates. Our licensed plumbers are available for 24/7 emergency call-outs, with typical response times of 2–4 hours across the greater Johannesburg area. Whether you need a leaking tap fixed in Sandton, a geyser replaced in Fourways, or a full plumbing installation for a new build in Midrand, our team has 15+ years of experience handling residential and commercial plumbing projects. We carry comprehensive liability insurance, and all our work complies with SANS 10252 (water supply installations) and municipal by-laws. Every job comes with a workmanship warranty and a detailed invoice — no hidden call-out fees, no surprises.`,
+    subServices: [
+      {
+        name: 'Emergency Plumbing (24/7)',
+        description: 'Burst pipes, major leaks, geyser failures, overflowing toilets, and sewer backups. Our emergency team responds within 2–4 hours across Johannesburg, Sandton, Midrand, Pretoria, and surrounding areas. We carry common repair parts on our vehicles to resolve most emergencies in a single visit.'
+      },
+      {
+        name: 'Geyser Installation & Repair',
+        description: 'Electric, gas, solar, and heat pump geyser installation, replacement, and repair. We supply and fit all major brands (Kwikot, Franke, Defy, Bosch) and handle the full process: removal of old unit, installation, pressure testing, and COC certification where required. Solar geyser systems include panel mounting, circulation pump setup, and integration with your existing plumbing.'
+      },
+      {
+        name: 'Leak Detection & Repair',
+        description: 'Non-invasive leak detection using pressure testing and thermal imaging to locate hidden leaks in walls, floors, and underground pipes without unnecessary demolition. We repair copper, PVC, and PEX piping and can reline damaged sections to avoid full pipe replacement.'
+      },
+      {
+        name: 'Drain Cleaning & Unblocking',
+        description: 'Blocked drains, slow-draining sinks, and sewer line backups cleared with professional drain rods, high-pressure jetting, and CCTV camera inspections. We identify the root cause — tree root intrusion, grease build-up, or collapsed pipe sections — and recommend a permanent fix, not just a temporary clear.'
+      },
+      {
+        name: 'Bathroom & Kitchen Plumbing',
+        description: 'Complete rough-in and fit-out plumbing for new bathrooms and kitchens. Basin, bath, shower, toilet, and dishwasher connections. We coordinate with tilers and builders to ensure correct waste positions and waterproofing before tiling begins.'
+      },
+      {
+        name: 'Plumbing Compliance Certificates (COC)',
+        description: 'Plumbing COC inspections and certificates as required when selling a property or installing solar geysers. Our inspectors check water pressure, geyser safety valves, drip trays, overflow pipes, and general compliance with SANS 10252. Certificates issued same day for compliant installations.'
+      },
+    ],
+    pricingNote: 'Plumbing costs in Johannesburg vary by job complexity, materials, and urgency. Emergency call-outs carry a higher rate than scheduled work. All prices below are indicative — we provide free, written quotes before any work begins. No hidden call-out fees.',
+    pricingTable: [
+      { item: 'Emergency call-out (after hours)', range: 'R500 – R1,000/hr' },
+      { item: 'Standard plumbing repair (during hours)', range: 'R450 – R850/hr' },
+      { item: 'Burst pipe repair', range: 'R700 – R4,000' },
+      { item: 'Geyser installation (150L electric, supplied & fitted)', range: 'R5,500 – R8,000' },
+      { item: 'Solar geyser system (supplied & installed)', range: 'R18,000 – R30,000' },
+      { item: 'Drain unblocking (standard)', range: 'R650 – R1,500' },
+      { item: 'CCTV drain inspection', range: 'R1,500 – R3,000' },
+      { item: 'Plumbing COC certificate', range: 'R850 – R2,700' },
+      { item: 'Toilet replacement (supplied & fitted)', range: 'R2,500 – R5,000' },
+    ],
+    process: [
+      {
+        step: '1',
+        title: 'Call or WhatsApp',
+        description: 'Describe your issue — we\'ll give you an immediate estimate over the phone and schedule a visit. For emergencies, our team is dispatched right away.'
+      },
+      {
+        step: '2',
+        title: 'Diagnose',
+        description: 'Our plumber assesses the problem on-site, explains the cause and repair options, and gives you a fixed-price quote before starting any work.'
+      },
+      {
+        step: '3',
+        title: 'Repair',
+        description: 'We complete the repair using quality parts and materials. Most standard repairs are finished in a single visit — no repeat call-outs.'
+      },
+      {
+        step: '4',
+        title: 'Test & Guarantee',
+        description: 'We pressure-test the repair, clean up the work area, and provide a workmanship warranty. You receive a detailed invoice with parts and labour itemised.'
+      },
+    ],
+    faqs: [
+      {
+        question: 'How much does an emergency plumber cost in Johannesburg?',
+        answer: 'Emergency plumbing in Johannesburg typically costs R500–R1,000 per hour for after-hours call-outs. Standard daytime rates are R450–R850 per hour. The total cost depends on the type of repair — a burst pipe fix ranges from R700 to R4,000, while a geyser replacement costs R5,500–R8,000 including the unit. We provide a fixed-price quote on-site before starting any work, so you know the full cost upfront. There are no hidden call-out fees.'
+      },
+      {
+        question: 'How quickly can you respond to a plumbing emergency?',
+        answer: 'Our emergency plumbing team typically responds within 2–4 hours across Johannesburg, Sandton, Midrand, Fourways, Randburg, and Centurion. For areas further from our Fourways base (Pretoria, East Rand, Roodepoort), response times may be 3–5 hours. We operate 24/7 including weekends and public holidays. Call +27 82 868 8396 for immediate assistance.'
+      },
+      {
+        question: 'How much does geyser installation cost in Johannesburg in 2026?',
+        answer: 'A standard 150-litre electric geyser costs R5,500–R8,000 supplied and installed in Johannesburg in 2026. This includes removal of the old unit, fitting the new geyser, pressure testing, and a compliance check. Solar geyser systems range from R18,000–R30,000 for a complete installation including panels, circulation pump, and plumbing integration. Gas geysers cost R8,000–R15,000 installed. All installations include a manufacturer warranty on the unit and our workmanship guarantee.'
+      },
+      {
+        question: 'Do I need a plumbing COC when selling my house?',
+        answer: 'Yes. In most South African municipalities, a plumbing Certificate of Compliance (COC) is required when selling a residential property. The COC certifies that the water installation complies with SANS 10252 and municipal by-laws, including geyser safety valves, drip trays, water pressure, and absence of leaks. Our inspectors can assess your property and issue a COC same-day for compliant installations. Inspections cost R850–R2,700 depending on property size and complexity.'
+      },
+      {
+        question: 'What plumbing areas in Johannesburg do you cover?',
+        answer: 'We cover all of Johannesburg and the greater Gauteng region, including Sandton, Fourways, Randburg, Midrand, Centurion, Pretoria, Roodepoort, Soweto, the East Rand (Boksburg, Germiston, Alberton), and the West Rand. Our head office is in Fourways, Sandton, giving us fast access to the northern suburbs. We have completed plumbing projects in over 50 suburbs across Gauteng.'
+      },
+    ],
+    whyChoose: [
+      '24/7 emergency response — 2–4 hour typical arrival across Johannesburg',
+      'Licensed, insured plumbers with 15+ years experience in Gauteng',
+      'Fixed-price quotes on-site — no hidden call-out fees or surprise charges',
+      'All major geyser brands supplied and installed (Kwikot, Franke, Defy, Bosch)',
+      'Plumbing COC certificates issued same day for compliant properties',
+      'Single-visit repairs — we carry common parts on our vehicles',
+    ],
+  },
 }
 
 export function getServiceContent(slug: string): ServiceContent | undefined {
