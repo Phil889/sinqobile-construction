@@ -391,6 +391,95 @@ export const serviceContentData: Record<string, ServiceContent> = {
       'Fully insured with comprehensive liability cover',
     ],
   },
+
+  'concrete': {
+    slug: 'concrete',
+    intro: `Sinqobile Construction provides professional concrete services across Johannesburg and Gauteng — from residential foundations and floor slabs to reinforced retaining walls and commercial concrete structures. Over 15 years we have poured hundreds of concrete projects, working with structural engineers to ensure every foundation, slab, and wall meets SANS 10400 and NHBRC structural requirements. Concrete work is the foundation of every building — literally — and getting it wrong is expensive to fix. We use tested mix designs from reputable batching plants (PPC, Lafarge, AfriSam), vibrate all pours to eliminate air pockets, and cure slabs properly to reach design strength. Whether you need a raft foundation for a new home in Fourways, a reinforced driveway in Sandton, or retaining walls on a sloped site in Centurion, our team delivers structural concrete you can build on with confidence.`,
+    subServices: [
+      {
+        name: 'Foundations (Raft, Strip & Pad)',
+        description: 'Raft foundations for new homes, strip foundations for boundary walls, and pad foundations for columns and pergolas. All foundations are designed by a registered engineer based on soil conditions, excavated to the correct depth, reinforced with steel mesh or rebar, and poured with the specified concrete strength (typically 25–30 MPa for residential). Foundation costs in Johannesburg range from R1,200–R3,500 per square metre.'
+      },
+      {
+        name: 'Floor Slabs & Suspended Slabs',
+        description: 'Ground-floor slabs for new builds and extensions, plus suspended (upper-floor) slabs using rib-and-block or in-situ reinforced concrete. We handle formwork, reinforcing steel placement, concrete pouring, vibrating, and power-floating for a smooth finish. Ground-floor slabs typically use 25 MPa concrete on compacted fill with vapour barriers.'
+      },
+      {
+        name: 'Concrete Driveways',
+        description: 'Reinforced concrete driveways that handle vehicle loads without cracking. We excavate, compact the sub-base, lay mesh reinforcing, pour 25 MPa concrete to 100–150 mm thickness, and finish with broom texture or exposed aggregate. Expansion joints are cut at correct intervals to control cracking. Budget R300–R450/m² for a standard concrete driveway.'
+      },
+      {
+        name: 'Retaining Walls',
+        description: 'Reinforced concrete retaining walls for sloped sites, garden terracing, and boundary support. All retaining walls over 1.5 m require engineer-designed drawings. We build gravity walls, cantilever walls, and crib walls depending on soil conditions, height, and load requirements. Proper drainage behind the wall (weep holes and drainage aggregate) prevents hydrostatic pressure build-up.'
+      },
+      {
+        name: 'Concrete Repairs & Waterproofing',
+        description: 'Crack injection, spalling repair, concrete resurfacing, and waterproof coatings for existing structures. We diagnose the cause of concrete failure (settlement, rebar corrosion, poor original mix) before recommending the appropriate repair method.'
+      },
+    ],
+    pricingNote: 'Concrete costs depend on the mix strength (MPa), volume required, reinforcing steel, and site access. Ready-mix concrete from a batching plant costs R1,800–R2,500 per cubic metre delivered in Johannesburg. Labour and formwork are additional. All quotes include a detailed breakdown of concrete volume, steel quantities, and labour.',
+    pricingTable: [
+      { item: 'Raft foundation (residential)', range: 'R1,200 – R2,000 /m²' },
+      { item: 'Strip foundation (boundary walls)', range: 'R800 – R1,500 /lin. m' },
+      { item: 'Ground-floor slab (100 mm, 25 MPa)', range: 'R450 – R800 /m²' },
+      { item: 'Suspended slab (rib-and-block)', range: 'R1,500 – R2,500 /m²' },
+      { item: 'Concrete driveway (reinforced, 100 mm)', range: 'R300 – R450 /m²' },
+      { item: 'Retaining wall (up to 1.5 m)', range: 'R2,500 – R5,000 /lin. m' },
+      { item: 'Ready-mix concrete (delivered)', range: 'R1,800 – R2,500 /m³' },
+    ],
+    process: [
+      {
+        step: '1',
+        title: 'Site Assessment',
+        description: 'We inspect the site, review plans and engineer drawings, assess soil conditions and access for concrete trucks, and confirm the concrete specification required.'
+      },
+      {
+        step: '2',
+        title: 'Excavation & Formwork',
+        description: 'Excavate to the required depth, set up timber or steel formwork to the correct dimensions and levels, and install reinforcing steel (mesh or rebar) as per the engineer\'s design.'
+      },
+      {
+        step: '3',
+        title: 'Pour & Vibrate',
+        description: 'Concrete is delivered by ready-mix truck and poured into the prepared formwork. We vibrate the concrete to remove air pockets and ensure full compaction around the reinforcing steel.'
+      },
+      {
+        step: '4',
+        title: 'Finish & Cure',
+        description: 'The surface is levelled, power-floated or broom-textured as required, and cured for 7–28 days depending on the application. Formwork is struck after the concrete reaches sufficient strength.'
+      },
+    ],
+    faqs: [
+      {
+        question: 'How much does a concrete foundation cost in Johannesburg in 2026?',
+        answer: 'A residential raft foundation in Johannesburg costs R1,200–R2,000 per square metre in 2026, depending on soil conditions, concrete strength, and reinforcing requirements. For a 120 m² home, expect to pay R144,000–R240,000 for the foundation alone. Strip foundations for boundary walls cost R800–R1,500 per linear metre. These prices include excavation, reinforcing steel, concrete, and labour. Engineer-designed drawings are additional (typically R5,000–R15,000).'
+      },
+      {
+        question: 'What concrete strength (MPa) do I need for a house foundation?',
+        answer: 'Residential foundations in South Africa typically require 25 MPa concrete, which is the standard for most single and double-storey homes. Heavier structures or poor soil conditions may require 30 MPa. Your structural engineer specifies the required strength based on the building design and geotechnical report. We always pour the specified strength — never downgrade to save costs, as this compromises structural integrity and violates building regulations.'
+      },
+      {
+        question: 'How long does concrete take to cure?',
+        answer: 'Concrete reaches approximately 70% of its design strength after 7 days and full strength after 28 days. During curing, the slab must be kept moist — we apply curing compound or wet-cure with hessian and water. You can walk on a residential slab after 24–48 hours, but do not place heavy loads or build on it until at least 7 days. Formwork for suspended slabs is typically left in place for 14–21 days.'
+      },
+      {
+        question: 'What is the difference between a raft foundation and strip foundation?',
+        answer: 'A raft foundation is a single concrete slab that covers the entire footprint of the building — it spreads the load evenly across the ground and is ideal for weaker soils or where settlement may be uneven. A strip foundation is a narrow concrete trench that runs under the walls only — it is cheaper but requires good soil bearing capacity. Most new homes in Johannesburg use raft foundations because of the variable clay soils in Gauteng. Your engineer will recommend the appropriate type based on a soil test.'
+      },
+      {
+        question: 'Do you supply the concrete or do I arrange it?',
+        answer: 'We arrange everything. We order ready-mix concrete from established batching plants (PPC, Lafarge, AfriSam) and schedule delivery to match our pour schedule. This ensures the correct mix design, strength, and slump are delivered on time. We do not use site-mixed concrete for structural work — ready-mix from a batching plant is consistent, tested, and comes with delivery dockets that confirm the specified strength for your records and building inspector.'
+      },
+    ],
+    whyChoose: [
+      'Engineer-specified concrete — correct MPa strength, reinforcing, and mix design every time',
+      'Ready-mix concrete from PPC, Lafarge, AfriSam batching plants (never site-mixed for structural)',
+      '15+ years pouring foundations, slabs, and retaining walls across Gauteng',
+      'Proper vibration and curing — no air pockets, no premature cracking',
+      'Fully insured with comprehensive construction liability cover',
+      'Free site assessment with detailed, itemised quotes',
+    ],
+  },
 }
 
 export function getServiceContent(slug: string): ServiceContent | undefined {
