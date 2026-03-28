@@ -23,7 +23,7 @@ export default function ServiceSchema({
     "description": description,
     "provider": {
       "@type": "LocalBusiness",
-      "@id": "https://www.sinqobileconstruction.co.za/#organization",
+      "@id": "https://www.sinqobileconstruction.co.za/#localbusiness",
       "name": "Sinqobile Construction",
       "image": "https://www.sinqobileconstruction.co.za/og-image.jpg",
       "telephone": "+27828688396",
@@ -35,8 +35,8 @@ export default function ServiceSchema({
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "-26.2041",
-        "longitude": "28.0473"
+        "latitude": "-26.0274",
+        "longitude": "28.0106"
       },
       "areaServed": [
         {
@@ -664,7 +664,7 @@ function getServiceFeatures(serviceSlug: string) {
           "description": "Structural concrete retaining walls and boundary walls for sloped sites across Johannesburg and Gauteng"
         }
       }
-    ]
+    ],
     'extensions': [
       {
         "@type": "Offer",

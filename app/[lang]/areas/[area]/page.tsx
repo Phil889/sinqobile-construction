@@ -265,11 +265,34 @@ export async function generateMetadata({ params }: AreaPageProps): Promise<Metad
 
   if (!location) return {}
 
+  const title = seo?.title || `Construction Services ${location.name} | Sinqobile Construction`
+  const description = seo?.description || `Professional construction services in ${location.name}. ${location.projects}+ projects completed. Free quotes — +27 82 868 8396`
+
   return {
-    title: seo?.title || `Construction Services ${location.name} | Sinqobile Construction`,
-    description: seo?.description || `Professional construction services in ${location.name}. ${location.projects}+ projects completed. Free quotes — +27 82 868 8396`,
+    title,
+    description,
     alternates: {
       canonical: `/${params.lang}/areas/${params.area}`,
+      languages: {
+        'en': `/en/areas/${params.area}`,
+        'af': `/af/areas/${params.area}`,
+        'zu': `/zu/areas/${params.area}`,
+        'st': `/st/areas/${params.area}`,
+        'x-default': `/en/areas/${params.area}`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url: `/${params.lang}/areas/${params.area}`,
+      siteName: 'Sinqobile Construction',
+      type: 'website',
+      images: [{
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: `Construction Services in ${location.name} | Sinqobile Construction`,
+      }],
     },
   }
 }

@@ -14,13 +14,14 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
         return {
           '@context': 'https://schema.org',
           '@type': 'Organization',
+          '@id': 'https://www.sinqobileconstruction.co.za/#organization',
           name: 'Sinqobile Construction',
           alternateName: 'Sinqobile Construction - Dingwayo Reason Ndlovu',
-          url: `https://www.sinqobileconstruction.co.za/${lang}`,
+          url: 'https://www.sinqobileconstruction.co.za',
           logo: 'https://www.sinqobileconstruction.co.za/logo.png',
           contactPoint: {
             '@type': 'ContactPoint',
-            telephone: '+27-82-868-8396',
+            telephone: BUSINESS_INFO.contact.phone,
             contactType: 'customer service',
             areaServed: 'ZA',
             availableLanguage: ['English', 'Afrikaans', 'Zulu', 'Sotho']
@@ -36,7 +37,7 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
         return {
           '@context': 'https://schema.org',
           '@type': 'LocalBusiness',
-          '@id': 'https://www.sinqobileconstruction.co.za',
+          '@id': 'https://www.sinqobileconstruction.co.za/#localbusiness',
           name: 'Sinqobile Construction',
           image: 'https://www.sinqobileconstruction.co.za/logo.png',
           description: 'Professional construction and building services in Gauteng. Building, plastering, painting, paving, tiling, and plumbing.',
@@ -53,8 +54,8 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
             latitude: BUSINESS_INFO.coordinates.latitude,
             longitude: BUSINESS_INFO.coordinates.longitude
           },
-          telephone: '+27828688396',
-          email: 'info@sinqobileconstruction.co.za',
+          telephone: BUSINESS_INFO.contact.phone,
+          email: BUSINESS_INFO.contact.email,
           priceRange: 'R5000-R500000',
           paymentAccepted: ['Cash', 'Credit Card', 'Bank Transfer', 'EFT'],
           areaServed: [
@@ -67,12 +68,20 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
             { '@type': 'City', name: 'Centurion' },
             { '@type': 'City', name: 'Pretoria' }
           ],
-          openingHoursSpecification: {
-            '@type': 'OpeningHoursSpecification',
-            dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-            opens: '07:00',
-            closes: '18:00'
-          },
+          openingHoursSpecification: [
+            {
+              '@type': 'OpeningHoursSpecification',
+              dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+              opens: '07:00',
+              closes: '17:00'
+            },
+            {
+              '@type': 'OpeningHoursSpecification',
+              dayOfWeek: 'Saturday',
+              opens: '08:00',
+              closes: '13:00'
+            }
+          ],
           aggregateRating: {
             '@type': 'AggregateRating',
             ratingValue: '4.9',
@@ -80,6 +89,7 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
           },
           founder: {
             '@type': 'Person',
+            '@id': 'https://www.sinqobileconstruction.co.za/#founder',
             name: 'Dingwayo Reason Ndlovu'
           }
         }
@@ -139,6 +149,7 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
           name: 'Sinqobile Construction',
           description: 'Professional Construction Services in Gauteng',
           publisher: {
+            '@type': 'Organization',
             '@id': 'https://www.sinqobileconstruction.co.za/#organization'
           },
           inLanguage: ['en', 'af', 'zu', 'st']

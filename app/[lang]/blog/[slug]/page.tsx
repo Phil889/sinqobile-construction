@@ -13,9 +13,9 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({
-  params: { slug },
+  params: { lang, slug },
 }: {
-  params: { slug: string }
+  params: { lang: Locale; slug: string }
 }): Promise<Metadata> {
   const post = getBlogPostBySlug(slug)
   
@@ -29,10 +29,27 @@ export async function generateMetadata({
     title: `${post.title} | Sinqobile Construction Blog`,
     description: post.excerpt,
     keywords: post.keywords.join(', '),
+    alternates: {
+      canonical: `/${lang}/blog/${slug}`,
+      languages: {
+        'en': `/en/blog/${slug}`,
+        'af': `/af/blog/${slug}`,
+        'zu': `/zu/blog/${slug}`,
+        'st': `/st/blog/${slug}`,
+        'x-default': `/en/blog/${slug}`,
+      },
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      images: [post.image],
+      url: `/${lang}/blog/${slug}`,
+      siteName: 'Sinqobile Construction',
+      images: [{
+        url: post.image.startsWith('/') ? post.image : `/${post.image}`,
+        width: 1200,
+        height: 630,
+        alt: post.title,
+      }],
       type: 'article',
       publishedTime: post.date,
       authors: [post.author],

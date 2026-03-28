@@ -130,11 +130,34 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   const serviceInfo = (dict.services.items as any)[params.service]
   const serviceName = serviceInfo?.name || serviceData?.name || params.service
 
+  const title = seo?.title || `${serviceName} Services Johannesburg | Sinqobile Construction`
+  const description = seo?.description || `Professional ${serviceName.toLowerCase()} services in Johannesburg & Gauteng. 15+ years experience, 500+ projects. Free quotes — +27 82 868 8396`
+
   return {
-    title: seo?.title || `${serviceName} Services Johannesburg | Sinqobile Construction`,
-    description: seo?.description || `Professional ${serviceName.toLowerCase()} services in Johannesburg & Gauteng. 15+ years experience, 500+ projects. Free quotes — +27 82 868 8396`,
+    title,
+    description,
     alternates: {
       canonical: `/${params.lang}/services/${params.service}`,
+      languages: {
+        'en': `/en/services/${params.service}`,
+        'af': `/af/services/${params.service}`,
+        'zu': `/zu/services/${params.service}`,
+        'st': `/st/services/${params.service}`,
+        'x-default': `/en/services/${params.service}`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url: `/${params.lang}/services/${params.service}`,
+      siteName: 'Sinqobile Construction',
+      type: 'website',
+      images: [{
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: `${serviceName} Services in Johannesburg | Sinqobile Construction`,
+      }],
     },
   }
 }
