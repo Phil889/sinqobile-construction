@@ -570,6 +570,280 @@ export const serviceContentData: Record<string, ServiceContent> = {
       'Workmanship guarantee on all repairs and installations',
     ],
   },
+
+  'waterproofing': {
+    slug: 'waterproofing',
+    intro: `Sinqobile Construction provides professional waterproofing and damp proofing services across Johannesburg and Gauteng. With 15+ years of experience, we have treated hundreds of properties suffering from roof leaks, rising damp, basement moisture, and bathroom waterproofing failures. Waterproofing in Johannesburg costs between R70 and R600 per square metre in 2026, depending on the method (torch-on membrane, bitumen spray, cementitious coating) and the area being treated. Gauteng's intense summer thunderstorms and highveld hail put enormous pressure on roofs, walls, and foundations — proper waterproofing is not a luxury, it is essential to protect your property investment. We diagnose the source of every damp or leak problem before recommending a solution, because treating the symptom without fixing the cause wastes money. All our waterproofing work includes a workmanship guarantee and uses products from established manufacturers (a.b.e., Sika, Dulux AquaShield).`,
+    subServices: [
+      {
+        name: 'Roof Waterproofing',
+        description: 'Torch-on bitumen membrane, liquid-applied polyurethane, and acrylic coating systems for flat roofs, concrete roofs, and parapet walls. We prepare surfaces by cleaning, repairing cracks, and priming before applying waterproofing. Roof waterproofing costs R200–R500/m² depending on the system and roof condition.'
+      },
+      {
+        name: 'Bathroom & Wet Area Waterproofing',
+        description: 'Cementitious and liquid membrane waterproofing for shower floors, bath surrounds, and kitchen splash areas. Applied before tiling to prevent water penetration into the slab and walls below. Essential for preventing long-term structural damage and mould growth in your home.'
+      },
+      {
+        name: 'Rising Damp Treatment',
+        description: 'Chemical damp-proof course (DPC) injection to stop moisture wicking up through walls from the ground. We drill injection holes at 150 mm intervals along the affected wall, inject silicone-based damp-proofing cream, and replaster with salt-resistant render. Rising damp treatment costs R70–R250/m².'
+      },
+      {
+        name: 'Basement & Below-Ground Waterproofing',
+        description: 'Tanking systems for basements, cellars, and below-grade walls using bitumen membrane, cementitious slurry coatings, or cavity drain systems. Basement waterproofing is complex work requiring proper drainage design. Costs range from R800–R1,500/m² depending on the system and access conditions.'
+      },
+      {
+        name: 'Exterior Wall Waterproofing',
+        description: 'Clear water-repellent sealers and elastomeric coatings for face-brick, plaster, and concrete exterior walls. Prevents wind-driven rain from penetrating walls while allowing the substrate to breathe. Particularly important for west-facing walls in Johannesburg that bear the brunt of afternoon thunderstorms.'
+      },
+    ],
+    pricingNote: 'Waterproofing costs depend on the method, surface area, and condition of the substrate. Roof waterproofing is generally more expensive than wall treatments due to material thickness and application complexity. All quotes include surface preparation, materials, labour, and workmanship guarantee.',
+    pricingTable: [
+      { item: 'Torch-on membrane (flat roof)', range: 'R200 – R400 /m²' },
+      { item: 'Bitumen spray-on waterproofing', range: 'R300 – R500 /m²' },
+      { item: 'Rising damp injection (DPC)', range: 'R70 – R250 /m²' },
+      { item: 'Internal damp proofing (tanking + render)', range: 'R320 – R650 /m²' },
+      { item: 'Basement tanking system', range: 'R800 – R1,500 /m²' },
+      { item: 'Bathroom waterproofing (before tiling)', range: 'R150 – R350 /m²' },
+      { item: 'Exterior wall water-repellent sealer', range: 'R50 – R120 /m²' },
+      { item: 'Damp-proof paint / coating', range: 'R300 – R450 /m²' },
+    ],
+    process: [
+      {
+        step: '1',
+        title: 'Damp & Leak Assessment',
+        description: 'We inspect the affected area, use moisture meters to map the extent of the problem, and identify the water source — roof leak, rising damp, lateral penetration, or condensation.'
+      },
+      {
+        step: '2',
+        title: 'Diagnosis & Quote',
+        description: 'Based on the assessment, we recommend the most effective and cost-efficient waterproofing method. You receive an itemised quote with product specifications and guarantee terms.'
+      },
+      {
+        step: '3',
+        title: 'Surface Prep & Application',
+        description: 'We prepare the surface (clean, repair cracks, prime), then apply the waterproofing system according to manufacturer specifications. Multiple coats are applied where required with correct drying times between layers.'
+      },
+      {
+        step: '4',
+        title: 'Testing & Guarantee',
+        description: 'We flood-test flat roofs and bathrooms to verify the waterproofing is watertight. You receive a workmanship warranty and product specification sheets for your records.'
+      },
+    ],
+    faqs: [
+      {
+        question: 'How much does waterproofing cost in Johannesburg in 2026?',
+        answer: 'Waterproofing in Johannesburg costs between R70 and R600 per square metre in 2026, depending on the method and area. Rising damp treatment is the most affordable at R70–R250/m². Torch-on membrane for flat roofs costs R200–R400/m². Basement tanking is the most expensive at R800–R1,500/m². Bathroom waterproofing before tiling costs R150–R350/m². We provide free assessments and itemised quotes.'
+      },
+      {
+        question: 'What causes rising damp in Johannesburg homes?',
+        answer: 'Rising damp occurs when ground moisture wicks up through walls via capillary action because the damp-proof course (DPC) has failed, was bridged during construction, or was never installed. It is common in older Johannesburg homes built before modern DPC standards. Signs include tide marks on internal walls, peeling paint at skirting level, salt deposits (efflorescence), and a musty smell. Chemical DPC injection is the standard treatment — it creates a new moisture barrier within the wall at a fraction of the cost of rebuilding.'
+      },
+      {
+        question: 'How long does roof waterproofing last?',
+        answer: 'Quality torch-on bitumen membrane typically lasts 10–15 years. Liquid-applied polyurethane systems last 8–12 years. Acrylic coatings last 5–8 years but are easier and cheaper to reapply. The lifespan depends on the product quality, application thickness, surface preparation, and exposure to UV and hail. We use products from a.b.e., Sika, and Dulux AquaShield with proven track records in Gauteng conditions.'
+      },
+      {
+        question: 'Should I waterproof my bathroom before tiling?',
+        answer: 'Yes — bathroom waterproofing before tiling is essential, not optional. Water penetrates through tile grout joints and if the substrate is not waterproofed, moisture will seep into the slab, causing structural damage, mould growth, and leaks to rooms below. We apply a cementitious or liquid membrane to the shower floor, walls (up to 1.8 m in the shower area), and any floor penetrations. This must cure fully before tiling begins. The cost is R150–R350/m² and prevents damage that would cost thousands to repair later.'
+      },
+      {
+        question: 'Can you fix damp walls without removing plaster?',
+        answer: 'For rising damp, we inject chemical DPC through small holes drilled at the base of the wall — the existing plaster is then left to dry out over 4–8 weeks. However, if the plaster is severely salt-contaminated (white crystite deposits), it must be removed to 300 mm above the damp line and replaced with salt-resistant render. We assess the plaster condition during inspection and recommend the least invasive approach that will deliver a lasting result.'
+      },
+    ],
+    whyChoose: [
+      'Proper diagnosis first — we identify the water source before recommending treatment',
+      'Products from a.b.e., Sika, and Dulux AquaShield with manufacturer-backed warranties',
+      '15+ years treating damp and leaks across Gauteng — residential and commercial',
+      'Flood-tested results — flat roofs and bathrooms tested before handover',
+      'Free damp and leak assessments with moisture meter mapping',
+      'Fully insured with comprehensive liability cover',
+    ],
+  },
+
+  'painting': {
+    slug: 'painting',
+    intro: `Sinqobile Construction provides professional interior and exterior painting services across Johannesburg and Gauteng. Over 15 years our painting teams have transformed hundreds of homes and commercial properties — from single-room repaints in Sandton to full exterior makeovers in Fourways, Midrand, and Pretoria. Interior painting in Johannesburg costs R50–R80 per square metre in 2026 for standard walls, while exterior painting costs R60–R200+ per square metre depending on surface condition and paint quality. We use premium paints from Dulux, Plascon, and Fired Earth because cheaper paints fade, peel, and require repainting within 2–3 years — a false economy. Proper surface preparation is what separates a paint job that lasts 8–10 years from one that fails in 2. We fill cracks, sand surfaces, apply appropriate primers (plaster primer, damp-seal, or alkali-resistant), and apply 2–3 coats of quality paint. Every project includes a workmanship guarantee and colour consultation.`,
+    subServices: [
+      {
+        name: 'Interior Painting',
+        description: 'Walls, ceilings, cornices, skirting boards, door frames, and built-in cupboards. We protect furniture and flooring with drop cloths, fill all cracks and holes, sand smooth, prime, and apply 2 coats of premium PVA or acrylic interior paint. Interior painting costs R50–R80/m² for standard walls, with ceilings at R500–R1,500 per room.'
+      },
+      {
+        name: 'Exterior Painting',
+        description: 'House exterior walls, fascia boards, window frames, garage doors, boundary walls, and gates. We pressure-wash surfaces, repair cracks with exterior-grade filler, apply exterior primer, and use weather-resistant exterior acrylic or elastomeric paint rated for Gauteng UV and rain exposure. Exterior painting costs R60–R200+/m².'
+      },
+      {
+        name: 'Commercial & Office Painting',
+        description: 'Office interiors, retail spaces, warehouses, and common areas. We work after hours and on weekends to minimise business disruption. Large commercial projects are quoted per square metre with volume discounts for areas over 500 m².'
+      },
+      {
+        name: 'Specialty Finishes',
+        description: 'Feature walls, textured finishes (Venetian plaster, suede, metallic), epoxy garage floor coatings, and anti-mould bathroom coatings. We source specialist products from Fired Earth, Cemcrete, and international suppliers for unique interior design requirements.'
+      },
+      {
+        name: 'Roof Painting',
+        description: 'Steel and tile roof cleaning, rust treatment, priming, and application of UV-resistant acrylic or heat-reflective roof coatings. Extends roof life by 10–15 years. Costs R80–R150/m² including preparation.'
+      },
+    ],
+    pricingNote: 'Painting costs depend on surface area, condition, accessibility (scaffolding may be needed for multi-storey), and paint quality. Premium paints cost more upfront but last 8–10 years vs 2–3 years for budget paint. All quotes include surface prep, materials, labour, and clean-up.',
+    pricingTable: [
+      { item: 'Interior walls (per m², 2 coats)', range: 'R50 – R80 /m²' },
+      { item: 'Ceiling painting (per room)', range: 'R500 – R1,500' },
+      { item: 'Exterior walls (per m², 2 coats)', range: 'R60 – R200 /m²' },
+      { item: 'Full house interior (3-bed)', range: 'R15,000 – R35,000' },
+      { item: 'Full house exterior (3-bed)', range: 'R20,000 – R50,000' },
+      { item: 'Roof painting (per m²)', range: 'R80 – R150 /m²' },
+      { item: 'Feature wall / specialty finish', range: 'R150 – R400 /m²' },
+      { item: 'Epoxy garage floor coating', range: 'R200 – R350 /m²' },
+    ],
+    process: [
+      {
+        step: '1',
+        title: 'Free Quote & Colour Consult',
+        description: 'We measure the area, assess surface condition, discuss colour preferences, and provide a written quote. We can bring colour swatches and recommend palettes that suit your home and natural light.'
+      },
+      {
+        step: '2',
+        title: 'Surface Preparation',
+        description: 'We fill cracks, sand rough surfaces, scrape loose paint, treat mould or damp, and apply the correct primer. This step takes 30–40% of the project time and is what makes the paint job last.'
+      },
+      {
+        step: '3',
+        title: 'Painting',
+        description: 'Two coats of premium paint applied by brush, roller, or airless spray depending on the surface. Edges are cut in by hand for clean lines. We work room by room in occupied homes to minimise disruption.'
+      },
+      {
+        step: '4',
+        title: 'Clean-Up & Handover',
+        description: 'Drop cloths removed, paint splatters cleaned, furniture returned to position. We leave touch-up paint for minor future marks. Workmanship guarantee provided.'
+      },
+    ],
+    faqs: [
+      {
+        question: 'How much does house painting cost in Johannesburg in 2026?',
+        answer: 'Interior painting in Johannesburg costs R50–R80 per square metre for standard walls in 2026. A full 3-bedroom house interior costs R15,000–R35,000 including ceilings. Exterior painting costs R60–R200+/m², with a full exterior on a 3-bedroom house running R20,000–R50,000. These prices include surface preparation, primer, 2 coats of quality paint, and clean-up. Premium paints (Dulux Weatherguard, Plascon Double Velvet) cost more but last 8–10 years.'
+      },
+      {
+        question: 'How long does exterior paint last in Johannesburg?',
+        answer: 'Quality exterior acrylic paint lasts 8–10 years in Johannesburg when properly applied on well-prepared surfaces. Budget paint may only last 2–3 years before fading, chalking, or peeling — especially on north and west-facing walls that get the most sun and rain. Key factors: surface preparation (cracks filled, primer applied), paint quality (elastomeric or 100% acrylic), and correct number of coats (minimum 2). We use Dulux Weatherguard and Plascon SunProof for exterior work.'
+      },
+      {
+        question: 'Should I paint over existing paint or strip it first?',
+        answer: 'If the existing paint is sound (not peeling, flaking, or bubbling), you can paint over it after sanding and priming. If the paint is failing, we scrape loose areas back to a stable edge, sand, prime bare patches, and then paint. Full stripping is only needed when multiple layers of old paint are peeling badly or when changing from oil-based to water-based paint. We assess the condition during your quote and recommend the most cost-effective approach.'
+      },
+      {
+        question: 'Do you paint on weekends or after hours?',
+        answer: 'Yes, we offer weekend and after-hours painting for commercial clients who cannot afford business disruption during operating hours. For residential clients, we typically work Monday to Friday 7:30–17:00 and Saturdays 8:00–13:00. After-hours work may incur a 15–20% premium. We confirm scheduling and any premium in your quote.'
+      },
+      {
+        question: 'What paint brands do you use?',
+        answer: 'We use premium paints from Dulux, Plascon, and Fired Earth. For interior walls, Dulux Wash & Wear or Plascon Double Velvet are our standard recommendations. For exteriors, Dulux Weatherguard or Plascon SunProof provide excellent UV and weather resistance for Johannesburg conditions. For specialty finishes, we source from Fired Earth, Cemcrete, and international suppliers. We never use unbranded or diluted paint — the product is specified in your quote.'
+      },
+    ],
+    whyChoose: [
+      'Premium paints only — Dulux, Plascon, Fired Earth (never unbranded or diluted)',
+      'Thorough surface prep — cracks filled, sanded, primed (30–40% of project time)',
+      '15+ years painting homes and commercial properties across Gauteng',
+      'Free colour consultation with swatches and palette recommendations',
+      'Clean, respectful teams — furniture covered, floors protected, splatters cleaned',
+      'Workmanship guarantee with touch-up paint left for future marks',
+    ],
+  },
+
+  'electrical': {
+    slug: 'electrical',
+    intro: `Sinqobile Construction provides licensed electrical services across Johannesburg and Gauteng — from new installations and rewiring to fault-finding, repairs, and electrical compliance certificates (COC). Our electricians are registered with the Department of Employment and Labour and work in accordance with SANS 10142-1 (the wiring code for South Africa). Whether you need a full house rewire in Bryanston, a DB board upgrade in Sandton, or an electrical COC for a property sale in Midrand, our team delivers safe, code-compliant electrical work. Electrical installations are regulated for good reason — faulty wiring causes fires and electrocution. We never cut corners on circuit protection, cable sizing, or earth bonding. Every job is tested with calibrated instruments and documented. Standard electrician rates in Johannesburg range from R300–R600 per hour in 2026, with experienced electricians charging R600–R800/hr for complex work.`,
+    subServices: [
+      {
+        name: 'Electrical Installations (New Build & Renovation)',
+        description: 'Complete electrical rough-in and fit-out for new homes, extensions, and renovations. DB board installation, circuit wiring, plug points, light points, geyser connections, stove connections, and outdoor lighting. All installations comply with SANS 10142-1 and are tested before handover.'
+      },
+      {
+        name: 'Electrical COC Certificates',
+        description: 'Electrical Certificate of Compliance inspections and certificates as required when selling a property, changing ownership, or after new installations. We inspect the DB board, earth leakage protection, cable sizing, plug points, and general safety. COC certificates cost R850–R2,750 in Johannesburg depending on property size. Same-day certificates available for compliant installations.'
+      },
+      {
+        name: 'DB Board Upgrades',
+        description: 'Replacing old fuse boards with modern circuit breaker distribution boards, adding earth leakage protection (RCD/ELCB), and splitting circuits to meet current load requirements. Essential for older homes that were wired for lower electrical demands. DB board upgrade costs R3,000–R8,000 depending on the number of circuits.'
+      },
+      {
+        name: 'Fault Finding & Repairs',
+        description: 'Tripping circuits, flickering lights, dead plug points, and intermittent faults diagnosed with insulation resistance testing, earth loop impedance testing, and thermal imaging. We locate the fault, explain the cause, and repair it properly — no guesswork, no temporary fixes.'
+      },
+      {
+        name: 'House Rewiring',
+        description: 'Full or partial rewiring of older homes with outdated or unsafe wiring (typically pre-1980s installations with cloth-insulated cable or no earth wiring). Rewiring a typical 3-bedroom house costs R20,000–R30,000 and includes a new DB board, all new circuits, plug points, light points, and a COC on completion.'
+      },
+      {
+        name: 'Outdoor & Security Lighting',
+        description: 'Garden lighting, security floodlights, motion-sensor lights, gate motor connections, and electric fence installations. We design lighting layouts for security coverage and aesthetic effect, using energy-efficient LED fittings throughout.'
+      },
+    ],
+    pricingNote: 'Electrical costs depend on the scope of work, cable runs, number of points, and whether the installation is new or a retrofit. All quotes include materials, labour, testing, and a COC where applicable. No hidden call-out fees.',
+    pricingTable: [
+      { item: 'Electrician rate (standard, per hour)', range: 'R300 – R600 /hr' },
+      { item: 'Electrical COC certificate', range: 'R850 – R2,750' },
+      { item: 'New plug point (single)', range: 'R300 – R500' },
+      { item: 'New plug point (double)', range: 'R400 – R600' },
+      { item: 'DB board upgrade', range: 'R3,000 – R8,000' },
+      { item: 'Full house rewire (3-bedroom)', range: 'R20,000 – R30,000' },
+      { item: 'Geyser connection / timer', range: 'R1,500 – R3,000' },
+      { item: 'Security lighting (per light, installed)', range: 'R500 – R1,500' },
+    ],
+    process: [
+      {
+        step: '1',
+        title: 'Assessment & Quote',
+        description: 'We inspect the existing installation (or review plans for new work), identify the scope, and provide an itemised quote with material specifications. For COC inspections, we assess on-site and advise immediately.'
+      },
+      {
+        step: '2',
+        title: 'Installation / Repair',
+        description: 'Our electricians complete the work according to SANS 10142-1 standards. We use quality materials from established suppliers and label all circuits clearly at the DB board.'
+      },
+      {
+        step: '3',
+        title: 'Testing & Certification',
+        description: 'Every installation is tested with calibrated instruments — insulation resistance, earth continuity, loop impedance, and RCD trip time. We issue a COC for all new installations and can issue one for existing compliant installations.'
+      },
+      {
+        step: '4',
+        title: 'Handover & Documentation',
+        description: 'You receive a test certificate, circuit schedule, and COC where applicable. We explain the installation, show you the DB board layout, and demonstrate any new switches or controls.'
+      },
+    ],
+    faqs: [
+      {
+        question: 'How much does an electrical COC cost in Johannesburg in 2026?',
+        answer: 'An electrical Certificate of Compliance (COC) in Johannesburg costs R850–R2,750 in 2026, depending on property size, number of DB boards, and installation complexity. A standard 3-bedroom home with one DB board is typically R850–R1,500. Larger properties with multiple boards or complex installations cost more. If the installation fails the inspection, repair costs are charged separately. We provide same-day COC certificates for compliant installations.'
+      },
+      {
+        question: 'Do I need an electrical COC when selling my house?',
+        answer: 'Yes. South African law requires a valid electrical Certificate of Compliance (COC) when selling a residential property or changing ownership. The COC confirms that the electrical installation complies with SANS 10142-1 safety standards. The seller is responsible for obtaining the COC and paying for any repairs needed to achieve compliance. A COC is valid for 2 years from the date of issue.'
+      },
+      {
+        question: 'How much does it cost to rewire a house in Johannesburg?',
+        answer: 'Rewiring a typical 3-bedroom house in Johannesburg costs R20,000–R30,000 in 2026. This includes a new DB board with circuit breakers and earth leakage protection, new cable on all circuits, new plug points and light points, and a COC on completion. Larger homes or those with difficult access (concrete walls, inaccessible ceilings) cost more. We provide a detailed quote after inspecting your existing installation.'
+      },
+      {
+        question: 'Why does my DB board keep tripping?',
+        answer: 'The most common causes of tripping circuit breakers are: overloaded circuits (too many appliances on one circuit), a faulty appliance drawing excessive current, moisture in plug points or junction boxes, and degraded cable insulation causing earth leakage. Our electricians use insulation resistance testing and earth loop impedance testing to identify the exact cause. We then repair the fault and, if necessary, split overloaded circuits to prevent future tripping.'
+      },
+      {
+        question: 'What is the difference between a circuit breaker and earth leakage?',
+        answer: 'A circuit breaker (MCB) protects against overload and short circuit — it trips when too much current flows through the cable. An earth leakage device (RCD/ELCB) protects against electrocution — it trips when current leaks to earth, which happens when you touch a live wire or a faulty appliance has an earth fault. Both are legally required in South African installations. Your DB board should have an earth leakage device protecting all circuits, plus individual circuit breakers sized for each circuit.'
+      },
+    ],
+    whyChoose: [
+      'Registered electricians compliant with SANS 10142-1 (SA wiring code)',
+      'Same-day COC certificates for compliant installations',
+      'Calibrated test instruments — insulation resistance, earth loop, RCD testing',
+      'All circuits labelled clearly at the DB board with test documentation provided',
+      '15+ years electrical experience across Gauteng — residential and commercial',
+      'Fully insured with comprehensive liability cover',
+    ],
+  },
 }
 
 export function getServiceContent(slug: string): ServiceContent | undefined {
