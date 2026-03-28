@@ -25,52 +25,52 @@ export default function BeforeAfterSlider({ dict, lang }: BeforeAfterSliderProps
   const [isDragging, setIsDragging] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
 
-  // Before/After project data
+  // Before/After project data — using real project photos as comparison pairs
   const projects: BeforeAfterImage[] = [
     {
       id: '1',
-      title: 'Building Extension & Construction',
-      location: 'Johannesburg',
+      title: 'Building & Extensions',
+      location: 'Edenvale',
       service: 'Building & Extensions',
-      beforeImage: '/images/sinqobile-construction-building-extension-johannesburg-before.jpg',
-      afterImage: '/images/sinqobile-construction-building-extension-johannesburg-after.jpg',
+      beforeImage: '/images/sinqobile-construction-building-edenvale-30.jpg',
+      afterImage: '/images/sinqobile-construction-extensions-rosebank-48.jpg',
       description: 'Professional building extension with quality brickwork, modern design, and expert construction across Johannesburg'
     },
     {
       id: '2',
-      title: 'Modern Kitchen Renovation',
-      location: 'Sandton',
-      service: 'Kitchen Remodeling',
-      beforeImage: '/images/sinqobile-construction-renovation-sandton-before.jpg',
-      afterImage: '/images/sinqobile-construction-renovation-sandton-after.jpg',
-      description: 'Complete kitchen transformation with modern finishes, new cabinetry, and upgraded appliances'
+      title: 'Kitchen & Home Renovation',
+      location: 'Bedfordview',
+      service: 'Renovation',
+      beforeImage: '/images/sinqobile-construction-renovation-bedfordview-16.jpg',
+      afterImage: '/images/sinqobile-construction-renovation-johannesburg-26.jpg',
+      description: 'Complete home renovation with modern finishes, new fixtures, and upgraded spaces'
     },
     {
       id: '3',
-      title: 'Bathroom Makeover',
-      location: 'Johannesburg',
-      service: 'Bathroom Renovation',
-      beforeImage: '/images/sinqobile-construction-tiling-johannesburg-before.jpg',
-      afterImage: '/images/sinqobile-construction-tiling-johannesburg-after.jpg',
+      title: 'Bathroom Tiling',
+      location: 'Sandton',
+      service: 'Tiling',
+      beforeImage: '/images/sinqobile-construction-tiling-bedfordview-19.jpg',
+      afterImage: '/images/sinqobile-construction-tiling-sandton-65.jpg',
       description: 'Luxury bathroom renovation featuring premium tiles, modern fixtures, and elegant design'
     },
     {
       id: '4',
-      title: 'Exterior Painting & Repairs',
-      location: 'Pretoria',
-      service: 'Painting & Maintenance',
-      beforeImage: '/images/sinqobile-construction-painting-pretoria-before.jpg',
-      afterImage: '/images/sinqobile-construction-painting-pretoria-after.jpg',
-      description: 'Complete exterior refresh with professional painting and structural repairs'
+      title: 'Professional Painting',
+      location: 'Alberton',
+      service: 'Painting',
+      beforeImage: '/images/sinqobile-construction-painting-alberton-4.jpg',
+      afterImage: '/images/sinqobile-construction-painting-alberton-53.jpg',
+      description: 'Complete exterior and interior painting with professional finish'
     },
     {
       id: '5',
-      title: 'Paving & Landscaping',
+      title: 'Paving & Driveways',
       location: 'Midrand',
-      service: 'Paving & Landscaping',
-      beforeImage: '/images/sinqobile-construction-paving-midrand-before.jpg',
-      afterImage: '/images/sinqobile-construction-paving-midrand-after.jpg',
-      description: 'Stunning outdoor transformation with quality paving and professional landscaping'
+      service: 'Paving',
+      beforeImage: '/images/sinqobile-construction-paving-midrand-59.jpg',
+      afterImage: '/images/sinqobile-construction-paving-sandton-77.jpg',
+      description: 'Stunning outdoor transformation with quality paving across Gauteng'
     }
   ]
 
