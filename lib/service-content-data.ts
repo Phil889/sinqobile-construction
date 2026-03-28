@@ -301,6 +301,96 @@ export const serviceContentData: Record<string, ServiceContent> = {
       'Fully insured with comprehensive construction and liability cover',
     ],
   },
+
+  'paving': {
+    slug: 'paving',
+    intro: `Sinqobile Construction is a professional paving contractor serving Johannesburg and the greater Gauteng region. Over 15 years we have completed hundreds of paving projects — from single-car driveways in Sandton to large commercial parking areas in Midrand and Centurion. Paving in Johannesburg costs between R350 and R950 per square metre in 2026, depending on the material (concrete, clay brick, cobblestone, or natural stone) and site preparation required. We handle the full scope: site excavation, compacted sub-base preparation, edge restraints, paver laying, joint filling, and sealing. Proper sub-base preparation is the single most important factor in paving longevity — we compact to engineering specifications using plate compactors and laser levelling, which prevents sinking, shifting, and water pooling that plague cheaper installations. Every project includes a workmanship guarantee and free drainage assessment.`,
+    subServices: [
+      {
+        name: 'Driveway Paving',
+        description: 'Single and double driveways in concrete, clay brick, or interlocking pavers. We excavate to 150–200 mm depth, lay compacted G5 sub-base, install edge restraints, and lay pavers on a screeded bedding course. A standard single-car driveway (30–40 m²) costs R15,000–R35,000 including all materials, labour, and finishing.'
+      },
+      {
+        name: 'Patio & Entertainment Area Paving',
+        description: 'Outdoor living spaces, braai areas, and pool surrounds in natural stone, cobblestone, or textured concrete pavers. We design drainage falls to prevent water pooling and can integrate steps, raised planters, and built-in braai foundations.'
+      },
+      {
+        name: 'Walkway & Garden Path Paving',
+        description: 'Functional and decorative pathways connecting your home to garden features, garages, and outbuildings. We offer straight-lay, herringbone, and basket-weave patterns in materials ranging from budget concrete to premium clay brick.'
+      },
+      {
+        name: 'Commercial & Industrial Paving',
+        description: 'Parking areas, loading zones, warehouse aprons, and commercial walkways. We use heavy-duty interlocking pavers rated for vehicle traffic and can install line marking and speed bumps as part of the project.'
+      },
+      {
+        name: 'Paving Repairs & Relaying',
+        description: 'Sunken, shifted, or damaged paving lifted, sub-base re-compacted, and pavers relaid. We match existing paver styles and colours where possible. Spot repairs for small areas or full relaying for large sections that have failed due to poor original sub-base work.'
+      },
+    ],
+    pricingNote: 'Paving costs in Johannesburg vary by material, area size, and site conditions. Labour accounts for 30–40% of the total budget. Sandton and northern suburb projects tend to be 10–15% higher due to premium material preferences. All quotes include site prep, materials, labour, and finishing — no hidden extras.',
+    pricingTable: [
+      { item: 'Concrete pavers (supplied & laid)', range: 'R300 – R600 /m²' },
+      { item: 'Clay / brick pavers (supplied & laid)', range: 'R400 – R700 /m²' },
+      { item: 'Interlocking pavers (supplied & laid)', range: 'R300 – R600 /m²' },
+      { item: 'Cobblestone paving', range: 'R450 – R900 /m²' },
+      { item: 'Natural stone (granite, sandstone)', range: 'R450 – R1,000 /m²' },
+      { item: 'Single-car driveway (30–40 m²)', range: 'R15,000 – R35,000' },
+      { item: 'Double driveway (60–80 m²)', range: 'R30,000 – R65,000' },
+      { item: 'Paving repair / relaying', range: 'R200 – R450 /m²' },
+    ],
+    process: [
+      {
+        step: '1',
+        title: 'Free Site Visit',
+        description: 'We measure the area, assess soil conditions and drainage, discuss your material preferences, and provide design recommendations. You receive a written quote within 48 hours.'
+      },
+      {
+        step: '2',
+        title: 'Site Preparation',
+        description: 'We excavate to the required depth (150–200 mm), remove organic material, and install a compacted G5 or G7 crusher-run sub-base. Edge restraints are set in concrete to prevent paver creep.'
+      },
+      {
+        step: '3',
+        title: 'Paver Installation',
+        description: 'Pavers are laid on a screeded bedding course in your chosen pattern. We cut pavers precisely around curves, drains, and obstacles using diamond-blade cutters for clean edges.'
+      },
+      {
+        step: '4',
+        title: 'Finishing & Handover',
+        description: 'Joints are filled with kiln-dried sand or polymeric jointing sand, the surface is plate-compacted to lock pavers in place, and excess sand is swept clean. We photograph the finished work and hand over your warranty.'
+      },
+    ],
+    faqs: [
+      {
+        question: 'How much does paving cost per square metre in Johannesburg in 2026?',
+        answer: 'Paving in Johannesburg costs between R350 and R950 per square metre in 2026, depending on the material. Concrete pavers are most affordable at R300–R600/m², clay brick pavers cost R400–R700/m², and natural stone or cobblestone ranges from R450–R1,000/m². These prices include materials, labour, sub-base preparation, and finishing. A standard single-car driveway (30–40 m²) costs R15,000–R35,000 all-in. We provide free quotes with no obligation.'
+      },
+      {
+        question: 'Which paving material is best for a Johannesburg driveway?',
+        answer: 'Interlocking concrete pavers are the most popular choice for Johannesburg driveways — they are affordable (R300–R600/m²), handle vehicle loads well, allow rainwater drainage through the joints, and are easy to repair if individual pavers crack. Clay brick pavers cost more (R400–R700/m²) but offer a premium look and longer lifespan. Cobblestone is the luxury option at R450–R900/m². We recommend interlocking pavers for most residential driveways because they offer the best balance of cost, durability, and aesthetics.'
+      },
+      {
+        question: 'How long does a driveway paving project take?',
+        answer: 'A standard single-car driveway (30–40 m²) takes 2–3 days from excavation to handover. A double driveway (60–80 m²) takes 3–5 days. Larger projects like parking areas or full-property paving take 1–2 weeks. These timelines include site prep, sub-base compaction, paver laying, and finishing. Weather can cause delays during Gauteng\'s rainy season (October–March) — we schedule around forecasted rain where possible.'
+      },
+      {
+        question: 'Why is sub-base preparation so important for paving?',
+        answer: 'The sub-base is the compacted stone layer beneath your pavers — it carries the load and prevents sinking, shifting, and water pooling. Without a properly compacted sub-base (minimum 100 mm of G5 crusher run), pavers will settle unevenly within months, creating trip hazards and pooling water. This is the most common reason cheap paving jobs fail. We compact to engineering specifications using plate compactors and verify levels with laser equipment before laying any pavers.'
+      },
+      {
+        question: 'Do you remove old paving before installing new?',
+        answer: 'Yes, we can lift and remove existing paving, dispose of old materials, and start fresh with proper sub-base preparation. If your existing sub-base is sound, we may be able to relay new pavers on top, which saves excavation costs. We assess the condition during your free site visit and recommend the most cost-effective approach. Old pavers in good condition can sometimes be reused in garden paths or secondary areas.'
+      },
+    ],
+    whyChoose: [
+      'Engineering-grade sub-base preparation — compacted to spec with plate compactors and laser levelling',
+      '15+ years of paving experience across Gauteng — driveways, patios, commercial areas',
+      'All materials supplied and laid — concrete, clay brick, cobblestone, natural stone',
+      'Free site visit with drainage assessment and written quote within 48 hours',
+      'Workmanship guarantee on every installation',
+      'Fully insured with comprehensive liability cover',
+    ],
+  },
 }
 
 export function getServiceContent(slug: string): ServiceContent | undefined {
