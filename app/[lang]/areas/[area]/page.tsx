@@ -355,8 +355,44 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
     notFound()
   }
 
+  const areaSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': `https://www.sinqobileconstruction.co.za/${lang}/areas/${area}#localbusiness`,
+    name: `Sinqobile Construction - ${location.name}`,
+    description: location.description,
+    telephone: '+27828688396',
+    url: `https://www.sinqobileconstruction.co.za/${lang}/areas/${area}`,
+    areaServed: {
+      '@type': 'City',
+      name: location.name,
+      containedInPlace: { '@type': 'State', name: 'Gauteng' },
+    },
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'The William 1, Broadacres Drive',
+      addressLocality: 'Sandton',
+      addressRegion: 'Gauteng',
+      postalCode: '2191',
+      addressCountry: 'ZA',
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: String(location.rating),
+      reviewCount: '127',
+    },
+    parentOrganization: {
+      '@type': 'Organization',
+      '@id': 'https://www.sinqobileconstruction.co.za/#organization',
+    },
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(areaSchema) }}
+      />
       <Breadcrumb
         items={[
           { label: 'Service Areas', href: `/${lang}/areas` },
