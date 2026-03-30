@@ -14,6 +14,30 @@ export interface ServiceContent {
   faqs: { question: string; answer: string }[]
   whyChoose: string[]
   materialsNote?: string
+  relatedServices?: string[]
+}
+
+// Related service mappings for internal linking
+export const relatedServicesMap: Record<string, string[]> = {
+  'building': ['concrete', 'extensions', 'roofing', 'plumbing', 'electrical'],
+  'plumbing': ['waterproofing', 'building', 'renovation', 'maintenance', 'repairs'],
+  'renovation': ['painting', 'tiling', 'plumbing', 'electrical', 'flooring'],
+  'paving': ['concrete', 'landscaping', 'fencing', 'brickwork'],
+  'concrete': ['building', 'paving', 'extensions', 'brickwork'],
+  'roofing': ['waterproofing', 'painting', 'building', 'repairs', 'maintenance'],
+  'waterproofing': ['roofing', 'plumbing', 'painting', 'building', 'repairs'],
+  'painting': ['plastering', 'renovation', 'roofing', 'maintenance'],
+  'electrical': ['plumbing', 'building', 'renovation', 'maintenance', 'repairs'],
+  'plastering': ['painting', 'building', 'renovation', 'brickwork'],
+  'tiling': ['flooring', 'renovation', 'waterproofing', 'plastering'],
+  'extensions': ['building', 'concrete', 'roofing', 'plumbing', 'electrical'],
+  'fencing': ['brickwork', 'paving', 'landscaping', 'electrical'],
+  'flooring': ['tiling', 'renovation', 'painting'],
+  'brickwork': ['building', 'fencing', 'plastering', 'concrete'],
+  'landscaping': ['paving', 'fencing', 'brickwork', 'waterproofing'],
+  'maintenance': ['plumbing', 'electrical', 'painting', 'roofing', 'repairs'],
+  'repairs': ['plumbing', 'electrical', 'roofing', 'maintenance', 'waterproofing'],
+  'installation': ['electrical', 'plumbing', 'renovation', 'building'],
 }
 
 export const serviceContentData: Record<string, ServiceContent> = {

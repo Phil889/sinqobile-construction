@@ -475,14 +475,48 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
               Our Services in {location.name}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {location.services.map((service, index) => (
-                <div key={index} className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow text-center">
-                  <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <CheckCircle className="text-accent" size={24} />
-                  </div>
-                  <h3 className="font-semibold text-secondary">{service}</h3>
-                </div>
-              ))}
+              {location.services.map((service, index) => {
+                // Map service display name to slug for linking
+                const slugMap: Record<string, string> = {
+                  'Residential Building & Extensions': 'building',
+                  'Home Renovations & Remodeling': 'renovation',
+                  'Home Renovations': 'renovation',
+                  'Roofing & Waterproofing': 'roofing',
+                  'Roofing & Roof Repairs': 'roofing',
+                  'Plastering & Painting': 'painting',
+                  'Plastering & Skimming': 'plastering',
+                  'Paving & Driveways': 'paving',
+                  'Paving & Concrete Work': 'paving',
+                  'Plumbing Services': 'plumbing',
+                  'Plumbing & Geyser Installation': 'plumbing',
+                  'Tiling & Flooring': 'tiling',
+                  'General Maintenance': 'maintenance',
+                  'Building Maintenance': 'maintenance',
+                  'Interior & Exterior Painting': 'painting',
+                  'New Home Construction': 'building',
+                  'Modern Extensions & Additions': 'extensions',
+                  'Luxury Home Renovations': 'renovation',
+                  'High-End Finishes & Tiling': 'tiling',
+                  'Premium Roofing Solutions': 'roofing',
+                  'Designer Paving & Landscaping': 'paving',
+                  'Smart Home Integration': 'electrical',
+                  'Commercial Office Fit-outs': 'renovation',
+                  'Property Maintenance': 'maintenance',
+                }
+                const slug = slugMap[service]
+                return (
+                  <Link
+                    key={index}
+                    href={slug ? `/${lang}/services/${slug}` : `/${lang}/services`}
+                    className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow text-center"
+                  >
+                    <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <CheckCircle className="text-accent" size={24} />
+                    </div>
+                    <h3 className="font-semibold text-secondary">{service}</h3>
+                  </Link>
+                )
+              })}
             </div>
             <div className="text-center mt-12">
               <Link

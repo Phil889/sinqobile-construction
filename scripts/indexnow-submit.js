@@ -25,6 +25,7 @@ const pages = [
   '/blog/top-10-home-renovation-ideas-south-africa',
   '/blog/understanding-building-regulations-south-africa',
   '/blog/roofing-materials-guide-gauteng-climate',
+  '/blog/home-renovation-costs-johannesburg-2026',
 ];
 
 async function submitToIndexNow(urls) {

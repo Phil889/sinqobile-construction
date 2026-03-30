@@ -4,7 +4,7 @@ import { getDictionary } from '@/lib/dictionaries'
 import { Locale } from '@/i18n.config'
 import { getServiceBySlug, enhancedServices } from '@/lib/enhanced-services-data'
 import { getProjectsByCategory } from '@/lib/all-projects-data'
-import { getServiceContent } from '@/lib/service-content-data'
+import { getServiceContent, relatedServicesMap } from '@/lib/service-content-data'
 import ServiceSchema from '@/components/service-schema'
 import Breadcrumb from '@/components/breadcrumb'
 import { CheckCircle, Phone, ArrowLeft, MapPin, Calendar } from 'lucide-react'
@@ -445,6 +445,48 @@ export default async function ServicePage({ params: { lang, service } }: Service
                   })
                 }}
               />
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Related Services */}
+      {relatedServicesMap[service] && (
+        <section className="py-20 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-8 text-center">
+                Related Services
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {relatedServicesMap[service].map((related) => {
+                  const relatedData = getServiceBySlug(related)
+                  const relatedInfo = (dict.services.items as any)[related] || (dict as any).extendedServices?.[related]
+                  if (!relatedData) return null
+                  return (
+                    <Link
+                      key={related}
+                      href={`/${lang}/services/${related}`}
+                      className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow border-l-4 border-accent"
+                    >
+                      <h3 className="font-semibold text-primary mb-2">
+                        {relatedInfo?.name || relatedData.name}
+                      </h3>
+                      <p className="text-sm text-secondary line-clamp-2">
+                        {relatedInfo?.description || relatedData.description}
+                      </p>
+                    </Link>
+                  )
+                })}
+              </div>
+              <div className="text-center mt-8">
+                <Link
+                  href={`/${lang}/services`}
+                  className="text-primary font-semibold hover:underline"
+                >
+                  View All 19 Services →
+                </Link>
+              </div>
             </div>
           </div>
         </section>
