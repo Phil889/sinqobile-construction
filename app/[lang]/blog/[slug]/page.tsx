@@ -183,6 +183,8 @@ export default function BlogPostPage({
                         if (line.startsWith('### ')) {
                           return `<h3 class="font-heading text-xl font-bold text-primary mt-4 mb-2">${line.substring(4)}</h3>`
                         }
+                        // Convert markdown links [text](url)
+                        line = line.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-primary underline hover:text-accent">$1</a>')
                         // Convert bold text
                         line = line.replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-primary">$1</strong>')
                         // Convert bullet points

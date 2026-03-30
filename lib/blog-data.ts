@@ -19,7 +19,7 @@ export const blogPosts: BlogPost[] = [
     content: `
 # Cost of Building a House in Johannesburg — 2026 Guide
 
-Building a house in Johannesburg is a significant investment. This guide provides current 2026 pricing based on real project data from Sinqobile Construction and market rates across Gauteng. Whether you are planning a budget-friendly family home or a luxury build in Sandton, understanding the cost breakdown helps you budget accurately and avoid surprises.
+Building a house in [Johannesburg](/en/areas/johannesburg) is a significant investment. This guide provides current 2026 pricing based on real project data from Sinqobile Construction and market rates across Gauteng. Whether you are planning a budget-friendly family home or a luxury build in [Sandton](/en/areas/sandton), understanding the cost breakdown helps you budget accurately and avoid surprises.
 
 ## Building Costs per Square Metre in Johannesburg (2026)
 
@@ -36,8 +36,8 @@ These prices cover construction only. Professional fees, municipal charges, and 
 ## Cost Breakdown by Building Component
 
 ### Foundation and Structure (30–35% of total)
-- **Raft foundation**: R1,200 – R2,000 per m² (most common in Johannesburg due to clay soils)
-- **Strip foundation**: R800 – R1,500 per linear metre (for boundary walls and lighter structures)
+- **Raft foundation**: R1,200 – R2,000 per m² (most common in Johannesburg due to clay soils) — see our [concrete services](/en/services/concrete) for details
+- **Strip foundation**: R800 – R1,500 per linear metre (for [boundary walls](/en/services/brickwork) and lighter structures)
 - Excavation, concrete (25 MPa minimum for residential), reinforcing steel mesh or rebar
 - Structural walls and ring beam
 
@@ -49,11 +49,11 @@ These prices cover construction only. Professional fees, municipal charges, and 
 - Exterior doors: R3,000 – R8,000 each installed
 
 ### Roofing (10–15%)
-- **IBR steel sheeting**: R450 – R650 per m² (most popular in JHB)
+- **IBR steel sheeting**: R450 – R650 per m² (most popular in JHB) — see our [roofing services](/en/services/roofing)
 - **Concrete tiles**: R500 – R800 per m² (better insulation)
 - **Clay tiles**: R600 – R1,000 per m² (premium, 50+ year lifespan)
 - Gutters: R250 – R450 per linear metre
-- Waterproofing membrane on flat sections: R200 – R400 per m²
+- [Waterproofing](/en/services/waterproofing) membrane on flat sections: R200 – R400 per m²
 
 ### Interior Finishes (25–30%)
 - Plastering: R80 – R150 per m²
@@ -63,8 +63,8 @@ These prices cover construction only. Professional fees, municipal charges, and 
 - Bathroom fittings (per bathroom): R15,000 – R90,000
 
 ### Services (15–20%)
-- Plumbing (rough-in + fit-out): R30,000 – R80,000 for a 3-bed home
-- Electrical (full installation + DB board): R20,000 – R50,000
+- [Plumbing](/en/services/plumbing) (rough-in + fit-out): R30,000 – R80,000 for a 3-bed home
+- [Electrical](/en/services/electrical) (full installation + DB board): R20,000 – R50,000
 - Geyser (150L electric, installed): R5,500 – R8,000
 - Solar geyser system: R18,000 – R30,000
 
@@ -99,10 +99,10 @@ This is a realistic all-in budget for a quality 150 m² home in a Johannesburg s
 ## Factors That Affect Your Building Cost
 
 ### Location within Gauteng
-- **Sandton, Bryanston, Hyde Park**: 10–15% above average (premium finishes expected)
-- **Fourways, Midrand, Randburg**: Average Johannesburg rates
-- **Pretoria, Centurion**: 5–10% below Johannesburg rates
-- **Roodepoort, East Rand**: Most competitive rates in Gauteng
+- **[Sandton](/en/areas/sandton), Bryanston, Hyde Park**: 10–15% above average (premium finishes expected)
+- **[Fourways](/en/areas/fourways), [Midrand](/en/areas/midrand), [Randburg](/en/areas/randburg)**: Average Johannesburg rates
+- **[Pretoria](/en/areas/pretoria), [Centurion](/en/areas/centurion)**: 5–10% below Johannesburg rates
+- **[Roodepoort](/en/areas/roodepoort), East Rand**: Most competitive rates in Gauteng
 
 ### Soil Conditions
 Johannesburg's clay soils (particularly in the northern suburbs) often require raft foundations, which cost more than strip foundations but provide better protection against soil movement. A geotechnical soil test (R5,000–R10,000) is recommended for new builds to determine the correct foundation type.
@@ -988,7 +988,7 @@ We serve all Gauteng areas including Johannesburg, Pretoria, East Rand, and West
     content: `
 # Home Renovation Costs in Johannesburg 2026: Complete Price Guide
 
-Planning a renovation in Johannesburg? This guide provides current 2026 pricing for every type of home renovation, based on real project data from Sinqobile Construction and market rates across Gauteng. Whether you are updating a kitchen in Sandton, renovating a bathroom in Fourways, or doing a full-house remodel in Midrand, you will find accurate cost ranges here.
+Planning a [renovation in Johannesburg](/en/services/renovation)? This guide provides current 2026 pricing for every type of home renovation, based on real project data from Sinqobile Construction and market rates across Gauteng. Whether you are updating a kitchen in [Sandton](/en/areas/sandton), renovating a bathroom in [Fourways](/en/areas/fourways), or doing a full-house remodel in [Midrand](/en/areas/midrand), you will find accurate cost ranges here.
 
 ## Renovation Costs at a Glance
 
@@ -1060,11 +1060,11 @@ A whole-house renovation costs R7,000–R20,000 per square metre in Johannesburg
 
 | Area | Cost per m² | Notes |
 |------|-------------|-------|
-| Sandton, Bryanston | R9,000 – R20,000 | Premium finishes expected |
-| Fourways, Midrand | R7,000 – R18,000 | Average JHB rates |
-| Randburg, Northcliff | R7,000 – R18,000 | Good renovation ROI |
-| Pretoria, Centurion | R6,000 – R16,000 | 5–10% below JHB |
-| Roodepoort, West Rand | R6,000 – R15,000 | Most competitive rates |
+| [Sandton](/en/areas/sandton), Bryanston | R9,000 – R20,000 | Premium finishes expected |
+| [Fourways](/en/areas/fourways), [Midrand](/en/areas/midrand) | R7,000 – R18,000 | Average JHB rates |
+| [Randburg](/en/areas/randburg), Northcliff | R7,000 – R18,000 | Good renovation ROI |
+| [Pretoria](/en/areas/pretoria), [Centurion](/en/areas/centurion) | R6,000 – R16,000 | 5–10% below JHB |
+| [Roodepoort](/en/areas/roodepoort), West Rand | R6,000 – R15,000 | Most competitive rates |
 
 ## Popular Renovation Projects and Costs
 
