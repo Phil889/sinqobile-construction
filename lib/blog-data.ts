@@ -980,6 +980,162 @@ We serve all Gauteng areas including Johannesburg, Pretoria, East Rand, and West
     category: 'Roofing',
     image: '/images/sinqobile-construction-roofing-pretoria-15.jpg',
     keywords: ['roofing materials Gauteng', 'best roof for Johannesburg', 'roof tiles South Africa', 'roofing costs Gauteng', 'hail resistant roofing']
+  },
+  {
+    slug: 'home-renovation-costs-johannesburg-2026',
+    title: 'Home Renovation Costs in Johannesburg 2026: Complete Price Guide',
+    excerpt: 'How much does renovation cost in Johannesburg in 2026? Kitchen R60k–R300k, bathroom R15k–R90k, full house R7k–R20k/m². Detailed breakdown with real pricing by project type.',
+    content: `
+# Home Renovation Costs in Johannesburg 2026: Complete Price Guide
+
+Planning a renovation in Johannesburg? This guide provides current 2026 pricing for every type of home renovation, based on real project data from Sinqobile Construction and market rates across Gauteng. Whether you are updating a kitchen in Sandton, renovating a bathroom in Fourways, or doing a full-house remodel in Midrand, you will find accurate cost ranges here.
+
+## Renovation Costs at a Glance
+
+| Renovation Type | Cost Range (2026) |
+|----------------|-------------------|
+| Kitchen renovation (mid-range) | R60,000 – R190,000 |
+| Kitchen renovation (high-end) | R190,000 – R300,000 |
+| Bathroom renovation (small, under 5 m²) | R15,000 – R45,000 |
+| Bathroom renovation (medium, 5–10 m²) | R45,000 – R90,000 |
+| Full house renovation (per m²) | R7,000 – R20,000 |
+| Open-plan conversion | R25,000 – R80,000 |
+| Garage conversion to granny flat | R120,000 – R350,000 |
+| Interior painting (full 3-bed house) | R15,000 – R35,000 |
+| Exterior painting (full 3-bed house) | R20,000 – R50,000 |
+
+## Kitchen Renovation Costs in Detail
+
+The kitchen is the most popular renovation project in Johannesburg and typically delivers the highest return on investment (70–80% ROI).
+
+### What Affects Kitchen Cost?
+
+- **Cabinetry**: The single biggest cost item. Standard melamine cabinets cost R15,000–R40,000, while solid wood or German-imported units can exceed R100,000
+- **Countertops**: Laminate R3,000–R8,000, granite R8,000–R20,000, Caesarstone/quartz R15,000–R35,000
+- **Appliances**: Budget R15,000–R30,000 for a basic set (oven, hob, extractor), R50,000+ for premium brands
+- **Plumbing relocation**: Moving the sink or dishwasher adds R5,000–R15,000
+- **Electrical upgrades**: Adding circuits for appliances, under-cabinet lighting R3,000–R8,000
+- **Tiling**: Splashback and floor tiling R5,000–R15,000
+
+A 14 m² kitchen renovation in Johannesburg takes approximately 12 working days and costs R85,000 on average for a mid-range result.
+
+## Bathroom Renovation Costs in Detail
+
+Bathroom renovations are the second most requested project. Costs vary significantly by size and finish level.
+
+### Cost by Bathroom Size
+
+| Size | Area | Cost Range |
+|------|------|------------|
+| Small (en-suite, guest) | Under 5 m² | R15,000 – R45,000 |
+| Medium (family bath) | 5–10 m² | R45,000 – R90,000 |
+| Large (master suite) | Over 10 m² | R90,000 – R180,000 |
+
+### Key Cost Components
+
+- **Waterproofing** (essential, not optional): R150–R350 per m²
+- **Tiling** (walls + floor): R350–R600 per m²
+- **Fixtures** (basin, toilet, shower/bath): R5,000–R30,000 per set
+- **Vanity and mirror**: R3,000–R15,000
+- **Heated towel rail**: R2,000–R5,000
+- **Frameless glass shower**: R8,000–R20,000
+
+Bathroom renovations in Sandton run 10–15% higher than other Johannesburg suburbs due to premium material expectations.
+
+## Full House Renovation Costs
+
+A whole-house renovation costs R7,000–R20,000 per square metre in Johannesburg in 2026. For a typical 146 m² home, that is R1.0M–R2.9M.
+
+### What's Included in a Full Renovation?
+
+- Demolition and strip-out of existing finishes
+- Structural modifications (wall removal, new openings) with engineer sign-off
+- New plumbing and electrical throughout
+- Plastering, waterproofing, tiling, painting
+- New kitchen and bathroom(s)
+- Flooring throughout
+- Built-in cupboards
+
+### Cost Variations by Gauteng Area
+
+| Area | Cost per m² | Notes |
+|------|-------------|-------|
+| Sandton, Bryanston | R9,000 – R20,000 | Premium finishes expected |
+| Fourways, Midrand | R7,000 – R18,000 | Average JHB rates |
+| Randburg, Northcliff | R7,000 – R18,000 | Good renovation ROI |
+| Pretoria, Centurion | R6,000 – R16,000 | 5–10% below JHB |
+| Roodepoort, West Rand | R6,000 – R15,000 | Most competitive rates |
+
+## Popular Renovation Projects and Costs
+
+### Open-Plan Conversion: R25,000 – R80,000
+Removing a wall between kitchen and living room creates a modern open-plan layout. Cost depends on whether the wall is load-bearing (requires steel beam and engineer, R15,000–R40,000 more) or a partition wall (simpler removal and make-good).
+
+### Garage Conversion: R120,000 – R350,000
+Converting an unused garage into a home office, granny flat, or entertainment room. Includes insulation, electrical, plumbing (if adding bathroom), plastering, flooring, and finishing.
+
+### Granny Flat Addition: R350,000 – R750,000
+A self-contained 40–60 m² unit with bedroom, bathroom, kitchen, and private entrance. Requires council-approved plans. Generates R7,000–R14,000/month rental income — an 18–25% annual return.
+
+## Do You Need Building Plans for a Renovation?
+
+**Plans required for:**
+- Removing or modifying structural/load-bearing walls
+- Adding rooms or extensions
+- Changing the roofline
+- Adding or relocating plumbing and drainage
+- Any work that alters the building footprint
+
+**Plans NOT required for:**
+- New kitchen cabinets and countertops (cosmetic)
+- Bathroom retiling and new fixtures (cosmetic)
+- Painting (interior and exterior)
+- New flooring
+- Built-in cupboards
+
+If you are unsure, our team will advise during the free site assessment. We handle the full plans process when required — architect, engineer, and council submission.
+
+## How Long Does a Renovation Take?
+
+| Project | Typical Duration |
+|---------|-----------------|
+| Kitchen renovation | 2–4 weeks |
+| Bathroom renovation | 2–3 weeks |
+| Open-plan conversion | 3–6 weeks |
+| Full house renovation | 8–16 weeks |
+| Garage conversion | 4–8 weeks |
+
+These timelines assume approved plans are in place. The council approval process adds 4–12 weeks for structural work.
+
+## 7 Tips to Keep Your Renovation on Budget
+
+1. **Fix the scope before you start** — Changes during construction cost 3–5× more than changes on paper
+2. **Get an itemised quote** — Every material, quantity, and labour item should be listed. "Allowances" and "TBC" items are budget traps
+3. **Budget 10–15% contingency** — Every renovation uncovers surprises behind walls (old wiring, hidden damp, rotten timber)
+4. **Don't move plumbing unless you must** — Relocating pipes and drains is expensive. Keep the sink, toilet, and shower in their current positions if possible
+5. **Invest in waterproofing** — R2,000 for bathroom waterproofing prevents R50,000+ in leak damage later
+6. **Choose one contractor for all trades** — Multi-trade coordination under one project manager avoids scheduling conflicts and finger-pointing between trades
+7. **Agree payment milestones** — Never pay more than 30% upfront. Tie payments to completed work stages
+
+## Why Choose Sinqobile Construction for Your Renovation?
+
+Sinqobile Construction is an NHBRC-registered renovation contractor based in Fourways, Sandton, with 15+ years of experience and 500+ completed projects across Gauteng. We provide:
+
+- **All trades under one roof** — plumbing, electrical, tiling, painting, carpentry
+- **Fixed-price, itemised quotes** — you approve every line item
+- **Dedicated project manager** from first consultation to handover
+- **Weekly photo updates** and progress reports
+- **Fully insured** with comprehensive construction liability cover
+
+**Get a free renovation quote: +27 82 868 8396**
+
+*Last updated: March 2026. Prices reflect current Johannesburg market rates.*
+    `,
+    date: '2026-03-30',
+    author: 'Dingwayo Reason Ndlovu',
+    category: 'Renovations',
+    image: '/images/sinqobile-construction-renovation-johannesburg-26.jpg',
+    keywords: ['renovation costs Johannesburg 2026', 'home renovation prices Gauteng', 'kitchen renovation cost Johannesburg', 'bathroom renovation cost South Africa', 'house renovation per square meter Johannesburg']
   }
 ]
 
