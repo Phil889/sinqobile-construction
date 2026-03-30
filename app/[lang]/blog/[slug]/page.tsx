@@ -78,7 +78,7 @@ export default function BlogPostPage({
     "description": post.excerpt,
     "image": post.image,
     "datePublished": post.date,
-    "dateModified": post.date,
+    "dateModified": post.dateModified || post.date,
     "author": {
       "@type": "Person",
       "name": post.author
