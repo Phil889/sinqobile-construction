@@ -2,58 +2,59 @@ import { MetadataRoute } from 'next'
 import { i18n } from '@/i18n.config'
 import { blogPosts } from '@/lib/blog-data'
 
+// Actual content modification dates (not build timestamps)
+const routeDates: Record<string, string> = {
+  '': '2026-03-28',
+  '/about': '2026-03-28',
+  '/services': '2026-03-28',
+  '/services/building': '2026-03-28',
+  '/services/plastering': '2026-03-29',
+  '/services/painting': '2026-03-29',
+  '/services/paving': '2026-03-28',
+  '/services/tiling': '2026-03-29',
+  '/services/plumbing': '2026-03-28',
+  '/services/concrete': '2026-03-28',
+  '/services/waterproofing': '2026-03-29',
+  '/services/extensions': '2026-03-29',
+  '/services/fencing': '2026-03-29',
+  '/services/flooring': '2026-03-29',
+  '/services/installation': '2026-03-29',
+  '/services/renovation': '2026-03-28',
+  '/services/repairs': '2026-03-29',
+  '/services/roofing': '2026-03-28',
+  '/services/brickwork': '2026-03-29',
+  '/services/maintenance': '2026-03-29',
+  '/services/landscaping': '2026-03-29',
+  '/services/electrical': '2026-03-29',
+  '/our-work': '2026-03-28',
+  '/cost-calculator': '2026-03-28',
+  '/blog': '2026-03-30',
+  '/contact': '2026-03-28',
+  '/faq': '2026-03-28',
+  '/areas': '2026-03-28',
+  '/areas/johannesburg': '2026-03-29',
+  '/areas/sandton': '2026-03-29',
+  '/areas/pretoria': '2026-03-29',
+  '/areas/centurion': '2026-03-29',
+  '/areas/midrand': '2026-03-29',
+  '/areas/randburg': '2026-03-29',
+  '/areas/fourways': '2026-03-29',
+  '/areas/roodepoort': '2026-03-29',
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.sinqobileconstruction.co.za'
-  
-  const routes = [
-    '',
-    '/about',
-    '/services',
-    '/services/building',
-    '/services/plastering',
-    '/services/painting',
-    '/services/paving',
-    '/services/tiling',
-    '/services/plumbing',
-    '/services/concrete',
-    '/services/waterproofing',
-    '/services/extensions',
-    '/services/fencing',
-    '/services/flooring',
-    '/services/installation',
-    '/services/renovation',
-    '/services/repairs',
-    '/services/roofing',
-    '/services/brickwork',
-    '/services/maintenance',
-    '/services/landscaping',
-    '/services/electrical',
-    '/our-work',
-    '/cost-calculator',
-    '/blog',
-    '/contact',
-    '/faq',
-    '/areas',
-    '/areas/johannesburg',
-    '/areas/sandton',
-    '/areas/pretoria',
-    '/areas/centurion',
-    '/areas/midrand',
-    '/areas/randburg',
-    '/areas/fourways',
-    '/areas/roodepoort',
-  ]
 
-  const sitemap: MetadataRoute.Sitemap = []
+  const routes = Object.keys(routeDates)
+
+  const sitemapEntries: MetadataRoute.Sitemap = []
 
   // Add routes for each language
   i18n.locales.forEach((locale) => {
     routes.forEach((route) => {
-      sitemap.push({
+      sitemapEntries.push({
         url: `${baseUrl}/${locale}${route}`,
-        lastModified: new Date(),
-        changeFrequency: route === '' ? 'daily' : route === '/blog' ? 'weekly' : 'monthly',
-        priority: route === '' ? 1.0 : route.includes('/services/') ? 0.8 : route === '/blog' ? 0.7 : 0.6,
+        lastModified: new Date(routeDates[route]),
         alternates: {
           languages: Object.fromEntries(
             i18n.locales.map((lang) => [
@@ -67,11 +68,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Add blog posts for each language
     blogPosts.forEach((post) => {
-      sitemap.push({
+      sitemapEntries.push({
         url: `${baseUrl}/${locale}/blog/${post.slug}`,
-        lastModified: new Date(post.date),
-        changeFrequency: 'monthly',
-        priority: 0.6,
+        lastModified: new Date(post.dateModified || post.date),
         alternates: {
           languages: Object.fromEntries(
             i18n.locales.map((lang) => [
@@ -84,5 +83,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   })
 
-  return sitemap
+  return sitemapEntries
 }
