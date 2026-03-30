@@ -264,7 +264,7 @@ At Sinqobile Construction, we pride ourselves on:
 ✅ **Transparent pricing** with detailed quotes
 ✅ **Quality workmanship** guaranteed
 ✅ **Excellent communication** throughout your project
-✅ **169+ completed projects** across Gauteng
+✅ **500+ completed projects** across Gauteng
 
 ## Making Your Final Decision
 
@@ -285,6 +285,7 @@ Ready to start your construction project? Contact Sinqobile Construction for a f
 We serve all areas across Gauteng including Johannesburg, Pretoria, East Rand, West Rand, and Midrand.
     `,
     date: '2024-01-22',
+    dateModified: '2026-03-29',
     author: 'Dingwayo Reason Ndlovu',
     category: 'Contractor Tips',
     image: '/images/sinqobile-construction-building-lanseria-49.jpg',
@@ -310,7 +311,7 @@ The kitchen is the heart of the home, and a modern kitchen can significantly inc
 - Improved lighting
 - Open-plan layout
 
-**Average Cost:** R80,000 - R250,000
+**Average Cost:** R60,000 - R300,000 (2026)
 **ROI:** 70-80%
 
 ## 2. Bathroom Upgrades
@@ -324,7 +325,7 @@ A luxurious bathroom adds comfort and value to your home.
 - Heated towel rails
 - Water-efficient fixtures
 
-**Average Cost:** R50,000 - R150,000
+**Average Cost:** R15,000 - R90,000 (2026)
 **ROI:** 60-70%
 
 ## 3. Outdoor Living Spaces
@@ -484,6 +485,7 @@ Contact Sinqobile Construction today for a free consultation and quote.
 We serve Johannesburg, Pretoria, and all Gauteng areas.
     `,
     date: '2024-02-05',
+    dateModified: '2026-03-29',
     author: 'Dingwayo Reason Ndlovu',
     category: 'Renovations',
     image: '/images/sinqobile-construction-renovation-johannesburg-26.jpg',
@@ -711,6 +713,7 @@ Contact Sinqobile Construction for expert guidance on your construction project.
 We ensure your project meets all regulatory requirements from start to finish.
     `,
     date: '2024-02-18',
+    dateModified: '2026-03-29',
     author: 'Dingwayo Reason Ndlovu',
     category: 'Regulations',
     image: '/images/sinqobile-construction-building-edenvale-30.jpg',
@@ -972,6 +975,7 @@ Contact Sinqobile Construction today for expert advice and a detailed quote.
 We serve all Gauteng areas including Johannesburg, Pretoria, East Rand, and West Rand.
     `,
     date: '2024-03-01',
+    dateModified: '2026-03-29',
     author: 'Dingwayo Reason Ndlovu',
     category: 'Roofing',
     image: '/images/sinqobile-construction-roofing-pretoria-15.jpg',
