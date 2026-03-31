@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Montserrat, Roboto } from 'next/font/google'
 import '../globals.css'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
@@ -12,7 +12,19 @@ import { MobileCTABar } from '@/components/mobile-cta-bar'
 import { i18n, type Locale } from '@/i18n.config'
 import { getDictionary } from '@/lib/dictionaries'
 
-const inter = Inter({ subsets: ['latin'] })
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-montserrat',
+  display: 'swap',
+})
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '700'],
+  variable: '--font-roboto',
+  display: 'swap',
+})
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }))
@@ -107,7 +119,7 @@ export default async function RootLayout({
         <SchemaMarkup type="website" lang={params.lang} />
         <Analytics />
       </head>
-      <body className={`${inter.className} bg-background text-secondary`}>
+      <body className={`${roboto.variable} ${montserrat.variable} bg-background text-secondary`}>
         <Header dict={dict} lang={params.lang} />
         <main className="min-h-screen">
           {children}

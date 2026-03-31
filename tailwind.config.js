@@ -15,8 +15,8 @@ module.exports = {
         lightBackground: '#FFF3E0',
       },
       fontFamily: {
-        heading: ['Montserrat', 'sans-serif'],
-        body: ['Roboto', 'sans-serif'],
+        heading: ['var(--font-montserrat)', 'Montserrat', 'sans-serif'],
+        body: ['var(--font-roboto)', 'Roboto', 'sans-serif'],
       },
     },
   },

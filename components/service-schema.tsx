@@ -22,80 +22,11 @@ export default function ServiceSchema({
     "name": serviceName,
     "description": description,
     "provider": {
-      "@type": "LocalBusiness",
-      "@id": "https://www.sinqobileconstruction.co.za/#localbusiness",
-      "name": "Sinqobile Construction",
-      "image": "https://www.sinqobileconstruction.co.za/og-image.jpg",
-      "telephone": "+27828688396",
-      "priceRange": priceRange,
-      "address": {
-        "@type": "PostalAddress",
-        "addressRegion": "Gauteng",
-        "addressCountry": "ZA"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "-26.0274",
-        "longitude": "28.0106"
-      },
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Johannesburg"
-        },
-        {
-          "@type": "City",
-          "name": "Sandton"
-        },
-        {
-          "@type": "City",
-          "name": "Pretoria"
-        },
-        {
-          "@type": "City",
-          "name": "Centurion"
-        },
-        {
-          "@type": "City",
-          "name": "Midrand"
-        },
-        {
-          "@type": "City",
-          "name": "Randburg"
-        },
-        {
-          "@type": "City",
-          "name": "Fourways"
-        },
-        {
-          "@type": "City",
-          "name": "Roodepoort"
-        }
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "127",
-        "bestRating": "5",
-        "worstRating": "1"
-      }
+      "@type": "GeneralContractor",
+      "@id": "https://www.sinqobileconstruction.co.za/#localbusiness"
     },
     "serviceType": serviceName,
     "url": `https://www.sinqobileconstruction.co.za/${lang}/services/${serviceSlug}`,
-    "offers": {
-      "@type": "Offer",
-      "priceRange": priceRange,
-      "priceCurrency": "ZAR",
-      "availability": "https://schema.org/InStock",
-      "availableAtOrFrom": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "addressRegion": "Gauteng",
-          "addressCountry": "ZA"
-        }
-      }
-    },
     "areaServed": {
       "@type": "State",
       "name": "Gauteng"

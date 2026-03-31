@@ -56,12 +56,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${baseUrl}/${locale}${route}`,
         lastModified: new Date(routeDates[route]),
         alternates: {
-          languages: Object.fromEntries(
-            i18n.locales.map((lang) => [
-              lang,
-              `${baseUrl}/${lang}${route}`
-            ])
-          )
+          languages: {
+            ...Object.fromEntries(
+              i18n.locales.map((lang) => [
+                lang,
+                `${baseUrl}/${lang}${route}`
+              ])
+            ),
+            'x-default': `${baseUrl}/en${route}`,
+          }
         }
       })
     })
@@ -72,12 +75,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${baseUrl}/${locale}/blog/${post.slug}`,
         lastModified: new Date(post.dateModified || post.date),
         alternates: {
-          languages: Object.fromEntries(
-            i18n.locales.map((lang) => [
-              lang,
-              `${baseUrl}/${lang}/blog/${post.slug}`
-            ])
-          )
+          languages: {
+            ...Object.fromEntries(
+              i18n.locales.map((lang) => [
+                lang,
+                `${baseUrl}/${lang}/blog/${post.slug}`
+              ])
+            ),
+            'x-default': `${baseUrl}/en/blog/${post.slug}`,
+          }
         }
       })
     })

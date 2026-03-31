@@ -55,9 +55,30 @@ export async function generateMetadata({
 
 export default async function FAQPage({ params: { lang } }: FAQPageProps) {
   const dict = await getDictionary(lang)
-  
+
+  // Build FAQPage schema from all FAQ categories
+  const allFaqItems = dict.pages.faq.categories
+    .flatMap((category: any) => category.items)
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: allFaqItems.map((item: any) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Breadcrumb
         items={[
           { label: dict.navigation.faq, href: `/${lang}/faq` }

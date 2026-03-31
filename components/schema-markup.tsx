@@ -36,10 +36,11 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
       case 'localBusiness':
         return {
           '@context': 'https://schema.org',
-          '@type': 'LocalBusiness',
+          '@type': 'GeneralContractor',
           '@id': 'https://www.sinqobileconstruction.co.za/#localbusiness',
           name: 'Sinqobile Construction',
-          image: 'https://www.sinqobileconstruction.co.za/logo.png',
+          url: 'https://www.sinqobileconstruction.co.za',
+          image: 'https://www.sinqobileconstruction.co.za/og-image.jpg',
           description: 'Professional construction and building services in Gauteng. Building, plastering, painting, paving, tiling, and plumbing.',
           address: {
             '@type': 'PostalAddress',
@@ -100,18 +101,14 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
           '@type': 'Service',
           serviceType: data?.serviceName,
           provider: {
-            '@type': 'LocalBusiness',
-            name: 'Sinqobile Construction'
+            '@type': 'GeneralContractor',
+            '@id': 'https://www.sinqobileconstruction.co.za/#localbusiness'
           },
           areaServed: {
             '@type': 'State',
             name: 'Gauteng'
           },
           description: data?.description,
-          offers: {
-            '@type': 'Offer',
-            availability: 'https://schema.org/InStock'
-          }
         }
 
       case 'breadcrumb':

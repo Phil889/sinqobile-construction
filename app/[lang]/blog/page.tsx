@@ -3,6 +3,7 @@ import { Locale } from '@/i18n.config'
 import { getDictionary } from '@/lib/dictionaries'
 import Breadcrumb from '@/components/breadcrumb'
 import BlogClient from './BlogClient'
+import { blogPosts } from '@/lib/blog-data'
 
 // v2 Workflow: Research-driven metadata for Blog hub page
 export async function generateMetadata({
@@ -69,9 +70,49 @@ export default async function BlogPage({
   params: { lang: Locale }
 }) {
   const dict = await getDictionary(lang)
+  const baseUrl = 'https://www.sinqobileconstruction.co.za'
+
+  // Blog schema with BlogPosting entries for rich results
+  const blogSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    '@id': `${baseUrl}/${lang}/blog#blog`,
+    url: `${baseUrl}/${lang}/blog`,
+    name: 'Sinqobile Construction Blog',
+    description: 'Expert construction tips, building cost guides, and renovation advice for Johannesburg homeowners.',
+    publisher: {
+      '@type': 'Organization',
+      '@id': `${baseUrl}/#organization`,
+    },
+    inLanguage: lang,
+    blogPost: blogPosts.map((post) => ({
+      '@type': 'BlogPosting',
+      headline: post.title,
+      description: post.excerpt,
+      url: `${baseUrl}/${lang}/blog/${post.slug}`,
+      datePublished: post.date,
+      dateModified: post.dateModified || post.date,
+      author: {
+        '@type': 'Person',
+        '@id': `${baseUrl}/#founder`,
+        name: post.author,
+      },
+      publisher: {
+        '@type': 'Organization',
+        '@id': `${baseUrl}/#organization`,
+      },
+      image: post.image ? `${baseUrl}${post.image}` : `${baseUrl}/og-image.jpg`,
+      keywords: post.keywords.join(', '),
+      inLanguage: lang,
+    })),
+  }
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
       <Breadcrumb
         items={[
           { label: dict.navigation.blog, href: `/${lang}/blog` }

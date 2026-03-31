@@ -23,19 +23,18 @@ export function middleware(request: NextRequest) {
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   )
 
-  // Redirect if there is no locale
+  // Redirect if there is no locale — use 308 permanent redirect
   if (pathnameIsMissingLocale) {
     const locale = getLocale(request)
-    return NextResponse.redirect(
-      new URL(
-        `/${locale}${pathname.startsWith('/') ? '' : '/'}${pathname}`,
-        request.url
-      )
+    const url = new URL(
+      `/${locale}${pathname.startsWith('/') ? '' : '/'}${pathname}`,
+      request.url
     )
+    return NextResponse.redirect(url, 308)
   }
 }
 
 export const config = {
   // Matcher ignoring `/_next/`, `/api/`, and `/images/`
-  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|images|google.*\\.html|robots\\.txt|sitemap\\.xml|llms\\.txt|971056355487d7c44a6d377f963d4b61\\.txt).*)'],
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|images|google.*\\.html|robots\\.txt|sitemap\\.xml|llms\\.txt|971056355487d7c44a6d377f963d4b61\\.txt|og-image\\.jpg|logo\\.svg|site\\.webmanifest|apple-touch-icon\\.png|favicon-.*\\.png|android-chrome-.*\\.png).*)'],
 }

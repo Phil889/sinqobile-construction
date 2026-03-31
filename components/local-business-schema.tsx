@@ -21,7 +21,7 @@ export default function LocalBusinessSchema({
 }: LocalBusinessSchemaProps) {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "GeneralContractor",
     "@id": `https://www.sinqobileconstruction.co.za/${lang}/areas/${areaSlug}#business`,
     "name": `Sinqobile Construction - ${areaName}`,
     "image": "https://www.sinqobileconstruction.co.za/og-image.jpg",

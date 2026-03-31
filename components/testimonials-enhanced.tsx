@@ -123,19 +123,12 @@ export default function TestimonialsEnhanced({ dict }: TestimonialsEnhancedProps
   const currentReview = reviews[currentIndex]
   const t = dict.testimonialsEnhanced
 
-  // Generate Review schema for all reviews
+  // Generate Review schema for featured reviews (subset of 127 total)
   const reviewSchema = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": "https://www.sinqobileconstruction.co.za/#organization",
+    "@type": "GeneralContractor",
+    "@id": "https://www.sinqobileconstruction.co.za/#localbusiness",
     "name": "Sinqobile Construction",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": reviews.length.toString(),
-      "bestRating": "5",
-      "worstRating": "1"
-    },
     "review": reviews.map(review => ({
       "@type": "Review",
       "author": {
