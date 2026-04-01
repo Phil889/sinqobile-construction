@@ -28,7 +28,7 @@ const routeDates: Record<string, string> = {
   '/services/electrical': '2026-03-29',
   '/our-work': '2026-03-28',
   '/cost-calculator': '2026-03-28',
-  '/blog': '2026-03-30',
+  '/blog': '2026-04-01',
   '/contact': '2026-03-28',
   '/faq': '2026-03-28',
   '/areas': '2026-03-28',
