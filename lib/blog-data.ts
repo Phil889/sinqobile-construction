@@ -2293,6 +2293,1124 @@ We serve [Johannesburg](/en/areas/johannesburg), [Sandton](/en/areas/sandton), [
     category: 'Painting',
     image: '/images/sinqobile-construction-painting-alberton-53.jpg',
     keywords: ['painting costs Johannesburg 2026', 'house painting prices Gauteng', 'interior painting cost per m2 South Africa', 'exterior painting cost Johannesburg', 'painting contractor Johannesburg', 'best time to paint house Gauteng']
+  },
+  {
+    slug: 'tiling-guide-costs-types-installation-johannesburg-2026',
+    title: 'Tiling Guide: Costs, Types & Installation in Johannesburg 2026',
+    excerpt: 'Complete 2026 guide to tiling costs in Johannesburg — ceramic, porcelain, and natural stone tiles compared. Costs per m² for bathroom, kitchen, and floor tiling with installation prices.',
+    content: `
+# Tiling Guide: Costs, Types & Installation in Johannesburg 2026
+
+Choosing the right tiles and understanding installation costs is essential for any renovation or new build in [Johannesburg](/en/areas/johannesburg). Whether you are retiling a bathroom in [Sandton](/en/areas/sandton), upgrading kitchen floors in [Fourways](/en/areas/fourways), or laying new floor tiles throughout a home in [Midrand](/en/areas/midrand), this guide covers everything — tile types, costs per square metre, labour rates, and practical tips from Sinqobile Construction's 15+ years of tiling experience across Gauteng.
+
+## Tile Types Compared: Ceramic vs Porcelain vs Natural Stone
+
+### Ceramic Tiles
+Ceramic tiles are made from clay fired at lower temperatures. They are the most affordable option and work well in low-traffic areas and walls.
+
+- **Best for**: Bathroom walls, kitchen splashbacks, guest bedrooms
+- **Durability**: Moderate — prone to chipping in high-traffic areas
+- **Water absorption**: Higher (not ideal for outdoor use)
+- **Lifespan**: 15–20 years with proper care
+- **Maintenance**: Easy — regular mopping is sufficient
+
+### Porcelain Tiles
+Porcelain is fired at higher temperatures, making it denser and more durable than ceramic. It is the most popular choice for Johannesburg homes in 2026.
+
+- **Best for**: Living areas, kitchens, bathrooms, patios, garages
+- **Durability**: Excellent — handles heavy foot traffic and Gauteng temperature fluctuations
+- **Water absorption**: Very low (<0.5%) — suitable for wet areas and outdoor use
+- **Lifespan**: 25–50 years
+- **Maintenance**: Minimal — resistant to stains, scratches, and moisture
+
+### Natural Stone Tiles
+Natural stone (granite, marble, slate, travertine) offers a premium, unique look. Each tile is different, and the material commands a higher price.
+
+- **Best for**: Feature walls, luxury bathrooms, entrance halls, premium homes in [Sandton](/en/areas/sandton) and Bryanston
+- **Durability**: Varies by stone — granite is extremely hard, marble scratches easily
+- **Water absorption**: Varies — most require sealing
+- **Lifespan**: 50+ years (granite), 20–30 years (marble, depending on care)
+- **Maintenance**: Requires sealing every 1–2 years, specialist cleaning products
+
+## Tiling Costs per Square Metre in Johannesburg (2026)
+
+### Tile Supply Costs
+
+| Tile Type | Cost per m² (supply only) | Notes |
+|-----------|--------------------------|-------|
+| **Ceramic (budget)** | R80 – R150 | Basic patterns, limited sizes |
+| **Ceramic (mid-range)** | R150 – R300 | Better designs, more size options |
+| **Porcelain (budget)** | R150 – R250 | Plain colours, standard sizes |
+| **Porcelain (mid-range)** | R250 – R500 | Wood-look, marble-look, large format |
+| **Porcelain (premium)** | R500 – R1,200 | Imported, rectified, large format 60×120 |
+| **Granite** | R400 – R900 | Polished or honed, locally sourced |
+| **Marble** | R600 – R1,500 | Imported, requires sealing |
+| **Slate** | R300 – R700 | Natural, rustic finish |
+| **Travertine** | R500 – R1,000 | Tumbled or polished |
+
+### Installation Labour Costs
+
+| Installation Type | Labour Cost per m² | Notes |
+|-------------------|-------------------|-------|
+| **Standard floor tiling** | R150 – R250 | Straight lay, standard size tiles |
+| **Large format tiles (60×60+)** | R200 – R350 | Requires more skill and levelling |
+| **Wall tiling** | R180 – R280 | Including waterproofing prep in wet areas |
+| **Diagonal / herringbone pattern** | R250 – R400 | Complex cutting, more waste |
+| **Mosaic tiles** | R300 – R500 | Small tiles, labour-intensive |
+| **Outdoor / patio tiling** | R200 – R300 | Includes slope for drainage |
+| **Staircase tiling** | R300 – R450 | Bullnose edges, precise cutting |
+
+### Additional Material Costs
+
+| Material | Cost | Coverage |
+|----------|------|----------|
+| Tile adhesive (20 kg bag) | R120 – R250 | 4–5 m² |
+| Grout (5 kg bag) | R80 – R150 | 8–12 m² |
+| Waterproofing membrane | R150 – R300 per m² | Bathrooms, showers |
+| Tile spacers (bag) | R30 – R60 | 100 spacers |
+| Primer | R200 – R400 per 5L | 25–30 m² |
+| Tile cutting (complex cuts) | R50 – R100 per cut | Angles, curves |
+
+## Bathroom Tiling Costs in Johannesburg
+
+Bathrooms are the most common tiling project. Here is what to expect for a standard bathroom (approximately 12–15 m² of tiled surface including walls and floor).
+
+| Component | Cost Range |
+|-----------|-----------|
+| Floor tiling (4–5 m²) — porcelain | R2,000 – R5,000 |
+| Wall tiling (8–10 m²) — ceramic or porcelain | R3,500 – R10,000 |
+| Shower area waterproofing | R2,000 – R4,000 |
+| Tile adhesive and grout | R800 – R1,500 |
+| Labour (12–15 m²) | R2,500 – R5,000 |
+| **Total: Standard bathroom** | **R10,800 – R25,500** |
+| **Total: Premium bathroom** | **R25,000 – R55,000** |
+
+A complete bathroom retile in Johannesburg typically takes 3–5 days for an experienced tiler. See our [tiling services](/en/services/tiling) for a detailed quote.
+
+## Kitchen Tiling Costs
+
+Kitchen tiling usually involves floor tiles and a splashback. Open-plan kitchen-living areas may require 20–40 m² of floor tiling.
+
+| Component | Cost Range |
+|-----------|-----------|
+| Floor tiling (15–25 m²) — porcelain | R6,000 – R20,000 |
+| Splashback (3–5 m²) — feature tile | R2,000 – R8,000 |
+| Adhesive, grout, prep | R1,000 – R2,500 |
+| Labour | R3,500 – R8,000 |
+| **Total: Standard kitchen** | **R12,500 – R38,500** |
+
+## Full House Floor Tiling Costs
+
+For a complete floor tiling job on a 120–150 m² home:
+
+| Item | 120 m² Home | 150 m² Home |
+|------|-------------|-------------|
+| Porcelain tiles (mid-range, R300/m²) | R36,000 | R45,000 |
+| Adhesive and grout | R4,000 – R6,000 | R5,000 – R8,000 |
+| Labour (R200/m²) | R24,000 | R30,000 |
+| Skirting tiles (perimeter ~50–60 m) | R3,000 – R5,000 | R4,000 – R6,000 |
+| **Total estimate** | **R67,000 – R71,000** | **R84,000 – R89,000** |
+
+These are mid-range estimates. Budget ceramic floors can reduce the total by 30–40%, while premium imported porcelain can double the tile supply cost.
+
+## How to Choose the Right Tiles for Each Room
+
+### Living Areas and Hallways
+Choose porcelain tiles rated PEI 4 or 5 (high traffic rating). Large format tiles (60×60 or 60×120 cm) create a spacious feel and have fewer grout lines to maintain. Wood-look porcelain is extremely popular in Johannesburg — it gives the warmth of wood without the maintenance.
+
+### Bathrooms
+Use porcelain or ceramic with a slip-resistant finish (R10 or R11 rating) for floors. Wall tiles can be any type. Always ensure proper [waterproofing](/en/services/waterproofing) before tiling — this is non-negotiable and prevents costly water damage.
+
+### Kitchens
+Porcelain floor tiles are ideal — they resist stains, moisture, and heavy traffic. For splashbacks, consider feature tiles or mosaics that add character. Large format tiles with minimal grout lines are easiest to clean.
+
+### Outdoor Areas and Patios
+Only use porcelain tiles rated for outdoor use (frost-resistant, slip-resistant R11+). Ceramic tiles will crack in Gauteng's winter cold. [Paving](/en/services/paving) is an alternative for driveways and large patios.
+
+### Garages
+Porcelain tiles rated PEI 5 with anti-slip finish, or consider polished concrete as an alternative. Tiles must handle vehicle weight and chemical spills.
+
+## Common Tiling Mistakes to Avoid
+
+1. **Skipping waterproofing in wet areas** — Water damage behind tiles costs 5–10× more to fix than doing waterproofing upfront. Every shower, bathroom floor, and kitchen area near sinks needs a waterproofing membrane.
+
+2. **Choosing the wrong adhesive** — Different tiles need different adhesives. Large format porcelain requires flexible rapid-set adhesive. Using cheap adhesive causes tiles to lift within 1–2 years.
+
+3. **Not levelling the substrate** — Tiles laid on uneven surfaces will crack, hollow, or lip. Self-levelling compound (R80–R150 per m²) is essential on older floors. Proper [plastering](/en/services/plastering) is needed for walls.
+
+4. **Insufficient grout width** — Rectified tiles can use 1.5–2 mm grout joints; non-rectified need 3–5 mm. Grout too narrow cracks; grout too wide looks untidy.
+
+5. **Not buying enough tiles** — Always buy 10–15% extra for cuts, waste, and future repairs. Tile batches vary in shade, and matching later is often impossible.
+
+6. **Mixing tile batches** — Always check that all boxes have the same batch number. Lay tiles from multiple boxes simultaneously to blend any slight shade variation.
+
+## Tiling Timeline
+
+| Project | Duration |
+|---------|----------|
+| Standard bathroom (floor + walls) | 3–5 days |
+| Kitchen floor + splashback | 2–4 days |
+| Full house floor (120 m²) | 7–10 days |
+| Single room (15 m²) | 1–2 days |
+| Patio / outdoor area (30 m²) | 3–4 days |
+
+Drying time: tiles should not be walked on for 24–48 hours after laying. Grout needs 24 hours to cure before cleaning.
+
+## Why Choose Sinqobile Construction for Tiling?
+
+Sinqobile Construction provides professional [tiling services](/en/services/tiling) across Gauteng with 15+ years of experience. We handle everything from bathroom retiles to full-house floor tiling:
+
+- **Expert tilers** — our team handles ceramic, porcelain, natural stone, and mosaic installations
+- **Proper preparation** — we level surfaces, waterproof wet areas, and use quality adhesives
+- **Precision cutting** — diamond blade wet cutting for clean edges around pipes, corners, and features
+- **Full service** — we supply tiles at trade prices or work with your chosen tiles
+- **All areas covered** — [Johannesburg](/en/areas/johannesburg), [Sandton](/en/areas/sandton), [Pretoria](/en/areas/pretoria), [Centurion](/en/areas/centurion), [Midrand](/en/areas/midrand), [Randburg](/en/areas/randburg), [Fourways](/en/areas/fourways), and [Roodepoort](/en/areas/roodepoort)
+
+**Get a free tiling quote today: +27 82 868 8396**
+
+*Last updated: April 2026. Prices reflect current Johannesburg market rates and may vary based on tile type, substrate condition, and project complexity.*
+    `,
+    date: '2026-02-20',
+    dateModified: '2026-04-01',
+    author: 'Dingwayo Reason Ndlovu',
+    category: 'Tiling',
+    image: '/images/sinqobile-construction-tiling-sandton-65.jpg',
+    keywords: ['tiling costs Johannesburg 2026', 'tile installation prices Gauteng', 'porcelain tile cost per m2 South Africa', 'bathroom tiling costs Johannesburg', 'kitchen tiling prices 2026', 'floor tiling cost Johannesburg']
+  },
+  {
+    slug: 'granny-flat-gauteng-costs-plans-regulations',
+    title: 'How to Plan a Granny Flat in Gauteng: Costs, Plans & Regulations',
+    excerpt: 'Complete 2026 guide to building a granny flat in Gauteng — costs from R250,000 to R800,000+, council approval process, rental income potential, size options, and building regulations.',
+    content: `
+# How to Plan a Granny Flat in Gauteng: Costs, Plans & Regulations
+
+Granny flats (also called secondary dwellings or garden cottages) are one of the smartest property investments you can make in Gauteng. Whether you need extra accommodation for family, a work-from-home office, or rental income to help cover your bond, building a granny flat in [Johannesburg](/en/areas/johannesburg), [Pretoria](/en/areas/pretoria), or surrounding areas requires careful planning. This guide covers costs, council approval, regulations, and practical advice from Sinqobile Construction's experience building granny flats across Gauteng.
+
+## What Is a Granny Flat?
+
+A granny flat is a self-contained secondary dwelling on an existing residential property. It typically includes a bedroom (or two), bathroom, kitchenette, and living area. In South Africa, it is classified as a "secondary dwelling" or "second dwelling" under municipal by-laws and must comply with the National Building Regulations (SANS 10400).
+
+## Granny Flat Costs in Gauteng (2026)
+
+### Cost by Size and Finish Level
+
+| Size | Budget Build | Mid-Range | Premium |
+|------|-------------|-----------|---------|
+| **Bachelor / Studio (25–30 m²)** | R250,000 – R350,000 | R350,000 – R450,000 | R450,000 – R600,000 |
+| **1-Bedroom (35–45 m²)** | R350,000 – R480,000 | R480,000 – R620,000 | R620,000 – R800,000 |
+| **2-Bedroom (50–65 m²)** | R500,000 – R680,000 | R680,000 – R900,000 | R900,000 – R1,200,000 |
+
+These prices include construction, basic finishes, plumbing, electrical, and connection to existing services. They exclude building plans, council fees, and site preparation (see below).
+
+### Cost Breakdown per Square Metre
+
+| Build Level | Cost per m² | What You Get |
+|-------------|------------|--------------|
+| **Budget** | R8,000 – R11,000 | Stock brick, basic fittings, vinyl flooring, standard kitchen |
+| **Mid-range** | R11,000 – R14,000 | Face brick or plastered, porcelain tiles, quality fittings |
+| **Premium** | R14,000 – R18,000 | Architectural design, premium finishes, underfloor heating |
+
+### Additional Costs to Budget For
+
+| Item | Cost |
+|------|------|
+| Building plans (architect / draughtsperson) | R8,000 – R25,000 |
+| Council plan submission and approval | R5,000 – R15,000 |
+| Site preparation and excavation | R5,000 – R20,000 |
+| Sewer / water connection to municipal services | R10,000 – R25,000 |
+| Electrical connection and COC | R8,000 – R20,000 |
+| Boundary wall / [fencing](/en/services/fencing) (if required) | R15,000 – R40,000 |
+| Paving / driveway access | R10,000 – R30,000 |
+| Landscaping | R5,000 – R15,000 |
+| **Total additional costs** | **R66,000 – R190,000** |
+
+## Council Approval: The Process in Gauteng
+
+Building a granny flat without council-approved plans is illegal and can result in fines, demolition orders, and problems when selling your property. Here is the approval process:
+
+### Step 1: Zoning Check
+Confirm your property is zoned for a secondary dwelling. Most residential properties in Johannesburg (Residential 1) allow a granny flat, but there are conditions:
+- Maximum coverage (building footprint as % of stand) — typically 50–60%
+- Maximum floor area ratio (FAR) — depends on your suburb
+- Setback requirements — typically 1–3 m from boundaries
+
+### Step 2: Building Plans
+Engage a registered draughtsperson or architect to draw plans that comply with SANS 10400 (National Building Regulations). Plans must include:
+- Site plan showing the granny flat position on your property
+- Floor plan, elevations, and sections
+- Structural details (foundation, roof, walls)
+- Plumbing and electrical layouts
+- Energy efficiency compliance (SANS 10400-XA)
+
+### Step 3: Submit to Council
+Submit plans to the City of Johannesburg, City of Tshwane (Pretoria), or relevant municipality. The submission requires:
+- Completed application form
+- 3 sets of building plans
+- Title deed
+- Zoning certificate
+- Power of attorney (if submitted by someone other than the owner)
+
+### Step 4: Approval Timeline
+- **City of Johannesburg**: 4–12 weeks (often 8–10 weeks)
+- **City of Tshwane**: 6–12 weeks
+- **Ekurhuleni**: 4–8 weeks
+
+Plan approval can take longer if plans need amendments. Budget 3–4 months from plan submission to construction start.
+
+### Step 5: Construction and Inspections
+During construction, the council building inspector will visit at key stages:
+- Foundation inspection (before pouring concrete)
+- Wall plate / structural inspection
+- Final inspection (occupancy certificate)
+
+You cannot legally occupy the granny flat until the final inspection is passed and an occupancy certificate is issued.
+
+## Rental Income Potential in Gauteng (2026)
+
+A granny flat provides excellent rental income. Here are current market rental rates:
+
+| Location | Studio/Bachelor | 1-Bedroom | 2-Bedroom |
+|----------|----------------|-----------|-----------|
+| **[Sandton](/en/areas/sandton) / Bryanston** | R5,000 – R7,500 | R7,500 – R10,000 | R10,000 – R14,000 |
+| **[Fourways](/en/areas/fourways) / [Midrand](/en/areas/midrand)** | R4,000 – R6,000 | R6,000 – R8,500 | R8,500 – R11,000 |
+| **[Randburg](/en/areas/randburg) / [Roodepoort](/en/areas/roodepoort)** | R3,500 – R5,500 | R5,500 – R7,500 | R7,500 – R9,500 |
+| **[Pretoria](/en/areas/pretoria) / [Centurion](/en/areas/centurion)** | R3,500 – R5,000 | R5,000 – R7,000 | R7,000 – R9,000 |
+
+### Return on Investment Example
+
+A mid-range 1-bedroom granny flat in Fourways:
+- **Build cost**: R550,000 (including plans and approvals)
+- **Monthly rental**: R7,000
+- **Annual rental income**: R84,000
+- **ROI**: 15.3% per year
+- **Payback period**: ~6.5 years
+
+This is significantly better than most property investments and adds value to your property at the same time.
+
+## Size Options and Floor Plans
+
+### Bachelor / Studio (25–30 m²)
+- Open-plan bedroom/living area
+- Kitchenette along one wall
+- Bathroom with shower
+- Best for: Single tenants, students, Airbnb
+
+### 1-Bedroom (35–45 m²)
+- Separate bedroom
+- Open-plan living/kitchen
+- Full bathroom
+- Best for: Couples, young professionals, family members
+
+### 2-Bedroom (50–65 m²)
+- Two bedrooms (main + second)
+- Living area
+- Kitchen
+- Full bathroom
+- Best for: Small families, higher rental income, elderly parents
+
+## Key Regulations for Granny Flats in Gauteng
+
+1. **NHBRC enrolment is required** for any new residential construction. The builder must be NHBRC-registered — [learn more about NHBRC registration](/en/blog/nhbrc-registration-south-africa-guide)
+2. **Separate entrance** — the granny flat must have independent access
+3. **Own services** — separate water meter (or sub-meter), electrical DB board, and sewer connection
+4. **Minimum ceiling height** — 2.4 m for habitable rooms
+5. **Natural ventilation and light** — each habitable room needs a window at least 10% of the floor area
+6. **Fire compliance** — fire-rated doors between garage and habitable areas (if applicable), smoke detectors
+7. **Energy compliance (SANS 10400-XA)** — ceiling insulation, hot water system efficiency, orientation considerations
+8. **Parking** — most municipalities require 1 additional parking bay per granny flat
+
+## Tips for Planning Your Granny Flat
+
+1. **Get plans approved first** — Never start construction without approved plans. Council can order demolition of unapproved structures.
+2. **Position for privacy** — Place the granny flat at the rear of the property with a separate entrance for both your privacy and the tenant's.
+3. **Consider services access** — Building close to existing sewer and water lines reduces connection costs significantly.
+4. **Build for rental** — Even if it is for family now, design it to be rentable later. Separate entrance, own meter box, and a functional kitchen add value.
+5. **Insulate the ceiling** — Gauteng winters are cold and summers are hot. Proper insulation (R3.7 minimum for SANS compliance) keeps energy costs down.
+6. **Quality [waterproofing](/en/services/waterproofing)** — Flat roofs (common on granny flats) need excellent waterproofing. Budget R200–R400 per m² for a proper torch-on membrane.
+7. **Include a [carport](/en/services/building) or covered parking** — Adds R20,000–R50,000 to build cost but significantly increases rental appeal.
+
+## Why Choose Sinqobile Construction for Your Granny Flat?
+
+Sinqobile Construction is an NHBRC-registered builder with extensive experience constructing granny flats across Gauteng. We provide:
+
+- **Turnkey service** — from plans and council submission to construction and final inspection
+- **Fixed-price contracts** — no surprises, milestone-based payments
+- **All trades in-house** — [building](/en/services/building), [plumbing](/en/services/plumbing), [electrical](/en/services/electrical), [tiling](/en/services/tiling), [painting](/en/services/painting), [plastering](/en/services/plastering)
+- **Quality finishes** — we do not cut corners on waterproofing, insulation, or structural work
+- **Fast build times** — a standard 1-bedroom granny flat takes 8–12 weeks from ground-breaking to handover
+- **All areas** — [Johannesburg](/en/areas/johannesburg), [Sandton](/en/areas/sandton), [Pretoria](/en/areas/pretoria), [Centurion](/en/areas/centurion), [Midrand](/en/areas/midrand), [Randburg](/en/areas/randburg), [Fourways](/en/areas/fourways), [Roodepoort](/en/areas/roodepoort)
+
+**Contact us for a free granny flat consultation and quote: +27 82 868 8396**
+
+*Last updated: April 2026. Prices reflect current Gauteng market rates. Council approval timelines and regulations may vary by municipality.*
+    `,
+    date: '2026-02-20',
+    dateModified: '2026-04-01',
+    author: 'Dingwayo Reason Ndlovu',
+    category: 'Granny Flats',
+    image: '/images/sinqobile-construction-extensions-rosebank-48.jpg',
+    keywords: ['granny flat costs Johannesburg 2026', 'granny flat plans Gauteng', 'secondary dwelling regulations South Africa', 'granny flat rental income Johannesburg', 'build granny flat Gauteng', 'garden cottage costs Johannesburg']
+  },
+  {
+    slug: 'electrical-certificate-of-compliance-south-africa-guide',
+    title: 'Electrical Certificate of Compliance (COC) in South Africa: Complete Guide',
+    excerpt: 'Everything you need to know about Electrical Certificates of Compliance in South Africa — when you need one, what it costs, the inspection process, common failures, and how to prepare.',
+    content: `
+# Electrical Certificate of Compliance (COC) in South Africa: Complete Guide
+
+An Electrical Certificate of Compliance (COC) is a legal document confirming that a property's electrical installation is safe and meets South African National Standards (SANS 10142-1). If you are selling a property, renting it out, or completing any [electrical work](/en/services/electrical) in [Johannesburg](/en/areas/johannesburg) or anywhere in South Africa, you need to understand COC requirements. This guide explains everything — when you need one, what it costs, the inspection process, and how to prepare.
+
+## What Is an Electrical Certificate of Compliance?
+
+A COC is issued by a registered electrical contractor (registered with the Department of Employment and Labour) after inspecting a property's electrical installation and confirming it complies with SANS 10142-1 (the Wiring Code). The certificate covers the fixed electrical installation — wiring, distribution board (DB board), plugs, switches, lights, geyser connections, and earth leakage protection.
+
+It does NOT cover:
+- Portable appliances (kettles, computers, TVs)
+- Solar panel installations (these need a separate certificate)
+- Generator installations (separate compliance required)
+
+## When Do You Need an Electrical COC?
+
+### Mandatory by Law
+
+| Situation | COC Required? | Notes |
+|-----------|:------------:|-------|
+| **Selling a property** | Yes | Seller must provide valid COC to buyer |
+| **New electrical installation** | Yes | Issued after final inspection |
+| **Alterations to existing installation** | Yes | Any changes to wiring, DB board, circuits |
+| **Change of electricity supplier** | Yes | Switching to a different power provider |
+| **Connecting a property to the grid** | Yes | New connections require COC |
+| **Rental property** | Recommended | Not legally mandatory for rentals, but highly recommended for liability |
+| **Insurance claims** | Often required | Insurers may reject claims without valid COC |
+
+### Key Legal Points
+- The **Occupational Health and Safety Act (OHS Act)** and **Electrical Installation Regulations (2009)** mandate COCs
+- A COC is valid for **2 years** from the date of issue
+- The **seller** is responsible for the cost of the COC when selling property
+- Only a **registered electrical contractor** with a valid wireman's licence can issue a COC
+
+## Electrical COC Costs in Johannesburg (2026)
+
+| Property Type | Inspection + COC Cost | Notes |
+|---------------|----------------------|-------|
+| **Small apartment / flat** | R1,200 – R2,000 | 1–2 bedroom, single DB board |
+| **Standard house (3-bed)** | R1,800 – R3,000 | Single DB board, standard installation |
+| **Large house (4+ bed)** | R2,500 – R4,500 | Multiple DB boards, pool, outbuildings |
+| **House with granny flat** | R3,000 – R5,000 | Main house + separate flat installation |
+| **Commercial / office** | R3,500 – R8,000+ | Depends on size and complexity |
+
+These are inspection and certificate costs only. If repairs are needed to pass inspection, those are additional.
+
+### Common Repair Costs to Pass COC
+
+| Common Issue | Repair Cost |
+|-------------|------------|
+| Replace earth leakage unit (30 mA) | R800 – R1,500 |
+| Upgrade DB board (old fuse board to modern MCB) | R3,500 – R8,000 |
+| Replace damaged plug points (each) | R200 – R400 |
+| Rewire a circuit (per circuit) | R1,500 – R4,000 |
+| Install earth spike and test | R600 – R1,200 |
+| Fix exposed wiring | R500 – R2,000 |
+| Geyser electrical connection upgrade | R800 – R2,000 |
+| **Typical total repairs (older home)** | **R5,000 – R20,000** |
+
+## The COC Inspection Process
+
+### Step 1: Book an Inspection
+Contact a registered electrical contractor. Verify their registration with the Department of Employment and Labour (DoEL). Ask for their registration number — you can verify it online at the DoEL website.
+
+### Step 2: The Inspection
+The electrician will check the following:
+
+**Distribution Board (DB Board)**
+- Earth leakage protection (30 mA trip, tests within specification)
+- Circuit breakers correctly rated for each circuit
+- Proper labelling of all circuits
+- No loose connections or exposed wiring
+- Surge protection (recommended but not mandatory)
+
+**Wiring**
+- All wiring in conduit or properly secured
+- No exposed or damaged cables
+- Correct wire sizing for each circuit
+- No illegal connections or extensions
+
+**Plug Points and Switches**
+- All plug points properly installed and earthed
+- No cracked or damaged faceplates
+- Double plugs properly wired (not daisy-chained)
+- Light switches functional and properly connected
+
+**Earth System**
+- Earth continuity throughout the installation
+- Earth spike resistance within specification (less than 5 ohms for residential)
+- All metal fixtures properly earthed (geyser, stove, pool pump)
+
+**Geyser**
+- Dedicated circuit with isolator switch
+- Thermostat functional
+- Drip tray installed with overflow pipe
+- Vacuum breaker fitted
+
+**External**
+- Pool pump and lights properly protected (if applicable)
+- Outdoor plugs weatherproof rated
+- Gate motor and security system properly wired
+- Borehole pump on dedicated circuit (if applicable)
+
+### Step 3: Results
+- **Pass**: The electrician issues the COC immediately or within a few days
+- **Fail**: You receive a list of faults that must be repaired. The same electrician re-inspects after repairs (usually at reduced cost)
+
+### Step 4: Registration
+The electrician registers the COC with the Department of Employment and Labour. You receive the original certificate and a copy is kept on file.
+
+## Common Reasons Properties Fail COC Inspection
+
+1. **No earth leakage protection** — The most critical safety device. Older homes often have outdated fuse boards without earth leakage units. Upgrading the DB board is the most common (and most expensive) repair.
+
+2. **Illegal extensions** — [Home extensions](/en/services/extensions), granny flats, or outbuildings wired without a registered electrician. The wiring may work but not comply with standards.
+
+3. **Exposed wiring** — Wires not in conduit, damaged insulation, or DIY wiring in roof spaces and under floors.
+
+4. **Overloaded circuits** — Too many appliances on one circuit. South African residential circuits are typically rated at 15–20 amps, and overloading creates fire risk.
+
+5. **Faulty earth system** — Poor earth spike, corroded earth connections, or missing earth wires on plug points. This is a critical safety issue — earth faults can be lethal.
+
+6. **Geyser non-compliance** — Missing drip tray, no vacuum breaker, no dedicated circuit, or thermostat fault. Geysers cause significant damage when they fail, so compliance is strict.
+
+7. **Outdated wiring** — Homes built before 1994 may have aluminium wiring or unsleeved wiring that no longer meets standards.
+
+## How to Prepare for a COC Inspection
+
+To maximise your chances of passing first time and minimise costs:
+
+1. **Check your DB board** — Is it a modern MCB board with earth leakage, or an old fuse board? If it is old, budget for an upgrade.
+2. **Test all plug points** — Plug in a lamp and test every plug in the house. Report any that do not work.
+3. **Check for exposed wiring** — Look in the roof, garage, and behind cupboards for any wires not in conduit.
+4. **Check your geyser** — Ensure the drip tray is installed, the overflow pipe drains outside, and there is an isolator switch.
+5. **Remove illegal connections** — Any DIY wiring, extension leads used as permanent wiring, or multi-plugs on multi-plugs should be removed.
+6. **Check outdoor installations** — Pool pump, borehole, gate motor, and outdoor lights should all be properly installed with weatherproof fittings.
+
+## COC for Property Sales: What Sellers Need to Know
+
+When selling a property in South Africa:
+- You **must** provide a valid COC to the buyer (not older than 2 years)
+- The COC must cover the **entire** property — main house, granny flat, outbuildings
+- The cost is the **seller's responsibility**
+- If repairs are needed, budget R5,000–R20,000 for a typical older home
+- Start the COC process **early** — do not wait until you have an offer. Getting the COC sorted in advance avoids delays in transfer
+- The COC is checked by the transferring attorney as part of the conveyancing process
+
+## Why Choose Sinqobile Construction for Electrical Work?
+
+Sinqobile Construction provides professional [electrical services](/en/services/electrical) across Gauteng. While we do not issue COCs directly (only registered electrical contractors can), we work with trusted registered electricians and handle:
+
+- **DB board upgrades** — from old fuse boards to modern MCB boards with earth leakage
+- **Complete rewiring** — for older homes that need a full electrical overhaul
+- **New installations** — [granny flats](/en/blog/granny-flat-gauteng-costs-plans-regulations), [extensions](/en/services/extensions), and new builds
+- **Pre-COC repairs** — fixing all faults identified during inspection
+- **Geyser installations** — compliant installations with all safety devices
+
+We serve [Johannesburg](/en/areas/johannesburg), [Sandton](/en/areas/sandton), [Pretoria](/en/areas/pretoria), [Centurion](/en/areas/centurion), [Midrand](/en/areas/midrand), [Randburg](/en/areas/randburg), [Fourways](/en/areas/fourways), and [Roodepoort](/en/areas/roodepoort).
+
+**Need electrical work or COC preparation? Call us: +27 82 868 8396**
+
+*Last updated: April 2026. Prices reflect current Gauteng market rates. Regulations based on SANS 10142-1 and OHS Act Electrical Installation Regulations 2009.*
+    `,
+    date: '2026-02-20',
+    dateModified: '2026-04-01',
+    author: 'Dingwayo Reason Ndlovu',
+    category: 'Electrical',
+    image: '/images/sinqobile-construction-installation-johannesburg-24.jpg',
+    keywords: ['electrical certificate of compliance South Africa', 'COC certificate cost Johannesburg', 'electrical COC inspection', 'electrical compliance certificate South Africa 2026', 'property COC requirements', 'electrical inspection costs Gauteng']
+  },
+  {
+    slug: 'boundary-walls-fencing-costs-johannesburg-2026',
+    title: 'Boundary Walls & Fencing Costs in Johannesburg 2026',
+    excerpt: 'Complete 2026 guide to boundary wall and fencing costs in Johannesburg — precast concrete, brick, palisade, and electric fencing compared with costs per metre, regulations, and installation advice.',
+    content: `
+# Boundary Walls & Fencing Costs in Johannesburg 2026
+
+A solid boundary wall or fence is essential for security and privacy in [Johannesburg](/en/areas/johannesburg) and across Gauteng. Whether you are building a new boundary wall for a property in [Sandton](/en/areas/sandton), replacing old fencing in [Randburg](/en/areas/randburg), or adding palisade fencing to a home in [Midrand](/en/areas/midrand), understanding costs, materials, and regulations helps you make the right choice. This guide covers all major fencing types with current 2026 pricing from Sinqobile Construction.
+
+## Boundary Wall & Fencing Costs per Metre (2026)
+
+### Quick Comparison Table
+
+| Fencing Type | Cost per Metre (installed) | Security Rating | Privacy | Lifespan | Maintenance |
+|-------------|---------------------------|:--------------:|:-------:|----------|-------------|
+| **Precast concrete wall (1.8 m)** | R650 – R1,000 | ★★★★ | ★★★★★ | 30+ years | Very low |
+| **Precast concrete wall (2.4 m)** | R900 – R1,400 | ★★★★★ | ★★★★★ | 30+ years | Very low |
+| **Brick wall (1.8 m)** | R1,200 – R2,000 | ★★★★ | ★★★★★ | 50+ years | Low |
+| **Brick wall (2.4 m)** | R1,800 – R2,800 | ★★★★★ | ★★★★★ | 50+ years | Low |
+| **Palisade fencing (1.8 m)** | R800 – R1,200 | ★★★★ | ★★ | 20–30 years | Moderate |
+| **Palisade fencing (2.4 m)** | R1,100 – R1,600 | ★★★★★ | ★★ | 20–30 years | Moderate |
+| **Welded mesh (ClearVu / 358)** | R900 – R1,500 | ★★★★★ | ★ | 20–25 years | Low |
+| **Wooden fencing** | R400 – R800 | ★★ | ★★★ | 8–15 years | High |
+| **Vibracrete (decorative precast)** | R750 – R1,200 | ★★★★ | ★★★★★ | 25+ years | Very low |
+| **Electric fencing (add-on)** | R250 – R500 | +★★ (add-on) | — | 15–20 years | Moderate |
+
+### Precast Concrete Walls — Most Popular in Johannesburg
+
+Precast walls are the most common boundary solution in Johannesburg because they are cost-effective, quick to install, and provide full privacy. They are manufactured off-site and assembled on your property.
+
+**Detailed Precast Pricing:**
+
+| Component | Cost |
+|-----------|------|
+| Precast panel (1.5 m wide × 300 mm high) | R80 – R120 each |
+| Precast column (2.4 m high) | R200 – R350 each |
+| Foundation per column (concrete) | R150 – R250 each |
+| Installation labour per metre | R150 – R300 |
+| **Total installed (1.8 m high)** | **R650 – R1,000 per metre** |
+| **Total installed (2.4 m high)** | **R900 – R1,400 per metre** |
+
+**Pros**: Affordable, quick installation (20–30 m per day), full privacy, low maintenance
+**Cons**: Plain appearance (can be plastered and painted for R100–R200/m² extra), can crack on expansive clay soils without proper foundations
+
+### Brick Boundary Walls — Premium and Long-Lasting
+
+Brick walls offer a premium look and exceptional durability. They are common in upmarket areas like [Sandton](/en/areas/sandton), Bryanston, and [Fourways](/en/areas/fourways).
+
+**Detailed Brick Wall Pricing:**
+
+| Component | Cost per metre |
+|-----------|---------------|
+| Foundation (strip, 600 mm deep) | R300 – R500 |
+| Brickwork — stock brick (requires plastering) | R500 – R800 |
+| Brickwork — face brick (no plastering needed) | R700 – R1,200 |
+| Plastering (both sides, if stock brick) | R200 – R400 |
+| Coping (top cap) | R80 – R150 |
+| Columns / pillars (every 3 m) | R1,500 – R3,000 each |
+| Painting (if plastered) | R80 – R150 |
+| **Total installed — stock brick, plastered (1.8 m)** | **R1,200 – R2,000 per metre** |
+| **Total installed — face brick (1.8 m)** | **R1,400 – R2,200 per metre** |
+
+**Pros**: Extremely durable, attractive, adds property value, handles Johannesburg clay soils well
+**Cons**: Expensive, slow to build (5–8 m per day), requires skilled [brickwork](/en/services/brickwork) labour
+
+### Palisade Fencing — High Security
+
+Palisade fencing is popular in Johannesburg for its security properties. The steel pales are difficult to climb and the open design allows visibility (which deters intruders and allows armed response to see through).
+
+**Detailed Palisade Pricing:**
+
+| Component | Cost per metre |
+|-----------|---------------|
+| Palisade panels (1.8 m high, 3 m wide) | R500 – R750 per panel |
+| Steel posts (Y or H profile) | R200 – R400 each |
+| Concrete foundation per post | R150 – R250 |
+| Installation labour | R150 – R250 per metre |
+| **Total installed (1.8 m)** | **R800 – R1,200 per metre** |
+| **Total installed (2.4 m)** | **R1,100 – R1,600 per metre** |
+
+**Pros**: Excellent security, allows visibility, difficult to climb (especially with spear-top or rotating spikes), recyclable
+**Cons**: No privacy, industrial appearance, requires anti-rust treatment every 3–5 years
+
+### Electric Fencing — Add-On Security
+
+Electric fencing is added on top of an existing wall or fence for enhanced security. It is regulated by SANS 10222-1 and must be installed by a registered installer.
+
+| Component | Cost |
+|-----------|------|
+| Electric fence wire (per metre of fence) | R80 – R150 |
+| Energiser (standard residential) | R2,500 – R5,000 |
+| Brackets and insulators | R50 – R100 per metre |
+| Warning signs (legally required) | R50 – R100 each |
+| Installation labour | R100 – R200 per metre |
+| Electric COC (legally required) | R800 – R1,500 |
+| **Total per metre (on existing wall)** | **R250 – R500** |
+| **Complete 80 m perimeter** | **R22,500 – R45,000** |
+
+## Complete Boundary Wall Cost Examples
+
+### Example 1: Standard 80 m Perimeter — Precast Wall (2.4 m)
+| Item | Cost |
+|------|------|
+| Precast wall (80 m × R1,100/m) | R88,000 |
+| Pedestrian gate (steel, 1 m) | R3,500 – R6,000 |
+| Driveway gate (sliding, 4 m) | R15,000 – R30,000 |
+| Gate motor (installed) | R8,000 – R15,000 |
+| Electric fencing (80 m) | R25,000 – R40,000 |
+| **Total** | **R139,500 – R179,000** |
+
+### Example 2: Premium 80 m Perimeter — Face Brick Wall (1.8 m)
+| Item | Cost |
+|------|------|
+| Face brick wall (80 m × R1,800/m) | R144,000 |
+| Decorative pillars (27 × R2,500) | R67,500 |
+| Pedestrian gate (wrought iron) | R6,000 – R12,000 |
+| Driveway gate (swing, wrought iron, 4 m) | R20,000 – R40,000 |
+| Gate motor (installed) | R8,000 – R15,000 |
+| Electric fencing (80 m) | R25,000 – R40,000 |
+| **Total** | **R270,500 – R318,500** |
+
+## Boundary Wall Regulations in Johannesburg
+
+### Height Restrictions
+- **Front boundary**: Maximum 1.8 m in most residential areas (City of Johannesburg by-law)
+- **Side and rear boundary**: Maximum 2.1 m without special consent; up to 3.0 m with council approval
+- **Electric fencing**: Can add up to 1.5 m above the wall, but total height including wall must comply with local by-laws
+
+### Building Lines and Setbacks
+- Boundary walls are typically built **on the boundary line** (zero setback)
+- Retaining walls that also serve as boundary walls require engineering approval if higher than 1.5 m
+- Any boundary wall with a foundation that encroaches onto municipal land (pavement) requires council permission
+
+### Neighbour Considerations
+- A boundary wall on the common boundary is a **shared wall** — ideally both neighbours agree and share the cost
+- If you build a wall entirely on your property (set back from the boundary), it is your wall and your cost
+- In practice, most Johannesburg homeowners build precast walls without formal neighbour agreement, but it is courteous to discuss beforehand
+
+### Council Approval
+- Boundary walls under 1.8 m on the boundary line generally **do not** require building plan approval
+- Walls above 1.8 m, retaining walls, and walls with structural implications require approved plans
+- Electric fencing requires an Electric Fence System COC (SANS 10222-1)
+
+## Factors That Affect Boundary Wall Costs
+
+1. **Soil conditions** — Johannesburg's clay soils can require deeper foundations (600 mm+) for stability, especially for tall brick walls
+2. **Slope of property** — Sloping sites require stepped foundations, retaining elements, and more materials
+3. **Access** — Difficult access (no vehicle entry, narrow sites) increases labour costs
+4. **Demolition of old wall** — Removing an existing wall costs R100–R300 per metre including rubble removal
+5. **Plastering and painting** — Adding R200–R400 per m² to a precast wall transforms its appearance but adds significant cost
+6. **Gates** — Driveway gates (especially automated sliding gates) are a major cost item, R15,000–R45,000 installed
+
+## Why Choose Sinqobile Construction for Boundary Walls and Fencing?
+
+Sinqobile Construction provides professional [fencing and boundary wall services](/en/services/fencing) across Gauteng. We build:
+
+- **Precast concrete walls** — fast, cost-effective, with or without plaster finish
+- **Brick boundary walls** — face brick and stock brick with quality [brickwork](/en/services/brickwork) and [plastering](/en/services/plastering)
+- **Palisade fencing** — galvanised and powder-coated, with anti-climb options
+- **Retaining walls** — engineered solutions for sloped properties
+- **Gates and motors** — sliding and swing gates, automated with remote access
+- **Repairs and extensions** — adding height to existing walls, repairing cracks, replacing damaged panels
+
+We serve [Johannesburg](/en/areas/johannesburg), [Sandton](/en/areas/sandton), [Pretoria](/en/areas/pretoria), [Centurion](/en/areas/centurion), [Midrand](/en/areas/midrand), [Randburg](/en/areas/randburg), [Fourways](/en/areas/fourways), and [Roodepoort](/en/areas/roodepoort).
+
+**Get a free boundary wall or fencing quote: +27 82 868 8396**
+
+*Last updated: April 2026. Prices reflect current Johannesburg market rates and may vary based on site conditions, access, and material availability.*
+    `,
+    date: '2026-02-20',
+    dateModified: '2026-04-01',
+    author: 'Dingwayo Reason Ndlovu',
+    category: 'Fencing',
+    image: '/images/sinqobile-construction-fencing-boksburg-90.jpg',
+    keywords: ['boundary wall costs Johannesburg 2026', 'fencing prices Gauteng', 'precast wall cost per metre South Africa', 'palisade fencing prices Johannesburg', 'brick boundary wall costs 2026', 'electric fencing costs Johannesburg']
+  },
+  {
+    slug: 'plastering-skimming-costs-johannesburg-2026',
+    title: 'Plastering & Skimming Costs in Johannesburg 2026',
+    excerpt: 'Complete 2026 guide to plastering and skimming costs in Johannesburg — wall plastering, ceiling plastering, skim coating, repair costs per m², and when to plaster vs skim.',
+    content: `
+# Plastering & Skimming Costs in Johannesburg 2026
+
+Plastering and skimming are essential for a quality finish on any [building](/en/services/building) or [renovation](/en/services/renovation) project in [Johannesburg](/en/areas/johannesburg). Whether you are plastering new walls on a house build in [Fourways](/en/areas/fourways), skim-coating a renovation in [Sandton](/en/areas/sandton), or repairing damaged plaster in [Randburg](/en/areas/randburg), this guide provides current 2026 pricing, explains the differences between plastering and skimming, and helps you budget accurately.
+
+## Plastering vs Skimming: What Is the Difference?
+
+Many homeowners confuse plastering and skimming. They are different processes used in different situations:
+
+### Plastering (Rendering)
+- **Thickness**: 10–15 mm
+- **Purpose**: Creates a flat, even surface on bare brick, block, or concrete walls
+- **When needed**: New builds, extensions, bare walls that have never been plastered
+- **Material**: Sand-cement plaster (4:1 sand to cement ratio) or pre-mixed plaster
+- **Finish**: Rough or semi-smooth — usually requires painting or skimming for a final finish
+
+### Skimming (Skim Coat)
+- **Thickness**: 2–3 mm
+- **Purpose**: Creates a perfectly smooth surface on existing plaster, plasterboard, or concrete
+- **When needed**: Before painting (to cover minor imperfections), over existing plaster, on plasterboard joins
+- **Material**: Gypsum-based skim plaster (Gyproc, NovaSkim, or similar)
+- **Finish**: Glass-smooth — ready for painting
+
+### When to Plaster vs When to Skim
+
+| Situation | Plaster or Skim? |
+|-----------|-----------------|
+| New brick/block walls (new build) | **Plaster** (then skim if smooth finish wanted) |
+| Old plaster in reasonable condition | **Skim** (to refresh surface) |
+| Plasterboard / drywall | **Skim** (over joints and screws) |
+| Badly damaged old plaster | **Strip and re-plaster** |
+| Concrete walls or ceilings | **Plaster** (with bonding agent) |
+| Minor cracks and imperfections | **Skim** |
+| Major cracks and structural movement | **Repair first, then plaster** |
+
+## Plastering Costs per m² in Johannesburg (2026)
+
+### Wall Plastering
+
+| Plastering Type | Cost per m² (labour + materials) | Notes |
+|----------------|--------------------------------|-------|
+| **Sand-cement plaster (new walls)** | R100 – R180 | Standard 12 mm thickness |
+| **Sand-cement plaster (external)** | R120 – R200 | Weather-resistant mix, sometimes with waterproofing additive |
+| **Pre-mixed plaster (new walls)** | R130 – R200 | More consistent finish, slightly faster |
+| **Plaster repair (patching)** | R150 – R250 | Cutting out and replacing damaged sections |
+| **Strip and re-plaster** | R180 – R300 | Removing old plaster and applying new |
+
+### Ceiling Plastering
+
+| Ceiling Type | Cost per m² (labour + materials) | Notes |
+|-------------|--------------------------------|-------|
+| **Plasterboard ceiling (new)** | R200 – R350 | Including board, brandering, and skim |
+| **Plasterboard ceiling (replace)** | R250 – R400 | Removal of old ceiling + new installation |
+| **Concrete ceiling plaster** | R150 – R250 | Direct plaster on concrete slab |
+| **Ceiling repair (per m²)** | R180 – R300 | Water damage, cracks, sagging |
+| **Cornice installation** | R50 – R100 per linear metre | Standard cove cornice |
+| **Ornamental cornice** | R100 – R250 per linear metre | Detailed profiles |
+
+### Skim Coating
+
+| Skim Type | Cost per m² (labour + materials) | Notes |
+|-----------|--------------------------------|-------|
+| **Wall skim (single coat)** | R60 – R100 | Standard gypsum skim |
+| **Wall skim (two coats)** | R90 – R140 | For rougher surfaces needing extra smoothing |
+| **Ceiling skim** | R80 – R130 | Including sanding |
+| **Plasterboard skim (joints + screws)** | R50 – R80 | Tape, joint compound, and skim |
+| **Textured / decorative skim** | R100 – R180 | Patterns, textures, venetian-style |
+
+## Complete Project Cost Examples
+
+### Example 1: Plaster New 3-Bedroom House Interior (120 m² floor area)
+
+| Item | Quantity | Cost |
+|------|----------|------|
+| Wall plastering (approx. 280 m² wall area) | 280 m² × R140/m² | R39,200 |
+| Ceiling plasterboard (120 m²) | 120 m² × R280/m² | R33,600 |
+| Wall skim coat (280 m²) | 280 m² × R80/m² | R22,400 |
+| Ceiling skim (120 m²) | 120 m² × R100/m² | R12,000 |
+| Cornice (approx. 100 linear metres) | 100 m × R70/m | R7,000 |
+| **Total** | | **R114,200** |
+
+### Example 2: Skim and Repaint 3-Bedroom House (walls only)
+
+| Item | Quantity | Cost |
+|------|----------|------|
+| Wall preparation (crack repair, sanding) | 280 m² × R30/m² | R8,400 |
+| Wall skim coat (280 m²) | 280 m² × R80/m² | R22,400 |
+| Sanding and dust-down | Included | Included |
+| **Total (plastering only, excl. painting)** | | **R30,800** |
+
+Add [painting](/en/services/painting) at R40–R80 per m² for a complete refresh.
+
+### Example 3: External Plastering — Full House Exterior
+
+| Item | Quantity | Cost |
+|------|----------|------|
+| External wall plastering (200 m²) | 200 m² × R160/m² | R32,000 |
+| Crack repair and prep | Lump sum | R3,000 – R5,000 |
+| [Waterproofing](/en/services/waterproofing) additive | Included in mix | Included |
+| **Total** | | **R35,000 – R37,000** |
+
+## Factors That Affect Plastering Costs
+
+### Wall Condition
+- **New brick (clean, level)**: Cheapest — standard plastering rates apply
+- **Old plaster (cracked, loose)**: Needs stripping first, adding R80–R120 per m²
+- **Concrete walls**: Need a bonding agent (R30–R50 per m² extra) for plaster to adhere
+- **Damp walls**: Must fix the damp source first — plastering over damp is a waste of money. See our [waterproofing services](/en/services/waterproofing)
+
+### Height and Access
+- **Standard rooms (2.4–2.7 m)**: Normal rates
+- **Double volume (4–6 m)**: 30–50% premium for scaffolding and difficulty
+- **Exterior second storey**: Scaffolding hire adds R50–R100 per m²
+- **Stairwells**: Awkward access, premium rates
+
+### Finish Quality
+- **Standard plaster** (for tiling behind): Cheapest — no skim needed, just flat and true
+- **Paint-ready plaster**: Standard plaster + skim coat — most common for interior walls
+- **Premium smooth**: Two coats of skim, sanded between coats — for feature walls and premium homes
+
+### Area and Volume
+Larger projects have lower per-m² rates because setup costs are spread across more area. A single room (30 m²) costs more per m² than a full house (400 m²+).
+
+## Common Plastering Problems and Solutions
+
+### Cracks in Plaster
+- **Hairline cracks**: Normal settlement — fill with crack filler, skim over
+- **Straight vertical/horizontal cracks at joints**: Movement between different materials — use expansion tape and flexible filler
+- **Wide cracks (>2 mm)**: May indicate structural movement — get a structural assessment before plastering
+- **Map cracking (many small cracks)**: Poor curing, too much cement in mix, or plaster applied too thick — strip and re-plaster
+
+### Hollow / Drummy Plaster
+When plaster sounds hollow when tapped, it has debonded from the wall. Small areas can be injected with adhesive. Large areas must be cut out and re-plastered. This is common in older Johannesburg homes and homes that have had damp issues.
+
+### Damp and Staining
+Plastering over damp walls is futile — the plaster will blister, stain, and debond. Fix the damp source first (rising damp, leaking pipes, roof leaks, poor drainage), then replaster. Our [waterproofing](/en/services/waterproofing) and [plumbing](/en/services/plumbing) teams can diagnose and fix the source.
+
+### Rough or Uneven Finish
+If existing plaster is rough but sound, a skim coat (R60–R100 per m²) transforms the surface to a smooth, paint-ready finish without the cost of re-plastering.
+
+## DIY vs Professional Plastering
+
+| Factor | DIY | Professional |
+|--------|-----|-------------|
+| **Skill required** | High — plastering is one of the hardest trades to learn | Years of experience |
+| **Finish quality** | Poor to mediocre (for beginners) | Consistent, smooth |
+| **Speed** | Very slow (3–5 m² per hour max) | 15–25 m² per hour |
+| **Material waste** | High (20–30% waste is common) | Low (5–10%) |
+| **Cost (materials only, 100 m²)** | R5,000 – R8,000 | N/A |
+| **Cost (professional, 100 m²)** | N/A | R10,000 – R18,000 |
+
+Plastering is one trade where DIY rarely saves money — the material waste, slow speed, and poor finish usually mean you end up hiring a professional to fix it anyway.
+
+## Plastering Timeline
+
+| Project | Duration |
+|---------|----------|
+| Skim coat — single room (30 m²) | 1 day |
+| Skim coat — full house interior (280 m²) | 3–5 days |
+| New plaster — single room walls (30 m²) | 1–2 days |
+| New plaster — full house interior (280 m²) | 5–8 days |
+| Ceiling installation — full house (120 m²) | 3–5 days |
+| External plastering — full house (200 m²) | 4–7 days |
+
+Note: Plaster needs to dry for 7–14 days before painting. Skim coat dries in 24–48 hours.
+
+## Why Choose Sinqobile Construction for Plastering and Skimming?
+
+Sinqobile Construction provides professional [plastering services](/en/services/plastering) across Gauteng. Our plasterers have years of experience delivering smooth, durable finishes on new builds, renovations, and repair projects:
+
+- **All plastering types** — sand-cement plaster, skim coating, ceiling installation, cornice, external render
+- **Quality materials** — we use reputable plaster brands and correct mix ratios
+- **Proper preparation** — we fix cracks, treat damp, and apply bonding agents where needed
+- **Clean work** — dust sheets, clean-up, and minimal disruption
+- **Full renovation service** — plastering + [painting](/en/services/painting) + [tiling](/en/services/tiling) for a complete finish
+- **All areas** — [Johannesburg](/en/areas/johannesburg), [Sandton](/en/areas/sandton), [Pretoria](/en/areas/pretoria), [Centurion](/en/areas/centurion), [Midrand](/en/areas/midrand), [Randburg](/en/areas/randburg), [Fourways](/en/areas/fourways), [Roodepoort](/en/areas/roodepoort)
+
+**Get a free plastering quote: +27 82 868 8396**
+
+*Last updated: April 2026. Prices reflect current Johannesburg market rates and may vary based on wall condition, access, and finish quality required.*
+    `,
+    date: '2026-02-20',
+    dateModified: '2026-04-01',
+    author: 'Dingwayo Reason Ndlovu',
+    category: 'Plastering',
+    image: '/images/sinqobile-construction-plastering-fourways-50.jpg',
+    keywords: ['plastering costs Johannesburg 2026', 'skimming costs per m2 South Africa', 'wall plastering prices Gauteng', 'ceiling plastering costs Johannesburg', 'skim coat cost Johannesburg 2026', 'plastering contractor Johannesburg']
+  },
+  {
+    slug: 'construction-insurance-south-africa-homeowners-guide',
+    title: 'Construction Insurance in South Africa: What Homeowners Need to Know',
+    excerpt: 'Complete guide to construction insurance in South Africa — contractor liability, NHBRC warranty, what homeowners should check, how claims work, and how to protect your building investment.',
+    content: `
+# Construction Insurance in South Africa: What Homeowners Need to Know
+
+Building or renovating a home is one of the biggest financial commitments you will make. Yet many homeowners in [Johannesburg](/en/areas/johannesburg) and across Gauteng overlook a critical aspect of any construction project: insurance. If something goes wrong during or after construction — structural failure, theft of materials, injury on site, or poor workmanship — the right insurance protection can save you hundreds of thousands of rands. This guide explains what construction insurance covers, the NHBRC warranty, what to check before your project starts, and how claims work.
+
+## Types of Construction Insurance in South Africa
+
+### 1. Contractor's All Risk (CAR) Insurance
+
+CAR insurance is the primary construction insurance policy. It covers the construction work itself — the building, materials, and temporary works — against damage or loss during the build period.
+
+**What CAR Insurance Covers:**
+- Fire, lightning, explosion
+- Storm, wind, water, flood damage
+- Theft of building materials on site
+- Accidental damage during construction
+- Damage from ground movement or subsidence
+- Vandalism and malicious damage
+- Collapse during construction
+
+**What CAR Insurance Does NOT Cover:**
+- Poor workmanship or design defects (these are the contractor's liability)
+- Wear and tear
+- Consequential losses (delays, lost rental income)
+- War, civil unrest
+- Pre-existing defects
+
+**Cost**: Typically 0.5–1.5% of the total construction value
+
+| Project Value | Estimated CAR Premium |
+|--------------|----------------------|
+| R500,000 (granny flat) | R2,500 – R7,500 |
+| R1,000,000 (major renovation) | R5,000 – R15,000 |
+| R2,500,000 (new house) | R12,500 – R37,500 |
+| R5,000,000 (luxury build) | R25,000 – R75,000 |
+
+### 2. Public Liability Insurance
+
+Public liability covers the contractor for injury to third parties or damage to third-party property during construction.
+
+**Examples of What It Covers:**
+- A worker drops a tool that injures a passer-by
+- Construction work damages a neighbour's property
+- A visitor trips over building materials on site
+- Excavation causes a neighbouring wall to crack
+
+**Minimum Cover**: R5 million (standard), R10–R20 million (recommended for larger projects)
+
+**Cost**: R3,000–R15,000 per year depending on cover level and contractor size
+
+### 3. Workmen's Compensation (COIDA)
+
+The Compensation for Occupational Injuries and Diseases Act (COIDA) requires all employers (including contractors) to register with the Compensation Fund and contribute. This covers workers who are injured on site.
+
+**Key Points for Homeowners:**
+- Your contractor **must** be registered with the Compensation Fund
+- If an unregistered contractor's worker is injured on your property, **you** could be held liable
+- Ask your contractor for their **Letter of Good Standing** from the Compensation Fund
+- This is non-negotiable — no Letter of Good Standing means do not use that contractor
+
+### 4. Professional Indemnity Insurance
+
+This covers architects, engineers, and other professionals against claims arising from their professional advice or designs. If an architect's design is flawed and causes structural problems, their PI insurance covers the claim.
+
+**Relevance to Homeowners**: Ensure your architect and engineer have PI insurance. Ask for proof before engaging them.
+
+### 5. NHBRC Warranty (Structural Defects)
+
+The National Home Builders Registration Council (NHBRC) provides a warranty scheme for new residential construction. It is mandatory for new homes in South Africa — [learn more about NHBRC registration](/en/blog/nhbrc-registration-south-africa-guide).
+
+**NHBRC Warranty Coverage:**
+
+| Defect Type | Coverage Period | What Is Covered |
+|-------------|:--------------:|----------------|
+| **Roof leaks** | 1 year | Leaks caused by construction defects |
+| **Major structural defects** | 5 years | Foundation, walls, roof structure |
+| **Non-compliance with NHBRC standards** | 5 years | Deviations from approved plans |
+
+**NHBRC Enrolment Costs:**
+
+| Home Value | Enrolment Fee (approximate) |
+|-----------|---------------------------|
+| Up to R500,000 | R3,500 – R4,500 |
+| R500,000 – R1,000,000 | R4,500 – R6,000 |
+| R1,000,000 – R2,500,000 | R6,000 – R8,000 |
+| Above R2,500,000 | R8,000 – R12,000 |
+
+**Important**: The NHBRC warranty only applies if:
+- The home is enrolled **before** construction starts
+- The builder is NHBRC-registered
+- Council-approved building plans exist
+- NHBRC inspections are conducted during construction
+
+If any of these conditions are not met, the warranty is void.
+
+## What Homeowners Should Check Before Construction Starts
+
+### The Insurance Checklist
+
+Before any work begins on your property, verify the following with your contractor:
+
+| Item | What to Ask For | Why It Matters |
+|------|----------------|---------------|
+| **CAR Insurance** | Certificate of insurance, policy number, cover amount | Covers your project against damage/loss |
+| **Public Liability** | Certificate with minimum R5M cover | Protects you if someone is injured |
+| **COIDA registration** | Letter of Good Standing | Protects you from worker injury claims |
+| **NHBRC registration** | NHBRC registration number (verify online) | Required for new homes, provides 5-year warranty |
+| **Professional Indemnity** | Certificates from architect and engineer | Covers design and professional errors |
+| **Approved building plans** | Council-stamped plans | Legal requirement, insurance may be void without |
+
+### Red Flags — Walk Away If:
+- Contractor has no insurance and says "we have never had a problem"
+- No COIDA Letter of Good Standing
+- Not NHBRC-registered (for new home builds)
+- Refuses to provide proof of insurance
+- Suggests building without council-approved plans
+- No written contract
+
+## Your Homeowner's Insurance During Construction
+
+Your existing homeowner's insurance policy may NOT cover construction work. Contact your insurer BEFORE construction starts to:
+
+1. **Notify them of the construction project** — Most policies require notification of any alterations, extensions, or construction. Failing to notify can void your entire policy.
+
+2. **Check what is excluded** — Many homeowner's policies exclude damage caused by construction, subsidence from excavation, or theft of building materials.
+
+3. **Confirm cover during construction** — Some insurers reduce cover or add exclusions during the build period. You may need to increase your sum insured to reflect the increased property value.
+
+4. **Understand the gap** — Your homeowner's policy covers the existing structure. The contractor's CAR policy covers the new work. Make sure there are no gaps between these two policies.
+
+## How Construction Insurance Claims Work
+
+### During Construction (CAR Insurance Claim)
+
+1. **Document the damage** — Photographs, videos, written description
+2. **Notify the contractor immediately** — They must report to their insurer
+3. **Secure the site** — Prevent further damage
+4. **Get repair quotes** — Independent assessments support the claim
+5. **Contractor submits claim** — Their insurer sends an assessor
+6. **Assessor evaluates** — Determines if the claim is valid and the repair cost
+7. **Insurer pays** — Typically within 30–60 days of assessment
+
+### After Construction (NHBRC Warranty Claim)
+
+1. **Identify the defect** — Structural cracks, roof leaks, foundation issues
+2. **Report to the builder first** — Give them 30 days to respond and fix
+3. **If builder does not respond** — Contact NHBRC directly: 0800 200 824 or claims@nhbrc.org.za
+4. **NHBRC investigation** — Inspector visits, assesses the defect
+5. **NHBRC orders repair** — Builder must fix within a specified period
+6. **If builder fails to fix** — NHBRC arranges an alternative builder and claims from the builder's warranty fund
+7. **Timeline** — NHBRC claims can take 3–12 months to resolve
+
+### After Construction (Homeowner's Insurance Claim)
+
+For defects or damage after construction that are not covered by NHBRC (e.g., storm damage, burst pipes):
+
+1. **Contact your insurer** — Report within 30 days of discovering the damage
+2. **Do not start repairs** — Wait for the assessor unless emergency repairs are needed to prevent further damage
+3. **Document everything** — Photos, quotes, receipts for emergency repairs
+4. **Assessor visit** — Insurer sends an assessor
+5. **Approval and repair** — Insurer approves the claim and you arrange repairs
+
+## Common Construction Insurance Mistakes Homeowners Make
+
+1. **Not checking contractor insurance before work starts** — By far the most common mistake. Once construction starts, it is too late.
+
+2. **Assuming their homeowner's policy covers construction** — It usually does not. Notify your insurer before work starts.
+
+3. **Not enrolling with NHBRC** — Without enrolment, you have no 5-year structural warranty. This is the builder's responsibility, but verify it is done.
+
+4. **No written contract** — Without a contract specifying insurance responsibilities, disputes over who pays for what are common.
+
+5. **Under-insuring the project** — CAR insurance should cover the **full construction value** including materials, labour, and professional fees. Under-insuring means any claim will be proportionally reduced.
+
+6. **Not documenting progress** — Regular photographs and written records are essential for any future insurance claim. Take photos weekly at minimum.
+
+7. **Paying too much upfront** — If you pay 50% upfront and the contractor disappears, no insurance covers that. Use milestone-based payments tied to completed work stages.
+
+## Construction Contract Essentials for Insurance
+
+Your construction contract should include these insurance-related clauses:
+
+- **Who carries CAR insurance** — the contractor or the homeowner
+- **Minimum public liability cover** — specify the minimum (R5M+)
+- **COIDA compliance** — contractor warrants they are registered
+- **NHBRC enrolment** — contractor warrants the project is enrolled (for new builds)
+- **Risk transfer point** — when does responsibility shift from contractor to homeowner
+- **Defects liability period** — typically 3–6 months after handover during which the contractor must fix any defects
+- **Retention** — holding back 5–10% of payment for the defects liability period
+
+## Why Choose Sinqobile Construction?
+
+Sinqobile Construction is a fully insured, NHBRC-registered building contractor with 15+ years of experience across Gauteng. We protect our clients with:
+
+- **Full CAR insurance** on every project
+- **Public liability insurance** — R10 million cover
+- **COIDA registered** — all our workers are covered
+- **NHBRC registered** — every new home build is enrolled and inspected
+- **Written contracts** — detailed, itemised, with milestone payments and defects liability period
+- **Weekly progress reports** — including photographs for your records
+- **Professional team** — registered architects and engineers on our panel
+
+We provide [building](/en/services/building), [renovation](/en/services/renovation), [extensions](/en/services/extensions), [roofing](/en/services/roofing), [plumbing](/en/services/plumbing), [electrical](/en/services/electrical), and all construction services across [Johannesburg](/en/areas/johannesburg), [Sandton](/en/areas/sandton), [Pretoria](/en/areas/pretoria), [Centurion](/en/areas/centurion), [Midrand](/en/areas/midrand), [Randburg](/en/areas/randburg), [Fourways](/en/areas/fourways), and [Roodepoort](/en/areas/roodepoort).
+
+**Contact us for a free consultation on your construction project: +27 82 868 8396**
+
+*Last updated: April 2026. This guide is for informational purposes only and does not constitute legal or insurance advice. Consult your insurance broker and legal advisor for advice specific to your situation.*
+    `,
+    date: '2026-02-20',
+    dateModified: '2026-04-01',
+    author: 'Dingwayo Reason Ndlovu',
+    category: 'Insurance',
+    image: '/images/sinqobile-construction-building-lanseria-49.jpg',
+    keywords: ['construction insurance South Africa', 'building insurance homeowners', 'NHBRC warranty South Africa', 'contractor insurance requirements', 'CAR insurance construction', 'construction liability insurance Johannesburg']
   }
 ]
 
@@ -2309,7 +3427,13 @@ export const blogCategories = [
   'Waterproofing',
   'Home Extensions',
   'Plumbing',
-  'Painting'
+  'Painting',
+  'Tiling',
+  'Granny Flats',
+  'Electrical',
+  'Fencing',
+  'Plastering',
+  'Insurance'
 ]
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
