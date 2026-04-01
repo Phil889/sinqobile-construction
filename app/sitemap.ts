@@ -5,7 +5,7 @@ import { blogPosts } from '@/lib/blog-data'
 // Actual content modification dates (not build timestamps)
 const routeDates: Record<string, string> = {
   '': '2026-03-28',
-  '/about': '2026-03-28',
+  '/about': '2026-04-01',
   '/services': '2026-03-28',
   '/services/building': '2026-03-28',
   '/services/plastering': '2026-03-29',
