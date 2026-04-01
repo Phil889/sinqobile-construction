@@ -10,6 +10,66 @@ interface FAQClientProps {
   dict: any
 }
 
+// Auto-link service and area mentions in FAQ answers
+function linkifyAnswer(text: string, lang: string): React.ReactNode {
+  const linkMap: Record<string, string> = {
+    'building': `/${lang}/services/building`,
+    'plumbing': `/${lang}/services/plumbing`,
+    'paving': `/${lang}/services/paving`,
+    'renovation': `/${lang}/services/renovation`,
+    'renovations': `/${lang}/services/renovation`,
+    'roofing': `/${lang}/services/roofing`,
+    'waterproofing': `/${lang}/services/waterproofing`,
+    'painting': `/${lang}/services/painting`,
+    'tiling': `/${lang}/services/tiling`,
+    'plastering': `/${lang}/services/plastering`,
+    'electrical': `/${lang}/services/electrical`,
+    'extensions': `/${lang}/services/extensions`,
+    'concrete': `/${lang}/services/concrete`,
+    'fencing': `/${lang}/services/fencing`,
+    'flooring': `/${lang}/services/flooring`,
+    'Johannesburg': `/${lang}/areas/johannesburg`,
+    'Sandton': `/${lang}/areas/sandton`,
+    'Pretoria': `/${lang}/areas/pretoria`,
+    'Centurion': `/${lang}/areas/centurion`,
+    'Midrand': `/${lang}/areas/midrand`,
+    'Randburg': `/${lang}/areas/randburg`,
+    'Fourways': `/${lang}/areas/fourways`,
+    'Roodepoort': `/${lang}/areas/roodepoort`,
+    'cost calculator': `/${lang}/cost-calculator`,
+  }
+
+  // Build regex from all keys, longest first to avoid partial matches
+  const keys = Object.keys(linkMap).sort((a, b) => b.length - a.length)
+  const pattern = new RegExp(`\\b(${keys.join('|')})\\b`, 'gi')
+
+  const parts: React.ReactNode[] = []
+  let lastIndex = 0
+  const linked = new Set<string>() // Only link first occurrence of each term
+
+  let match: RegExpExecArray | null
+  while ((match = pattern.exec(text)) !== null) {
+    const term = match[0]
+    const key = Object.keys(linkMap).find(k => k.toLowerCase() === term.toLowerCase())
+    if (!key || linked.has(key.toLowerCase())) continue
+    linked.add(key.toLowerCase())
+
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index))
+    }
+    parts.push(
+      <a key={match.index} href={linkMap[key]} className="text-accent underline hover:text-orange-700">
+        {term}
+      </a>
+    )
+    lastIndex = match.index + term.length
+  }
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex))
+  }
+  return parts.length > 0 ? parts : text
+}
+
 export default function FAQClient({ lang, dict }: FAQClientProps) {
   const faqCategories = dict.pages.faq.categories
 
@@ -86,7 +146,7 @@ export default function FAQClient({ lang, dict }: FAQClientProps) {
                       <div className="px-6 pb-4">
                         <div className="border-t border-gray-200 pt-4">
                           <p className="text-secondary leading-relaxed">
-                            {item.answer}
+                            {linkifyAnswer(item.answer, lang)}
                           </p>
                         </div>
                       </div>
