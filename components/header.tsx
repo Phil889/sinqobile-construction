@@ -18,10 +18,17 @@ const Header = ({ dict, lang }: HeaderProps) => {
   const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
+    let ticking = false
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0)
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 10)
+          ticking = false
+        })
+        ticking = true
+      }
     }
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 

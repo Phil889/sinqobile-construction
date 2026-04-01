@@ -16,6 +16,13 @@ body {
   color: #424242;
 }
 
+/* Prevent mobile CTA bar from overlapping content */
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 72px;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-montserrat), 'Montserrat', sans-serif;
 }

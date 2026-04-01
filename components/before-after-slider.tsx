@@ -84,22 +84,21 @@ export default function BeforeAfterSlider({ dict, lang }: BeforeAfterSliderProps
     setIsDragging(false)
   }
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!isDragging || !containerRef.current) return
-
+  const updateSliderPosition = (clientX: number) => {
+    if (!containerRef.current) return
     const rect = containerRef.current.getBoundingClientRect()
-    const x = Math.max(0, Math.min(e.clientX - rect.left, rect.width))
+    const x = Math.max(0, Math.min(clientX - rect.left, rect.width))
     const percent = Math.max(0, Math.min((x / rect.width) * 100, 100))
     setSliderPosition(percent)
   }
 
-  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
-    if (!containerRef.current) return
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!isDragging) return
+    requestAnimationFrame(() => updateSliderPosition(e.clientX))
+  }
 
-    const rect = containerRef.current.getBoundingClientRect()
-    const x = Math.max(0, Math.min(e.touches[0].clientX - rect.left, rect.width))
-    const percent = Math.max(0, Math.min((x / rect.width) * 100, 100))
-    setSliderPosition(percent)
+  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+    requestAnimationFrame(() => updateSliderPosition(e.touches[0].clientX))
   }
 
   const nextProject = () => {

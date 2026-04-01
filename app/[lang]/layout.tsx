@@ -114,6 +114,7 @@ export default async function RootLayout({
   return (
     <html lang={params.lang}>
       <head>
+        <link rel="preload" as="image" href="/images/hero-construction-site.jpg" />
         <SchemaMarkup type="organization" lang={params.lang} />
         <SchemaMarkup type="localBusiness" lang={params.lang} />
         <SchemaMarkup type="website" lang={params.lang} />
