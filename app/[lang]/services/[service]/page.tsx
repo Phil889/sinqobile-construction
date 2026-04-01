@@ -585,6 +585,7 @@ export default async function ServicePage({ params: { lang, service } }: Service
               <span>Get Free Quote</span>
             </Link>
           </div>
+          <p className="text-sm text-white/60 mt-6">Last updated: April 2026</p>
         </div>
       </section>
 

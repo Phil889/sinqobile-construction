@@ -416,7 +416,7 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
 
   const areaSchema = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
+    '@type': 'GeneralContractor',
     '@id': `https://www.sinqobileconstruction.co.za/${lang}/areas/${area}#localbusiness`,
     name: `Sinqobile Construction - ${location.name}`,
     description: location.description,
@@ -782,6 +782,7 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
                 <span>Request Free Quote</span>
               </Link>
             </div>
+            <p className="text-sm text-white/60 mt-6">Last updated: April 2026</p>
           </div>
         </section>
       </div>

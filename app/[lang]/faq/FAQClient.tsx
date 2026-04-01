@@ -238,6 +238,7 @@ export default function FAQClient({ lang, dict }: FAQClientProps) {
           >
             {dict.pages.services.viewAllServiceAreas}
           </a>
+          <p className="text-sm text-gray-400 mt-6">Last updated: April 2026</p>
         </div>
       </section>
     </div>
