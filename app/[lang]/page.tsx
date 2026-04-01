@@ -100,7 +100,7 @@ export default async function Home({
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-96 w-full">
               <Image
-                src="/images/meshack-dlamini.jpg"
+                src="/images/dingwayo-ndlovu.jpg"
                 alt="Experienced Sinqobile Construction craftsman Dingwayo Reason Ndlovu with 15+ years expertise in residential construction, renovations, and home improvements across Gauteng"
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

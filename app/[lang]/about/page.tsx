@@ -70,7 +70,7 @@ export default async function AboutPage({
     name: 'Dingwayo Reason Ndlovu',
     jobTitle: 'Founder & Managing Director',
     description: 'NHBRC registered builder with 15+ years experience in residential and commercial construction across Gauteng, South Africa. Founded Sinqobile Construction in 2010.',
-    image: 'https://www.sinqobileconstruction.co.za/images/meshack-dlamini.jpg',
+    image: 'https://www.sinqobileconstruction.co.za/images/dingwayo-ndlovu.jpg',
     worksFor: {
       '@type': 'GeneralContractor',
       '@id': 'https://www.sinqobileconstruction.co.za/#localbusiness',
@@ -154,7 +154,7 @@ export default async function AboutPage({
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
               <Image
-                src="/images/meshack-dlamini.jpg"
+                src="/images/dingwayo-ndlovu.jpg"
                 alt="Dingwayo Reason Ndlovu, founder of Sinqobile Construction, NHBRC registered builder with 15+ years experience in Johannesburg"
                 width={600}
                 height={500}

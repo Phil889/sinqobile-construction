@@ -15,6 +15,65 @@ interface AreaPageProps {
   }
 }
 
+// Map area slugs to relevant project images from public/images/
+const areaImages: Record<string, { src: string; alt: string }[]> = {
+  'johannesburg': [
+    { src: '/images/sinqobile-construction-installation-johannesburg-24.jpg', alt: 'Installation project in Johannesburg by Sinqobile Construction' },
+    { src: '/images/sinqobile-construction-installation-johannesburg-94.jpg', alt: 'Professional installation work in Johannesburg' },
+    { src: '/images/sinqobile-construction-waterproofing-johannesburg-96.jpg', alt: 'Waterproofing project in Johannesburg' },
+    { src: '/images/sinqobile-construction-plumbing-johannesburg-86.jpg', alt: 'Plumbing services in Johannesburg' },
+    { src: '/images/sinqobile-construction-renovation-johannesburg-26.jpg', alt: 'Home renovation in Johannesburg' },
+    { src: '/images/sinqobile-construction-building-edenvale-30.jpg', alt: 'Building project in Edenvale, Johannesburg' },
+  ],
+  'sandton': [
+    { src: '/images/sinqobile-construction-installation-sandton-36.jpg', alt: 'Installation project in Sandton by Sinqobile Construction' },
+    { src: '/images/sinqobile-construction-maintenance-sandton-17.jpg', alt: 'Property maintenance in Sandton' },
+    { src: '/images/sinqobile-construction-paving-sandton-77.jpg', alt: 'Paving project in Sandton' },
+    { src: '/images/sinqobile-construction-roofing-sandton-95.jpg', alt: 'Roofing work in Sandton' },
+    { src: '/images/sinqobile-construction-tiling-sandton-65.jpg', alt: 'Tiling project in Sandton' },
+    { src: '/images/sinqobile-construction-extensions-rosebank-48.jpg', alt: 'Home extension in Rosebank, near Sandton' },
+  ],
+  'pretoria': [
+    { src: '/images/sinqobile-construction-roofing-pretoria-15.jpg', alt: 'Roofing project in Pretoria by Sinqobile Construction' },
+    { src: '/images/sinqobile-construction-plastering-pretoria-44.jpg', alt: 'Plastering work in Pretoria' },
+    { src: '/images/sinqobile-construction-roofing-centurion-61.jpg', alt: 'Roofing in Centurion, near Pretoria' },
+    { src: '/images/sinqobile-construction-maintenance-centurion-70.jpg', alt: 'Maintenance project in Centurion' },
+  ],
+  'centurion': [
+    { src: '/images/sinqobile-construction-roofing-centurion-61.jpg', alt: 'Roofing project in Centurion by Sinqobile Construction' },
+    { src: '/images/sinqobile-construction-maintenance-centurion-70.jpg', alt: 'Property maintenance in Centurion' },
+    { src: '/images/sinqobile-construction-roofing-pretoria-15.jpg', alt: 'Roofing near Centurion' },
+    { src: '/images/sinqobile-construction-plastering-pretoria-44.jpg', alt: 'Plastering work near Centurion' },
+  ],
+  'midrand': [
+    { src: '/images/sinqobile-construction-roofing-midrand-79.jpg', alt: 'Roofing project in Midrand by Sinqobile Construction' },
+    { src: '/images/sinqobile-construction-roofing-midrand-89.jpg', alt: 'Roof repair in Midrand' },
+    { src: '/images/sinqobile-construction-roofing-midrand-97.jpg', alt: 'Roofing work in Midrand' },
+    { src: '/images/sinqobile-construction-paving-midrand-59.jpg', alt: 'Paving project in Midrand' },
+    { src: '/images/sinqobile-construction-flooring-midrand-55.jpg', alt: 'Flooring installation in Midrand' },
+    { src: '/images/sinqobile-construction-renovation-midrand-37.jpg', alt: 'Home renovation in Midrand' },
+  ],
+  'randburg': [
+    { src: '/images/sinqobile-construction-plumbing-randburg-52.jpg', alt: 'Plumbing project in Randburg by Sinqobile Construction' },
+    { src: '/images/sinqobile-construction-plumbing-randburg-98.jpg', alt: 'Plumbing services in Randburg' },
+    { src: '/images/sinqobile-construction-paving-randburg-2.jpg', alt: 'Paving project in Randburg' },
+    { src: '/images/sinqobile-construction-renovation-randburg-7.jpg', alt: 'Home renovation in Randburg' },
+  ],
+  'fourways': [
+    { src: '/images/sinqobile-construction-flooring-fourways-43.jpg', alt: 'Flooring project in Fourways by Sinqobile Construction' },
+    { src: '/images/sinqobile-construction-plumbing-fourways-27.jpg', alt: 'Plumbing services in Fourways' },
+    { src: '/images/sinqobile-construction-repairs-fourways-41.jpg', alt: 'Home repairs in Fourways' },
+    { src: '/images/sinqobile-construction-repairs-fourways-6.jpg', alt: 'Repair work in Fourways' },
+    { src: '/images/sinqobile-construction-plastering-fourways-50.jpg', alt: 'Plastering project in Fourways' },
+  ],
+  'roodepoort': [
+    { src: '/images/sinqobile-construction-tiling-roodepoort-35.jpg', alt: 'Tiling project in Roodepoort by Sinqobile Construction' },
+    { src: '/images/sinqobile-construction-waterproofing-krugersdorp-85.jpg', alt: 'Waterproofing near Roodepoort' },
+    { src: '/images/sinqobile-construction-painting-krugersdorp-76.jpg', alt: 'Painting work near Roodepoort' },
+    { src: '/images/sinqobile-construction-concrete-krugersdorp-21.jpg', alt: 'Concrete work near Roodepoort' },
+  ],
+}
+
 // Location data
 const locationData: Record<string, {
   name: string
@@ -467,6 +526,39 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
             </div>
           </div>
         </section>
+
+        {/* Project Gallery — Area-specific images */}
+        {areaImages[area] && areaImages[area].length > 0 && (
+          <section className="py-20 bg-lightBackground">
+            <div className="container mx-auto px-4">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary text-center mb-12">
+                Recent Projects in {location.name}
+              </h2>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+                {areaImages[area].slice(0, 6).map((img, index) => (
+                  <div key={index} className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-md group">
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 50vw, 33vw"
+                      loading={index < 2 ? undefined : 'lazy'}
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="text-center mt-8">
+                <Link
+                  href={`/${lang}/our-work`}
+                  className="inline-block text-accent font-semibold hover:underline"
+                >
+                  View all {location.projects}+ completed projects →
+                </Link>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Services in Location */}
         <section className="py-20 bg-lightBackground">
