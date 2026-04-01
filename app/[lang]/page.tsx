@@ -30,7 +30,7 @@ export async function generateMetadata({
     title: dict.meta.title,
     description: dict.meta.description,
     alternates: {
-      canonical: `/${params.lang}`,
+      canonical: params.lang === 'en' ? 'https://www.sinqobileconstruction.co.za' : `/${params.lang}`,
     },
   }
 }
