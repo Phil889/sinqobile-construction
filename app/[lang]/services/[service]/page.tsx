@@ -163,6 +163,9 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   }
 }
 
+// ISR: regenerate service pages daily
+export const revalidate = 86400
+
 export default async function ServicePage({ params: { lang, service } }: ServicePageProps) {
   const dict = await getDictionary(lang)
   const serviceData = getServiceBySlug(service)

@@ -58,6 +58,9 @@ export async function generateMetadata({
   }
 }
 
+// ISR: regenerate blog posts daily
+export const revalidate = 86400
+
 export default function BlogPostPage({
   params: { lang, slug },
 }: {

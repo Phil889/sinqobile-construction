@@ -35,6 +35,9 @@ export async function generateMetadata({
   }
 }
 
+// ISR: regenerate homepage every hour for fresh content
+export const revalidate = 3600
+
 export default async function Home({
   params: { lang },
 }: {

@@ -406,6 +406,9 @@ export async function generateMetadata({ params }: AreaPageProps): Promise<Metad
   }
 }
 
+// ISR: regenerate area pages daily
+export const revalidate = 86400
+
 export default async function AreaDetailPage({ params: { lang, area } }: AreaPageProps) {
   const dict = await getDictionary(lang)
   const location = locationData[area]
