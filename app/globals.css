@@ -27,12 +27,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-montserrat), 'Montserrat', sans-serif;
 }
 
-.hero-bg {
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/hero-construction-site.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+/* hero-bg class removed — hero now uses next/image for AVIF/WebP optimization */
 
 @layer utilities {
   .text-balance {

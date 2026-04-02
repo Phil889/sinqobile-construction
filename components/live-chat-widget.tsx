@@ -20,8 +20,8 @@ export default function LiveChatWidget() {
 
   return (
     <>
-      {/* Floating Chat Widget - positioned to not interfere with WhatsApp button */}
-      <div className="fixed bottom-6 left-6 z-50">
+      {/* Floating Chat Widget */}
+      <div className="fixed bottom-6 right-6 z-50 hidden md:block">
         {isOpen && (
           <div className="mb-4 bg-white rounded-lg shadow-2xl w-80 animate-slide-up overflow-hidden">
             {/* Header */}

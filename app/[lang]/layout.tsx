@@ -6,7 +6,6 @@ import Header from '@/components/header'
 import Footer from '@/components/footer'
 import SchemaMarkup from '@/components/schema-markup'
 import Analytics from '@/components/analytics'
-import WhatsAppFloat from '@/components/whatsapp-float'
 import LiveChatWidget from '@/components/live-chat-widget'
 import { MobileCTABar } from '@/components/mobile-cta-bar'
 import { i18n, type Locale } from '@/i18n.config'
@@ -114,7 +113,6 @@ export default async function RootLayout({
   return (
     <html lang={params.lang}>
       <head>
-        <link rel="preload" as="image" href="/images/hero-construction-site.jpg" />
         <SchemaMarkup type="organization" lang={params.lang} />
         <SchemaMarkup type="localBusiness" lang={params.lang} />
         <SchemaMarkup type="website" lang={params.lang} />
@@ -126,7 +124,6 @@ export default async function RootLayout({
           {children}
         </main>
         <Footer dict={dict} lang={params.lang} />
-        <WhatsAppFloat dict={dict} />
         <LiveChatWidget />
         <MobileCTABar dict={dict} />
       </body>
