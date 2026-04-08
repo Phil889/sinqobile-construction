@@ -36,6 +36,10 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: 'anthropic-ai',
         disallow: '/',
       },
+      {
+        userAgent: 'cohere-ai',
+        disallow: '/',
+      },
     ],
     sitemap: 'https://www.sinqobileconstruction.co.za/sitemap.xml',
   }
