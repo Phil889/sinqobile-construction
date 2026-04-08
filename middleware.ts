@@ -26,10 +26,9 @@ export function middleware(request: NextRequest) {
   // Redirect if there is no locale — use 308 permanent redirect
   if (pathnameIsMissingLocale) {
     const locale = getLocale(request)
-    const url = new URL(
-      `/${locale}${pathname.startsWith('/') ? '' : '/'}${pathname}`,
-      request.url
-    )
+    // Build path without trailing slash to avoid double redirect (/ → /en/ → /en)
+    const suffix = pathname === '/' ? '' : pathname
+    const url = new URL(`/${locale}${suffix}`, request.url)
     return NextResponse.redirect(url, 308)
   }
 }
