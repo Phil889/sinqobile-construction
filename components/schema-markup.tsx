@@ -18,7 +18,12 @@ export default function SchemaMarkup({ type, lang, data }: SchemaMarkupProps) {
           name: 'Sinqobile Construction',
           alternateName: 'Sinqobile Construction - Dingwayo Reason Ndlovu',
           url: 'https://www.sinqobileconstruction.co.za',
-          logo: 'https://www.sinqobileconstruction.co.za/logo.png',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://www.sinqobileconstruction.co.za/logo.png',
+            width: 512,
+            height: 512
+          },
           contactPoint: {
             '@type': 'ContactPoint',
             telephone: BUSINESS_INFO.contact.phone,

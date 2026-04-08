@@ -377,31 +377,36 @@ export async function generateMetadata({ params }: AreaPageProps): Promise<Metad
   const title = seo?.title || `Construction Services ${location.name} | Sinqobile Construction`
   const description = seo?.description || `Professional construction services in ${location.name}. ${location.projects}+ projects completed. Free quotes — +27 82 868 8396`
 
+  const siteUrl = 'https://www.sinqobileconstruction.co.za'
+
   return {
     title,
     description,
     alternates: {
-      canonical: `/${params.lang}/areas/${params.area}`,
+      canonical: `${siteUrl}/${params.lang}/areas/${params.area}`,
       languages: {
-        'en': `/en/areas/${params.area}`,
-        'af': `/af/areas/${params.area}`,
-        'zu': `/zu/areas/${params.area}`,
-        'st': `/st/areas/${params.area}`,
-        'x-default': `/en/areas/${params.area}`,
+        'en': `${siteUrl}/en/areas/${params.area}`,
+        'af': `${siteUrl}/af/areas/${params.area}`,
+        'zu': `${siteUrl}/zu/areas/${params.area}`,
+        'st': `${siteUrl}/st/areas/${params.area}`,
+        'x-default': `${siteUrl}/en/areas/${params.area}`,
       },
     },
     openGraph: {
       title,
       description,
-      url: `/${params.lang}/areas/${params.area}`,
+      url: `${siteUrl}/${params.lang}/areas/${params.area}`,
       siteName: 'Sinqobile Construction',
       type: 'website',
       images: [{
-        url: '/og-image.jpg',
+        url: `${siteUrl}/og-image.jpg`,
         width: 1200,
         height: 630,
         alt: `Construction Services in ${location.name} | Sinqobile Construction`,
       }],
+    },
+    other: {
+      'article:modified_time': '2026-04-01',
     },
   }
 }
@@ -419,33 +424,25 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
 
   const areaSchema = {
     '@context': 'https://schema.org',
-    '@type': 'GeneralContractor',
-    '@id': `https://www.sinqobileconstruction.co.za/${lang}/areas/${area}#localbusiness`,
-    name: `Sinqobile Construction - ${location.name}`,
+    '@type': 'Service',
+    '@id': `https://www.sinqobileconstruction.co.za/${lang}/areas/${area}#service`,
+    name: `Construction Services in ${location.name}`,
     description: location.description,
-    telephone: '+27828688396',
     url: `https://www.sinqobileconstruction.co.za/${lang}/areas/${area}`,
+    provider: {
+      '@type': 'GeneralContractor',
+      '@id': 'https://www.sinqobileconstruction.co.za/#localbusiness',
+    },
     areaServed: {
       '@type': 'City',
       name: location.name,
       containedInPlace: { '@type': 'State', name: 'Gauteng' },
     },
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'The William 1, Broadacres Drive',
-      addressLocality: 'Sandton',
-      addressRegion: 'Gauteng',
-      postalCode: '2191',
-      addressCountry: 'ZA',
-    },
+    serviceType: 'General Construction',
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: String(location.rating),
       reviewCount: '127',
-    },
-    parentOrganization: {
-      '@type': 'Organization',
-      '@id': 'https://www.sinqobileconstruction.co.za/#organization',
     },
   }
 

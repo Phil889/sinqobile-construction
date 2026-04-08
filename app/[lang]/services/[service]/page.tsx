@@ -134,31 +134,36 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   const title = seo?.title || `${serviceName} Services Johannesburg | Sinqobile Construction`
   const description = seo?.description || `Professional ${serviceName.toLowerCase()} services in Johannesburg & Gauteng. 15+ years experience, 500+ projects. Free quotes — +27 82 868 8396`
 
+  const siteUrl = 'https://www.sinqobileconstruction.co.za'
+
   return {
     title,
     description,
     alternates: {
-      canonical: `/${params.lang}/services/${params.service}`,
+      canonical: `${siteUrl}/${params.lang}/services/${params.service}`,
       languages: {
-        'en': `/en/services/${params.service}`,
-        'af': `/af/services/${params.service}`,
-        'zu': `/zu/services/${params.service}`,
-        'st': `/st/services/${params.service}`,
-        'x-default': `/en/services/${params.service}`,
+        'en': `${siteUrl}/en/services/${params.service}`,
+        'af': `${siteUrl}/af/services/${params.service}`,
+        'zu': `${siteUrl}/zu/services/${params.service}`,
+        'st': `${siteUrl}/st/services/${params.service}`,
+        'x-default': `${siteUrl}/en/services/${params.service}`,
       },
     },
     openGraph: {
       title,
       description,
-      url: `/${params.lang}/services/${params.service}`,
+      url: `${siteUrl}/${params.lang}/services/${params.service}`,
       siteName: 'Sinqobile Construction',
       type: 'website',
       images: [{
-        url: '/og-image.jpg',
+        url: `${siteUrl}/og-image.jpg`,
         width: 1200,
         height: 630,
         alt: `${serviceName} Services in Johannesburg | Sinqobile Construction`,
       }],
+    },
+    other: {
+      'article:modified_time': '2026-04-01',
     },
   }
 }

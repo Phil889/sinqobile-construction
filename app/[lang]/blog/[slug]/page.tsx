@@ -116,7 +116,9 @@ export default function BlogPostPage({
       "@id": pageUrl
     },
     "keywords": post.keywords.join(', '),
-    "articleSection": post.category
+    "articleSection": post.category,
+    "inLanguage": lang,
+    "wordCount": post.content.split(/\s+/).filter(Boolean).length
   }
 
   // BreadcrumbList schema

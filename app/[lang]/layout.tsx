@@ -55,13 +55,13 @@ export async function generateMetadata({
       ],
     },
     alternates: {
-      canonical: './',
+      canonical: `https://www.sinqobileconstruction.co.za/${params.lang}`,
       languages: {
-        'en': '/en',
-        'af': '/af',
-        'zu': '/zu',
-        'st': '/st',
-        'x-default': '/en',
+        'en': 'https://www.sinqobileconstruction.co.za/en',
+        'af': 'https://www.sinqobileconstruction.co.za/af',
+        'zu': 'https://www.sinqobileconstruction.co.za/zu',
+        'st': 'https://www.sinqobileconstruction.co.za/st',
+        'x-default': 'https://www.sinqobileconstruction.co.za/en',
       }
     },
     openGraph: {

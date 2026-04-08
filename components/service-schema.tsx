@@ -31,6 +31,17 @@ export default function ServiceSchema({
       "@type": "State",
       "name": "Gauteng"
     },
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "ZAR",
+      "lowPrice": priceRange.split('-')[0]?.replace(/[^\d]/g, '') || "500",
+      "highPrice": priceRange.split('-')[1]?.replace(/[^\d]/g, '') || "500000"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "127"
+    },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": `${serviceName} Services`,
