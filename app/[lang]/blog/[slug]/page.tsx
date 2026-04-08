@@ -7,6 +7,8 @@ import { Calendar, User, Tag, ArrowLeft, Phone } from 'lucide-react'
 import { Metadata } from 'next'
 import MarkdownContent from '@/components/markdown-content'
 
+const SITE_URL = 'https://www.sinqobileconstruction.co.za'
+
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({
     slug: post.slug,
@@ -26,34 +28,43 @@ export async function generateMetadata({
     }
   }
 
+  const imageUrl = `${SITE_URL}${post.image.startsWith('/') ? post.image : `/${post.image}`}`
+
   return {
     title: `${post.title} | Sinqobile Construction Blog`,
     description: post.excerpt,
     keywords: post.keywords.join(', '),
     alternates: {
-      canonical: `/${lang}/blog/${slug}`,
+      canonical: `${SITE_URL}/${lang}/blog/${slug}`,
       languages: {
-        'en': `/en/blog/${slug}`,
-        'af': `/af/blog/${slug}`,
-        'zu': `/zu/blog/${slug}`,
-        'st': `/st/blog/${slug}`,
-        'x-default': `/en/blog/${slug}`,
+        'en': `${SITE_URL}/en/blog/${slug}`,
+        'af': `${SITE_URL}/af/blog/${slug}`,
+        'zu': `${SITE_URL}/zu/blog/${slug}`,
+        'st': `${SITE_URL}/st/blog/${slug}`,
+        'x-default': `${SITE_URL}/en/blog/${slug}`,
       },
     },
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `/${lang}/blog/${slug}`,
+      url: `${SITE_URL}/${lang}/blog/${slug}`,
       siteName: 'Sinqobile Construction',
       images: [{
-        url: post.image.startsWith('/') ? post.image : `/${post.image}`,
+        url: imageUrl,
         width: 1200,
         height: 630,
         alt: post.title,
       }],
       type: 'article',
       publishedTime: post.date,
+      modifiedTime: post.dateModified || post.date,
       authors: [post.author],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
+      images: [imageUrl],
     },
   }
 }
@@ -74,33 +85,64 @@ export default function BlogPostPage({
 
   const relatedPosts = getRelatedPosts(slug, 3)
 
+  const absoluteImage = `${SITE_URL}${post.image.startsWith('/') ? post.image : `/${post.image}`}`
+  const pageUrl = `${SITE_URL}/${lang}/blog/${slug}`
+
   // Schema markup for Article
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": post.title,
     "description": post.excerpt,
-    "image": post.image,
+    "image": absoluteImage,
     "datePublished": post.date,
     "dateModified": post.dateModified || post.date,
     "author": {
       "@type": "Person",
+      "@id": `${SITE_URL}/#founder`,
       "name": post.author
     },
     "publisher": {
       "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
       "name": "Sinqobile Construction",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.sinqobileconstruction.co.za/logo.svg"
+        "url": `${SITE_URL}/logo.png`
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://www.sinqobileconstruction.co.za/${lang}/blog/${slug}`
+      "@id": pageUrl
     },
     "keywords": post.keywords.join(', '),
     "articleSection": post.category
+  }
+
+  // BreadcrumbList schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": `${SITE_URL}/${lang}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": `${SITE_URL}/${lang}/blog`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": post.title,
+        "item": pageUrl
+      }
+    ]
   }
 
   return (
@@ -110,18 +152,22 @@ export default function BlogPostPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
       <div className="pt-20">
-        {/* Back Button */}
+        {/* Breadcrumb Navigation */}
         <div className="bg-lightBackground py-4">
           <div className="container mx-auto px-4">
-            <Link
-              href={`/${lang}/blog`}
-              className="inline-flex items-center space-x-2 text-secondary hover:text-primary transition-colors"
-            >
-              <ArrowLeft size={20} />
-              <span>Back to Blog</span>
-            </Link>
+            <nav aria-label="Breadcrumb" className="flex items-center space-x-2 text-sm text-secondary">
+              <Link href={`/${lang}`} className="hover:text-primary transition-colors">Home</Link>
+              <span>/</span>
+              <Link href={`/${lang}/blog`} className="hover:text-primary transition-colors">Blog</Link>
+              <span>/</span>
+              <span className="text-primary font-medium truncate max-w-xs">{post.title}</span>
+            </nav>
           </div>
         </div>
 
@@ -144,14 +190,26 @@ export default function BlogPostPage({
               <div className="flex flex-wrap items-center gap-6 text-secondary mb-8">
                 <div className="flex items-center space-x-2">
                   <Calendar size={18} />
-                  <span>
+                  <time dateTime={post.date}>
                     {new Date(post.date).toLocaleDateString('en-ZA', {
                       year: 'numeric',
                       month: 'long',
                       day: 'numeric',
                     })}
-                  </span>
+                  </time>
                 </div>
+                {post.dateModified && post.dateModified !== post.date && (
+                  <div className="flex items-center space-x-2 text-sm">
+                    <span>Updated:</span>
+                    <time dateTime={post.dateModified}>
+                      {new Date(post.dateModified).toLocaleDateString('en-ZA', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                      })}
+                    </time>
+                  </div>
+                )}
                 <div className="flex items-center space-x-2">
                   <User size={18} />
                   <span>{post.author}</span>
