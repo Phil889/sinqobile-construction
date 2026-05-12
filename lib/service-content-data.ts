@@ -15,6 +15,38 @@ export interface ServiceContent {
   whyChoose: string[]
   materialsNote?: string
   relatedServices?: string[]
+  /**
+   * v2.1 Phase 8 & 9 extras — populated per-service as each page goes through
+   * the v2.1 SERP/AI retrofit. When `null`/missing, the page falls back to
+   * legacy behaviour (no direct-answer block, no citation hooks, no rich
+   * Service schema). Each service slot is independent so paving/plumbing/etc.
+   * retrofits can plug in here without affecting building.
+   */
+  phaseDExtras?: {
+    /** 40–60 word direct answer for the primary keyword. Rendered with data-speakable="summary" under H1. */
+    directAnswer: string
+    /** Schema.org audienceType — specific audience for this service. */
+    audienceType: string
+    /** Rich Service schema fields. */
+    schemaName: string
+    priceRangeMin: number
+    priceRangeMax: number
+    /** ISO date string — set when the page was last meaningfully updated. */
+    dateModified: string
+    /** Verbatim citation hooks: factual claim + specific number + brand attribution. */
+    citationHooks: string[]
+    /** Optional build-quality / cost comparison table for "vs"/cost queries. */
+    comparisonTable?: {
+      title: string
+      caption?: string
+      columns: string[]
+      rows: { label: string; cells: string[] }[]
+    }
+    /** Tier label used inside StrategyCTA category prop. */
+    strategyCtaCategory: string
+    strategyCtaHeadline: string
+    strategyCtaSubheadline: string
+  }
 }
 
 // Related service mappings for internal linking
@@ -127,6 +159,18 @@ export const serviceContentData: Record<string, ServiceContent> = {
         question: 'What areas in Gauteng do you build in?',
         answer: 'We build across the entire Gauteng province, including Johannesburg CBD, Sandton, Fourways, Randburg, Midrand, Centurion, Pretoria, Roodepoort, and surrounding areas. Our head office is in Fourways, Sandton, which gives us quick access to projects across the region. We have completed 500+ projects spanning East Rand, West Rand, and Tshwane.'
       },
+      {
+        question: 'What payment structure do you use for new builds?',
+        answer: 'New-build contracts are paid in milestone instalments tied to verified construction stages, never as a single upfront lump sum. A typical Sinqobile Construction schedule runs 10% on signature, 15% at foundation completion, 20% at wall plate, 20% at roof on, 20% at plaster and waterproofing, and the final 15% on snag-free handover with the NHBRC enrolment certificate. Every milestone is invoiced against photographic and inspection evidence.'
+      },
+      {
+        question: 'Are you fully insured for residential construction?',
+        answer: 'Yes. Sinqobile Construction carries comprehensive public liability cover (R10 million minimum), contractors all-risk insurance covering works in progress and materials on site, and SASRIA cover where required. Every NHBRC-enrolled new home is additionally covered for major structural defects for 5 years, roof leaks for 1 year, and workmanship for 3 months under the statutory NHBRC warranty.'
+      },
+      {
+        question: 'Do I need a structural engineer for my new home?',
+        answer: 'Yes. South African National Building Regulations (SANS 10400) require a registered structural engineer to design and certify the foundation, slab, lintels and roof structure for every new home in Johannesburg. Sinqobile Construction works with ECSA-registered engineers and includes engineering fees of 2–4% of build cost in your quote, so the engineering sign-offs needed for municipal occupation certificates are handled end-to-end.'
+      },
     ],
     whyChoose: [
       'NHBRC registered — every new home enrolled with a 5-year structural warranty',
@@ -137,6 +181,56 @@ export const serviceContentData: Record<string, ServiceContent> = {
       'Fully insured with comprehensive construction and liability cover',
     ],
     materialsNote: 'We source materials from established Gauteng suppliers including Builders Warehouse, Corobrik, Afrimat, and PPC Cement. For premium builds, we work with imported finishes from your preferred suppliers. All materials are specified in your quote with brand names and quantities — nothing is left vague.',
+    phaseDExtras: {
+      directAnswer: 'Sinqobile Construction is an NHBRC registered building contractor in Johannesburg, delivering new home builds, extensions and structural work across Gauteng since 2010. Construction in Johannesburg costs R10,000 to R20,000 per square metre in 2026, with 500+ projects completed and a 4.9-star rating from 127 verified Google reviews.',
+      audienceType: 'Homeowners, property developers, and commercial property owners in Johannesburg, Sandton, Pretoria, Midrand, Centurion and the wider Gauteng province who are planning new residential builds, home extensions, second-storey additions, granny flats, or commercial construction projects.',
+      schemaName: 'Building Contractors Johannesburg',
+      priceRangeMin: 10000,
+      priceRangeMax: 20000,
+      dateModified: '2026-05-12',
+      citationHooks: [
+        'New residential construction in Johannesburg costs R10,000 to R20,000 per square metre in 2026, with standard 120 m² family-home turnkey contracts averaging R1.2M to R1.68M across Sandton, Fourways, Midrand and Centurion (Sinqobile Construction project pricing data, 2026).',
+        'Under the Housing Consumers Protection Measures Act of 1998, every new home in South Africa must be enrolled with the NHBRC at least 15 days before construction begins; Sinqobile Construction has enrolled and delivered 500+ residential and commercial projects under this rule since 2010, securing the homeowner’s 5-year structural defect warranty on every new build (Sinqobile Construction company records).',
+        'A standard 3-bedroom home of 120 to 150 m² in Johannesburg typically takes 4 to 6 months to build from foundation to handover, excluding the 4 to 12 week municipal plan approval window; Sinqobile Construction’s in-house project managers coordinate SACAP-registered architects, NHBRC enrolment and SANS 10400 inspections in parallel to keep projects on schedule (Sinqobile Construction project workflow, 2026).',
+      ],
+      comparisonTable: {
+        title: 'Build Quality Tiers — Johannesburg 2026',
+        caption: 'Side-by-side comparison of standard, mid-range and luxury new-build specifications by Sinqobile Construction. Costs exclude land, professional fees (architect 5–8%, engineer 2–4%) and municipal connection fees.',
+        columns: ['Tier', 'Cost per m²', 'Typical 120 m² home', 'Build duration', 'Key inclusions'],
+        rows: [
+          {
+            label: 'Standard',
+            cells: [
+              'R10,000 – R14,000 /m²',
+              'R1.2M – R1.68M',
+              '4–5 months',
+              'Brick &amp; mortar walls, IBR roof, ceramic floor tiles, melamine kitchen, standard sanitaryware, paint-grade plaster',
+            ],
+          },
+          {
+            label: 'Mid-Range',
+            cells: [
+              'R14,000 – R18,000 /m²',
+              'R1.68M – R2.16M',
+              '5–7 months',
+              'Face brick or rendered exterior, concrete tile roof, porcelain tiles, engineered stone tops, aluminium windows, recessed lighting',
+            ],
+          },
+          {
+            label: 'Luxury',
+            cells: [
+              'R18,000 – R25,000+ /m²',
+              'R2.16M – R3M+',
+              '7–10 months',
+              'Architect-designed, imported finishes, slate or clay-tile roof, underfloor heating, smart home wiring, Caesarstone or marble, designer sanitaryware',
+            ],
+          },
+        ],
+      },
+      strategyCtaCategory: 'building',
+      strategyCtaHeadline: 'Planning a New Build or Extension in Johannesburg?',
+      strategyCtaSubheadline: 'Tell us about your project — a Sinqobile Construction NHBRC-registered builder will visit your site anywhere in Gauteng, walk the property with you, and email a fixed-price, itemised quote within 48 hours. No call-out fee within 50 km of Sandton.',
+    },
   },
 
   'plumbing': {

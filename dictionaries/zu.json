@@ -1349,7 +1349,9 @@
     "backToServices": "Buya Kuzo Zonke Izinsiza",
     "lastUpdated": "Kubuyekezwe ngoApril 2026",
     "tableService": "Insizakalo",
-    "tablePriceRange": "Ibanga Lentengo"
+    "tablePriceRange": "Ibanga Lentengo",
+    "comparisonTitle": "Amazinga Wekhwalithi Yokwakha — Johannesburg 2026",
+    "citationHooksTitle": "Amaqiniso Asemqoka Ngababhalisile Bokwakha eJohannesburg"
   },
   "serviceContent": {
     "building": {

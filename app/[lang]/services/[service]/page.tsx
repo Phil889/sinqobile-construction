@@ -5,7 +5,12 @@ import { Locale } from '@/i18n.config'
 import { getServiceBySlug, enhancedServices } from '@/lib/enhanced-services-data'
 import { getProjectsByCategory } from '@/lib/all-projects-data'
 import { getServiceContent, relatedServicesMap } from '@/lib/service-content-data'
+import { getReviews } from '@/lib/reviews-data'
 import ServiceSchema from '@/components/service-schema'
+import SchemaMarkup from '@/components/schema-markup'
+import { ExpertCard } from '@/components/expert-card'
+import { StrategyCTA } from '@/components/strategy-cta'
+import { ReviewWall } from '@/components/review-wall'
 import Breadcrumb from '@/components/breadcrumb'
 import { CheckCircle, Phone, ArrowLeft, MapPin, Calendar } from 'lucide-react'
 import Image from 'next/image'
@@ -149,6 +154,10 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   const title = seo?.title || `${serviceName} Services Johannesburg | Sinqobile Construction`
   const description = seo?.description || `Professional ${serviceName.toLowerCase()} services in Johannesburg & Gauteng. 15+ years experience, 500+ projects. Free quotes — +27 82 868 8396`
 
+  // v2.1 Phase 8 — freshness signal; per-service when retrofitted, fallback otherwise.
+  const phaseDExtras = getServiceContent(params.service)?.phaseDExtras
+  const modifiedTime = phaseDExtras?.dateModified || '2026-04-01'
+
   const siteUrl = 'https://www.sinqobileconstruction.co.za'
 
   return {
@@ -178,7 +187,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
       }],
     },
     other: {
-      'article:modified_time': '2026-04-01',
+      'article:modified_time': modifiedTime,
     },
   }
 }
@@ -209,8 +218,17 @@ export default async function ServicePage({ params: { lang, service } }: Service
   const sp = (dict as any).servicePage as Record<string, string>
   const serviceName = serviceInfo?.name || serviceData.name
 
+  // v2.1 Phase 8/9 extras — data-driven, per-service.
+  // Only retrofitted services (currently: building) have this populated.
+  // Other services degrade gracefully until their own retrofit runs.
+  const phaseD = content?.phaseDExtras
+  const serviceReviews = phaseD ? getReviews({ serviceSlug: service, limit: 6 }) : []
+  const SITE_URL = 'https://www.sinqobileconstruction.co.za'
+
   return (
     <div className="pt-20">
+      {/* Legacy Service schema (kept for backwards compatibility; layered
+          with the richer Service schema below when phaseDExtras is set). */}
       <ServiceSchema
         serviceName={serviceInfo?.name || serviceData.name}
         serviceSlug={service}
@@ -218,7 +236,50 @@ export default async function ServicePage({ params: { lang, service } }: Service
         priceRange="R400 - R50000"
         lang={lang}
       />
-      
+
+      {/* v2.1 Phase 8 — rich Service schema (dateModified, audienceType,
+          priceRange, hasOfferCatalog, AggregateRating, speakable) */}
+      {phaseD && (
+        <SchemaMarkup
+          type="service"
+          lang={lang}
+          data={{
+            slug: service,
+            serviceName: phaseD.schemaName,
+            name: phaseD.schemaName,
+            description: serviceInfo?.description || serviceData.description,
+            dateModified: phaseD.dateModified,
+            audienceType: phaseD.audienceType,
+            priceRange: { min: phaseD.priceRangeMin, max: phaseD.priceRangeMax },
+            features: c?.subServices?.map((s) => ({ name: s.name, description: s.description })),
+          }}
+        />
+      )}
+
+      {/* v2.1 Phase 8 — FAQPage schema via helper (speakable + author=Organization). */}
+      {phaseD && c?.faqs && (
+        <SchemaMarkup
+          type="faq"
+          lang={lang}
+          data={{ questions: c.faqs }}
+        />
+      )}
+
+      {/* v2.1 Phase 8 — BreadcrumbList schema (Home → Services → This service) */}
+      {phaseD && (
+        <SchemaMarkup
+          type="breadcrumb"
+          lang={lang}
+          data={{
+            items: [
+              { name: 'Home', url: `${SITE_URL}/${lang}` },
+              { name: 'Services', url: `${SITE_URL}/${lang}/services` },
+              { name: serviceInfo?.name || serviceData.name, url: `${SITE_URL}/${lang}/services/${service}` },
+            ],
+          }}
+        />
+      )}
+
       <Breadcrumb
         items={[
           { label: dict.navigation.services, href: `/${lang}/services` },
@@ -240,9 +301,20 @@ export default async function ServicePage({ params: { lang, service } }: Service
             <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6">
               {lang === 'en' ? (seo?.h1 || serviceName) : serviceName}
             </h1>
-            <p className="text-xl mb-8 max-w-2xl mx-auto">
-              {serviceInfo?.description || serviceData.description}
-            </p>
+            {/* v2.1 Phase 8 — direct answer block (speakable, lifts into AI overviews + voice).
+                Per-service phaseDExtras.directAnswer; falls back to the legacy subtitle. */}
+            {phaseD?.directAnswer ? (
+              <p
+                data-speakable="summary"
+                className="service-summary text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed"
+              >
+                {phaseD.directAnswer}
+              </p>
+            ) : (
+              <p className="text-xl mb-8 max-w-2xl mx-auto">
+                {serviceInfo?.description || serviceData.description}
+              </p>
+            )}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:+27828688396"
@@ -400,6 +472,73 @@ export default async function ServicePage({ params: { lang, service } }: Service
         </section>
       )}
 
+      {/* v2.1 Phase 8 — Build-quality comparison table (cost / inclusions / duration).
+          Data-driven, only renders for services with phaseDExtras.comparisonTable. */}
+      {phaseD?.comparisonTable && (
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4 text-center">
+                {sp?.comparisonTitle || phaseD.comparisonTable.title}
+              </h2>
+              {phaseD.comparisonTable.caption && (
+                <p className="text-secondary text-base text-center mb-10 max-w-3xl mx-auto leading-relaxed">
+                  {phaseD.comparisonTable.caption}
+                </p>
+              )}
+              <div className="bg-white rounded-lg shadow-md overflow-x-auto border border-gray-200">
+                <table className="w-full text-sm md:text-base">
+                  <thead>
+                    <tr className="bg-primary text-white">
+                      {phaseD.comparisonTable.columns.map((col, i) => (
+                        <th key={i} className="px-4 py-3 text-left font-semibold whitespace-nowrap">
+                          {col}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {phaseD.comparisonTable.rows.map((row, i) => (
+                      <tr key={i} className={i % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
+                        <td className="px-4 py-3 text-primary font-bold align-top whitespace-nowrap">
+                          {row.label}
+                        </td>
+                        {row.cells.map((cell, j) => (
+                          <td
+                            key={j}
+                            className="px-4 py-3 text-secondary align-top leading-relaxed"
+                            dangerouslySetInnerHTML={{ __html: cell }}
+                          />
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* v2.1 Phase 9 — AI citation hooks (factual claim + specific number + brand attribution).
+          Lifted verbatim by AI engines into ChatGPT / Perplexity / Google AI Overviews. */}
+      {phaseD?.citationHooks && phaseD.citationHooks.length > 0 && (
+        <section className="py-16 bg-lightBackground">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="font-heading text-2xl md:text-3xl font-bold text-primary mb-8 text-center">
+                {sp?.citationHooksTitle || `Key Facts About ${serviceName}`}
+              </h2>
+              <ul className="space-y-4 text-secondary text-base md:text-lg leading-relaxed border-l-4 border-yellow-400 pl-5 bg-yellow-50/50 py-5 rounded-r-lg">
+                {phaseD.citationHooks.map((hook, i) => (
+                  <li key={i} dangerouslySetInnerHTML={{ __html: hook }} />
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Service Process */}
       <section className={`py-20 ${c?.pricingTable ? 'bg-white' : 'bg-lightBackground'}`}>
         <div className="container mx-auto px-4">
@@ -435,6 +574,18 @@ export default async function ServicePage({ params: { lang, service } }: Service
         </div>
       </section>
 
+      {/* v2.1 Phase 9 — Expert / founder card above FAQ (only for retrofitted services). */}
+      {phaseD && (
+        <section className="py-12 bg-background">
+          <div className="container mx-auto px-4 max-w-5xl">
+            <ExpertCard
+              serviceName={phaseD.schemaName || serviceName}
+              lang={lang}
+            />
+          </div>
+        </section>
+      )}
+
       {/* FAQ Section (rich content pages only) */}
       {c?.faqs && (
         <section className="py-20 bg-lightBackground">
@@ -460,21 +611,58 @@ export default async function ServicePage({ params: { lang, service } }: Service
                   </details>
                 ))}
               </div>
-              <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                  __html: JSON.stringify({
-                    '@context': 'https://schema.org',
-                    '@type': 'FAQPage',
-                    mainEntity: c.faqs.map(faq => ({
-                      '@type': 'Question',
-                      name: faq.question,
-                      acceptedAnswer: { '@type': 'Answer', text: faq.answer }
-                    }))
-                  })
-                }}
-              />
+              {/* Legacy inline FAQPage schema — only emit when phaseDExtras
+                  is NOT populated (otherwise SchemaMarkup above emits the
+                  richer FAQPage with speakable + author=Organization). */}
+              {!phaseD && (
+                <script
+                  type="application/ld+json"
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                      '@context': 'https://schema.org',
+                      '@type': 'FAQPage',
+                      mainEntity: c.faqs.map(faq => ({
+                        '@type': 'Question',
+                        name: faq.question,
+                        acceptedAnswer: { '@type': 'Answer', text: faq.answer }
+                      }))
+                    })
+                  }}
+                />
+              )}
             </div>
+          </div>
+        </section>
+      )}
+
+      {/* v2.1 Phase 8 — ReviewWall (individual Review schemas, paired with
+          AggregateRating already in LocalBusiness + Service schema). */}
+      {phaseD && serviceReviews.length > 0 && (
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-10 text-center">
+              {`What our ${(serviceInfo?.name || serviceData.name).toLowerCase()} clients say`}
+            </h2>
+            <ReviewWall
+              serviceName={phaseD.schemaName || serviceName}
+              reviews={serviceReviews}
+              lang={lang}
+            />
+          </div>
+        </section>
+      )}
+
+      {/* v2.1 Phase 9 — Strategy CTA (page-end, GA4 tracked). */}
+      {phaseD && (
+        <section className="py-12 bg-background">
+          <div className="container mx-auto px-4 max-w-5xl">
+            <StrategyCTA
+              category={phaseD.strategyCtaCategory}
+              position="service-page-end"
+              lang={lang}
+              headline={phaseD.strategyCtaHeadline}
+              subheadline={phaseD.strategyCtaSubheadline}
+            />
           </div>
         </section>
       )}
