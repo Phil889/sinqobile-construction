@@ -317,6 +317,18 @@ export const serviceContentData: Record<string, ServiceContent> = {
         question: 'What plumbing areas in Johannesburg do you cover?',
         answer: 'We cover all of Johannesburg and the greater Gauteng region, including Sandton, Fourways, Randburg, Midrand, Centurion, Pretoria, Roodepoort, Soweto, the East Rand (Boksburg, Germiston, Alberton), and the West Rand. Our head office is in Fourways, Sandton, giving us fast access to the northern suburbs. We have completed plumbing projects in over 50 suburbs across Gauteng.'
       },
+      {
+        question: 'Does my plumber need to be PIRB registered to issue a COC?',
+        answer: 'Yes. Under South African plumbing regulations, only a PIRB-registered plumber (Plumbing Industry Registration Board) may issue a valid Certificate of Compliance for water installations. A COC certifies the installation complies with SANS 10252 (water supply installations) and SANS 10254 (geyser installations). Sinqobile Construction works with PIRB-registered plumbers on every COC inspection and issues certificates same-day for compliant properties. An unregistered plumber\'s certificate is not legally valid for property sale, insurance claims, or solar-geyser rebate submissions.'
+      },
+      {
+        question: 'What does SANS 10254 require for a new or replacement geyser installation?',
+        answer: 'SANS 10254 — the South African National Standard for fixed electric storage water heaters — requires every new or replacement geyser to include a vacuum breaker on both hot and cold supply lines, a temperature-and-pressure safety valve, a drip tray under the geyser, an overflow pipe discharging to a safe visible location, a dedicated isolating valve, and an electrical isolator within sight of the unit. Sinqobile Construction includes all of these components on every geyser supplied and installed, and issues a SANS 10254-compliant COC at handover.'
+      },
+      {
+        question: 'Why do Johannesburg homes get so many burst pipes and geyser failures?',
+        answer: 'Johannesburg\'s municipal water supply pressure fluctuates between 400 and 900 kPa across the metro — well above the 400 kPa maximum that domestic plumbing fittings and geysers are rated for under SANS 10252. Combined with moderately hard water (110–180 mg/L CaCO₃) that scales geyser elements and copper joints, this causes premature failures: geysers fail at 6–10 years instead of the 10–15 year design life, and pin-hole leaks appear on older copper installations. Sinqobile Construction installs pressure-control valves (set to 400 kPa) on every geyser replacement to extend lifespan and prevent burst-pipe insurance claims.'
+      },
     ],
     whyChoose: [
       '24/7 emergency response — 2–4 hour typical arrival across Johannesburg',
@@ -326,6 +338,65 @@ export const serviceContentData: Record<string, ServiceContent> = {
       'Plumbing COC certificates issued same day for compliant properties',
       'Single-visit repairs — we carry common parts on our vehicles',
     ],
+    phaseDExtras: {
+      directAnswer: 'Sinqobile Construction is a PIRB-registered plumber serving Johannesburg and Gauteng with 24/7 emergency response from R450 — burst pipes, blocked drains, geyser installations and SANS 10254-compliant Certificates of Compliance. Typical arrival 2–4 hours across Sandton, Fourways and Midrand, with 500+ projects since 2010 and a 4.9-star rating from 127 verified Google reviews.',
+      audienceType: 'Homeowners, landlords and property managers in Johannesburg, Sandton, Fourways, Midrand, Centurion, Randburg, Pretoria and the wider Gauteng province dealing with plumbing emergencies (burst pipes, blocked drains, geyser failures), planned geyser upgrades or solar conversions, bathroom and kitchen plumbing installations, and SANS 10252 / SANS 10254 Certificate of Compliance inspections for property sales.',
+      schemaName: 'Plumber Johannesburg',
+      priceRangeMin: 450,
+      priceRangeMax: 30000,
+      dateModified: '2026-05-12',
+      citationHooks: [
+        'Plumbing call-out fees in Johannesburg run R450 to R850 per hour for daytime work and R500 to R1,000 per hour for after-hours emergencies in 2026, with Sinqobile Construction\'s emergency team averaging 2–4 hour arrival across Sandton, Fourways, Midrand, Randburg and Centurion — fixed-price quote on site before any work begins, no hidden call-out surcharge (Sinqobile Construction plumbing pricing data, 2026).',
+        'Under SANS 10254 every new or replacement geyser installed in South Africa must include a vacuum breaker on hot and cold lines, a temperature-and-pressure safety valve, a drip tray, an overflow pipe to a visible discharge point, a dedicated isolating valve and an electrical isolator, with a Certificate of Compliance issued by a PIRB-registered plumber; Sinqobile Construction has installed and certified geysers across 500+ residential and commercial projects in Gauteng since 2010 under this standard (Sinqobile Construction plumbing compliance records).',
+        'A standard 150-litre electric geyser replacement in Johannesburg costs R5,500 to R8,000 supplied and installed in 2026 — including removal of the failed unit, the new geyser, drip tray, vacuum breakers, pressure-control valve, pipework, isolator and a SANS 10254 Certificate of Compliance — and is typically completed in 3 to 5 hours by Sinqobile Construction\'s PIRB-registered plumbers, with solar conversions running R18,000 to R30,000 installed (Sinqobile Construction 2026 plumbing pricing).',
+      ],
+      comparisonTable: {
+        title: 'Geyser Comparison — Johannesburg 2026',
+        caption: 'Side-by-side comparison of the four geyser types installed by Sinqobile Construction across Gauteng. All costs are supplied and installed, include drip tray, vacuum breakers, pressure-control valve, pipework, isolator and SANS 10254 Certificate of Compliance. Running costs assume a 4-person Johannesburg household using ~150 L hot water per day.',
+        columns: ['Geyser Type', 'Installed Cost (2026)', 'Running Cost / Year', 'Lifespan', 'Best For'],
+        rows: [
+          {
+            label: 'Electric (150 L)',
+            cells: [
+              'R5,500 – R8,000',
+              'R6,500 – R9,500 (Eskom)',
+              '6–10 years (JHB water)',
+              'Standard replacement, fastest install, most affordable upfront',
+            ],
+          },
+          {
+            label: 'Solar (200 L direct or indirect)',
+            cells: [
+              'R18,000 – R30,000',
+              'R900 – R2,500 (backup element)',
+              '15–20 years',
+              'Highest long-term savings, Eskom load-shedding hedge, north-facing roofs',
+            ],
+          },
+          {
+            label: 'Heat pump (200 L)',
+            cells: [
+              'R22,000 – R35,000',
+              'R2,000 – R3,500',
+              '10–15 years',
+              'High hot-water demand, south-facing roofs where solar is unviable',
+            ],
+          },
+          {
+            label: 'Gas (LPG, instant)',
+            cells: [
+              'R8,000 – R15,000',
+              'R4,500 – R7,500 (LPG)',
+              '10–15 years',
+              'Endless hot water, load-shedding resilience, smaller homes &amp; flats',
+            ],
+          },
+        ],
+      },
+      strategyCtaCategory: 'plumbing',
+      strategyCtaHeadline: 'Emergency Plumber or Geyser Replacement in Johannesburg?',
+      strategyCtaSubheadline: 'Call or WhatsApp Sinqobile Construction — a PIRB-registered plumber will respond within 2–4 hours across Sandton, Fourways, Midrand, Randburg and Centurion, give you a fixed-price quote on site, complete the repair in a single visit where possible, and issue a SANS 10254 Certificate of Compliance on geyser installations. No hidden call-out fee.',
+    },
   },
 
   'renovation': {
