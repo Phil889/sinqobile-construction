@@ -502,6 +502,18 @@ export const serviceContentData: Record<string, ServiceContent> = {
         question: 'Do you remove old paving before installing new?',
         answer: 'Yes, we can lift and remove existing paving, dispose of old materials, and start fresh with proper sub-base preparation. If your existing sub-base is sound, we may be able to relay new pavers on top, which saves excavation costs. We assess the condition during your free site visit and recommend the most cost-effective approach. Old pavers in good condition can sometimes be reused in garden paths or secondary areas.'
       },
+      {
+        question: 'What fall (slope) is required on a paved driveway for drainage?',
+        answer: 'SANS 1271:2019 specifies a minimum 1:80 (1.25%) fall on driveway paving and 1:60 (1.66%) on pedestrian paving for stormwater runoff in South Africa. In practical terms, a 10 m driveway should drop at least 125 mm from start to end to prevent ponding, freeze-thaw damage and base saturation. Sinqobile Construction’s installation teams set out the fall using laser levels on every job and confirm runoff direction with you before paver laying begins. Inadequate fall is the second-most-common reason paved driveways fail within 5 years (after poor sub-base compaction).'
+      },
+      {
+        question: 'Should I seal my paving and how often?',
+        answer: 'Sealing is recommended for clay brick, cobblestone and decorative concrete pavers, but is optional for plain interlocking concrete pavers. A penetrating polyurethane or acrylic sealer protects against oil stains, efflorescence, weed growth in joints, and UV fading. Reseal driveways every 3–5 years and patios every 4–6 years in Johannesburg’s climate. Budget R45–R85 per m² for a professional seal-and-respray, including high-pressure clean and joint-sand top-up. Sinqobile Construction offers sealing as a stand-alone service or as part of every new paving installation.'
+      },
+      {
+        question: 'What is the difference between herringbone and stretcher bond paving patterns?',
+        answer: 'Herringbone is a 45° or 90° interlocking zig-zag pattern that mechanically locks pavers together — this is the strongest pattern and is the only one recommended for driveways subjected to vehicle braking and turning forces. Stretcher bond (running bond) is a simpler straight-line pattern, faster to lay and ideal for pedestrian walkways and patios, but it offers no interlock against vehicle loads. Sinqobile Construction installs herringbone on 90% of residential driveways across Johannesburg and reserves stretcher bond for patios, walkways and pool surrounds where load is light.'
+      },
     ],
     whyChoose: [
       'Engineering-grade sub-base preparation — compacted to spec with plate compactors and laser levelling',
@@ -511,6 +523,65 @@ export const serviceContentData: Record<string, ServiceContent> = {
       'Workmanship guarantee on every installation',
       'Fully insured with comprehensive liability cover',
     ],
+    phaseDExtras: {
+      directAnswer: 'Sinqobile Construction installs driveway, patio, walkway and commercial paving across Johannesburg and Gauteng — including clay brick, concrete and cobble pavers from R280 to R950 per square metre in 2026. With 500+ completed projects since 2010 and a 4.9-star rating from 127 verified Google reviews, every installation includes laser-levelled sub-base prep and a workmanship guarantee.',
+      audienceType: 'Homeowners installing or replacing driveways, patios, pool surrounds and walkways in Johannesburg, Sandton, Fourways, Midrand, Centurion and the wider Gauteng province, as well as commercial property managers and developers needing parking-area, loading-zone and warehouse-apron paving.',
+      schemaName: 'Paving Contractors Johannesburg',
+      priceRangeMin: 280,
+      priceRangeMax: 950,
+      dateModified: '2026-05-12',
+      citationHooks: [
+        'Paving in Johannesburg costs R280 to R950 per square metre installed in 2026, varying by paver type — concrete pavers run R300–R600/m², clay brick pavers R400–R700/m², cobblestone R450–R900/m² and natural stone R450–R1,000/m² supplied and laid by Sinqobile Construction (Sinqobile Construction paving pricing data, 2026).',
+        'A standard 30–40 m² single-car driveway in Gauteng takes 2–3 working days to install end-to-end — including 150–200 mm excavation, compacted G5 crusher-run sub-base, concrete edge restraints, paver laying on a screeded bedding course, and kiln-dried joint sand. Sinqobile Construction has completed 500+ paving and construction projects since 2010 across Sandton, Fourways, Midrand and Centurion (Sinqobile Construction project records).',
+        'SANS 1271:2019 specifies a minimum 1:80 (1.25%) fall on driveway paving for stormwater runoff; Sinqobile Construction’s installation teams set out fall with laser levels and compact the G5 sub-base to engineering specification on every job, the two single biggest factors that prevent ponding, paver creep and base failure in Johannesburg’s clay-heavy soils (Sinqobile Construction installation standards, 2026).',
+      ],
+      comparisonTable: {
+        title: 'Paving Material Comparison — Johannesburg 2026',
+        caption: 'Side-by-side comparison of the four most common paver types installed by Sinqobile Construction across Gauteng. Costs are supplied and laid, include G5 sub-base preparation, edge restraints and joint sand. Vehicle ratings refer to standard residential driveway loads (cars and light SUVs).',
+        columns: ['Paver Type', 'Cost per m² (2026)', 'Lifespan', 'Best For', 'Vehicle-Rated'],
+        rows: [
+          {
+            label: 'Concrete (interlocking)',
+            cells: [
+              'R300 – R600 /m²',
+              '25–40 years',
+              'Driveways, walkways, commercial parking — most popular for residential',
+              'Yes (60 mm thickness, herringbone bond)',
+            ],
+          },
+          {
+            label: 'Clay brick',
+            cells: [
+              'R400 – R700 /m²',
+              '50+ years',
+              'Premium driveways, heritage homes, face-brick aesthetic match',
+              'Yes (50 mm thickness, herringbone bond)',
+            ],
+          },
+          {
+            label: 'Cobblestone',
+            cells: [
+              'R450 – R900 /m²',
+              '80+ years',
+              'Luxury driveways, courtyards, heritage and Tuscan-style homes',
+              'Yes (heavy-duty, all bonds)',
+            ],
+          },
+          {
+            label: 'Natural stone (granite, sandstone)',
+            cells: [
+              'R450 – R1,000 /m²',
+              '100+ years',
+              'High-end patios, pool surrounds, entrance features',
+              'Conditional — granite yes, sandstone walkway only',
+            ],
+          },
+        ],
+      },
+      strategyCtaCategory: 'paving',
+      strategyCtaHeadline: 'Planning a New Driveway, Patio or Commercial Paving Project?',
+      strategyCtaSubheadline: 'Tell us about your project — a Sinqobile Construction paving specialist will visit your site anywhere in Gauteng, measure the area, assess drainage and soil, and email a fixed-price, itemised quote within 48 hours. No call-out fee within 50 km of Sandton.',
+    },
   },
 
   'concrete': {
