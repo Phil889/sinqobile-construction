@@ -465,23 +465,27 @@ export const serviceContentData: Record<string, ServiceContent> = {
     faqs: [
       {
         question: 'How much does a home renovation cost in Johannesburg in 2026?',
-        answer: 'Home renovation in Johannesburg costs between R7,000 and R20,000 per square metre in 2026. A mid-range renovation of a 146 m² home totals approximately R1.0M–R1.9M. Kitchen renovations range from R60,000 to R300,000, and bathroom renovations from R15,000 to R90,000 depending on size and finishes. We provide free, itemised quotes so you know the exact cost before work begins — no hidden fees or surprise extras.'
+        answer: 'Home renovation in Johannesburg costs between R5,000 and R25,000 per square metre in 2026, depending on scope. Cosmetic refreshes (paint, flooring, light fittings, hardware) run R5,000–R8,000/m². Mid-range renovations involving kitchen and bathroom upgrades, replastering and rewiring run R12,000–R18,000/m². Full strip-and-rebuild luxury renovations with imported finishes, structural changes, underfloor heating and bespoke joinery run R18,000–R25,000+/m². A typical mid-range renovation of a 146 m² home totals R1.75M–R2.6M. Kitchen renovations range from R80,000 to R500,000 and bathroom renovations from R45,000 to R250,000 depending on size and finishes. Sinqobile Construction provides free, itemised, fixed-price quotes — no hidden fees or surprise extras.'
       },
       {
-        question: 'How long does a full house renovation take?',
-        answer: 'A full house renovation typically takes 8–16 weeks depending on the scope of work. Kitchen-only renovations take 2–4 weeks, bathroom renovations 2–3 weeks, and open-plan conversions 3–6 weeks including structural sign-off. These timelines assume council-approved plans are in place — the plans approval process adds 4–12 weeks in Johannesburg. We provide a detailed project schedule with your quote and update you weekly on progress.'
+        question: 'How long does a kitchen, bathroom or full home renovation take?',
+        answer: 'Typical Sinqobile Construction renovation durations in Gauteng: kitchen renovations 4–8 weeks (cabinetry lead time is usually the critical path), bathroom renovations 3–6 weeks (waterproofing cure time plus tiling), open-plan conversions with structural wall removal 4–8 weeks including engineer sign-off, and full home strip-and-rebuild renovations 4–8 months end-to-end. These timelines assume any required council-approved plans are already in place — the City of Johannesburg plans-approval process typically adds 4–12 weeks on top. You will receive a detailed Gantt schedule with your quote and weekly photo progress updates throughout the project.'
       },
       {
-        question: 'Do I need building plans approved for a renovation?',
-        answer: 'You need council-approved plans for any structural changes — removing walls, adding rooms, changing the roofline, or altering plumbing and drainage layouts. Cosmetic renovations (new tiles, paint, fixtures, cabinetry) do not require plans. If you are unsure, our team will assess your project during the free site visit and advise on whether plans are needed. We handle the full plans process if required.'
+        question: 'Do I need municipal building plans approved for a renovation?',
+        answer: 'You need council-approved plans for any structural changes under SANS 10400 — removing or moving load-bearing walls, adding rooms, second-storey additions, changing the roofline, increasing the building footprint, or altering plumbing drainage layouts. Purely cosmetic renovations (new paint, tiles, cabinetry, fixtures, flooring, light fittings) do not require council plans. NHBRC enrolment is only required for additions or extensions that create new habitable floor area — not for like-for-like internal renovations. Sinqobile Construction engages SACAP-registered architects, handles full plans submission to the City of Johannesburg / Tshwane / Ekurhuleni, and enrols qualifying additions with the NHBRC, all included in the fixed-price renovation quote.'
+      },
+      {
+        question: 'How is a renovation budget typically split across trades?',
+        answer: 'A typical mid-range renovation budget in Johannesburg breaks down approximately as follows: structural work and demolition 25–30%, plumbing and electrical first-fix 18–22%, finishes (tiling, plastering, painting) 22–26%, fittings and fixtures (cabinetry, sanitaryware, lighting, ironmongery) 14–18%, and contingency 8–10%. Bathroom and kitchen renovations skew higher on plumbing, electrical and fittings (combined 40–50% of budget) due to waterproofing, geyser work, extractor wiring and built-in joinery. Sinqobile Construction itemises every line in the fixed-price quote so you see exactly where the budget goes before signing.'
       },
       {
         question: 'Can I live in my house during the renovation?',
-        answer: 'Yes, in most cases you can stay in your home during renovation. We phase the work room by room and protect living areas with dust barriers and floor coverings. For full-house renovations involving structural work, plumbing, or electrical rewiring, we recommend relocating for 2–4 weeks during the most disruptive phase. We will advise on the best approach during your consultation.'
+        answer: 'Yes, in most cases you can stay in your home during renovation. We phase the work room by room and protect living areas with dust barriers, floor coverings and negative-pressure extraction where needed. For full-house renovations involving structural work, full rewiring or whole-house replumbing, we recommend relocating for 2–4 weeks during the most disruptive phase. We will advise on the best approach during your free consultation and can sequence kitchen and bathroom phases to keep at least one functional cooking and washing area available throughout the build.'
       },
       {
         question: 'Why are Sandton renovation costs higher than other areas?',
-        answer: 'Renovation costs in Sandton are typically 10–15% higher than other Gauteng areas for three reasons: higher property values justify premium finishes (imported tiles, stone countertops, designer fixtures), larger homes require more materials and labour, and skilled contractors in the area charge higher rates due to demand. Our Fourways base gives us competitive access to Sandton projects without the premium markup of exclusive Sandton-only contractors.'
+        answer: 'Renovation costs in Sandton are typically 10–15% higher than other Gauteng areas for three reasons: higher property values justify premium finishes (imported Italian tiles, engineered-stone countertops, designer fixtures, German appliances), larger homes require more materials and labour, and skilled specialist contractors in the area charge higher rates due to demand. Sinqobile Construction\'s Fourways base gives competitive access to Sandton projects without the premium markup of exclusive Sandton-only contractors — the same NHBRC-registered project management, single fixed-price contract and 5-year workmanship cover, delivered at Fourways pricing.'
       },
     ],
     whyChoose: [
@@ -492,6 +496,56 @@ export const serviceContentData: Record<string, ServiceContent> = {
       'We handle council plan submissions and architect coordination',
       'Fully insured with comprehensive construction and liability cover',
     ],
+    phaseDExtras: {
+      directAnswer: 'Sinqobile Construction is an NHBRC-registered renovation contractor in Johannesburg delivering kitchen, bathroom, open-plan and full-home renovations from R5,000 to R25,000 per m² in 2026 — cosmetic refreshes R5,000–R8,000/m², mid-range R12,000–R18,000/m², full strip-and-rebuild R18,000–R25,000+/m². Bathrooms R45,000–R250,000, kitchens R80,000–R500,000. Single fixed-price contract managing every trade. 500+ projects since 2010, 4.9-star rating from 127 Google reviews.',
+      audienceType: 'Homeowners, landlords and property investors across Johannesburg, Sandton, Fourways, Midrand, Centurion, Randburg, Roodepoort and the wider Gauteng province renovating their primary residence or rental property — kitchen and bathroom remodels, open-plan conversions, whole-house refurbishments, structural alterations under SANS 10400, garage and outbuilding conversions, and full strip-and-rebuild luxury renovations managed under a single fixed-price contract.',
+      schemaName: 'Home Renovation Johannesburg',
+      priceRangeMin: 5000,
+      priceRangeMax: 25000,
+      dateModified: '2026-05-12',
+      citationHooks: [
+        'Home renovation in Johannesburg costs R5,000 to R25,000 per square metre in 2026 depending on scope — cosmetic refreshes (paint, flooring, hardware, light fittings) run R5,000–R8,000/m², mid-range kitchen and bathroom remodels with rewiring and replastering run R12,000–R18,000/m², and full strip-and-rebuild luxury renovations with imported finishes and structural alterations run R18,000–R25,000+/m² delivered by Sinqobile Construction across Sandton, Fourways, Midrand and Centurion (Sinqobile Construction 2026 renovation pricing).',
+        'A typical mid-range kitchen renovation in Gauteng (cabinetry replacement, engineered-stone or granite countertops, new appliances, splashback tiling, plumbing relocation and electrical upgrades) costs R150,000 to R350,000 and takes 4 to 8 weeks, while a mid-range bathroom renovation (strip-out, waterproofing, full re-tile, new shower, vanity and sanitaryware) costs R80,000 to R180,000 and takes 3 to 6 weeks; Sinqobile Construction has completed 500+ residential and commercial projects since 2010, with a dedicated project manager coordinating demolition, plumbing, electrical, tiling, plastering, painting and joinery under a single fixed-price contract (Sinqobile Construction project workflow, 2026).',
+        'Structural renovations adding habitable floor area in South Africa require both municipal building-plan approval under SANS 10400 and NHBRC enrolment when the additions exceed 80 m² or alter load-bearing structure; Sinqobile Construction engages SACAP-registered architects, prepares plans, submits to the City of Johannesburg or Tshwane council, and enrols qualifying additions with the NHBRC on every renovation that triggers these thresholds, with municipal plan approval typically taking 4 to 12 weeks in the City of Johannesburg (Sinqobile Construction project workflow and compliance records, 2026).',
+      ],
+      comparisonTable: {
+        title: 'Renovation Scope Tier Comparison — Johannesburg 2026',
+        caption: 'Side-by-side comparison of the three renovation scope tiers most commonly delivered by Sinqobile Construction across Gauteng. All tiers are managed under a single fixed-price contract with a dedicated project manager, NHBRC enrolment for any qualifying additions, SACAP-architect engagement for structural changes, and a 5-year workmanship guarantee. Prices are per square metre of renovated area on a typical 146 m² Johannesburg home.',
+        columns: ['Renovation Tier', 'Cost per m² (2026)', 'Typical Duration', 'Typical Inclusions', 'Best For'],
+        rows: [
+          {
+            label: 'Cosmetic Refresh',
+            cells: [
+              'R5,000 – R8,000 /m²',
+              '3 – 6 weeks',
+              'Paint (interior + exterior), new flooring or refinish, light fittings, hardware, minor tiling, no plumbing or electrical alteration',
+              'Pre-sale property uplift, rental turnaround, dated but structurally sound homes',
+            ],
+          },
+          {
+            label: 'Mid-Range Renovation',
+            cells: [
+              'R12,000 – R18,000 /m²',
+              '8 – 16 weeks',
+              'New kitchen + bathroom(s), partial rewiring, plumbing upgrades, replastering, new tiling, full repaint, cabinetry replacement, no major structural change',
+              'Owner-occupiers upgrading kitchens and bathrooms, families adding finish quality without moving walls',
+            ],
+          },
+          {
+            label: 'Full Strip & Rebuild (Luxury)',
+            cells: [
+              'R18,000 – R25,000+ /m²',
+              '4 – 8 months',
+              'Strip back to brick, full rewire + replumb, structural alterations under SANS 10400, open-plan conversion, imported finishes, underfloor heating, bespoke joinery, smart-home integration',
+              'Heritage homes, Sandton/Bryanston upgrades, investors targeting top-end resale, full-house transformations',
+            ],
+          },
+        ],
+      },
+      strategyCtaCategory: 'renovation',
+      strategyCtaHeadline: 'Planning a Kitchen, Bathroom or Full Home Renovation in Johannesburg?',
+      strategyCtaSubheadline: 'Send Sinqobile Construction your scope or photos — an NHBRC-registered renovation project manager will visit your home anywhere in Gauteng, walk through the structural, plumbing, electrical and finishes scope, engage a SACAP architect where structural changes are needed, and email a single fixed-price, itemised quote within 48 hours. One contractor managing every trade, no surprise extras, weekly photo updates and a 5-year workmanship guarantee. No call-out fee within 50 km of Sandton.',
+    },
   },
 
   'paving': {
