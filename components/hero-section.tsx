@@ -27,6 +27,12 @@ const HeroSection = ({ dict }: HeroSectionProps) => {
           <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6 text-balance">
             {dict.hero.title}
           </h1>
+          <p
+            data-speakable="summary"
+            className="text-base md:text-lg leading-relaxed mb-6 max-w-3xl mx-auto text-white/95"
+          >
+            {dict.hero.directAnswer}
+          </p>
           <div className="inline-block bg-primary text-white px-6 py-2 rounded-full font-bold mb-6">
             <span className="text-sm">{dict.callOutBanner.message}</span>
           </div>

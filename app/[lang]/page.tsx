@@ -17,6 +17,8 @@ import WhyChooseUs from '@/components/why-choose-us'
 import BeforeAfterSlider from '@/components/before-after-slider'
 import ProjectTimeline from '@/components/project-timeline'
 import SchemaMarkup from '@/components/schema-markup'
+import { ExpertCard } from '@/components/expert-card'
+import { StrategyCTA } from '@/components/strategy-cta'
 import { getTranslatedProjects, getTranslatedFeaturedProjects } from '@/lib/multilingual-projects'
 import { getAllProjects, getAllCategories } from '@/lib/all-projects-data'
 
@@ -48,29 +50,29 @@ export default async function Home({
   const allProjectsCount = getAllProjects().length
   const categories = getAllCategories()
 
-  // Build FAQ schema from dictionary data
+  // Build FAQ schema from dictionary data (matches first 5 visible in HomeFAQ)
   const faqItems = dict.pages.faq.categories
     .flatMap((category: any) => category.items)
     .slice(0, 9)
 
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqItems.map((item: any) => ({
-      '@type': 'Question',
-      name: item.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: item.answer,
-      },
-    })),
-  }
+  // Homepage breadcrumb — just "Home"
+  const breadcrumbItems = [
+    { name: 'Home', url: `https://www.sinqobileconstruction.co.za/${lang}` },
+  ]
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      {/* v2.1 — emit FAQPage + BreadcrumbList via SchemaMarkup helper.
+          Organization, LocalBusiness and WebSite are already emitted in layout.tsx. */}
+      <SchemaMarkup
+        type="faq"
+        lang={lang}
+        data={{ questions: faqItems }}
+      />
+      <SchemaMarkup
+        type="breadcrumb"
+        lang={lang}
+        data={{ items: breadcrumbItems }}
       />
       <HeroSection dict={dict} />
       
@@ -119,9 +121,22 @@ export default async function Home({
               <p className="text-secondary text-lg leading-relaxed mb-6">
                 {dict.about.description}
               </p>
-              <p className="text-secondary text-lg leading-relaxed">
+              <p className="text-secondary text-lg leading-relaxed mb-6">
                 {dict.about.experience}
               </p>
+
+              {/* v2.1 Phase 9 — AI citation hooks (factual claim + specific number + brand attribution) */}
+              <ul className="space-y-4 text-secondary text-base leading-relaxed border-l-4 border-yellow-400 pl-5 bg-yellow-50/50 py-4 rounded-r-lg">
+                <li>
+                  Sinqobile Construction has delivered <strong>500+ residential and commercial construction projects</strong> across the Greater Johannesburg metropolitan area since 2010, every one of them built under our NHBRC registration and SANS 10400 compliance (Sinqobile Construction company records, 2026).
+                </li>
+                <li>
+                  New residential construction in Johannesburg costs <strong>R10,000 to R20,000 per square metre in 2026</strong>, with standard 120 m² family homes priced from R1.2M – R1.68M and full luxury builds exceeding R3M, based on Sinqobile Construction project pricing data across Sandton, Fourways, Midrand and Pretoria.
+                </li>
+                <li>
+                  Under the Housing Consumers Protection Measures Act (1998), every new home in South Africa must be enrolled with the NHBRC <strong>at least 15 days before construction begins</strong>; Sinqobile Construction handles this enrolment in-house on every new-build contract, securing the homeowner&rsquo;s 5-year structural warranty (Sinqobile Construction project workflow).
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -135,7 +150,27 @@ export default async function Home({
 
       <TestimonialsEnhanced dict={dict} />
 
+      {/* v2.1 Phase 9 — Expert / founder card above FAQ */}
+      <section className="py-12 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <ExpertCard serviceName="Construction Services" lang={lang} />
+        </div>
+      </section>
+
       <HomeFAQ dict={dict} lang={lang} />
+
+      {/* v2.1 Phase 9 — Strategy CTA after FAQ */}
+      <section className="py-12 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <StrategyCTA
+            category="general"
+            position="homepage-end"
+            lang={lang}
+            headline="Planning a Build or Renovation in Johannesburg?"
+            subheadline="Tell us about your project — a Sinqobile Construction expert will visit your site anywhere in Gauteng, scope the work, and email a fixed-price quote within 24 hours."
+          />
+        </div>
+      </section>
 
       <GoogleReviewsWidget dict={dict} />
 
