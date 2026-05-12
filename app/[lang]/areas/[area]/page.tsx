@@ -416,6 +416,7 @@ export const revalidate = 86400
 
 export default async function AreaDetailPage({ params: { lang, area } }: AreaPageProps) {
   const dict = await getDictionary(lang)
+  const ap = (dict as any).areaPage as Record<string, string>
   const location = locationData[area]
 
   if (!location) {
@@ -454,7 +455,7 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
       />
       <Breadcrumb
         items={[
-          { label: 'Service Areas', href: `/${lang}/areas` },
+          { label: ap?.serviceAreasLabel || 'Service Areas', href: `/${lang}/areas` },
           { label: location.name, href: `/${lang}/areas/${area}` }
         ]}
         lang={lang}
@@ -469,7 +470,7 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
               <div className="flex items-center justify-center space-x-2 mb-4">
                 <MapPin size={32} className="text-yellow-400" />
                 <h1 className="font-heading text-4xl md:text-5xl font-bold">
-                  Construction Services in {location.name}
+                  {ap?.constructionServicesIn || 'Construction Services in'} {location.name}
                 </h1>
               </div>
               <p className="text-xl mb-6">
@@ -486,7 +487,7 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
                 </div>
                 <div className="flex items-center space-x-2">
                   <Clock className="text-yellow-400" size={24} />
-                  <span>15+ Years Experience</span>
+                  <span>{ap?.yearsExperienceFull || '15+ Years Experience'}</span>
                 </div>
               </div>
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
@@ -495,13 +496,13 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
                   className="inline-flex items-center justify-center space-x-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors"
                 >
                   <Phone size={20} />
-                  <span>Call Now: +27 82 868 8396</span>
+                  <span>{ap?.callNowFull || 'Call Now: +27 82 868 8396'}</span>
                 </a>
                 <Link
                   href={`/${lang}/contact`}
                   className="inline-flex items-center justify-center space-x-2 border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors"
                 >
-                  <span>Get Free Quote</span>
+                  <span>{ap?.getFreeQuote || 'Get Free Quote'}</span>
                 </Link>
               </div>
             </div>
@@ -513,7 +514,7 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary text-center mb-12">
-                Why Choose Sinqobile Construction in {location.name}?
+                {ap?.whyChoose || 'Why Choose Sinqobile Construction in'} {location.name}?
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {location.highlights.map((highlight, index) => (
@@ -532,7 +533,7 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
           <section className="py-20 bg-lightBackground">
             <div className="container mx-auto px-4">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary text-center mb-12">
-                Recent Projects in {location.name}
+                {ap?.recentProjectsIn || 'Recent Projects in'} {location.name}
               </h2>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
                 {areaImages[area].slice(0, 6).map((img, index) => (
@@ -553,7 +554,7 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
                   href={`/${lang}/our-work`}
                   className="inline-block text-accent font-semibold hover:underline"
                 >
-                  View all {location.projects}+ completed projects →
+                  {ap?.viewAllProjectsPrefix || 'View all'} {location.projects}{ap?.viewAllProjectsSuffix || '+ completed projects'} →
                 </Link>
               </div>
             </div>
@@ -564,7 +565,7 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
         <section className="py-20 bg-lightBackground">
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary text-center mb-12">
-              Our Services in {location.name}
+              {ap?.ourServicesIn || 'Our Services in'} {location.name}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {location.services.map((service, index) => {
@@ -615,7 +616,7 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
                 href={`/${lang}/services`}
                 className="inline-block bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
               >
-                View All Services
+                {ap?.viewAllServices || 'View All Services'}
               </Link>
             </div>
           </div>
@@ -626,7 +627,7 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary text-center mb-12">
-                {location.name} Suburbs We Serve
+                {ap?.suburbsWeServe || 'Suburbs We Serve in'} {location.name}
               </h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {location.suburbs.map((suburb) => (
@@ -637,7 +638,7 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
                 ))}
               </div>
               <p className="text-center text-secondary mt-8">
-                And many more suburbs across {location.name}. Call us to confirm we serve your area!
+                {ap?.moreSuburbsText || 'And many more suburbs in this area. Call us to confirm we serve your suburb!'}
               </p>
             </div>
           </div>
@@ -649,7 +650,7 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
                 <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary text-center mb-8">
-                  Building & Construction in {location.name}
+                  {ap?.buildingConstructionIn || 'Building & Construction in'} {location.name}
                 </h2>
                 <p className="text-secondary text-lg leading-relaxed">
                   {location.localInfo}
@@ -665,7 +666,7 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
                 <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary text-center mb-10">
-                  Construction FAQ — {location.name}
+                  {ap?.constructionFaqIn || 'Construction FAQ —'} {location.name}
                 </h2>
                 <div className="space-y-4">
                   {location.faqs.map((faq, i) => (
@@ -723,36 +724,36 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
         <section className="py-20 bg-lightBackground">
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl font-bold text-primary text-center mb-12">
-              Trusted Construction Partner in {location.name}
+              {ap?.trustedPartnerIn || 'Trusted Construction Partner in'} {location.name}
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               <div className="text-center">
                 <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="text-accent" size={32} />
                 </div>
-                <h3 className="font-bold text-secondary mb-2">Fully Insured</h3>
-                <p className="text-sm text-gray-600">Comprehensive coverage</p>
+                <h3 className="font-bold text-secondary mb-2">{ap?.fullyInsured || 'Fully Insured'}</h3>
+                <p className="text-sm text-gray-600">{ap?.comprehensiveCoverage || 'Comprehensive coverage'}</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award className="text-accent" size={32} />
                 </div>
-                <h3 className="font-bold text-secondary mb-2">15+ Years</h3>
-                <p className="text-sm text-gray-600">Industry experience</p>
+                <h3 className="font-bold text-secondary mb-2">{ap?.yearsExperience || '15+ Years'}</h3>
+                <p className="text-sm text-gray-600">{ap?.industryExperience || 'Industry experience'}</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <CheckCircle className="text-accent" size={32} />
                 </div>
-                <h3 className="font-bold text-secondary mb-2">Quality Guaranteed</h3>
-                <p className="text-sm text-gray-600">Workmanship warranty</p>
+                <h3 className="font-bold text-secondary mb-2">{ap?.qualityGuaranteed || 'Quality Guaranteed'}</h3>
+                <p className="text-sm text-gray-600">{ap?.workmanshipWarranty || 'Workmanship warranty'}</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Star className="text-accent" size={32} fill="currentColor" />
                 </div>
                 <h3 className="font-bold text-secondary mb-2">{location.rating}★ Rating</h3>
-                <p className="text-sm text-gray-600">Customer satisfaction</p>
+                <p className="text-sm text-gray-600">{ap?.customerSatisfaction || 'Customer satisfaction'}</p>
               </div>
             </div>
           </div>
@@ -762,10 +763,10 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
         <section className="py-20 bg-accent text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
-              Ready to Start Your {location.name} Construction Project?
+              {ap?.readyToStart || 'Ready to Start Your Project in'} {location.name}?
             </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Contact Sinqobile Construction today for a free consultation and quote for your {location.name} property
+              {ap?.contactToday || 'Contact Sinqobile Construction today for a free consultation and quote.'}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -773,16 +774,16 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
                 className="inline-flex items-center justify-center space-x-2 bg-white text-secondary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
               >
                 <Phone size={20} />
-                <span>Call: +27 82 868 8396</span>
+                <span>{ap?.callFull || 'Call: +27 82 868 8396'}</span>
               </a>
               <Link
                 href={`/${lang}/contact`}
                 className="inline-flex items-center justify-center space-x-2 border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-accent transition-colors"
               >
-                <span>Request Free Quote</span>
+                <span>{ap?.requestFreeQuote || 'Request Free Quote'}</span>
               </Link>
             </div>
-            <p className="text-sm text-white/60 mt-6">Last updated: April 2026</p>
+            <p className="text-sm text-white/60 mt-6">{ap?.lastUpdated || 'Last updated: April 2026'}</p>
           </div>
         </section>
       </div>

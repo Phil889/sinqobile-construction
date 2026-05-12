@@ -5,6 +5,9 @@ import React, { Component, ErrorInfo, ReactNode } from 'react'
 interface Props {
   children: ReactNode
   fallback?: ReactNode
+  errorTitle?: string
+  errorMessage?: string
+  refreshLabel?: string
 }
 
 interface State {
@@ -17,6 +20,7 @@ class ErrorBoundary extends Component<Props, State> {
     super(props)
     this.state = { hasError: false }
   }
+
 
   static getDerivedStateFromError(error: Error): State {
     return { hasError: true, error }
@@ -51,16 +55,16 @@ class ErrorBoundary extends Component<Props, State> {
               </svg>
             </div>
             <h2 className="text-2xl font-bold text-secondary mb-2">
-              Oops! Something went wrong
+              {this.props.errorTitle || 'Oops! Something went wrong'}
             </h2>
             <p className="text-gray-600 mb-6">
-              We're sorry, but something unexpected happened. Please try refreshing the page.
+              {this.props.errorMessage || "We're sorry, but something unexpected happened. Please try refreshing the page."}
             </p>
             <button
               onClick={() => window.location.reload()}
               className="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-700 transition-colors"
             >
-              Refresh Page
+              {this.props.refreshLabel || 'Refresh Page'}
             </button>
           </div>
         </div>

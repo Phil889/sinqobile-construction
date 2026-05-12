@@ -59,6 +59,7 @@ export default async function AreasPage({
   params: { lang: Locale }
 }) {
   const dict = await getDictionary(lang)
+  const ap = (dict as any).areaPage as Record<string, string>
 
   const serviceAreas = [
     {
@@ -154,7 +155,7 @@ export default async function AreasPage({
       />
       <Breadcrumb
         items={[
-          { label: 'Service Areas', href: `/${lang}/areas` }
+          { label: ap?.serviceAreasLabel || 'Service Areas', href: `/${lang}/areas` }
         ]}
         lang={lang}
         dict={dict}
@@ -165,17 +166,17 @@ export default async function AreasPage({
         <section className="py-20 bg-gradient-to-r from-primary to-accent text-white">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-              Construction Services Across Gauteng
+              {ap?.serviceAreasHub || 'Construction Services Across Gauteng'}
             </h1>
             <p className="text-xl max-w-3xl mx-auto mb-8">
-              Professional building, renovation, and maintenance services in all major areas of Gauteng Province
+              {ap?.serviceAreasSubtitle || 'Professional building, renovation, and maintenance services in all major areas of Gauteng Province'}
             </p>
             <div className="flex justify-center items-center space-x-4 text-lg">
-              <span>500+ Projects Completed</span>
+              <span>{ap?.statsProjects || '500+ Projects Completed'}</span>
               <span>•</span>
-              <span>15+ Years Experience</span>
+              <span>{ap?.statsYears || '15+ Years Experience'}</span>
               <span>•</span>
-              <span>4.9★ Rating</span>
+              <span>{ap?.statsRating || '4.9★ Rating'}</span>
             </div>
           </div>
         </section>
@@ -185,10 +186,10 @@ export default async function AreasPage({
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                Areas We Serve
+                {ap?.areasWeServe || 'Areas We Serve'}
               </h2>
               <p className="text-secondary text-lg max-w-2xl mx-auto">
-                Click on any area below to learn more about our construction services in that location
+                {ap?.areasWeServeSubtitle || 'Click on any area below to learn more about our construction services in that location'}
               </p>
             </div>
 
@@ -217,7 +218,7 @@ export default async function AreasPage({
                   </p>
 
                   <div className="mb-4">
-                    <p className="text-sm font-semibold text-primary mb-2">Suburbs Covered:</p>
+                    <p className="text-sm font-semibold text-primary mb-2">{ap?.suburbsCovered || 'Suburbs Covered:'}</p>
                     <div className="flex flex-wrap gap-2">
                       {area.suburbs.slice(0, 3).map((suburb) => (
                         <span
@@ -229,7 +230,7 @@ export default async function AreasPage({
                       ))}
                       {area.suburbs.length > 3 && (
                         <span className="text-xs bg-lightBackground text-secondary px-2 py-1 rounded">
-                          +{area.suburbs.length - 3} more
+                          +{area.suburbs.length - 3} {ap?.plusMore || 'more'}
                         </span>
                       )}
                     </div>
@@ -237,10 +238,10 @@ export default async function AreasPage({
 
                   <div className="flex items-center justify-between pt-4 border-t">
                     <span className="text-sm text-secondary">
-                      {area.projects}+ Projects Completed
+                      {area.projects}+ {ap?.projectsCompleted || 'Projects Completed'}
                     </span>
                     <span className="text-accent font-semibold group-hover:translate-x-1 transition-transform">
-                      Learn More →
+                      {ap?.learnMore || 'Learn More'} →
                     </span>
                   </div>
                 </Link>
@@ -253,10 +254,10 @@ export default async function AreasPage({
         <section className="py-20 bg-primary text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Don't See Your Area Listed?
+              {ap?.dontSeeArea || "Don't See Your Area Listed?"}
             </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              We serve all areas across Gauteng Province. Contact us to discuss your construction project!
+              {ap?.weServeAllAreas || 'We serve all areas across Gauteng Province. Contact us to discuss your construction project!'}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -264,13 +265,13 @@ export default async function AreasPage({
                 className="inline-flex items-center justify-center space-x-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors"
               >
                 <Phone size={20} />
-                <span>Call Now: +27 82 868 8396</span>
+                <span>{ap?.callNowFull || 'Call Now: +27 82 868 8396'}</span>
               </a>
               <Link
                 href={`/${lang}/contact`}
                 className="inline-flex items-center justify-center space-x-2 border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors"
               >
-                <span>Get Free Quote</span>
+                <span>{ap?.getFreeQuote || 'Get Free Quote'}</span>
               </Link>
             </div>
           </div>

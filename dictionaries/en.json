@@ -210,6 +210,18 @@
     "waterproofing": {
       "name": "Waterproofing",
       "description": "Basement, roof, and exterior waterproofing solutions"
+    },
+    "ceiling": {
+      "name": "Ceiling Repairs",
+      "description": "Ceiling repairs, installation, and replacement — rhinoboard, bulkhead, plaster and bathroom ceilings"
+    },
+    "gutters": {
+      "name": "Gutter Installation",
+      "description": "Seamless gutter installation, repairs, cleaning, downpipes and fascia boards across Gauteng"
+    },
+    "roof-waterproofing": {
+      "name": "Roof Waterproofing",
+      "description": "Roof waterproofing for tile, IBR, flat and concrete roofs — bitumen, acrylic and torch-on systems"
     }
   },
   "categories": {
@@ -229,7 +241,10 @@
     "renovation": "Renovation",
     "repairs": "Repairs",
     "brickwork": "Brickwork",
-    "waterproofing": "Waterproofing"
+    "waterproofing": "Waterproofing",
+    "ceiling": "Ceiling Repairs",
+    "gutters": "Gutter Installation",
+    "roof-waterproofing": "Roof Waterproofing"
   },
   "pages": {
     "about": {
@@ -703,7 +718,45 @@
     "finalCTA": {
       "title": "Ready to Start Your Project?",
       "description": "Contact Sinqobile Construction today for a free consultation and quote. Let's build something great together!"
-    }
+    },
+    "heroTitle": "About Sinqobile Construction — NHBRC Registered Builder Since 2010",
+    "heroSubtitle": "Founded by Dingwayo Reason Ndlovu in Johannesburg, we have completed 500+ residential and commercial projects across Gauteng with a 4.9-star Google rating from 127 verified reviews.",
+    "statEstablished": "Est. 2010",
+    "statProjects": "500+ Projects",
+    "statNHBRC": "NHBRC Registered",
+    "statAreas": "8 Areas in Gauteng",
+    "founderTitle": "Meet Dingwayo Reason Ndlovu",
+    "founderCaption": "Dingwayo Reason Ndlovu — Founder & Managing Director",
+    "founderBio1": "Dingwayo Reason Ndlovu founded Sinqobile Construction in 2010 after spending years working as a site foreman and project manager on residential builds across Johannesburg. His hands-on experience — from laying foundations to managing multi-million rand projects — shaped his approach to construction: every job is personal, every detail matters.",
+    "founderBio2": "Under his leadership, Sinqobile Construction has grown from a two-person operation to a team of 15+ skilled tradespeople completing an average of 40 projects per year. The company holds NHBRC registration, carries comprehensive liability insurance, and maintains an ISO-compliant safety programme on every site.",
+    "founderBio3": "Dingwayo personally oversees every project from the initial site visit through to the final walkthrough. He speaks English, Zulu, and Sotho — ensuring clear communication with clients and subcontractors across Gauteng.",
+    "credYears": "Years in Construction",
+    "credProjects": "Projects Completed",
+    "credRating": "Google Rating (127 Reviews)",
+    "credTeam": "Team Members",
+    "callDingwayo": "Call Dingwayo: +27 82 868 8396",
+    "timelineTitle": "Our Journey — From Startup to 500+ Projects",
+    "timeline": [
+      { "year": "2010", "title": "Founded in Johannesburg", "desc": "Dingwayo Reason Ndlovu registered Sinqobile Construction (PTY) LTD, starting with residential repairs and small renovation projects in the Johannesburg CBD and surrounding suburbs." },
+      { "year": "2013", "title": "NHBRC Registration & First Major Build", "desc": "Achieved NHBRC builder registration, enabling new home construction. Completed our first full residential build — a 3-bedroom home in Midrand delivered on time and under budget." },
+      { "year": "2016", "title": "Expanded to 19 Service Categories", "desc": "Grew from core building work into plumbing, electrical, waterproofing, roofing, paving, and 13 other trades. Hired specialist teams for each trade to maintain quality across all services." },
+      { "year": "2019", "title": "300th Project Milestone", "desc": "Completed our 300th project — a full home renovation in Sandton. By this point, 70% of our work came from client referrals and repeat customers." },
+      { "year": "2022", "title": "All-Gauteng Coverage", "desc": "Expanded service area to cover all 8 major regions: Johannesburg, Sandton, Pretoria, Centurion, Midrand, Randburg, Fourways, and Roodepoort. Added 24/7 emergency repair services." },
+      { "year": "2024", "title": "500+ Projects & 4.9★ Google Rating", "desc": "Passed 500 completed projects with a 4.9-star rating from 127 verified Google reviews. Launched our multilingual website serving English, Afrikaans, Zulu, and Sotho-speaking clients." }
+    ],
+    "credentialsTitle": "Professional Registrations & Insurance",
+    "nhbrcTitle": "NHBRC Registered",
+    "nhbrcDesc": "Registered with the National Home Builders Registration Council — mandatory for all new home construction in South Africa.",
+    "nhbrcVerify": "Verify at nhbrc.org.za",
+    "insuredDesc": "Comprehensive public liability insurance and workman's compensation cover on every project. Certificates available on request.",
+    "insuredWarranty": "5-year NHBRC structural warranty on all new builds",
+    "safetyTitle": "Safety Compliant",
+    "safetyDesc": "ISO-aligned safety programme on every site. All workers carry PPE and are trained in SANS safety standards. Regular site safety audits.",
+    "safetyRecord": "Zero lost-time injuries in the last 3 years",
+    "whatWeBuildTitle": "What We Build",
+    "whatWeBuildDesc": "Sinqobile Construction offers 19+ construction services across Gauteng. Every trade is handled by experienced specialists — not general labourers.",
+    "viewAllServicesLink": "View all 19+ services",
+    "requestQuoteOnline": "Request Free Quote Online"
   },
   "about": {
     "title": "About Dingwayo Reason Ndlovu",
@@ -827,7 +880,34 @@
     "weServeAllAreas": "We serve all areas across Gauteng Province. Contact us to discuss your construction project!",
     "getFreeQuote": "Get Free Quote",
     "andMore": "& more",
-    "allSuburbsIncluding": "All Gauteng suburbs including"
+    "allSuburbsIncluding": "All Gauteng suburbs including",
+    "serviceAreasLabel": "Service Areas",
+    "serviceAreasHub": "Construction Services Across Gauteng",
+    "serviceAreasSubtitle": "Professional building, renovation, and maintenance services in all major areas of Gauteng Province",
+    "statsProjects": "500+ Projects Completed",
+    "statsYears": "15+ Years Experience",
+    "statsRating": "4.9★ Rating",
+    "areasWeServe": "Areas We Serve",
+    "areasWeServeSubtitle": "Click on any area below to learn more about our construction services in that location",
+    "suburbsCovered": "Suburbs Covered:",
+    "plusMore": "more",
+    "projectsCompleted": "Projects Completed",
+    "learnMore": "Learn More",
+    "callNowFull": "Call Now: +27 82 868 8396",
+    "recentProjectsIn": "Recent Projects in",
+    "viewAllProjectsPrefix": "View all",
+    "viewAllProjectsSuffix": "+ completed projects",
+    "viewAllServices": "View All Services",
+    "moreSuburbsText": "And many more suburbs in this area. Call us to confirm we serve your suburb!",
+    "buildingConstructionIn": "Building & Construction in",
+    "constructionFaqIn": "Construction FAQ —",
+    "trustedPartnerIn": "Trusted Construction Partner in",
+    "comprehensiveCoverage": "Comprehensive coverage",
+    "industryExperience": "Industry experience",
+    "customerSatisfaction": "Customer satisfaction",
+    "callFull": "Call: +27 82 868 8396",
+    "lastUpdated": "Last updated: April 2026",
+    "yearsExperienceFull": "15+ Years Experience"
   },
   "footer": {
     "mission": "Providing quality construction services across Gauteng with integrity, professionalism, and attention to detail.",
@@ -1150,5 +1230,100 @@
       "title": "Drainage System Installation",
       "description": "Professional drainage system installation with quality pipes and proper connections."
     }
+  },
+  "beforeAfter": {
+    "title": "See The Transformation",
+    "subtitle": "Drag the slider to compare the before and after results of our construction projects",
+    "before": "BEFORE",
+    "after": "AFTER",
+    "instruction": "← Drag the slider left and right to compare →",
+    "ctaTitle": "Ready For Your Own Transformation?",
+    "ctaText": "Let us transform your space with our expert construction services. Get a free quote today!",
+    "getQuoteButton": "Get Free Quote",
+    "viewMoreButton": "View More Projects",
+    "projects": [
+      {
+        "id": "1",
+        "title": "Driveway Paving",
+        "location": "Sandton",
+        "service": "Paving",
+        "beforeLabel": "Cracked, weedy concrete",
+        "afterLabel": "New brick pavers installed",
+        "description": "Severely cracked concrete driveway with weeds replaced with a professional herringbone brick paver system — level, sealed, and built for the Gauteng climate."
+      },
+      {
+        "id": "2",
+        "title": "Roof Repairs & Waterproofing",
+        "location": "Johannesburg",
+        "service": "Roofing",
+        "beforeLabel": "Moss, broken tiles, leaks",
+        "afterLabel": "Fully repaired & sealed",
+        "description": "Heavily moss-covered roof with broken tiles and crumbling ridging stripped, repointed, and fitted with new clay tiles — watertight with a written workmanship guarantee."
+      },
+      {
+        "id": "3",
+        "title": "Exterior Plastering",
+        "location": "Fourways",
+        "service": "Plastering",
+        "beforeLabel": "Map cracks, exposed brick",
+        "afterLabel": "Smooth new plaster finish",
+        "description": "Severely cracked and hollow plaster fully hacked off, substrate repaired, and re-plastered to a flawless smooth float finish ready for paint."
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Our Construction Process",
+    "subtitle": "A transparent, step-by-step approach to bringing your project to life",
+    "totalDuration": "Typical project duration: 2–4 weeks",
+    "step1Title": "Initial Consultation",
+    "step1Desc": "Free on-site visit and project assessment",
+    "step2Title": "Planning & Design",
+    "step2Desc": "Detailed project planning and quotation",
+    "step3Title": "Preparation",
+    "step3Desc": "Site preparation and material procurement",
+    "step4Title": "Construction",
+    "step4Desc": "Professional execution of the project",
+    "step5Title": "Finishing Touches",
+    "step5Desc": "Final details and quality assurance",
+    "step6Title": "Project Completion",
+    "step6Desc": "Final walkthrough and handover",
+    "ctaTitle": "Ready To Start Your Project?",
+    "ctaText": "Our experienced team is ready to guide you through every step of the construction process",
+    "scheduleButton": "Schedule Free Consultation",
+    "calculateButton": "Calculate Project Cost",
+    "whatWeDo": "What We Do:",
+    "stepLabel": "Step"
+  },
+  "servicePage": {
+    "getQuoteButton": "Get Free Quote: +27 82 868 8396",
+    "contactButton": "Contact Us",
+    "statsTitle": "Service Statistics",
+    "statsProjects": "Projects Completed",
+    "statsYears": "Years Experience",
+    "sectionProfessional": "Professional %s Services",
+    "sectionOurServices": "Our %s Services",
+    "sectionCostGuide": "%s Cost Guide — Johannesburg 2026",
+    "sectionProcess": "Our %s Process",
+    "processSubtitle": "We follow a proven process to ensure quality results every time",
+    "sectionFaq": "Frequently Asked Questions — %s",
+    "sectionRelated": "Related Services",
+    "viewAllServices": "View All Services →",
+    "sectionProjects": "Recent %s Projects",
+    "projectsSubtitle": "See examples of our quality %s work",
+    "ctaTitle": "Ready for Your %s Project?",
+    "ctaSubtitle": "Contact Sinqobile Construction today for a free consultation and quote",
+    "callButton": "Call: +27 82 868 8396",
+    "getFreeQuote": "Get Free Quote",
+    "backToServices": "Back to All Services",
+    "lastUpdated": "Last updated: April 2026",
+    "tableService": "Service",
+    "tablePriceRange": "Price Range"
+  },
+  "videoTestimonials": {
+    "title": "Hear From Our Satisfied Customers",
+    "subtitle": "Watch real testimonials from satisfied customers who trusted Sinqobile Construction with their building projects",
+    "cta": "Ready to start your project? Join our satisfied customers today!",
+    "getQuoteButton": "Get Free Quote",
+    "viewProjectsButton": "View Our Projects"
   }
 }

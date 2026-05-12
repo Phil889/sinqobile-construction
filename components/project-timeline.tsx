@@ -194,7 +194,7 @@ export default function ProjectTimeline({ dict, lang, serviceType = 'general' }:
                   {activeStep === step.id && (
                     <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-64 bg-white rounded-lg shadow-xl p-4 z-10 border-2 border-orange-400">
                       <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-t-2 border-l-2 border-orange-400 transform rotate-45" />
-                      <h4 className="font-bold text-gray-900 mb-3">What We Do:</h4>
+                      <h4 className="font-bold text-gray-900 mb-3">{dict?.timeline?.whatWeDo || 'What We Do:'}</h4>
                       <ul className="space-y-2">
                         {step.details.map((detail, idx) => (
                           <li key={idx} className="flex items-start gap-2 text-sm text-gray-700">
@@ -237,7 +237,7 @@ export default function ProjectTimeline({ dict, lang, serviceType = 'general' }:
                   {/* Step Content */}
                   <div className="bg-white rounded-lg p-4 shadow-md">
                     <div className="text-sm font-bold text-orange-600 mb-2">
-                      Step {index + 1}
+                      {dict?.timeline?.stepLabel || 'Step'} {index + 1}
                     </div>
                     <h3 className="font-bold text-gray-900 mb-2">
                       {step.title}
@@ -253,7 +253,7 @@ export default function ProjectTimeline({ dict, lang, serviceType = 'general' }:
                     {/* Expanded Details */}
                     {activeStep === step.id && (
                       <div className="mt-4 pt-4 border-t border-gray-200">
-                        <h4 className="font-bold text-gray-900 mb-3">What We Do:</h4>
+                        <h4 className="font-bold text-gray-900 mb-3">{dict?.timeline?.whatWeDo || 'What We Do:'}</h4>
                         <ul className="space-y-2">
                           {step.details.map((detail, idx) => (
                             <li key={idx} className="flex items-start gap-2 text-sm text-gray-700">

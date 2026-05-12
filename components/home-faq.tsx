@@ -10,9 +10,10 @@ interface FAQItem {
 
 interface HomeFAQProps {
   dict: any
+  lang: string
 }
 
-export default function HomeFAQ({ dict }: HomeFAQProps) {
+export default function HomeFAQ({ dict, lang }: HomeFAQProps) {
   const [openIndex, setOpenIndex] = React.useState<number | null>(0)
 
   // Get first 5 FAQ items from the FAQ page data
@@ -90,7 +91,7 @@ export default function HomeFAQ({ dict }: HomeFAQProps) {
 
           <div className="text-center mt-8">
             <a
-              href={`/faq`}
+              href={`/${lang}/faq`}
               className="inline-block bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
             >
               {dict.pages.faq.stillHaveQuestions.button}

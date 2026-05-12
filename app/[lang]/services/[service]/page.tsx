@@ -109,6 +109,21 @@ const serviceSEO: Record<string, { title: string; description: string; h1?: stri
     description: 'Professional installation services in Johannesburg. Doors, windows, ceilings, geysers & kitchen installations across Gauteng. NHBRC registered. Free quotes — +27 82 868 8396',
     h1: 'Professional Installation Services in Johannesburg',
   },
+  'ceiling': {
+    title: 'Ceiling Repairs Johannesburg | Ceiling Installation Gauteng',
+    description: 'Professional ceiling repairs & installation in Johannesburg. Rhinoboard, bulkhead & plaster ceilings across Gauteng. NHBRC registered, 4.9★. Free quotes — +27 82 868 8396',
+    h1: 'Ceiling Repairs & Installation in Johannesburg',
+  },
+  'gutters': {
+    title: 'Gutter Installation Johannesburg | Seamless Gutters Gauteng',
+    description: 'Seamless gutter installation, repairs & cleaning in Johannesburg & Pretoria. All gutter types, downpipes & fascia boards. NHBRC registered, 4.9★. Free quotes — +27 82 868 8396',
+    h1: 'Gutter Installation & Repairs in Johannesburg',
+  },
+  'roof-waterproofing': {
+    title: 'Roof Waterproofing Johannesburg | Roof Waterproofing Pretoria',
+    description: 'Expert roof waterproofing in Johannesburg & Pretoria. Tile, IBR, flat & concrete roofs. Bitumen, acrylic & torch-on systems. NHBRC registered, 4.9★. Free quotes — +27 82 868 8396',
+    h1: 'Roof Waterproofing Contractors in Johannesburg & Pretoria',
+  },
 }
 
 interface ServicePageProps {
@@ -171,10 +186,12 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
 // ISR: regenerate service pages daily
 export const revalidate = 86400
 
+const t = (template: string, name: string) => template.replace('%s', name)
+
 export default async function ServicePage({ params: { lang, service } }: ServicePageProps) {
   const dict = await getDictionary(lang)
   const serviceData = getServiceBySlug(service)
-  
+
   if (!serviceData) {
     notFound()
   }
@@ -187,6 +204,10 @@ export default async function ServicePage({ params: { lang, service } }: Service
   const serviceInfo = (dict.services.items as any)[service] || (dict as any).extendedServices?.[service]
   const seo = serviceSEO[service]
   const content = getServiceContent(service)
+  const dictContent = (dict as any).serviceContent?.[service] as typeof content
+  const c = dictContent ? { ...content, ...dictContent } as typeof content : content
+  const sp = (dict as any).servicePage as Record<string, string>
+  const serviceName = serviceInfo?.name || serviceData.name
 
   return (
     <div className="pt-20">
@@ -217,7 +238,7 @@ export default async function ServicePage({ params: { lang, service } }: Service
               </div>
             </div>
             <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6">
-              {seo?.h1 || `${serviceInfo?.name || serviceData.name} Services`}
+              {lang === 'en' ? (seo?.h1 || serviceName) : serviceName}
             </h1>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
               {serviceInfo?.description || serviceData.description}
@@ -228,13 +249,13 @@ export default async function ServicePage({ params: { lang, service } }: Service
                 className="inline-flex items-center justify-center space-x-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors"
               >
                 <Phone size={20} />
-                <span>Get Free Quote: +27 82 868 8396</span>
+                <span>{sp?.getQuoteButton || 'Get Free Quote: +27 82 868 8396'}</span>
               </a>
               <Link
                 href={`/${lang}/contact`}
                 className="inline-flex items-center justify-center space-x-2 border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors"
               >
-                <span>Contact Us</span>
+                <span>{sp?.contactButton || 'Contact Us'}</span>
               </Link>
             </div>
           </div>
@@ -247,14 +268,14 @@ export default async function ServicePage({ params: { lang, service } }: Service
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-6">
-                Professional {serviceInfo?.name || serviceData.name} Services
+                {t(sp?.sectionProfessional || 'Professional %s Services', serviceName)}
               </h2>
               <p className="text-secondary text-lg leading-relaxed mb-8">
-                {content?.intro || `At Sinqobile Construction, we specialize in high-quality ${serviceInfo?.name?.toLowerCase() || serviceData.name.toLowerCase()} services across Gauteng. With over 15 years of experience, our skilled team delivers exceptional results that stand the test of time.`}
+                {c?.intro || `At Sinqobile Construction, we specialize in high-quality ${serviceName.toLowerCase()} services across Gauteng. With over 15 years of experience, our skilled team delivers exceptional results that stand the test of time.`}
               </p>
 
               <div className="space-y-4 mb-8">
-                {(content?.whyChoose || [
+                {(c?.whyChoose || [
                   'Professional, experienced team',
                   'Quality materials and workmanship',
                   'Competitive pricing',
@@ -270,16 +291,16 @@ export default async function ServicePage({ params: { lang, service } }: Service
 
               <div className="bg-lightBackground rounded-lg p-6">
                 <h3 className="font-heading text-xl font-bold text-primary mb-4">
-                  Service Statistics
+                  {sp?.statsTitle || 'Service Statistics'}
                 </h3>
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <div className="text-2xl font-bold text-accent">{serviceData.imageCount}+</div>
-                    <div className="text-sm text-secondary">Projects Completed</div>
+                    <div className="text-sm text-secondary">{sp?.statsProjects || 'Projects Completed'}</div>
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-accent">15+</div>
-                    <div className="text-sm text-secondary">Years Experience</div>
+                    <div className="text-sm text-secondary">{sp?.statsYears || 'Years Experience'}</div>
                   </div>
                 </div>
               </div>
@@ -322,15 +343,15 @@ export default async function ServicePage({ params: { lang, service } }: Service
       </section>
 
       {/* Sub-Services (rich content pages only) */}
-      {content?.subServices && (
+      {c?.subServices && (
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-10 text-center">
-                Our {serviceInfo?.name || serviceData.name} Services
+                {t(sp?.sectionOurServices || 'Our %s Services', serviceName)}
               </h2>
               <div className="space-y-8">
-                {content.subServices.map((sub, i) => (
+                {c.subServices.map((sub, i) => (
                   <div key={i} className="border-l-4 border-accent pl-6">
                     <h3 className="font-heading text-xl font-bold text-primary mb-2">{sub.name}</h3>
                     <p className="text-secondary leading-relaxed">{sub.description}</p>
@@ -343,26 +364,26 @@ export default async function ServicePage({ params: { lang, service } }: Service
       )}
 
       {/* Pricing Guide (rich content pages only) */}
-      {content?.pricingTable && (
+      {c?.pricingTable && (
         <section className="py-20 bg-lightBackground">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4 text-center">
-                {serviceInfo?.name || serviceData.name} Cost Guide — Johannesburg 2026
+                {t(sp?.sectionCostGuide || '%s Cost Guide — Johannesburg 2026', serviceName)}
               </h2>
               <p className="text-secondary text-lg text-center mb-10 max-w-3xl mx-auto">
-                {content.pricingNote}
+                {c.pricingNote}
               </p>
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
                 <table className="w-full">
                   <thead>
                     <tr className="bg-primary text-white">
-                      <th className="px-6 py-4 text-left font-semibold">Service</th>
-                      <th className="px-6 py-4 text-left font-semibold">Price Range</th>
+                      <th className="px-6 py-4 text-left font-semibold">{sp?.tableService || 'Service'}</th>
+                      <th className="px-6 py-4 text-left font-semibold">{sp?.tablePriceRange || 'Price Range'}</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {content.pricingTable.map((row, i) => (
+                    {c.pricingTable.map((row, i) => (
                       <tr key={i} className={i % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
                         <td className="px-6 py-4 text-secondary">{row.item}</td>
                         <td className="px-6 py-4 text-primary font-semibold">{row.range}</td>
@@ -371,8 +392,8 @@ export default async function ServicePage({ params: { lang, service } }: Service
                   </tbody>
                 </table>
               </div>
-              {content.materialsNote && (
-                <p className="text-secondary mt-6 text-sm leading-relaxed">{content.materialsNote}</p>
+              {c.materialsNote && (
+                <p className="text-secondary mt-6 text-sm leading-relaxed">{c.materialsNote}</p>
               )}
             </div>
           </div>
@@ -380,19 +401,19 @@ export default async function ServicePage({ params: { lang, service } }: Service
       )}
 
       {/* Service Process */}
-      <section className={`py-20 ${content?.pricingTable ? 'bg-white' : 'bg-lightBackground'}`}>
+      <section className={`py-20 ${c?.pricingTable ? 'bg-white' : 'bg-lightBackground'}`}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">
-              Our {serviceInfo?.name || serviceData.name} Process
+              {t(sp?.sectionProcess || 'Our %s Process', serviceName)}
             </h2>
             <p className="text-secondary text-lg max-w-2xl mx-auto">
-              We follow a proven process to ensure quality results every time
+              {sp?.processSubtitle || 'We follow a proven process to ensure quality results every time'}
             </p>
           </div>
 
-          <div className={`grid grid-cols-1 ${(content?.process || []).length > 4 ? 'md:grid-cols-5' : 'md:grid-cols-4'} gap-8`}>
-            {(content?.process || [
+          <div className={`grid grid-cols-1 ${(c?.process || []).length > 4 ? 'md:grid-cols-5' : 'md:grid-cols-4'} gap-8`}>
+            {(c?.process || [
               { step: '1', title: 'Consultation', description: 'We assess your needs and provide expert recommendations' },
               { step: '2', title: 'Quote', description: 'Detailed, transparent pricing with no hidden costs' },
               { step: '3', title: 'Execution', description: 'Professional work with regular progress updates' },
@@ -415,15 +436,15 @@ export default async function ServicePage({ params: { lang, service } }: Service
       </section>
 
       {/* FAQ Section (rich content pages only) */}
-      {content?.faqs && (
+      {c?.faqs && (
         <section className="py-20 bg-lightBackground">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-10 text-center">
-                Frequently Asked Questions — {serviceInfo?.name || serviceData.name}
+                {t(sp?.sectionFaq || 'Frequently Asked Questions — %s', serviceName)}
               </h2>
               <div className="space-y-4">
-                {content.faqs.map((faq, i) => (
+                {c.faqs.map((faq, i) => (
                   <details key={i} className="bg-white rounded-lg shadow-md overflow-hidden group">
                     <summary className="px-6 py-4 cursor-pointer flex items-center justify-between hover:bg-gray-50 transition-colors list-none [&::-webkit-details-marker]:hidden">
                       <h3 className="font-semibold text-secondary pr-4">{faq.question}</h3>
@@ -445,7 +466,7 @@ export default async function ServicePage({ params: { lang, service } }: Service
                   __html: JSON.stringify({
                     '@context': 'https://schema.org',
                     '@type': 'FAQPage',
-                    mainEntity: content.faqs.map(faq => ({
+                    mainEntity: c.faqs.map(faq => ({
                       '@type': 'Question',
                       name: faq.question,
                       acceptedAnswer: { '@type': 'Answer', text: faq.answer }
@@ -464,7 +485,7 @@ export default async function ServicePage({ params: { lang, service } }: Service
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-8 text-center">
-                Related Services
+                {sp?.sectionRelated || 'Related Services'}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {relatedServicesMap[service].map((related) => {
@@ -492,7 +513,7 @@ export default async function ServicePage({ params: { lang, service } }: Service
                   href={`/${lang}/services`}
                   className="text-primary font-semibold hover:underline"
                 >
-                  View All 19 Services →
+                  {sp?.viewAllServices || 'View All Services →'}
                 </Link>
               </div>
             </div>
@@ -506,10 +527,10 @@ export default async function ServicePage({ params: { lang, service } }: Service
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">
-                Recent {serviceInfo?.name || serviceData.name} Projects
+                {t(sp?.sectionProjects || 'Recent %s Projects', serviceName)}
               </h2>
               <p className="text-secondary text-lg">
-                See examples of our quality {serviceInfo?.name?.toLowerCase() || serviceData.name.toLowerCase()} work
+                {t(sp?.projectsSubtitle || 'See examples of our quality %s work', serviceName.toLowerCase())}
               </p>
             </div>
 
@@ -561,7 +582,7 @@ export default async function ServicePage({ params: { lang, service } }: Service
                   href={`/${lang}/our-work`}
                   className="inline-block bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
                 >
-                  View All {serviceInfo?.name || serviceData.name} Projects
+                  {t(sp?.sectionProjects || 'Recent %s Projects', serviceName)}
                 </Link>
               </div>
             )}
@@ -573,10 +594,10 @@ export default async function ServicePage({ params: { lang, service } }: Service
       <section className="py-20 bg-primary text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
-            Ready for Your {serviceInfo?.name || serviceData.name} Project?
+            {t(sp?.ctaTitle || 'Ready for Your %s Project?', serviceName)}
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Contact Sinqobile Construction today for a free consultation and quote
+            {sp?.ctaSubtitle || 'Contact Sinqobile Construction today for a free consultation and quote'}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -584,16 +605,16 @@ export default async function ServicePage({ params: { lang, service } }: Service
               className="inline-flex items-center justify-center space-x-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors"
             >
               <Phone size={20} />
-              <span>Call: +27 82 868 8396</span>
+              <span>{sp?.callButton || 'Call: +27 82 868 8396'}</span>
             </a>
             <Link
               href={`/${lang}/contact`}
               className="inline-flex items-center justify-center space-x-2 border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors"
             >
-              <span>Get Free Quote</span>
+              <span>{sp?.getFreeQuote || 'Get Free Quote'}</span>
             </Link>
           </div>
-          <p className="text-sm text-white/60 mt-6">Last updated: April 2026</p>
+          <p className="text-sm text-white/60 mt-6">{sp?.lastUpdated || 'Last updated: April 2026'}</p>
         </div>
       </section>
 
@@ -605,7 +626,7 @@ export default async function ServicePage({ params: { lang, service } }: Service
             className="inline-flex items-center space-x-2 text-primary hover:text-accent transition-colors"
           >
             <ArrowLeft size={20} />
-            <span>Back to All Services</span>
+            <span>{sp?.backToServices || 'Back to All Services'}</span>
           </Link>
         </div>
       </section>

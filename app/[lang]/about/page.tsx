@@ -62,6 +62,8 @@ export default async function AboutPage({
   params: { lang: Locale }
 }) {
   const dict = await getDictionary(lang)
+  const ap = (dict as any).aboutPage as Record<string, any>
+  const areaPage = (dict as any).areaPage as Record<string, string>
 
   const personSchema = {
     '@context': 'https://schema.org',
@@ -105,6 +107,31 @@ export default async function AboutPage({
     },
   }
 
+  const defaultTimeline = [
+    { year: '2010', title: 'Founded in Johannesburg', desc: 'Dingwayo Reason Ndlovu registered Sinqobile Construction (PTY) LTD, starting with residential repairs and small renovation projects in the Johannesburg CBD and surrounding suburbs.' },
+    { year: '2013', title: 'NHBRC Registration & First Major Build', desc: 'Achieved NHBRC builder registration, enabling new home construction. Completed our first full residential build — a 3-bedroom home in Midrand delivered on time and under budget.' },
+    { year: '2016', title: 'Expanded to 19 Service Categories', desc: 'Grew from core building work into plumbing, electrical, waterproofing, roofing, paving, and 13 other trades. Hired specialist teams for each trade to maintain quality across all services.' },
+    { year: '2019', title: '300th Project Milestone', desc: 'Completed our 300th project — a full home renovation in Sandton. By this point, 70% of our work came from client referrals and repeat customers, a testament to our reputation.' },
+    { year: '2022', title: 'All-Gauteng Coverage', desc: 'Expanded service area to cover all 8 major regions: Johannesburg, Sandton, Pretoria, Centurion, Midrand, Randburg, Fourways, and Roodepoort. Added 24/7 emergency repair services.' },
+    { year: '2024', title: '500+ Projects & 4.9★ Google Rating', desc: 'Passed 500 completed projects with a 4.9-star rating from 127 verified Google reviews. Launched our multilingual website serving English, Afrikaans, Zulu, and Sotho-speaking clients.' },
+  ]
+  const timeline: { year: string; title: string; desc: string }[] = ap?.timeline || defaultTimeline
+
+  const whatWeBuildServices = [
+    { name: 'Building & Construction', slug: 'building' },
+    { name: 'Home Renovations', slug: 'renovation' },
+    { name: 'Plumbing', slug: 'plumbing' },
+    { name: 'Paving & Driveways', slug: 'paving' },
+    { name: 'Roofing', slug: 'roofing' },
+    { name: 'Waterproofing', slug: 'waterproofing' },
+    { name: 'Painting', slug: 'painting' },
+    { name: 'Tiling', slug: 'tiling' },
+    { name: 'Plastering', slug: 'plastering' },
+    { name: 'Electrical', slug: 'electrical' },
+    { name: 'Extensions', slug: 'extensions' },
+    { name: 'Concrete Work', slug: 'concrete' },
+  ]
+
   return (
     <div className="pt-20">
       <script
@@ -122,27 +149,27 @@ export default async function AboutPage({
       <section className="py-20 bg-gradient-to-r from-primary to-accent text-white">
         <div className="container mx-auto px-4 text-center">
           <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6">
-            About Sinqobile Construction — NHBRC Registered Builder Since 2010
+            {ap?.heroTitle || 'About Sinqobile Construction — NHBRC Registered Builder Since 2010'}
           </h1>
           <p className="text-xl max-w-3xl mx-auto mb-8">
-            Founded by Dingwayo Reason Ndlovu in Johannesburg, we have completed 500+ residential and commercial projects across Gauteng with a 4.9-star Google rating from 127 verified reviews.
+            {ap?.heroSubtitle || 'Founded by Dingwayo Reason Ndlovu in Johannesburg, we have completed 500+ residential and commercial projects across Gauteng with a 4.9-star Google rating from 127 verified reviews.'}
           </p>
           <div className="flex flex-wrap justify-center gap-8 text-center">
             <div className="flex items-center space-x-2">
               <Award size={24} />
-              <span className="font-semibold">Est. 2010</span>
+              <span className="font-semibold">{ap?.statEstablished || 'Est. 2010'}</span>
             </div>
             <div className="flex items-center space-x-2">
               <Building2 size={24} />
-              <span className="font-semibold">500+ Projects</span>
+              <span className="font-semibold">{ap?.statProjects || '500+ Projects'}</span>
             </div>
             <div className="flex items-center space-x-2">
               <Shield size={24} />
-              <span className="font-semibold">NHBRC Registered</span>
+              <span className="font-semibold">{ap?.statNHBRC || 'NHBRC Registered'}</span>
             </div>
             <div className="flex items-center space-x-2">
               <MapPin size={24} />
-              <span className="font-semibold">8 Areas in Gauteng</span>
+              <span className="font-semibold">{ap?.statAreas || '8 Areas in Gauteng'}</span>
             </div>
           </div>
         </div>
@@ -161,39 +188,40 @@ export default async function AboutPage({
                 className="rounded-lg shadow-lg w-full h-auto object-cover"
                 priority
               />
-              <p className="text-sm text-gray-500 mt-2 italic">Dingwayo Reason Ndlovu — Founder & Managing Director</p>
+              <p className="text-sm text-gray-500 mt-2 italic">{ap?.founderCaption || 'Dingwayo Reason Ndlovu — Founder & Managing Director'}</p>
             </div>
             <div>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-6">
-                Meet Dingwayo Reason Ndlovu
+                {ap?.founderTitle || 'Meet Dingwayo Reason Ndlovu'}
               </h2>
               <p className="text-secondary text-lg leading-relaxed mb-4">
-                Dingwayo Reason Ndlovu founded Sinqobile Construction in 2010 after spending years working as a site foreman and project manager on residential builds across Johannesburg. His hands-on experience — from laying foundations to managing multi-million rand projects — shaped his approach to construction: every job is personal, every detail matters.
+                {ap?.founderBio1 || 'Dingwayo Reason Ndlovu founded Sinqobile Construction in 2010 after spending years working as a site foreman and project manager on residential builds across Johannesburg.'}
               </p>
               <p className="text-secondary text-lg leading-relaxed mb-4">
-                Under his leadership, Sinqobile Construction has grown from a two-person operation to a team of 15+ skilled tradespeople completing an average of 40 projects per year. The company holds NHBRC registration (verifiable at <a href="https://www.nhbrc.org.za" target="_blank" rel="noopener noreferrer" className="text-accent underline">nhbrc.org.za</a>), carries comprehensive liability insurance, and maintains an ISO-compliant safety programme on every site.
+                {ap?.founderBio2 || 'Under his leadership, Sinqobile Construction has grown from a two-person operation to a team of 15+ skilled tradespeople completing an average of 40 projects per year. The company holds NHBRC registration, carries comprehensive liability insurance, and maintains an ISO-compliant safety programme on every site.'}{' '}
+                (NHBRC: <a href="https://www.nhbrc.org.za" target="_blank" rel="noopener noreferrer" className="text-accent underline">nhbrc.org.za</a>)
               </p>
               <p className="text-secondary text-lg leading-relaxed mb-6">
-                Dingwayo personally oversees every project from the initial site visit through to the final walkthrough. He speaks English, Zulu, and Sotho — ensuring clear communication with clients and subcontractors across Gauteng.
+                {ap?.founderBio3 || 'Dingwayo personally oversees every project from the initial site visit through to the final walkthrough.'}
               </p>
 
               {/* Credentials Grid */}
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="bg-lightBackground rounded-lg p-4">
                   <div className="text-2xl font-bold text-accent">15+</div>
-                  <div className="text-sm text-secondary">Years in Construction</div>
+                  <div className="text-sm text-secondary">{ap?.credYears || 'Years in Construction'}</div>
                 </div>
                 <div className="bg-lightBackground rounded-lg p-4">
                   <div className="text-2xl font-bold text-accent">500+</div>
-                  <div className="text-sm text-secondary">Projects Completed</div>
+                  <div className="text-sm text-secondary">{ap?.credProjects || 'Projects Completed'}</div>
                 </div>
                 <div className="bg-lightBackground rounded-lg p-4">
                   <div className="text-2xl font-bold text-accent">4.9★</div>
-                  <div className="text-sm text-secondary">Google Rating (127 Reviews)</div>
+                  <div className="text-sm text-secondary">{ap?.credRating || 'Google Rating (127 Reviews)'}</div>
                 </div>
                 <div className="bg-lightBackground rounded-lg p-4">
                   <div className="text-2xl font-bold text-accent">15+</div>
-                  <div className="text-sm text-secondary">Team Members</div>
+                  <div className="text-sm text-secondary">{ap?.credTeam || 'Team Members'}</div>
                 </div>
               </div>
 
@@ -203,13 +231,13 @@ export default async function AboutPage({
                   className="inline-flex items-center justify-center space-x-2 bg-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors"
                 >
                   <Phone size={18} />
-                  <span>Call Dingwayo: +27 82 868 8396</span>
+                  <span>{ap?.callDingwayo || 'Call Dingwayo: +27 82 868 8396'}</span>
                 </a>
                 <Link
                   href={`/${lang}/contact`}
                   className="inline-flex items-center justify-center space-x-2 border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors"
                 >
-                  <span>Get Free Quote</span>
+                  <span>{ap?.getFreeQuote || 'Get Free Quote'}</span>
                 </Link>
               </div>
             </div>
@@ -222,24 +250,17 @@ export default async function AboutPage({
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary text-center mb-12">
-              Our Journey — From Startup to 500+ Projects
+              {ap?.timelineTitle || 'Our Journey — From Startup to 500+ Projects'}
             </h2>
             <div className="space-y-8">
-              {[
-                { year: '2010', title: 'Founded in Johannesburg', desc: 'Dingwayo Reason Ndlovu registered Sinqobile Construction (PTY) LTD, starting with residential repairs and small renovation projects in the Johannesburg CBD and surrounding suburbs.' },
-                { year: '2013', title: 'NHBRC Registration & First Major Build', desc: 'Achieved NHBRC builder registration, enabling new home construction. Completed our first full residential build — a 3-bedroom home in Midrand delivered on time and under budget.' },
-                { year: '2016', title: 'Expanded to 19 Service Categories', desc: 'Grew from core building work into plumbing, electrical, waterproofing, roofing, paving, and 13 other trades. Hired specialist teams for each trade to maintain quality across all services.' },
-                { year: '2019', title: '300th Project Milestone', desc: 'Completed our 300th project — a full home renovation in Sandton. By this point, 70% of our work came from client referrals and repeat customers, a testament to our reputation.' },
-                { year: '2022', title: 'All-Gauteng Coverage', desc: 'Expanded service area to cover all 8 major regions: Johannesburg, Sandton, Pretoria, Centurion, Midrand, Randburg, Fourways, and Roodepoort. Added 24/7 emergency repair services.' },
-                { year: '2024', title: '500+ Projects & 4.9★ Google Rating', desc: 'Passed 500 completed projects with a 4.9-star rating from 127 verified Google reviews. Launched our multilingual website serving English, Afrikaans, Zulu, and Sotho-speaking clients.' },
-              ].map((milestone, i) => (
+              {timeline.map((milestone, i) => (
                 <div key={i} className="flex gap-6">
                   <div className="flex-shrink-0 w-20 text-right">
                     <span className="font-heading text-2xl font-bold text-accent">{milestone.year}</span>
                   </div>
                   <div className="flex-shrink-0 flex flex-col items-center">
                     <div className="w-4 h-4 bg-accent rounded-full" />
-                    {i < 5 && <div className="w-0.5 h-full bg-gray-300 mt-1" />}
+                    {i < timeline.length - 1 && <div className="w-0.5 h-full bg-gray-300 mt-1" />}
                   </div>
                   <div className="pb-4">
                     <h3 className="font-heading text-xl font-bold text-primary mb-2">{milestone.title}</h3>
@@ -256,26 +277,26 @@ export default async function AboutPage({
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary text-center mb-12">
-            Professional Registrations & Insurance
+            {ap?.credentialsTitle || 'Professional Registrations & Insurance'}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="bg-white rounded-lg p-8 shadow-lg text-center border-t-4 border-accent">
               <Shield className="text-accent mx-auto mb-4" size={48} />
-              <h3 className="font-heading text-xl font-bold text-primary mb-3">NHBRC Registered</h3>
-              <p className="text-secondary mb-3">Registered with the National Home Builders Registration Council — mandatory for all new home construction in South Africa.</p>
-              <p className="text-sm text-gray-500">Verify at <a href="https://www.nhbrc.org.za" target="_blank" rel="noopener noreferrer" className="text-accent underline">nhbrc.org.za</a></p>
+              <h3 className="font-heading text-xl font-bold text-primary mb-3">{ap?.nhbrcTitle || 'NHBRC Registered'}</h3>
+              <p className="text-secondary mb-3">{ap?.nhbrcDesc || 'Registered with the National Home Builders Registration Council — mandatory for all new home construction in South Africa.'}</p>
+              <p className="text-sm text-gray-500">{ap?.nhbrcVerify || 'Verify at'} <a href="https://www.nhbrc.org.za" target="_blank" rel="noopener noreferrer" className="text-accent underline">nhbrc.org.za</a></p>
             </div>
             <div className="bg-white rounded-lg p-8 shadow-lg text-center border-t-4 border-accent">
               <Award className="text-accent mx-auto mb-4" size={48} />
-              <h3 className="font-heading text-xl font-bold text-primary mb-3">Fully Insured</h3>
-              <p className="text-secondary mb-3">Comprehensive public liability insurance and workman&apos;s compensation cover on every project. Certificates available on request.</p>
-              <p className="text-sm text-gray-500">5-year NHBRC structural warranty on all new builds</p>
+              <h3 className="font-heading text-xl font-bold text-primary mb-3">{ap?.heroStats?.insured || 'Fully Insured'}</h3>
+              <p className="text-secondary mb-3">{ap?.insuredDesc || 'Comprehensive public liability insurance and workman\'s compensation cover on every project. Certificates available on request.'}</p>
+              <p className="text-sm text-gray-500">{ap?.insuredWarranty || '5-year NHBRC structural warranty on all new builds'}</p>
             </div>
             <div className="bg-white rounded-lg p-8 shadow-lg text-center border-t-4 border-accent">
               <HardHat className="text-accent mx-auto mb-4" size={48} />
-              <h3 className="font-heading text-xl font-bold text-primary mb-3">Safety Compliant</h3>
-              <p className="text-secondary mb-3">ISO-aligned safety programme on every site. All workers carry PPE and are trained in SANS safety standards. Regular site safety audits.</p>
-              <p className="text-sm text-gray-500">Zero lost-time injuries in the last 3 years</p>
+              <h3 className="font-heading text-xl font-bold text-primary mb-3">{ap?.safetyTitle || 'Safety Compliant'}</h3>
+              <p className="text-secondary mb-3">{ap?.safetyDesc || 'ISO-aligned safety programme on every site. All workers carry PPE and are trained in SANS safety standards. Regular site safety audits.'}</p>
+              <p className="text-sm text-gray-500">{ap?.safetyRecord || 'Zero lost-time injuries in the last 3 years'}</p>
             </div>
           </div>
         </div>
@@ -317,42 +338,33 @@ export default async function AboutPage({
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary text-center mb-4">
-            What We Build
+            {ap?.whatWeBuildTitle || 'What We Build'}
           </h2>
           <p className="text-secondary text-lg text-center mb-12 max-w-3xl mx-auto">
-            Sinqobile Construction offers 19+ construction services across Gauteng. Every trade is handled by experienced specialists — not general labourers.
+            {ap?.whatWeBuildDesc || 'Sinqobile Construction offers 19+ construction services across Gauteng. Every trade is handled by experienced specialists — not general labourers.'}
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
-            {[
-              { name: 'Building & Construction', slug: 'building' },
-              { name: 'Home Renovations', slug: 'renovation' },
-              { name: 'Plumbing', slug: 'plumbing' },
-              { name: 'Paving & Driveways', slug: 'paving' },
-              { name: 'Roofing', slug: 'roofing' },
-              { name: 'Waterproofing', slug: 'waterproofing' },
-              { name: 'Painting', slug: 'painting' },
-              { name: 'Tiling', slug: 'tiling' },
-              { name: 'Plastering', slug: 'plastering' },
-              { name: 'Electrical', slug: 'electrical' },
-              { name: 'Extensions', slug: 'extensions' },
-              { name: 'Concrete Work', slug: 'concrete' },
-            ].map((service) => (
-              <Link
-                key={service.slug}
-                href={`/${lang}/services/${service.slug}`}
-                className="flex items-center space-x-2 p-3 bg-lightBackground rounded-lg hover:bg-accent hover:text-white transition-colors group"
-              >
-                <Hammer className="text-accent group-hover:text-white flex-shrink-0" size={16} />
-                <span className="text-sm font-medium">{service.name}</span>
-              </Link>
-            ))}
+            {whatWeBuildServices.map((service) => {
+              const serviceDict = dict.services?.items?.[service.slug as keyof typeof dict.services.items] ||
+                                  (dict as any).extendedServices?.[service.slug]
+              return (
+                <Link
+                  key={service.slug}
+                  href={`/${lang}/services/${service.slug}`}
+                  className="flex items-center space-x-2 p-3 bg-lightBackground rounded-lg hover:bg-accent hover:text-white transition-colors group"
+                >
+                  <Hammer className="text-accent group-hover:text-white flex-shrink-0" size={16} />
+                  <span className="text-sm font-medium">{serviceDict?.name || service.name}</span>
+                </Link>
+              )
+            })}
           </div>
           <div className="text-center mt-8">
             <Link
               href={`/${lang}/services`}
               className="inline-block text-accent font-semibold hover:underline"
             >
-              View all 19+ services →
+              {ap?.viewAllServicesLink || 'View all 19+ services'} →
             </Link>
           </div>
         </div>
@@ -362,10 +374,10 @@ export default async function AboutPage({
       <section className="py-20 bg-primary text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
-            Serving 8 Areas Across Gauteng
+            {ap?.serviceAreas?.title || 'Serving 8 Areas Across Gauteng'}
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            From Johannesburg CBD to Pretoria, Sandton to Roodepoort — our teams are within 30-60 minutes of any job site in Gauteng.
+            {ap?.serviceAreas?.description || 'From Johannesburg CBD to Pretoria, Sandton to Roodepoort — our teams are within 30-60 minutes of any job site in Gauteng.'}
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             {['johannesburg', 'sandton', 'pretoria', 'centurion', 'midrand', 'randburg', 'fourways', 'roodepoort'].map((area) => (
@@ -382,7 +394,7 @@ export default async function AboutPage({
             href={`/${lang}/areas`}
             className="inline-block bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors"
           >
-            View All Service Areas
+            {ap?.serviceAreas?.viewAll || 'View All Service Areas'}
           </Link>
         </div>
       </section>
@@ -391,10 +403,10 @@ export default async function AboutPage({
       <section className="py-20 bg-lightBackground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-6">
-            Ready to Start Your Project?
+            {ap?.finalCTA?.title || 'Ready to Start Your Project?'}
           </h2>
           <p className="text-secondary text-lg mb-8 max-w-2xl mx-auto">
-            Contact Dingwayo directly for a free, no-obligation consultation and quote. Whether it&apos;s a small repair or a full new build, we treat every project with the same care and professionalism.
+            {ap?.finalCTA?.description || 'Contact Sinqobile Construction today for a free consultation and quote. Let\'s build something great together!'}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <a
@@ -402,16 +414,16 @@ export default async function AboutPage({
               className="inline-flex items-center justify-center space-x-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors"
             >
               <Phone size={20} />
-              <span>Call: +27 82 868 8396</span>
+              <span>{areaPage?.callFull || 'Call: +27 82 868 8396'}</span>
             </a>
             <Link
               href={`/${lang}/contact`}
               className="inline-flex items-center justify-center space-x-2 border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors"
             >
-              <span>Request Free Quote Online</span>
+              <span>{ap?.requestQuoteOnline || 'Request Free Quote Online'}</span>
             </Link>
           </div>
-          <p className="text-sm text-gray-400">Last updated: April 2026</p>
+          <p className="text-sm text-gray-400">{areaPage?.lastUpdated || 'Last updated: April 2026'}</p>
         </div>
       </section>
     </div>

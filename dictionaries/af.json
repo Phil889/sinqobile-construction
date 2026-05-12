@@ -210,6 +210,18 @@
     "waterproofing": {
       "name": "Waterdigting",
       "description": "Kelder, dak, en buite waterdigting oplossings"
+    },
+    "ceiling": {
+      "name": "Plafonherstelwerk",
+      "description": "Plafon herstelwerk, installasie, en vervangings — rhinobord, bosse en gipsplafonne"
+    },
+    "gutters": {
+      "name": "Geut Installasie",
+      "description": "Naatlose geut installasie, herstelwerk, skoonmaak, afvoerpype en gewelplanke regdeur Gauteng"
+    },
+    "roof-waterproofing": {
+      "name": "Dak Waterdigting",
+      "description": "Dakwaterdigting vir teëls, IBR, plat en betonplafonne — bitumen, akriel en fakkel-op stelsels"
     }
   },
   "categories": {
@@ -229,7 +241,10 @@
     "renovation": "Renovasie",
     "repairs": "Herstelwerk",
     "brickwork": "Steenwerk",
-    "waterproofing": "Waterdigting"
+    "waterproofing": "Waterdigting",
+    "ceiling": "Plafonherstelwerk",
+    "gutters": "Geut Installasie",
+    "roof-waterproofing": "Dak Waterdigting"
   },
   "pages": {
     "about": {
@@ -574,23 +589,31 @@
     "faq": {
       "title": "Gereeld Gevra Vrae",
       "subtitle": "Algemene Vrae Oor Ons Konstruksie Dienste",
-      "heroTitle": "Het Vrae? Ons Het Antwoorde",
-      "heroSubtitle": "Vind antwoorde op die mees algemene vrae oor ons dienste",
+      "heroTitle": "Konstruksie Vrae — Jou Bou Vrae Beantwoord",
+      "heroSubtitle": "Antwoorde op die mees algemene vrae oor konstruksie kostes, tydlyne, NHBRC registrasie, en bou in Johannesburg & Gauteng",
       "categories": [
         {
           "title": "Algemene Vrae",
           "items": [
             {
               "question": "Verskaf julle gratis kwotasies?",
-              "answer": "Ja, ons verskaf gratis, geen-verpligting kwotasies vir alle ons dienste. Kontak ons eenvoudig met jou projek besonderhede en ons sal 'n gerieflike tyd skeduleer om jou behoeftes te assesseer."
+              "answer": "Ja, Sinqobile Construction verskaf gratis, geen-verpligting kwotasies vir alle konstruksie dienste regoor Johannesburg en Gauteng. Die proses is eenvoudig: kontak ons per telefoon (+27 82 868 8396), WhatsApp, of deur ons aanlyn vorm met 'n kort beskrywing van jou projek. Ons skeduleer 'n gerieflike tyd om jou eiendom te besoek, metings te neem, die terrein toestande te assesseer, en jou vereistes in detail te bespreek. Binne 48 uur na die terreinbesoek ontvang jy 'n geskrewe, geïtimiseerde kwotasie wat materiale, arbeid, professionele fooie, en enige gebeurlikheidstoelae uiteensit. Daar is geen druk om te aanvaar nie — jy kan ons kwotasie met ander kontrakteurs vergelyk en na ons terugkeer wanneer jy gereed is. Ons kwoteer op projekte van alle groottes, van klein herstelwerk tot volledige huisbou."
             },
             {
               "question": "Watter areas bedien julle?",
-              "answer": "Ons bedien alle areas regoor Gauteng Provinsie, insluitend Johannesburg, Pretoria, Oos Rand, Wes Rand, en omliggende areas. Kontak ons om dekking vir jou spesifieke ligging te bevestig."
+              "answer": "Sinqobile Construction bedien alle areas regoor Gauteng Provinsie vanaf ons hoofkantoor in Fourways, Sandton. Ons primêre diensareas sluit in Johannesburg CBD, Sandton, Bryanston, Fourways, Randburg, Midrand, Centurion, en Pretoria. Ons dek ook die Oos Rand (Boksburg, Germiston, Alberton, Bedfordview, Edenvale), Wes Rand (Roodepoort, Krugersdorp, Randfontein), en suidelike voorstede (Soweto, Johannesburg Suid). Ons Fourways ligging gee ons vinnige toegang tot die noordelike voorstede, met tipiese reaksietye van 30–60 minute vir noodgeval uitroepe. Vir standaard projekte reis ons enige plek in Gauteng. Kontak ons om dekking vir jou spesifieke ligging te bevestig — as ons jou binne 'n uur kan bereik, kan ons jou bedien."
             },
             {
               "question": "Is julle gelisensieer en verseker?",
-              "answer": "Ja, Sinqobile Construction is volledig gelisensieer en verseker. Ons dra omvattende aanspreeklikheidsversekering om beide ons kliënte en ons span tydens alle projekte te beskerm."
+              "answer": "Ja, Sinqobile Construction is volledig gelisensieer en omvattend verseker. Ons dra konstruksie aanspreeklikheidsversekering wat eiendomsbeskadiging, derde party besering, en materiaalsdiefstal tydens alle projekte dek. Dit beskerm beide ons kliënte en ons span deur elke fase van konstruksie. Ons is 'n geregistreerde PTY LTD maatskappy wat voldoen aan alle Suid-Afrikaanse konstruksieregulasies en industriestandaarde. Ons NHBRC registrasie dek alle residensiële bouwerk, en ons elektrisiens en loodgieters hou die relevante handelsregistrasies wat deur Suid-Afrikaanse reg vereis word. Ons verskaf bewys van versekering en registrasie dokumentasie op versoek — ons beveel aan dat alle kliënte hierdie geloofsbriewe verifieer voordat hulle enige konstruksie maatskappy aanstel."
+            },
+            {
+              "question": "Is julle NHBRC geregistreer?",
+              "answer": "Ja, Sinqobile Construction is geregistreer by die NHBRC (Nasionale Huis Bouers Registrasie Raad). NHBRC registrasie is 'n wetlike vereiste in Suid-Afrika vir enige maatskappy betrokke by huisbou. Die registrasieproses sluit 'n tegniese assessering in gebaseer op die Huis Bouers Handleiding, wat verseker dat die bouer aan nasionale konstruksiestandardvoldoen. Wanneer jy 'n nuwe huis bou met Sinqobile Construction, skryf ons jou projek by die NHBRC in ten minste 15 dae voor konstruksie begin, soos deur die wet vereis. Hierdie inskrywing gee jou 'n 5-jaar strukturele waarborg ondersteun deur die NHBRC, wat defekte in die dakstruktuur, mure, en fondament dek. Jy kan ons registrasiestatus direk by nhbrc.org.za of deur die NHBRC Johannesburg kantoor by 011 317 0000 te bel, verifieer."
+            },
+            {
+              "question": "Hoe verifieer ek julle geloofsbriewe en vorige werk?",
+              "answer": "Ons moedig aktief alle kliënte aan om ons geloofsbriewe voor inhuur te verifieer. Jy kan ons NHBRC registrasiestatus by nhbrc.org.za nagaan, ons portefeulje van 500+ voltooide projekte op ons webwerf bekyk (met foto's, liggings, en projekbeskrywings), en ons 4.9-ster Google resensies van 127+ geverifieerde kliënte lees. Ons is bly om verwysings van onlangse kliënte in jou spesifieke area te verskaf en kan terreinbesoeke aan voltooide projekte soortgelyk aan joune reël. Jy kan ook ons PTY LTD maatskappy registrasie deur die CIPC (Maatskappye en Intellektuele Eiendom Kommissie) verifieer. Ons stigter, Dingwayo Reason Ndlovu, het 15+ jaar konstruksie ondervinding in Gauteng en hou persoonlik toesig oor kwaliteitsstandaarde op alle projekte."
             }
           ]
         },
@@ -598,16 +621,37 @@
           "title": "Projek & Pryse",
           "items": [
             {
+              "question": "Hoeveel kos dit om per vierkante meter in Johannesburg te bou?",
+              "answer": "Konstruksie kostes in Johannesburg wissel van R10,000 tot R20,000 per vierkante meter in 2026 vir standaard residensiële bouwerk, afhangende van die tipe konstruksie, materiaal kwaliteit, en afwerkings gespesifiseer. Aan die lae kant (R10,000–R14,000/m²) kry jy 'n standaard bou met goeie kwaliteit plaaslike materiale en installasies. Middel-reeks bouwerk (R14,000–R18,000/m²) sluit opgegradeerde afwerkings, beter isolasie, en ingevoerde installasies in sleutelareas in. Luukse bouwerk oorskry R20,000–R25,000/m² met premium ingevoerde materiale deurlopend. Vir konteks, 'n standaard 3-slaapkamer huis van 120–150 m² kos ongeveer R1.2M–R2.5M vir konstruksie alleen. Professionele fooie (argitek teen 5–8%, ingenieur teen 2–4%, hoeveelheidsopmeter teen 2–3%) voeg 10–15% by die boukostes. Ons verskaf gratis, geïtimiseerde kwotasies sodat jy presies kan sien wat elke komponent kos voor jy enige verbintenis maak."
+            },
+            {
               "question": "Hoe lank neem projekte tipies?",
-              "answer": "Projek tydlyne wissel afhangende van omvang en kompleksiteit. Klein herstelwerk kan 1-2 dae neem, terwyl groter konstruksie projekte verskeie weke kan neem. Ons verskaf gedetailleerde tydlyne met elke kwotasie."
+              "answer": "Projek tydlyne hang af van omvang, kompleksiteit, en weerstoestande. Klein herstelwerk (lekkende krane, gebroke teëls, verfopknapping) neem 1–3 dae. Badkamer renovasies neem 2–3 weke, kombuis renovasies 2–4 weke, en huisuitbreidings 6–12 weke van fondament tot oorhandiging. Volledige huisbouwerk vereis tipies 4–8 maande afhangende van grootte, ontwerp kompleksiteit, en die plangoed keuringstydlyn. Hierdie skattings sluit die munisipale bouplen goedkeuringstydperk uit, wat 4–12 weke in Johannesburg en Pretoria byvoeg. Sleutelfaktore wat tydlyne kan verleng sluit in Gauteng se reënseisoen (Oktober–Maart), materiaaltoevoer vertragings, en raadsinspeksie skedulering. Ons verskaf 'n gedetailleerde projek tydlyn met elke kwotasie, ken 'n toegewyde projek bestuurder toe, en stuur weekliks vordering opdaterings met foto's sodat jy altyd weet waar jou projek staan."
             },
             {
               "question": "Watter betaalmetodes aanvaar julle?",
-              "answer": "Ons aanvaar kontant, bankoordragte, en kaartbetalings. Vir groter projekte vereis ons tipies 'n deposito om werk te begin, met die balans verskuldig by voltooiing."
+              "answer": "Ons aanvaar bankoordragte (EFT), kontant, en kaartbetalings. Vir groter konstruksieprojekte met 'n waarde bo R50,000, gebruik ons 'n mylpaal-gebaseerde betaalstruktuur om beide partye te beskerm. Die tipiese struktuur is: 'n 30% deposito om jou bespreking te verseker en materiale te bestel, gevolg deur vordering betalings by ooreengekome konstruksie mylpale (soos fondament voltooiing, dak geplaas, en pleisterwerk voltooi), met die finale 10% teruggehou tot die deurloop en snaglyslys voltooi is. Hierdie benadering beteken dat jy nooit vir werk betaal wat nie gedoen is nie, en ons het kontantvloei om momentum op jou projek te handhaaf. Alle betaalterme, mylpaal definisies, en bedrae word duidelik gedokumenteer in jou geskrewe kontrak voor enige werk begin. Ons vra nooit vir volle betaling vooraf nie."
             },
             {
               "question": "Bied julle waarborge op julle werk aan?",
-              "answer": "Ja, ons staan agter ons werk met omvattende waarborge. Waarborg periodes wissel volgens diens tipe, en ons sal volle waarborg besonderhede met jou kwotasie verskaf."
+              "answer": "Ja, Sinqobile Construction verskaf omvattende waarborge op alle werk. Nuwe huisbouwerk word by die NHBRC ingeskryf, wat 'n 5-jaar strukturele waarborg verskaf wat defekte in die dakstruktuur, mure, en fondament dek — dit is 'n wetlike vereiste en gee jou verhaal deur die NHBRC indien strukturele kwessies ontstaan. Behalwe die NHBRC waarborg, verskaf ons ons eie werkmanskap waarborg op alle projekte, wat die kwaliteit van konstruksie, afwerking, en materiaal installasie dek. As enige kwessie as gevolg van ons werkmanskap tydens die waarborgtydperk ontstaan, keer ons terug en herstel dit sonder bykomende koste. Spesifieke waarborgtydperke verskil per vak — waterdigting dra tipies 'n 5–10 jaar produk waarborg, terwyl verf en algemene afwerkings 'n 1–2 jaar werkmanskap waarborg dra. Volledige waarborg terme word in jou kontrak gedokumenteer."
+            },
+            {
+              "question": "Benodig ek goedgekeurde bouplanne voor konstruksie begin?",
+              "answer": "Ja, vir enige strukturele werk, nuwe bouwerk, uitbreidings, of groot renovasies in Suid-Afrika, benodig jy bouplanne wat deur jou plaaslike munisipaliteit goedgekeur is voor konstruksie wettiglik kan begin. Dit is 'n vereiste ingevolge die Nasionale Bouregulasies en Boustandaarde Wet (Wet 103 van 1977). Planne moet deur 'n SACAP-geregistreerde professionele persoon (argitek of tekenaar) geteken word en by jou munisipale boubeheer kantoor ingedien word — die Stad Johannesburg vir JHB eiendomme, of die Stad Tshwane vir Pretoria en Centurion. Goedkeuring neem tipies 4–12 weke, afhangende van die munisipaliteit se werklading en die kompleksiteit van jou planne. Bou sonder goedgekeurde planne is onwettig: die struktuur kan nie verseker word nie, kan nie deur 'n bank verbind word nie, en die munisipaliteit kan slopingsbevel gee. Ons koördineer die volledige planne proses — van die argitek aanstel tot raad indiening en opvolging — sodat jy nie self deur die rooi band hoef te navigeer nie."
+            }
+          ]
+        },
+        {
+          "title": "Bou Proses",
+          "items": [
+            {
+              "question": "Hoe lank neem dit om 'n huis in Johannesburg te bou?",
+              "answer": "Die bou van 'n standaard 3-slaapkamer huis (120–150 m²) in Johannesburg neem tipies 4–6 maande van fondamentgieting tot oorhandiging. Groter huise (200–300 m²) of komplekse ontwerpe met dubbelverdieping konstruksie, swembaddens, of uitgebreide landskapering kan 6–12 maande neem. Hierdie tydlyn sluit die bouplen goedkeuringstydperk uit, wat 4–12 weke byvoeg afhangende van die Stad Johannesburg se verwerkingswerklading. Die konstruksiefases word ongeveer soos volg verdeel: fondament en plaat (2–3 weke), steenwerk en strukturele mure (4–6 weke), dakstruktuur en bedekking (2–3 weke), loodgieter en elektriese rufinvoer (2–3 weke), pleisterwerk (2–3 weke), teël en vloere (2–3 weke), verf en afwerking (2–3 weke), en finale inspeksie en snaglyslys (1 week). Gauteng se somer donderstormseisoen (Oktober–Maart) kan vertragings van 1–2 weke veroorsaak as gevolg van nat toestande wat fondamentwerk, steenlegging, en pleisterwerk beïnvloed."
+            },
+            {
+              "question": "Wat is die konstruksieproses van begin tot einde?",
+              "answer": "Ons konstruksieproses volg agt duidelik gedefinieerde fases, elk bestuur deur 'n toegewyde projek bestuurder. Fase 1: Gratis konsultasie en terrein assessering — ons besoek jou eiendom, bespreek jou visie, en assesseer terreintoestande. Fase 2: Gedetailleerde kwotasie en projekplan — jy ontvang 'n geïtimiseerde kwotasie met materiale, arbeid, fooie, en 'n tydlyn. Fase 3: Bouplen indiening en raadgoedkeuring (4–12 weke vir strukturele werk). Fase 4: Terreinvoorbereiding, uitgraaing, en fondamentkonstruksie — die fondament tipe (vlot of strook) word bepaal deur grondtoestande en die ingenieur se ontwerp. Fase 5: Strukturele werk insluitend steenwerk, lintels, ringbalk, en dakkonstruksie. Fase 6: Eerstefiksinstallasies — loodgieterpype, elektriese konduiet, en dreineering voor mure gesluit word. Fase 7: Afwerking — pleisterwerk, waterdigting, teëlwerk, verf, tweedefiksloodgieter en elektries (krane, stopcontacte, ligte). Fase 8: Finale inspeksie, deurloop met die kliënt, snaglyslys voltooiing, en oorhandiging met alle dokumentasie insluitend NHBRC inskrywingsertifikaat."
             }
           ]
         },
@@ -616,22 +660,22 @@
           "items": [
             {
               "question": "Verskaf julle materiale of moet ek dit aankoop?",
-              "answer": "Ons kan alle materiale as deel van ons diens verskaf, of werk met materiale wat jy aangekoop het. Ons sal advies gee oor die beste benadering gebaseer op jou projek en begroting."
+              "answer": "Ons kan alles hanteer — verkryging, aankoop, aflewering, en installasie — of werk met materiale wat jy self aangekoop het. Wanneer ons materiale verskaf, baat jy by ons handelsverhoudinge met gevestigde Gauteng verskaffers insluitend Builders Warehouse, Corobrik (stene), PPC en Lafarge (sement en beton), en spesialis verskaffers vir teëls, loodgieter fittings, en elektriese komponente. Ons handelspryse is tipies 10–20% onder kleinhandel, en ons spesifiseer elke materiaal by handelsnaam en hoeveelheid in jou kwotasie sodat niks vaag is nie. As jy verkies om jou eie materiale te verskaf, is ons bly om met dit wat jy aangekoop het te werk. In daardie geval sal ons advies gee oor spesifikasies (korrekte graad, hoeveelheid, en versoenbaarheid) voor jy koop om duur foute te vermy. Ons beveel aan dat jy ons strukturele materiale (beton, staal, stene) laat verskaf om korrekte spesifikasies te verseker."
             },
             {
               "question": "Kan julle naweke of saans werk?",
-              "answer": "Ja, ons bied buigsame skedulering aan insluitend naweek en aand werk vir dringende projekte of kliënt gerief. Addisionele kostes kan van toepassing wees vir na-ure werk."
+              "answer": "Ja, Sinqobile Construction bied buigsame skedulering aan insluitend Saterdag werk (8:00 VM – 1:00 NM as standaard) en na-ure of Sondagwerk vir dringende projekte of kliënt gerief. Naweek en aandwerk is veral nuttig vir kommersiële kliënte (kantore, kleinhandel, restaurante) wat nie verlies aan besigheidsure kan bekostig nie, en vir residensiële kliënte wat tydens die werk teenwoordig moet wees. Na-ure werk kan 'n 15–20% premie bo standaard tariewe dra om oortyd arbeidskoste te dek — dit word vooraf in jou kwotasie bevestig voor jy jou verbind. Vir noodgeval herstelwerk (gebroke pype, daklekke, elektriese foute), is ons noodspan 24/7 beskikbaar insluitend openbare vakansiedae teen noodgevaltariewe. Standaard residensiële konstruksiewerk bedryf Maandag tot Vrydag 7:00 VM – 5:00 NM en Saterdagoggend."
             },
             {
               "question": "Hanteer julle noodgeval herstelwerk?",
-              "answer": "Ja, ons verskaf 24/7 noodgeval herstel dienste vir dringende kwessies soos gebarste pype, elektriese probleme, of strukturele skade. Kontak ons onmiddellik vir noodgeval bystand."
+              "answer": "Ja, Sinqobile Construction verskaf 24/7 noodgeval herstel dienste vir dringende kwessies wat nie vir 'n geskeduleerde afspraak kan wag nie. Algemene noodgevalle wat ons op reageer sluit in gebroke waterpype, geiser mislukkings en lekke, dakskade van storms of hael, elektriese foute en trippende stroombane, geblokkeerde of oorvloeiende dreineering, en strukturele skade van voertuig impak of versinking. Ons noodspan kan tipies binne 2–4 uur reageer regoor Johannesburg, Sandton, Fourways, Midrand, en omliggende areas. Vir Pretoria, Centurion, en die Oos/Wes Rand is reaksietye 3–5 uur. Ons dra gewone herstel materiale en onderdele op ons voertuie om die meeste noodgevalle in 'n enkele besoek op te los. Noodgeval na-ure tariewe is R500–R1,000 per uur. Bel ons onmiddellik by +27 82 868 8396 of WhatsApp dieselfde nommer vir noodgeval hulp."
             }
           ]
         }
       ],
       "stillHaveQuestions": {
         "title": "Het Nog Vrae?",
-        "subtitle": "Moenie huiwer om uit te reik nie - ons is hier om te help!",
+        "subtitle": "Moenie huiwer om uit te reik nie — ons span is gereed om te help met jou konstruksie projek!",
         "button": "Kontak Ons"
       }
     },
@@ -674,7 +718,69 @@
     "finalCTA": {
       "title": "Gereed om Jou Projek te Begin?",
       "description": "Kontak Sinqobile Construction vandag vir 'n gratis konsultasie en kwotasie. Kom ons bou iets groots saam!"
-    }
+    },
+    "heroTitle": "Oor Sinqobile Construction — NHBRC Geregistreerde Bouer Sedert 2010",
+    "heroSubtitle": "Gestig deur Dingwayo Reason Ndlovu in Johannesburg, het ons 500+ residensiële en kommersiële projekte regoor Gauteng voltooi met 'n 4.9-ster Google-gradering van 127 geverifieerde resensies.",
+    "statEstablished": "Gestig 2010",
+    "statProjects": "500+ Projekte",
+    "statNHBRC": "NHBRC Geregistreer",
+    "statAreas": "8 Areas in Gauteng",
+    "founderTitle": "Ontmoet Dingwayo Reason Ndlovu",
+    "founderCaption": "Dingwayo Reason Ndlovu — Stigter & Besturende Direkteur",
+    "founderBio1": "Dingwayo Reason Ndlovu het Sinqobile Construction in 2010 gestig nadat hy jare lank as terreinvoorman en projekbestuurder op residensiële bouwerke regoor Johannesburg gewerk het. Sy praktiese ondervinding — van fondamente lê tot die bestuur van multi-miljoen rand projekte — het sy benadering tot konstruksie gevorm: elke werk is persoonlik, elke detail tel.",
+    "founderBio2": "Onder sy leierskap het Sinqobile Construction gegroei van 'n tweepersoon operasie tot 'n span van 15+ geskoolde vakleerlinge wat gemiddeld 40 projekte per jaar voltooi. Die maatskappy hou NHBRC-registrasie, dra omvattende aanspreeklikheidsversekering, en handhaaf 'n ISO-voldoende veiligheidsprogram op elke werf.",
+    "founderBio3": "Dingwayo hou persoonlik toesig oor elke projek van die aanvanklike terreinbesoek tot die finale deurloop. Hy praat Engels, Zulu, en Sotho — wat duidelike kommunikasie met kliënte en subkontrakteurs regoor Gauteng verseker.",
+    "credYears": "Jaar in Konstruksie",
+    "credProjects": "Voltooide Projekte",
+    "credRating": "Google Gradering (127 Resensies)",
+    "credTeam": "Spanlede",
+    "callDingwayo": "Skakel Dingwayo: +27 82 868 8396",
+    "timelineTitle": "Ons Reis — Van Beginonderneming tot 500+ Projekte",
+    "timeline": [
+      {
+        "year": "2010",
+        "title": "Gestig in Johannesburg",
+        "desc": "Dingwayo Reason Ndlovu het Sinqobile Construction (PTY) LTD geregistreer en begin met residensiële herstelwerk en klein opknappingsprojekte in die Johannesburg CBD."
+      },
+      {
+        "year": "2013",
+        "title": "NHBRC Registrasie & Eerste Groot Bou",
+        "desc": "Behaal NHBRC-bouregistrasie wat nuwe huisbou moontlik maak. Eerste volledige residensiële gebou voltooi — 'n 3-slaapkamer huis in Midrand op tyd en binne begroting gelewer."
+      },
+      {
+        "year": "2016",
+        "title": "Uitgebrei na 19 Diensskategorieë",
+        "desc": "Gegroei van kernbouwerk na loodgieterwerk, elektries, waterdigting, dakwerk, plaveisel, en 13 ander vaklyne. Spesialisispanne vir elke vak aangestel."
+      },
+      {
+        "year": "2019",
+        "title": "300ste Projekmylpaal",
+        "desc": "Ons 300ste projek voltooi — 'n volledige opknapping in Sandton. Teen hierdie punt het 70% van ons werk van kliëntverwysings en herhaalde kliënte gekom."
+      },
+      {
+        "year": "2022",
+        "title": "Heel-Gauteng Dekking",
+        "desc": "Dienste uitgebrei om alle 8 groot streke te dek: Johannesburg, Sandton, Pretoria, Centurion, Midrand, Randburg, Fourways, en Roodepoort. Noodhersteldienste 24/7 bygevoeg."
+      },
+      {
+        "year": "2024",
+        "title": "500+ Projekte & 4.9★ Google Gradering",
+        "desc": "500 voltooide projekte geslaag met 'n 4.9-ster gradering van 127 geverifieerde Google resensies. Ons veeltalige webwerf wat Engels, Afrikaans, Zulu, en Sotho-sprekende kliënte bedien, bekendgestel."
+      }
+    ],
+    "credentialsTitle": "Professionele Registrasies & Versekering",
+    "nhbrcTitle": "NHBRC Geregistreer",
+    "nhbrcDesc": "Geregistreer by die Nasionale Huisbouers Registrasieraad — verpligtend vir alle nuwe huisbou in Suid-Afrika.",
+    "nhbrcVerify": "Verifieer by nhbrc.org.za",
+    "insuredDesc": "Omvattende openbare aanspreeklikheidsversekering en werknemer se vergoedingsdekking op elke projek. Sertifikate op versoek beskikbaar.",
+    "insuredWarranty": "5-jaar NHBRC strukturele waarborg op alle nuwe geboue",
+    "safetyTitle": "Veiligheidskompatibel",
+    "safetyDesc": "ISO-georiënteerde veiligheidsprogram op elke terrein. Alle werkers dra PBT en is opgelei in SANS-veiligheidsstandaarde. Gereelde terreinveiligheidsoudits.",
+    "safetyRecord": "Geen verlore-tyd beserings in die laaste 3 jaar nie",
+    "whatWeBuildTitle": "Wat Ons Bou",
+    "whatWeBuildDesc": "Sinqobile Construction bied 19+ konstruksiedienste regoor Gauteng aan. Elke vak word hanteer deur ervare spesialiste — nie algemene arbeiders nie.",
+    "viewAllServicesLink": "Sien alle 19+ dienste",
+    "requestQuoteOnline": "Versoek Gratis Kwotasie Aanlyn"
   },
   "about": {
     "title": "Oor Dingwayo Reason Ndlovu",
@@ -798,7 +904,34 @@
     "weServeAllAreas": "Ons bedien alle areas regoor Gauteng Provinsie. Kontak ons om jou konstruksie projek te bespreek!",
     "getFreeQuote": "Kry Gratis Kwotasie",
     "andMore": "& meer",
-    "allSuburbsIncluding": "Alle Gauteng voorstede insluitend"
+    "allSuburbsIncluding": "Alle Gauteng voorstede insluitend",
+    "serviceAreasLabel": "Diensgebiede",
+    "serviceAreasHub": "Konstruksiedienste Regoor Gauteng",
+    "serviceAreasSubtitle": "Professionele bou-, opknapping- en onderhoudsdienste in alle groot gebiede van Gauteng",
+    "statsProjects": "500+ Voltooide Projekte",
+    "statsYears": "15+ Jaar Ondervinding",
+    "statsRating": "4.9★ Gradering",
+    "areasWeServe": "Gebiede wat Ons Bedien",
+    "areasWeServeSubtitle": "Klik op enige gebied hieronder om meer te leer oor ons konstruksiedienste in daardie ligging",
+    "suburbsCovered": "Voorstede Gedek:",
+    "plusMore": "meer",
+    "projectsCompleted": "Projekte Voltooi",
+    "learnMore": "Meer Inligting",
+    "callNowFull": "Bel Nou: +27 82 868 8396",
+    "recentProjectsIn": "Onlangse Projekte in",
+    "viewAllProjectsPrefix": "Bekyk alle",
+    "viewAllProjectsSuffix": "+ voltooide projekte",
+    "viewAllServices": "Bekyk Alle Dienste",
+    "moreSuburbsText": "En baie meer voorstede in hierdie gebied. Skakel ons om te bevestig dat ons u voorstad bedien!",
+    "buildingConstructionIn": "Bou & Konstruksie in",
+    "constructionFaqIn": "Konstruksie Gereelde Vrae —",
+    "trustedPartnerIn": "Betroubare Konstruksievennoot in",
+    "comprehensiveCoverage": "Omvattende dekking",
+    "industryExperience": "Bedryfsondervinding",
+    "customerSatisfaction": "Klanttevredenheid",
+    "callFull": "Skakel: +27 82 868 8396",
+    "lastUpdated": "Laas opgedateer: April 2026",
+    "yearsExperienceFull": "15+ Jaar Ondervinding"
   },
   "footer": {
     "mission": "Verskaf kwaliteit konstruksie dienste regoor Gauteng met integriteit, professionalisme, en aandag aan detail.",
@@ -1120,6 +1253,2554 @@
     "plumbing-randburg-98": {
       "title": "Dreinering Sisteem Installasie",
       "description": "Professionele dreinering sisteem installasie met kwaliteit pype en behoorlike verbindings."
+    }
+  },
+  "beforeAfter": {
+    "title": "Sien Die Transformasie",
+    "subtitle": "Sleep die skuifbalk om die voor en na resultate van ons konstruksieprojekte te vergelyk",
+    "before": "VOOR",
+    "after": "NA",
+    "instruction": "← Sleep die skuifbalk links en regs om te vergelyk →",
+    "ctaTitle": "Gereed Vir Jou Eie Transformasie?",
+    "ctaText": "Laat ons jou ruimte transformeer met ons kundige konstruksiedienste. Kry 'n gratis kwotasie vandag!",
+    "getQuoteButton": "Kry Gratis Kwotasie",
+    "viewMoreButton": "Sien Meer Projekte",
+    "projects": [
+      {
+        "id": "1",
+        "title": "Inrit Plaveisel",
+        "location": "Sandton",
+        "service": "Plaveisel",
+        "beforeLabel": "Geskeurde, onkruidrige beton",
+        "afterLabel": "Nuwe baksteenplaveisel geïnstalleer",
+        "description": "Ernstig geskeurde betoninrit met onkruid vervang met 'n professionele visgraatpatroon baksteenplaveisel sisteem — gelyk, verseël, en gebou vir die Gauteng klimaat."
+      },
+      {
+        "id": "2",
+        "title": "Dakreparasies & Waterdigting",
+        "location": "Johannesburg",
+        "service": "Dakwerk",
+        "beforeLabel": "Mos, gebreekte teëls, lekkasies",
+        "afterLabel": "Volledig herstel & verseël",
+        "description": "Swaar mos-bedekte dak met gebreekte teëls en verkrummelende noklyne gestroep, herbont, en toegerus met nuwe kleiteëls — waterdig met 'n geskrewe vakmanskap waarborg."
+      },
+      {
+        "id": "3",
+        "title": "Buite Pleisterwerk",
+        "location": "Fourways",
+        "service": "Pleisterwerk",
+        "beforeLabel": "Kaartskeure, blootgestelde steen",
+        "afterLabel": "Gladde nuwe pleisterafwerking",
+        "description": "Ernstig geskeurde en hol pleister volledig afgekap, substraat herstel, en herplegter tot 'n foutlose gladde vloerafwerking gereed vir verf."
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Ons Konstruksie Proses",
+    "subtitle": "'n Deursigtige, stap-vir-stap benadering om jou projek tot lewe te bring",
+    "totalDuration": "Tipiese projek duur: 2–4 weke",
+    "step1Title": "Aanvanklike Konsultasie",
+    "step1Desc": "Gratis ter plaatse besoek en projek assessering",
+    "step2Title": "Beplanning & Ontwerp",
+    "step2Desc": "Gedetailleerde projek beplanning en kwotasie",
+    "step3Title": "Voorbereiding",
+    "step3Desc": "Terrein voorbereiding en materiaal aankoop",
+    "step4Title": "Konstruksie",
+    "step4Desc": "Professionele uitvoering van die projek",
+    "step5Title": "Laaste Afwerkings",
+    "step5Desc": "Finale besonderhede en kwaliteit versekering",
+    "step6Title": "Projek Voltooiing",
+    "step6Desc": "Finale deurloop en oorhandiging",
+    "ctaTitle": "Gereed om Jou Projek te Begin?",
+    "ctaText": "Ons ervare span is gereed om jou deur elke stap van die konstruksie proses te lei",
+    "scheduleButton": "Skeduleer Gratis Konsultasie",
+    "calculateButton": "Bereken Projek Koste",
+    "whatWeDo": "Wat Ons Doen:",
+    "stepLabel": "Stap"
+  },
+  "servicePage": {
+    "getQuoteButton": "Kry Gratis Kwotasie: +27 82 868 8396",
+    "contactButton": "Kontak Ons",
+    "statsTitle": "Diens Statistieke",
+    "statsProjects": "Projekte Voltooi",
+    "statsYears": "Jaar Ondervinding",
+    "sectionProfessional": "Professionele %s Dienste",
+    "sectionOurServices": "Ons %s Dienste",
+    "sectionCostGuide": "%s Koste Gids — Johannesburg 2026",
+    "sectionProcess": "Ons %s Proses",
+    "processSubtitle": "Ons volg 'n bewese proses om kwaliteit resultate elke keer te verseker",
+    "sectionFaq": "Gereelde Vrae — %s",
+    "sectionRelated": "Verwante Dienste",
+    "viewAllServices": "Sien Alle Dienste →",
+    "sectionProjects": "Onlangse %s Projekte",
+    "projectsSubtitle": "Sien voorbeelde van ons kwaliteit %s werk",
+    "ctaTitle": "Gereed vir Jou %s Projek?",
+    "ctaSubtitle": "Kontak Sinqobile Construction vandag vir 'n gratis konsultasie en kwotasie",
+    "callButton": "Bel: +27 82 868 8396",
+    "getFreeQuote": "Kry Gratis Kwotasie",
+    "backToServices": "Terug na Alle Dienste",
+    "lastUpdated": "Laas opgedateer: April 2026",
+    "tableService": "Diens",
+    "tablePriceRange": "Prysreeks"
+  },
+  "videoTestimonials": {
+    "title": "Hoor van Ons Tevrede Kliënte",
+    "subtitle": "Kyk na werklike getuigskrifte van tevrede kliënte wat Sinqobile Construction vertrou het met hul bouprojekte",
+    "cta": "Gereed om jou projek te begin? Sluit aan by ons tevrede kliënte vandag!",
+    "getQuoteButton": "Kry Gratis Kwotasie",
+    "viewProjectsButton": "Sien Ons Projekte"
+  },
+  "serviceContent": {
+    "building": {
+      "intro": "Sinqobile Construction is 'n NHBRC-geregistreerde bou kontrakteur wat Johannesburg en die groter Gauteng streek bedien. Oor die afgelope 15 jaar het ons meer as 500 residensiële en kommersiële bouprojekte voltooi. Elke nuwe huis wat ons bou, word by die NHBRC ingestel minstens 15 dae voor konstruksie begin, wat jou 'n 5-jaar strukturele waarborg gee.",
+      "pricingNote": "Konstruksiekoste in Johannesburg wissel van R10,000 tot R20,000 per vierkante meter in 2026. Kombuise en badkamers kos 20–40% meer. Professionele fooie (argitek 5–8%, ingenieur 2–4%, hoeveelheidsopnemer 2–3%) is addisioneel.",
+      "materialsNote": "Ons kry materiaal van gevestigde Gauteng verskaffers insluitend Builders Warehouse, Corobrik, Afrimat, en PPC Sement. Alle materiaal word in jou kwotasie gespesifiseer met handelsnaam en hoeveelhede.",
+      "subServices": [
+        {
+          "name": "Nuwe Huiskonstruksie",
+          "description": "Volledige residensiële bouwerk van fondament tot afwerking, wat planindienings, raadsgoedkeuring, fondamente, baksteenwerk, dakwerk, loodgietery, elektries, pleisterwerk, teëlwerk en skilderwerk hanteer."
+        },
+        {
+          "name": "Huisuitbreidings en Toevoegings",
+          "description": "Ekstra slaapkamers, tweede-verdieping toevoegings, oumensiewonings en motorhuis omskakelings met raadsgoedgekeurde planne."
+        },
+        {
+          "name": "Kommersiële en Kleinhandel Konstruksie",
+          "description": "Kantoor uitrustings, kleinhandelruimtes, pakhuis konstruksie regoor Gauteng."
+        },
+        {
+          "name": "Strukturele Herstelwerk en Herbou",
+          "description": "Fondament onderhoudswerk, geskeurde muurherstelwerk, draende muur wysigings."
+        },
+        {
+          "name": "Grensomheinings en Sekuriteitstrukture",
+          "description": "Voorafgegote en baksteen grensomheinings, wagte huisies, en sekuriteitsopgraderings."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Standaard residensiële bou",
+          "range": "R10,000 – R14,000 /m²"
+        },
+        {
+          "item": "Medium-spesifikasie residensiëel",
+          "range": "R14,000 – R18,000 /m²"
+        },
+        {
+          "item": "Luukse/hoëvlak residensiëel",
+          "range": "R18,000 – R25,000+ /m²"
+        },
+        {
+          "item": "Huisuitbreiding (enkelverdieping)",
+          "range": "R12,000 – R16,000 /m²"
+        },
+        {
+          "item": "Tweede-verdieping toevoeging",
+          "range": "R14,000 – R20,000 /m²"
+        },
+        {
+          "item": "Oumansieflatjie (50–60 m²)",
+          "range": "R550,000 – R900,000"
+        },
+        {
+          "item": "Grensomheining (per liniêre meter)",
+          "range": "R1,200 – R2,500"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Gratis Terreinbeoordeling",
+          "description": "Ons besoek jou eiendom, bespreek jou visie, neem afmetings en beoordeel grondtoestande. Jy ontvang 'n skriftelike opsomming binne 48 uur."
+        },
+        {
+          "step": "2",
+          "title": "Planne en Goedkeurings",
+          "description": "Ons koördineer met 'n SACAP argitek om planne te teken en by jou munisipaliteit in te dien (4–12 weke in Johannesburg)."
+        },
+        {
+          "step": "3",
+          "title": "Gedetailleerde Kwotasie en Kontrak",
+          "description": "Gespesifiseerde kwotasie wat materiaal, arbeid, professionele fooie en gebeurlikhede uiteensit met mylpaalbetalings."
+        },
+        {
+          "step": "4",
+          "title": "Konstruksie",
+          "description": "Toegewyde projekbestuurder met weeklikse foto-opdaterings. Alle werk volg NHBRC tegniese standaarde."
+        },
+        {
+          "step": "5",
+          "title": "Inspeksie en Oordrag",
+          "description": "Finale deurloop met foutlys. NHBRC inskrywingssertifikaat en waarborgdokumentasie verskaf."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoeveel kos dit om 'n huis in Johannesburg in 2026 te bou?",
+          "answer": "'n Standaard 3-slaapkamer huis (120–150 m²) kos R1.2M–R2.5M. Professionele fooie voeg 10–15% by. Ons verskaf gratis, gespesifiseerde kwotasies."
+        },
+        {
+          "question": "Benodig ek goedgekeurde bouplanne?",
+          "answer": "Ja — Suid-Afrikaanse wetgewing vereis munisipaal-goedgekeurde planne vir enige strukturele werk. Goedkeuring neem 4–12 weke."
+        },
+        {
+          "question": "Wat beteken NHBRC registrasie?",
+          "answer": "Dit gee jou 'n 5-jaar waarborg op strukturele defekte. Jy kan ons registrasie by nhbrc.org.za bevestig."
+        },
+        {
+          "question": "Hoe lank neem dit om 'n huis te bou?",
+          "answer": "Standaard 3-slaapkamer: 4–6 maande. Dit sluit die planne-goedkeuringstydperk uit."
+        },
+        {
+          "question": "In watter gebiede in Gauteng bou julle?",
+          "answer": "Ons bou regoor Gauteng insluitend Johannesburg, Sandton, Fourways, Randburg, Midrand, Centurion, Pretoria, Roodepoort."
+        }
+      ],
+      "whyChoose": [
+        "NHBRC geregistreer — elke nuwe huis ingestel met 'n 5-jaar strukturele waarborg",
+        "SACAP-voldoende planne — ons koördineer argitekte en raadsgoedkeurings van begin tot einde",
+        "500+ voltooide projekte regoor Gauteng oor 15 jaar",
+        "Enkele kontak­punt — een projekbestuurder van begin tot einde",
+        "Gespesifiseerde, vaste-prys kwotasies met mylpaalbetalings (geen verrassings)",
+        "Volledig verseker met omvattende konstruksie- en aanspreeklikheidsdekking"
+      ]
+    },
+    "plumbing": {
+      "intro": "Sinqobile Construction bied professionele loodgieterdienste regoor Johannesburg en Gauteng — van noodgeval bars pypherstellings tot volledige geiserinstallasies. Ons gelisensieerde loodgieters is 24/7 beskikbaar met tipiese reaksietye van 2–4 uur. Alle werk voldoen aan SANS 10252 en munisipale verordeninge.",
+      "pricingNote": "Loodgieterkoste wissel na gelang van kompleksiteit en dringendheid. Noodgeval uitroepe is hoër as geskeduleerde werk. Geen verborge uitroepe fooie nie.",
+      "materialsNote": "",
+      "subServices": [
+        {
+          "name": "Noodgeval Loodgietery (24/7)",
+          "description": "Bars pype, lekkasies, geiser mislukkings, oorlopende toilette. Reageer binne 2–4 uur."
+        },
+        {
+          "name": "Geiser Installasie en Herstelwerk",
+          "description": "Elektriese, gas-, son- en warmtepomp geisers. Alle groot handelsmerke (Kwikot, Franke, Defy, Bosch) verskaf en aangebring."
+        },
+        {
+          "name": "Lekkasie Opsporing en Herstelwerk",
+          "description": "Nie-indringende opsporing deur gebruik van druktoetsing en termiese beelding."
+        },
+        {
+          "name": "Dreineerskoonmaak en Ontverstopping",
+          "description": "Verstopte dreineers geskommel met stange, hoëdrukstraling en CCTV kamera."
+        },
+        {
+          "name": "Badkamer- en Kombuisloodgietery",
+          "description": "Volledige ruwe en afwerkings loodgietery."
+        },
+        {
+          "name": "Loodgieter Voldoeningssertifikate (COC)",
+          "description": "Inspeksies en sertifikate vir eiendomsverkope."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Noodgeval uitroep (na ure)",
+          "range": "R500 – R1,000/hr"
+        },
+        {
+          "item": "Standaard loodgieter herstelwerk (gedurende ure)",
+          "range": "R450 – R850/hr"
+        },
+        {
+          "item": "Bars pyp herstelwerk",
+          "range": "R700 – R4,000"
+        },
+        {
+          "item": "Geiser installasie (150L elektries)",
+          "range": "R5,500 – R8,000"
+        },
+        {
+          "item": "Son geiser stelsel",
+          "range": "R18,000 – R30,000"
+        },
+        {
+          "item": "Dreineerverstoppingsverwydering (standaard)",
+          "range": "R650 – R1,500"
+        },
+        {
+          "item": "CCTV dreineerinspeksie",
+          "range": "R1,500 – R3,000"
+        },
+        {
+          "item": "Loodgieter COC sertifikaat",
+          "range": "R850 – R2,700"
+        },
+        {
+          "item": "Toilet vervanging",
+          "range": "R2,500 – R5,000"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Skakel of WhatsApp",
+          "description": "Beskryf jou probleem — onmiddellike skatting en skedulering. Noodgevalle word dadelik gestuur."
+        },
+        {
+          "step": "2",
+          "title": "Diagnose",
+          "description": "Ter-plaatse beoordeling met vaste-prys kwotasie voor enige werk begin."
+        },
+        {
+          "step": "3",
+          "title": "Herstelwerk",
+          "description": "Voltooi met gehalte onderdele. Die meeste herstelwerk word in 'n enkele besoek gedoen."
+        },
+        {
+          "step": "4",
+          "title": "Toets en Waarborg",
+          "description": "Drukgetoets, area skoongemaak, werkmanskap waarborg en gespesifiseerde faktuur verskaf."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoeveel kos 'n noodgeval loodgieter in Johannesburg?",
+          "answer": "Noodgeval: R500–R1,000/hr. Standaard: R450–R850/hr. Vaste kwotasie verskaf voor werk begin — geen verborge fooie nie."
+        },
+        {
+          "question": "Hoe vinnig kan julle reageer?",
+          "answer": "2–4 uur regoor Johannesburg, Sandton, Midrand, Fourways. 24/7 insluitend naweke. Skakel +27 82 868 8396."
+        },
+        {
+          "question": "Hoeveel kos geiser installasie in 2026?",
+          "answer": "150L elektriese geiser: R5,500–R8,000 verskaf en geïnstalleer insluitend verwydering van ou eenheid."
+        },
+        {
+          "question": "Benodig ek 'n loodgieter COC by verkoop van eiendom?",
+          "answer": "Ja — vereis in die meeste Suid-Afrikaanse munisipaliteite vir eiendomsverkope."
+        },
+        {
+          "question": "Watter gebiede dek julle?",
+          "answer": "Alle Johannesburg en groter Gauteng — Sandton, Fourways, Randburg, Midrand, Centurion, Pretoria, Roodepoort, Soweto."
+        }
+      ],
+      "whyChoose": [
+        "24/7 noodgeval reaksie — 2–4 uur tipiese aankoms regoor Johannesburg",
+        "Gelisensieerde, versekerde loodgieters met 15+ jaar ondervinding in Gauteng",
+        "Vaste-prys kwotasies ter plaatse — geen verborge uitroepe fooie",
+        "Alle groot geiser handelsmerke verskaf en geïnstalleer (Kwikot, Franke, Defy, Bosch)",
+        "Loodgieter COC sertifikate dieselfde dag uitgereik vir voldoende eiendomme",
+        "Enkelberoep herstelwerk — ons dra gewone onderdele op ons voertuie"
+      ]
+    },
+    "renovation": {
+      "intro": "Sinqobile Construction is 'n spesialis renovasie kontrakteur in Johannesburg en Gauteng. Oor 15 jaar het ons 500+ renovasie projekte voltooi. Huisrenovasiekoste beloop R7,000–R20,000 per vierkante meter in 2026. Ons bestuur elke bedryf onder een dak met 'n toegewyde projekbestuurder.",
+      "pricingNote": "Renovasiekoste wissel van R7,000–R20,000/m² in 2026. Kombuise en badkamers kos meer. Alle kwotasies is gespesifiseerd en vaste-prys.",
+      "materialsNote": "",
+      "subServices": [
+        {
+          "name": "Kombuis Renovasies",
+          "description": "Volledige verbouings: sloping, kabinetwerk, toonbanke, loodgietery, elektries, teëlwerk."
+        },
+        {
+          "name": "Badkamer Renovasies",
+          "description": "Volledige opgraderings: waterdigting, teëlwerk, stort, wasbak, vloerverwarming."
+        },
+        {
+          "name": "Volledige Huisrenovasies",
+          "description": "Oop-plan omskakelings, strukturele wysigings, volledige herpleistering en skilderwerk."
+        },
+        {
+          "name": "Oop-Plan Omskakelings",
+          "description": "Verwyder draende mure met ingenieur se goedkeuring."
+        },
+        {
+          "name": "Motorhuis en Buitegebou Omskakelings",
+          "description": "Skakel motorhuise om na tuiskantore, oumensiewonings of verhuurbare eenhede."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Kombuis renovasie (middel-reeks, 14 m²)",
+          "range": "R60,000 – R190,000"
+        },
+        {
+          "item": "Kombuis renovasie (hoëvlak)",
+          "range": "R190,000 – R300,000"
+        },
+        {
+          "item": "Badkamer renovasie (klein, onder 5 m²)",
+          "range": "R15,000 – R45,000"
+        },
+        {
+          "item": "Badkamer renovasie (medium, 5–10 m²)",
+          "range": "R45,000 – R90,000"
+        },
+        {
+          "item": "Volledige huisrenovasie (per m²)",
+          "range": "R7,000 – R20,000"
+        },
+        {
+          "item": "Oop-plan omskeiliing",
+          "range": "R25,000 – R80,000"
+        },
+        {
+          "item": "Motorhuis omskeiling na oumensiewoning",
+          "range": "R120,000 – R350,000"
+        },
+        {
+          "item": "Binnenshuise skilderwerk (per kamer)",
+          "range": "R3,000 – R6,000"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Gratis Terreinbeoordeling",
+          "description": "Ons besoek jou huis, bespreek jou visie en beoordeel die bestaande struktuur."
+        },
+        {
+          "step": "2",
+          "title": "Ontwerp en Planne",
+          "description": "SACAP argitek vir strukturele veranderings; gedetailleerde omvang vir kosmetiese renovasies."
+        },
+        {
+          "step": "3",
+          "title": "Vaste-Prys Kwotasie",
+          "description": "Gespesifiseerde kwotasie met 30% deposito, fase betalings en 10% by voltooiing."
+        },
+        {
+          "step": "4",
+          "title": "Renovasie",
+          "description": "Toegewyde projekbestuurder, weeklikse foto-opdaterings, stofversperrings in bewoonde huise."
+        },
+        {
+          "step": "5",
+          "title": "Deurloop en Oordrag",
+          "description": "Foutlys, skoonmaak na renovasie, waarborgdokumentasie."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoeveel kos 'n huisrenovasie in Johannesburg in 2026?",
+          "answer": "R7,000–R20,000/m². Kombuis R60,000–R300,000; badkamer R15,000–R90,000."
+        },
+        {
+          "question": "Hoe lank neem 'n volledige huisrenovasie?",
+          "answer": "8–16 weke afhangende van omvang."
+        },
+        {
+          "question": "Benodig ek bouplanne vir 'n renovasie?",
+          "answer": "Slegs vir strukturele veranderings soos muurverwydering. Kosmetiese renovasies vereis nie planne nie."
+        },
+        {
+          "question": "Kan ek in my huis bly tydens die renovasie?",
+          "answer": "Ja, in die meeste gevalle. Ons beskerm leefgebiede met stofversperrings."
+        },
+        {
+          "question": "Waarom is Sandton renovasiekoste hoër?",
+          "answer": "10–15% hoër as gevolg van premium materiaal verwagtings en groter huise."
+        }
+      ],
+      "whyChoose": [
+        "Alle bedrywe onder een dak — loodgietery, elektries, teëlwerk, skilderwerk, skrynwerk",
+        "Vaste-prys, gespesifiseerde kwotasies — jy keur elke reël item goed",
+        "Toegewyde projekbestuurder van ontwerp tot oordrag",
+        "500+ voltooide renovasie projekte regoor Gauteng oor 15 jaar",
+        "Ons hanteer raadsplanne en argitek koördinasie",
+        "Volledig verseker met omvattende konstruksie- en aanspreeklikheidsdekking"
+      ]
+    },
+    "paving": {
+      "intro": "Sinqobile Construction is 'n professionele plaveisel kontrakteur in Johannesburg en Gauteng. Oor 15 jaar het ons honderde plaveiselprojekte voltooi. Plaveiselkoste beloop R350–R950/m² in 2026. Ons hanteer die volle omvang: uitgrowing, subvondament voorbereiding, randsteunmure, platvoer legging, voegvulling en verseëling.",
+      "pricingNote": "Plaveiselkoste wissel na gelang van materiaal en terreintoestande. Arbeid is 30–40% van die begroting. Geen verborge ekstra's nie.",
+      "materialsNote": "",
+      "subServices": [
+        {
+          "name": "Oprit Plaveisel",
+          "description": "Enkel en dubbel opritte in beton, klei baksteen of versperde platvoer."
+        },
+        {
+          "name": "Patio en Vermaaklikheidsarea Plaveisel",
+          "description": "Buitelug leefruimtes, braai areas en swembad omgewings."
+        },
+        {
+          "name": "Looppad en Tuinpad Plaveisel",
+          "description": "Funksionele en dekoratiewe paadjies."
+        },
+        {
+          "name": "Kommersiële en Industriële Plaveisel",
+          "description": "Parkeergebiede, laaisoones, pakhuisvoorportale."
+        },
+        {
+          "name": "Plaveisel Herstelwerk en Herlegging",
+          "description": "Gesakte of beskadigde plaveisel gelig, subvondament hervers, platvoer hergelê."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Betonplatvoer (verskaf en gelê)",
+          "range": "R300 – R600 /m²"
+        },
+        {
+          "item": "Klei/baksteen platvoer (verskaf en gelê)",
+          "range": "R400 – R700 /m²"
+        },
+        {
+          "item": "Versperde platvoer (verskaf en gelê)",
+          "range": "R300 – R600 /m²"
+        },
+        {
+          "item": "Kinderkoppies plaveisel",
+          "range": "R450 – R900 /m²"
+        },
+        {
+          "item": "Natuursteen (graniet, sandsteen)",
+          "range": "R450 – R1,000 /m²"
+        },
+        {
+          "item": "Enkel-motor oprit (30–40 m²)",
+          "range": "R15,000 – R35,000"
+        },
+        {
+          "item": "Dubbel oprit (60–80 m²)",
+          "range": "R30,000 – R65,000"
+        },
+        {
+          "item": "Plaveisel herstelwerk / herlegging",
+          "range": "R200 – R450 /m²"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Gratis Terreinbesoek",
+          "description": "Meet area, beoordeel dreinering, bespreek materiaal, skriftelike kwotasie binne 48 uur."
+        },
+        {
+          "step": "2",
+          "title": "Terrein Voorbereiding",
+          "description": "Grawe tot diepte, verwyder organiese materiaal, installeer verdigte subvondament."
+        },
+        {
+          "step": "3",
+          "title": "Platvoer Installasie",
+          "description": "Platvoer gelê in gekose patroon met presisiesnitte rondom kurwes en dreineers."
+        },
+        {
+          "step": "4",
+          "title": "Afwerking en Oordrag",
+          "description": "Voeg gevul met sand, oppervlak plaat-verdig, waarborg oorhandig."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoeveel kos plaveisel per m² in Johannesburg in 2026?",
+          "answer": "R350–R950/m² afhangende van materiaal."
+        },
+        {
+          "question": "Watter plaveisel materiaal is die beste vir 'n oprit?",
+          "answer": "Versperde betonplatvoer — bekostigbaar, duursaam, hanteer voertuiglas goed."
+        },
+        {
+          "question": "Hoe lank neem 'n opritprojek?",
+          "answer": "Enkel-motor: 2–3 dae; dubbel: 3–5 dae."
+        },
+        {
+          "question": "Waarom is subvondament voorbereiding belangrik?",
+          "answer": "Voorkom sakking en verskuiwing — die mees algemene oorsaak van plaveiselmislukking."
+        },
+        {
+          "question": "Verwyder julle ou plaveisel eers?",
+          "answer": "Ja — ons lig ou plaveisel op en begin vars met behoorlike subvondament."
+        }
+      ],
+      "whyChoose": [
+        "Ingenieursgraad subvondament voorbereiding met plaatverdigters en lasergelykmaking",
+        "15+ jaar plaveisel ondervinding regoor Gauteng",
+        "Alle materiaal verskaf en gelê — beton, klei baksteen, kinderkoppies, natuursteen",
+        "Gratis terreinbesoek met dreineerassessering en skriftelike kwotasie binne 48 uur",
+        "Werkmanskap waarborg op elke installasie",
+        "Volledig verseker met omvattende aanspreeklikheidsdekking"
+      ]
+    },
+    "concrete": {
+      "intro": "Sinqobile Construction bied professionele betondienste regoor Johannesburg en Gauteng — van fondamente en vloerplate tot keermure. Oor 15 jaar het ons honderde betonprojekte gegiet, in samewerking met strukturele ingenieurs om aan SANS 10400 en NHBRC vereistes te voldoen. Ons gebruik getoetste mengontwerpe van PPC, Lafarge en AfriSam.",
+      "pricingNote": "Koste hang af van mengsterkte (MPa), volume, wapeningsstaal en terrein toegang. Gereedmeng van 'n meng-aanleg kos R1,800–R2,500/m³.",
+      "materialsNote": "",
+      "subServices": [
+        {
+          "name": "Fondamente (Vlot, Strook en Stompvoet)",
+          "description": "Vlotfondamente vir nuwe huise, strookfondamente vir grensomheinings. Almal ontwerp deur geregistreerde ingenieurs."
+        },
+        {
+          "name": "Vloerplate en Hangende Plate",
+          "description": "Grondvloerplate en hangende plate met rib-en-blok of in-situ gewapende beton."
+        },
+        {
+          "name": "Betonoprite",
+          "description": "Gewapende betonoprite teen R300–R450/m²."
+        },
+        {
+          "name": "Keermure",
+          "description": "Gewapende beton keermure vir hellende terreine en tuinterrassering."
+        },
+        {
+          "name": "Betonherstelwerk en Waterdigting",
+          "description": "Kraak-inspuiting, afskilfering herstelwerk en waterdigte bekledingstelsels."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Vlotfondament (residensiëel)",
+          "range": "R1,200 – R2,000 /m²"
+        },
+        {
+          "item": "Strookfondament (grensomheinings)",
+          "range": "R800 – R1,500 /lin. m"
+        },
+        {
+          "item": "Grondvloerplaat (100 mm, 25 MPa)",
+          "range": "R450 – R800 /m²"
+        },
+        {
+          "item": "Hangende plaat (rib-en-blok)",
+          "range": "R1,500 – R2,500 /m²"
+        },
+        {
+          "item": "Betonoprit (gewapen, 100 mm)",
+          "range": "R300 – R450 /m²"
+        },
+        {
+          "item": "Keermuur (tot 1.5 m)",
+          "range": "R2,500 – R5,000 /lin. m"
+        },
+        {
+          "item": "Gereedmeng beton (afgelewer)",
+          "range": "R1,800 – R2,500 /m³"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Terreinbeoordeling",
+          "description": "Inspekteer terrein, hersien ingenieurstekening, beoordeel grondtoestande."
+        },
+        {
+          "step": "2",
+          "title": "Uitgrawing en Bekisting",
+          "description": "Grawe tot diepte, stel bekisting op, installeer wapeningsstaal."
+        },
+        {
+          "step": "3",
+          "title": "Giet en Vibreer",
+          "description": "Beton afgelewer deur gereedmeng-vragmotor, gevibreer om lugsakke te verwyder."
+        },
+        {
+          "step": "4",
+          "title": "Afwerking en Uitharding",
+          "description": "Oppervlak gelyk, afgewerk soos vereis, uitgehard vir 7–28 dae."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoeveel kos 'n betonfondament in 2026?",
+          "answer": "Residensiële vlotfondament: R1,200–R2,000/m²."
+        },
+        {
+          "question": "Watter betonsterkte benodig ek vir 'n fondament?",
+          "answer": "25 MPa vir die meeste residensiële huise — gespesifiseer deur jou strukturele ingenieur."
+        },
+        {
+          "question": "Hoe lank neem beton om uit te hard?",
+          "answer": "70% sterkte na 7 dae, volle sterkte na 28 dae."
+        },
+        {
+          "question": "Vlot vs strookfondament?",
+          "answer": "Vlot dek die hele voetspoor (beter vir kleigrond); strook loop slegs onder mure."
+        },
+        {
+          "question": "Verskaf julle die beton?",
+          "answer": "Ja — gereedmeng van PPC, Lafarge, AfriSam mengaanlegte. Nooit terrein-gemeng vir strukturele werk nie."
+        }
+      ],
+      "whyChoose": [
+        "Ingenieur-gespesifiseerde beton — korrekte MPa, wapening en mengontwerp elke keer",
+        "Gereedmeng van PPC, Lafarge, AfriSam mengaanlegte",
+        "15+ jaar gieting van fondamente, plate en keermure regoor Gauteng",
+        "Behoorlike vibrasie en uitharding — geen lugsakke, geen vroeë kraakvorming",
+        "Volledig verseker met omvattende konstruksie aanspreeklikheidsdekking",
+        "Gratis terreinbeoordeling met gedetailleerde, gespesifiseerde kwotasies"
+      ]
+    },
+    "roofing": {
+      "intro": "Sinqobile Construction bied professionele dakdienste regoor Johannesburg en Gauteng — van noodgeval lekkasie herstelwerk tot volledige vervangings. 15+ jaar ondervinding op honderde dakke. Koste beloop R450–R1,000/m². Ons werk met IBR staal, gegolfde plaatmateriaal, betonteëls, klei teëls en chromadek.",
+      "pricingNote": "Koste wissel na gelang van materiaal, helling en tipe werk. Gratis dak inspeksie ingesluit. Alle kwotasies sluit materiaal, arbeid en afvalverwydering in.",
+      "materialsNote": "",
+      "subServices": [
+        {
+          "name": "Dakherstelwerk en Lekkasie Regstelling",
+          "description": "Gebarste teëls, gekorrodeerde plaatmateriaal, beskadigde wering, lekkende dak valleie."
+        },
+        {
+          "name": "Dakvervanger en Herdakking",
+          "description": "Volledige stroking en vervanging teen R550–R1,650/m²."
+        },
+        {
+          "name": "Nuwe Dak Installasie",
+          "description": "Dakstrukture vir nuwe bouwerk en uitbreidings."
+        },
+        {
+          "name": "Dak Skildery en Bekleding",
+          "description": "Skoonmaak, rosherstelwerk, UV-bestande bekledingstelsels teen R80–R150/m²."
+        },
+        {
+          "name": "Gootte, Fasias en Aflooppype",
+          "description": "Naatlose aluminium gootte, fasia planke en aflooppype."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Dakherstelwerk (standaard, per m²)",
+          "range": "R88 – R200 /m²"
+        },
+        {
+          "item": "IBR / gegolfde staalplaatmateriaal (nuut)",
+          "range": "R450 – R650 /m²"
+        },
+        {
+          "item": "Betonteëls (geïnstalleer)",
+          "range": "R500 – R800 /m²"
+        },
+        {
+          "item": "Klei dakteëls (geïnstalleer)",
+          "range": "R600 – R1,000 /m²"
+        },
+        {
+          "item": "Volledige herdakking (strok en vervang)",
+          "range": "R550 – R1,650 /m²"
+        },
+        {
+          "item": "Dakskilderwerk (skoonmaak, behandel, 2 lae)",
+          "range": "R80 – R150 /m²"
+        },
+        {
+          "item": "Naatlose aluminium gootte (per lin. m)",
+          "range": "R250 – R450 /m"
+        },
+        {
+          "item": "Ou materiaal verwydering (per m²)",
+          "range": "R50 – R100 /m²"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Gratis Dakinspeksie",
+          "description": "Inspekteer van bo en binne plafon, fotografeer probleemgebiede, verskaf verslag."
+        },
+        {
+          "step": "2",
+          "title": "Kwotasie en Skedulering",
+          "description": "Gespesifiseerde kwotasie. Noodgeval herstelwerk kan dikwels dieselfde dag begin."
+        },
+        {
+          "step": "3",
+          "title": "Herstelwerk of Installasie",
+          "description": "Doeltreffende werk wat blootstellingstyd minimeer met veiligheidsharnas en steiers."
+        },
+        {
+          "step": "4",
+          "title": "Skoonmaak en Waarborg",
+          "description": "Alle puin verwyder, werkmanskap waarborg verskaf."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoeveel kos 'n nuwe dak in Johannesburg in 2026?",
+          "answer": "IBR staal: R450–R650/m²; betonteëls: R500–R800/m²; klei teëls: R600–R1,000/m²."
+        },
+        {
+          "question": "Herstelwerk of volledige vervanging?",
+          "answer": "Herstelwerk vir plaaslike skade. Vervang wanneer 30%+ beskadig is of na verskeie herstelwerk."
+        },
+        {
+          "question": "Kan julle lekkasies tydens reënseisoen regstel?",
+          "answer": "Ja — noodgeval herstelwerk beskikbaar die hele jaar insluitend Oktober–Maart."
+        },
+        {
+          "question": "Beste dakmateriaal vir Johannesburg?",
+          "answer": "IBR staal plaatmateriaal — bekostigbaar, hanteer hael en reën goed."
+        },
+        {
+          "question": "Voorkom dakskilderwerk lekkasies?",
+          "answer": "Nee — stel lekkasies eers reg, dan beklee om dakleeftyd met 10–15 jaar te verleng."
+        }
+      ],
+      "whyChoose": [
+        "Gratis dakinspeksie met gedetailleerde fotografiese verslag",
+        "Noodgeval lekkasie herstelwerk dieselfde dag beskikbaar regoor Johannesburg",
+        "Alle materiaal: IBR staal, betonteëls, klei teëls, chromadek, aluminium",
+        "15+ jaar dakondervinding regoor Gauteng",
+        "Veiligheidskonform: harnasse, steiers en versekering op elke werk",
+        "Werkmanskap waarborg op alle herstelwerk en installasies"
+      ]
+    },
+    "waterproofing": {
+      "intro": "Sinqobile Construction bied professionele waterdigting en vogwering regoor Johannesburg en Gauteng. 15+ jaar behandeling van honderde eiendomme. Koste beloop R70–R600/m² in 2026. Ons diagnoseer die bron van elke lek voor ons 'n oplossing aanbeveel.",
+      "pricingNote": "Koste hang af van metode, oppervlakarea en substraat toestand. Alle kwotasies sluit oppervlakvoorbereiding, materiaal, arbeid en waarborg in.",
+      "materialsNote": "",
+      "subServices": [
+        {
+          "name": "Dak Waterdigting",
+          "description": "Fakkelontsteking bitumenmembraan, poliuretaan en akriel bekledingstelsels teen R200–R500/m²."
+        },
+        {
+          "name": "Badkamer en Nat Area Waterdigting",
+          "description": "Sementgebonde en vloeibare membraan aangebring voor teëllegging."
+        },
+        {
+          "name": "Stygende Vog Behandeling",
+          "description": "Chemiese DPC inspuiting teen R70–R250/m²."
+        },
+        {
+          "name": "Kelder en Ondergrondse Waterdigting",
+          "description": "Bergingsstelsels teen R800–R1,500/m²."
+        },
+        {
+          "name": "Buitemuur Waterdigting",
+          "description": "Waterafstotende verseëlaars en elastomeriese bekledingstelsels."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Fakkelontsteking membraan (platdak)",
+          "range": "R200 – R400 /m²"
+        },
+        {
+          "item": "Bitumen spuit-op waterdigting",
+          "range": "R300 – R500 /m²"
+        },
+        {
+          "item": "Stygende vog inspuiting (DPC)",
+          "range": "R70 – R250 /m²"
+        },
+        {
+          "item": "Interne vogwering (berging + pleister)",
+          "range": "R320 – R650 /m²"
+        },
+        {
+          "item": "Kelder bergingstelsel",
+          "range": "R800 – R1,500 /m²"
+        },
+        {
+          "item": "Badkamer waterdigting (voor teëllegging)",
+          "range": "R150 – R350 /m²"
+        },
+        {
+          "item": "Buitemuur waterafstotende verseëlaar",
+          "range": "R50 – R120 /m²"
+        },
+        {
+          "item": "Vogwerende verf / bekleding",
+          "range": "R300 – R450 /m²"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Vog en Lekkasie Assessering",
+          "description": "Inspekteer geaffekteerde area deur gebruik van vogmeters om die omvang te karteer en die waterbron te identifiseer."
+        },
+        {
+          "step": "2",
+          "title": "Diagnose en Kwotasie",
+          "description": "Beveel die mees doeltreffende metode aan met 'n gespesifiseerde kwotasie."
+        },
+        {
+          "step": "3",
+          "title": "Oppervlakvoorbereiding en Aanwending",
+          "description": "Berei oppervlak voor en pas waterdigtingstelsel toe volgens vervaardiger se spesifikasies."
+        },
+        {
+          "step": "4",
+          "title": "Toetsing en Waarborg",
+          "description": "Vloed-toets platdakke en badkamers. Werkmanskap waarborg verskaf."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoeveel kos waterdigting in 2026?",
+          "answer": "R70–R600/m² afhangende van metode. Stygende vog R70–R250/m²; fakkelontsteking R200–R400/m²."
+        },
+        {
+          "question": "Wat veroorsaak stygende vog?",
+          "answer": "Grondvog trek op deur mure omdat die DPC misluk het of nooit geïnstalleer was nie."
+        },
+        {
+          "question": "Hoe lank hou dakwaterdigting?",
+          "answer": "Fakkelontsteking: 10–15 jaar; akriel bekledingstelsels: 5–8 jaar."
+        },
+        {
+          "question": "Moet ek waterdig voor teëllegging?",
+          "answer": "Ja — noodsaaklik. Vog sypel deur voeggewrigte en veroorsaak strukturele skade."
+        },
+        {
+          "question": "Kan julle vog oplos sonder om pleister te verwyder?",
+          "answer": "Vir stygende vog — ja, met DPC inspuiting. Ernstig besmette pleister moet verwyder word."
+        }
+      ],
+      "whyChoose": [
+        "Behoorlike diagnose eerste — ons identifiseer die waterbron voor ons behandeling aanbeveel",
+        "Produkte van a.b.e., Sika en Dulux AquaShield met vervaardiger-ondersteunde waarborge",
+        "15+ jaar behandeling van vog en lekkasies regoor Gauteng",
+        "Vloed-getoetste resultate — platdakke en badkamers getoets voor oordrag",
+        "Gratis vog en lekkasie assesserings met vogmeter kartering",
+        "Volledig verseker met omvattende aanspreeklikheidsdekking"
+      ]
+    },
+    "painting": {
+      "intro": "Sinqobile Construction bied professionele binnenshuise en buitelug skilderwerk regoor Johannesburg en Gauteng. Oor 15 jaar het ons honderde huise getransformeer. Binnewerk: R50–R80/m²; buitewerk: R60–R200+/m². Ons gebruik premium Dulux, Plascon en Fired Earth verf. Behoorlike oppervlakvoorbereiding laat verf 8–10 jaar hou.",
+      "pricingNote": "Koste hang af van oppervlakarea, toestand, toeganklikheid en verfgehalte. Premium verf hou 8–10 jaar. Alle kwotasies sluit oppervlakvoorbereiding, materiaal, arbeid en skoonmaak in.",
+      "materialsNote": "",
+      "subServices": [
+        {
+          "name": "Binnenshuise Skilderwerk",
+          "description": "Mure, plafonne, kroonlyswerk, vloerplanke, deurrame. R50–R80/m²."
+        },
+        {
+          "name": "Buitelug Skilderwerk",
+          "description": "Huismure, fasia, vensterrame, motorhuis deure, hekke. R60–R200+/m²."
+        },
+        {
+          "name": "Kommersiële en Kantoor Skilderwerk",
+          "description": "Kantore, kleinhandel, pakhuise. Ons werk na ure."
+        },
+        {
+          "name": "Spesiale Afwerkings",
+          "description": "Kenmerkmure, Veneciaanse pleisterwerk, epoksie vloerbekledingstelsels, anti-skimmel bekledingstelsels."
+        },
+        {
+          "name": "Dakskilderwerk",
+          "description": "Skoonmaak, rosherstelwerk, UV-bestande bekledingstelsels teen R80–R150/m²."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Binnenshuise mure (per m², 2 lae)",
+          "range": "R50 – R80 /m²"
+        },
+        {
+          "item": "Plafonskilderwerk (per kamer)",
+          "range": "R500 – R1,500"
+        },
+        {
+          "item": "Buitelug mure (per m², 2 lae)",
+          "range": "R60 – R200 /m²"
+        },
+        {
+          "item": "Volledige huis binnekant (3-slaapkamer)",
+          "range": "R15,000 – R35,000"
+        },
+        {
+          "item": "Volledige huis buitekant (3-slaapkamer)",
+          "range": "R20,000 – R50,000"
+        },
+        {
+          "item": "Dakskilderwerk (per m²)",
+          "range": "R80 – R150 /m²"
+        },
+        {
+          "item": "Kenmerkmuur / spesiale afwerking",
+          "range": "R150 – R400 /m²"
+        },
+        {
+          "item": "Epoksie motorhuis vloerbekleding",
+          "range": "R200 – R350 /m²"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Gratis Kwotasie en Kleurkonsultasie",
+          "description": "Meet area, beoordeel oppervlakke, bespreek kleurvoorkeure, verskaf skriftelike kwotasie."
+        },
+        {
+          "step": "2",
+          "title": "Oppervlakvoorbereiding",
+          "description": "Vul krake, skuur, skraap los verf, behandel skimmel, pas korrekte grondlaag toe."
+        },
+        {
+          "step": "3",
+          "title": "Skilderwerk",
+          "description": "Twee lae premium verf met kwas, roller of luglose spuit."
+        },
+        {
+          "step": "4",
+          "title": "Skoonmaak en Oordrag",
+          "description": "Droëlakens verwyder, spat skoongemaak, afwerkingsverf gelaat, waarborg verskaf."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoeveel kos huisskilderwerk in 2026?",
+          "answer": "Binnewerk: R50–R80/m². Volledige 3-slaapkamer binnewerk: R15,000–R35,000. Buitewerk: R60–R200+/m²."
+        },
+        {
+          "question": "Hoe lank hou buitelug verf?",
+          "answer": "8–10 jaar met gehalte verf (Dulux Weatherguard, Plascon SunProof) behoorlik aangewend."
+        },
+        {
+          "question": "Skilder oor bestaande of strokel eers?",
+          "answer": "Skilder oor as bestaande verf stewig is. Strokel slegs as verf ernstig afskilfer."
+        },
+        {
+          "question": "Skilder julle naweke of na ure?",
+          "answer": "Ja, vir kommersiële kliënte. Weeksdae 7:30–17:00, Saterdae 8:00–13:00 vir residensiëel."
+        },
+        {
+          "question": "Watter verfhandelsmerke gebruik julle?",
+          "answer": "Dulux, Plascon, Fired Earth — slegs premium. Nooit ongemerkte of verdunde verf nie."
+        }
+      ],
+      "whyChoose": [
+        "Slegs premium verf — Dulux, Plascon, Fired Earth (nooit ongemerkte of verdunde verf)",
+        "Deeglike oppervlakvoorbereiding — krake gevul, geskuur, grondlaag aangewend",
+        "15+ jaar skilderwerk van huise en kommersiële eiendomme regoor Gauteng",
+        "Gratis kleurkonsultasie met monsters en paletvoorstellings",
+        "Skoon, respekvolle spanne — meubels gedek, vloere beskerm",
+        "Werkmanskap waarborg met afwerkingsverf gelaat"
+      ]
+    },
+    "electrical": {
+      "intro": "Sinqobile Construction bied gelisensieerde elektriese dienste regoor Johannesburg en Gauteng — installasies, herbedrating, foutvinding en COC sertifikate. Ons elektrisiens voldoen aan SANS 10142-1. Standaard tariewe: R300–R600/uur in 2026.",
+      "pricingNote": "Koste hang af van omvang, kabellooptyd, aantal punte en nuwe versus herinstallasie. Geen verborge uitroepe fooie nie.",
+      "materialsNote": "",
+      "subServices": [
+        {
+          "name": "Elektriese Installasies",
+          "description": "VS-bord, kringbedrading, stopcontacte, ligpunte, geiserverbindings vir nuwe bouwerk en renovasies."
+        },
+        {
+          "name": "Elektriese COC Sertifikate",
+          "description": "Inspeksies en sertifikate vir eiendomsverkope. R850–R2,750."
+        },
+        {
+          "name": "VS-Bord Opgraderings",
+          "description": "Vervang ou sekering borde met moderne stroombrekers en aard lek beskerming (RCD/ELCB). R3,000–R8,000."
+        },
+        {
+          "name": "Foutvinding en Herstelwerk",
+          "description": "Stroombrekers wat struikel, flikker ligte, dooie stopcontacte — gediagnoseer en herstel."
+        },
+        {
+          "name": "Huis Herbedrating",
+          "description": "Volledige of gedeeltelike herbedrating teen R20,000–R30,000 vir 'n 3-slaapkamer huis."
+        },
+        {
+          "name": "Buitelug en Sekuriteitsverligting",
+          "description": "Tuinligte, sekuriteitssoekligte, hekdriwaandrywers, elektriese omheining installasies."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Elektrisiën tarief (standaard, per uur)",
+          "range": "R300 – R600 /hr"
+        },
+        {
+          "item": "Elektriese COC sertifikaat",
+          "range": "R850 – R2,750"
+        },
+        {
+          "item": "Nuwe stopcontact (enkel)",
+          "range": "R300 – R500"
+        },
+        {
+          "item": "Nuwe stopcontact (dubbel)",
+          "range": "R400 – R600"
+        },
+        {
+          "item": "VS-bord opgradering",
+          "range": "R3,000 – R8,000"
+        },
+        {
+          "item": "Volledige huis herbedrating (3-slaapkamer)",
+          "range": "R20,000 – R30,000"
+        },
+        {
+          "item": "Geiser verbinding / tydskakelaar",
+          "range": "R1,500 – R3,000"
+        },
+        {
+          "item": "Sekuriteitsverligting (per lig, geïnstalleer)",
+          "range": "R500 – R1,500"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Assessering en Kwotasie",
+          "description": "Inspekteer installasie, identifiseer omvang, verskaf gespesifiseerde kwotasie."
+        },
+        {
+          "step": "2",
+          "title": "Installasie / Herstelwerk",
+          "description": "Werk voltooi volgens SANS 10142-1 standaarde."
+        },
+        {
+          "step": "3",
+          "title": "Toetsing en Sertifisering",
+          "description": "Gekalibreerde instrumente — isolasieweerstand, aardlus, RCD toetsing. COC uitgereik."
+        },
+        {
+          "step": "4",
+          "title": "Oordrag en Dokumentasie",
+          "description": "Toetssertifikaat, kringskedule en COC verskaf. VS-bord uitleg verduidelik."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoeveel kos 'n elektriese COC in 2026?",
+          "answer": "R850–R2,750 afhangende van eiendomsgrootte. Standaard 3-slaapkamer: R850–R1,500."
+        },
+        {
+          "question": "Benodig ek 'n COC by verkoop van my huis?",
+          "answer": "Ja — vereis deur Suid-Afrikaanse wetgewing. Geldig vir 2 jaar."
+        },
+        {
+          "question": "Hoeveel om 'n huis te herbedraad?",
+          "answer": "3-slaapkamer: R20,000–R30,000 insluitend nuwe VS-bord en alle kringe."
+        },
+        {
+          "question": "Waarom struikel my VS-bord aanhou?",
+          "answer": "Oorlaaide kringe, foutiewe toestelle, vog, of verouderde kabel isolasie."
+        },
+        {
+          "question": "Stroombreker vs aardlekaanspreeklikheid?",
+          "answer": "MCB beskerm teen oorlading; RCD/ELCB beskerm teen elektrokusie. Albei vereis deur wetgewing."
+        }
+      ],
+      "whyChoose": [
+        "Geregistreerde elektrisiens wat voldoen aan SANS 10142-1",
+        "Dieselfde dag COC sertifikate vir voldoende installasies",
+        "Gekalibreerde toetsinstrumente — volledige dokumentasie verskaf",
+        "Alle kringe duidelik gemerk by die VS-bord",
+        "15+ jaar elektriese ondervinding regoor Gauteng",
+        "Volledig verseker met omvattende aanspreeklikheidsdekking"
+      ]
+    },
+    "plastering": {
+      "intro": "Sinqobile Construction bied professionele pleisterwerk en skimboordeling regoor Johannesburg en Gauteng. Pleisterwerk: R80–R150/m²; skimboordeling: R40–R110/m². Ons gebruik getoetste pleistermenguns en behoorlike uitharding om kraakvorming te voorkom.",
+      "pricingNote": "Koste hang af van oppervlak toestand, hoogte en afwerkingsgehalte. Steiers addisioneel vir meer as een verdieping. Alle kwotasies sluit voorbereiding, materiaal, arbeid en skoonmaak in.",
+      "materialsNote": "",
+      "subServices": [
+        {
+          "name": "Binnenshuise Muurpleisterwerk",
+          "description": "Sand-sement pleister tot 12–15 mm met gladde skuimspatuul afwerking. R80–R150/m²."
+        },
+        {
+          "name": "Skimboordeling",
+          "description": "2–3 mm dun afwerkingslaag oor bestaande pleister. R40–R110/m²."
+        },
+        {
+          "name": "Buitelug Aftreksel",
+          "description": "Weerbestande afwerkings insluitend glad, getekstureer en tiroliëns."
+        },
+        {
+          "name": "Plafon Pleisterwerk en Herstelwerk",
+          "description": "Nuwe plafon pleister, kraak herstelwerk, kroonlys installasie."
+        },
+        {
+          "name": "Pleister Herstelwerk en Kraak Regstelling",
+          "description": "Geskeurde of losgelate pleister uitgesny, oorsaak reggemaak, herpleister."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Binnenshuise muurpleisterwerk (standaard)",
+          "range": "R80 – R150 /m²"
+        },
+        {
+          "item": "Skimboordeling (gladde afwerking)",
+          "range": "R40 – R110 /m²"
+        },
+        {
+          "item": "Buitelug aftreksel",
+          "range": "R100 – R180 /m²"
+        },
+        {
+          "item": "Plafon pleisterwerk (nuut)",
+          "range": "R90 – R160 /m²"
+        },
+        {
+          "item": "Pleister herstelwerk / lapping",
+          "range": "R120 – R250 /m²"
+        },
+        {
+          "item": "Kroonlys installasie (per lin. m)",
+          "range": "R45 – R120 /m"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Oppervlak Assessering",
+          "description": "Inspekteer mure vir loodregte lyn, waterpas en toestand."
+        },
+        {
+          "step": "2",
+          "title": "Voorbereiding",
+          "description": "Bevochtig mure, pas PVA bindmiddel aan indien nodig, stel hoekprofile in."
+        },
+        {
+          "step": "3",
+          "title": "Aanwending",
+          "description": "Pleister aangewend in een of twee lae tot gespesifiseerde dikte."
+        },
+        {
+          "step": "4",
+          "title": "Uitharding en Oordrag",
+          "description": "Vogtig gehou vir 3–7 dae om krimping kraakvorming te voorkom."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoeveel kos pleisterwerk in 2026?",
+          "answer": "Standaard binnenshuis: R80–R150/m². Skimboordeling: R40–R110/m². Buitelug: R100–R180/m²."
+        },
+        {
+          "question": "Pleisterwerk vs skimboordeling?",
+          "answer": "Pleisterwerk is 12–15 mm op kaal baksteenwerk; skimboordeling is 2–3 mm oor bestaande pleister."
+        },
+        {
+          "question": "Waarom kraak pleister?",
+          "answer": "Te vinnige droog, verkeerde sand-tot-sement verhouding, of te dik aangewend."
+        },
+        {
+          "question": "Hoe lank voor nuwe pleister geskilder word?",
+          "answer": "4–6 weke uitharding voor skilderwerk. Gebruik pleistergrondlaag voor boonste lae."
+        },
+        {
+          "question": "Kan julle bestaande pleister teksture pas?",
+          "answer": "Ja — gladde skuimspatuul, sponge afwerking, rofgooi, getekstureerde aftreksels almal gepas."
+        }
+      ],
+      "whyChoose": [
+        "Korrekte sand-tot-sement verhoudings — getoetste menguns vir elke toepassing",
+        "Behoorlike uitharding — minimum 3–7 dae om krimping kraakvorming te voorkom",
+        "15+ jaar pleisterwerk ondervinding regoor Gauteng",
+        "Gladde skimboordeling afwerkings en getekstureerde aftreksels",
+        "Gratis ter-plaatse assessering en skriftelike kwotasie",
+        "Volledig verseker met werkmanskap waarborg"
+      ]
+    },
+    "tiling": {
+      "intro": "Sinqobile Construction bied professionele teëlwerk dienste regoor Johannesburg en Gauteng. Teëlwerk arbeid: R120–R350/m²; totaal geïnstalleer R200–R1,000+/m². Ons werk met keramiek, porselein, natuursteen, mosaïek en groot-formaat teëls.",
+      "pricingNote": "Koste hang af van teël materiaal, patroon kompleksiteit en substraat voorbereiding. Badkamer teëlwerk kos meer as gevolg van waterdigting.",
+      "materialsNote": "",
+      "subServices": [
+        {
+          "name": "Vloer Teëlwerk",
+          "description": "Keramiek, porselein of natuursteen vloer teëlwerk. R200–R450/m²."
+        },
+        {
+          "name": "Muur Teëlwerk",
+          "description": "Kombuis spatskildwagborde, kenmerkmure, badkamer mure, stortafsluiting."
+        },
+        {
+          "name": "Badkamer en Stort Teëlwerk",
+          "description": "Volledige teëlwerk met waterdigting en vloer hellings. R350–R600/m²."
+        },
+        {
+          "name": "Buitelug en Patio Teëlwerk",
+          "description": "Glibberwerende porselein, leisteen of klip vir patio's en swembad omgewings."
+        },
+        {
+          "name": "Teël Herstelwerk en Hervoeg",
+          "description": "Vervang gebarste teëls, herverseël voeg, vervang silikon."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Keramiek vloerteëls (geïnstalleer)",
+          "range": "R200 – R400 /m²"
+        },
+        {
+          "item": "Porselein vloerteëls (geïnstalleer)",
+          "range": "R300 – R600 /m²"
+        },
+        {
+          "item": "Natuursteen teëls (geïnstalleer)",
+          "range": "R500 – R1,000+ /m²"
+        },
+        {
+          "item": "Badkamer muur + vloer teëlwerk",
+          "range": "R350 – R600 /m²"
+        },
+        {
+          "item": "Kombuis spatskildwagbord",
+          "range": "R250 – R500 /m²"
+        },
+        {
+          "item": "Teëlwerk arbeid alleen (per m²)",
+          "range": "R120 – R350 /m²"
+        },
+        {
+          "item": "Teël kleefmiddel + voeg (per m²)",
+          "range": "R80 – R230 /m²"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Meet en Kwotasie",
+          "description": "Meet area, beoordeel substraat, verskaf alles-ingeslote kwotasie."
+        },
+        {
+          "step": "2",
+          "title": "Substraat Voorbereiding",
+          "description": "Gelyk ongelyke vloere, waterdig nat areas, grondeer oppervlakke."
+        },
+        {
+          "step": "3",
+          "title": "Teël Installasie",
+          "description": "Gelê met konsekwente afstandhouers, presiese snitte, by elke ry vir waterpas gekontroleer."
+        },
+        {
+          "step": "4",
+          "title": "Voeg en Verseëling",
+          "description": "Voeg aangewend en verseël. Silikon by bewegingsvoege. Oppervlak skoongemaak."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoeveel kos teëlwerk in 2026?",
+          "answer": "Keramiek: R200–R400/m²; porselein: R300–R600/m²; natuursteen: R500–R1,000+/m²."
+        },
+        {
+          "question": "Waterdig voor teëlwerk in badkamer?",
+          "answer": "Ja — noodsaaklik. Voeg is nie waterdig nie."
+        },
+        {
+          "question": "Kan julle oor bestaande teëls teël?",
+          "answer": "Ja, as dit stewig geheg en waterpas is."
+        },
+        {
+          "question": "Watter teëlgrootte laat 'n kamer groter lyk?",
+          "answer": "Groot formaat (600×600 mm of 600×1200 mm) met minimale voegkleure."
+        },
+        {
+          "question": "Hoe lank neem teëlwerk?",
+          "answer": "Standaard badkamer: 3–5 dae; volledige huis vloer: 5–10 dae."
+        }
+      ],
+      "whyChoose": [
+        "Alle teël tipes — keramiek, porselein, natuursteen, mosaïek, groot-formaat",
+        "Behoorlike substraat voorbereiding en waterdigting in elke nat area",
+        "Diamantsaagblad natsnit vir presiese snitte en skoon rande",
+        "15+ jaar teëlwerk ondervinding regoor Gauteng",
+        "Gratis meting en teëlkeuseadvies",
+        "Werkmanskap waarborg op elke installasie"
+      ]
+    },
+    "extensions": {
+      "intro": "Sinqobile Construction is 'n NHBRC-geregistreerde huis uitbreidings kontrakteur in Johannesburg en Gauteng. 15+ jaar, honderde kamer byvoegings, tweede verdieping uitbreidings, ouma woonstelle, en motorhuis omskakelings. Uitbreidings: R10,000–R16,000/m² (enkel verdieping) of R15,000–R25,000/m² (tweede verdieping) in 2026. Elke uitbreiding vereis raad-goedgekeurde planne.",
+      "pricingNote": "Uitbreidings kostes hang af van grootte, verdiepings, afwerkings, en strukturele kompleksiteit. Raad-goedgekeurde planne vereis vir almal. Alle kwotasies is geïtemiseer en vaste prys.",
+      "subServices": [
+        {
+          "name": "Kamer Byvoegings (Enkel Verdieping)",
+          "description": "Ekstra slaapkamers, sitkamers, tuiskantore. R10,000–R16,000/m²."
+        },
+        {
+          "name": "Tweede Verdieping Byvoegings",
+          "description": "Volledige boonste vloer. R15,000–R25,000/m²."
+        },
+        {
+          "name": "Ouma Woonstelle",
+          "description": "Selfstandige eenhede met slaapkamer, badkamer, kombuis, private ingang. 40 m²: R350,000–R750,000."
+        },
+        {
+          "name": "Motorhuis Omskakelings",
+          "description": "Omskep motorhuise na tuiskantore, gimnasiums, vermaaklikheidsruimtes, of huurpersele."
+        },
+        {
+          "name": "Bedekte Patios & Motorafdakke",
+          "description": "Staal- of houtraam bedekte patios, braai areas, en motorafdakke."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Enkel-verdieping uitbreiding (per m²)",
+          "range": "R10,000 – R16,000 /m²"
+        },
+        {
+          "item": "Tweede verdieping byvoeging (per m²)",
+          "range": "R15,000 – R25,000 /m²"
+        },
+        {
+          "item": "Ouma woonstel (40–60 m²)",
+          "range": "R350,000 – R750,000"
+        },
+        {
+          "item": "Motorhuis omskepping",
+          "range": "R120,000 – R350,000"
+        },
+        {
+          "item": "Bedekte patio (staalraam + dak)",
+          "range": "R1,500 – R3,500 /m²"
+        },
+        {
+          "item": "Argitek planne + raad indiening",
+          "range": "R15,000 – R40,000"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Gratis Konsultasie",
+          "description": "Besoek eiendom, bespreek vereistes, adviseer oor uitvoerbaarheid en kostes."
+        },
+        {
+          "step": "2",
+          "title": "Planne & Goedkeurings",
+          "description": "Koordineer met SACAP argitek, dien in by munisipaliteit (4–12 weke)."
+        },
+        {
+          "step": "3",
+          "title": "Konstruksie",
+          "description": "Toegewyde projekbestuurder, weeklikse foto opdaterings, stofversperrings wat bestaande huis beskerm."
+        },
+        {
+          "step": "4",
+          "title": "Integrasie & Oorhandiging",
+          "description": "Pas uitbreiding by bestaande huis met NHBRC inrolleringsdokumentasie."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoeveel kos 'n huis uitbreiding in 2026?",
+          "answer": "Enkel verdieping: R10,000–R16,000/m². Tweede verdieping: R15,000–R25,000/m². Ouma woonstel: R350,000–R750,000."
+        },
+        {
+          "question": "Het ek raadplanne nodig vir 'n uitbreiding?",
+          "answer": "Ja — elke uitbreiding vereis goedgekeurde planne. Ongegoedkeurde strukture kan gesloop word."
+        },
+        {
+          "question": "Is 'n ouma woonstel 'n goeie belegging?",
+          "answer": "Ja — genereer R7,000–R14,000/maand huurinkomste, 18–25% jaarlikse opbrengs op belegging."
+        },
+        {
+          "question": "Kan jy 'n tweede verdieping by enige huis voeg?",
+          "answer": "Nie altyd nie — bestaande fondamente moet eers deur 'n strukturele ingenieur beoordeel word."
+        },
+        {
+          "question": "Hoe lank neem 'n uitbreiding?",
+          "answer": "Enkel verdieping kamer byvoeging: 6–10 weke; ouma woonstel: 8–14 weke. Sluit plangoedkeuring uit."
+        }
+      ],
+      "whyChoose": [
+        "NHBRC geregistreer — elke uitbreiding ingeskryf met strukturele waarborg",
+        "Volledige planne diens — argitek, ingenieur, raad indiening van begin tot einde",
+        "Naatlose integrasie — ooreenstemmende daklyn, messelwerk, en afwerkings",
+        "500+ bou- en uitbreidingsprojekte voltooi regoor Gauteng",
+        "Vaste prys, geïtemiseerde kwotasies met mynpaal betalings",
+        "Volledig verseker met omvattende konstruksie aanspreeklikheids dekking"
+      ]
+    },
+    "fencing": {
+      "intro": "Sinqobile Construction installeer heinings en grens mure regoor Johannesburg en Gauteng. Palisade heining: R900–R3,000+/m; baksteenmure: R1,800–R3,800/m in 2026. Behoorlike omheining is die eerste sekuriteitslyn vir Gauteng huiseienaars.",
+      "pricingNote": "Kostes hang af van materiaal, hoogte, terrein, en lengte. Hoër heinings kos 30–40% meer per 600 mm toename. Alle kwotasies sluit fondamente, materiale, arbeid, en skoonmaak in.",
+      "subServices": [
+        {
+          "name": "Palisade Heining",
+          "description": "Staal palisade in 1,8 m, 2,1 m, 2,4 m hoogtes. Anti-klim punte. R900–R3,000/m."
+        },
+        {
+          "name": "Baksteen Grens Mure",
+          "description": "Gesig baksteen of geplaster op versterkte strookfondamente. R1,800–R3,800/m."
+        },
+        {
+          "name": "Voorgegote Beton Mure (Vibracrete)",
+          "description": "Vinnige, bekostigbare voorgegote paneelmure. R1,200–R2,200/m."
+        },
+        {
+          "name": "Elektriese Heining",
+          "description": "Geïnstalleer bo-op mure. SANS 10222-3 voldoen. R250–R450/m."
+        },
+        {
+          "name": "Hekke & Toegangsbeheer",
+          "description": "Skuif-, swaai-, voetgangershekke met motor outomatisering. R8,000–R25,000."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Palisade heining (1,8 m)",
+          "range": "R900 – R1,800 /m"
+        },
+        {
+          "item": "Palisade heining (2,1 m)",
+          "range": "R2,000 – R2,400 /m"
+        },
+        {
+          "item": "Palisade heining (2,4 m)",
+          "range": "R2,200 – R2,800 /m"
+        },
+        {
+          "item": "Baksteen grens muur (1,8 m)",
+          "range": "R1,800 – R3,800 /m"
+        },
+        {
+          "item": "Voorgegote / Vibracrete muur",
+          "range": "R1,200 – R2,200 /m"
+        },
+        {
+          "item": "Elektriese heining (per meter)",
+          "range": "R250 – R450 /m"
+        },
+        {
+          "item": "Skuifhek (outomaties)",
+          "range": "R12,000 – R25,000"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Terreinopname",
+          "description": "Meet grens, kontroleer eiendomspennetjies, beoordeel terrein en toegang."
+        },
+        {
+          "step": "2",
+          "title": "Kwotasie & Planne",
+          "description": "Geïtemiseerde kwotasie; raadplanne gereël vir mure oor 1,8 m."
+        },
+        {
+          "step": "3",
+          "title": "Installasie",
+          "description": "Fondamente gegrawe en gegiet, pale gesit, panele metodologies geïnstalleer."
+        },
+        {
+          "step": "4",
+          "title": "Afwerking & Oorhandiging",
+          "description": "Hekke outomaties, elektriese heining getoets, bedryfshandleidings verskaf."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoeveel kos palisade heining in 2026?",
+          "answer": "1,8 m: R900–R1,800/m; 2,4 m: R2,200–R2,800/m ingesluit fondamente."
+        },
+        {
+          "question": "Baksteenmuur of palisade — watter is beter?",
+          "answer": "Baksteen vir privaatheid; palisade vir sigbaarheid. Baie kombineer albei."
+        },
+        {
+          "question": "Het ek bouplanne nodig vir 'n grens muur?",
+          "answer": "Mure oor 1,8 m vereis raad-goedgekeurde planne."
+        },
+        {
+          "question": "Hoe lank neem installasie?",
+          "answer": "Standaard residensiële eiendom: 3–7 dae."
+        },
+        {
+          "question": "Kan jy elektriese heining by 'n bestaande muur voeg?",
+          "answer": "Ja — beugels, energiseerder, bedrading, en bordjies geïnstalleer. R250–R450/m."
+        }
+      ],
+      "whyChoose": [
+        "Beton fondamente vir alle heiningpale — geen kortpaaie",
+        "Alle tipes: palisade, baksteen, voorgegote, elektries, hekke",
+        "Raadplanne hanteer vir mure oor 1,8 m",
+        "15+ jaar om Gauteng eiendomme te beveilig",
+        "Gratis terreinopname met grensverifikasie",
+        "Volledig verseker met werkmanskap waarborg"
+      ]
+    },
+    "flooring": {
+      "intro": "Sinqobile Construction verskaf professionele vloer installasie regoor Johannesburg en Gauteng. Kostes: R80–R850+/m² in 2026. Ons hanteer substraat beoordeling, waterpassing, vogtoetsing, onderlê, en presiese passing. Ons help u die regte vloer kies vir u begroting en leefstyl.",
+      "pricingNote": "Kostes sluit materiale, onderlê, en installasie in. Substraat waterpassing addisioneel indien vloer ongelyk is. Ou vloer verwydering apart gehef.",
+      "subServices": [
+        {
+          "name": "Laminaat Vloer",
+          "description": "Klik-slot laminaat in verskeie houtlook afwerkings. R300–R800/m²."
+        },
+        {
+          "name": "Vinyl & LVT Vloer",
+          "description": "Waterdigte luukse vinyl teël, ideaal vir kombuise en badkamers. R250–R700/m²."
+        },
+        {
+          "name": "Ingenieurswood Vloer",
+          "description": "Regte hout fineer op plywaadraamwerk. Geskik vir vloerverhitting. R350–R850/m²."
+        },
+        {
+          "name": "Soliede Hardhout Vloer",
+          "description": "Premium eik, okkerneut, es — kan herversand word. R800–R2,000/m²."
+        },
+        {
+          "name": "Vloer Skuuring & Herfinishing",
+          "description": "Bestaande houtplankvloere herstel na oorspronklike toestand."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Laminaat vloer (voorsien & geïnstalleer)",
+          "range": "R300 – R800 /m²"
+        },
+        {
+          "item": "Vinyl / LVT vloer (voorsien & geïnstalleer)",
+          "range": "R250 – R700 /m²"
+        },
+        {
+          "item": "Ingenieurswood (voorsien & geïnstalleer)",
+          "range": "R350 – R850 /m²"
+        },
+        {
+          "item": "Soliede hardhout (voorsien & geïnstalleer)",
+          "range": "R800 – R2,000 /m²"
+        },
+        {
+          "item": "Vloer skuuring & verseëling (bestaande hout)",
+          "range": "R150 – R350 /m²"
+        },
+        {
+          "item": "Substraat waterpassing",
+          "range": "R40 – R100 /m²"
+        },
+        {
+          "item": "Ou vloer verwydering",
+          "range": "R30 – R80 /m²"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Konsultasie & Monsters",
+          "description": "Besoek u huis, beoordeel substraat, meet area, bring monsters saam."
+        },
+        {
+          "step": "2",
+          "title": "Substraat Voorbereiding",
+          "description": "Toets vogtele, waterpas vloer indien nodig."
+        },
+        {
+          "step": "3",
+          "title": "Installasie",
+          "description": "Vloer gaklimatiseer (48 uur vir hout), geïnstalleer met korrekte uitsettingsgleuwe."
+        },
+        {
+          "step": "4",
+          "title": "Afwerking & Oorhandiging",
+          "description": "Plintstukke, oorgangsstrooks aangebring. Versorginstruksies verskaf."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoeveel kos vloere in 2026?",
+          "answer": "Vinyl: R250–R700/m²; laminaat: R300–R800/m²; ingenieurswood: R350–R850/m²."
+        },
+        {
+          "question": "Watter vloer is die beste vir Johannesburg huise?",
+          "answer": "Laminaat vir begroting; vinyl vir nat areas; ingenieurswood vir regte houtlook."
+        },
+        {
+          "question": "Kan jy oor bestaande teëls installeer?",
+          "answer": "Ja, laminaat en vinyl kan oor stewige teëls gelê word."
+        },
+        {
+          "question": "Hoe lank neem installasie?",
+          "answer": "3-slaapkamer huis in laminaat/vinyl: 2–3 dae; ingenieurswood: 3–4 dae."
+        },
+        {
+          "question": "Voorsien julle die vloer?",
+          "answer": "Ja (aanbeveel) of ons installeer wat u aankoop."
+        }
+      ],
+      "whyChoose": [
+        "Alle vloer tipes — laminaat, vinyl, ingenieurswood, soliede hardhout",
+        "Vogtoetsing en substraat waterpassing voor installasie",
+        "Handelspryse op materiale",
+        "15+ jaar vloer ondervinding regoor Gauteng",
+        "Gratis konsultasie met monsters na u huis gebring",
+        "Werkmanskap waarborg op elke installasie"
+      ]
+    },
+    "brickwork": {
+      "intro": "Sinqobile Construction verskaf professionele steenwerk en messelwerk regoor Johannesburg en Gauteng. Steenlê: R150–R450/m² in 2026. Ons werk met NFP-voorraad bakstene, sement bakstene, klei gesig bakstene (Corobrik, Brickfields), en beton blokke. Behoorlike steenwerk vereis korrekte mortel, waterpas lae, skiet mure, en DPC installasie.",
+      "pricingNote": "Kostes hang af van baksteen tipe, muurdikte, hoogte, en toeganklikheid. Alle kwotasies sluit materiale, arbeid, en mortel in.",
+      "subServices": [
+        {
+          "name": "Grens & Tuinmure",
+          "description": "Baksteenmure op versterkte betonfondamente. 1,8 m muur: R1,800–R3,800/m."
+        },
+        {
+          "name": "Gesig Baksteen Konstruksie",
+          "description": "Blootgestelde klei gesig bakstene (Corobrik, Brickfields) — geen pleistering nodig."
+        },
+        {
+          "name": "Nuwe Gebou Steenwerk",
+          "description": "Strukturele steenwerk vir nuwe huise en uitbreidings."
+        },
+        {
+          "name": "Baksteen Herstelwerk & Hervoeg",
+          "description": "Vervang beskadigde bakstene en hervoeg mortelnate."
+        },
+        {
+          "name": "Braai & Buitestrukture",
+          "description": "Ingeboude braai stande, pizza oonde, vuurkuile in gesig baksteen of pleister."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Voorraad baksteen muur (per m²)",
+          "range": "R150 – R220 /m²"
+        },
+        {
+          "item": "Sement baksteen muur (per m²)",
+          "range": "R250 – R300 /m²"
+        },
+        {
+          "item": "Klei gesig baksteen muur (per m²)",
+          "range": "R300 – R450 /m²"
+        },
+        {
+          "item": "Grens muur (1,8 m, per lin. m)",
+          "range": "R1,800 – R3,800 /m"
+        },
+        {
+          "item": "Voorraad bakstene (per 1,000)",
+          "range": "R1,600 – R2,500"
+        },
+        {
+          "item": "Klei gesig bakstene (per 1,000)",
+          "range": "R3,500 – R6,000"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Beoordeling & Kwotasie",
+          "description": "Hersien planne of meet op terrein, verskaf geïtemiseerde kwotasie met materiaalhoeveelhede."
+        },
+        {
+          "step": "2",
+          "title": "Fondament",
+          "description": "Grawe en giet strookfondament tot korrekte diepte."
+        },
+        {
+          "step": "3",
+          "title": "Steenlê",
+          "description": "Korrekte bindingpatrone, konsekwente mortelnate, DPC, lateie, uitsettingsvoë."
+        },
+        {
+          "step": "4",
+          "title": "Afwerking",
+          "description": "Deksteen met koplêer, voeg slaan of hark, terrein skoonmaak."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoeveel kos steenwerk in 2026?",
+          "answer": "Voorraad baksteen: R150–R220/m²; gesig baksteen: R300–R450/m²."
+        },
+        {
+          "question": "Voorraad bakstene vs gesig bakstene?",
+          "answer": "Voorraad bakstene is vir pleisters oor; gesig bakstene is die sigbare eindoppervlak."
+        },
+        {
+          "question": "Benodig grensmure fondamente?",
+          "answer": "Ja — beton strookfondament noodsaaklik."
+        },
+        {
+          "question": "Hoe lank om 'n grensmuur te bou?",
+          "answer": "30–50 lineêre meter: 5–10 werksdae."
+        },
+        {
+          "question": "Kan jy bestaande steenwerk pas?",
+          "answer": "Ja — ons bron ooreenstemmende bakstene en pas mortelkleur aan."
+        }
+      ],
+      "whyChoose": [
+        "Alle baksteen tipes — voorraad, sement, klei gesig baksteen (Corobrik, Brickfields)",
+        "Behoorlike fondamente, DPC, lateie, en uitsettingsvoë",
+        "15+ jaar steenlê ondervinding regoor Gauteng",
+        "Gesig baksteen kundigheid — skoon geslane nate, geen pleistering nodig",
+        "Gratis terreinbeoordeling en materiaal aanbeveling",
+        "Volledig verseker met werkmanskap waarborg"
+      ]
+    },
+    "landscaping": {
+      "intro": "Sinqobile Construction verskaf professionele landskapering regoor Johannesburg en Gauteng — tuin ontwerp, besproeiing, plaveisel, en buiteruimtes. Kostes: R150–R800/m² in 2026. Ons ken Gauteng se hoëveld klimaat en kies plante dienooreenkomstig.",
+      "pricingNote": "Kostes wissel aansienlik op grond van sagtevis vs hardvis verhouding. Alle kwotasies sluit materiale, plante, en arbeid in.",
+      "subServices": [
+        {
+          "name": "Tuin Ontwerp & Installasie",
+          "description": "Plante geskik vir Gauteng klimaat. Basiese sagtevis R150–R250/m²."
+        },
+        {
+          "name": "Besproeiingstelsels",
+          "description": "Outomatiese sproeier en druppelstelsel. Basiese residensieel: R10,000–R30,000."
+        },
+        {
+          "name": "Onmiddellike Gras Installasie",
+          "description": "Kikuyu, LM Berea, en buffelgras voorsien en gelê."
+        },
+        {
+          "name": "Keermure & Terrasse",
+          "description": "Betonblok, baksteen, en klipwal vir hellende tuine."
+        },
+        {
+          "name": "Buitleefruimtes",
+          "description": "Ingeboude braai areas, vuurkuile, buitekombuise, sitmuurtjies."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Basiese sagtevis (plante, gras, mulch)",
+          "range": "R150 – R250 /m²"
+        },
+        {
+          "item": "Omvattende landskapering (sag + hard)",
+          "range": "R400 – R800 /m²"
+        },
+        {
+          "item": "Besproeiingstelsel (basiese residensieel)",
+          "range": "R10,000 – R30,000"
+        },
+        {
+          "item": "Onmiddellike gras (voorsien & gelê)",
+          "range": "R50 – R100 /m²"
+        },
+        {
+          "item": "Tuin ontwerp (professionele plan)",
+          "range": "R5,000 – R25,000"
+        },
+        {
+          "item": "Keermuur (per lin. m)",
+          "range": "R1,500 – R4,000 /m"
+        },
+        {
+          "item": "Ingeboude braai area",
+          "range": "R15,000 – R50,000"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Ontwerp Konsultasie",
+          "description": "Besoek eiendom, beoordeel grond en dreinering, skep ontwerkkonsep met plantpalet."
+        },
+        {
+          "step": "2",
+          "title": "Kwotasie & Beplanning",
+          "description": "Geïtemiseerde kwotasie met plantplan en besproeiingsuitleg."
+        },
+        {
+          "step": "3",
+          "title": "Installasie",
+          "description": "Hardvis eerste, dan beplanting. Gras laaste gelê."
+        },
+        {
+          "step": "4",
+          "title": "Oorhandiging & Versorging Gids",
+          "description": "Loop deur tuin, demonstreer besproeiing, verskaf onderhoudsgids."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoeveel kos landskapering in 2026?",
+          "answer": "R150–R800/m² na gelang van omvang. 200 m² tuin: R30,000–R160,000."
+        },
+        {
+          "question": "Beste gras vir Johannesburg?",
+          "answer": "Kikuyu — droogtebestand, groei vinnig, hanteer volle son."
+        },
+        {
+          "question": "Koste van 'n besproeiingstelsel?",
+          "answer": "Basiese residensieel: R10,000–R30,000 geïnstalleer."
+        },
+        {
+          "question": "Watter plante oorleef Gauteng ryp?",
+          "answer": "Agapanthus, laventel, roosmaryn, wildeskanknaat, wildeolyf, aalwyne."
+        },
+        {
+          "question": "Bied julle deurlopende onderhoud?",
+          "answer": "Ons fokus op installasie; ons verskaf 'n gedetailleerde versorginggids by oorhandiging."
+        }
+      ],
+      "whyChoose": [
+        "Volledige landskap diens — ontwerp, besproeiing, plaveisel, beplanting, beligting",
+        "Gauteng klimaat kundigheid — plante wat op die hoëveld floreer",
+        "Professionele besproeiing ontwerp met outomatiese beheerders",
+        "15+ jaar landskapering ondervinding regoor Gauteng",
+        "Gratis ontwerp konsultasie",
+        "Werkmanskap waarborg op alle installasies"
+      ]
+    },
+    "maintenance": {
+      "intro": "Sinqobile Construction verskaf omvattende eiendoms onderhoud regoor Johannesburg en Gauteng — jaarliks vir residensiële en kommersiële eiendomme. Ons bied geskeduleerde onderhoudkontrakte en aanvraag uitroepe vir loodgieterswerk, elektries, verf, dakwerk, en algemene herstelwerk.",
+      "pricingNote": "Kontrakte bied afgekorte tariewe in vergelyking met individuele uitroepe. Alle werk vooraf gekwoteer — geen verassende koste nie.",
+      "subServices": [
+        {
+          "name": "Geskeduleerde Onderhoudkontrakte",
+          "description": "Maandelikse of kwartaallikse inspeksies wat alle ambagte dek."
+        },
+        {
+          "name": "Loodgieters Onderhoud",
+          "description": "Krane, toilette, geyser onderhoud, dreineringsskoonmaak."
+        },
+        {
+          "name": "Verf & Opknapping",
+          "description": "Binne en buite verf onderhoud op geskeduleerde siklus."
+        },
+        {
+          "name": "Dak & Geut Onderhoud",
+          "description": "Jaarlikse dakinspeksies, geut skoonmaak, teëlvervanging."
+        },
+        {
+          "name": "Algemene Handige Man Dienste",
+          "description": "Deur herstelwerk, slotte, rakke, geringe skrynwerk."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Algemene handige man (per uur)",
+          "range": "R350 – R550 /hr"
+        },
+        {
+          "item": "Geskeduleerde onderhoud besoek",
+          "range": "R1,500 – R3,500 /visit"
+        },
+        {
+          "item": "Maandelikse onderhoud kontrak (residensieel)",
+          "range": "R2,500 – R5,000 /month"
+        },
+        {
+          "item": "Geut skoonmaak (volledige huis)",
+          "range": "R800 – R2,000"
+        },
+        {
+          "item": "Kraan herstel / vervanging",
+          "range": "R350 – R800"
+        },
+        {
+          "item": "Deur / slot herstel",
+          "range": "R400 – R1,000"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Eiendoms Beoordeling",
+          "description": "Inspekteer eiendom en skep geprioritiseerde onderhoud verslag."
+        },
+        {
+          "step": "2",
+          "title": "Onderhoud Plan",
+          "description": "Skedule wat alle ambagte op gerieflike tye dek."
+        },
+        {
+          "step": "3",
+          "title": "Deurlopende Diens",
+          "description": "Voltooi geskeduleerde take en hanteer noodhulp uitroepe tussen besoeke."
+        },
+        {
+          "step": "4",
+          "title": "Verslagdoening",
+          "description": "Onderhoud verslag met foto's na elke besoek."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoeveel kos onderhoud in Johannesburg?",
+          "answer": "Handige man: R350–R550/uur; maandelikse kontrak: R2,500–R5,000."
+        },
+        {
+          "question": "Wat sluit 'n onderhoud kontrak in?",
+          "answer": "Maandelikse inspeksies, geut skoonmaak, loodgieters en elektriese kontroles, verfwerk beoordeling, geringe herstelwerk."
+        },
+        {
+          "question": "Onderhou julle kommersiële eiendomme?",
+          "answer": "Ja — kantore, kleinhandel, residensiële komplekse regoor Gauteng."
+        },
+        {
+          "question": "Hoe gereeld moet eiendomme onderhou word?",
+          "answer": "Kwartaalliks minimum met seisoenale take."
+        },
+        {
+          "question": "Kan ek sonder 'n kontrak bel?",
+          "answer": "Ja — aanvraag teen standaard uurlikse tariewe."
+        }
+      ],
+      "whyChoose": [
+        "Alle ambagte onder een dak — loodgieterswerk, elektries, verf, dakwerk, skrynwerk",
+        "Geskeduleerde onderhoud voorkom duur noodherstelwerk",
+        "Gedetailleerde inspeksie verslae met foto's na elke besoek",
+        "15+ jaar onderhoud van eiendomme regoor Gauteng",
+        "Prioriteit noodhulp uitroepe vir kontrak kliënte",
+        "Volledig verseker met omvattende aanspreeklikheids dekking"
+      ]
+    },
+    "repairs": {
+      "intro": "Sinqobile Construction verskaf vinnige, betroubare huis herstelwerk regoor Johannesburg en Gauteng — van noodgeval strukturele herstelwerk tot alledaagse regmaakwerk. Ons span dra algemene onderdele op hul voertuie om die meeste probleme in 'n enkele besoek op te los.",
+      "pricingNote": "Herstel kostes hang af van tipe en kompleksiteit. Noodherstelwerk dra hoër tariewe. Alle herstelwerk op terrein gekwoteer voor werk begin.",
+      "subServices": [
+        {
+          "name": "Noodgeval Strukturele Herstelwerk",
+          "description": "Geskeurde mure, beskadigde fondamente, dak stormskade."
+        },
+        {
+          "name": "Loodgieters Herstelwerk",
+          "description": "Bars pype, lekkende krane, verstopte afvoere. 24/7 noodgeval beskikbaar."
+        },
+        {
+          "name": "Elektriese Herstelwerk",
+          "description": "Afskakeling van stroombane, foutiewe punte, flikkerligte."
+        },
+        {
+          "name": "Dak Herstelwerk",
+          "description": "Lekkende dakke, gebreekte teëls, beskadigde skoene."
+        },
+        {
+          "name": "Algemene Huis Herstelwerk",
+          "description": "Deur en venster herstelwerk, gebreekte slotte, geskeurde teëls, krakende vloere."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Algemene herstelwerk uitroep (per uur)",
+          "range": "R350 – R550 /hr"
+        },
+        {
+          "item": "Noodgeval uitroep (na ure)",
+          "range": "R500 – R1,000 /hr"
+        },
+        {
+          "item": "Bars pyp herstel",
+          "range": "R700 – R4,000"
+        },
+        {
+          "item": "Dak lek herstel",
+          "range": "R500 – R3,000"
+        },
+        {
+          "item": "Geskeurde muur herstel",
+          "range": "R1,000 – R5,000"
+        },
+        {
+          "item": "Deur / venster herstel",
+          "range": "R400 – R1,500"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Bel of WhatsApp",
+          "description": "Beskryf die probleem — onmiddellike skatting en skedulering."
+        },
+        {
+          "step": "2",
+          "title": "Diagnoseer & Kwoteer",
+          "description": "Terreinbeoordeling met vaste prys voor aanvang."
+        },
+        {
+          "step": "3",
+          "title": "Herstelwerk",
+          "description": "Voltooi in 'n enkele besoek met kwaliteit materiale."
+        },
+        {
+          "step": "4",
+          "title": "Toets & Waarborg",
+          "description": "Werkmanskap waarborg verskaf."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoeveel kos huis herstelwerk in Johannesburg?",
+          "answer": "Algemeen: R350–R550/uur; noodgeval: R500–R1,000/uur."
+        },
+        {
+          "question": "Bied julle noodgeval herstelwerk?",
+          "answer": "Ja — 2–4 uur reaksie regoor Johannesburg. Bel +27 82 868 8396."
+        },
+        {
+          "question": "Kan julle strukturele krake herstel?",
+          "answer": "Ja — ons diagnoseer oorsaak en gebruik kraakstik of epoksiinspuiting."
+        },
+        {
+          "question": "Waarborg julle herstelwerk?",
+          "answer": "Ja — werkmanskap waarborg op alle herstelwerk."
+        },
+        {
+          "question": "Kan die meeste herstelwerk in een besoek gedoen word?",
+          "answer": "Ja — algemene onderdele word op ons voertuie gedra."
+        }
+      ],
+      "whyChoose": [
+        "Enkeldbesoek herstelwerk — algemene onderdele op ons voertuie gedra",
+        "Noodgeval reaksie binne 2–4 uur regoor Johannesburg",
+        "Hoofoorsaak diagnose — los die probleem op, nie net die simptoom",
+        "15+ jaar herstelwerk oor alle ambagte in Gauteng",
+        "Vaste prys kwotasies op terrein voor werk begin",
+        "Werkmanskap waarborg op elke herstelwerk"
+      ]
+    },
+    "installation": {
+      "intro": "Sinqobile Construction verskaf professionele installasie dienste regoor Johannesburg en Gauteng — deure, vensters, plafonne, geisers, kombuis eenhede, en meer. Behoorlike installasie beteken korrekte voorbereiding, presiese meting, geskikte bevestigings, en skoon afwerking.",
+      "pricingNote": "Kostes hang af van produk tipe, kompleksiteit, en of strukturele werk nodig is. Produk kostes addisioneel tot arbeid.",
+      "subServices": [
+        {
+          "name": "Deur Installasie",
+          "description": "Hout, aluminium, staal sekuriteit, skuif, en motorhuisdeure. Handvatsels, slotte, sluiters ingesluit."
+        },
+        {
+          "name": "Venster Installasie",
+          "description": "Aluminium, hout, en uPVC vensters, behoorlik verseël en geskoen."
+        },
+        {
+          "name": "Plafon Installasie",
+          "description": "Rhinoboard/gipsbord plafonne, hangende plafonne, en plafon herstelwerk."
+        },
+        {
+          "name": "Kombuis Installasie",
+          "description": "Kas inpassing, werkblad installasie, toestel verbindings."
+        },
+        {
+          "name": "Geyser Installasie",
+          "description": "Elektries, gas, son, warmtepomp — alle groot handelsmerke voorsien en geïnstalleer."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Binnedeur (voorsien & ophang)",
+          "range": "R1,500 – R4,000"
+        },
+        {
+          "item": "Buiten / sekuriteitsdeur (geïnstalleer)",
+          "range": "R3,000 – R8,000"
+        },
+        {
+          "item": "Aluminium venster (geïnstalleer)",
+          "range": "R2,000 – R6,000"
+        },
+        {
+          "item": "Plafon installasie (per m²)",
+          "range": "R150 – R300 /m²"
+        },
+        {
+          "item": "Kombuis kaste (installasie alleenlik)",
+          "range": "R5,000 – R15,000"
+        },
+        {
+          "item": "Geyser installasie (arbeid, ekskl. eenheid)",
+          "range": "R2,000 – R3,500"
+        },
+        {
+          "item": "Motorhuisdeur (outomaties, geïnstalleer)",
+          "range": "R8,000 – R20,000"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Meet & Spesifiseer",
+          "description": "Meet presies, bevestig spesifikasies, kontroleer vir strukturele voorbereiding benodig."
+        },
+        {
+          "step": "2",
+          "title": "Voorbereiding",
+          "description": "Verwyder ou produkte, herstel rame, berei struktuur voor."
+        },
+        {
+          "step": "3",
+          "title": "Installasie",
+          "description": "Ingebou skiet, waterpas, en vas. Alle bewegende dele getoets."
+        },
+        {
+          "step": "4",
+          "title": "Skoonmaak & Oorhandiging",
+          "description": "Area skoongemaak, bedryfshandleidings verskaf, waarborg uitgereik."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoeveel kos deur installasie?",
+          "answer": "Binne: R1,500–R4,000; buite/sekuriteit: R3,000–R8,000."
+        },
+        {
+          "question": "Kan julle 'n plafon in 'n bestaande kamer installeer?",
+          "answer": "Ja — rhinoboard installasie teen R150–R300/m²."
+        },
+        {
+          "question": "Voorsien julle produkte of installeer julle slegs?",
+          "answer": "Beide opsies beskikbaar."
+        },
+        {
+          "question": "Hoe lank neem kombuis installasie?",
+          "answer": "2–4 dae vir kaste en werkblaaie."
+        },
+        {
+          "question": "Installeer julle motorhuisdeure?",
+          "answer": "Ja — outomatiese stelsels R8,000–R20,000 insluitend motor en afstandbeheer."
+        }
+      ],
+      "whyChoose": [
+        "Alle installasie tipes — deure, vensters, plafonne, kombuise, geisers, motorhuisdeure",
+        "Presiese meting voor elke installasie",
+        "Koördinasie met loodgieters en elektrisiens",
+        "15+ jaar installasie ondervinding regoor Gauteng",
+        "Voorsien en installeer of installeer-alleenlik — u keuse",
+        "Werkmanskap waarborg op elke installasie"
+      ]
+    },
+    "ceiling": {
+      "intro": "Sinqobile Construction verskaf professionele plafon herstelwerk en installasie regoor Johannesburg en Gauteng. Hangende rhinobord weens daklekkasies, geskeurde pleister, nuwe bosse plafonne — ons dek alle tipes: rhinobord (Rhinolite), pleister, PVC, hout, en hangende rooster. Alle werk kom met 'n geskrewe werkmanskap waarborg.",
+      "pricingNote": "Kostes wissel na gelang van tipe, skade omvang, kamer grootte, en toeganklikheid. Geringe regmaakwerk vanaf R350. Nuwe installasies: R300–R500/m². Alle pryse sluit materiale, arbeid, en skoonmaak in.",
+      "subServices": [
+        {
+          "name": "Rhinobord Plafon Herstelwerk",
+          "description": "Sny uit en vervang beskadigde seksies, hertap, skim met Rhinolite, oorverf om te pas. Die meeste word in een dag voltooi."
+        },
+        {
+          "name": "Pleister Plafon Herstelwerk",
+          "description": "Kap onstabiele pleister uit, hersleutel substraat, bring bindingslaag aan, herpleister glad."
+        },
+        {
+          "name": "Bos Plafon Installasie",
+          "description": "Staalraam en rhinobord met LED beligting kanale. Verberg buisingwerk en kanaalgoot."
+        },
+        {
+          "name": "Badkamer Plafon Herstelwerk",
+          "description": "Verwyder skimmelrige bord, bring anti-swam middel aan, installeer vogweerstandige rhinobord en skimmelwerende verf."
+        },
+        {
+          "name": "Plafon Vervanging",
+          "description": "Volledige vervanging wanneer 30%+ beskadig is."
+        },
+        {
+          "name": "Lyswerk & Koofinstallasie",
+          "description": "Pleister-, polistireen-, en poliuretaan lyswerk akkuraat op hoek gesny en geverf."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Geringe plafon regmaak (klein area)",
+          "range": "R350 – R800"
+        },
+        {
+          "item": "Rhinobord plafon herstel (per m²)",
+          "range": "R250 – R400"
+        },
+        {
+          "item": "Nuwe plafon installasie (per m²)",
+          "range": "R300 – R500"
+        },
+        {
+          "item": "Badkamer plafon herstel",
+          "range": "R500 – R1,500"
+        },
+        {
+          "item": "Bos plafon (per lineêre meter)",
+          "range": "R800 – R1,500"
+        },
+        {
+          "item": "Lyswerk installasie (per meter)",
+          "range": "R80 – R150"
+        },
+        {
+          "item": "Volledige plafon vervanging (per m²)",
+          "range": "R350 – R550"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Gratis Terrein Inspeksie & Kwotasie",
+          "description": "Inspekteer skade, identifiseer hoofoorsaak, geskrewe geïtemiseerde kwotasie binne 24 uur. Geen uitroep fooi nie."
+        },
+        {
+          "step": "2",
+          "title": "Hoofoorsaak Beoordeling",
+          "description": "Kontroleer vir aktiewe daklekkasies, verstopte geute, of waterdigting mislukkings voor herstelwerk."
+        },
+        {
+          "step": "3",
+          "title": "Plafon Herstelwerk of Installasie",
+          "description": "Beskerm vloere en meubels, verwyder beskadigde materiaal, herstel of installeer."
+        },
+        {
+          "step": "4",
+          "title": "Verf & Finale Inspeksie",
+          "description": "Verseël met PVA, 2 lae verf, finale inspeksie om gladde afwerking te bevestig."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoekom hang my plafon?",
+          "answer": "Mees algemene oorsaak: waterindringing van daklek, verstopte geut, of loodgieterslek."
+        },
+        {
+          "question": "Herstel of vervang?",
+          "answer": "Herstel vir gelokaliseerde skade; vervang wanneer 25–30%+ geaffekteer is of skimmel wydverspreid is."
+        },
+        {
+          "question": "Hoe lank neem plafon herstelwerk?",
+          "answer": "Geringe regmaak: 2–4 uur. Enkel kamer vervanging: 1–2 dae."
+        },
+        {
+          "question": "Hoeveel per m²?",
+          "answer": "Rhinobord herstel: R250–R400/m². Nuwe installasie: R300–R500/m²."
+        },
+        {
+          "question": "Deur huisversekering gedek?",
+          "answer": "Ja, in baie gevalle — skielike gebeure soos bars pype of stormskade."
+        },
+        {
+          "question": "Beste plafon bord dikte?",
+          "answer": "9,5 mm rhinobord standaard; vogweerstandig vir badkamers."
+        },
+        {
+          "question": "Bedien julle Pretoria?",
+          "answer": "Ja — regdeur Gauteng insluitend Pretoria, Centurion, Midrand."
+        }
+      ],
+      "whyChoose": [
+        "Gratis terrein inspeksie en geskrewe kwotasie — geen uitroep fooi",
+        "Ons herstel die hoofoorsaak voor die plafon regmaak",
+        "Alle plafon tipes: rhinobord, pleister, bos, PVC, hout",
+        "Vogweerstandige bord vir badkamers en kombuise",
+        "Geskrewe werkmanskap waarborg",
+        "Skoon, stofbeheerde werk — volledige skoonmaak ingesluit",
+        "Bedien alle Johannesburg voorstede, Sandton, Midrand, Pretoria, Centurion"
+      ]
+    },
+    "gutters": {
+      "intro": "Sinqobile Construction installeer, herstel, en skoonmaak geute regoor Johannesburg en Pretoria. Ons voorsien naatlose aluminium geute (op terrein gevorm — geen naat lekkasies), seksionele PVC geute, afvoerpype, fassiaborde, en gewelplanke. Ons bedien alle Johannesburg voorstede, Sandton, Midrand, Fourways, Randburg, Centurion, en Pretoria.",
+      "pricingNote": "Kostes hang af van geut tipe, materiaal, lineêre meter, en toeganklikheid. Naatlose aluminium kos meer maar hou langer. Alle pryse per lineêre meter geïnstalleer.",
+      "subServices": [
+        {
+          "name": "Naatlose Geut Installasie",
+          "description": "Op terrein gevorm vir presiese passing. Geen nate = geen lekkasies. 10-jaar waarborg."
+        },
+        {
+          "name": "Seksionele PVC Geut Installasie",
+          "description": "100 mm en 125 mm PVC vir begroting projekte en buitegebouens."
+        },
+        {
+          "name": "Geut Herstelwerk & Lek Verseëling",
+          "description": "Verseël nate, herstel krake, vervang beskadigde seksies."
+        },
+        {
+          "name": "Geut Skoonmaak & Uitruiming",
+          "description": "Skoongemaak voor somer (Oktober) en na herfs (Mei). Wagte beskikbaar."
+        },
+        {
+          "name": "Afvoerpyp Installasie & Herstelwerk",
+          "description": "68 mm en 80 mm in aluminium, PVC, en staal."
+        },
+        {
+          "name": "Fassiabord Vervanging",
+          "description": "Vervang verrottende hout met voorgeverfde veselssement of aluminium."
+        },
+        {
+          "name": "Gewelplank Vervanging",
+          "description": "Vervang beskadigde gewelplanke by gaweleinde."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Naatlose aluminium geut (per lineêre meter)",
+          "range": "R120 – R180"
+        },
+        {
+          "item": "Seksionele PVC geut (per lineêre meter)",
+          "range": "R60 – R100"
+        },
+        {
+          "item": "Afvoerpyp installasie (per lineêre meter)",
+          "range": "R120 – R200"
+        },
+        {
+          "item": "Geut skoonmaak (volledige huis)",
+          "range": "R500 – R1,500"
+        },
+        {
+          "item": "Geut herstel / lek verseëling",
+          "range": "R300 – R800"
+        },
+        {
+          "item": "Fassiabord vervanging (per meter)",
+          "range": "R150 – R300"
+        },
+        {
+          "item": "Geut wag installasie (per meter)",
+          "range": "R80 – R150"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Gratis Inspeksie & Meting",
+          "description": "Meet daklyn, kontroleer geut toestand, geskrewe kwotasie binne 24 uur. Geen uitroep fooi nie."
+        },
+        {
+          "step": "2",
+          "title": "Verwydering van Ou Geute",
+          "description": "Ou geute en beugels verwyder, fassie inspekteer en herstel indien nodig."
+        },
+        {
+          "step": "3",
+          "title": "Geut Installasie",
+          "description": "Naatlose geute op terrein gevorm. Korrekte helling vir self-dreinerende vloei."
+        },
+        {
+          "step": "4",
+          "title": "Watertoets & Aftekening",
+          "description": "Slanggetoets vir lekkasies. Werkmanskap skriftelik gewaarborg."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoeveel kos naatlose geute per meter?",
+          "answer": "Naatlose aluminium: R120–R180/m; seksionele PVC: R60–R100/m."
+        },
+        {
+          "question": "Naatloos vs seksioneel?",
+          "answer": "Naatloos het geen nate in die loop nie; seksioneel het nate elke 3–4 m wat kan lek."
+        },
+        {
+          "question": "Hoe gereeld moet geute skoongemaak word?",
+          "answer": "Twee keer per jaar — voor somersreëns en na herfs."
+        },
+        {
+          "question": "Hoekom sak geute?",
+          "answer": "Beugelversaking, verrottende fassiabord, of oormatige rommel."
+        },
+        {
+          "question": "Kan geut skade vog veroorsaak?",
+          "answer": "Ja — oorlopende geute is 'n algemene oorsaak van stygende en indringende vog."
+        },
+        {
+          "question": "Installeer julle in Pretoria?",
+          "answer": "Ja — regdeur Gauteng."
+        }
+      ],
+      "whyChoose": [
+        "Naatlose geute op terrein gevorm — geen nate, geen lekkasies",
+        "Gratis meting en geskrewe kwotasie — geen uitroep fooi",
+        "Alle geut tipes: naatlose aluminium, seksionele PVC, staal",
+        "Afvoerpype, fassiaborde, gewelplanke in dieselfde besoek",
+        "Watergetoets by voltooiing — gewaarborg waterdig",
+        "Geskrewe werkmanskap waarborg"
+      ]
+    },
+    "roof-waterproofing": {
+      "intro": "Sinqobile Construction verskaf professionele dak waterdigting regoor Johannesburg en Pretoria. Ons maak alle daktipes waterdig — teël, IBR, geriffelde metaal, plat beton, en Chromadek — met akriel elastomeriese bedekkings, fakkel-op bitumen membrane, en vloeistof-aangebrachte membrane. Elke werk begin met behoorlike oppervlak voorbereiding. Alle werk sluit 'n geskrewe waarborg in.",
+      "pricingNote": "Kostes hang af van daktipe, stelsel, area, en toeganklikheid. Akriel bedekkings mees bekostigbaar; fakkel-op hou langer. Alle pryse per m² insluitend oppervlak voorbereiding en grondlaag. Gratis geskrewe kwotasie na inspeksie.",
+      "subServices": [
+        {
+          "name": "Teëldak Waterdigting",
+          "description": "Skoonmaak dak, hervoeg nok mortel, vervang geskeurde teëls, bring akriel elastomeriese membraan aan. Voeg 8–12 jaar lewe by."
+        },
+        {
+          "name": "IBR & Geriffelde Metaaldak Waterdigting",
+          "description": "Behandel roes, vervang beskadigde plate, verseël deurtrekkings, bring spesialis metaaldak bedekking aan."
+        },
+        {
+          "name": "Plat & Beton Dak Waterdigting",
+          "description": "Fakkel-op APP bitumen membraan of sementhouende kristallyne stelsel."
+        },
+        {
+          "name": "Daklek Diagnose & Herstelwerk",
+          "description": "Sistematiese inspeksie om ware insypelpunt te identifiseer. Geteikende herstelwerk teen 'n breukdeel van volle waterdigtingkoste."
+        },
+        {
+          "name": "Fakkel-Op Bitumen Membraan Stelsels",
+          "description": "Tweelae APP stelsel wat 15–20 jaar duur per SANS 10109."
+        },
+        {
+          "name": "Akriel Elastomeriese Dak Bedekkings",
+          "description": "Buigsame, UV-weerstandige bedekkings wat 5–8 jaar duur voor hertoepassing."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Teëldak — akriel elastomeriese bedekking (per m²)",
+          "range": "R80 – R130"
+        },
+        {
+          "item": "Metaaldak (IBR/geriffeld) — vloeistof membraan (per m²)",
+          "range": "R90 – R150"
+        },
+        {
+          "item": "Plat/beton dak — fakkel-op bitumen (per m²)",
+          "range": "R150 – R250"
+        },
+        {
+          "item": "Plat dak — sementhouende waterdigting (per m²)",
+          "range": "R120 – R200"
+        },
+        {
+          "item": "Daklek herstel (gelokaliseerd)",
+          "range": "R800 – R3,500"
+        },
+        {
+          "item": "Nok en heup hervoeg (per m)",
+          "range": "R120 – R220"
+        },
+        {
+          "item": "Skoene herstel/vervanging (per m)",
+          "range": "R180 – R350"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Gratis Dak Inspeksie & Verslag",
+          "description": "Inspekteer volle dak insluitend skoene, geute, valleie, deurtrekkings. Geskrewe verslag met foto's voor u instem. Geen uitroep fooi nie."
+        },
+        {
+          "step": "2",
+          "title": "Oppervlak Voorbereiding",
+          "description": "Druk was, verwyder mos/korstliken, hervoeg mortel, vervang beskadigde materiaal, grondlaag aanbring."
+        },
+        {
+          "step": "3",
+          "title": "Waterdigting Toepassing",
+          "description": "Gespesifiseerde stelsel teen korrekte dekkingskoers. Alle deurtrekkings en skoene kry ekstra aandag."
+        },
+        {
+          "step": "4",
+          "title": "Inspeksie & Geskrewe Waarborg",
+          "description": "Watertoets. Geskrewe waarborg — 5 jaar (akriel) tot 10 jaar (fakkel-op)."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Hoeveel kos dak waterdigting in Suid-Afrika?",
+          "answer": "Akriel bedekking: R80–R130/m². Fakkel-op bitumen: R150–R250/m²."
+        },
+        {
+          "question": "Watter waterdigting stelsel is die beste?",
+          "answer": "Akriel vir teëls; fakkel-op vir plat beton; vloeistof membraan vir metaaldakke."
+        },
+        {
+          "question": "Hoe lank hou dit?",
+          "answer": "Akriel: 5–8 jaar; fakkel-op: 15–20 jaar."
+        },
+        {
+          "question": "Waterdigting of slegs herstelwerk?",
+          "answer": "Gelokaliseerde skade = geteikende herstelwerk; wydverspreide krake of veelvuldige lekkasies = volledige behandeling."
+        },
+        {
+          "question": "Kan julle in winter waterdig maak?",
+          "answer": "Ja — Gauteng winters is droog en ideaal vir waterdigting werk."
+        },
+        {
+          "question": "Bedien julle Pretoria?",
+          "answer": "Ja — regdeur Gauteng."
+        }
+      ],
+      "whyChoose": [
+        "Gratis dak inspeksie met geskrewe verslag — geen uitroep fooi",
+        "Alle daktipes: teël, IBR, geriffeld, plat beton, Chromadek",
+        "Alle stelsels: akriel, fakkel-op bitumen, vloeistof membraan, sementhouend",
+        "Oppervlak voorbereiding korrek gedoen — mees algemene oorsaak van waterdigting mislukking",
+        "NHBRC geregistreer — alle werk volgens SANS 10109 standaarde",
+        "Geskrewe waarborg: 5 jaar (akriel) tot 10 jaar (fakkel-op)",
+        "Bedien Johannesburg, Pretoria, Sandton, Midrand, Centurion, Randburg, Fourways"
+      ]
     }
   }
 }

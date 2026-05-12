@@ -1,6 +1,16 @@
 'use client'
 
 import React, { useEffect } from 'react'
+import { usePathname } from 'next/navigation'
+
+const T = {
+  en: { heading: 'Something went wrong!', body: 'We encountered an error while loading this page. Please try again.', retry: 'Try Again', home: 'Go Home' },
+  af: { heading: 'Iets het verkeerd gegaan!', body: 'Ons het \'n fout ondervind tydens die laai van hierdie bladsy. Probeer asseblief weer.', retry: 'Probeer Weer', home: 'Gaan Tuis' },
+  zu: { heading: 'Kukhona okubi okwenzekile!', body: 'Sike sabhekana nephutha ngenkathi silayisha leli khasi. Sicela uzame futhi.', retry: 'Zama Futhi', home: 'Buyela Ekhaya' },
+  st: { heading: 'Ho etsahetse phoso!', body: 'Re kopane le phoso ha re ntse re laela leqephe lena. Ke kopa u leke hape.', retry: 'Leka Hape', home: 'Ea Hae' },
+} as const
+
+type Lang = keyof typeof T
 
 export default function Error({
   error,
@@ -9,6 +19,10 @@ export default function Error({
   error: Error & { digest?: string }
   reset: () => void
 }) {
+  const pathname = usePathname()
+  const segment = pathname?.split('/')[1] as Lang
+  const t = T[segment] ?? T.en
+
   useEffect(() => {
     console.error('Page error:', error)
   }, [error])
@@ -32,23 +46,23 @@ export default function Error({
           </svg>
         </div>
         <h2 className="text-2xl font-bold text-secondary mb-2">
-          Something went wrong!
+          {t.heading}
         </h2>
         <p className="text-gray-600 mb-6">
-          We encountered an error while loading this page. Please try again.
+          {t.body}
         </p>
         <div className="flex gap-4 justify-center">
           <button
             onClick={reset}
             className="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-700 transition-colors"
           >
-            Try Again
+            {t.retry}
           </button>
           <a
             href="/"
             className="bg-gray-200 text-secondary px-6 py-3 rounded-lg font-medium hover:bg-gray-300 transition-colors"
           >
-            Go Home
+            {t.home}
           </a>
         </div>
       </div>

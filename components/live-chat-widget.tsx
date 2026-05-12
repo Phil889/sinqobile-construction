@@ -3,18 +3,79 @@
 import { MessageCircle, X, Phone, Calendar, FileText, HelpCircle } from 'lucide-react'
 import { useState } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+
+const T = {
+  en: {
+    chatWith: 'Chat with Sinqobile Construction',
+    online: 'Online',
+    greeting: 'Hi! How can we help you today?',
+    chooseOption: 'Choose an option below or call us directly',
+    getQuote: 'Get a Quote',
+    askQuestion: 'Ask a Question',
+    scheduleConsultation: 'Schedule Consultation',
+    callNow: 'Call Us Now',
+    hours: 'Available Mon-Fri: 7AM-5PM | Sat: 8AM-1PM',
+    badge: 'Get A Quote',
+    waMessage: 'Hi Sinqobile Construction, I would like to inquire about your services.',
+  },
+  af: {
+    chatWith: 'Gesels met Sinqobile Construction',
+    online: 'Aanlyn',
+    greeting: 'Hallo! Hoe kan ons u vandag help?',
+    chooseOption: 'Kies \'n opsie hieronder of bel ons direk',
+    getQuote: 'Kry \'n Kwotasie',
+    askQuestion: 'Stel \'n Vraag',
+    scheduleConsultation: 'Skeduleer Konsultasie',
+    callNow: 'Bel Ons Nou',
+    hours: 'Beskikbaar Ma-Vr: 7VM-5NM | Sa: 8VM-1NM',
+    badge: 'Kry Kwotasie',
+    waMessage: 'Hallo Sinqobile Construction, ek wil graag navraag doen oor u dienste.',
+  },
+  zu: {
+    chatWith: 'Xoxa noSinqobile Construction',
+    online: 'Ku-inthanethi',
+    greeting: 'Sawubona! Singakusiza kanjani namuhla?',
+    chooseOption: 'Khetha inketho engezansi noma usishayele ucingo ngokuqondile',
+    getQuote: 'Thola Isikweletu',
+    askQuestion: 'Buza Umbuzo',
+    scheduleConsultation: 'Beka Isikhathi Sokuxoxisana',
+    callNow: 'Shayela Manje',
+    hours: 'Sitholakala: Mso-Lwe: 7AM-5PM | Mgq: 8AM-1PM',
+    badge: 'Thola Isikweletu',
+    waMessage: 'Sawubona Sinqobile Construction, ngifuna ukubuza mayelana nezinsiza zenu.',
+  },
+  st: {
+    chatWith: 'Bua le Sinqobile Construction',
+    online: 'Inthaneteng',
+    greeting: 'Lumela! Re ka u thusa joang kajeno?',
+    chooseOption: 'Khetha kgetho e ka tlase kapa re letsetse ka kotloloho',
+    getQuote: 'Fumana Quotation',
+    askQuestion: 'Botsa Potso',
+    scheduleConsultation: 'Beha Nakoana ea Puisano',
+    callNow: 'Letsetsa Hona Joale',
+    hours: 'Re fumaneha: Mos-Lak: 7AM-5PM | Mok: 8AM-1PM',
+    badge: 'Fumana Quotation',
+    waMessage: 'Lumela Sinqobile Construction, ke rata ho botsa ka litšebeletso tsa lona.',
+  },
+} as const
+
+type Lang = keyof typeof T
 
 export default function LiveChatWidget() {
   const [isOpen, setIsOpen] = useState(false)
   const phoneNumber = '27828688396'
+  const pathname = usePathname()
+  const segment = pathname?.split('/')[1] as Lang
+  const t = T[segment] ?? T.en
+  const lang = Object.keys(T).includes(segment) ? segment : 'en'
 
   const handleCallNow = () => {
     window.location.href = 'tel:+27828688396'
   }
 
   const handleWhatsApp = () => {
-    const message = 'Hi Sinqobile Construction, I would like to inquire about your services.'
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(t.waMessage)}`
     window.open(url, '_blank')
   }
 
@@ -32,11 +93,11 @@ export default function LiveChatWidget() {
                 </div>
                 <div>
                   <h4 className="font-heading font-semibold text-secondary text-lg">
-                    Chat with Sinqobile Construction
+                    {t.chatWith}
                   </h4>
                   <div className="flex items-center space-x-1">
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                    <span className="text-xs text-secondary">Online</span>
+                    <span className="text-xs text-secondary">{t.online}</span>
                   </div>
                 </div>
               </div>
@@ -53,22 +114,22 @@ export default function LiveChatWidget() {
             <div className="p-4 bg-gray-50">
               <div className="bg-white rounded-lg p-3 mb-4 shadow-sm">
                 <p className="text-sm text-secondary mb-1 font-medium">
-                  Hi! How can we help you today?
+                  {t.greeting}
                 </p>
                 <p className="text-xs text-gray-600">
-                  Choose an option below or call us directly
+                  {t.chooseOption}
                 </p>
               </div>
 
               {/* Quick Action Buttons */}
               <div className="space-y-2">
                 <Link
-                  href="/en/contact"
+                  href={`/${lang}/contact`}
                   onClick={() => setIsOpen(false)}
                   className="w-full bg-white hover:bg-gray-50 text-secondary px-4 py-3 rounded-lg font-medium transition-all flex items-center space-x-3 shadow-sm border border-gray-200 hover:border-accent group"
                 >
                   <FileText className="text-accent group-hover:scale-110 transition-transform" size={20} />
-                  <span>Get a Quote</span>
+                  <span>{t.getQuote}</span>
                 </Link>
 
                 <button
@@ -76,16 +137,16 @@ export default function LiveChatWidget() {
                   className="w-full bg-white hover:bg-gray-50 text-secondary px-4 py-3 rounded-lg font-medium transition-all flex items-center space-x-3 shadow-sm border border-gray-200 hover:border-accent group"
                 >
                   <HelpCircle className="text-accent group-hover:scale-110 transition-transform" size={20} />
-                  <span>Ask a Question</span>
+                  <span>{t.askQuestion}</span>
                 </button>
 
                 <Link
-                  href="/en/contact"
+                  href={`/${lang}/contact`}
                   onClick={() => setIsOpen(false)}
                   className="w-full bg-white hover:bg-gray-50 text-secondary px-4 py-3 rounded-lg font-medium transition-all flex items-center space-x-3 shadow-sm border border-gray-200 hover:border-accent group"
                 >
                   <Calendar className="text-accent group-hover:scale-110 transition-transform" size={20} />
-                  <span>Schedule Consultation</span>
+                  <span>{t.scheduleConsultation}</span>
                 </Link>
 
                 <button
@@ -93,14 +154,14 @@ export default function LiveChatWidget() {
                   className="w-full bg-primary hover:bg-orange-700 text-white px-4 py-3 rounded-lg font-medium transition-all flex items-center justify-center space-x-3 shadow-md hover:shadow-lg"
                 >
                   <Phone size={20} />
-                  <span>Call Us Now</span>
+                  <span>{t.callNow}</span>
                 </button>
               </div>
 
               {/* Contact Info */}
               <div className="mt-4 pt-4 border-t border-gray-200">
                 <p className="text-xs text-gray-600 text-center">
-                  Available Mon-Fri: 7AM-5PM | Sat: 8AM-1PM
+                  {t.hours}
                 </p>
                 <p className="text-xs text-accent text-center font-semibold mt-1">
                   +27 82 868 8396
@@ -121,9 +182,9 @@ export default function LiveChatWidget() {
           ) : (
             <>
               <MessageCircle size={28} />
-              {/* Get A Quote Badge */}
+              {/* Badge */}
               <span className="absolute -top-1 -right-1 bg-green-500 text-white text-xs px-2 py-0.5 rounded-full font-semibold shadow-md">
-                Get A Quote
+                {t.badge}
               </span>
             </>
           )}

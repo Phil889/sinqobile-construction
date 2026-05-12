@@ -210,6 +210,18 @@
     "waterproofing": {
       "name": "Ukuvimbela Amanzi",
       "description": "Izixazululo zokuvimbela amanzi ephansi, ephahla, nangaphandle"
+    },
+    "ceiling": {
+      "name": "Ukulungiswa Kwezindlu Zangaphezulu",
+      "description": "Ukulungiswa nokufakwa kwezindlu zangaphezulu — rhinoboard, bulkhead namanye amahlobo"
+    },
+    "gutters": {
+      "name": "Ukufakwa Kwama-Gutter",
+      "description": "Ukufakwa, ukulungiswa nokuhlanzwa kwama-gutter — seamless, downpipes nezibiya zamanzi"
+    },
+    "roof-waterproofing": {
+      "name": "Ukuvimbela Amanzi Ophahla",
+      "description": "Ukuvimbela amanzi emphahla — amatshe, IBR, uphahla olulawule noma olubhekene — izinhlelo ze-bitumen, acrylic ne-torch-on"
     }
   },
   "categories": {
@@ -229,7 +241,10 @@
     "renovation": "Ukuvuselela",
     "repairs": "Ukulungisa",
     "brickwork": "Umsebenzi Wezitina",
-    "waterproofing": "Ukuvimbela Amanzi"
+    "waterproofing": "Ukuvimbela Amanzi",
+    "ceiling": "Ukulungiswa Kwezindlu Zangaphezulu",
+    "gutters": "Ukufakwa Kwama-Gutter",
+    "roof-waterproofing": "Ukuvimbela Amanzi Ophahla"
   },
   "pages": {
     "about": {
@@ -574,40 +589,48 @@
     "faq": {
       "title": "Imibuzo Ebuzwa Njalo",
       "subtitle": "Imibuzo Evamile Ngezinsiza Zethu Zokwakha",
-      "heroTitle": "Unemibuzo? Sinezimpendulo",
-      "heroSubtitle": "Thola izimpendulo zemibuzo evame ukubuzwa ngezinsiza zethu",
+      "heroTitle": "Imibuzo Yokwakha — Imibuzo Yakho Yokwakha Iphendulwe",
+      "heroSubtitle": "Izimpendulo zemibuzo evame ukubuzwa ngezindleko zokwakha, izikhathi, ukubhaliswa kwe-NHBRC, nokwakha eJohannesburg & eGauteng",
       "categories": [
         {
           "title": "Imibuzo Ejwayelekile",
           "items": [
             {
               "question": "Ninikeza izintengo zamahhala?",
-              "answer": "Yebo, sinikeza izintengo zamahhala, ezingenasibopho kuzo zonke izinsiza zethu. Sixhumane nje nathi ngemininingwane yephrojekthi yakho futhi sizobeka isikhathi esifanele sokuhlola izidingo zakho."
+              "answer": "Yebo, sinikeza izintengo zamahhala, ezingenasibopho kuzo zonke izinsiza zethu. Inqubo yethu yentengo ifaka ukuvakashela indawo kwamahhala lapho uMakhi wethu onobuchwepheshe ezovakashela impahla yakho ukuze ahlole ukuthi yimiphi imfuneko yokwakha ngokuqondile. Ngemuva kwalokho sizokuhlinzeka ngentengo ecacile, enemininingwane ngaleso naleso sikhathi. Azikho izindleko ezifihlekile noma izimangalo ezingalindekile — intengo oyitholayo iyinkambiso ebhalwe phansi. Imali yokushayela engu-R400 isebenza ukuze kubhekwe indawo, enemiphumela ehlanganiswe nentengo ephelele."
             },
             {
               "question": "Yiziphi izindawo enizisebenzela?",
-              "answer": "Sisebenzela zonke izindawo kuyo yonke iGauteng Province, kufaka phakathi iJohannesburg, iPretoria, iEast Rand, iWest Rand, nezindawo ezizungezile. Sixhumane nathi ukuze siqinisekise ukumbozwa kwendawo yakho ethile."
+              "answer": "Sisebenzela zonke izindawo kuyo yonke iGauteng Province. Lokhu kufaka phakathi iJohannesburg (Sandton, Randburg, Rosebank, Fourways, Roodepoort, Soweto nama-CBD), iPretoria (Centurion, Midrand, Pretoria East ne-West), iEast Rand (Boksburg, Germiston, Kempton Park, Edenvale, Bedfordview), neWest Rand (Krugersdorp, Lanseria, Randfontein). Uma indawo yakho ingekho kulolu hlelo, luxhumane nathi — sisebenzela ngobuchwepheshe izindawo ezisondele eGauteng futhi singaqinisekisa ukukhulu kwamaphrojekthi amakhulu."
             },
             {
-              "question": "Ninezitifiketi futhi ninenshuwarensi?",
-              "answer": "Yebo, i-Sinqobile Construction inezitifiketi ezigcwele futhi inenshuwarensi. Siphatha inshuwarensi yesibopho esiphelele ukuvikela kokubili amakhasimende ethu neqembu lethu ngesikhathi sawo wonke amaphrojekthi."
+              "question": "Nibhalisiwe ku-NHBRC futhi ninenshuwarensi?",
+              "answer": "Yebo, i-Sinqobile Construction ibhalisiwe ku-NHBRC (National Home Builders Registration Council) ngokuphelele. Ukubhaliswa kwethu ku-NHBRC kusho ukuthi siyalandela yonke imisetho yezakhiwo ebekiwe ezweni lonke futhi amakhasimende ethu angathola isiqinisekiso sezakhiwo se-NHBRC kuwo wonke amaphrojekthi amasha okwakha. Ngaphandle kwalokho, siphatha inshuwarensi yesibopho esiphelele — igqubu lethu futhi liqeqeshiwe ukuphatha amathuluzi nemishini ngokuphepha. Lokhu kusho ukuthi wena njengomnikazi wempahla ukuvikelekile ngokwemali nangokwezomthetho ngesikhathi sawo wonke amaphrojekthi."
+            },
+            {
+              "question": "Yimaphi amakhono abantu bakini bokwakha abanawo?",
+              "answer": "Ochwepheshe bethu bokwakha banamakhono asemthethweni, izitifiketi, namakhono ngemikhakha yabo. Wonke umakhi wethu uhlangabezana nezidingo zamagunya aseGauteng ezihlanganisa iminyaka yolwazi nokuqeqeshwa okufanele. U-Dingwayo Reason Ndlovu, umkhandi wethu osungulayo, unolwazi olubanzi ngaphezu kweminyaka eyi-15 ekwakheni. Iqembu lethu libandakanya ongcweti bokwakha, ukuphenda (plastering), ukupenda, ukubeka amathayela, ukwendlala amatshe, izinsiza zamanzi, uphahla, nokuvimbela amanzi. Wonke abasebenzi batholakala ngokuqinisekiswa kwekhwalithi yomsebenzi nokuphepha endaweni yokwakha."
             }
           ]
         },
         {
-          "title": "Iphrojekthi Nezintengo",
+          "title": "Iphrojekthi Nezindleko",
           "items": [
             {
               "question": "Amaphrojekthi athatha isikhathi esingakanani ngokuvamile?",
-              "answer": "Izikhathi zamaphrojekthi ziyahluka kuye ngokubanzi nobunkimbinkimbi. Ukulungisa okuncane kungathatha izinsuku ezi-1-2, kuyilapho amaphrojekthi amakhulu okwakha angathatha amasonto ambalwa. Sinikeza izikhathi ezinemininingwane ngentengo ngayinye."
+              "answer": "Izikhathi zamaphrojekthi ziyahluka kakhulu ngokubanzi nobunkimbinkimbi wephrojekthi. Ukulungisa amapayipi noma ukupenta igumbi elilodwa kungathatha izinsuku ezi-1 kuya ku-3. Ukubeka amathayela noma ukupenda indlu ephelele kungathatha amasonto ama-1 kuya ku-3. Ukwandiswa kwekhaya noma ukuvuselela okuphelele kuvame ukuthatha phakathi kwamasonto ama-4 kuya ku-12 kuye ngobukhulu bosakhiwo. Iziphrojekthi ezinkulu zokwakha okusuka phansi zivame ukuthatha inyanga ezimbalwa. Sikuhlinzeka ngezikhathi ezinemininingwane ngentengo ngayinye, futhi ukuphumelela kwethu kubonakala ekugcineni kwezikhathi ezibekiwe."
             },
             {
               "question": "Yiziphi izindlela zokukhokha enizamukelayo?",
-              "answer": "Samukela imali, ukudluliswa kwemali yasebhange, nezinkokhelo zamakhadi. Kumaphrojekthi amakhulu, sivame ukudinga idiphozithi ukuze siqale umsebenzi, futhi ibhalansi ikhokhelwa lapho umsebenzi uqediwe."
+              "answer": "Samukela izindlela ezahlukene zokukhokha ukuqinisekisa ukuthi umakhasimende wonke anelisekile. Izindlela zethu zokukhokha zifaka phakathi ukudluliswa kwemali yasebhange (EFT), imali evamile, nezinkokhelo zamakhadi asemthethweni. Kumaphrojekthi amakhulu, imali yesiqalo (deposit) cishe phakathi kuka-20% nabu-30% yenani eliphelele idingeka lapho umsebenzi eqalwa. Ibhalansi ikhokhelwa ngezinyathelo ngezikhathi ezihlelelwa phambili noma ekuqedweni komsebenzi. Ezikhathini zonke, isilinganiswane esicacile sinikezwa ngaphambili nomsebenzi awuqali ngaphandle kwemvumo yakho."
             },
             {
               "question": "Ninikeza iziqinisekiso emsebenzini wenu?",
-              "answer": "Yebo, sima ngemuva komsebenzi wethu ngeziqinisekiso eziphelele. Izikhathi zesiqinisekiso ziyahluka ngohlobo lwensiza, futhi sizonikezela ngemininingwane ephelele yesiqinisekiso ngentengo yakho."
+              "answer": "Yebo, sima ngemuva komsebenzi wethu ngeziqinisekiso eziphelele. Izikhathi zesiqinisekiso ziyahluka ngohlobo lwensiza — izinsiza ezifana nokupenda (plastering) nokupenda (painting) zivame ukuba nesiqinisekiso sonyaka munye kuya kwemibili, kuyilapho umsebenzi wesakhiwo nezinsiza zamanzi zineziqinisekiso ezide kakhulu. Amaphrojekthi amasha okwakha abhalisiwe ku-NHBRC athole isiqinisekiso sezakhiwo se-NHBRC seminyaka emi-5. Zonke iziqinisekiso zethu zibhalwa phansi zihlangane nentengo, ukuthi yini okumbozwe yini engenakumbozwa, nezinyathelo zokunxenxa uma kukhona inkinga."
+            },
+            {
+              "question": "Yimalini izindleko ngemitha engcweleziwe yokwakha eGauteng?",
+              "answer": "Izindleko zokwakha eGauteng ziyahluka kakhulu ngohlobo lwendima, izinto ezikhethiwe, nezidingo zomklamo. Njengesiqondiso esijwayelekile, ukwakha okusha kwamakhaya eGauteng kuvame ukuwa phakathi kwe-R8,000 naR15,000 ngemitha engcweleziwe, lapho izinsiza zephakeme zifinyelela noma ziphezu kwe-R20,000/m². Izinsiza ezithile njengokubeka amathayela, ukuphenda, nokupenda zinezindleko ezehlukene. Isibali sethu sezindleko sinikeza isilinganiso esiqondile ngokusekelwe ezinsizeni zakho, ubukhulu bephrojekthi, indawo, nokunye. Sinikeza intengo encintisanayo efanelekile ezintengo zebhazawe zentengo obhetshebetsha ngawo."
             }
           ]
         },
@@ -616,15 +639,36 @@
           "items": [
             {
               "question": "Ninikeza izinto noma kufanele ngizithenga?",
-              "answer": "Singanikezela zonke izinto njengengxenye yensiza yethu, noma sisebenze ngezinto ozithenga wena. Sizoneluleka ngendlela engcono kakhulu ngokusekelwe ephrojekthini yakho nasesabelweni sakho semali."
+              "answer": "Singanikezela zonke izinto ezidingekayo njengengxenye yensiza yethu — lokhu kuvame ukuba yindlela elula kakhulu yamakhasimende, ngoba sithatha iqembu elinolwazi elihlela ukuthenga izinto, ukuhlinzeka izinto zekhwalithi ngentengo encintisanayo, nokuqinisekisa izinto zifika endaweni yokwakha ngesikhathi esifanele. Uma uthanda ukuthenga izinto wena ukunciphisa izindleko, sisebenza ngokukhululekile nezinto ozinikezayo noma ozithengayo — nokho sizonikhombisa ngezinto ezifanele ezilingana nezinga lethu lekhwalithi."
             },
             {
               "question": "Ningasebenza ngempelasonto noma ntambama?",
-              "answer": "Yebo, sinikeza ukuhlelwa kwesikhathi okuguquguqukayo okufaka phakathi umsebenzi wempelasonto nentambama kumaphrojekthi aphuthumayo noma ukwaneliseka kwekhasimende. Izindleko ezengeziwe zingasebenza emsebenzini wangemuva kwamahora."
+              "answer": "Yebo, sinikeza ukuhlelwa kwesikhathi okuguquguqukayo okufaka phakathi umsebenzi wempelasonto nentambama kumaphrojekthi aphuthumayo noma lapho izikhathi zebhizinisi ezijwayelekile azivumeli. Izindleko ezengeziwe zingasebenza emsebenzini wangemuva kwamahora okujwayelekile (ngaphakathi kwamahora 7 AM - 6 PM Mso-Gwe) noma ngempelasonto. Sixhumane ukuze sixoxe ngezidingo zakho nezintengo ezihambisana nohlelo lwakho. Umsebenzi wezimo eziphuthumayo ze-24/7 uyatholakala ngezinkinga eziphuthumayo."
             },
             {
               "question": "Niphatha ukulungiswa kwezimo eziphuthumayo?",
-              "answer": "Yebo, sinikeza izinsiza zokulungisa eziphuthumayo ze-24/7 zezinkinga eziphuthumayo ezifana namapayipi aphukile, izinkinga zikagesi, noma umonakalo wesakhiwo. Sixhumane ngokushesha ukuze uthole usizo lwesimo esiphuthumayo."
+              "answer": "Yebo, sinikeza izinsiza zokulungisa eziphuthumayo ze-24/7 ezinkingeni eziphuthumayo zokwakha. Lokhu kufaka phakathi amapayipi aphukile, izinkinga zikagesi, ukuvuza kophahla, umonakalo wesakhiwo onganqunywa, ukudondoloka kwezindonga, kanye nezinkinga zokuphepha. Uma ubizela ngo-+27 82 868 8396, izinhlelo zethu zokusiza ngokushesha ziqikelele ukuthi iphendulo iyeza ngokushesha. Siyaqonda ukuthi izimo eziphuthumayo zokwakha zingaba nomthelela ongahambi kahle ezimpilweni zakho, ngakho-ke ukusiza ngokushesha ngesikhathi kuyinto yethu ephambili."
+            },
+            {
+              "question": "Nisiza ngezinhlelo zokwakha?",
+              "answer": "Yebo, ngokujwayelekile siyasiza ekwenzeni izinhlelo zokwakha nezinhlelo ezidingekayo ukuze kuqulukelwe isivumelwano nokubhaliswa kwamaPhlanisi Endawo eJohannesburg nakwezinye izifundazwe zaseGauteng. Abaqeqeshi bethu ochwepheshe abanolwazi ngezidingo zezivumelwano zamadolobha neGauteng. Ngokuqinisekile, amaphrojekthi amakhulu adinga umdwebi noma umklami owenzelwe lo msebenzi. Ekuqaleni komklamo, sixoxa ngezidingo zakho futhi sikukhombise izinyathelo ezifanele okufanele uzilandele ukuze ugweme ukubambezeleka okungadingeki."
+            }
+          ]
+        },
+        {
+          "title": "Inqubo Yokwakha",
+          "items": [
+            {
+              "question": "Kuthatha isikhathi esingakanani ngaphambi komsebenzi ukuqala?",
+              "answer": "Ngemuva kokwamukela intengo yakho futhi ngemuva kokugcwalisa amaphrofoma amadingekayo, ngokuvamile siqala iphrojekthi phakathi kwezinsuku ezi-3 kuya ku-7 ezisebenzayo. Amaphrojekthi amakhulu adinga ukuqoqwa okuthe xaxa kwezinto noma izimvume zokwakha zingathatha isikhathi esidlulele — cishe isonto elilodwa kuya kwezimbili. Lapho usibhalisile ngephrojekthi yakho, uMeneja Wephrojekthi wethu uzoxhumana nawe ukuze uqinisekise idethi yokuqala nokuzibophezela kwesikhathi esithe xaxa."
+            },
+            {
+              "question": "Ngizilungiselela kanjani impahla yami?",
+              "answer": "Ukuze kube nokungenela okuphephe, sicela ukuthi ukhiphe zonke izimpahla zamahhala noma ezintengo endaweni yokusebenza. Ukuze kumbe kube nokufinyeleleka okuncono, sicela ugcinise imoto kude nendawo yokusebenza uma kufanele. Uma kukhona izilwane ekhaya, sicela uzigcine indaweni ephephile nomsebenzi uqhubeka. Iqembu lethu lihlanza indawo yokusebenza nsuku zonke lapho umsebenzi uwuqedile, kodwa ukuqapha kakhudlwana kufanele ezikhathini ezintweni ezikhulu."
+            },
+            {
+              "question": "Ngiqinisekisa kanjani ikhwalithi yomsebenzi?",
+              "answer": "Kukhona izindlela ezimbalwa okuqinisekisa ngazo ikhwalithi ngesikhathi somsebenzi. Kokuqala, ungajuzulela ukuhlola umsebenzi njalo — noma yimuphi uMakhi ohle uyosikisela lokhu. Kumele nawe ukhumbule ukubuza imibuzo noma yini engakuzwisi ubuhlungu ngesikhathi somsebenzi. Iqembu lethu linikeza izibuyekezo njalo futhi sinikeza umakhasimende nemininingwane yokuqhubeka ngokushesha kwephrojekthi. Ekugcineni, ngaphambi kokukhokhela ibhalansi yokugcina, hlola umsebenzi ngokucophelela. Uma kunezinkinga, kufanele zilungiswe ngaphambi kokukhokha okugcina. Sizimisele ukuqinisekisa ukuthi waneliswa ngokuphelele ngomsebenzi."
             }
           ]
         }
@@ -674,7 +718,69 @@
     "finalCTA": {
       "title": "Usukulungele Ukuqala Iphrojekthi Yakho?",
       "description": "Xhumana ne-Sinqobile Construction namuhla ukuze uthole ukubonisana kwamahhala nentengo. Ake sakhe okuthile okukhulu ndawonye!"
-    }
+    },
+    "heroTitle": "Mayelana ne-Sinqobile Construction — Umakhi we-NHBRC osethwe ngo-2010",
+    "heroSubtitle": "Yasungulwa uDingwayo Reason Ndlovu eGoli, sesiqedele amaphrojekthi angu-500+ ezakhiweni zasekhaya nezebhizinisi eGauteng ngesilinganiso se-4.9 saseGoogle evela ezibuyisweni ezingu-127 eziverified.",
+    "statEstablished": "Yasungulwa ngo-2010",
+    "statProjects": "Amaphrojekthi angu-500+",
+    "statNHBRC": "Ibhalisiwe i-NHBRC",
+    "statAreas": "Izindawo ezingu-8 eGauteng",
+    "founderTitle": "Hlangana noDingwayo Reason Ndlovu",
+    "founderCaption": "Dingwayo Reason Ndlovu — Umsunguli & Umphathi Omkhulu",
+    "founderBio1": "UDingwayo Reason Ndlovu wasungula i-Sinqobile Construction ngo-2010 ngemuva kweminyaka ebona njengeforeman wendawo nomphathi weprojecthi ekukheni izakhiwo zasekhaya eGoli. Ulwazi lwakhe olwenziwa ngezandla — kusukela ekubekeni izisekelo kuze kufike ekuphatheni amaphrojekthi ababiyela izigidi zamarendi — lwabumba indlela yakhe yokwakha: umsebenzi ngamunye uwumuntu, imininingwane yonke ibalulekile.",
+    "founderBio2": "Ngaphansi kweqhaza lakhe, i-Sinqobile Construction ikhule kusuka emhlanganweni wabantu ababili yaya ethimbeni labasebenzi abangu-15+ abaqeqeshiwe abaqeda amaphrojekthi angu-40 ngonyaka ngokuphakathi. Inkampani ibambe ukubhalisa kwe-NHBRC, ithutha inshuwarensi ehlangene yobunikazi, futhi igcina uhlelo lokuphepha oluhambisana ne-ISO kuzo zonke izindawo.",
+    "founderBio3": "UDingwayo ubheka ngobuqu iphrojekthi ngayinye kusukela esivelweni sokuqala endaweni kuze kufike ekuhambeleni kokugcina. Ukhuluma isiNgisi, isiZulu, nesiSotho — okuqinisekisa ukuxhumana okusobala namakhasimende nabasebenzi abaxhasiwe eGauteng.",
+    "credYears": "Iminyaka Emkhakheni Wokwakha",
+    "credProjects": "Amaphrojekthi Agcwaliwe",
+    "credRating": "Isilinganiso saseGoogle (Izibuyiselo ezingu-127)",
+    "credTeam": "Amalungu Eqembu",
+    "callDingwayo": "Shaya uDingwayo: +27 82 868 8396",
+    "timelineTitle": "Uhambo Lwethu — Kusukela Ekuqaleni Kuze Kube ngu-500+ Amaphrojekthi",
+    "timeline": [
+      {
+        "year": "2010",
+        "title": "Yasungulwa eGoli",
+        "desc": "UDingwayo Reason Ndlovu wabhalisa i-Sinqobile Construction (PTY) LTD, eqala ngokusungula izakhiwo zasekhaya nezamafetela amancane eGoli CBD."
+      },
+      {
+        "year": "2013",
+        "title": "Ukubhalisa kwe-NHBRC & Ukwakha Okukhulu Kokuqala",
+        "desc": "Wathole ukubhalisa komakhi we-NHBRC, okuvumela ukwakhiwa kwezindlu ezintsha. Waqeda ukwakha kwakhe okuqala kwezakhiwo ezigcwele — indlu enamakamelo alala amathathu eMidrand."
+      },
+      {
+        "year": "2016",
+        "title": "Wakhulisa Izinsizakalo Ezingu-19",
+        "desc": "Wakhula kusuka emisebenzini eyinhloko yokwakha ngokungena emapayiphini, ugesi, ukuvalwa kwamanzi, imisebenzi yophahla, ukupeyiva, namaklabhi amane amanye."
+      },
+      {
+        "year": "2019",
+        "title": "Umgomo Wephrojekthi yesi-300",
+        "desc": "Wasetshenziswa iphrojekthi yethu yesi-300 — ukuvuselela kwezakhiwo ezigcwele eSandton. Ngalesi sikhathi, u-70% womsebenzi wethu weza kubathumelwa amakhasimende."
+      },
+      {
+        "year": "2022",
+        "title": "Ukuguqulwa kwe-Gauteng Yonke",
+        "desc": "Sanweba indawo yensizakalo ukumboza zonke izifunda ezinkulu ezingu-8: eGoli, eSandton, ePitoli, eCenturion, eMidrand, eRandburg, eFourways, neRoodepoort. Sengeza izinsizakalo zokusiza okusheshayo 24/7."
+      },
+      {
+        "year": "2024",
+        "title": "Amaphrojekthi angu-500+ & Isilinganiso se-4.9★ saseGoogle",
+        "desc": "Sadlula amaphrojekthi angu-500 agcwaliwe esilinganiseni se-4.9 evela ezibuyisweni ezingu-127 eziverified zaseGoogle. Savula iwebhusayithi yethu yezilimi eziningi ekhonza amakhasimende akhuluma isiNgisi, isiZulu, isiSotho, ne-Afrikaans."
+      }
+    ],
+    "credentialsTitle": "Ukubhalisa Kwezobuchwepheshe & Inshuwarensi",
+    "nhbrcTitle": "Ibhalisiwe i-NHBRC",
+    "nhbrcDesc": "Ibhalisiwe ne-National Home Builders Registration Council — iyimpoqo noma yimuphi umakhi wezindlu ezintsha eNingizimu Afrika.",
+    "nhbrcVerify": "Qinisekisa ku nhbrc.org.za",
+    "insuredDesc": "Inshuwarensi ephelele yobunikazi bomphakathi kanye nokuhlomuliswa kwabasebenzi kuleso naleso phrojekthi. Izitifiketi zikhona ngesicelo.",
+    "insuredWarranty": "Isiqinisekiso sesakhiwo se-NHBRC seminyaka emihlanu kuzo zonke izindlu ezintsha",
+    "safetyTitle": "Ilandela Izinqubomgomo Zokuphepha",
+    "safetyDesc": "Uhlelo lokuphepha oluhambisana ne-ISO kuzo zonke izindawo. Bonke abasebenzi bathwala i-PPE futhi baqeqeshwe ezimisweni zokuphepha ze-SANS. Izihlolelo zokuphepha endaweni njalo.",
+    "safetyRecord": "Akukho kulimalana okwashiyana nesikhathi eminyakeni emihlanu edlule",
+    "whatWeBuildTitle": "Esikwakhayo",
+    "whatWeBuildDesc": "I-Sinqobile Construction inikeza izinsizakalo zokwakha ezingaphezu kuka-19 eGauteng. Wonke umsebenzi usingathwa abasebenzi abanezipiliyoni — hhayi abasebenzi jikelele.",
+    "viewAllServicesLink": "Bona izinsizakalo zonke ezingu-19+",
+    "requestQuoteOnline": "Cela Intengo Yamahhala Ku-inthanethi"
   },
   "about": {
     "title": "Ngo-Dingwayo Reason Ndlovu",
@@ -798,7 +904,34 @@
     "weServeAllAreas": "Sisebenzela zonke izindawo kuyo yonke iGauteng Province. Sixhumane ukuze sixoxe ngephrojekthi yakho yokwakha!",
     "getFreeQuote": "Thola Intengo Yamahhala",
     "andMore": "& okuningi",
-    "allSuburbsIncluding": "Zonke izindawo zasemadolobheni zaseGauteng kufaka phakathi"
+    "allSuburbsIncluding": "Zonke izindawo zasemadolobheni zaseGauteng kufaka phakathi",
+    "serviceAreasLabel": "Izindawo Zensizakalo",
+    "serviceAreasHub": "Izinsizakalo Zokwakha KuGauteng Wonke",
+    "serviceAreasSubtitle": "Izinsizakalo ezingcwele zokwakha, ukuvuselela, nokulalelwa ezindaweni ezinkulu eGauteng",
+    "statsProjects": "Amaphrojekthi angu-500+ Agcwaliwe",
+    "statsYears": "Iminyaka engu-15+ Yazobuchwepheshe",
+    "statsRating": "Isilinganiso se-4.9★",
+    "areasWeServe": "Izindawo Esizikhonzayo",
+    "areasWeServeSubtitle": "Chofoza noma iyiphi indawo ukuze ufunde kabanzi ngezinsizakalo zethu zokwakha kuleyo ndawo",
+    "suburbsCovered": "Izindawo Ezigoqiwe:",
+    "plusMore": "okunye",
+    "projectsCompleted": "Amaphrojekthi Agcwaliwe",
+    "learnMore": "Funda Kabanzi",
+    "callNowFull": "Shaya Manje: +27 82 868 8396",
+    "recentProjectsIn": "Amaphrojekthi Amuva e",
+    "viewAllProjectsPrefix": "Bona wonke",
+    "viewAllProjectsSuffix": "+ amaphrojekthi agcwaliwe",
+    "viewAllServices": "Bona Zonke Izinsizakalo",
+    "moreSuburbsText": "Nezinye izindawo eziningi kule ndawo. Sishayele ucingo ukuqinisekisa ukuthi sikhonza indawo yakho!",
+    "buildingConstructionIn": "Ukwakha & Ukulungiselela ku",
+    "constructionFaqIn": "Imibuzo Evame Ukubuzwa Yokwakha —",
+    "trustedPartnerIn": "Umlingani Wokwakha Othenjwayo ku",
+    "comprehensiveCoverage": "Ukusingathwa okuhlangene",
+    "industryExperience": "Ulwazi lwezimboni",
+    "customerSatisfaction": "Ukwaneliseka kwamakhasimende",
+    "callFull": "Shaya: +27 82 868 8396",
+    "lastUpdated": "Kubuyekeziwe ngo-Ephreli 2026",
+    "yearsExperienceFull": "Iminyaka engu-15+ Yazobuchwepheshe"
   },
   "footer": {
     "mission": "Ukuhlinzeka ngezinsiza zokwakha ezikhwalithile kuyo yonke iGauteng ngobuqotho, ubungcweti, nokunakekela imininingwane.",
@@ -1131,7 +1264,36 @@
     "ctaTitle": "Usukulungele Ukuguquka Kwakho?",
     "ctaText": "Ake siguqule indawo yakho ngezinsiza zethu zokwakha ezinobuchwepheshe. Thola intengo yamahhala namuhla!",
     "getQuoteButton": "Thola Intengo Yamahhala",
-    "viewMoreButton": "Bona Amaphrojekthi Engeziwe"
+    "viewMoreButton": "Bona Amaphrojekthi Engeziwe",
+    "projects": [
+      {
+        "id": "1",
+        "title": "Ukufaka Amatshe Endleleni",
+        "location": "Sandton",
+        "service": "Ukufaka Amatshe",
+        "beforeLabel": "Ikhonkrithi enezimboze nezinhlaza",
+        "afterLabel": "Amatshe amabhrikhi amasha afakiwe",
+        "description": "Indlela yokushayela ikhonkrithi enezimboze kakhulu nezinhlaza ikhishwe bese ifakwa uhlelo lwezilinganiso zamabhrikhi olwenziwe ngabuchwepheshe — lilinganisiwe, livaliwe, lwakhiwe ngomkhondo weGauteng."
+      },
+      {
+        "id": "2",
+        "title": "Ukuphilisa Uphahla & Ukuvimbela Amanzi",
+        "location": "Johannesburg",
+        "service": "Ukwakha Uphahla",
+        "beforeLabel": "Ukhomba, amathayela aphukile, iziphoko",
+        "afterLabel": "Kulungisiwe futhi kuvaliwe",
+        "description": "Uphahla olunawo ukhomba omningi namathayela aphukile nezindawo ezichithekayo kususwa, kulungiswa kabusha, kufakwa amathayela amasha ekhiyela — avimbela amanzi nokuqinisekiswa okubhaliwe kwekhwalithi yomsebenzi."
+      },
+      {
+        "id": "3",
+        "title": "Ukuphletha Ngaphandle",
+        "location": "Fourways",
+        "service": "Ukuphletha",
+        "beforeLabel": "Imibanga, ibhriki evezwe",
+        "afterLabel": "Ukuqedwa kokuphlethwa okusha okulula",
+        "description": "Ukuphlethwa okwaphukile kakhulu okungenalutho kususwa konke, i-substrate ilungiswa, bese kuphletha kabusha kufinyelela ukuqedwa okumelana kahle ngobuhlonzinhlonzi ukulungela ukugcoba."
+      }
+    ]
   },
   "videoTestimonials": {
     "title": "Lalela Kumakhasimende Ethu Anelisekile",
@@ -1159,6 +1321,2487 @@
     "ctaTitle": "Usukulungele Ukuqala Iphrojekthi Yakho?",
     "ctaText": "Iqembu lethu elinolwazi lilungele ukukuholela kuzo zonke izinyathelo zenqubo yokwakha",
     "scheduleButton": "Hlela Ukubonisana Kwamahhala",
-    "calculateButton": "Bala Izindleko Zephrojekthi"
+    "calculateButton": "Bala Izindleko Zephrojekthi",
+    "whatWeDo": "Esikwenzayo:",
+    "stepLabel": "Isinyathelo"
+  },
+  "servicePage": {
+    "getQuoteButton": "Thola Isikweletu Samahhala: +27 82 868 8396",
+    "contactButton": "Xhumana Nathi",
+    "statsTitle": "Izibalo Zesevisi",
+    "statsProjects": "Amaphrojekthi Agqitiwe",
+    "statsYears": "Iminyaka Yolwazi",
+    "sectionProfessional": "Izinsiza Ze%s Ezichwepheshe",
+    "sectionOurServices": "Izinsiza Zethu Ze%s",
+    "sectionCostGuide": "Umhlahlandlela Wezindleko — %s 2026",
+    "sectionProcess": "Inqubo Yethu Ye%s",
+    "processSubtitle": "Silandela inqubo eqinisekiswe ukuze sinikeze imiphumela enesithakazelo",
+    "sectionFaq": "Imibuzo Evame Ukubuzwa — %s",
+    "sectionRelated": "Izinsiza Ezihlobene",
+    "viewAllServices": "Buka Zonke Izinsiza →",
+    "sectionProjects": "Amaphrojekthi Ethu Amasha E%s",
+    "projectsSubtitle": "Bona izibonelo zomsebenzi wethu wezinga eliphezulu we%s",
+    "ctaTitle": "Uyakulungela Iphrojekthi Yakho Ye%s?",
+    "ctaSubtitle": "Xhumana ne-Sinqobile Construction namuhla ukuze uthole ukucobelelana kwamahhala",
+    "callButton": "Shayela: +27 82 868 8396",
+    "getFreeQuote": "Thola Isikweletu Samahhala",
+    "backToServices": "Buya Kuzo Zonke Izinsiza",
+    "lastUpdated": "Kubuyekezwe ngoApril 2026",
+    "tableService": "Insizakalo",
+    "tablePriceRange": "Ibanga Lentengo"
+  },
+  "serviceContent": {
+    "building": {
+      "intro": "I-Sinqobile Construction ingumakhi obhalisiwe ku-NHBRC, esebenzela eJohannesburg nasesifundazweni esiphezulu saseGauteng. Eminakeni engu-15 edlule, siqedile amaphrojekthi angu-500+ okwakha izindlu nezakhiwo zezinkampani. Yonke indlu esakhayo ibhalisiwa ku-NHBRC okungenani izinsuku ezi-15 ngaphambi kokuba ukwakha kuqale, okukunika isiqinisekiso sesakhiwo seminyaka emi-5.",
+      "pricingNote": "Izindleko zokwakha eJohannesburg zisukela ku-R10,000 kuya ku-R20,000 ngawo wonke ikhwele lawo lamanzi ngonyaka we-2026. Amakitshi nezindlu zangasese zibiza ngo-20–40% ngaphezulu. Imali yochwepheshe (umklami wezakhiwo 5–8%, injinela 2–4%, umlinganisi wezindleko 2–3%) ikhokhelwa ngaphandle kwalokhu.",
+      "materialsNote": "Sithola izinto kusuka kuzinhlinzeki eziziwa kahle eGauteng, kufaka phakathi i-Builders Warehouse, i-Corobrik, i-Afrimat, ne-PPC Cement. Zonke izinto zibhalwa ekhwoteshini lakho ngamagama ezimpahla nezibalo zazo.",
+      "subServices": [
+        {
+          "name": "Ukwakha Indlu Entsha",
+          "description": "Ukwakha izindlu eziphelele kusukela ekusekweni kuya ekuqedweni, kufaka phakathi ukufaka izinhlelo, ukugunyazwa yikhansela, izisekelo, umsebenzi wezitina, uphahla, izinsiza zamanzi, ugesi, ukukhwapha, amathayela, nokupenda."
+        },
+        {
+          "name": "Ukwandiswa Nokwengezwa Kwezindlu",
+          "description": "Izindlu zokulala ezengeziwe, ukwandiswa okunezindawo ezimbili, izindlwana zamadala, nokuguqula izindlwana zemimese ngezinhlelo eziGunyaziwe yikhansela."
+        },
+        {
+          "name": "Ukwakha Amahhovisi Nezindawo Zokuthengisa",
+          "description": "Ukuhlelwa kwamahhovisi, izindawo zokuthengisa, nokwakha izinqolobane kuyo yonke iGauteng."
+        },
+        {
+          "name": "Ukulungiswa Nokwakhiwa Kabusha Kwezakhiwo",
+          "description": "Ukuqiniswa kwezisekelo, ukulungiswa kwezindonga ezinezingqimba, nokushintshwa kwezindonga ezihtayela umthwalo."
+        },
+        {
+          "name": "Izindonga Zomngcele Nezakhiwo Zokuphepha",
+          "description": "Izindonga zomngcele ze-precast nezitina, izindlwana zabalindi, nokuqinisekiswa kokuphepha."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Ukwakha izindlu zezinga elivamile",
+          "range": "R10,000 – R14,000 /m²"
+        },
+        {
+          "item": "Izindlu zezinga eliphakathi",
+          "range": "R14,000 – R18,000 /m²"
+        },
+        {
+          "item": "Izindlu ezizigcwele / zezinga eliphezulu",
+          "range": "R18,000 – R25,000+ /m²"
+        },
+        {
+          "item": "Ukwandiswa kwendlu (inhlonhla eyodwa)",
+          "range": "R12,000 – R16,000 /m²"
+        },
+        {
+          "item": "Ukwandiswa okunezindawo ezimbili",
+          "range": "R14,000 – R20,000 /m²"
+        },
+        {
+          "item": "Indlwana yamadala (50–60 m²)",
+          "range": "R550,000 – R900,000"
+        },
+        {
+          "item": "Indonga yomngcele (ngomita ngamunye)",
+          "range": "R1,200 – R2,500"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Ukuhlolwa Kwendawo Kwamahhala",
+          "description": "Sivakashela indawo yakho, sixoxe ngombono wakho, silinganise, sihlole isimo somhlaba. Isifinyezo esibhaliwe sinikezwa ngaphakathi kwamahhora angu-48."
+        },
+        {
+          "step": "2",
+          "title": "Izinhlelo Nezimvume",
+          "description": "Siphatha umklami wezakhiwo obhalisiwe ku-SACAP ukuze akhe izinhlelo azifake kumkhandlu (izinsuku eziyi-4–12 amasonto)."
+        },
+        {
+          "step": "3",
+          "title": "Ikhwoteshi Elinemininingwane Nesivumelwano",
+          "description": "Ikhwoteshi elinemininingwane eligcwele izinto, ukusetshenzwa kwabantu, imali yochwepheshe kanye nezinkathi zokukhokha."
+        },
+        {
+          "step": "4",
+          "title": "Ukwakha",
+          "description": "Umphathi wephrojekthi onikele ngomsebenzi nozaziso zamafoyo nsuku zonke. Umsebenzi wonke ulandela amazinga e-NHBRC."
+        },
+        {
+          "step": "5",
+          "title": "Ukuhlolwa Nokunikela",
+          "description": "Ukuphendukela okugcwele nohlu lwezinkinga. Isitifiketi sokubhalisa ku-NHBRC nesiqinisekiso sinikezwa."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Kubiza malini ukwakha indlu eJohannesburg ngonyaka we-2026?",
+          "answer": "Indlu evamile enezindlu zokulala ezintathu (120–150 m²) ibiza u-R1.2M–R2.5M. Imali yochwepheshe iyengeza u-10–15%."
+        },
+        {
+          "question": "Ngidinga yini izinhlelo zokwakha eziGunyaziwe?",
+          "answer": "Yebo — umthetho waseNingizimu Afrika uwufuna umsebenzi wesakhiwo. Ukugunyazwa kuthatha amasonto ayi-4–12."
+        },
+        {
+          "question": "Kubuswa yini ukubhalisa ku-NHBRC?",
+          "answer": "Kukunika isiqinisekiso seminyaka emi-5 sezikhuyelo zesakhiwo. Qinisekisa ku-nhbrc.org.za."
+        },
+        {
+          "question": "Kuthatha isikhathi esingakanani ukwakha indlu?",
+          "answer": "Indlu evamile enezindlu zokulala ezintathu: izinyanga eziyi-4–6. Akufaki isikhathi sokugunyazwa kwezinhlelo."
+        },
+        {
+          "question": "Nisebenza kuphi eGauteng?",
+          "answer": "Kuyo yonke iGauteng kufaka phakathi Johannesburg, Sandton, Fourways, Randburg, Midrand, Centurion, Pretoria, Roodepoort."
+        }
+      ],
+      "whyChoose": [
+        "Ibhalisiwe ku-NHBRC — yonke indlu entsha ibhalisiwa nesiqinisekiso sesakhiwo seminyaka emi-5",
+        "Izinhlelo ezihambisana ne-SACAP — siphatha abakli bezakhiwo nezimvume zekhansela kusukela ekuqaleni kuya ekugcineni",
+        "Amaphrojekthi angu-500+ aqediwe eGauteng eminakeni engu-15",
+        "Umphathi wephrojekthi oyedwa — kusukela ekuqaleni kuya ekugcineni",
+        "Amakhwoteshi anomnqamulo wamanani anemininingwane ngezikhathi zokukhokha (awekho amashubhu)",
+        "Inainshuwarensi ephelele yezakhiwo nesibopho"
+      ]
+    },
+    "plumbing": {
+      "intro": "I-Sinqobile Construction inikeza izinsiza zamanzi zobuchwepheshe kuyo yonke iJohannesburg neGauteng — kusukela ekuqondiseni izimpompi ezifohloka ngokusheshayo kuya ekufakweni kwama-geyser. Izintambo zamanzi ezinolasensi zitholakala ngo-24/7 nesikhathi sokuphenduka samahhora ayi-2–4. Umsebenzi wonke uhambisana ne-SANS 10252.",
+      "pricingNote": "Izindleko zishintsha ngokwenkomba nokuphuthuma. Ukubizwa kwezimo zezikhathi zangobo kuphezu kowavamile. Awekho amanani angafihliwe okushayela.",
+      "materialsNote": "",
+      "subServices": [
+        {
+          "name": "Izinsiza Zamanzi Ezikhawulezayo (24/7)",
+          "description": "Izimpompi ezifohloka, ukuvuza, ukuselwa kwama-geyser, izindlu zangasese ezigcwelayo. Isikhathi sokuphenduka samahhora ayi-2–4."
+        },
+        {
+          "name": "Ukufakwa Nokulungiswa Kwama-Geyser",
+          "description": "Ugesi, igesi, ilanga, nezinhlelo ze-heat pump. Wonke amabrandi (Kwikot, Franke, Defy, Bosch)."
+        },
+        {
+          "name": "Ukuhlonzwa Nokulungiswa KokuVuza",
+          "description": "Ukuhlonzwa okungabhubhisi ngokuhlolwa kwengcindezi nokusebenzisa izinto ezibona ukushisa."
+        },
+        {
+          "name": "Ukuhlanza Nokuvula Izimbobo Zamanzi",
+          "description": "Izinduku, ukushaywa ngengcindezi ephezulu, ukuhlolwa nge-CCTV."
+        },
+        {
+          "name": "Izinsiza Zamanzi Zezindlu Zangasese Namakitshi",
+          "description": "Ukufakwa okugcwele nokuqedwa komsebenzi wezinsiza zamanzi."
+        },
+        {
+          "name": "Izitifiketi Zokuhambisana Nezinsiza Zamanzi (COC)",
+          "description": "Ukuhlolwa nezitifiketi zokwenziwa kwezicelo zokuthengisa izindlu."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Ukushayela ngezimo zezikhathi zangobo",
+          "range": "R500 – R1,000/hr"
+        },
+        {
+          "item": "Ukulungiswa kwezinsiza zamanzi okuvamile (ngesikhathi samabanga)",
+          "range": "R450 – R850/hr"
+        },
+        {
+          "item": "Ukulungiswa kwempompi efohlokile",
+          "range": "R700 – R4,000"
+        },
+        {
+          "item": "Ukufakwa kwe-geyser (150L ugesi)",
+          "range": "R5,500 – R8,000"
+        },
+        {
+          "item": "Uhlelo lwe-geyser langa",
+          "range": "R18,000 – R30,000"
+        },
+        {
+          "item": "Ukuvula imbobo yamanzi (evamile)",
+          "range": "R650 – R1,500"
+        },
+        {
+          "item": "Ukuhlolwa kwembobo yamanzi nge-CCTV",
+          "range": "R1,500 – R3,000"
+        },
+        {
+          "item": "Isitifiketi se-COC sezinsiza zamanzi",
+          "range": "R850 – R2,700"
+        },
+        {
+          "item": "Ukushintshwa kwethoyilethi",
+          "range": "R2,500 – R5,000"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Shayela Noma Uthumele ku-WhatsApp",
+          "description": "Chaza inkinga — unikezwa inani elingafanele nokuhlela ngokushesha. Izimo zezikhathi zangobo zithunyelwa manje."
+        },
+        {
+          "step": "2",
+          "title": "Ukuhlolwa",
+          "description": "Ukuhlolwa endaweni ngokwenani elinomnqamulo ngaphambi kokuba umsebenzi uqale."
+        },
+        {
+          "step": "3",
+          "title": "Ukulungiswa",
+          "description": "Kuqedwa ngezingxenye ezinomthelela. Olufusa olungu-90% lwalungiswa ngokuya kwethu okukodwa."
+        },
+        {
+          "step": "4",
+          "title": "Ukuhlolwa Nesiqinisekiso",
+          "description": "Kuhlolwa ngengcindezi, indawo ihlanzwe, isiqinisekiso somsebenzi nefakisi elinesifinyezo sinikezwa."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Kubiza malini ukushayela kwezinsiza zamanzi ezikhawulezayo?",
+          "answer": "Ezikhawulezayo: R500–R1,000/hr. Ezivamile: R450–R850/hr. Inani elinomnqamulo linikezwa ngaphambi kokuba umsebenzi uqale."
+        },
+        {
+          "question": "Ningaphenduka ngokushesha kangakanani?",
+          "answer": "Amahhora ayi-2–4 kuyo yonke iJohannesburg. Ngo-24/7 kufaka phakathi namasonto. Shayela u-+27 82 868 8396."
+        },
+        {
+          "question": "Ukufakwa kwe-geyser kubiza malini ngonyaka we-2026?",
+          "answer": "I-geyser ye-150L yogesi ifakwa inikwa ngendawo: R5,500–R8,000."
+        },
+        {
+          "question": "Ngidinga isitifiketi se-COC sezinsiza zamanzi uma ngithengisa?",
+          "answer": "Yebo — kufuneka emikhandlwini eminingi yaseNingizimu Afrika."
+        },
+        {
+          "question": "Nisebenza kuphi?",
+          "answer": "Kuyo yonke iJohannesburg neGauteng — Sandton, Fourways, Randburg, Midrand, Centurion, Pretoria, Roodepoort, Soweto."
+        }
+      ],
+      "whyChoose": [
+        "Ukuphenduka kwezimo zezikhathi zangobo ngo-24/7 — isikhathi esivamile samahhora ayi-2–4",
+        "Izintambo zamanzi ezinolasensi nezinenshuwarensi, ezineminyaka engu-15+ yolwazi",
+        "Amakhwoteshi anomnqamulo wamanani endaweni — awekho amanani angafihliwe okushayela",
+        "Wonke amabrandi ama-geyser amakhulu (Kwikot, Franke, Defy, Bosch)",
+        "Izitifiketi ze-COC zezinsiza zamanzi ngosuku olulodwa kwizakhiwo ezihambisanayo",
+        "Ukulungiswa ngokuya okukodwa — izingxenye ezivamile zikhwelwa ezimoteni zethu"
+      ]
+    },
+    "renovation": {
+      "intro": "I-Sinqobile Construction ingumakhi wezokuvuselela okhethekile eJohannesburg nasesifundazweni saseGauteng. Amaphrojekthi okuvuselela angu-500+ eminakeni engu-15. Izindleko zokuvuselela izindlu zisukela ku-R7,000–R20,000/m² ngonyaka we-2026. Siphatha wonke umsebenzi ngaphansi kwempahla eyodwa ngomphathi wephrojekthi onikele.",
+      "pricingNote": "Izindleko zokuvuselela zisukela ku-R7,000–R20,000/m² ngonyaka we-2026. Amakitshi nezindlu zangasese zibiza ngaphezulu. Wonke amakhwoteshi anemininingo futhi anomnqamulo wamanani.",
+      "materialsNote": "",
+      "subServices": [
+        {
+          "name": "Ukuvuselela Amakitshi",
+          "description": "Ukuguqulwa okuphelele: ukudilizwa, izindlela zezikhaba, izinhlobo zezikhaba, izinsiza zamanzi, ugesi, amathayela."
+        },
+        {
+          "name": "Ukuvuselela Izindlu Zangasese",
+          "description": "Ukuqwashiswa okuphelele: ukuvimbela amanzi, amathayela, ishawa, i-vanity, ukufudumeza kwaphansi kwephansi."
+        },
+        {
+          "name": "Ukuvuselela Izindlu Ngeziphela",
+          "description": "Ukuguqulelwa kwezindawo ezikhulukazi, ukushintshwa kwezakhiwo, ukukhwapha kabusha nokupenda."
+        },
+        {
+          "name": "Ukuguqula Izindawo Zibe Nokuvula",
+          "description": "Ukususwa kwezindonga ngesignesha yenjinela."
+        },
+        {
+          "name": "Ukuguqula Izindlwana Zemimese Nezakhiwo Ezingaphandle",
+          "description": "Ukuguqula izindlwana zemimese zibe amahhovisi, izindlwana zamadala, noma izingxenye zokuqashisa."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Ukuvuselela ikitshi (izinga eliphakathi, 14 m²)",
+          "range": "R60,000 – R190,000"
+        },
+        {
+          "item": "Ukuvuselela ikitshi (izinga eliphezulu)",
+          "range": "R190,000 – R300,000"
+        },
+        {
+          "item": "Ukuvuselela indlu yangasese (encane, ngaphansi kwe-5 m²)",
+          "range": "R15,000 – R45,000"
+        },
+        {
+          "item": "Ukuvuselela indlu yangasese (ephakathi, 5–10 m²)",
+          "range": "R45,000 – R90,000"
+        },
+        {
+          "item": "Ukuvuselela indlu ngeyonke (ngawo wonke ikhwele lawo lamanzi)",
+          "range": "R7,000 – R20,000"
+        },
+        {
+          "item": "Ukuguqulwa kwendawo evulekile",
+          "range": "R25,000 – R80,000"
+        },
+        {
+          "item": "Ukuguqulwa kwesidleke semimese sibe indlwana yamadala",
+          "range": "R120,000 – R350,000"
+        },
+        {
+          "item": "Ukupenda ngaphakathi (ngegumbi ngalinye)",
+          "range": "R3,000 – R6,000"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Ukuhlolwa Kwendawo Kwamahhala",
+          "description": "Sivakashela ikhaya lakho, sixoxe ngombono wakho, sihlole isakhiwo."
+        },
+        {
+          "step": "2",
+          "title": "Ukuklama Nezinhlelo",
+          "description": "Umklami wezakhiwo we-SACAP wezinguquko zesakhiwo; isifundo esinemininingwane somsebenzi wokuhlobisa."
+        },
+        {
+          "step": "3",
+          "title": "Ikhwoteshi Elimnqamulo Wamanani",
+          "description": "Ikhwoteshi elinemininingwane — u-30% wentela yokuqala, izinkathi zokukhokha, u-10% ekuqedweni."
+        },
+        {
+          "step": "4",
+          "title": "Ukuvuselela",
+          "description": "Umphathi wephrojekthi onikele, izaziso zamafoyo nsuku zonke."
+        },
+        {
+          "step": "5",
+          "title": "Ukuphendukela Nokunikezwa",
+          "description": "Uhlu lwezinkinga, ukuhlanzwa ngemuva kokuvuselela, imibhalo yesiqinisekiso."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Izindleko zokuvuselela zibiza malini ngonyaka we-2026?",
+          "answer": "R7,000–R20,000/m². Ikitshi R60,000–R300,000; indlu yangasese R15,000–R90,000."
+        },
+        {
+          "question": "Kuthatha isikhathi esingakanani ukuvuselela indlu ngeyonke?",
+          "answer": "Amasonto ayi-8–16."
+        },
+        {
+          "question": "Ngidinga yini izinhlelo zokwakha?",
+          "answer": "Kuphela ngezinguquko zesakhiwo njengokususwa kwezindonga."
+        },
+        {
+          "question": "Ngingahlala endlini yami ngesikhathi sokuvuselela?",
+          "answer": "Yebo ezimweni eziningi ngezivimba zasenklama."
+        },
+        {
+          "question": "Kungani izindleko zokuvuselela eSandton ziphezulu?",
+          "answer": "Ziphezulu ngo-10–15% ngenxa yezinto ezihloniphekile nezindlu ezinkulu."
+        }
+      ],
+      "whyChoose": [
+        "Wonke umsebenzi ngaphansi kwempahla eyodwa — izinsiza zamanzi, ugesi, amathayela, ukupenda, ubugesi bokuhlela",
+        "Amakhwoteshi anomnqamulo wamanani anemininingwane",
+        "Umphathi wephrojekthi onikele kusukela ekuklanyeni kuya ekuphelelisweni",
+        "Amaphrojekthi okuvuselela angu-500+ kuyo yonke iGauteng",
+        "Siphatha ukufakwa kwezinhlelo zekhansela nokuxhumana nomklami wezakhiwo",
+        "Inainshuwarensi ephelele yezakhiwo nesibopho"
+      ]
+    },
+    "paving": {
+      "intro": "I-Sinqobile Construction ingumakhi wokwendlala amatshe obuchwepheshe eJohannesburg neGauteng. Amaphrojekthi amakhulu okwendlala amatshe eminakeni engu-15. Izindleko zokwendlala amatshe zisukela ku-R350–R950/m² ngonyaka we-2026. Isifundo esigcwele: ukumba, ukulungiswa kwezisekelo ezingaphansi, izivimba zomngcele, ukubeka amatshe, ukugcwaliswa kwemifumbe, nokushaywa ngedinti.",
+      "pricingNote": "Izindleko zishintsha ngokwezinto nezimo zendawo. Ukusetshenzwa kwabantu kuyingxenye engu-30–40% yesabelomali. Awekho amanani angafihliwe.",
+      "materialsNote": "",
+      "subServices": [
+        {
+          "name": "Ukwendlala Amatshe Ezindleleni Zemimese",
+          "description": "Izindlela zemimese ezinezimoto ezinye nezimbili ngamatshe ekhonkrithi, ubumba, noma amatshe ahlanganisiwayo."
+        },
+        {
+          "name": "Ukwendlala Amatshe Ezindaweni Zokuphumula",
+          "description": "Izindawo zangaphandle, izindawo ze-braai, izindawo ezinamachibi."
+        },
+        {
+          "name": "Ukwendlala Amatshe Ezindleleni Nezindleleni Zengadi",
+          "description": "Izindlela ezisebenzayo nezihlobise."
+        },
+        {
+          "name": "Ukwendlala Amatshe Ezindaweni Zezinkampani Nezimboni",
+          "description": "Izindawo zokupaka, izindawo zokwenqakwa, nezindawo zangaphambi kwezinqolobane."
+        },
+        {
+          "name": "Ukulungiswa Nokwakhiwa Kabusha Kwamatshe",
+          "description": "Amatshe atshalwe phansi noma anomatshe ashukisiwe, izisekelo ezishaywe kabusha, amatshe abhalwe kabusha."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Amatshe ekhonkrithi (afakiwe)",
+          "range": "R300 – R600 /m²"
+        },
+        {
+          "item": "Amatshe obumba / izitina (afakiwe)",
+          "range": "R400 – R700 /m²"
+        },
+        {
+          "item": "Amatshe ahlanganisiwayo (afakiwe)",
+          "range": "R300 – R600 /m²"
+        },
+        {
+          "item": "Ukwendlala amatshe e-cobblestone",
+          "range": "R450 – R900 /m²"
+        },
+        {
+          "item": "Itshe lemvelo (igranite, itshe lemngcele)",
+          "range": "R450 – R1,000 /m²"
+        },
+        {
+          "item": "Indlela yemimese enezimoto ezinye (30–40 m²)",
+          "range": "R15,000 – R35,000"
+        },
+        {
+          "item": "Indlela yemimese enezimoto ezimbili (60–80 m²)",
+          "range": "R30,000 – R65,000"
+        },
+        {
+          "item": "Ukulungiswa / ukubeka kabusha amatshe",
+          "range": "R200 – R450 /m²"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Ukuvakashela Kwamahhala",
+          "description": "Silinganise indawo, sihlole ukugeleza kwamanzi nomhlaba, sixoxe ngezinto, sikhiphe ikhwoteshi elibhaliwe ngaphakathi kwamahhora angu-48."
+        },
+        {
+          "step": "2",
+          "title": "Ukulungiswa Kwendawo",
+          "description": "Ukumba ngobujule obufanele, ukususa izinto ezikhulayo, ukufakwa kwesisekelo esishayiwe."
+        },
+        {
+          "step": "3",
+          "title": "Ukufakwa Kwamatshe",
+          "description": "Abekwa ngesifanekiso esikhethiwe ngokunqamula okunembile."
+        },
+        {
+          "step": "4",
+          "title": "Ukuqedwa Nokunikezwa",
+          "description": "Imifumbe igcwaliswa, iphephethwa ipuleti, isiqinisekiso sinikezwa."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Ukwendlala amatshe kubiza malini ngawo wonke ikhwele lawo lamanzi ngonyaka we-2026?",
+          "answer": "R350–R950/m² ngokwezinto."
+        },
+        {
+          "question": "Iziphi izinto ezingcono kakhulu zendlela yemimese?",
+          "answer": "Amatshe ekhonkrithi ahlanganisiwayo — ashibhile futhi aqinile."
+        },
+        {
+          "question": "Kuthatha isikhathi esingakanani iphrojekthi yendlela yemimese?",
+          "answer": "Imoto eyodwa: izinsuku eziyi-2–3; ezimbili: izinsuku eziyi-3–5."
+        },
+        {
+          "question": "Kungani ukulungiswa kwezisekelo ezingaphansi kubalulekile?",
+          "answer": "Kuvimbela ukushona nokushukuma."
+        },
+        {
+          "question": "Nisusa amatshe amadala?",
+          "answer": "Yebo — siphakamisa amatshe amadala siqale kabusha."
+        }
+      ],
+      "whyChoose": [
+        "Ukulungiswa kwezisekelo ezingaphansi kwezinga lenjinela ngo-plate compactor nokulinganiswa ngelaser",
+        "Iminyaka engu-15+ yolwazi wokwendlala amatshe kuyo yonke iGauteng",
+        "Zonke izinto zifakiwa zebekwa",
+        "Ukuvakashela kwamahhala nokuhlolwa kokugeleza kwamanzi ngaphakathi kwamahhora angu-48",
+        "Isiqinisekiso somsebenzi kuwo wonke ukufakwa",
+        "Inainshuwarensi ephelele yesibopho"
+      ]
+    },
+    "concrete": {
+      "intro": "I-Sinqobile Construction inikeza izinsiza zekhonkrithi zobuchwepheshe eJohannesburg neGauteng — izisekelo, amapuleti, nezindonga zokugcina. Iminyaka engu-15+ sisebenzisana nezinjinela zesakhiwo ukuze sihlangabezane nezidingo ze-SANS 10400 ne-NHBRC. Sisebenzisa izingxube ezihlolwe kusuka ku-PPC, Lafarge, ne-AfriSam.",
+      "pricingNote": "Izindleko zincika emandleni oxube (MPa), isibalo, insimbi yokuqinisa, nokufika endaweni. Ikhonkrithi yelungiselwa: R1,800–R2,500/m³.",
+      "materialsNote": "",
+      "subServices": [
+        {
+          "name": "Izisekelo (Raft, Strip ne-Pad)",
+          "description": "Izisekelo ze-raft zamakhaya, strip yezindonga zomngcele, ne-pad yezinsika."
+        },
+        {
+          "name": "Amapuleti Aphansi Namapuleti Aphansi Kwezindlu",
+          "description": "Amapuleti aphansi nomhlaba kanye namapuleti e-rib-and-block aphansi kwezindlu."
+        },
+        {
+          "name": "Izindlela Zemimese Zekhonkrithi",
+          "description": "Izindlela zemimese eziqinisiwe ku-R300–R450/m²."
+        },
+        {
+          "name": "Izindonga Zokugcina",
+          "description": "Izindonga eziqinisiwe zezindawo ezinezifunda ezithambile."
+        },
+        {
+          "name": "Ukulungiswa Nokuvimbela Amanzi Kwekhonkrithi",
+          "description": "Ukufakwa kwezinyosi zezingqimba, ukulungiswa kokusabeka, izigqoko zokuvimbela amanzi."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Isisekelo se-raft (sezakhiwo zezindlu)",
+          "range": "R1,200 – R2,000 /m²"
+        },
+        {
+          "item": "Isisekelo se-strip (sezindonga zomngcele)",
+          "range": "R800 – R1,500 /lin. m"
+        },
+        {
+          "item": "Ipuleti elingaphansi (100 mm, 25 MPa)",
+          "range": "R450 – R800 /m²"
+        },
+        {
+          "item": "Ipuleti elingaphansi kwezindlu (rib-and-block)",
+          "range": "R1,500 – R2,500 /m²"
+        },
+        {
+          "item": "Indlela yemimese yekhonkrithi (eqinisiwe, 100 mm)",
+          "range": "R300 – R450 /m²"
+        },
+        {
+          "item": "Indonga yokugcina (kuya ku-1.5 m)",
+          "range": "R2,500 – R5,000 /lin. m"
+        },
+        {
+          "item": "Ikhonkrithi yelungiselwa (inikezwa)",
+          "range": "R1,800 – R2,500 /m³"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Ukuhlolwa Kwendawo",
+          "description": "Sihlole indawo, sibuyekeze imidwebo yenjinela, sihlole umhlaba."
+        },
+        {
+          "step": "2",
+          "title": "Ukumba Nokubumba",
+          "description": "Ukumba, ukusetha ukubumba, ukufakwa kwensimbi yokuqinisa."
+        },
+        {
+          "step": "3",
+          "title": "Ukuthulula Nokuvibharetha",
+          "description": "Ikhonkrithi yelungiselwa ithululwa iphinde ivibhareshwe ukuze ikhiphe umoya."
+        },
+        {
+          "step": "4",
+          "title": "Ukuqedwa Nokugcinwa",
+          "description": "Isiqu silinganiswa, siqedwa, sigcinwa izinsuku eziyi-7–28."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Isisekelo sekhonkrithi sibiza malini ngonyaka we-2026?",
+          "answer": "I-raft yezakhiwo zezindlu: R1,200–R2,000/m²."
+        },
+        {
+          "question": "Yimuphi amandla ekhonkrithi afanele isisekelo?",
+          "answer": "I-25 MPa yazo eziningi izindlu."
+        },
+        {
+          "question": "Ikhonkrithi igcina isikhathi esingakanani?",
+          "answer": "Ingu-70% ngezinsuku eziyi-7; amandla aphelele ngezinsuku eziyi-28."
+        },
+        {
+          "question": "Umehluko phakathi kwesisekelo se-raft nese-strip?",
+          "answer": "I-raft isibekela isigxobo sonke; i-strip ibaleka ngaphansi kwezindonga kuphela."
+        },
+        {
+          "question": "Ninikeza ikhonkrithi?",
+          "answer": "Yebo — ikhonkrithi yelungiselwa kusuka ku-PPC, Lafarge, AfriSam."
+        }
+      ],
+      "whyChoose": [
+        "Ikhonkrithi echazwe yinjinela — i-MPa efanele, ukuqiniswa, nokuxuba",
+        "Ikhonkrithi yelungiselwa kusuka ku-PPC, Lafarge, AfriSam",
+        "Iminyaka engu-15+ yokuthulula izisekelo kuyo yonke iGauteng",
+        "Ukuvibharethwa nokugcinwa okunembile — awekho amabubula omoya",
+        "Inainshuwarensi ephelele",
+        "Ukuhlolwa kwamahhala kwendawo namakhwoteshi anemininingwane"
+      ]
+    },
+    "roofing": {
+      "intro": "I-Sinqobile Construction inikeza izinsiza zophahla zobuchwepheshe eJohannesburg neGauteng — ukulungiswa kwezimo zezikhathi kuya ekushintshweni okugcwele. Iminyaka engu-15+ yolwazi. Izindleko zisukela ku-R450–R1,000/m². Sisebenza ne-IBR steel, amashidi agquqquziwe, amathayela ekhonkrithi, amathayela obumba, ne-chromadek.",
+      "pricingNote": "Izindleko zishintsha ngokwezinto, ukucekelwa kophahla, nenhloso yomsebenzi. Ukuhlolwa kophahla kwamahhala kufakiwe. Wonke amakhwoteshi afaka izinto, ukusetshenzwa kwabantu, nokususwa kwezinto.",
+      "materialsNote": "",
+      "subServices": [
+        {
+          "name": "Ukulungiswa Kophahla Nokuvimba Ukuvuza",
+          "description": "Amathayela aphukile, amashidi asebile, ama-flashing anomatshe, izindonga ezivuzayo."
+        },
+        {
+          "name": "Ukushintshwa Kophahla Nokwakhiwa Kabusha",
+          "description": "Ukususwa okugcwele nokuhlaziywa ku-R550–R1,650/m²."
+        },
+        {
+          "name": "Ukufakwa Kophahla Olutsha",
+          "description": "Ukwakhiwa okusha nokwandiswa kwezindlu."
+        },
+        {
+          "name": "Ukupenda Nokugqoka Kophahla",
+          "description": "Ukuhlanzwa, ukwelashwa kwentsambende, izigqoko ezimelana ne-UV ku-R80–R150/m²."
+        },
+        {
+          "name": "Ama-Gutter, Ama-Fascia Nezinsimbi Zamanzi",
+          "description": "Ama-gutter e-aluminium angaphumi, ama-fascia board, nezinsimbi zamanzi."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Ukulungiswa kophahla (evamile, ngawo wonke ikhwele lawo lamanzi)",
+          "range": "R88 – R200 /m²"
+        },
+        {
+          "item": "Amashidi e-IBR / ekhonkrithi amasha",
+          "range": "R450 – R650 /m²"
+        },
+        {
+          "item": "Amathayela ekhonkrithi ophahla (afakiwe)",
+          "range": "R500 – R800 /m²"
+        },
+        {
+          "item": "Amathayela obumba ophahla (afakiwe)",
+          "range": "R600 – R1,000 /m²"
+        },
+        {
+          "item": "Ukushintshwa kophahla okugcwele (ukususwa nokufakwa kabusha)",
+          "range": "R550 – R1,650 /m²"
+        },
+        {
+          "item": "Ukupenda uphahla (ukuhlanza, ukwelasha, izigqoko ezimbili)",
+          "range": "R80 – R150 /m²"
+        },
+        {
+          "item": "Ama-gutter e-aluminium angaphumi (ngomita ngamunye)",
+          "range": "R250 – R450 /m"
+        },
+        {
+          "item": "Ukususwa kwezinto endala (ngawo wonke ikhwele lawo lamanzi)",
+          "range": "R50 – R100 /m²"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Ukuhlolwa Kophahla Kwamahhala",
+          "description": "Sihlole uphahla, sithathele izithombe izindawo ezinobuhlungu, sinikezwe umbiko onemininingwane."
+        },
+        {
+          "step": "2",
+          "title": "Ikhwoteshi Nokuhlela",
+          "description": "Ikhwoteshi elinemininingwane. Ukulungiswa kwezimo zezikhathi kunganqanyulwa ngosuku olulodwa."
+        },
+        {
+          "step": "3",
+          "title": "Ukulungiswa Noma Ukufakwa",
+          "description": "Umsebenzi wenziwa nge-safety harnesses nezinsika."
+        },
+        {
+          "step": "4",
+          "title": "Ukuhlanzwa Nesiqinisekiso",
+          "description": "Izingqephu zisuswa, isiqinisekiso somsebenzi sinikezwa."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Uphahla olutsha lubiza malini ngonyaka we-2026?",
+          "answer": "IBR: R450–R650/m²; amathayela ekhonkrithi: R500–R800/m²; amathayela obumba: R600–R1,000/m²."
+        },
+        {
+          "question": "Ngilungise noma ngishintsha?",
+          "answer": "Lungisa uma kunezinqe ezimbalwa ezidinga ukunakekelwa; shintsha uma u-30%+ webhiwa."
+        },
+        {
+          "question": "Ningalungisa izimvubu ngesikhathi semvula?",
+          "answer": "Yebo — ukulungiswa kwezimo zezikhathi usuku lonke unyaka wonke."
+        },
+        {
+          "question": "Yiziphi izinto ezingcono kakhulu zophahla eJohannesburg?",
+          "answer": "I-IBR steel — ishibhile, imelana nobhaka nokhomfula wezimvula."
+        },
+        {
+          "question": "Ukupenda uphahla kuvimbela ukuvuza?",
+          "answer": "Cha — qala ulungise ukuvuza, bese ugqoka ukuze uluze isikhathi sophahla."
+        }
+      ],
+      "whyChoose": [
+        "Ukuhlolwa kophahla kwamahhala nge-photographic report",
+        "Ukulungiswa kwezimvubu kwezimo zezikhathi ngosuku olulodwa kuyo yonke iJohannesburg",
+        "Zonke izinto: IBR steel, amathayela ekhonkrithi, amathayela obumba, chromadek, aluminium",
+        "Iminyaka engu-15+ yolwazi wophahla kuyo yonke iGauteng",
+        "Ukuphepha okuhambisanayo kuwo wonke umsebenzi",
+        "Isiqinisekiso somsebenzi kuwo wonke ukulungiswa nokufakwa"
+      ]
+    },
+    "waterproofing": {
+      "intro": "I-Sinqobile Construction inikeza izinsiza zobuchwepheshe zokuvimbela ukugcweleza kwamanzi nokuvimbela ukusha eJohannesburg neGauteng. Iminyaka engu-15+ sihlola izindlu namakhulu. Izindleko zisukela ku-R70–R600/m² ngonyaka we-2026. Sihlola umthombo wenkinga ngaphambi nje kwemiyalelo yesixazululo.",
+      "pricingNote": "Izindleko zincika endleleni, isikhala sendawo, nezimo zomgodi. Wonke amakhwoteshi afaka ukulungiswa, izinto, ukusetshenzwa kwabantu, nesiqinisekiso.",
+      "materialsNote": "",
+      "subServices": [
+        {
+          "name": "Ukuvimbela Amanzi Emphahla",
+          "description": "Izindlela ze-torch-on bitumen membrane, polyurethane, nezigqoko ze-acrylic ku-R200–R500/m²."
+        },
+        {
+          "name": "Ukuvimbela Amanzi Ezindlini Zangasese Nezindaweni Ezinezinsizi",
+          "description": "Izindlela ze-cementitious nezindlela ze-liquid membrane ezisetshenziswa ngaphambi kokubeka amathayela."
+        },
+        {
+          "name": "Ukwelashwa Kukagcweleza Osukumayo",
+          "description": "Ukufakwa kwezinyosi ze-DPC ezinezikhambi ku-R70–R250/m²."
+        },
+        {
+          "name": "Ukuvimbela Amanzi Ezikhombeni Nezindaweni Ezingaphansi Komhlaba",
+          "description": "Izinhlelo ze-tanking ku-R800–R1,500/m²."
+        },
+        {
+          "name": "Ukuvimbela Amanzi Ezindongeni Zangaphandle",
+          "description": "Izivimba zamanzi nezigqoko ze-elastomeric."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Indlela ye-torch-on membrane (uphahla olulawule)",
+          "range": "R200 – R400 /m²"
+        },
+        {
+          "item": "Ukucitshwa kwe-bitumen",
+          "range": "R300 – R500 /m²"
+        },
+        {
+          "item": "Ukufakwa kwezinyosi ze-DPC (ukugcweleza osukumayo)",
+          "range": "R70 – R250 /m²"
+        },
+        {
+          "item": "Ukuvimbela amanzi ngaphakathi (tanking + render)",
+          "range": "R320 – R650 /m²"
+        },
+        {
+          "item": "Uhlelo lwe-tanking lwezikhombi",
+          "range": "R800 – R1,500 /m²"
+        },
+        {
+          "item": "Ukuvimbela amanzi ezindlini zangasese (ngaphambi kwamathayela)",
+          "range": "R150 – R350 /m²"
+        },
+        {
+          "item": "Isivimba samanzi sezindonga zangaphandle",
+          "range": "R50 – R120 /m²"
+        },
+        {
+          "item": "Ipendi / isigqoko sokuvimbela amanzi",
+          "range": "R300 – R450 /m²"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Ukuhlolwa Kokugcweleza Nokuvuza",
+          "description": "Sihlole indawo sisebenzisa izinto zokulinganisa ukugcweleza ukuze sihlonze umthombo wamanzi."
+        },
+        {
+          "step": "2",
+          "title": "Ukuhlonzwa Neikhwoteshi",
+          "description": "Siphakamisa indlela esebenzayo kakhulu neikhwoteshi elinemininingwane."
+        },
+        {
+          "step": "3",
+          "title": "Ukulungiswa Kweziqu Nokusetshenziswa",
+          "description": "Silungise isiqu, sifake ukuvimbela amanzi ngokwemibhalo yomkhiqizi."
+        },
+        {
+          "step": "4",
+          "title": "Ukuhlolwa Nesiqinisekiso",
+          "description": "Ukuhlolwa ngamanzi amaphele emaphahla aphansi nezindlwana zangasese. Isiqinisekiso somsebenzi sinikezwa."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Ukuvimbela amanzi kubiza malini ngonyaka we-2026?",
+          "answer": "R70–R600/m² ngokwendlela."
+        },
+        {
+          "question": "Yini ebanga ukugcweleza osukumayo?",
+          "answer": "Ukugcweleza komhlaba kukhuphuka ngezindonga ngenxa ye-DPC ekhohliwe."
+        },
+        {
+          "question": "Ukuvimbela amanzi emphahla kuhlala isikhathi esingakanani?",
+          "answer": "I-torch-on: iminyaka eyi-10–15; i-acrylic: iminyaka eyi-5–8."
+        },
+        {
+          "question": "Ngidinga ukuvimbela amanzi ngaphambi kokubekwa kwamathayela egunjini langasese?",
+          "answer": "Yebo — kubalulekile. I-grout ayivimbeli amanzi."
+        },
+        {
+          "question": "Ningalungisa ukugcweleza ngaphandle kokususa ikhwapha?",
+          "answer": "Ukugcweleza osukumayo yebo — ngezinyosi ze-DPC. Ikhwapha elingcolile kakhulu kufanele lisuswe."
+        }
+      ],
+      "whyChoose": [
+        "Sihlonza umthombo wenkinga kuqala — ngaphambi kwemiyalelo yesixazululo",
+        "Izinto kusuka ku-a.b.e., Sika, ne-Dulux AquaShield",
+        "Iminyaka engu-15+ yokwelashwa kukagcweleza nokuvuza kuyo yonke iGauteng",
+        "Imiphumela ehlolwe ngamanzi ngaphambi kokunikezwa",
+        "Ukuhlolwa kwamahhala kokugcweleza nokulinganiswa kwezinto zokulinganisa ukugcweleza",
+        "Inainshuwarensi ephelele yesibopho"
+      ]
+    },
+    "painting": {
+      "intro": "I-Sinqobile Construction inikeza izinsiza zobuchwepheshe zokupenda ngaphakathi nangaphandle eJohannesburg neGauteng. Iminyaka engu-15+, izindlu namakhulu nezakhiwo zezinkampani. Ngaphakathi: R50–R80/m²; ngaphandle: R60–R200+/m². Sisebenzisa izipende zeNdlela Ye-Dulux, Plascon, ne-Fired Earth. Ukulungiswa kwesiqu kwenza ukupenda kuhlale iminyaka eyi-8–10.",
+      "pricingNote": "Izindleko zincika esikhala sendawo, isimo, ukufika, nozinga lwezipende. Izipende ezihloniphekile zihlala iminyaka eyi-8–10.",
+      "materialsNote": "",
+      "subServices": [
+        {
+          "name": "Ukupenda Ngaphakathi",
+          "description": "Izindonga, izindlu zangaphezulu, izigxivizane, amasilinda, nezindawo zomasango. R50–R80/m²."
+        },
+        {
+          "name": "Ukupenda Ngaphandle",
+          "description": "Izindonga zendlu, ama-fascia, amafasitela, izivalo zemimese, namasango. R60–R200+/m²."
+        },
+        {
+          "name": "Ukupenda Kwamahhovisi Nezinkampani",
+          "description": "Amahhovisi, izindawo zokuthengisa, nezinqolobane. Izinsiza ezitholakala ngemuva kwamabanga ziyatholakala."
+        },
+        {
+          "name": "Izipindi Ezikhethekile",
+          "description": "Izindonga ezikhetho, isikhweziwa se-Venetian, izigqoko zephansi ze-epoxy, nezigqoko ezimelana ne-mould."
+        },
+        {
+          "name": "Ukupenda Uphahla",
+          "description": "Ukuhlanzwa, ukwelashwa kwentsambende, nezigqoko ezimelana ne-UV ku-R80–R150/m²."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Izindonga ngaphakathi (ngawo wonke ikhwele lawo lamanzi, izigqoko ezimbili)",
+          "range": "R50 – R80 /m²"
+        },
+        {
+          "item": "Ukupenda izindlu zangaphezulu (ngegumbi ngalinye)",
+          "range": "R500 – R1,500"
+        },
+        {
+          "item": "Izindonga ngaphandle (ngawo wonke ikhwele lawo lamanzi, izigqoko ezimbili)",
+          "range": "R60 – R200 /m²"
+        },
+        {
+          "item": "Ukupenda ngaphakathi kwendlu ngeyonke (izindlu zokulala ezintathu)",
+          "range": "R15,000 – R35,000"
+        },
+        {
+          "item": "Ukupenda ngaphandle kwendlu ngeyonke (izindlu zokulala ezintathu)",
+          "range": "R20,000 – R50,000"
+        },
+        {
+          "item": "Ukupenda uphahla (ngawo wonke ikhwele lawo lamanzi)",
+          "range": "R80 – R150 /m²"
+        },
+        {
+          "item": "Indonga ekhetho / isipindi esikhethekile",
+          "range": "R150 – R400 /m²"
+        },
+        {
+          "item": "Isigqoko se-epoxy sephansi lemimese",
+          "range": "R200 – R350 /m²"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Ikhwoteshi Lamahhala Nokubuza Ngombala",
+          "description": "Silinganise indawo, sihlole izindonga, sixoxe ngombala, sinikezwe ikhwoteshi elibhaliwe."
+        },
+        {
+          "step": "2",
+          "title": "Ukulungiswa Kwesiqu",
+          "description": "Sigcwalise izingqimba, simose, sishude ipendi esidondolayo, sifake i-primer."
+        },
+        {
+          "step": "3",
+          "title": "Ukupenda",
+          "description": "Izigqoko ezimbili zependi ezihloniphekile ngebhulashi, i-roller, noma ukufafaza."
+        },
+        {
+          "step": "4",
+          "title": "Ukuhlanzwa Nokunikezwa",
+          "description": "Izingubo zokunikezela zisuswa, izithonto zihlanzwa, ipendi yokuthinta iyashiywa, isiqinisekiso sinikezwa."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Ukupenda kubiza malini ngonyaka we-2026?",
+          "answer": "Ngaphakathi: R50–R80/m². Ukupenda kwendlu enezindlu zokulala ezintathu ngaphakathi: R15,000–R35,000."
+        },
+        {
+          "question": "Ukupenda kwangaphandle kuhlala isikhathi esingakanani?",
+          "answer": "Iminyaka eyi-8–10 ngependi ezihloniphekile ezisetshenziswa ngendlela efanele."
+        },
+        {
+          "question": "Ngipende phezu kwezinto ezikhona noma ngikhiphe?",
+          "answer": "Penda phezu kwazo uma ipendi ekhona iqinile."
+        },
+        {
+          "question": "Niyapenda ngesonto?",
+          "answer": "Yebo, kumakhasimende amakhulu ezinkampani."
+        },
+        {
+          "question": "Nisebenzisa yiphi amabrandi ezipende?",
+          "answer": "Dulux, Plascon, Fired Earth — ezihloniphekile kuphela."
+        }
+      ],
+      "whyChoose": [
+        "Izipende ezihloniphekile kuphela — Dulux, Plascon, Fired Earth",
+        "Ukulungiswa okuphelele kwesiqu",
+        "Iminyaka engu-15+ yokupenda kuyo yonke iGauteng",
+        "Ukubuza kwamahhala ngombala",
+        "Amaqembu ahloniphekile akwenzayo ngokucophelela",
+        "Isiqinisekiso somsebenzi nge-touch-up paint eshiyiwe"
+      ]
+    },
+    "electrical": {
+      "intro": "I-Sinqobile Construction inikeza izinsiza zogesi ezinolasensi eJohannesburg neGauteng — ukufakwa, ukuwayara kabusha, ukuthola iziphazamiso, nezitifiketi ze-COC. Abaphathi bogesi bahambisana ne-SANS 10142-1. Amanani avamile: R300–R600/hr ngonyaka we-2026.",
+      "pricingNote": "Izindleko zincika esifundweni, ukuhamba kwezintambo, nanezitho eziningi. Awekho amanani angafihliwe okushayela.",
+      "materialsNote": "",
+      "subServices": [
+        {
+          "name": "Ukufakwa Kogesi",
+          "description": "Ibhodi ye-DB, amacircuit, izindawo zama-plug, izindawo zamalambu, ukuxhumana kwama-geyser."
+        },
+        {
+          "name": "Izitifiketi Ze-COC Zogesi",
+          "description": "Ukuhlolwa nezitifiketi zokwenziwa kwezicelo zokuthengisa izindlu. R850–R2,750."
+        },
+        {
+          "name": "Ukuqinisekiswa Kwebhodi Ye-DB",
+          "description": "Ukushintshwa kwamabhodi ama-fuse nge-circuit breakers yanamuhla ne-RCD/ELCB. R3,000–R8,000."
+        },
+        {
+          "name": "Ukuthola Iziphazamiso Nokulungiswa",
+          "description": "Amacircuit acocoka, ama-plug angasebenzi, amalambu agaqegaqe — ayahlonzwa ayalungiswa."
+        },
+        {
+          "name": "Ukuwayara Izindlu Kabusha",
+          "description": "Ukuwayara kabusha okugcwele noma okuyingxenye ku-R20,000–R30,000 kwezindlu ezinezindlu zokulala ezintathu."
+        },
+        {
+          "name": "Izibani Zangaphandle Nezokuphepha",
+          "description": "Izibani zengadi, izibani zokuphepha, amasango asebenzisana namandla, ucingo lwamandla."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Inani lomphathi bogesi (evamile, ngawo wonke ihora)",
+          "range": "R300 – R600 /hr"
+        },
+        {
+          "item": "Isitifiketi se-COC sogesi",
+          "range": "R850 – R2,750"
+        },
+        {
+          "item": "Indawo entsha yeplagi (eyodwa)",
+          "range": "R300 – R500"
+        },
+        {
+          "item": "Indawo entsha yeplagi (ephindweni)",
+          "range": "R400 – R600"
+        },
+        {
+          "item": "Ukuqinisekiswa kwebhodi ye-DB",
+          "range": "R3,000 – R8,000"
+        },
+        {
+          "item": "Ukuwayara kabusha kwendlu ngeyonke (izindlu zokulala ezintathu)",
+          "range": "R20,000 – R30,000"
+        },
+        {
+          "item": "Ukuxhumana kwe-geyser / isikhathi",
+          "range": "R1,500 – R3,000"
+        },
+        {
+          "item": "Izibani zokuphepha (ngesibi ngasinye, ezifakiwe)",
+          "range": "R500 – R1,500"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Ukuhlolwa Neikhwoteshi",
+          "description": "Sihlole ukufakwa, sihlonze isifundo, sinikezwe ikhwoteshi elinemininingwane."
+        },
+        {
+          "step": "2",
+          "title": "Ukufakwa / Ukulungiswa",
+          "description": "Umsebenzi uqedwa ngokwezinga le-SANS 10142-1."
+        },
+        {
+          "step": "3",
+          "title": "Ukuhlolwa Nokwamukelwa",
+          "description": "Izinto zokulinganisa ezihlolwe zisetshenziwa. I-COC ikhishwa ukufakwa okusha."
+        },
+        {
+          "step": "4",
+          "title": "Ukuphathiswa Nemibhalo",
+          "description": "Isitifiketi sokuhlola, uhlelo lwamacircuit, ne-COC anikezwa. Ibhodi ye-DB ichazwa."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Isitifiketi se-COC sogesi sibiza malini ngonyaka we-2026?",
+          "answer": "R850–R2,750 ngokwenkomba yezakhiwo."
+        },
+        {
+          "question": "Ngidinga i-COC uma ngithengisa?",
+          "answer": "Yebo — kufuneka umthetho waseNingizimu Afrika. Isebenze iminyaka emi-2."
+        },
+        {
+          "question": "Ukuwayara indlu kabusha kubiza malini?",
+          "answer": "Izindlu zokulala ezintathu: R20,000–R30,000."
+        },
+        {
+          "question": "Kungani ibhodi yami ye-DB icocoka?",
+          "answer": "Amacircuit agcinwe kakhulu, izinto eziphazamisekile, ukugcweleza, noma insimbi yezintambo esibhile."
+        },
+        {
+          "question": "Umehluko phakathi kwe-circuit breaker ne-earth leakage?",
+          "answer": "I-MCB ivimbela ukugcwala; i-RCD/ELCB ivimbela ukushawa ugesi. Zombili zidingeka."
+        }
+      ],
+      "whyChoose": [
+        "Abaphathi bogesi ababhalisiwe abahambisana ne-SANS 10142-1",
+        "Izitifiketi ze-COC ngosuku olulodwa kuzakhiwo ezihambisanayo",
+        "Izinto zokulinganisa ezihlolwe — imibhalo egcwele",
+        "Wonke amacircuit abhaliwe ebhondini ye-DB",
+        "Iminyaka engu-15+ yolwazi wogesi kuyo yonke iGauteng",
+        "Inainshuwarensi ephelele"
+      ]
+    },
+    "plastering": {
+      "intro": "I-Sinqobile Construction inikeza izinsiza zobuchwepheshe zokukhwapha nokukhwapha okuncane kuyo yonke iJohannesburg neGauteng. Ukukhwapha: R80–R150/m²; ukukhwapha okuncane: R40–R110/m². Sisebenzisa izingxube ezihlolwe nokugcinwa okufanele ukuvimbela ukungqibilika.",
+      "pricingNote": "Izindleko zincika esimweni sesiqu, ukuphakama, nokuqedwa. Izinsika ezengeziwe. Wonke amakhwoteshi afaka ukulungiswa, izinto, ukusetshenzwa kwabantu, nokuphetha.",
+      "materialsNote": "",
+      "subServices": [
+        {
+          "name": "Ukukhwapha Izindonga Ngaphakathi",
+          "description": "Ikhwapha le-sand-cement ku-12–15 mm nokuqedwa okunamandla. R80–R150/m²."
+        },
+        {
+          "name": "Ukukhwapha Okuncane",
+          "description": "Isigqoko sokuqeda ku-2–3 mm phezu kwekhwapha elikhona. R40–R110/m²."
+        },
+        {
+          "name": "Ukukhwapha Kwangaphandle",
+          "description": "Izipindi ezimelana nezimo zezulu kufaka phakathi ezihle nezinezindlela."
+        },
+        {
+          "name": "Ukukhwapha Kwezindlu Zangaphezulu Nokulungiswa",
+          "description": "Ikhwapha elisha lezindlu zangaphezulu, ukulungiswa kwezingqimba, ukufakwa kwezigxivizane."
+        },
+        {
+          "name": "Ukulungiswa Kwekhwapha Nokuxoshwa Kwezingqimba",
+          "description": "Ikhwapha elinezingqimba noma elisukile liqanjiwe, isigungu silungiswe, lakhwaphwa kabusha."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Ukukhwapha izindonga ngaphakathi (evamile)",
+          "range": "R80 – R150 /m²"
+        },
+        {
+          "item": "Ukukhwapha okuncane (ukuqedwa okumhlophe)",
+          "range": "R40 – R110 /m²"
+        },
+        {
+          "item": "Ukukhwapha kwangaphandle",
+          "range": "R100 – R180 /m²"
+        },
+        {
+          "item": "Ukukhwapha izindlu zangaphezulu (okusha)",
+          "range": "R90 – R160 /m²"
+        },
+        {
+          "item": "Ukulungiswa / ukuphachaja kwekhwapha",
+          "range": "R120 – R250 /m²"
+        },
+        {
+          "item": "Ukufakwa kwezigxivizane (ngomita ngamunye)",
+          "range": "R45 – R120 /m"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Ukuhlolwa Kwesiqu",
+          "description": "Sihlole izindonga ngokuqondile, ngezinga, nangezimo zazo."
+        },
+        {
+          "step": "2",
+          "title": "Ukulungiswa",
+          "description": "Simanzi izindonga, sifake i-PVA bonding uma kudingeka, sibekele amachoboza."
+        },
+        {
+          "step": "3",
+          "title": "Ukufaka",
+          "description": "Ikhwapha lifakwa ngesikhathi esisodwa noma amabili ukuya kobujule obuchazwe."
+        },
+        {
+          "step": "4",
+          "title": "Ukugcinwa Nokunikezwa",
+          "description": "Ligcina amanzi izinsuku eziyi-3–7 ukuze kuvinjwe ukungqibilika."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Ukukhwapha kubiza malini ngonyaka we-2026?",
+          "answer": "Ngaphakathi: R80–R150/m². Ukukhwapha okuncane: R40–R110/m². Ngaphandle: R100–R180/m²."
+        },
+        {
+          "question": "Umehluko phakathi kukukhwapha nokukhapha okuncane?",
+          "answer": "Ukukhwapha ku-12–15 mm phezu kwezitina ezingaqhwayangiwe; ukukhwapha okuncane ku-2–3 mm phezu kwekhwapha elikhona."
+        },
+        {
+          "question": "Kungani ikhwapha lingqibilika?",
+          "answer": "Ukoma ngokushesha kakhulu, inhlangano engafanele ye-sand-to-cement, noma ubujule obukhulu kakhulu."
+        },
+        {
+          "question": "Kuthatha isikhathi esingakanani ngaphambi kokupenda?",
+          "answer": "Amasonto ayi-4–6 ukugcinwa ngaphambi kokupenda."
+        },
+        {
+          "question": "Ningalingana nezindlela ezikhona?",
+          "answer": "Yebo — zonke izindlela zilingana ukuze ukulungiswa kufane."
+        }
+      ],
+      "whyChoose": [
+        "Izinhlangano ezifanele ze-sand-to-cement",
+        "Ukugcinwa okufanele — izinsuku eziyi-3–7 okungenani",
+        "Iminyaka engu-15+ yokhwapha kuyo yonke iGauteng",
+        "Izipindi ezikhanya nokupenda okunezikhala nezindlela",
+        "Ukuhlolwa kwamahhala endaweni neikhwoteshi elibhaliwe",
+        "Inainshuwarensi ephelele nesiqinisekiso somsebenzi"
+      ]
+    },
+    "tiling": {
+      "intro": "I-Sinqobile Construction inikeza izinsiza zobuchwepheshe zokubeka amathayela eJohannesburg neGauteng. Ukusetshenzwa kwabantu ekubékeni amathayela: R120–R350/m²; isamba esifakiwe R200–R1,000+/m². Sisebenza ne-ceramic, porcelain, itshe lemvelo, i-mosaic, namathayela amakhulu.",
+      "pricingNote": "Izindleko zincika ezindabeni zethayela, isifanekiso, nokukulungiswa kwesiqu. Ukubeka amathayela ezindlini zangasese kubiza ngaphezulu.",
+      "materialsNote": "",
+      "subServices": [
+        {
+          "name": "Ukubeka Amathayela Aphansi",
+          "description": "I-ceramic, porcelain, noma itshe lemvelo. R200–R450/m²."
+        },
+        {
+          "name": "Ukubeka Amathayela Ezindongeni",
+          "description": "Izivimba zekitshi, izindonga ezikhetho, izindonga zezindlu zangasese nezishawa."
+        },
+        {
+          "name": "Ukubeka Amathayela Ezindlini Zangasese Nezishawa",
+          "description": "Ukubeka amathayela okugcwele nokuvimbela amanzi nezindawo zezihlabathi. R350–R600/m²."
+        },
+        {
+          "name": "Ukubeka Amathayela Ngaphandle Nasezindaweni Zokuphumula",
+          "description": "Amathayela angahlidiyi ezindaweni zokuphumula nezindawo ezinamachibi."
+        },
+        {
+          "name": "Ukulungiswa Kwamathayela Nokuphinda Kuvalwe I-Grout",
+          "description": "Ukushintsha amathayela aphukile, ukuvala kabusha i-grout, ukushintsha i-silicone."
+        }
+      ],
+      "pricingTable": [
+        {
+          "item": "Amathayela e-ceramic aphansi (afakiwe)",
+          "range": "R200 – R400 /m²"
+        },
+        {
+          "item": "Amathayela e-porcelain aphansi (afakiwe)",
+          "range": "R300 – R600 /m²"
+        },
+        {
+          "item": "Amathayela etshe lemvelo (afakiwe)",
+          "range": "R500 – R1,000+ /m²"
+        },
+        {
+          "item": "Ukubeka amathayela ezindlini zangasese (izindonga + phansi)",
+          "range": "R350 – R600 /m²"
+        },
+        {
+          "item": "Isivimba sekitshi",
+          "range": "R250 – R500 /m²"
+        },
+        {
+          "item": "Ukusetshenzwa kwabantu ekubékeni amathayela kuphela (ngawo wonke ikhwele lawo lamanzi)",
+          "range": "R120 – R350 /m²"
+        },
+        {
+          "item": "I-tile adhesive + i-grout (ngawo wonke ikhwele lawo lamanzi)",
+          "range": "R80 – R230 /m²"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "UkuLinganisa Neikhwoteshi",
+          "description": "Silinganise indawo, sihlole isiqu, sinikezwe ikhwoteshi eliphelele."
+        },
+        {
+          "step": "2",
+          "title": "Ukulungiswa Kwesiqu",
+          "description": "Silinganise izindawo ezingalingananga, sivimbele izindawo ezinamanzi, siphreyime izindonga."
+        },
+        {
+          "step": "3",
+          "title": "Ukufakwa Kwamathayela",
+          "description": "Izindawo ezifanayo, ukunqamula okunembile, ilinganiswe kuwo wonke umugqa."
+        },
+        {
+          "step": "4",
+          "title": "Ukugcwaliswa I-Grout Nokuvalwa",
+          "description": "I-grout ifakwa ivalwa. I-silicone kuzo zonke izinhlanganiselo zokunyakaza."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Ukubeka amathayela kubiza malini ngonyaka we-2026?",
+          "answer": "I-ceramic: R200–R400/m²; i-porcelain: R300–R600/m²; itshe: R500–R1,000+/m²."
+        },
+        {
+          "question": "Ngidinga ukuvimbela amanzi ngaphambi kukubekwa kwamathayela egunjini langasese?",
+          "answer": "Yebo — kubalulekile."
+        },
+        {
+          "question": "Ningabeka amathayela phezu kwamathayela ekhona?",
+          "answer": "Yebo, uma eqinile futhi elinganisiwe."
+        },
+        {
+          "question": "Yimuphi ubukhulu bamathayela obukhulisa igumbi?",
+          "answer": "Amathayela amakhulu angu-600×600 mm noma 600×1200 mm nezintambo ze-grout ezincane."
+        },
+        {
+          "question": "Kuthatha isikhathi esingakanani ukubeka amathayela?",
+          "answer": "Igumbi langasese: izinsuku eziyi-3–5; ukubeka phansi kwindlu ngeyonke: izinsuku eziyi-5–10."
+        }
+      ],
+      "whyChoose": [
+        "Wonke amahlobo amathayela — ceramic, porcelain, itshe lemvelo, i-mosaic, amakhulu",
+        "Ukulungiswa okufanele kwesiqu nokuvimbela amanzi",
+        "Ukunqamula okunembile ngebuleyi ye-diamond yefuze yamanzi",
+        "Iminyaka engu-15+ yokubeka amathayela kuyo yonke iGauteng",
+        "Ukuulinganiswa kwamahhala neziyalezo zokukhetha amathayela",
+        "Isiqinisekiso somsebenzi kuwo wonke ukufakwa"
+      ]
+    },
+    "extensions": {
+      "intro": "Sinqobile Construction ingumakhi wezindlu orekhodwe ku-NHBRC osebenza eJohannesburg naseGauteng. Ngonyaka we-15 sidlule, sipheleze amahlandla amakhulu okwengezwa kwamakamelo, izimfanelo zezindawo eziphezulu, izindlu zamakhehla, kanye nokushintshwa kwamadlangala kulo lonke leli zwe. Izindleko zokwengezwa kwezindlu eJohannesburg zibiza u-R10,000–R16,000 ngokulinganisa nge-m² yokwengezwa okusetshenzwe phansi kanye ne-R15,000–R25,000/m² yokwengezelwa kwezikhala eziphezulu ngo-2026. Lonke ukwengezwa kudinga izinhlelo zezakhiwo ezigunyaziwe ngekhanselo — sihlelana nabaklami ababhaliswe ku-SACAP, izinjinela zezakhiwo, kanye nomkhandlu wakho wendawo ukuze siphathe inqubo yezinhlelo yonke. Indawo eyakhiwa kahle yengezelwa yemukeleka futhi iyandisa inani lomhlaba. Siqinisekisa ukubumbana okungagawuleki nezindlu zakho ezikhona — ukufana kwemibhoshongo yezindlu, ukwakhiwa ngezitina, ukuchwanyekwa, kanye nokugqedwa ukuze indawo yengezwa ibukeke sengathi yayihlala iyingxenye yendlu.",
+      "subServices": [
+        {
+          "name": "Ukwengezwa Kwamakamelo (Inganekwane Yokuqala)",
+          "description": "Amakamelo okulala aengeziwe, amakamelo okuhlala, amahhovisi emakhaya, nezindawo zokuzijabulisa ezakhiwe endlini yakho ekhona. Kufaka isisekelo, ukwakhiwa ngezitina, uphahla, ugesi, amanzi, ukuchwanyekwa, nokupenda. Izimfanelo ze-indawo esinganekwane yokuqala zibiza u-R10,000–R16,000/m²."
+        },
+        {
+          "name": "Ukwengezwa Kwezikhala Eziphezulu",
+          "description": "Ukwengezelwa kwendawo ephelele phezulu endlini yakho. Kudinga ukuhlolwa kwezakhiwo zezisekelo ezikhona nezindonga, ukuqiniswa kwensimbi noma kwekhonkolo, kanye nokwakhiwa kwephahla elisha. Izimfanelo zezikhala eziphezulu zibiza u-R15,000–R25,000/m² — u-20–30% ngaphezu kwendawo ephansi ngenxa yezidingo zezakhiwo nokusebenza phezulu."
+        },
+        {
+          "name": "Izindlu Zamakhehla",
+          "description": "Izindawo zokuhlala ezizimelele nephalishi, igumbi langasese, ikhishi, nomnyango wangasese. Izinhlelo ezigunyaziwe zekhanselo ziyadingeka. I-granny flat elinculie ngezinhlelo eli-40 m² libiza u-R350,000–R750,000 futhi lingakhiqiza u-R7,000–R14,000/ngenyanga ngemali yokurenta — inzuzo yonyaka ye-18–25% kubiza kwokwakhiwa."
+        },
+        {
+          "name": "Ukushintshwa Kwamadlangala",
+          "description": "Shintsha idlangala elingasetshenziswayo libe indawo okuhlalwa kuyo — ihhovisi lasekhaya, indawo yezimo, indawo yokuzonijabulisa, noma indawo yokurenta. Kufaka ukuvimbela ukushisa nomoya, ugesi, amanzi (uma ungezelela igumbi langasese/ikhishi), ukuchwanyekwa, izitezi, kanye nokugqedwa."
+        },
+        {
+          "name": "Amanethela Asekhaya Anembozo Nezindlu Zemizimba",
+          "description": "Amanethela anembozo akhiwe ngensimbi noma ngomuthi, izindawo zokoshisa inyama, kanye nezindlu zemizimba. Kufaka izisekelo, uhlaka lwezakhiwo, uphahla, nokuvaliwa okukhethekile nge-aluminiyamu noma ngengilazi. Izinhlelo zekhanselo ziyadingekela izakhiwo ezidlula isilinganiso esithile sobukhulu."
+        }
+      ],
+      "pricingNote": "Izindleko zokwengezwa zincike esilinganisweni, inombolo yamasikilidi, ukugqedwa, kanye nobunzima bezakhiwo. Zonke izimfanelo zidinga izinhlelo zezakhiwo ezigunyaziwe ngekhanselo (imali yomklami nokunikelwa kuyengeziwe). Izindlu zamakhehla zinikeza inzuzo enhle yokurenta. Wonke amantengo angahluliwe futhi abekiwe ngenani elinqunyiwe.",
+      "pricingTable": [
+        {
+          "item": "Ukwengezwa kwesinganekwane sokuqala (nge-m²)",
+          "range": "R10,000 – R16,000 /m²"
+        },
+        {
+          "item": "Ukwengezwa kwendawo ephezulu (nge-m²)",
+          "range": "R15,000 – R25,000 /m²"
+        },
+        {
+          "item": "Indlu yamakhehla (40–60 m²)",
+          "range": "R350,000 – R750,000"
+        },
+        {
+          "item": "Ukushintshwa kwedlangala",
+          "range": "R120,000 – R350,000"
+        },
+        {
+          "item": "Inetherela eline mbozo (uhlaka lwensimbi + uphahla)",
+          "range": "R1,500 – R3,500 /m²"
+        },
+        {
+          "item": "Izinhlelo zomklami + ukubekwa ekhanselo",
+          "range": "R15,000 – R40,000"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Ukubonisana Kwamahhala",
+          "description": "Sivakashela umhlaba wakho, sixoxe ngalokho ofuna ukukwengezelela, sihlole uhlaka olukhona, futhi sinike iseluleko ngokuqondakala, izindleko, nezidingo zekhanselo."
+        },
+        {
+          "step": "2",
+          "title": "Izinhlelo Nezimvume",
+          "description": "Sihlelana nomklami we-SACAP ukuze asungule izinhlelo, sithintane nenjinela yezakhiwo uma kudingiwe, futhi sinike isicelo emkhandlwini wendawo. Ukugunyazwa kuthatha amasonto ama-4–12 eJohannesburg."
+        },
+        {
+          "step": "3",
+          "title": "Ukwakhiwa",
+          "description": "Umphathi wephrojekthi ozinikele ubheka ukwakhiwa. Sivikela indlu yakho ekhona ngesikhathi sokwakhiwa ngezivimbo zothuli nokuvikela izulu. Izithombe zesonto ngalinye zinikezwa."
+        },
+        {
+          "step": "4",
+          "title": "Ukubumbana Nokudluliswa",
+          "description": "Sifanisa indawo yengezwa nendlu yakho ekhona — imibhoshongo yophahla, uchwa, ipeyinti, kanye nokugqedwa. Ukuhlolwa kokugcina, uhlu lezinto ezidinga ukulungiswa, kanye nokudluliswa ngamaphepha e-NHBRC enrollment."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Zingakanani izindleko zokwengezwa kwezindlu eJohannesburg ngo-2026?",
+          "answer": "Izimfanelo zesinganekwane sokuqala zibiza u-R10,000–R16,000 ngometre owancomeka eJohannesburg ngo-2026. Ukwengezwa kwamakamelo angama-30 m² kubiza cishe u-R300,000–R480,000. Izimfanelo zezikhala eziphezulu zibiza u-R15,000–R25,000/m² — u-20–30% ngaphezulu ngenxa yokuvuselelwa kwezakhiwo nokusebenza phezulu. I-granny flat eli-40 m² libiza u-R350,000–R750,000. Lezi zintengo zifaka ukwakhiwa kuphela; izinhlelo zomklami nezokwethulwa kwekhanselo zingezelela u-R15,000–R40,000."
+        },
+        {
+          "question": "Ngidinga yini izinhlelo ezigunyaziwe ngekhanselo zokwengezwa?",
+          "answer": "Yebo. Wonke ukwengezwa kwezakhiwo eJohannesburg kudinga izinhlelo zezakhiwo ezigunyaziwe yoMunicipality weCity of Johannesburg. Ngaphandle kwezinhlelo ezigunyaziwe, isakhiwo siyimvulamlomo — asinakuphathwa ngumshwalense, asinakubekwa kubhange, futhi umasipala angayala ukuba sidiliziwe. Izinhlelo kumele zikhiwe umklami obhaliswe ku-SACAP futhi zigunyazwe inkanselo yakho yendawo (amasonto ama-4–12). Siphathe inqubo yonke ngawe."
+        },
+        {
+          "question": "Ingabe i-granny flat iyunifo yokutshalwa imali enhle?",
+          "answer": "Yebo. I-granny flat elinculie eJohannesburg likhiqiza u-R7,000–R14,000 ngenyanga ngemali yokurenta, linikeza inzuzo yonyaka ye-18–25% ekubizeni kokwakhiwa kwe-R350,000–R750,000. Kanti futhi liyandisa inani lomhlaba wakho. Noma kunjalo, iyunithi kumele ibe nezinhlelo ezigunyaziwe ngekhanselo futhi ilandele imigomo yokubekwa kwezakhiwo. Izakhiwo ezingagunyaziwe azinalwazi lwezomthetho lokurenta futhi zingayalelwa ukuba zidiliziwe."
+        },
+        {
+          "question": "Ingabe ningengeza inganekwane yesibili kuwo wonke amakilasi?",
+          "answer": "Hhayi njalo. Izisekelo nezindonga ezikhona kumele zibe amandla anele ukuthwala umthwalo owengeziwe. Sithintana nenjinela yezakhiwo ukuhlola indlu yakho ngaphambi kokuzibophezela emklanyeni weinganekwane yesibili. Ezinye izindlu zidinga ukuqiniswa kwezisekelo noma ukuqiniswa kwezindonga ngaphambi kokukhuphuka. Izindlu ezindala ezine izisekelo ezigqomile zingaba nezinkinga ngaphandle komsebenzi omkhulu wezakhiwo. Sikunika ukuhlolwa okwethembekile ngesikhathi sokubonisana kwamahhala."
+        },
+        {
+          "question": "Ithatha isikhathi esingakanani ukwakhiwa kokwengezwa kwezindlu?",
+          "answer": "Ukwengezwa kwamakamelo asinganekwane sokuqala (20–40 m²) kuthatha amasonto ama-6–10. Ukwengezwa kwendawo ephezulu kuthatha amasonto ama-10–16. I-granny flat ithatha amasonto ama-8–14. Lezi zikhathi azifaki isikhathi sokugunyazwa kwezinhlelo (amasonto ama-4–12). Izimo zezulu, ukutholakala kwezinto, kanye nezakhiwo zohlolo olwenziwa zinyamalale zingaziphazamisa. Sinikeza isheduli yephrojekthi enesicaciso nentengo yakho."
+        }
+      ],
+      "whyChoose": [
+        "Ibhaliswe ku-NHBRC — wonke ukwengezwa kubhaliswa ngegali lezakhiwo",
+        "Inkonzo ephelele yezinhlelo — umklami, injinela, nokwethulwa kwekhanselo kuphethwe kuze kube sekupheleni",
+        "Ukubumbana okungagawuleki — sifanisa imibhoshongo yophahla ekhona, ukwakhiwa ngezitina, nokugqedwa",
+        "Amaphrojekthi angaphezu kuka-500 ezakhiwo kanye nezokwengezwa aphelezwe kulo lonke iGauteng",
+        "Amantengo abekiwe, angahluliwe kanye nezinkokhelo zezikhathi",
+        "Isikhungo esiphelele sesikhungo sokuphathwa esinye komkhawulo"
+      ]
+    },
+    "fencing": {
+      "intro": "Sinqobile Construction inikeza ukufakwa kwamathelisi namazinga omngcele ngokungcono kulo lonke iJohannesburg naseGauteng. Ngonyaka we-15 sidlule, sithibele amakhulu ezakhiwo ezihlala abantu nazo zoshishino ngamathelisi aphalisi, izindonga zomngcele ngezitina, izindonga ezakhiwe ngaphambilini, kanye nokufakwa kwensimu kagesi. Amathelisi aphalisi eJohannesburg abiza u-R900–R3,000+ ngometre ngo-2026 kuya ngobukhulu nezinto ezisetshenzisiwe, kanti izindonga zomngcele ngezitina zibiza u-R1,800–R3,800 ngometre ophakathi. Ukuphepha kungunqwanqwa wokuqala owenziwa ngabanikazi bezindlu baseGauteng, futhi umathelisi owakhiwe kahle umgweba wokuqala wokuphephela. Sifaka ngokwezindleko zenjinela — izisekelo zekhonkolo zawo wonke amazondo amathelisi, isikhala samazondo esifanele, nezinhlolosedlelo ezimelene nokukhwela. Zonke izindonga zomngcele ezimdudula u-1.8 m zidinga izinhlelo zezakhiwo ezigunyaziwe ngekhanselo, okusikwenzela njengenxenye yephrojekthi.",
+      "subServices": [
+        {
+          "name": "Amathelisi Aphalisi",
+          "description": "Amathelisi aphalisi ensimbi angezinga lomgomo (1.8 m), amade (2.1 m), kanye nawo amade kakhulu (2.4 m). Izinhlolosedlelo ezimelene nokukhwela zinamakhanda alandelayo noma agobene. Afakwa ezisekelweni zekhonkolo ngezixhumanisi ezikhiwe. Ibiza u-R900–R3,000/m kuya ngobukhulu."
+        },
+        {
+          "name": "Izindonga Zomngcele Ngezitina",
+          "description": "Izindonga zomngcele ngezitina zobuso noma ezicwilisiwe ezisekelweni zekhonkolo ezicinisiwe. Kufaka amazondo esikhundleni esifanele, amajoynthi okwanda, ukugodlwa, kanye ne-DPC. Ibiza u-R1,800–R3,800 ngometre ophakathi wesilinganiso se-1.8 m."
+        },
+        {
+          "name": "Izindonga Zekhonkolo Ezikhiwe Ngaphambilini (Vibracrete)",
+          "description": "Izindonga zezikiliti zekhonkolo ezikhiwe ngaphambilini, ezikhawuleza futhi nezindleko zifanele. Zifakwa ngosuku olulodwa emahlale womuntu omkhulu. Ibiza u-R1,200–R2,200 ngometre ukufakwa. Zinganganxiswa futhi zipendwe ukuze zibukeke kahle."
+        },
+        {
+          "name": "Isihlalo Sensimbi Kagesi",
+          "description": "Ukufakwa kwesihlalo sensimbi kagesi phezu kwezindonga noma amathelisi akhona. I-energiser, amahlomula, ugesi, kanye nezinhlahla zifakiwe. Ibiza u-R250–R450 ngometre. Kumele ilandele izindinganiso zokuphepha ze-SANS 10222-3."
+        },
+        {
+          "name": "Amasango Nokulawulwa Kokufinyelela",
+          "description": "Amasango ahlanjalazayo, asho ngasohlangothini, abantu abahamba ngawo, nokuwashayela ngamasondo. Ukwakhiwa kwensimbi noma aluminiyamu nokusebenza ngokulawulwa bukhali. Ibiza u-R8,000–R25,000 kuya ngobukhulu nezinto ezisetshenzisiwe."
+        }
+      ],
+      "pricingNote": "Izindleko zamathelisi zincike kuzo izinto ezisetshenzisiwe, ubukhulu, indawo, nobudze bokuhlangana. Amathelisi amade angaphezu kuka-30–40% ngometre ngokwanda kwe-600 mm. Wonke amantengo afaka izisekelo, izinto, umsebenzi, nokuchelwa.",
+      "pricingTable": [
+        {
+          "item": "Amathelisi aphalisi (1.8 m)",
+          "range": "R900 – R1,800 /m"
+        },
+        {
+          "item": "Amathelisi aphalisi (2.1 m)",
+          "range": "R2,000 – R2,400 /m"
+        },
+        {
+          "item": "Amathelisi aphalisi (2.4 m)",
+          "range": "R2,200 – R2,800 /m"
+        },
+        {
+          "item": "Uthango lwezitina lwomngcele (1.8 m)",
+          "range": "R1,800 – R3,800 /m"
+        },
+        {
+          "item": "Uthango lwezakhiwo ezikhiwe ngaphambilini / Vibracrete",
+          "range": "R1,200 – R2,200 /m"
+        },
+        {
+          "item": "Isihlalo sensimbi kagesi (ngometre)",
+          "range": "R250 – R450 /m"
+        },
+        {
+          "item": "Isango elishaywa ngamasondo (eliwashwayo)",
+          "range": "R12,000 – R25,000"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Ukuhlolwa Kwendawo",
+          "description": "Silinganisa umngcele, sihlole amazikhonkwane omhlaba, sihlole indawo nokufinyelela, futhi sixoxe ngezidingo zakho zokuphepha nezokubukeka."
+        },
+        {
+          "step": "2",
+          "title": "Intengo Nezinhlelo",
+          "description": "Uthola intengo engahluliwe. Kuzo izindonga ezidlula u-1.8 m noma ezindaweni zelifa, sihlelana nezinhlelo ezigunyaziwe ngekhanselo."
+        },
+        {
+          "step": "3",
+          "title": "Ukufakwa",
+          "description": "Izisekelo zembulwa futhi zikhululwe, amazondo noma amazondo amiswa, futhi amathelisi noma izikiliti zezindonga zifakwa. Sisebenza ngendlela enhle ngenxa yomngcele ukuze siphibhe ukuvuliwa kokuphepha ngesikhathi sokufakwa."
+        },
+        {
+          "step": "4",
+          "title": "Ukugqedwa Nokudluliswa",
+          "description": "Amasango agijimiswa futhi awashwa, isihlalo sensimbi kagesi sinikeza amandla futhi sihlolwe, futhi indawo ichelwa. Sinikeza izincwadi zokusebenza zamasondo amasondo kanye ne-energiser yesihlalo sensimbi kagesi."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Zingakanani izindleko zamathelisi aphalisi eJohannesburg ngo-2026?",
+          "answer": "Amathelisi aphalisi eJohannesburg abiza u-R900–R3,000+ ngometre ngo-2026, kuya ngobukhulu. Amathelisi aphalisi asezingeni la-1.8 m ohlala akhona abiza u-R900–R1,800/m. Amathelisi aphalisi aphepha aphezulu la-2.4 m abiza u-R2,200–R2,800/m. Lezi zintengo zifaka izisekelo zekhonkolo, amazondo, izikiliti zamathelisi, kanye nokufakwa. Isihlalo sensimbi kagesi phezu kwezindonga singezelela u-R250–R450/m. Sinikeza ukuhlolwa kwendawo kwamahhala kanye namantengo angahluliwe."
+        },
+        {
+          "question": "Uthango lwezitina noma amathelisi aphalisi kuhle kakhulu ukuphepha?",
+          "answer": "Bobabili banamazuzwana. Izindonga ngezitina zinikeza ubumfihlo obuphelele futhi zinzima ukuzisika, kodwa abahlaseli bangacasha ngemuva kwazo. Amathelisi aphalisi avumela ukubona (ungabona ukuthi ubani ungaphandle) futhi anqobile ukukhwela ngamakhanda azimelele nokukhwela, kodwa aweniki ubumfihlo. Abaningi babanikazi bezindlu baseJohannesburg bahlanganisa zombazo — uthango lwezitina ngasemfudumalo lokubheka umgwaqo kanye namathelisi ngasohlangothini nangemuva ukuze kubonakale nokuphepha. Singakunika iseluleko ngokuhlanganiswa okuhle kunalokho kumhlaba wakho."
+        },
+        {
+          "question": "Ngidinga yini izinhlelo zezakhiwo zothango lomngcele?",
+          "answer": "EJohannesburg, izindonga zomngcele ezidlula u-1.8 m zidinga izinhlelo zezakhiwo ezigunyaziwe ngekhanselo. Izindonga ezilinganisa noma ezingaphansi kuka-1.8 m ngokuvamile azidinge izinhlelo kodwa kumele zilandele imigca yezakhiwo yomkhandlu. Amathelisi aphalisi ngokuvamile akadinge izinhlelo ngaphandle kwalapho edlula umkhawulo wobukhulu. Sihlola izidingo zakho ezikhethekile futhi siphathe izinhlelo uma kudingekile."
+        },
+        {
+          "question": "Ithatha isikhathi esingakanani ukufakwa kwamathelisi?",
+          "answer": "Izakhiwo ezihlala abantu ezibonakalayo (abamayzile ama-60–100 amathelisi) zithatha izinsuku ezi-3–7 kuya ngohlobo lwamathelisi. Izindonga ezikhiwe ngaphambilini zikhawuleza kakhulu (ngokuvamile izinsuku ezi-1–2). Izindonga ngezitina zomngcele zithatha isikhathi eside kakhulu (izinsuku ezi-5–10) ngenxa yokuphola kwezisekelo nesikhathi sokubeka izitina. Amathelisi aphalisi athatha izinsuku ezi-3–5. Sihlela ukuze siphibhe isikhathi umngcele wakho ongavuliwe."
+        },
+        {
+          "question": "Ningafaka isihlalo sensimbi kagesi eziindongeni ezikhona?",
+          "answer": "Yebo. Amahlomula esihlalo sensimbi kagesi afakwa phezu kwezindonga noma amathelisi akhona. Sifaka i-energiser (ngokuvamile egaraji noma egumbini lokusebenzela), sisebalize ugesi ngomngcele, futhi sifaka izinhlahla zesixwayiso njengoba kudingwa yi-SANS 10222-3. Uyahlolwa futhi uthola imiyalo yokusebenza. Ibiza u-R250–R450 ngometre wesihlalo sensimbi kagesi phezu kwezindonga."
+        }
+      ],
+      "whyChoose": [
+        "Izisekelo zekhonkolo zawo wonke amazondo amathelisi — akukho zikhuhli kwezakhiwo",
+        "Yonke imikhakha yamathelisi: aphalisi, izindonga ngezitina, ezikhiwe ngaphambilini, ugesi, amasango",
+        "Izinhlelo zekhanselo ziphathelwe izindonga ezidlula u-1.8 m",
+        "Ngaphezu kweminyaka emi-15 sivikela izakhiwo eziGauteng — ezihlala abantu nezoshishino",
+        "Ukuhlolwa kwendawo kwamahhala ngokuqinisekiswa komngcele womhlaba",
+        "Isikhungo esiphelele kanye negali lomsebenzi"
+      ]
+    },
+    "flooring": {
+      "intro": "Sinqobile Construction inikeza ukufakwa kwezitezi ngokusebenza kahle kulo lonke iJohannesburg naseGauteng. Ngonyaka we-15 sidlule, sifake amakhulu ezitezi ezizakhiweni ezihlala abantu nakwezoshishino — kusukela ku-laminate e-Fourways kuya ezindlini ze-Sandton kanye ne-vinyl e-Midrand. Ukufakwa kwezitezi eJohannesburg kubiza u-R80–R850+ ngometre owancomeka ngo-2026, kuya nezinto ezisetshenzisiwe (laminate, vinyl, ikhuni elikhiwe, ikhuni elinzima, noma ithayela). Siphathe inqubo yonke: ukuhlolwa kwendawo, ukulinganisa, ukuhlola ukumanzwa, ukufakwa kwe-underlay, kanye nokufakwa ngokunembayo ngamazikhonkwane okwanda ahlanzekile kanye nezinguquko phakathi kwamakamelo. Izitezi ezifanele zishintsha indawo futhi zandise inani lomhlaba kakhulu. Sikusize ukhethe inketho enhle kakhulu ngesabelomali sakho, isimo sokuphila, nezinga lemisindo — bese usifaka ngokwezindlela zomsukuzi ngegali lomsebenzi.",
+      "subServices": [
+        {
+          "name": "Izitezi ze-Laminate",
+          "description": "Izitezi ze-laminate ezixhumana ngokucofa ngezihlako ezehlukene zobukeka bamakhothe. Zifakwa ngokukhawuleza, zifanele, futhi zihlala kahle ezindaweni ezinosebenzo olulingene. Zifakwa phezu kwe-foam underlay ngamazikhonkwane okwanda. Ibiza u-R300–R800/m² ukubekwa nokufakwa."
+        },
+        {
+          "name": "Izitezi ze-Vinyl ne-LVT",
+          "description": "Izitezi ze-luxury vinyl tile (LVT) ne-vinyl plank — akuzeli amanzi, azikhalipheli, futhi zifanelekile kakhulu emakishini, ezindlini zangasese, kanye nezindaweni ezinezinga eliphezulu losebenzo. Ukufakwa nge-glue-down noma ngokucofa. Ibiza u-R250–R700/m² ukubekwa nokufakwa."
+        },
+        {
+          "name": "Izitezi Zekhuni Elikhiwe",
+          "description": "Ikhuni langempela phezu kobukhuni bwe-plywood — ukubukeka nomuzwa wekhuni elinzima ngokuzinza okuhle kakhulu. Kufanelekile ngokushisa okwenziwa phansi kwezitezi. Ibiza u-R350–R850/m² ukubekwa nokufakwa."
+        },
+        {
+          "name": "Izitezi Zekhuni Elinzima",
+          "description": "Ikhuni elinzima elimhlophe (i-oak, i-walnut, i-ash) elichayiwe futhi libekwe indawo yokuhlala. Usezingeni eliphezulu kakhulu lezitezi — lingasakazwa futhi ligqiniswe izikhathi eziningi. Ibiza u-R800–R2,000/m² ukubekwa nokufakwa."
+        },
+        {
+          "name": "Ukuchaywa Nezitezi Nokugqiniswa Phansi",
+          "description": "Izitezi zekhuni ezikhona zichaywa kuze zibe ikhuni elingasho, zimane zikhiwe inombolo (okukhethekile), futhi zigqiniswa nge-polyurethane noma i-hard wax oil. Ivuselela izitezi zekhuni ezikhathele ukuba zibuyele ebuhle bazo bokuqala."
+        }
+      ],
+      "pricingNote": "Izindleko zezitezi zifaka izinto, i-underlay, ukuqopha, kanye nokufakwa ngokusebenza kahle. Ukulinganisa indawo kuyengeziwe uma izitezi zingalingani (R40–R100/m²). Ukususa izitezi ezikhona kukhokhelwa ngokwahlukana. Wonke amantengo angahluliwe.",
+      "pricingTable": [
+        {
+          "item": "Izitezi ze-laminate (ukubekwa nokufakwa)",
+          "range": "R300 – R800 /m²"
+        },
+        {
+          "item": "Izitezi ze-vinyl / LVT (ukubekwa nokufakwa)",
+          "range": "R250 – R700 /m²"
+        },
+        {
+          "item": "Ikhuni elikhiwe (ukubekwa nokufakwa)",
+          "range": "R350 – R850 /m²"
+        },
+        {
+          "item": "Ikhuni elinzima (ukubekwa nokufakwa)",
+          "range": "R800 – R2,000 /m²"
+        },
+        {
+          "item": "Ukuchaywa nezitezi nokugqiniswa phansi (ikhuni elikhona)",
+          "range": "R150 – R350 /m²"
+        },
+        {
+          "item": "Ukulinganisa indawo (i-self-levelling compound)",
+          "range": "R40 – R100 /m²"
+        },
+        {
+          "item": "Ukususa izitezi ezindala",
+          "range": "R30 – R80 /m²"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Ukubonisana Nezingane",
+          "description": "Sivakashela ekhaya lakho, sihlole indawo, silinganise indawo, futhi silethe izingane ukuze ubone futhi uzwe izinketho zezitezi ekukhanyeni kwakho kwangempela."
+        },
+        {
+          "step": "2",
+          "title": "Ukulungiswa Kwendawo",
+          "description": "Sihlola amaninga okumanzwa, silinganese izitezi uma kudingekile, futhi sifake i-underlay noma izivimbo zokumanzi ezibonakalayo."
+        },
+        {
+          "step": "3",
+          "title": "Ukufakwa",
+          "description": "Izitezi zizwelana nendawo ekhaya lakho (amaawa angama-48 ukuze izinto zekhuni), bese zifakwa ngezinqumo ezinemba ngezivimbo, amazikhonkwane okwanda afanele, kanye nezinguquko ezingagawuleki phakathi kwamakamelo."
+        },
+        {
+          "step": "4",
+          "title": "Ukugqedwa Nokudluliswa",
+          "description": "Izingcezu ezikhona, izintambo zokuguquka, kanye neziqeshana zeminyango zifakwa. Sihlanza izitezi futhi sinikeza imiyalo yokunakekela. Igali lomsebenzi lifakiwe."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Zingakanani izindleko zokufakwa kwezitezi eJohannesburg ngo-2026?",
+          "answer": "Izitezi eJohannesburg zibiza u-R250–R2,000+ ngometre owancomeka ukubekwa nokufakwa ngo-2026. I-Vinyl/LVT intengo encane kakhulu ku-R250–R700/m², i-laminate ibiza u-R300–R800/m², ikhuni elikhiwe u-R350–R850/m², neikhuni elinzima u-R800–R2,000/m². Ekhaya le-100 m², izitezi ze-laminate zibiza cishe u-R30,000–R80,000. Sinikeza ukubonisana kwamahhala nezingane."
+        },
+        {
+          "question": "Iziphi izitezi ezinhle kakhulu ezikhaya eJohannesburg?",
+          "answer": "Kuncike ezidingweni zakho. I-laminate inhle kakhulu ngesabelomali nokugcina lula. I-Vinyl/LVT inhle kakhulu ezindaweni ezifudumele (amakishi, izindli zangasese) ngoba akuzeli amanzi. Ikhuni elikhiwe linikeza ubuhle bekhuni langempela ngokuzinza okuhle kakhulu. Ikhuni elinzima yinketho enhle kakhulu ephila impilo yonke. Ezikhaya eziningi eJohannesburg, sikhuthaza ikhuni elikhiwe ezindaweni zokuhlala ne-vinyl ezindaweni ezifudumele."
+        },
+        {
+          "question": "Ninganikeza izitezi phezu kwamathayela?",
+          "answer": "Yebo, i-laminate ne-vinyl zinganikeza phezu kwamathayela akhona uma amathayela eshikashikile futhi alingane. Imigqa yegranite yamathayela ingabonakala ngaphansi kwe-vinyl eyancane, ngakho-ke singakhuthaza i-levelling compound kuqala. Lokhu kugcina izindleko nezinkinga zokususa amathayela endala. Sihlola isimo ngesikhathi sokubonisana nokusinike iseluleko ngendlela enhle kakhulu."
+        },
+        {
+          "question": "Ithatha isikhathi esingakanani ukufakwa kwezitezi?",
+          "answer": "Izitezi ze-laminate noma ze-vinyl zendlu yezindlu ezi-3 (80–120 m²) zithatha izinsuku ezi-2–3. Ikhuni elikhiwe lithatha izinsuku ezi-3–4 kufaka isikhathi sokuzwelana. Ikhuni elinzima elichaywa nokuqiniswa lapho kufakwa khona lithatha izinsuku ezi-5–7. Ukulungiswa kwendawo kungezelela izinsuku ezi-1–2 uma ukulinganisa kudingewe. Sinikeza umugqa wesikhathi wentengo yonke."
+        },
+        {
+          "question": "Ninifaka izitezi noma ngithenge ngami?",
+          "answer": "Singanifaka nokufaka (okukhuthazwayo) noma sifake izitezi ozithenga. Uma sinikeza, uzuza amanani ethu wohwebo futhi siqinisekisa ukuthi umkhiqizo ufanelekile kulokho okusetshenziswa kwakhe. Uma uthenga eyakho, sizonifaka ngezindlelo ezisebenzayo (ubukhulu, i-AC rating ye-laminate, umthamo we-wear layer ye-vinyl) ukuqinisekisa ukuthi isebenza kahle endaweni yakho."
+        }
+      ],
+      "whyChoose": [
+        "Yonke imikhakha yezitezi — laminate, vinyl, ikhuni elikhiwe, ikhuni elinzima",
+        "Ukuhlolwa kokumanzi nokulungiswa kwendawo ngaphambi kokufakwa",
+        "Amanani ethu wohwebo wezinto zezitezi ngezikhungo ezibekiwe",
+        "Ngaphezu kweminyaka emi-15 yokufakwa kwezitezi kulo lonke iGauteng",
+        "Ukubonisana kwamahhala nezingane ezilekhaya lakho",
+        "Igali lomsebenzi kukho konke ukufakwa"
+      ]
+    },
+    "brickwork": {
+      "intro": "Sinqobile Construction inikeza ukwakhiwa kwezitina kanye nezinsiza kulo lonke iJohannesburg naseGauteng. Ngonyaka we-15 sidlule, abakhi bethu bezitina bakhile konke kusukela ezindongeni zesicca sendlela esimilo esisodwa kuya ezikhiweni zabakhi bezitina zobuso ezimilo ezibili. Ukwakhiwa kwezitina eJohannesburg kubiza u-R150–R450 ngometre owancomeka ngo-2026, kuya ngohlobo lwezitina (i-stock, imint, noma izitina zobuso) kanye nobukhulu bezindonga. Sisebenza nazo zonke izinhlobo zezitina: izitina ze-NFP ze-stock, izitina zimint, izitina zobuso zezimbazo (Corobrik, Brickfields), kanye nezinqe zekhonkolo. Ukwakhiwa kwezitina okufanele kudinga ukuxubwa kwemiyama efanele, izinkambu ezilingene, izindonga ezilungile, kanye nokufakwa kwe-DPC — akukho zikhuhli. Wonke umthamo esiwakhayo unezakhiwo eziqinile, umelana nezimo zezulu, futhi wakhiwa ukuze uhlale.",
+      "subServices": [
+        {
+          "name": "Izindonga Zomngcele Nosizo",
+          "description": "Izindonga ngezitina zomngcele, izindonga ezihlaba ezindaweni zengadi, nezindonga ezicindezelayo. Kufaka isisekelo sezikhonkolo, i-DPC, amajoynthi okwanda, kanye nokugodlwa. Izindonga zomngcele zibiza u-R1,800–R3,800 ngometre ophakathi wesilinganiso se-1.8 m."
+        },
+        {
+          "name": "Ukwakhiwa Ngezitina Zobuso",
+          "description": "Izindonga ngezitina zobuso ezibonakalayo ngezitina zobuso zezimbazo (Corobrik, Brickfields) ngamajoynthi akhiwe noma aphukiwe. Izitina zobuso zisusa isidingo sokuchanywa nokupenda, kunciphisa izindleko zokukhula kokusetshenziswa kwakhe."
+        },
+        {
+          "name": "Ukwakhiwa Kwezakhiwo Ezintsha Ngezitina",
+          "description": "Ukwakhiwa kwezitina kwezakhiwo zezindlu nezimfanelo ezintsha — izindonga zangaphandle, izindonga zesigaba sangaphakathi, nezindonga ezithwala umthwalo. Sakhela ngokwezindlelo zenjinela ngamalinti, amazondo, kanye nezixhumanisi ezifanele."
+        },
+        {
+          "name": "Ukulungiswa Kwezitina Nokufakwa Kwemiyama",
+          "description": "Izitina ezibiziwe, ezibi, noma ezonakele yizimo zezulu zishintshwa. Amajoynthi emiyama akhiwa phansi ukubuyisela ukuqina kwezakhiwo nobukekisi. Sifana nezinhlobo nezitina nemiyama ekhona."
+        },
+        {
+          "name": "Izindawo Zokoshisa Inyama Nezakhiwo Ezingaphandle",
+          "description": "Izindawo zokoshisa inyama ezikhiwe ngaphakathi, izifuro zepizza, izindawo zomlilo, nezindawo zamakishi angaphandle ngezitina zobuso noma ezicwilisiwe. Zakhiwe ngokwezidingo zakho."
+        }
+      ],
+      "pricingNote": "Izindleko zokwakhiwa kwezitina zincike ohlobo lwezitina, ubukhulu bezindonga (esimilo esisodwa noma esibili), ubukhulu, kanye nokufinyelela. Izitina zobuso zibiza ngaphezu kwezitina ze-stock kodwa zisusa izindleko zokuchanywa. Wonke amantengo afaka izinto, umsebenzi, nemiyama.",
+      "pricingTable": [
+        {
+          "item": "Uthango lwezitina ze-stock (nge-m²)",
+          "range": "R150 – R220 /m²"
+        },
+        {
+          "item": "Uthango lwezitina zimint (nge-m²)",
+          "range": "R250 – R300 /m²"
+        },
+        {
+          "item": "Uthango lwezitina zobuso (nge-m²)",
+          "range": "R300 – R450 /m²"
+        },
+        {
+          "item": "Uthango lomngcele (1.8 m, ngometre ophakathi)",
+          "range": "R1,800 – R3,800 /m"
+        },
+        {
+          "item": "Izitina ze-stock (nge-1,000)",
+          "range": "R1,600 – R2,500"
+        },
+        {
+          "item": "Izitina zobuso zezimbazo (nge-1,000)",
+          "range": "R3,500 – R6,000"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Ukuhlolwa Nentengo",
+          "description": "Sihlola izinhlelo noma silinganise indawo, sixoxe ngokukhethwa kwezitina, futhi sinikeza intengo engahluliwe ngezinombolo zezinto."
+        },
+        {
+          "step": "2",
+          "title": "Isisekelo",
+          "description": "Sikumba futhi sikhuphe isisekelo sezikhonkolo esijulile nesiphana esinele sokuthi isilinganiso sobukhulu bezindonga kanye nomthwalo."
+        },
+        {
+          "step": "3",
+          "title": "Ukubeka Izitina",
+          "description": "Izitina zifakwa ngezihlako ezifanele zezikhonkolo ngamajoynthi emiyama alingene. I-DPC ifakwa phansi. Amalinti, amazondo, namajoynthi okwanda afakwa ngokwezindlelo zenjinela."
+        },
+        {
+          "step": "4",
+          "title": "Ukugqedwa",
+          "description": "Uthango lugodlwa ngesimame, amajoynthi akhiwa noma aphukiwa, futhi indawo ihlanzwa. Izindonga ngezitina zobuso zigqiniswa uma kudingewe."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Zingakanani izindleko zokwakhiwa kwezitina eJohannesburg ngo-2026?",
+          "answer": "Ukwakhiwa kwezitina eJohannesburg kubiza u-R150–R450 ngometre owancomeka ngo-2026. Izindonga zezitina ze-stock zibiza u-R150–R220/m², izitina zimint u-R250–R300/m², nezitina zobuso zezimbazo u-R300–R450/m². Uthango lomngcele le-1.8 m lubiza u-R1,800–R3,800 ngometre ophakathi kufaka isisekelo. Amanani awezitina ayahluka kusukela ku-R1,600/1,000 (i-stock) kuya ku-R6,000/1,000 (izitina zobuso zehlobo eliphezulu)."
+        },
+        {
+          "question": "Yini umehluko phakathi kwezitina ze-stock nezitina zobuso?",
+          "answer": "Izitina ze-stock (NFP) zizitina ezinomgogodla onqakulayo ezikhiwe ukuze zicwiliswe — ziyinketho entengo encane kakhulu yezindonga ezizogqedwa ngochwa nepeyinti. Izitina zobuso zizitina zezimbazo ezifanelene, ezihlanzekile ezikhiwe ukuba zibukeke ngokugcina — ziza ngemibalala nezinhlobo ezehlukene futhi azidinge ukuchanywa noma ukupenda. Izitina zobuso zibiza ngaphezulu ekuqaleni (R3,500–R6,000 nge-1,000 vs R1,600–R2,500 ye-stock) kodwa zigcina izindleko zokuchanywa nokupenda esikhathini eside."
+        },
+        {
+          "question": "Ingabe izindonga zomngcele zidinga izisekelo?",
+          "answer": "Yebo. Wonke uthango lomngcele ludinga isisekelo sezikhonkolo — ngaphandle kwazo, uthango luzophuka, luswele, futhi ekugcineni luwe ngenxa yokuzamazama komhlaba nokuthwala komoya. Ukujula kwezisekelo kuncike ubukhulu bezindonga nezimo zomhlaba, kodwa ngokuvamile u-300–500 mm ojulile no-300–400 mm uphana wothango lomngcele le-1.8 m. Sithela izisekelo ngokwezindlelo zenjinela."
+        },
+        {
+          "question": "Ithatha isikhathi esingakanani ukwakhiwa kothango lomngcele?",
+          "answer": "Uthango lomngcele lwezindlu ezihlala abantu (abamayzile ama-30–50 ophakathi) lithatha izinsuku ezi-5–10 zokusebenza, kufaka imbulelo nezisekelo (izinsuku ezi-1–2), ukuphola kwezisekelo (izinsuku ezi-2–3), ukubeka izitina (izinsuku ezi-3–5), nokugqedwa (usuku olulodwa). Imingcele emide noma izindonga ngezitina zobuso zithatha isikhathi eside ngokulingana. Izimo zezulu zingabangela ukubambezeleka ngesikhathi sezimvula eGauteng."
+        },
+        {
+          "question": "Ningafanisa ukwakhiwa kwezitina ezikhona ukwengezwa?",
+          "answer": "Sisho yonke imizamo ukufanisa ukwakhiwa kwezitina ezikhona ngokuthola uhlobo, isilinganiso, nomibala yezitina ezifanayo. Kwizindlu ezindala lapho izitina zokuqala seziphume emakethe, sithola ufanani ngokusedlula futhi singasebenzisa izitina ezibekwe phandle. Umbala wemiyama ufaniswa ngokulinganisa isilinganiso sesihlabathi nesikhonkolo. Umakhi wezitina onekhono angathola ukufanisa okunokugawuleka kwamazitha emvakalweni ezimweni eziningi."
+        }
+      ],
+      "whyChoose": [
+        "Yonke imikhakha yezitina — i-stock, imint, izitina zobuso zezimbazo (Corobrik, Brickfields)",
+        "Izisekelo ezifanele, i-DPC, amalinti, namajoynthi okwanda kwizindonga zonke",
+        "Ngaphezu kweminyaka emi-15 yokwakhiwa kwezitina kulo lonke iGauteng — izindonga, izindlu, izinto ezihlaba",
+        "Ubuchwepheshe bezitina zobuso — amajoynthi akhiwe, ukugqedwa okuhlanzekile, akudingeki ukuchanywa",
+        "Ukuhlolwa kwamahhala endaweni kanye nokukhuthazwa kwezinto",
+        "Isikhungo esiphelele kanye negali lomsebenzi"
+      ]
+    },
+    "landscaping": {
+      "intro": "Sinqobile Construction inikeza izinsiza zokuhlola indawo ngokusebenza kahle kulo lonke iJohannesburg naseGauteng — kusukela ekuhlolweni kwengadi nokufakwa kuya ezihlalweni zokupompa amanzi, ukuphavayo, nezindawo zokuphila ngaphandle. Ngonyaka we-15 sidlule, sihlole futhi sakha amakhulu ezindawo ezihlala abantu nezoshishino kulo lonke leli zwe. Ukuhlola indawo eJohannesburg kubiza u-R150–R800 ngometre owancomeka ngo-2026 kuya ngengenxa yomsebenzi — ukuhlalisa okuqala (izitshalo, ingca, umuntu) kujula ku-R150–R250/m², kanti ukuhlalisa okuqukethwe ngezinto eziphezulu kunganqoba u-R600–R800/m². Siphathe yonke indawo: uhlelo lwengadi, ukulungiswa komhlaba, ukutshalwa, ukufakwa kwamanzi, ukuphavayo, izindonga ezicindezelayo, izindawo zamanzi, kanye nokukhanyisa ngaphandle. Isimo sezulu eGauteng (ehlobo elishisayo, ubusika obuneziqhele, nezishungulezi zehlobo) sidinga ukukhethwa kwezitshalo kanye nezakhiwo zamanzi ezifanelekile e-highveld — saziwa kahle ngalokho okukhula kahle lapha.",
+      "subServices": [
+        {
+          "name": "Ukuhlolwa Kwengadi Nokufakwa",
+          "description": "Ukuhlolwa kwengadi ngokusebenza kahle nokukhethwa kwezitshalo ezifanele isimo sezulu eGauteng, ukulungiswa komhlaba, ukutshalwa, nokufakwa komuntu. Sikhiqiza izinhlolosedlelo ezinokulungiswa okuncane ezibukeka kahle unyaka wonke. Ukuhlalisa okuqala kubiza u-R150–R250/m²."
+        },
+        {
+          "name": "Izinhlelo Zamanzi",
+          "description": "Izinhlelo zamanzi ezithe thinyane ne-drip ezakhelwe uhlelo lwengadi yakho nezidingo zamanzi zezitshalo. Izingxenye ze-Hunter, Rain Bird, ne-Toro. Izinhlelo eziyinhloko zibiza u-R85–R100/m², izinhlelo ezithe thinyane nezisokisi zezimo zezulu u-R100–R150/m². Izinhlelo ziphelele zamezindlu u-R10,000–R30,000."
+        },
+        {
+          "name": "Ukufakwa Kwengca Yangempela",
+          "description": "I-Kikuyu, LM Berea, ne-buffalo grass ikelekelwa nifakwe emhlabeni oculiwe. Kufaka ukulungiswa komhlaba, ukulinganisa, ukufakwa, nemiyalo yokuselwa kwokuqala. Sinikelela ohlobo lwengca oluhle kakhulu ngezimo zakho zokhanyiso / amathunzi."
+        },
+        {
+          "name": "Izindonga Ezicindezelayo Nokulungiswa Kwezindawo",
+          "description": "Izindonga ezicindezelayo zezikhonkolo, nezitina, nezitshalo zamadomboro zengadi ezigobha. Kufaka ukugeleza kwamanzi ngemuva kwezindonga nezinjinela ezifanele zezindonga ezidlula u-1 m. Kukhiqiza izindawo ezifanelekile ezindaweni ezinokunqondeka."
+        },
+        {
+          "name": "Izindawo Zokuphila Ngaphandle",
+          "description": "Izindawo zokoshisa inyama ezikhiwe ngaphakathi, izindawo zomlilo, amakishi angaphandle, izindonga zokuhlala, nezindawo zokuzijabulisa. Sibumbanisa ukuhlalisa okuqina nokuhlalisa okumnandi ukuze kukhiqizwe indawo ehlanzekile yokuphila ngaphandle."
+        }
+      ],
+      "pricingNote": "Izindleko zokuhlola indawo ziyahluka kakhulu kuya ngobukhulu bokushiselwa (izitshalo, ingca) ukuya ekuhlalisweni okuqina (ukuphavayo, izindonga, izinto ezihlaba). Imali yokuhlola iqala ku-R5,000 yezinhlelo eziyinhloko. Wonke amantengo afaka izinto, izitshalo, nomsebenzi.",
+      "pricingTable": [
+        {
+          "item": "Ukuhlalisa okuqala (izitshalo, ingca, umuntu)",
+          "range": "R150 – R250 /m²"
+        },
+        {
+          "item": "Ukuhlola indawo ngokulinganisa (okumnandi + okuqina)",
+          "range": "R400 – R800 /m²"
+        },
+        {
+          "item": "Inhlelo yamanzi (eyinhloko yamezindlu)",
+          "range": "R10,000 – R30,000"
+        },
+        {
+          "item": "Ingca yangempela (ukubekwa nokufakwa)",
+          "range": "R50 – R100 /m²"
+        },
+        {
+          "item": "Ukuhlolwa kwengadi (inhlelo ngokusebenza kahle)",
+          "range": "R5,000 – R25,000"
+        },
+        {
+          "item": "Uthango olucindezela (ngometre ophakathi)",
+          "range": "R1,500 – R4,000 /m"
+        },
+        {
+          "item": "Indawo yokoshisa inyama ekhiwe ngaphakathi",
+          "range": "R15,000 – R50,000"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Ukubonisana Ngokuhlolwa",
+          "description": "Sivakashela umhlaba wakho, sixoxe ngombono wakho, sihlole izimo zomhlaba, ukubonakala kokhanyiso, nokulihla, futhi sikhiqize umqondo wokulungiselela nokukhethwa kwezitshalo nezinto ezisetshenzisiwe."
+        },
+        {
+          "step": "2",
+          "title": "Intengo Nokuhlela",
+          "description": "Uthola intengo engahluliwe nge-plan yokutshalwa, uhlelo lwamanzi, kanye nezindleko zokuhlalisa okuqina. Izinto nezitshalo zithengwa ezikhungweni ezigcina izitshalo ezihlala izitshalo kanye nezikhungo zabenzi endawo."
+        },
+        {
+          "step": "3",
+          "title": "Ukufakwa",
+          "description": "Ukuhlalisa okuqina kufakwa kuqala (ukuphavayo, izindonga, amanzi), kulandelwe ukulungiswa komhlaba nokusho. Ingca ifakwa ekugcineni ukugwema ukulimala ngezikhathi."
+        },
+        {
+          "step": "4",
+          "title": "Ukudluliswa Nomqondo Wenakekelo",
+          "description": "Sikunika ithour engomzabuzo wakho omusha wengadi, sibonise inhlelo yamanzi, futhi sinikeza indlela yokunakekela efaka izinhlelo zokuselwa, ukuphunzwa, nokufakwa komanyolo."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Zingakanani izindleko zokuhlola indawo eJohannesburg ngo-2026?",
+          "answer": "Ukuhlola indawo eJohannesburg kubiza u-R150–R800 ngometre owancomeka ngo-2026. Ukufakwa kwengadi eyinhloko (izitshalo, ingca, umuntu) kubiza u-R150–R250/m². Ukuhlola indawo okuphelele ngokuphavayo, izindonga ezicindezelayo, namanzi kubiza u-R400–R800/m². Ukushintshwa kwengadi ngokuphela endaweni ye-200 m² kubiza u-R30,000–R160,000 kuya ngengenxa yomsebenzi. Sinikeza ukubonisana kwamahhala kanye namantengo esicaciso."
+        },
+        {
+          "question": "Ingca yiphi enhle kakhulu yezingadi eJohannesburg?",
+          "answer": "I-Kikuyu yingca yezingadi ejwayeleke kakhulu eJohannesburg — ikhula ngokukhawuleza, imelana nokoma, iphila ngokukhawuleza emuva kokulimala, futhi ibhekana nokushisa nokwanda. I-LM Berea (ingca ye-Berea) inhle kakhulu ezindaweni zethunzi phansi kwemithi. I-Buffalo grass yinketho enhle yekhuma. Ezindaweni ezinoqhele eziqhelile (ezijwayelekile ebusika eGauteng), i-Kikuyu icula kodwa ivukela ehlobo. Sikhuthaza i-Kikuyu ezikhaya eziningi eJohannesburg ngaphandle kwalapho unamanzi amakhulu."
+        },
+        {
+          "question": "Zingakanani izindleko zenhlelo yamanzi?",
+          "answer": "Inhlelo yamanzi eyinhloko yamezindlu eJohannesburg ibiza u-R10,000–R30,000 ukufakwa, kuya ngobukhulu nobunzima bwengadi. Izinhlelo ezithe thinyane nezisokisi zezimo zezulu nezindawo ezahlukene zibiza ngaphezulu. I-drip irrigation yezindlu nezimithiyo inezilinganiso zamanzi ezinhle ngaphezu kwezinhlelo zokufafaza. Sihlela inhlelo kuya ngohlelwe lwengadi yakho, izidingo zamanzi zezitshalo, kanye nokucindezelwa kwamanzi kwemunicipal."
+        },
+        {
+          "question": "Ziziphi izitshalo ezimelana neqhele eGauteng?",
+          "answer": "IGauteng ibonakala neqhele lobusika (May–August), ngakho-ke ukukhetha izitshalo kubalulekile. Izitshalo ezimelana neqhele zifaka i-agapanthus, i-lavender, i-rosemary, i-Society garlic, i-wild olive, i-buffalo thorn, i-aloes, nezitshalo zengca yomzabuzo. Izitshalo ze-tropical (amakhowe, i-strelitzia, i-frangipani) zinganqoba iqhele elincane kodwa zidinga ukuvikelwa ngesikhathi sohlisela. Sikhethela izitshalo ezifanele isimo sakho esehlukene esicutshunguliwe — izindlu ezibheke enyakatho zikhudlwana, kanti izindlu ezibheke enyinga nezindawo eziphansi zinamaghawe aqhele kakhulu."
+        },
+        {
+          "question": "Ninenza ukunakekela kwengadi emuva kokufakwa?",
+          "answer": "Sigxile ekuhlolweni nokwakhiweni kwezindawo kunalokho kukunakekela okuqhubekayo. Noma kunjalo, sinikeza indlela enemininingwane yokunakekela ukudluliswa efaka izinhlelo zokuselwa, izikhathi zokuphunzwa, uhlelo lwemanyolo, nezimiso ezilandelana. Ukunakekela okuqhubekayo, singanicebisa izikhungo ezethembekile zakunakekela izingadi endaweni yakho."
+        }
+      ],
+      "whyChoose": [
+        "Inkonzo yonke yokuhlola indawo — ukuhlola, ukufakwa, amanzi, ukuphavayo, ukukhanyisa",
+        "Ulwazi lwesimo sezulu eGauteng — izitshalo nezingca ezikhula kahle e-highveld",
+        "Ukuhlola ngokusebenza kahle kwamanzi ngezilawuli ezithe thinyane",
+        "Ngaphezu kweminyaka emi-15 yokufakwa kwezindawo kulo lonke iGauteng",
+        "Ukubonisana kwamahhala nokusetshenziselwa komhlaba",
+        "Igali lomsebenzi kukho konke ukufakwa"
+      ]
+    },
+    "maintenance": {
+      "intro": "Sinqobile Construction inikeza izinsiza zokukhula komhlaba okuphelele kulo lonke iJohannesburg naseGauteng — igcina izakhiwo ezihlala abantu nezoshishino zisezimeni ezinhle kulo lonke unyaka. Ngonyaka we-15 sidlule, sigcine amakhulu izakhiwo, siphathe konke kusukela ezihlolweni ezinqunyiwe nezilungiswa kuya ekusizeni okusheshayo. Ukugcinwa komhlaba akubonakali kahle, kodwa kunqanda izinkinga ezincane ukuba zibe yizinhlekelele ezibiza kakhulu. Umbobho ogelezayo osalwe izinyanga uba ukulimala kwamanzi. Ithayela eliphulukanisiwe liba ukuvuza kwendlu yangasese. Sinikeza izikhungo zokukhula ezibekiwe nezinsiza ezisizako ezicelwayo zazo zonke imikhakha: amanzi, ugesi, ukupenda, ithayela, ubufundi, uphahla, ukuvimbela amanzi, nezilungiswa jikelele.",
+      "subServices": [
+        {
+          "name": "Izivumelwano Zokukhula Ezibekiwe",
+          "description": "Izihlolo zomhlaba zangenyanga noma ngekhutha ezifaka amanzi, ugesi, uphahla, imishini yamanzi, ukupenda, nezimo jikelele. Sikhiqiza isheduli yokukhula futhi sihlele izinkinga ngaphambi kokuba zibe izimo zokusheshela."
+        },
+        {
+          "name": "Ukunakekela Kwamanzi",
+          "description": "Amabilisi agobhozayo, izindlu zangasese ezidunguzayo, inkonzo ye-geyser, ukuhlanza izintambo, kanye nezimvulamlomo zamazikhonkwane. Ukunakekela kwamanzi okunciphisayo kugcina izinkulungwane ezilungiswa ngokusheshela nezinkomba zamanzi."
+        },
+        {
+          "name": "Ukupenda Nokuthinta",
+          "description": "Ukuthintwa kwepeyinti yangaphakathi nangaphandle, ukuphinda kwezilinganiso ezithile, kanye nokupenda ngokuphela ngokwezinqumo ezibekiwe. Kugcina ukubukeka komhlaba futhi kuvikele izindawo ekulimazeni kwezimo zezulu."
+        },
+        {
+          "name": "Ukunakekela Kophahla Nemishini Yamanzi",
+          "description": "Izihlolo zophahla zonyaka, ukuhlanza imishini yamanzi, ukuvula amamdlandla amanzi, ukushintsha amathayela, nezilungiswa zase-flashing. Izidingo ngaphambi kwesizini yeziphepho eGauteng ehlobo (Okthoba–Mashi)."
+        },
+        {
+          "name": "Izinsiza Jikelele Ze-Handyman",
+          "description": "Izilungiswa zeminyango nezamafasitela, ukushintshwa kwezikhiye, ukufakwa kwamashalofu, ukuphanyeka izithombe, ukuqoqwa kwezindlu, nezinto ezincane zombufundi. Ithimba lethu elinamakhono amaningi liphathe imisebenzi emikhulu engabuya."
+        }
+      ],
+      "pricingNote": "Amanani okukhula ancike esingenxa sokusebenza nendlelekela yenkonzo. Izivumelwano ezibekiwe zinikeza amanani aphansiwe ngaphezu kwezisizo ezisodwa. Umsebenzi wonke uqhathaniswa ngaphambilini — akukho mikhawulo ezengeziwe.",
+      "pricingTable": [
+        {
+          "item": "I-handyman jikelele (ngapha ngehora)",
+          "range": "R350 – R550 /hr"
+        },
+        {
+          "item": "Ukuvakasha kokukhula okubhaliwe",
+          "range": "R1,500 – R3,500 /visit"
+        },
+        {
+          "item": "Isivumelwano sokukhula sanyanga zonke (izindlu)",
+          "range": "R2,500 – R5,000 /month"
+        },
+        {
+          "item": "Ukuhlanza imishini yamanzi (indlu yonke)",
+          "range": "R800 – R2,000"
+        },
+        {
+          "item": "Ukulungiswa / ukushintshwa kwembilisi",
+          "range": "R350 – R800"
+        },
+        {
+          "item": "Ukulungiswa kweminyango / izikhiye",
+          "range": "R400 – R1,000"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Ukuhlolwa Komhlaba",
+          "description": "Sihlola umhlaba wakho futhi sikhomba yonke imisebenzi yokukhula — kusukela ezilungiswa ezisheshayo kuya emsebenzini owenqanqelwayo. Uthola umbiko wokukhula olinganisiwe."
+        },
+        {
+          "step": "2",
+          "title": "Uhlelo Lokukhula",
+          "description": "Sikhiqiza isheduli efaka yonke imikhakha — amanzi, ugesi, uphahla, ukupenda, nezilungiswa jikelele. Ukuvakashela nyanga zonke noma ngekhutha kuhlelwa ezikhathini ezifanele."
+        },
+        {
+          "step": "3",
+          "title": "Inkonzo Eqhubekayo",
+          "description": "Ithimba lethu liphathe imisebenzi yokukhula ebekiwe futhi libike ngayo noma yiziphi izinkinga ezinqubelayo. Izisizo ezisheshayo zikhona phakathi kwezivakasho ezibekiwe."
+        },
+        {
+          "step": "4",
+          "title": "Ukubika",
+          "description": "Uthola umbiko wokukhula emuva kwesivakasho ngasinye ofulathela umsebenzi ophelele, izithombe, nezincomo zokunakekela kwesikhathi esizayo."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Zingakanani izindleko zokukhula komhlaba eJohannesburg?",
+          "answer": "Amanani e-handyman jikelele eJohannesburg angama-R350–R550 ngapha ngehora ngo-2026. Izivakasho zokukhula ezibekiwe zibiza u-R1,500–R3,500 ngosivakasho. Izivumelwano zokukhula zanyanga zonke zazo izakhiwo ezihlala abantu zibiza u-R2,500–R5,000/ngenyanga futhi zifaka izihlolo ezihlala zikhona, izilungiswa ezincane, nezisizo ezibaluleke kakhulu zokunisheshela. Indlela yesivumelwano ikhona kakhulu kunazo izisizo ezisodwa futhi inqanda izilungiswa ezisheshayo ezibizayo."
+        },
+        {
+          "question": "Isivumelwano sokukhula sifaka ini?",
+          "answer": "Izivumelwano zethu zokukhula zazo izakhiwo ezihlala abantu zifaka izihlolo zomhlaba zanyanga zonke noma ngekhutha, ukuhlanza imishini yamanzi, izihlolo zamanzi (amabilisi, izindlu zangasese, i-geyser), izihlolo zokuphepha kagesi, ukuhlolwa kokupenda, izihlolo zophahla, nezilungiswa ezincane ezifakiwe kumali yesivumelwano. Izilungiswa ezinkulu ziqhathaniswa ngokwahlukana kodwa ngamanani aphansiwe esivumelwano. Uthola futhi izikhathi ezibaluleke kakhulu zezisizo ezisheshayo."
+        },
+        {
+          "question": "Ninigcina izakhiwo zoshishino?",
+          "answer": "Yebo. Sigcina amakhiwane ama-ofisi, izindawo zothengiso, amakhompuni ahlala abantu, nezakhiwo zoshishino kulo lonke iGauteng. Izivumelwano zoshishino zifaka yonke imikhakha yezakhiwo, izihlolo ezibekiwe, ukuphathwa kwezicelo zabanikazi, nokusabela kwesheshayo. Sinikeza imibiko yanyanga zonke efanele ukuphathwa komhlaba namarekhodi we-body corporate."
+        },
+        {
+          "question": "Yisiphi isikhathi esifanele sokugcina umhlaba wami?",
+          "answer": "Sikhuthaza izihlolo zokukhula zekhutha ngokuncane — nezimiso ezikhethekile zezizini: ngaphambi kwa-ehlobo (Okthoba) zihlolo zophahla nemishini yamanzi ngaphambi kwesizini yeziphepho, emuva kwa-ehlobo (Mashi) ukuhlola ukulimala kweziphepho, phakathi konyaka (Julayi) ukupenda nezilungiswa zangaphandle ngaphambi kobusika, kanye nokuhlolwa ngokuphela ekhawuleni lonyaka. Izivakasho zanyanga zonke zihle kakhulu kwizakhiwo ezindala noma ezinezinkinga ezaziwa zokukhula."
+        },
+        {
+          "question": "Ngangazicelela izilungiswa ezisodwa ngaphandle kwesivumelwano?",
+          "answer": "Yebo. Sinikeza izinsiza zezisizo ezicetshiwe ngamanani ethu angezansi ngapha ngehora (R350–R550/hr). Ungasibiza nganoma yiluphi ukulungiswa — amanzi, ugesi, ubufundi, ukupenda, noma umsebenzi we-handyman jikelele. Abakhi besivumelwano bathola amanani aphansiwe nezinqumo ezibaluleke kakhulu."
+        }
+      ],
+      "whyChoose": [
+        "Yonke imikhakha phansi kophahla olulodwa — amanzi, ugesi, ukupenda, uphahla, ubufundi",
+        "Ukunakekela okubhaliwe kunqanda izilungiswa ezisheshayo ezibizayo",
+        "Imibiko enemininingwane yokuhlola nezithombe emuva kwesivakasho ngasinye",
+        "Ngaphezu kweminyaka emi-15 yokugcinwa kwezakhiwo kulo lonke iGauteng",
+        "Izisizo ezibaluleke kakhulu ezisheshayo ezicetshiwe zazo izindlela izivumelwano",
+        "Isikhungo esiphelele sesikhungo sokuphathwa esinye komkhawulo"
+      ]
+    },
+    "repairs": {
+      "intro": "Sinqobile Construction inikeza izinsiza zokulunga kwezindlu ezisheshayo nezithembekile kulo lonke iJohannesburg naseGauteng — kusukela ezilungiswa ezisheshayo zezakhiwo kuya ezilungiswa zansuku zonke ezigcina indlu yakho iphephile futhi isebenza kahle. Ngonyaka we-15 sidlule, siphethe amakhulu ezinkulungwane zemisebenzi yokulunga kulo lonke leli zwe, efaka amanzi, ugesi, uphahla, izakhiwo, ukuvimbela amanzi, nezilungiswa jikelele ze-handyman. Siyazi ukuthi lapho into iphuka ekhaya lakho, udinga ukulungiswa ngokukhawuleza kahle — hhayi ukuphakwa okwesikhashana okwehluleka futhi emavikini ambalwa. Ithimba lethu lokulungisa liphatha izinto nezingxenye ezijwayelekile ezimotokhali zazo ukuze zilunga izinkinga eziningi ngosivakasho esisodwa. Sikhona ezisizweni ezisheshayo nezilungiswa ezibekiwe.",
+      "subServices": [
+        {
+          "name": "Izilungiswa Ezisheshayo Zezakhiwo",
+          "description": "Izindonga ezibiziwe, izisekelo ezonakele, ukulimala kwephahla yisiphepho, nokulimala komlilo. Siqinisa isakhiwo, sihlole ukulimala, futhi silunga ngokuphela ngokwezindlelo zenjinela."
+        },
+        {
+          "name": "Izilungiswa Zamanzi",
+          "description": "Amazikhonkwane aphuliwe, amabilisi agobhozayo, izintambo ezivikelwe, ukwehluleka kwe-geyser, nezilungiswa zendlu yangasese. Amanzi asheshayo ama-24/7 atholakala. Izilungiswa eziningi ziphetshwa ngosivakasho esisodwa."
+        },
+        {
+          "name": "Izilungiswa Zagesi",
+          "description": "Iziyaluzi ezihlehlayo, izigcini ezonakele, ukukhanya okuqhuma, nokushintshwa kwe-element ye-geyser. Abagesi abanezimpumelelo ukuze kube nezilungiswa eziphephile ezilandela umthetho."
+        },
+        {
+          "name": "Izilungiswa Zophahla",
+          "description": "Uphahla oluvuza, amathayela aphuliwe, i-flashing enonakele, nezilungiswa zemishini yamanzi. I-tarping yesheshayo itholakala ukwelula ngokuvuza phakathi kweziphepho."
+        },
+        {
+          "name": "Izilungiswa Jikelele Zezindlu",
+          "description": "Izilungiswa zeminyango namafasitela, izikhiye eziphuliwe, amathayela aphuliwe, amakhomphotha onakele, izitezi ezigqigqayo, nawo wonke ukulungisa indlu okwandayo ngokuhamba kwesikhathi."
+        }
+      ],
+      "pricingNote": "Izindleko zokulunga zincike ohlobo nobunzima bomsebenzi. Izilungiswa ezisheshayo nangemuva kwamahora zibiza ngaphezu kwamanani. Zonke izilungiswa ziqhathaniswa endaweni ngaphambi kokuba umsebenzi uqalwe — akukho mikhawulo ezengeziwe.",
+      "pricingTable": [
+        {
+          "item": "Ukusheshela jikelele (ngapha ngehora)",
+          "range": "R350 – R550 /hr"
+        },
+        {
+          "item": "Ukusheshela okuSheshayo (emuva kwamahora)",
+          "range": "R500 – R1,000 /hr"
+        },
+        {
+          "item": "Ukulunga kwesikhonkwane esiphuliwe",
+          "range": "R700 – R4,000"
+        },
+        {
+          "item": "Ukulunga kokuvuza uphahla",
+          "range": "R500 – R3,000"
+        },
+        {
+          "item": "Ukulunga kwesindonga esibizekile",
+          "range": "R1,000 – R5,000"
+        },
+        {
+          "item": "Ukulunga kweminyango / amafasitela",
+          "range": "R400 – R1,500"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Shayela Noma UWhatsApp",
+          "description": "Chaza inkinga — sininika isiqagelo esheshayo futhi sihlelele ukuvakasha. Izindaba ezisheshayo zithunyelwa ngokukhawuleza."
+        },
+        {
+          "step": "2",
+          "title": "Hlola Uqhathanise",
+          "description": "Ithimba lethu lihlola ukulimala endaweni, likhomba imbangela yempande, futhi linikezele amanani abekiwe ngaphambi kokusiqalela umsebenzi."
+        },
+        {
+          "step": "3",
+          "title": "Lunga",
+          "description": "Siphothula ukulunga sisebenzisa izinto ezinhle. Izilungiswa ezijwayelekile eziningi ziphetshwa ngosivakasho esisodwa."
+        },
+        {
+          "step": "4",
+          "title": "Hlola Ugqinisekise",
+          "description": "Sihlola ukulunga, sihlanze indawo yomsebenzi, futhi sinikeze igali lomsebenzi."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Zingakanani izindleko zokulunga kwezindlu eJohannesburg?",
+          "answer": "Amanani jikelele yokulunga eJohannesburg angama-R350–R550 ngapha ngehora ngesikhathi samahora ebhizinisi nangama-R500–R1,000/hr ukusheshela okuSheshayo emuva kwamahora. Izilungiswa ezikhethekile: isikhonkwane esiphuliwe R700–R4,000, ukuvuza uphahla R500–R3,000, isindonga esibizekile R1,000–R5,000, ukulunga kweminyango/amafasitela R400–R1,500. Siqhathanisa endaweni ngaphambi kokusiqalela umsebenzi — akukho mikhawulo efihliwe."
+        },
+        {
+          "question": "Ninikeza izinsiza zokulunga okuSheshayo?",
+          "answer": "Yebo. Sinikeza izinsiza zokulunga okuSheshayo zamazikhonkwane aphuliwe, ukuvuza uphahla, iziphazamiso zagesi, nokulimala kwezakhiwo. Ithimba lethu lisabela ngaphakathi kwamahora ama-2–4 kulo lonke iJohannesburg, Sandton, Midrand, Fourways, nezindawo ezizungezile. Shayela +27 82 868 8396 usizo olukhawulezayo."
+        },
+        {
+          "question": "Ningalunga izinkinga zezakhiwo ezindongeni?",
+          "answer": "Yebo. Silungisa izinkinga zezakhiwo ngokuqala sihlole imbangela (ukusabalala kwezisekelo, ukushakazeka kokunye, ukuphindaphindeka, noma ukulimala kwezimpande zemithi). Izinkinga ezincane zigcwaliswa nge-flexible filler. Izinkinga ezibalulekile zezakhiwo zidinga ukubekelwa kwezintambo zehelical bars, ukufakwa kwe-epoxy, noma ukwakhiwa phansi kwenxenye. Sithintana nenjinela yezakhiwo izinkinga ezinkulu ukuqinisekisa ukuthi ukulunga kuhlela imbangela yempande."
+        },
+        {
+          "question": "Nigqinisekisa umsebenzi wokulunga?",
+          "answer": "Yebo. Zonke izilungiswa zinawo igali lomsebenzi. Uma ukulunga okufanayo kwehluleka ngenxa yomsebenzi wethu, sibuyela futhi silungise ngaphandle kwendleko eyengeziwe. Isikhathi segali sencike ohlobo lokulunga — izilungiswa zezakhiwo zinawo igali elide ngaphezu kwezilungiswa zokubukeka. Imigomo yegali ibhalwa efasiteleni lakho."
+        },
+        {
+          "question": "Izilungiswa eziningi zinganenziwa ngosivakasho esisodwa?",
+          "answer": "Yebo. Ithimba lethu lokulungisa liphatha izinto nezingxenye ezijwayelekile (izixhumanisi zamazikhonkwane, amabilisi, amathayela, izinto zokugcwalisa, izingxenye zagesi) emotokhali zazo. Izilungiswa ezijwayelekile eziningi zamanzi, zagesi, nezilungiswa jikelele ziphetshwa ngosivakasho esisodwa. Izilungiswa eziyinkimbinkimbi noma lezi ezidinga izinto ezikhethekile zingadinga ukuvakasha kwenye — sininika iseluleko ngaphambilini uma lokhu kuyikho."
+        }
+      ],
+      "whyChoose": [
+        "Izilungiswa ngosivakasho esisodwa — izingxenye ezijwayelekile ziphathwa emotokhali zethu",
+        "Ukusabela okuSheshayo ngaphakathi kwamahora ama-2–4 kulo lonke iJohannesburg",
+        "Ukuhlolwa kwembangela yempande — silungisa inkinga, hhayi isibonakaliso kuphela",
+        "Ngaphezu kweminyaka emi-15 yokuphathe izilungiswa kulo lonke imikhakha eGauteng",
+        "Amanani abekiwe endaweni ngaphambi kokusiqalela umsebenzi",
+        "Igali lomsebenzi kukho konke ukulunga"
+      ]
+    },
+    "installation": {
+      "intro": "Sinqobile Construction inikeza izinsiza zokufakwa ngokusebenza kahle kulo lonke iJohannesburg naseGauteng — efaka iminyango, amafasitela, izindawo zangaphezulu, i-geyser, izingxenye zamakishi, nokukhethwa okubanzi kokufakwa kwezindlu nezoshishino. Ngonyaka we-15 sidlule, siphethe amakhulu ezinkulungwane zemisebenzi yokufakwa, kusukela ezindlini zeminyango ezisodwa kuya ekugqedweni kwamasethi amakishi. Ukufakwa okufanele kumaqondana ngaphezulu kokufaka umkhiqizo — kumaqondana nokulungiswa okufanele, ukuqhathanisa okunemba, ukubekwa okufanele, kanye nokugqedwa okuhlanzekile. Siqinisekisa ukuthi ukufakwa ngakunye kulingene, kulungile, kuvikelekile, futhi kusebenza kahle. Abafaki bethu basebenza nawo wonke amabhilidi amakhulu nohlobo lwemikhiqizo, futhi sihlelana nezinhlinzeki ukuqinisekisa izindleko ezifanele ngaphambi kokufika endaweni.",
+      "subServices": [
+        {
+          "name": "Ukufakwa Kweminyango",
+          "description": "Iminyango yangaphakathi nangaphandle — yomuthi, ye-aluminiyamu, izingalo zokuphepha zensimbi, iminyango ehlanjalazayo, neminyango yamadlangala. Sitheleka iminyango ilingene nezilinganiso ezifanele, futhi sifake amahandle, izikhiye, nezivali. Kufaka ukulungiswa kwehulumu noma ukushintshwa uma kudingekile."
+        },
+        {
+          "name": "Ukufakwa Kwamafasitela",
+          "description": "Amafasitela e-aluminiyamu, omuthi, ne-uPVC. Ukufakwa okusha emihosheni noma ukushintshwa kwamafasitela akhona. Sibekela futhi sibekele ngaphezu kwamafasitela ukuvimbela ukungena kwamanzi futhi siqinisekise ukusebenza kahle kwezindlela zokuslayida nezivulwa."
+        },
+        {
+          "name": "Ukufakwa Kwezindawo Zangaphezulu",
+          "description": "Izindawo zangaphezulu ze-Rhinoboard/gypsum board, izindawo zangaphezulu ezixhumene, nezilungiswa zezindawo zangaphezulu. Kufaka uhlaka, ukubhalwa, ukuchwanyekwa kwamajoynthi, nokufakwa kwe-cornice. Siqinisekisa izindawo zangaphezulu ezilingene, ezingabi nezinkinga ezikulungele ukupenda."
+        },
+        {
+          "name": "Ukufakwa Kwamakishi",
+          "description": "Ukufakwa kwezikhabhinethi zamakishi, ukufakwa kwezindawo zokuqina (granite, quartz, laminate), nezixhumano zezidingo. Sihlelana nabenziamanzi nabagesi ukuxhumana kwezitshengisi, izimbobo zokugeza, neziko."
+        },
+        {
+          "name": "Ukufakwa Kwe-Geyser",
+          "description": "Ukufakwa nokushintshwa kwe-geyser kagesi, kagesi, yalanga, kanye ye-heat pump. Kufaka ukususa iyunithi endala, izixhumano zamanzi, ukuhlolwa komfutho, ne-COC lapho kudingewe. Wonke amabhilidi amakhulu anikezwa futhi afakwe."
+        }
+      ],
+      "pricingNote": "Izindleko zokufakwa zincike ohlobo lwemikhiqizo, ubunzima, nokuthi kungase kudingeke umsebenzi wezakhiwo (nj. ukwandisa i-opening yamafasitela). Izindleko zemikhiqizo ezengeziwe ekufakweni komsebenzi. Wonke amantengo angahluliwe ngezindonga zamantengo ezehlukene zamantengo nezomsebenzi.",
+      "pricingTable": [
+        {
+          "item": "Umnyango wangaphakathi (ukubekwa nokutheleka)",
+          "range": "R1,500 – R4,000"
+        },
+        {
+          "item": "Umnyango wangaphandle / wokuphepha (ukufakwa)",
+          "range": "R3,000 – R8,000"
+        },
+        {
+          "item": "Ifasitela ye-aluminiyamu (ukufakwa)",
+          "range": "R2,000 – R6,000"
+        },
+        {
+          "item": "Ukufakwa kwendawo zangaphezulu (nge-m²)",
+          "range": "R150 – R300 /m²"
+        },
+        {
+          "item": "Izikhabhinethi zamakishi (ukufakwa kuphela)",
+          "range": "R5,000 – R15,000"
+        },
+        {
+          "item": "Ukufakwa kwe-geyser (umsebenzi, hhayi iyunithi)",
+          "range": "R2,000 – R3,500"
+        },
+        {
+          "item": "Umnyango wedlangala (owashwayo, ukufakwa)",
+          "range": "R8,000 – R20,000"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Linganisa Uqhathanise",
+          "description": "Silinganisa indawo yokufakwa ngokunembile, siqinisekise izindleko zemikhiqizo, futhi sihlole noma yimuphi umsebenzi wezakhiwo nokulunga kudingeka ngaphambi kosuku lokufakwa."
+        },
+        {
+          "step": "2",
+          "title": "Ukulungiswa",
+          "description": "Silungisa i-opening noma indawo yokufakwa — sisuse imikhiqizo emidala, silungise amahulomu, siqinisekise ukuthi isakhiwo silungele ukwamukela ukufakwa okusha."
+        },
+        {
+          "step": "3",
+          "title": "Ukufakwa",
+          "description": "Imikhiqizo ifakwa ilingene, ilungile, futhi ivikelekile. Sihlola wonke amalungu ahanjayo, sihlole izivimbo nezivikelo ngezimo zezulu, futhi siqinisekise ukuthi konke kusebenza kahle."
+        },
+        {
+          "step": "4",
+          "title": "Ukuhlanza Nokudluliswa",
+          "description": "Indawo yokufakwa ihlanzwa, iphakheji isuswa, futhi uthola imiyalo yokusebenzisa. Igali lomsebenzi linikezwa."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Zingakanani izindleko zokufakwa kweminyango eJohannesburg?",
+          "answer": "Ukufakwa kweminyango yangaphakathi eJohannesburg kubiza u-R1,500–R4,000 ngo-2026, kuya ngohlobo lomnyango nokuthi i-frame idinga ukulungiswa noma ukushintshwa. Ukufakwa kweminyango yangaphandle nezokuphepha kubiza u-R3,000–R8,000. Lezi zintengo zifaka umnyango, i-frame (uma idingewe), amahandle, nomsebenzi wokufakwa. Sinikezwa nawo wonke amabhilidi amakhulu eminyango noma sifake iminyango oyithengile."
+        },
+        {
+          "question": "Ningafaka indawo zangaphezulu egumbini elikhona?",
+          "answer": "Yebo. Sifaka izindawo zangaphezulu ze-rhinoboard/gypsum ezigumbini ezingenazindawo ngaphezulu njengamanje, noma sishintshwe izindawo ezonakele. Inqubo ifaka ukufakwa kohlaka lomuthi noma lwensimbi, ukubhala izikhombela, ukuchwanyekwa kwamajoynthi, nokufakwa kwamacornice. Ibiza u-R150–R300/m² kuya ngobukhulu begumbi nobude bezindawo zangaphezulu. Ugesi wezibani zezindawo zangaphezulu uhlelana nabagesi bethu."
+        },
+        {
+          "question": "Ninikeza imikhiqizo noma nifaka kuphela?",
+          "answer": "Singanikeza nokufaka (okukhuthazwayo ngenxa yokumbozo nokuzimisela okufanele) noma sifake imikhiqizo oyithengile. Lapho sinikezwa, siqinisekisa ukuthi umkhiqizo ufanele ukusetshenziswa kwakhe — ubukhulu, into, nolinganiso olufanele. Uma uthenga owakho, sizoqinisekisa izindleko ngaphambi kokufakwa ukugwema iziphosiso ezibizayo."
+        },
+        {
+          "question": "Ithatha isikhathi esingakanani ukufakwa kwekhishi?",
+          "answer": "Ukufakwa kwezindonga zekhishi nezindawo zokuqina ngokuvamile kuthatha izinsuku ezi-2–4, kuya ngobukhulu nobunzima bekhishi. Lokhu kufaka ukufakwa kwezikhabhinethi, ukufakwa kwezindawo zokuqina, izixhumano zamanzi (isitshengisi, izimbobo), izixhumano zagesi (isitofu, i-oven, umombi), nezilungiselelo zokugcina. Ukuthekelela nokwenziwa kwezindawo zokuqina (granite, quartz) kungezelela izinsuku ezi-5–10 ngaphambi kokufakwa."
+        },
+        {
+          "question": "Nifaka iminyango yamadlangala?",
+          "answer": "Yebo. Sifaka iminyango yamadlangala eziyizigeshana, ezijikela phezulu, nezijikela ngaphambilini nezinhlelo zamotisha eziwashwayo. Ukufakwa kufaka umnyango, i-frame, umotisha, izilawuli bukhali, kanye ne-safety beam. Ibiza u-R8,000–R20,000 kuya ngobukhulu bomnyango, into (insimbi, aluminiyamu, umuthi), nomabhilidi womotisha. Futhi silungisa futhi sinakekele iminyango yamadlangala namotisha akhona."
+        }
+      ],
+      "whyChoose": [
+        "Yonke imikhakha yokufakwa — iminyango, amafasitela, izindawo zangaphezulu, amakishi, i-geyser, iminyango yamadlangala",
+        "Ukuqhathanisa okunemba nokuhlolwa kwezindleko ngaphambi kokufakwa ngakunye",
+        "Ukuhlelana nabenzi bamanzi nabagesi ukufakwa okuxhumene",
+        "Ngaphezu kweminyaka emi-15 yokufakwa kulo lonke iGauteng",
+        "Ukubekwa nokufaka noma ukufaka kuphela — ukukhetha kwakho",
+        "Igali lomsebenzi kukho konke ukufakwa"
+      ]
+    },
+    "ceiling": {
+      "intro": "Sinqobile Construction inikeza izilungiswa zezindawo zangaphezulu nokufakwa kwazo ngokusebenza kahle kulo lonke iJohannesburg naseGauteng. Noma indawo yakho zangaphezulu ye-rhinoboard isagobha ngenxa yokuvuza uphahla, indawo yakho zangaphezulu yochwa yezindlu ezindala isibizekile, noma udinga indawo zangaphezulu e-bulkhead entsha efakiwe ekhishini lanamuhla, amathimba ethu anamava ezindawo zangaphezulu asebenza ngokuhlanzekile futhi ngezinga elisigqinisiwe. Sifaka yonke imikhakha yezindawo zangaphezulu — rhinoboard (Rhinolite), ochwa, PVC, umuthi, nezindawo zangaphezulu ze-suspended grid — futhi sinikeza yonke iJohannesburg naseGauteng, Sandton, Midrand, Fourways, Randburg, Centurion, naseNyakatho. Zonke izilungiswa zezindawo zangaphezulu zinawo igali lomsebenzi elebhaliwe.",
+      "subServices": [
+        {
+          "name": "Izilungiswa Zezindawo Zangaphezulu ze-Rhinoboard",
+          "description": "I-rhinoboard (plasterboard) iyinhlobo ejwayelekile kakhulu yezindawo zangaphezulu eGauteng. Ukuvuza kwamanzi, ukulimala kwephahla, nobudala kubalwa ukuthi isagobe, ingane, noma ibizeke. Sigunda futhi sishintshwe izigaba ezonakele, sibhale kabusha amajoynthi, sichanyeke nge-Rhinolite, futhi sipende ukufana. Izilungiswa eziningi ze-rhinoboard ziphetshwa ngosuku olulodwa."
+        },
+        {
+          "name": "Izilungiswa Zezindawo Zangaphezulu Zochwa",
+          "description": "Izindlu ezindala ngokuvamile zizindawo zangaphezulu zochwa zendabuko ezidevelopa izinkinga ezincane, izigaba ezingaphakathi, noma ukwehluleka kwezitina ezinkulu. Siphuca ochwa ongaqinile, sibuye sibhale indawo yokufaka, sifake umbozo, futhi sichanyeke kuze kugqedwe. Izinkinga ezibizekile zinqandwa nge-fibreglass mesh tape ngaphambi kokuchanyekwa."
+        },
+        {
+          "name": "Ukufakwa Kwezindawo Zangaphezulu ze-Bulkhead",
+          "description": "Izindawo zangaphezulu ze-bulkhead zikhiqiza ukuchazwa kwezakhiwo ezindaweni zokuhlala namaKishi. Sakhela ama-bulkhead sisebenzisa i-steel frame ne-rhinoboard, noma ngaphandle kwezindlela ze-LED strip lighting. Ama-bulkhead angafihla izintambo ze-air-conditioning, i-conduit kagesi, nezintambo zamanzi ekwengezela ukugqedwa okuphelele."
+        },
+        {
+          "name": "Ukulunga Kwezindawo Zangaphezulu Zendlu Yangasese",
+          "description": "Izindawo zangaphezulu zezindlu zangasese zithwaliswa njalo ngomusi, ukugeleza, nokugeleza okwenganyelwe. Sisusa amabhodi onobulawu noma ahlakazekile, sihlole indawo yokufaka nge-anti-fungal solution, sifake i-rhinoboard emelana nokumanzwa, futhi sifake ipeyinti emelana nobuhlunta. Futhi sinikeza iseluleko ngezixhumo zomoya ukugwema ukubuya."
+        },
+        {
+          "name": "Ukushintshwa Kwezindawo Zangaphezulu",
+          "description": "Lapho ngaphezu kuka-30% wezindawo zangaphezulu ezonakele, ukushintshwa ngokuphela kunesimanga ngaphezu kokubhakela. Sisusa izindawo zangaphezulu ezindala, sihlole futhi silungise noma yiziphi izinkinga zezakhiwo zophahla, sifake i-brandering entsha ne-rhinoboard, sichanyeke, futhi sipende — kushiya ukugqedwa okuhlobisekile nokungagawuleki kuwo wonke."
+        },
+        {
+          "name": "Ukufakwa Kwamacornice Nobuhlalu",
+          "description": "Amacornice nezinto zobulalu zinikeza ukuguquka okuhlanzekile phakathi kwezindawo zangaphezulu nezindonga. Sinikeza futhi sifake amacornice ochwa, e-polystyrene, ne-polyurethane, sihlangise onke amagumbi ngokunembile. Amacornice afakwa ngegwayi elifanele nokugcwalisa, ashanelwe afane, futhi apendwe ukufana nezindawo zakho zangaphezulu."
+        }
+      ],
+      "pricingNote": "Izindleko zokulunga nokufakwa kwezindawo zangaphezulu eJohannesburg ziyahluka ngohlobo lwezindawo zangaphezulu, ubunzima bokulimala, ubukhulu begumbi, kanye nokufinyelela. Izilungiswa ezincane (amachweba amancane, ukubhala kabusha) ziqala ku-R350. Ukufakwa kwezindawo zangaphezulu ezintsha ngokuvamile kubiza u-R300–R500 ngometre owancomeka we-rhinoboard nge-grid ne-skim plaster, kusukelwe ku-2026 Gauteng rates. Wonke amanani afaka izinto, umsebenzi, nokuhlanza. Sinikeza amantengo amahhala angahluliwe ngaphambi kokuba umsebenzi uqalwe.",
+      "pricingTable": [
+        {
+          "item": "Isichweba esincane sendawo zangaphezulu (indawo encane)",
+          "range": "R350 – R800"
+        },
+        {
+          "item": "Ukulunga kwezindawo zangaphezulu ze-rhinoboard (nge-m²)",
+          "range": "R250 – R400"
+        },
+        {
+          "item": "Ukufakwa kwezindawo zangaphezulu ezintsha (nge-m²)",
+          "range": "R300 – R500"
+        },
+        {
+          "item": "Ukulunga kwezindawo zangaphezulu zendlu yangasese",
+          "range": "R500 – R1,500"
+        },
+        {
+          "item": "Izindawo zangaphezulu ze-bulkhead (ngometre ophakathi)",
+          "range": "R800 – R1,500"
+        },
+        {
+          "item": "Ukufakwa kwamacornice (ngometre)",
+          "range": "R80 – R150"
+        },
+        {
+          "item": "Ukushintshwa kwezindawo zangaphezulu ngokuphela (nge-m²)",
+          "range": "R350 – R550"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Ukuhlolwa Kwamahhala Kwendawo Nentengo",
+          "description": "Sivakashela umhlaba wakho, sihlole indawo enonakele noma silinganise indawo yokufakwa, sikhombe imbangela yempande yokulimala (ngokuvamile ukuvuza uphahla), futhi sinikeze intengo ebhaliwe engahluliwe ngaphakathi kwamahora angama-24. Akukho imali yosivakasho."
+        },
+        {
+          "step": "2",
+          "title": "Ukuhlolwa Kwembangela Yempande",
+          "description": "Ukulimala kwezindawo zangaphezulu njalo kuyisibonakaliso — hhayi imbangela. Ngaphambi kokulunga, sihlole ukuvuza uphahla okuqhubekayo, imishini yamanzi evimbelekile, noma ukwehluleka kokuvimbela amanzi okuyokonakala ukulunga. Sihlelana nathimba lethu lophahla uma kudingewe umsebenzi wophahla kuqala."
+        },
+        {
+          "step": "3",
+          "title": "Ukulunga Noma Ukufakwa Kwezindawo Zangaphezulu",
+          "description": "Ithimba lethu livikela izitezi nezimpahla zakho, lisuse izinto ezonakele, futhi lenze ukulunga noma ukufakwa. Izilungiswa ze-rhinoboard zichwanyekwa ne-skim ne-sandilwe. Ukufakwa okusha kubhalwa, kufakwe amabhodi, kutepwe, futhi kuchwanyekwe. Sisebenza ngokuhlanzekile futhi sisuse wonke umjalo."
+        },
+        {
+          "step": "4",
+          "title": "Ukupenda Nokukhlolwa Kokugcina",
+          "description": "Izigaba eziluliwe noma ezintsha zibekwa nge-PVA futhi zipendwe ngokuncane ngamahlandla amabili. Senze ukuhlolwa kokugcina nawe ukuqinisekisa ukuthi ukugqedwa kuhlobisekile, amagumbi ahlanzekile, futhi ukulunga akabonakali. Umsebenzi ugqinisekiswa ngokubhala."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Kungani indawo zangaphezulu zami isagoba noma iphafuka?",
+          "answer": "Imbangela ejwayelekile kakhulu ukungena kwamanzi okuvela ekuvuzeni uphahla, imishini yamanzi evimbelekile, noma ukuvuza kwezintambo ngaphezulu kwezindawo zangaphezulu. Amanzi asasaza i-rhinoboard noma ochwa, idale ukuthi ivuke futhi ilahlekelwe ukuxhumana kwayo ne-brandering (i-frame yezindawo zangaphezulu), futhi umthwalo womanzwa uwehla. Ezinye imbangela zifaka isikhala se-brandering esingalungile ngesikhathi sokufakwa kwokuqala, nokwehluleka kochwa okubalwa ngubudala ezindlini ezindala. Njalo sikhombe futhi silungise ithende lamanzi ngaphambi kokulunga izindawo zangaphezulu — ngaphandle kwalokho ukulimala kubuya ezinyangeni."
+        },
+        {
+          "question": "Ngikhethe ukulunga noma ukushintsha izindawo zangaphezulu?",
+          "answer": "Ukulunga kufanele lapho ukulimala kungahluliwe — inhlonhlo eyodwa yamanzi, isigaba esibizekile, noma indawo eyodwa ye-rhinoboard isagoba. Sikhuthaza ukushintshwa ngokuphela lapho ngaphezu kwama-25–30% wezindawo zangaphezulu ithintekile, lapho kunobuhlungu obukhona (obuphenywa kanzima ebhodini), noma lapho i-brandering (i-frame) yonile noma ingalinganiswa ngokufanele. Ngesikhathi sokuhlolwa kwakho kwamahhala, sinikezela ngokuhlola ngokwethembeka inketho ezinikezela inani elingcono."
+        },
+        {
+          "question": "Ithatha isikhathi esingakanani ukulunga kwezindawo zangaphezulu?",
+          "answer": "Isichweba esincane se-rhinoboard sithatha amahora ama-2–4. Ukushintshwa kwezindawo zangaphezulu ngokuphela egumbini elilodwa ngokuvamile kuthatha izinsuku ezi-1–2 — usuku olulodwa lokufakwa nokubhala amabhodi, nosuku lwesibili lokuchwanyekwa nokupenda lapho ochwa sefile. Izilungiswa zezindawo zangaphezulu zendlu yangasese zithatha amahora ama-3–6. Senciphisa ukuphazamisa futhi sihlanze ngokuphela ngaphambi kokushiya."
+        },
+        {
+          "question": "Izindleko zokulunga kwezindawo zangaphezulu zingakanani nge-m² eJohannesburg?",
+          "answer": "Ukulunga kwezindawo zangaphezulu ze-rhinoboard kubiza u-R250–R400 nge-m² eJohannesburg ngo-2026, kuya ngobunzima bokulimala nokufinyelela egumbini. Ukufakwa kwezindawo zangaphezulu ezintsha (ukubekwa nokufaka, kufaka i-brandering, i-rhinoboard, i-skim plaster, nekhowudi eyodwa yepeyinti) kubiza u-R300–R500 nge-m². Izindawo zangaphezulu ze-bulkhead zibiza ngaphezulu — u-R800–R1,500 ngometre ophakathi — ngenxa yohlaka lwengeziwe nokugqedwa okufakiwe. Sinikeza amantengo amahhala angahluliwe ukuze uzazi izindleko ezinemba ngaphambi kokuba siqale."
+        },
+        {
+          "question": "Ingabe ukulimala kwezindawo zangaphezulu kungasiwa umshwalense wezindlu zami?",
+          "answer": "Yebo, ezimweni eziningi. Uma ukulimala kwezindawo zangaphezulu kwabangwa yisikhathi esisheshayo esingabikelwanga — njengesikhonkwane esiphuliwe, ukulimala uphahla yi-hail, noma ukungena kwamanzi yeziphepho — izinqubomgomo eziningi ze-inshurensi yezindlu ezeMzansi Afrika ziyovumela ukulunga. Ukulimala okuya ngokuya ngenxa yokungahloniphi nokuphelelwa okubhekelwe ngokuvamile akufakiwe. Singanikeza ukuhlolwa ngokusebenza kahle ebebhaliwe ngembangela yokulimala ukusekela isicelo sakho se-inshurensi."
+        },
+        {
+          "question": "Yisiphi ubukhulu obuhlwempu bezindawo zangaphezulu?",
+          "answer": "Ezindaweni zokuhlala ezibanzi ngokulandela i-brandering elingana ne-450 mm, i-9.5 mm rhinoboard yizindleko ezijwayelekile futhi ifanelekile emagumbini amaningi. Izindawo zangaphezulu zezindlu zangasese namaKishi kumele zisebenzise i-9.5 mm moisture-resistant rhinoboard (MR grade). Nge-brandering elingana ne-600 mm, i-12.5 mm board iyakhuthazwa ukugwema ukuguqa phakathi kwesikhala. Njalo sihlola isikhala ne-brandering ne-isimo ngaphambi kokucebisa izindleko zebhodi."
+        },
+        {
+          "question": "Ninikezwa Pretoria nezinye izindawo eGauteng?",
+          "answer": "Yebo. Senza izilungiswa zezindawo zangaphezulu nokufakwa kulo lonke iGauteng — iJohannesburg, Sandton, Midrand, Fourways, Randburg, Centurion, Pretoria, Roodepoort, nezindawo ezizungezile. Amathimba ethu ezindawo zangaphezulu aseBryanston futhi ngokuvamile ahlela ukuhlolwa ngaphakathi kwamahora angama-48. Shayela noma uWhatsApp +27 82 868 8396 ukubhuka."
+        }
+      ],
+      "whyChoose": [
+        "Ukuhlolwa kwamahhala kwendawo nentengo ebhaliwe — akukho imali yosivakasho",
+        "Silungisa imbangela yempande (ukuvuza uphahla, imishini yamanzi, ukuvimbela amanzi) ngaphambi kokulunga izindawo zangaphezulu",
+        "Yonke imikhakha yezindawo zangaphezulu: rhinoboard, ochwa, bulkhead, PVC, umuthi",
+        "Ibhodi emelana nokumanzwa ezindlini zangasese namaKishi",
+        "Igali lomsebenzi lebhaliwe kukho konke ukusebenza kwezindawo zangaphezulu",
+        "Umsebenzi ohlanzekile ovikelekile ngokungenabuthakathaka — ukuhlanza ngokuphela kufakiwe",
+        "Ukuphathwa yonke iJohannesburg suburbs, Sandton, Midrand, Pretoria, Centurion"
+      ]
+    },
+    "gutters": {
+      "intro": "Sinqobile Construction ifaka, ilungisa, futhi ihlanza imishini yamanzi kulo lonke iJohannesburg naseNyakatho. Sinikeza futhi sifake imishini yamanzi ye-aluminiyamu engenamajoynthi, imishini yamanzi ye-PVC eyizigeshana, amamdlandla amanzi, amabhodi afascia, namabhodi abarge ezakhiweni ezihlala abantu nezoshishino kulo lonke iGauteng. Imishini yamanzi yethu engenamajoynthi ikhiwa endaweni ukuze ilingane ngobukhulu obunembile bophahla lakho — isusa amajoynthi lapho izilungiswa eziningi zenyuka khona. Noma udinga inhlelo yamanzi entsha ephelele esakha entsha, ukushintshwa kwemishini yamanzi endala eyonakele, imishini yamanzi evimbelekile ichachiwe ngaphambi kwezimvula zasehlobo, noma ijoynthi eyodwa eluvuza lilungisiwe, ithimba lethu lenza umsebenzi ngokuhlanzekile futhi ngezinga elisigqinisiwe. Sinikeza iJohannesburg, Sandton, Midrand, Fourways, Randburg, Centurion, Bryanston, nazo zonke Pretoria suburbs.",
+      "subServices": [
+        {
+          "name": "Ukufakwa Kwemishini Yamanzi Engenamajoynthi",
+          "description": "Imishini yamanzi ye-aluminiyamu engenamajoynthi ikhiwa endaweni ukuze ilingane ngobukhulu obunembile bephahla lakho — akukho majoynthi phakathi kwamagumbi kusho akukho amathuba okuvuza. Sifaka imishini yamanzi ye-half-round ne-square-profile engenamajoynthi ngezibalwa ze-Colorbond ezifanele uphahla lakho. Imishini yamanzi engenamajoynthi inawo igali lokufakwa leminyaka eyi-10."
+        },
+        {
+          "name": "Ukufakwa Kwemishini Yamanzi Ye-PVC Eyizigeshana",
+          "description": "Ukuze kukhokhelwe iziphrojekthi nemikhiqizo eyengeziwe, sifaka imishini yamanzi ye-PVC eyizigeshana yangezinga ema-100 mm nema-125 mm. Amajoynthi abekwa nge-solvent cement ne-silicone. Sisebenzisa amahlomula amandla afascia alinganiswa ne-600 mm ukuqinisekisa ukuthi imishini yamanzi igcina isakhiwo ngaphansi kwemithwalo yezimvula zasehlobo eGauteng."
+        },
+        {
+          "name": "Izilungiswa Zemishini Yamanzi Nokuvimbela Ukuvuza",
+          "description": "Amajoynthi avuza, izinkinga, nezigodi yizinkinga ezijwayelekile kakhulu zemishini yamanzi eJohannesburg. Sibhala kabusha amajoynthi ewehlukile nge-specialist gutter sealant, sichweba izinkinga ezincane nge-aluminium repair tape, futhi sishintshwe izigaba ezingaphezu kokulunga. Zonke izilungiswa zilandelwa ukuhlolwa kwamanzi ukuqinisekisa ukuthi inhlelo iphephile ngamanzi."
+        },
+        {
+          "name": "Ukuhlanza Nokuvula Imishini Yamanzi",
+          "description": "Imishini yamanzi evimbelekile iphulula amabhodi afascia nezisekelo, ibangele ukumanzwa nokunonakala kwezakhiwo. Sihlanza amahlamvu, izinto zothuli, nezidakamizwa kusukela kumishini yakho yamanzi, sivule amamdlandla amanzi, futhi sihlole ukulimala ngesikhathi esifanayo. Sikhuthaza ukuhlanza imishini yamanzi ngaphambi kwa-ehlobo (Okthoba) nemuva kwe-autumn (Meyi). Futhi singanikeza izivimbo zemishini yamanzi ukunciphisa ukuqoqeka kwamahlamvu."
+        },
+        {
+          "name": "Ukufakwa Kwamamdlandla Amanzi Nezilungiswa",
+          "description": "Amamdlandla amanzi aphatha amanzi kusukela emishini yamanzi kuya phansi ekugelezeni. Sinikeza futhi sifake amamdlandla amanzi angama-68 mm nangama-80 mm, ama-offset bends, nezinto ze-aluminium, PVC, ne-steel. Amamdlandla amanzi avimbelekile noma aphuliwe ahlanziwe noma ashintshwe. Siqinisekisa ukuthi amamdlandla amanzi ageleza emfuleni wezimvula noma ku-splash block, hhayi ngesisekelo."
+        },
+        {
+          "name": "Ukushintshwa Kwamabhodi Afascia",
+          "description": "Amabhodi afascia axhasa imishini yamanzi futhi avalele izikhala phakathi kophahla ne-soffit. Ukonakala, ukulimala kwezinsekts, neminyaka yokumanzi kubangela ukwehluleka kwamafascia. Sishintsha amafascia omuthi nge-pre-painted fibre cement noma ye-aluminium emelana nokonakala ezidinga ukunakekela okuncane futhi zinegali elide. Amafascia amasha afakwa ngaphambi kokubhaka imishini yamanzi."
+        },
+        {
+          "name": "Ukushintshwa Kwamabhodi Abarge",
+          "description": "Amabhodi abarge avikela iphahla lamagumbi ngasephahla. Sishintsha amabhodi abarge omuthi enonakele nge-fibre cement noma ye-aluminiyamu, ibekwa ngokuhlanzekile futhi ipendwe ukufana nomibala yophahla. Amabhodi abarge ashintshiwe avimba amanzi ekuhambeni phansi kwamathayela ophahla lamagumbi."
+        }
+      ],
+      "pricingNote": "Izindleko zokufakwa kwemishini yamanzi eJohannesburg zincike ku-profile yemishini yamanzi, izinto, abamayzile ophakathi adingekezile, kanye nokufinyelela kwephahla. Imishini yamanzi ye-aluminiyamu engenamajoynthi ibiza ngaphezulu ye-PVC eyizigeshana kodwa ihlala isikhathi eside kakhulu futhi idinga izilungiswa ezimbalwa. Wonke amanani angezansi angometre ophakathi ukufakwa, kufaka amahlomula, amacover amaphela, nengalo eyodwa yokokhela nge-6 m. Sinikeza amantengo amahhala angahluliwe ngaphambi kokuba umsebenzi uqalwe.",
+      "pricingTable": [
+        {
+          "item": "Imishini yamanzi ye-aluminiyamu engenamajoynthi (ngometre ophakathi)",
+          "range": "R120 – R180"
+        },
+        {
+          "item": "Imishini yamanzi ye-PVC eyizigeshana (ngometre ophakathi)",
+          "range": "R60 – R100"
+        },
+        {
+          "item": "Ukufakwa kwamamdlandla amanzi (ngometre ophakathi)",
+          "range": "R120 – R200"
+        },
+        {
+          "item": "Ukuhlanza imishini yamanzi (indlu yonke)",
+          "range": "R500 – R1,500"
+        },
+        {
+          "item": "Ukulunga kwemishini yamanzi / ukuvimbela ukuvuza",
+          "range": "R300 – R800"
+        },
+        {
+          "item": "Ukushintshwa kwamabhodi afascia (ngometre)",
+          "range": "R150 – R300"
+        },
+        {
+          "item": "Ukufakwa kwezivimbo zemishini yamanzi (ngometre)",
+          "range": "R80 – R150"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Ukuhlolwa Kwamahhala Nokulinge",
+          "description": "Silinganisa iphahla lakho, sihlole isimo semishini yamanzi ekhona, amafascia, namamdlandla amanzi, futhi sihlole izindlela eziwe. Uthola intengo ebhaliwe engahluliwe ngaphakathi kwamahora angama-24 efaka ukubekwa, ukufakwa, nokuchacha. Akukho imali yosivakasho."
+        },
+        {
+          "step": "2",
+          "title": "Ukususa Imishini Yamanzi Endala (Uma Kushintshwa)",
+          "description": "Imishini yamanzi endala namahlomula asuswa ngokuhlanzekile, ibhodi lafascia lihlolwe ukukonakala futhi lilungiswe noma lishintshwe uma kudingewe, futhi indawo ilungiswa ukuze kufakwe amahlomula amasha. Yonke into endala isuswa endaweni."
+        },
+        {
+          "step": "3",
+          "title": "Ukufakwa Kwemishini Yamanzi",
+          "description": "Imishini yamanzi engenamajoynthi ikhiwa endaweni ukuze ilingane ngobukhulu obunembile. Amahlomula afakwa efasciabhodini ngesilinganiso esifanele (okuncane u-3 mm ukuwa ngometre ukuya kokhelweni kwamamdlandla) ukuqinisekisa ukugeleza okuzigelezayo. Amamdlandla amanzi axhumana futhi ageleza emfuleni wezimvula noma ku-splash block."
+        },
+        {
+          "step": "4",
+          "title": "Ukuhlolwa Kwamanzi Nokusayina",
+          "description": "Sihlola inhlelo efakiwe ngethuluzi ukuqinisekisa ukuthi akukho ukuvuza emajoynthi, ukuwa kulungile, futhi amamdlandla ageleza ngokukhululekile. Uhlola umsebenzi nawe ngaphambi kokushiya kwethu. Umsebenzi ugqinisekiswa ngokubhala."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Zingakanani izindleko zemishini yamanzi engenamajoynthi ngometre eMzansi Afrika?",
+          "answer": "Ukufakwa kwemishini yamanzi ye-aluminiyamu engenamajoynthi eJohannesburg kubiza u-R120–R180 ngometre ophakathi ngo-2026, kufaka amahlomula, amacover amaphela, nengalo eyodwa yokokhela nge-6 m. Indlu ejwayelekile enemisindo emibili enamathayela ne-30–40 yometre ophakathi wemishini yamanzi ngokuvamile ibiza u-R4,000–R7,000 inhlelo ephelele engenamajoynthi. Imishini yamanzi ye-PVC eyizigeshana ibiza u-R60–R100 ngometre ophakathi kodwa idinga ukunakekela okungaphezulu futhi inokhono olunaphansi. Sinikeza amantengo amahhala angahluliwe ukuze uzazi izindleko ezinemba zomhlaba wakho."
+        },
+        {
+          "question": "Yini umehluko phakathi kwemishini yamanzi engenamajoynthi neyizigeshana?",
+          "answer": "Imishini yamanzi eyizigeshana iza ngobude obuhlawumbe bema-3 m noma ama-4 m ehlanganiswa ngehlomula ne-sealant. Ijoynthi ngayinye yithuba lokuvuza okungenzeka, futhi amajoynthi angavuleka njengoba imishini yamanzi ikhula futhi icoboshise ngesimo sezulu. Imishini yamanzi engenamajoynthi ikhiwa endaweni ukuze ilingane ngobukhulu obunembile bephahla — ngokuvamile u-6–20 m ngaphandle kwamajoynthi embezeni, kwamagumbi kuphela. Imishini yamanzi engenamajoynthi ihlala isikhathi eside, idinga ukunakekela okuncane, futhi ibukeka kahle. Sikhuthaza i-aluminiyamu engenamajoynthi kuzo zonke izindlu ezizinzile zokuhlala."
+        },
+        {
+          "question": "Imishini yamanzi kumele ihlanzwe kangaki?",
+          "answer": "EJohannesburg, sikhuthaza ukuhlanza imishini yamanzi kabili ngonyaka — kanye ngaphambi kwesizini yezimvula zasehlobo (uSepthemba/Okthoba) ukuqinisekisa ukuthi inhlelo ingathwala iziphepho eziphezulu, kanye namuva kokugcina kwamahlamvu e-autumn (u-Ephreli/Meyi) ukuchacha amaqoqo asimile. Izakhiwo ezizungezwe yimithi emakhulu zingadinga ukuhlanza njalo izinyanga ezintathu. Imishini yamanzi evimbelekile iphulukulana namafascia nezisekelo, ibangele ukumanzwa okubalwa ngaphezulu ukuhlanza okwenziwa njalo."
+        },
+        {
+          "question": "Yini ebangela imishini yamanzi ukuba isagobe noma ihlukane nafascia?",
+          "answer": "Imbangela ejwayelekile kakhulu ukwehluleka kwehlomula — noma izinkolo ezononukile noma amahlomula alinganisiwe kakhulu. Isikhala sehlomula esijwayelekile semishini yamanzi yezindlu yi-600 mm; isikhala esibanzi sivumela imishini yamanzi ukuba iguquke phansi komthwalo wamanzi. Ezinye imbangela zifaka ibhodi lafascia uqobo lonakele (okusho ukuthi izinkolo azinazinto ezisolide ukubamba), ukuqoqeka kwezidakamizwa okwengeza umthwalo, nemishini yamanzi efakwe ngaphandle kokuwa okwanele ukuze amanzi agobosha futhi engeze umthwalo. Sihlola amahlomula nezimo zamafascia njengenxenye yokulunga ngakunye."
+        },
+        {
+          "question": "Ukulimala kwemishini yamanzi kungabangela ukumanzwa ngaphakathi ekhaya lami?",
+          "answer": "Yebo — imishini yamanzi ephulukulayo noma evuza iyimvama yezimbangela ezijwayelekile kakhulu zokuqukela nokungena kwamanzi ezindlini zaseMzansi Afrika. Lapho imishini yamanzi iphulukulela ngasendongeni, amanzi asasaza ochwa nezitina futhi angangenela ngaphakathi ezindongeni. Imishini yamanzi egeleza ngasesisekelweni iyasize ekuqukeni okunyukayo. Ukulunga imishini yamanzi njalo kuyigxathu lokuqala ekubuyiselweni kwamanzi — ukupenda noma ukuvimbela amanzi ezindongeni ezimanzile ngaphandle kokulunga ithende lamanzi yimali elahlekile."
+        },
+        {
+          "question": "Nifaka imishini yamanzi ePretoria?",
+          "answer": "Yebo. Sifaka imishini yamanzi kulo lonke iGauteng kufaka Pretoria, Centurion, Midrand, Sandton, Fourways, Randburg, Roodepoort, nazo zonke iJohannesburg suburbs. Amathimba ethu aseBryanston futhi ngokuvamile ahlela ukufakwa ngaphakathi kwezinsuku ezi-3–5 zamabhizinisi. Ukuze kululiwe imishini yamanzi ngaphambi kwezimvula ezibikezelwe, shayela noma uWhatsApp +27 82 868 8396 ukubhuka okubaluleke kakhulu."
+        }
+      ],
+      "whyChoose": [
+        "Imishini yamanzi engenamajoynthi ikhiwa endaweni — akukho majoynthi, akukho ukuvuza",
+        "Ukuqhathanisa kwamahhala nentengo ebhaliwe — akukho imali yosivakasho",
+        "Yonke imikhakha yemishini yamanzi: i-aluminiyamu engenamajoynthi, i-PVC eyizigeshana, insimbi",
+        "Amamdlandla amanzi, amabhodi afascia, amabhodi abarge ngosivakasho esisodwa",
+        "Kuhlolwa ngamanzi ekugqedweni — kugqinisekiswa ukuphepha ngamanzi",
+        "Ukuphathwa iJohannesburg, Pretoria, Sandton, Midrand, Fourways, Centurion",
+        "Igali lomsebenzi lebhaliwe kukho konke ukufakwa"
+      ]
+    },
+    "roof-waterproofing": {
+      "intro": "Sinqobile Construction inikeza ukuvimbela amanzi kwephahla ngokusebenza kahle kulo lonke iJohannesburg naseNyakatho. Sivimbela amanzi kuzo zonke imikhakha yophahla — izindlu zamathayela, izindlu ze-IBR nezinteki ze-metal, izitishi zekhonkolo ezihlangene, ne-Chromadek — sisebenzisa inhlelo efanele ngomkhiqizo ngamunye. Amathimba ethu okuvimbela amanzi ananamava e-acrylic elastomeric coatings, izinhlelo ze-torch-on bitumen membrane, nezinhlelo zamanzi ezisetshenziswa ngendlela enamandla, futhi sikhuthaza umkhiqizo ofanele wophahla lakho kuya ngezimo zawo, ubudala, nezakhiwo zokugeleza. Wonke umsebenzi wokuvimbela amanzi uqala ngokuhlolwa kokulungiswa kwezindawo nokuhlelwa — ukwehluleka kokuvimbela amanzi njalo kuyimiphumela yokuhlola okungalungile, hhayi ukwehluleka komkhiqizo. Sinikeza yonke iJohannesburg suburbs kufaka Sandton, Midrand, Fourways, Randburg, neRoodepoort, kanye nePretoria, Centurion, nezindawo ezizungezile. Wonke umsebenzi unawo igali lebhaliwe.",
+      "subServices": [
+        {
+          "name": "Ukuvimbela Amanzi Kwephahla Lamathayela",
+          "description": "Izindlu zekhonkolo nezezimbazo zamathayela zidevelopa izinkinga ezincane emathayela amagumbi, i-valley flashings, nezindlu zemiyama ngokuhamba kwesikhathi. Sihlanza indawo yophahla ngokuhlanzekile, sibhale kabusha i-ridge ne-hip mortar ewehlukile, sishintshwe amathayela aphuliwe, futhi sifake i-acrylic elastomeric waterproofing membrane kwenziwa kwophahla lonke. I-membrane ixhuma izinkinga ezincane, ukubonakala kwe-UV radiation ukunciphisa ukuqoqeka kwezimvula, futhi ingeza iminyaka emitsha ye-8–12 yokuphila. Izindlu eziningi zamathayela zizuza futhi ngekhowudi yepeyinti yophahla ukubuyisela umbala kanye nokuvikelwa kwamathayela."
+        },
+        {
+          "name": "Ukuvimbela Amanzi Kwephahla Le-IBR Nezinteki Ze-Metal",
+          "description": "I-IBR (inverted box rib) nezinteki ze-steel zekhonkolo zikhiqiza uketango, izigodi zamakonke, nezilungiswa zamajoynthi. Sihlole ukuketanga ngokusebenzisa umshini wokuketanga, sishintshwe izitini noma amakonke ezonakele, sibekele yonke ukungena namajoynthi nge-butyl tape ne-sealant, futhi sifake i-coating yephahla le-metal ekhethekile — noma umkhiqizo osukelwe ku-bitumen noma i-liquid rubber membrane — kwenziwa kwophahla lonke. Le nhlelo ibaluleke kakhulu eGauteng lapho ukuguquka kwesimo sezulu kubangela izindlu ze-metal ukwanda nokucoboshisa ngokuphindaphindeka."
+        },
+        {
+          "name": "Ukuvimbela Amanzi Kwephahla Elilinganele Nekhonkolo",
+          "description": "Izindlu zekhonkolo ezilinganele (izindlu ze-parapet nezitishi zamadlangala) zinzima kakhulu ukuvimbela amanzi ngoba amanzi agobosha kunakugeleza. Sihlola uhlelo lokugeleza kuqala, sithuthukise ukuwa lapho kudingekile, bese sifaka i-torch-on APP bitumen membrane noma inhlelo yekhonkolo ye-crystalline waterproofing kuya ngezimo ze-slab. Yonke ama-upstand, amajoynthi okwanda, nezungela zamazikhonkwane zihlolwa ngokuhlukana njengoba lezi yizindlu ezibaluleke kakhulu zokungena kwamanzi."
+        },
+        {
+          "name": "Ukuhlolwa Kokuvuza Kwephahla Nokulungiswa",
+          "description": "Ukukhomba ithende lokuvuza kwephahla kunzima ngaphezu kokulunga — amanzi angena endaweni eyodwa futhi ahamba ngaphambi kokubonakala ngaphakathi. Senza ukuhlolwa okuhlelekile kwephahla, i-flashings, imishini yamanzi, i-valley irons, nezungela zophahla (ama-vent, amazikhonkwane, amafasitela angaphezulu) ukukhomba ithende langempela lokungena. Silunga ukwehluleka okukhethekile ngaphambi kokufaka ukuvimbela amanzi endaweni ethintekile. Ukulunga okuhlosiwe kubiza kancane kakhulu ngaphezu kokuvimbela amanzi kwephahla ngokuphela futhi kufanele lapho ukulimala kumhluliwe."
+        },
+        {
+          "name": "Izinhlelo Ze-Torch-On Bitumen Membrane",
+          "description": "I-torch-on APP (atactic polypropylene) modified bitumen iyinhlelo ejwayelekile yokuvimbela amanzi kwezindlu ezilinganele nezindonga ze-parapet. Sifaka izendlalelo ezimbili — i-glass fibre reinforced underlay ne-SBS-modified cap sheet — ikwebe endaweni yokufaka ukuze kube ne-membrane ephelele enganamele. Izinhlelo ze-torch-on zihlala iminyaka e-15–20 uma zisetshenzisiwa ngokuhlanzekile endaweni elungiswe kahle. Wonke umsebenzi we-torch-on wenziwa abasebenza abanamava belandela izindinganiso ze-SANS 10109."
+        },
+        {
+          "name": "I-Acrylic Elastomeric Roof Coatings",
+          "description": "Ama-acrylic waterproofing coatings afakwa ngekhwela noma i-roller kwizindlu zamathayela ne-metal njengomthetho wokukhula noma inhlelo elula yokuvimbela amanzi. Anamandla, anikela inkosazane ye-UV, futhi atholakala ngezibalwa zezehlukene ukubuyisela ukubukeka kwephahla ngesikhathi esifanayo. Ama-acrylic coatings adinga ukufakwa kabusha iminyaka emi-5–8 kuya ngokubonakala kwe-UV nokuhamba ngokuphezulu. Sichaza imikhiqizo ye-high-build (okuncane i-300 microns dry film thickness) ngenkonzo yokuphela yokuvimbela amanzi."
+        }
+      ],
+      "pricingNote": "Izindleko zokuvimbela amanzi kwephahla eJohannesburg zincike ohlobo lwephahla, inhlelo ekhethiwe, indawo yophahla, nokufinyelela. Izinhlelo ze-acrylic coating ziyizindleko ezincane kakhulu; izinhlelo ze-torch-on bitumen membrane zibiza ngaphezulu kodwa zihlala isikhathi eside kakhulu. Amanani angezansi angometre owancomeka ukufakwa, kufaka ukulungiswa kwezindawo, i-primer, nenhlelo yokuvimbela amanzi ekhethiwe. Sinikeza intengo yamahhala ebhaliwe emuva kokuhlola uphahla lakho.",
+      "pricingTable": [
+        {
+          "item": "Iphahla lamathayela — i-acrylic elastomeric coating (nge-m²)",
+          "range": "R80 – R130"
+        },
+        {
+          "item": "Iphahla le-metal (IBR/corrugated) — i-liquid membrane (nge-m²)",
+          "range": "R90 – R150"
+        },
+        {
+          "item": "Iphahla elilinganele/lekhonkolo — i-torch-on bitumen (nge-m²)",
+          "range": "R150 – R250"
+        },
+        {
+          "item": "Iphahla elilinganele — i-cementitious waterproofing (nge-m²)",
+          "range": "R120 – R200"
+        },
+        {
+          "item": "Ukulunga kokuvuza kwephahla (okumhluliwe)",
+          "range": "R800 – R3,500"
+        },
+        {
+          "item": "I-ridge ne-hip re-pointing (ngometre)",
+          "range": "R120 – R220"
+        },
+        {
+          "item": "Ukulunga/ukushintsha kwe-flashing (ngometre)",
+          "range": "R180 – R350"
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Ukuhlolwa Kwamahhala Kwephahla Nombiko",
+          "description": "Sihlola lonke iphahla elivulekile, i-flashings, imishini yamanzi, izintambela, nezungela ukukhomba yonke amathuba okwehluleka — hhayi kuphela lawo abonakala kahle. Uthola umbiko wokuhlolwa webhaliwe nezithombe kanye nengenxa yomsebenzi oyakhuthazwa ngaphambi kokuzibophezela nakini. Akukho imali yosivakasho."
+        },
+        {
+          "step": "2",
+          "title": "Ukulungiswa Kwezindawo",
+          "description": "Ukulungiswa kwezindawo kuyigxathu elibaluleke kakhulu. Sisebenzisa umfutho wamanzi ngezandla uphahla, sisuse i-moss, i-lichen, nezinto ezingaqinile, sibhale kabusha i-mortar ewehlukile, sishintshwe amathayela aphuliwe noma izitini ezonakele, futhi sihlole ngokuqondile i-primer esebenza nenhlelo yokuvimbela amanzi ekhethiwe. Ukugeqeza ukulungiswa kwezindawo kuyimbangela yokuqala yokuwehluleka kokuvimbela amanzi."
+        },
+        {
+          "step": "3",
+          "title": "Ukusetshenziswa Kokuvimbela Amanzi",
+          "description": "Sifaka inhlelo ekhethiwe — i-acrylic coating, i-torch-on membrane, noma i-liquid membrane — ngesilinganiso esifanele sokugcwala futhi ngezinqumo noma izindlalelo ezifanele. Yonke izungela, i-flashings, ama-upstand, namajoynthi anikwa ukunaka okwengeziwe njengoba lezi yizindlu ezibaluleke kakhulu zokungena kwamanzi."
+        },
+        {
+          "step": "4",
+          "title": "Ukuhlolwa Negali Lebhaliwe",
+          "description": "Senza ukuhlolwa kwamanzi ngaphambi kokushiya. Uthola igali lomsebenzi lebhaliwe echaza inhlelo efakiwe, isikhathi segali, nazo ezibonakalayo. Izinhlelo eziningi ze-acrylic zinawo igali lomsebenzi leminyaka emi-5; izinhlelo ze-torch-on zinawo iminyaka eyi-10."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Zingakanani izindleko zokuvimbela amanzi kwephahla eMzansi Afrika?",
+          "answer": "Izindleko zokuvimbela amanzi kwephahla eMzansi Afrika zihamba kusukela ku-R80 kuya ku-R250 ngometre owancomeka ngo-2026, kuya ngohlobo lwephahla nenhlelo esetshenzisiwe. I-acrylic elastomeric coating kwiphahla lamathayela ibiza u-R80–R130/m²; i-torch-on bitumen membrane kwiphahla lekhonkolo elilinganele ibiza u-R150–R250/m². Endlini ejwayelekile ye-120 m² yamathayela, bheka ukukhokha u-R9,600–R15,600 yenhlelo ephelele ye-acrylic coating, kanye ne-R18,000–R30,000 yenhlelo ye-torch-on yeiphahla elilinganele. Izilungiswa zokuvuza ezikhethekiwe zibiza u-R800–R3,500 kuya ngobunzima bokulimala. Sinikeza amantengo amahhala angahluliwe emuva kokuhlola uphahla lakho."
+        },
+        {
+          "question": "Yiluphi uhlobo lokuvimbela amanzi oluhle kakhulu kwephahla?",
+          "answer": "Inhlelo yokuvimbela amanzi enhle kakhulu incike ohlobo lwephahla lakho. Kwizindlu zamathayela, i-acrylic elastomeric coating iyizinga lomgomo — ixhuma izinkinga ezincane, ibonisa u-UV, futhi ibuyisela ukubukeka. Kwizindlu zekhonkolo ezilinganele ze-parapet, i-torch-on APP bitumen membrane iyinhlelo ehlala isikhathi eside kakhulu, ihlala iminyaka e-15–20 uma ifakwa ngokuhlanzekile. Kwizindlu ze-IBR noma nezinteki, i-liquid rubber membrane ekhethekile noma i-coating esukelwe ku-bitumen kufanele. Akukho umkhiqizo owodwa 'ohle kakhulu' — ukukhetha okufanele kuncike kwizakhiwo zophahla, ukugeleza, isimo samanje, nesabelomali. Sichaza inhlelo efanele emuva kokuhlola uphahla lakho."
+        },
+        {
+          "question": "Isikhathi esingakanani sokuvimbela amanzi kwephahla sihlala?",
+          "answer": "Isikhathi sokuphila sincike enhlwelweni nasekusebenzeni komkhiqizo. Ama-acrylic elastomeric roof coatings ahlala iminyaka emi-5–8 ngaphambi kokudinga ukufakwa kabusha. Izinhlelo ze-torch-on bitumen membrane eziphezulu (i-two-layer APP) zihlala iminyaka e-15–20. Izinga lokulungiswa kwezindawo linawo umthelela omkhulu ngobukhulu bokhono kunomkhiqizo uqobo — ngay ine-membrane enhle kakhulu izowehluleka ngaphambilini uma ifakwa endaweni engcolile, ebizekile, noma engalungile. Silandela izindinganiso ze-SANS 10109 kukho konke umsebenzi wokuvimbela amanzi."
+        },
+        {
+          "question": "Ngazi kanjani ukuthi uphahla lami ludinga ukuvimbela amanzi noma izilungiswa kuphela?",
+          "answer": "Uma ukuvuza kuvela endaweni eyodwa ekhombekayo — ithayela eliphuliwe, i-valley iron ewehlukile, i-flashing engaphucuki — ukulunga okuhlosiwe ngokuvamile kuyakwanela futhi kubiza kancane ngaphezu kokuvimbela amanzi ngokuphela. Uma uphahla lunemikronkroti ebanzi, izivuzi ezincane ezahlukene ezindaweni ezehlukene, noma i-coating yokuvimbela amanzi ekhona iyachayeka futhi ilahlekelwa ukuxhumana, ukwelashwa ngokuphela kufanele ngaphezulu. Senza ukuhlolwa kwamahhala futhi sinikezele ngesincomo sothembeki ngokuhlola ukuthi udinga izilungiswa, i-coating, noma inhlelo ephelele ye-membrane."
+        },
+        {
+          "question": "Ninganenziwa ukuvimbela amanzi kwephahla ngobusika?",
+          "answer": "Izinhlelo eziningi zokuvimbela amanzi zidinga ubushisa obulingana ne-10°C nezimo ezomile ukufakwa. EGauteng, obusika bubuqanda kodwa bomile — izinsuku eziningi phakathi kuka-Meyi no-Agasti zifanele ukusebenza kokuvimbela amanzi. Ukuncipha komswakama nokungabi khona kwezimvula kuyenza ubusika kube isikhathi sesikhathi esihle kakhulu somsebenzi wophahla. Sihlola izimo zezulu nsuku zonke futhi ngeke sifake imikhiqizo ngaphandle kwezinga elaziwayo lezimo zezulu nokumanzwa. Abaningi babanikazi bezindlu bathole lula ukuhlela umsebenzi ebusika lapho abakhiqizi betholakala ngaphezulu futhi izindlu zomile."
+        },
+        {
+          "question": "Nivimbela amanzi kwezindlu ePretoria?",
+          "answer": "Yebo. Senza ukuvimbela amanzi kwephahla kulo lonke iGauteng — iJohannesburg, Sandton, Midrand, Fourways, Randburg, Centurion, Pretoria, nezindawo ezizungezile. Amathimba ethu okuvimbela amanzi aseBryanston futhi ngokuvamile ahlela ukuhlolwa ngaphakathi kwamahora angama-48. Shayela noma uWhatsApp +27 82 868 8396 ukubhuka ukuhlolwa kwephahla kwamahhala."
+        }
+      ],
+      "whyChoose": [
+        "Ukuhlolwa kwamahhala kwamahhala nombiko webhaliwe — akukho imali yosivakasho",
+        "Yonke imikhakha yophahla: yamathayela, IBR, nezinteki, elilinganele lekhonkolo, Chromadek",
+        "Yonke izinhlelo: i-acrylic coating, i-torch-on bitumen, i-liquid membrane, i-cementitious",
+        "Ukulungiswa kwezindawo kwenziwa ngokufanele — imbangela ejwayelekile yokwehluleka kokuvimbela amanzi",
+        "Ibhaliswe ku-NHBRC — wonke umsebenzi ngezindinganiso ze-SANS 10109",
+        "Igali lebhaliwe: iminyaka emi-5 (acrylic) kuya kuminyaka eyi-10 (torch-on)",
+        "Ukuphathwa iJohannesburg, Pretoria, Sandton, Midrand, Centurion, Randburg, Fourways"
+      ]
+    }
   }
 }

@@ -135,7 +135,7 @@ export default async function Home({
 
       <TestimonialsEnhanced dict={dict} />
 
-      <HomeFAQ dict={dict} />
+      <HomeFAQ dict={dict} lang={lang} />
 
       <GoogleReviewsWidget dict={dict} />
 

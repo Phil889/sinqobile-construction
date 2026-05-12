@@ -161,7 +161,7 @@ export default async function ServicesPage({
                     <span className="text-sm text-gray-500">{service.imageCount} {(dict as any).pages.services.projectsCompleted}</span>
                   </div>
                   <div className="text-center mt-3">
-                    <span className="text-primary font-semibold text-sm group-hover:text-accent transition-colors">Learn More →</span>
+                    <span className="text-primary font-semibold text-sm group-hover:text-accent transition-colors">{(dict as any).areaPage?.learnMore || 'Learn More'} →</span>
                   </div>
                 </Link>
               )
