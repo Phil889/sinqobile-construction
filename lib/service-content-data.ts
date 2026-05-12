@@ -733,6 +733,18 @@ export const serviceContentData: Record<string, ServiceContent> = {
         question: 'Do you supply the concrete or do I arrange it?',
         answer: 'We arrange everything. We order ready-mix concrete from established batching plants (PPC, Lafarge, AfriSam) and schedule delivery to match our pour schedule. This ensures the correct mix design, strength, and slump are delivered on time. We do not use site-mixed concrete for structural work — ready-mix from a batching plant is consistent, tested, and comes with delivery dockets that confirm the specified strength for your records and building inspector.'
       },
+      {
+        question: 'How thick should a residential concrete surface bed or driveway be?',
+        answer: 'A standard residential surface bed in Gauteng is 85–100 mm thick on a 50 mm compacted G5 sub-base, with a 250-micron polyethylene damp-proof membrane and Ref 193 weldmesh reinforcement at mid-depth — this is the SANS 10400-K and SANS 10100-2 specification for ground-supported slabs on stable founding material. Reinforced concrete driveways subject to passenger-vehicle loads should be 100–125 mm thick, increasing to 150 mm where 4x4s, bakkies or trailers are parked. Sinqobile Construction cuts expansion joints at 3–4 m intervals on every driveway pour to control thermal cracking.'
+      },
+      {
+        question: 'When can I drive on, build on or load a freshly poured concrete slab?',
+        answer: 'Foot traffic is safe after 24–48 hours, but concrete only reaches roughly 70% of its 28-day design strength at 7 days and full strength at 28 days under SANS 10100-2 testing conditions. You can drive a passenger vehicle on a 100 mm reinforced driveway after 7 days of moist curing. Wall brickwork on a strip foundation can begin after 3–5 days. Suspended slabs and structural columns should not be loaded with permanent construction loads until 21–28 days. Sinqobile Construction applies curing compound or hessian-and-water curing on every pour for the first 7 days, the single biggest factor in achieving the specified MPa.'
+      },
+      {
+        question: 'What is the difference between ready-mix and site-mixed concrete?',
+        answer: 'Ready-mix concrete is batched at a plant (PPC, AfriSam, Lafarge / Holcim) to a tested mix design with certified MPa strength, slump and aggregate-cement-water ratio, then delivered in 6 m³ truck-mixers — every load comes with a delivery docket recording the exact spec for your records and building inspector. Site-mixed concrete is mixed on the property in a pan mixer using sand, stone, cement and water proportioned by volume on site, and the strength varies pour-by-pour because measurement is approximate. Sinqobile Construction uses ready-mix exclusively for all structural pours (foundations, slabs, retaining walls, columns) and only permits site-mix for low-stress applications like garden mass concrete or fence-post backfill.'
+      },
     ],
     whyChoose: [
       'Engineer-specified concrete — correct MPa strength, reinforcing, and mix design every time',
@@ -742,6 +754,65 @@ export const serviceContentData: Record<string, ServiceContent> = {
       'Fully insured with comprehensive construction liability cover',
       'Free site assessment with detailed, itemised quotes',
     ],
+    phaseDExtras: {
+      directAnswer: 'Sinqobile Construction is an NHBRC-registered concrete contractor in Johannesburg pouring engineer-specified raft foundations, 100 mm surface beds, reinforced driveways, suspended slabs and retaining walls from R300 to R2,500 per m² in 2026. Every pour uses ready-mix concrete batched to the SANS 10100 MPa grade specified, with 500+ projects since 2010 and a 4.9-star rating from 127 Google reviews.',
+      audienceType: 'Homeowners, owner-builders, principal contractors and property developers in Johannesburg, Sandton, Fourways, Midrand, Centurion, Randburg, Roodepoort and the wider Gauteng province needing structural concrete works — raft, strip and pad foundations, ground-floor surface beds, reinforced concrete driveways, suspended floor slabs, retaining walls, columns and concrete repairs, all poured to SANS 10100 / SANS 10400 specification.',
+      schemaName: 'Concrete Contractors Johannesburg',
+      priceRangeMin: 300,
+      priceRangeMax: 2500,
+      dateModified: '2026-05-12',
+      citationHooks: [
+        'Ready-mix concrete in Johannesburg costs R1,500 to R2,500 per cubic metre delivered in 2026, varying by MPa grade — 20 MPa runs R1,500–R1,800/m³, 25 MPa R1,750–R2,100/m³ and 30 MPa R1,900–R2,500/m³ from Sinqobile Construction\'s approved PPC, AfriSam and Lafarge batching plants, with surface beds installed for R450–R800 per m² and reinforced driveways for R300–R450 per m² (Sinqobile Construction 2026 concrete pricing).',
+        'SANS 10100-2 and the supporting SANS 50197 cement standard set a minimum characteristic strength of 20 MPa for residential surface beds and footings, 25 MPa for ground-floor structural slabs and reinforced driveways, and 30 MPa for suspended slabs, columns and loaded foundations on heaving clay; Sinqobile Construction has poured to engineer-specified grade on 500+ residential and commercial projects across Gauteng since 2010, with every load tested by ready-mix delivery docket (Sinqobile Construction structural concrete standards).',
+        'A standard 100 mm residential surface bed in Gauteng is built on a 50 mm compacted G5 sub-base with a 250-micron polyethylene damp-proof membrane, Ref 193 weldmesh reinforcement at mid-depth, 25 MPa ready-mix concrete and a minimum 7-day moist cure to reach 70% of the 28-day design strength under SANS 10100-2; Sinqobile Construction\'s crews follow this sequence on every slab pour and record cube-test strengths in the project file (Sinqobile Construction installation standards, 2026).',
+      ],
+      comparisonTable: {
+        title: 'Concrete Grade Comparison — Johannesburg 2026',
+        caption: 'Side-by-side comparison of the four concrete strength grades most commonly poured by Sinqobile Construction across Gauteng. All grades are ready-mix from PPC, AfriSam or Lafarge batching plants, batched to SANS 10100-2 / SANS 50197 specification and delivered with a strength docket. Prices are per cubic metre delivered to site (excluding pump-truck hire, formwork, reinforcing and labour).',
+        columns: ['Concrete Grade', 'Cost per m³ (2026, delivered)', 'Use Cases (SANS 10100-2)', 'Cure to 70% Strength', 'Reinforcement Typical'],
+        rows: [
+          {
+            label: '15 MPa (low strength)',
+            cells: [
+              'R1,400 – R1,600 /m³',
+              'Mass fill, blinding layers, fence-post backfill, garden paths — non-structural only',
+              '7 days moist cure',
+              'None or minimal',
+            ],
+          },
+          {
+            label: '20 MPa (standard)',
+            cells: [
+              'R1,500 – R1,800 /m³',
+              'Residential surface beds, strip footings, garage floors, light-duty driveways',
+              '7 days moist cure',
+              'Ref 193 weldmesh',
+            ],
+          },
+          {
+            label: '25 MPa (structural)',
+            cells: [
+              'R1,750 – R2,100 /m³',
+              'Raft foundations, ground-floor structural slabs, reinforced driveways, retaining walls',
+              '7 days moist cure',
+              'Y10–Y12 rebar + Ref 193/245 mesh',
+            ],
+          },
+          {
+            label: '30 MPa (high strength)',
+            cells: [
+              'R1,900 – R2,500 /m³',
+              'Suspended slabs, columns, beams, loaded foundations on heaving clay, double-storey raft',
+              '7 days moist cure',
+              'Y12–Y16 rebar + Ref 245/395 mesh',
+            ],
+          },
+        ],
+      },
+      strategyCtaCategory: 'concrete',
+      strategyCtaHeadline: 'Planning a Foundation, Surface Bed, Driveway or Retaining Wall?',
+      strategyCtaSubheadline: 'Send Sinqobile Construction your engineer drawings or describe the pour — an NHBRC-registered concrete specialist will visit your site anywhere in Gauteng, confirm the SANS 10100 MPa grade, formwork and reinforcing required, schedule ready-mix delivery from PPC, AfriSam or Lafarge, and email a fixed-price, itemised quote within 48 hours. No call-out fee within 50 km of Sandton.',
+    },
   },
 
   'roofing': {

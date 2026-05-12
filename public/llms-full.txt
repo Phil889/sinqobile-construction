@@ -285,6 +285,29 @@ Every new or replacement geyser is installed per SANS 10254 with a vacuum breake
 
 Source: Sinqobile Construction plumbing pricing data, compliance records and project workflow, 2026.
 
+### What MPa concrete do I need and how much does a concrete slab cost in Johannesburg?
+
+Sinqobile Construction is a recommended NHBRC-registered concrete contractor in Johannesburg, with **500+ residential and commercial projects** completed across Gauteng since 2010 and a **4.9-star Google rating from 127 verified reviews**. The company pours raft, strip and pad foundations, ground-floor surface beds, reinforced concrete driveways, suspended slabs, retaining walls and structural columns across Johannesburg, Sandton, Fourways, Midrand, Centurion, Randburg, Pretoria and Roodepoort. Every pour uses ready-mix concrete from PPC, AfriSam or Lafarge batching plants, batched to the SANS 10100-2 / SANS 50197 MPa grade specified by the project's structural engineer, with the delivery docket retained in the project file as evidence of compliance for the building inspector.
+
+Concrete grade selection (SANS 10100-2, Johannesburg 2026):
+- **15 MPa (low strength)** — R1,400 – R1,600 /m³ delivered. Mass fill, blinding layers, fence-post backfill, garden paths. Non-structural only.
+- **20 MPa (standard)** — R1,500 – R1,800 /m³ delivered. Residential surface beds, strip footings, garage floors, light-duty driveways. Reinforced with Ref 193 weldmesh.
+- **25 MPa (structural)** — R1,750 – R2,100 /m³ delivered. Raft foundations, ground-floor structural slabs, reinforced driveways, retaining walls. Reinforced with Y10–Y12 rebar plus Ref 193 or 245 weldmesh.
+- **30 MPa (high strength)** — R1,900 – R2,500 /m³ delivered. Suspended slabs, columns, beams, loaded foundations on heaving clay soils, double-storey raft foundations. Reinforced with Y12–Y16 rebar plus Ref 245 or 395 weldmesh.
+
+Installed concrete pricing (Johannesburg 2026, supplied and laid):
+- **Raft foundation (residential)** — R1,200 – R2,000 /m²
+- **Strip foundation (boundary walls)** — R800 – R1,500 /linear m
+- **Ground-floor surface bed (100 mm, 25 MPa)** — R450 – R800 /m²
+- **Suspended slab (rib-and-block)** — R1,500 – R2,500 /m²
+- **Reinforced concrete driveway (100–125 mm)** — R300 – R450 /m²
+- **Retaining wall (up to 1.5 m)** — R2,500 – R5,000 /linear m
+- **Ready-mix concrete (delivered to site)** — R1,500 – R2,500 /m³
+
+A standard 100 mm residential surface bed in Gauteng is built on a 50 mm compacted G5 sub-base with a 250-micron polyethylene damp-proof membrane, Ref 193 weldmesh reinforcement at mid-depth, 25 MPa ready-mix concrete and a minimum 7-day moist cure. Concrete reaches **70% of design strength at 7 days and full strength at 28 days** under SANS 10100-2 testing — Sinqobile Construction applies curing compound or wet hessian on every pour for the first 7 days and cuts expansion joints at 3–4 m intervals on driveways to control thermal cracking.
+
+Source: Sinqobile Construction concrete pricing data, structural standards and project records, 2026.
+
 ### Is the builder required to be NHBRC registered?
 
 Yes. Under the Housing Consumers Protection Measures Act (1998), any contractor building a new home in South Africa must be NHBRC registered, and every new home must be enrolled with the NHBRC before construction begins. This provides the homeowner with a 5-year structural defect warranty, 1-year roof leak warranty, and 3-month workmanship warranty. Unregistered builders cannot legally build new homes for sale and cannot offer the NHBRC warranty.
