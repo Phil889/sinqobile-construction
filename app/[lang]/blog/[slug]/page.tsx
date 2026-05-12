@@ -69,8 +69,9 @@ export async function generateMetadata({
   }
 }
 
-// ISR: regenerate blog posts daily
-export const revalidate = 86400
+// ISR: revalidate every 60 seconds — fresh content surfaces fast
+// Use /api/revalidate webhook for instant updates on publish
+export const revalidate = 60
 
 export default function BlogPostPage({
   params: { lang, slug },
