@@ -201,6 +201,33 @@ export const enhancedServices: ServiceCategory[] = [
     imageCount: 2,
     featured: false,
     seoKeywords: ['electrician johannesburg', 'electrical contractors fourways', 'electrical installations sandton', 'electrical compliance certificate johannesburg', 'emergency electrician gauteng', 'COC certificate electrician johannesburg']
+  },
+  {
+    slug: 'ceiling',
+    name: 'Ceiling Repairs',
+    description: 'Ceiling repairs, installation, and replacement — rhinoboard, bulkhead, plaster and bathroom ceilings',
+    icon: Layers,
+    imageCount: 3,
+    featured: false,
+    seoKeywords: ['ceiling repairs johannesburg', 'ceiling repairs near me', 'ceiling repair johannesburg', 'ceiling installation johannesburg', 'rhinoboard ceiling repair johannesburg', 'bulkhead ceiling johannesburg', 'ceiling replacement johannesburg', 'ceiling boards johannesburg', 'ceiling repairs gauteng']
+  },
+  {
+    slug: 'gutters',
+    name: 'Gutter Installation',
+    description: 'Seamless gutter installation, repairs, cleaning, downpipes and fascia boards across Johannesburg and Pretoria',
+    icon: Droplets,
+    imageCount: 3,
+    featured: false,
+    seoKeywords: ['gutter installation johannesburg', 'gutters johannesburg', 'seamless gutters johannesburg', 'seamless gutters pretoria', 'gutter repairs johannesburg', 'gutter cleaning johannesburg', 'downpipe installation johannesburg', 'fascia board replacement johannesburg', 'gutter replacement johannesburg', 'gutters gauteng']
+  },
+  {
+    slug: 'roof-waterproofing',
+    name: 'Roof Waterproofing',
+    description: 'Roof waterproofing for tile, IBR, flat and concrete roofs across Johannesburg and Pretoria — leak repairs, coating and membrane systems',
+    icon: Droplets,
+    imageCount: 4,
+    featured: false,
+    seoKeywords: ['roof waterproofing johannesburg', 'roof waterproofing pretoria', 'roof waterproofing contractors johannesburg', 'flat roof waterproofing johannesburg', 'tile roof waterproofing johannesburg', 'IBR roof waterproofing johannesburg', 'torch on waterproofing johannesburg', 'roof leak repair johannesburg', 'roof waterproofing cost south africa', 'roof coating johannesburg']
   }
 ]
 

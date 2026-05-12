@@ -1,16 +1,18 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
-interface BeforeAfterImage {
+interface Project {
   id: string
   title: string
   location: string
   service: string
   beforeImage: string
   afterImage: string
+  beforeLabel: string
+  afterLabel: string
   description: string
 }
 
@@ -19,109 +21,91 @@ interface BeforeAfterSliderProps {
   lang: string
 }
 
+const PROJECTS: Project[] = [
+  {
+    id: '1',
+    title: 'Driveway Paving',
+    location: 'Sandton',
+    service: 'Paving',
+    beforeImage: '/images/before-paving.jpg',
+    afterImage: '/images/after-paving.jpg',
+    beforeLabel: 'Cracked, weedy concrete',
+    afterLabel: 'New brick pavers installed',
+    description: 'Severely cracked concrete driveway with weeds replaced with a professional herringbone brick paver system — level, sealed, and built for the Gauteng climate.',
+  },
+  {
+    id: '2',
+    title: 'Roof Repairs & Waterproofing',
+    location: 'Johannesburg',
+    service: 'Roofing',
+    beforeImage: '/images/before-roofing.jpg',
+    afterImage: '/images/after-roofing.jpg',
+    beforeLabel: 'Moss, broken tiles, leaks',
+    afterLabel: 'Fully repaired & sealed',
+    description: 'Heavily moss-covered roof with broken tiles and crumbling ridging stripped, repointed, and fitted with new clay tiles — watertight with a written workmanship guarantee.',
+  },
+  {
+    id: '3',
+    title: 'Exterior Plastering',
+    location: 'Fourways',
+    service: 'Plastering',
+    beforeImage: '/images/before-plastering.jpg',
+    afterImage: '/images/after-plastering.jpg',
+    beforeLabel: 'Map cracks, exposed brick',
+    afterLabel: 'Smooth new plaster finish',
+    description: 'Severely cracked and hollow plaster fully hacked off, substrate repaired, and re-plastered to a flawless smooth float finish ready for paint.',
+  },
+]
+
 export default function BeforeAfterSlider({ dict, lang }: BeforeAfterSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [sliderPosition, setSliderPosition] = useState(50)
   const [isDragging, setIsDragging] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
 
-  // Before/After project data — using real project photos as comparison pairs
-  const projects: BeforeAfterImage[] = [
-    {
-      id: '1',
-      title: 'Building & Extensions',
-      location: 'Edenvale',
-      service: 'Building & Extensions',
-      beforeImage: '/images/sinqobile-construction-building-edenvale-30.jpg',
-      afterImage: '/images/sinqobile-construction-extensions-rosebank-48.jpg',
-      description: 'Professional building extension with quality brickwork, modern design, and expert construction across Johannesburg'
-    },
-    {
-      id: '2',
-      title: 'Kitchen & Home Renovation',
-      location: 'Bedfordview',
-      service: 'Renovation',
-      beforeImage: '/images/sinqobile-construction-renovation-bedfordview-16.jpg',
-      afterImage: '/images/sinqobile-construction-renovation-johannesburg-26.jpg',
-      description: 'Complete home renovation with modern finishes, new fixtures, and upgraded spaces'
-    },
-    {
-      id: '3',
-      title: 'Bathroom Tiling',
-      location: 'Sandton',
-      service: 'Tiling',
-      beforeImage: '/images/sinqobile-construction-tiling-bedfordview-19.jpg',
-      afterImage: '/images/sinqobile-construction-tiling-sandton-65.jpg',
-      description: 'Luxury bathroom renovation featuring premium tiles, modern fixtures, and elegant design'
-    },
-    {
-      id: '4',
-      title: 'Professional Painting',
-      location: 'Alberton',
-      service: 'Painting',
-      beforeImage: '/images/sinqobile-construction-painting-alberton-4.jpg',
-      afterImage: '/images/sinqobile-construction-painting-alberton-53.jpg',
-      description: 'Complete exterior and interior painting with professional finish'
-    },
-    {
-      id: '5',
-      title: 'Paving & Driveways',
-      location: 'Midrand',
-      service: 'Paving',
-      beforeImage: '/images/sinqobile-construction-paving-midrand-59.jpg',
-      afterImage: '/images/sinqobile-construction-paving-sandton-77.jpg',
-      description: 'Stunning outdoor transformation with quality paving across Gauteng'
-    }
-  ]
-
+  const projects: Project[] = dict?.beforeAfter?.projects || PROJECTS
   const currentProject = projects[currentIndex]
 
-  const handleMouseDown = () => {
-    setIsDragging(true)
-  }
-
-  const handleMouseUp = () => {
-    setIsDragging(false)
-  }
-
-  const updateSliderPosition = (clientX: number) => {
+  const updateSliderPosition = useCallback((clientX: number) => {
     if (!containerRef.current) return
     const rect = containerRef.current.getBoundingClientRect()
     const x = Math.max(0, Math.min(clientX - rect.left, rect.width))
-    const percent = Math.max(0, Math.min((x / rect.width) * 100, 100))
-    setSliderPosition(percent)
-  }
+    setSliderPosition(Math.max(5, Math.min((x / rect.width) * 100, 95)))
+  }, [])
+
+  const handleMouseDown = () => setIsDragging(true)
+  const handleMouseUp = () => setIsDragging(false)
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!isDragging) return
     requestAnimationFrame(() => updateSliderPosition(e.clientX))
   }
 
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    e.preventDefault()
+    setIsDragging(true)
+  }
+
   const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+    e.preventDefault()
     requestAnimationFrame(() => updateSliderPosition(e.touches[0].clientX))
   }
 
-  const nextProject = () => {
-    setCurrentIndex((prev) => (prev + 1) % projects.length)
-    setSliderPosition(50) // Reset slider position
+  const handleTouchEnd = () => setIsDragging(false)
+
+  const goToProject = (index: number) => {
+    setCurrentIndex(index)
+    setSliderPosition(50)
   }
 
-  const prevProject = () => {
-    setCurrentIndex((prev) => (prev - 1 + projects.length) % projects.length)
-    setSliderPosition(50) // Reset slider position
-  }
+  const nextProject = () => goToProject((currentIndex + 1) % projects.length)
+  const prevProject = () => goToProject((currentIndex - 1 + projects.length) % projects.length)
 
   useEffect(() => {
-    const handleGlobalMouseUp = () => {
-      setIsDragging(false)
-    }
-
-    if (isDragging) {
-      document.addEventListener('mouseup', handleGlobalMouseUp)
-      return () => {
-        document.removeEventListener('mouseup', handleGlobalMouseUp)
-      }
-    }
+    if (!isDragging) return
+    const onUp = () => setIsDragging(false)
+    document.addEventListener('mouseup', onUp)
+    return () => document.removeEventListener('mouseup', onUp)
   }, [isDragging])
 
   return (
@@ -132,26 +116,29 @@ export default function BeforeAfterSlider({ dict, lang }: BeforeAfterSliderProps
             {dict?.beforeAfter?.title || 'See The Transformation'}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            {dict?.beforeAfter?.subtitle || 'Drag the slider to see the incredible before and after results of our construction projects'}
+            {dict?.beforeAfter?.subtitle || 'Drag the slider to compare the before and after results of our construction projects'}
           </p>
         </div>
 
         <div className="max-w-5xl mx-auto">
-          {/* Before/After Slider */}
+          {/* Slider container */}
           <div
             ref={containerRef}
-            className="relative aspect-[16/10] bg-gray-200 rounded-lg overflow-hidden shadow-2xl cursor-ew-resize select-none"
+            className="relative aspect-[16/10] rounded-xl overflow-hidden shadow-2xl select-none touch-none"
+            style={{ cursor: isDragging ? 'ew-resize' : 'col-resize' }}
             onMouseDown={handleMouseDown}
             onMouseUp={handleMouseUp}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseUp}
+            onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
           >
-            {/* After Image (Background) */}
+            {/* AFTER image — full width background */}
             <div className="absolute inset-0">
               <Image
                 src={currentProject.afterImage}
-                alt={`${currentProject.title} after construction - ${currentProject.location} - Sinqobile Construction`}
+                alt={`${currentProject.title} after — ${currentProject.location} — Sinqobile Construction`}
                 fill
                 className="object-cover"
                 sizes="(max-width: 1200px) 100vw, 1200px"
@@ -160,14 +147,14 @@ export default function BeforeAfterSlider({ dict, lang }: BeforeAfterSliderProps
               />
             </div>
 
-            {/* Before Image (Overlay with clip) */}
+            {/* BEFORE image — real before photo, clipped to left of slider */}
             <div
               className="absolute inset-0"
               style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
             >
               <Image
                 src={currentProject.beforeImage}
-                alt={`${currentProject.title} before construction - ${currentProject.location} - Sinqobile Construction`}
+                alt={`${currentProject.title} before — ${currentProject.location} — Sinqobile Construction`}
                 fill
                 className="object-cover"
                 sizes="(max-width: 1200px) 100vw, 1200px"
@@ -176,35 +163,49 @@ export default function BeforeAfterSlider({ dict, lang }: BeforeAfterSliderProps
               />
             </div>
 
-            {/* Slider Handle */}
+            {/* Divider line */}
             <div
-              className="absolute top-0 bottom-0 w-1 bg-white shadow-lg"
+              className="absolute top-0 bottom-0 w-0.5 bg-white shadow-[0_0_8px_rgba(0,0,0,0.5)] pointer-events-none"
+              style={{ left: `${sliderPosition}%` }}
+            />
+
+            {/* Drag handle */}
+            <div
+              className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-11 h-11 bg-white rounded-full shadow-xl flex items-center justify-center pointer-events-none z-10 ring-2 ring-white/80"
               style={{ left: `${sliderPosition}%` }}
             >
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-xl flex items-center justify-center">
-                <div className="flex gap-1">
-                  <ChevronLeft className="w-5 h-5 text-gray-700" />
-                  <ChevronRight className="w-5 h-5 text-gray-700" />
-                </div>
-              </div>
+              <ChevronLeft className="w-4 h-4 text-gray-600 -mr-0.5" />
+              <ChevronRight className="w-4 h-4 text-gray-600 -ml-0.5" />
             </div>
 
-            {/* Labels */}
-            <div className="absolute top-4 left-4 bg-black bg-opacity-60 text-white px-4 py-2 rounded-lg font-semibold">
-              {dict?.beforeAfter?.before || 'BEFORE'}
+            {/* BEFORE label */}
+            <div className="absolute bottom-4 left-4 flex flex-col items-start gap-1 pointer-events-none">
+              <span className="bg-black/70 text-white text-xs font-bold px-3 py-1 rounded uppercase tracking-wider">
+                {dict?.beforeAfter?.before || 'Before'}
+              </span>
+              <span className="bg-black/60 text-white/90 text-xs px-3 py-1 rounded max-w-[180px] leading-snug hidden sm:block">
+                {currentProject.beforeLabel}
+              </span>
             </div>
-            <div className="absolute top-4 right-4 bg-black bg-opacity-60 text-white px-4 py-2 rounded-lg font-semibold">
-              {dict?.beforeAfter?.after || 'AFTER'}
+
+            {/* AFTER label */}
+            <div className="absolute bottom-4 right-4 flex flex-col items-end gap-1 pointer-events-none">
+              <span className="bg-orange-600/90 text-white text-xs font-bold px-3 py-1 rounded uppercase tracking-wider">
+                {dict?.beforeAfter?.after || 'After'}
+              </span>
+              <span className="bg-black/60 text-white/90 text-xs px-3 py-1 rounded max-w-[180px] text-right leading-snug hidden sm:block">
+                {currentProject.afterLabel}
+              </span>
             </div>
           </div>
 
-          {/* Project Info */}
+          {/* Project info */}
           <div className="mt-8 text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">
+            <h3 className="text-2xl font-bold text-gray-900 mb-1">
               {currentProject.title}
             </h3>
-            <p className="text-orange-600 font-semibold mb-2">
-              {currentProject.location} • {currentProject.service}
+            <p className="text-orange-600 font-semibold text-sm mb-3">
+              {currentProject.location} &bull; {currentProject.service}
             </p>
             <p className="text-gray-600 max-w-2xl mx-auto">
               {currentProject.description}
@@ -225,14 +226,11 @@ export default function BeforeAfterSlider({ dict, lang }: BeforeAfterSliderProps
               {projects.map((_, index) => (
                 <button
                   key={index}
-                  onClick={() => {
-                    setCurrentIndex(index)
-                    setSliderPosition(50)
-                  }}
-                  className={`w-3 h-3 rounded-full transition-all ${
+                  onClick={() => goToProject(index)}
+                  className={`h-3 rounded-full transition-all duration-200 ${
                     index === currentIndex
                       ? 'bg-orange-600 w-8'
-                      : 'bg-gray-300 hover:bg-gray-400'
+                      : 'bg-gray-300 hover:bg-gray-400 w-3'
                   }`}
                   aria-label={`Go to project ${index + 1}`}
                 />
@@ -248,13 +246,12 @@ export default function BeforeAfterSlider({ dict, lang }: BeforeAfterSliderProps
             </button>
           </div>
 
-          {/* Instruction Text */}
-          <p className="text-center text-gray-500 mt-6 text-sm">
-            {dict?.beforeAfter?.instruction || '👆 Drag the slider left and right to compare before and after'}
+          <p className="text-center text-gray-400 mt-4 text-sm">
+            {dict?.beforeAfter?.instruction || '← Drag the slider left and right to compare →'}
           </p>
         </div>
 
-        {/* CTA Section */}
+        {/* CTA */}
         <div className="mt-16 text-center bg-gradient-to-r from-orange-50 to-orange-100 rounded-2xl p-8 md:p-12">
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
             {dict?.beforeAfter?.ctaTitle || 'Ready For Your Own Transformation?'}

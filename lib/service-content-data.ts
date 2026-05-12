@@ -38,6 +38,9 @@ export const relatedServicesMap: Record<string, string[]> = {
   'maintenance': ['plumbing', 'electrical', 'painting', 'roofing', 'repairs'],
   'repairs': ['plumbing', 'electrical', 'roofing', 'maintenance', 'waterproofing'],
   'installation': ['electrical', 'plumbing', 'renovation', 'building'],
+  'ceiling': ['roofing', 'waterproofing', 'plastering', 'painting', 'installation'],
+  'gutters': ['roofing', 'waterproofing', 'painting', 'maintenance', 'repairs'],
+  'roof-waterproofing': ['roofing', 'waterproofing', 'painting', 'repairs', 'maintenance'],
 }
 
 export const serviceContentData: Record<string, ServiceContent> = {
@@ -1291,6 +1294,308 @@ export const serviceContentData: Record<string, ServiceContent> = {
       '15+ years installation experience across Gauteng',
       'Supply and install or install-only — your choice',
       'Workmanship guarantee on every installation',
+    ],
+  },
+
+  'ceiling': {
+    slug: 'ceiling',
+    intro: `Sinqobile Construction provides professional ceiling repairs and ceiling installation across Johannesburg and Gauteng. Whether you have a sagging rhinoboard ceiling from a roof leak, a cracked plaster ceiling in an older home, or you need a new bulkhead ceiling fitted in a modern kitchen, our experienced ceiling teams carry out the work neatly and to a guaranteed standard. We cover all ceiling types — rhinoboard (Rhinolite), plaster, PVC, timber, and suspended grid ceilings — and serve all suburbs of Johannesburg, Sandton, Midrand, Fourways, Randburg, Centurion, and Pretoria. All ceiling repairs come with a written workmanship guarantee.`,
+    subServices: [
+      {
+        name: 'Rhinoboard Ceiling Repairs',
+        description: 'Rhinoboard (plasterboard) is the most common ceiling type in Gauteng. Water leaks, roof damage, and age cause it to sag, stain, or crack. We cut out and replace damaged sections, retape joins, skim with Rhinolite, and repaint to match. Most rhinoboard repairs are completed within one day.'
+      },
+      {
+        name: 'Plaster Ceiling Repairs',
+        description: 'Older homes often have traditional plaster ceilings that develop hairline cracks, hollow sections, or large slab failures. We chip out unstable plaster, re-key the substrate, apply a bonding coat, and re-plaster to a smooth finish. Structural cracks are reinforced with fibreglass mesh tape before plastering.'
+      },
+      {
+        name: 'Bulkhead Ceiling Installation',
+        description: 'Bulkhead ceilings create architectural definition in living areas and kitchens. We construct bulkheads using steel frame and rhinoboard, with or without LED strip lighting channels. Bulkheads can conceal air-conditioning ducting, electrical conduit, and plumbing pipes while adding a premium finish.'
+      },
+      {
+        name: 'Bathroom Ceiling Repair',
+        description: 'Bathroom ceilings take constant punishment from steam, condensation, and occasional leaks. We remove mouldy or delaminated boards, treat the substrate with an anti-fungal solution, install moisture-resistant rhinoboard, and apply a mould-inhibiting paint. We also advise on ventilation improvements to prevent recurrence.'
+      },
+      {
+        name: 'Ceiling Replacement',
+        description: 'When more than 30% of a ceiling is damaged, full replacement is more cost-effective than patching. We strip the old ceiling, inspect and repair any roof structure issues, install new brandering and rhinoboard, skim plaster, and paint — leaving a smooth, seamless finish throughout.'
+      },
+      {
+        name: 'Cornice & Coving Installation',
+        description: 'Cornices and cove mouldings provide a clean transition between ceiling and wall. We supply and install plaster, polystyrene, and polyurethane cornices, mitring all corners accurately. Cornices are fitted with appropriate adhesive and filler, sanded flush, and painted to match your ceiling.'
+      },
+    ],
+    pricingNote: 'Ceiling repair and installation costs in Johannesburg vary by ceiling type, damage extent, room size, and accessibility. Minor repairs (small patches, re-taping) start from R350. New ceiling installations typically cost R300–R500 per square metre for rhinoboard with grid and skim plaster, based on 2026 Gauteng rates. All prices include materials, labour, and cleanup. We provide free, itemised quotes before work begins.',
+    pricingTable: [
+      { item: 'Minor ceiling patch (small area)', range: 'R350 – R800' },
+      { item: 'Rhinoboard ceiling repair (per m²)', range: 'R250 – R400' },
+      { item: 'New ceiling installation (per m²)', range: 'R300 – R500' },
+      { item: 'Bathroom ceiling repair', range: 'R500 – R1,500' },
+      { item: 'Bulkhead ceiling (per linear metre)', range: 'R800 – R1,500' },
+      { item: 'Cornice installation (per metre)', range: 'R80 – R150' },
+      { item: 'Full ceiling replacement (per m²)', range: 'R350 – R550' },
+    ],
+    process: [
+      {
+        step: '1',
+        title: 'Free Site Inspection & Quote',
+        description: 'We visit your property, inspect the damaged area or measure the installation space, identify the root cause of any damage (usually a roof leak), and provide a written, itemised quote within 24 hours. No call-out fee.'
+      },
+      {
+        step: '2',
+        title: 'Root Cause Assessment',
+        description: 'Ceiling damage is almost always a symptom — not the cause. Before repairing, we check for active roof leaks, blocked gutters, or waterproofing failures that would damage the repair. We coordinate with our roofing team if roof work is needed first.'
+      },
+      {
+        step: '3',
+        title: 'Ceiling Repair or Installation',
+        description: 'Our team protects your floors and furniture, removes damaged material, and carries out the repair or installation. Rhinoboard repairs are skim-plastered and sanded. New installations are brandered, boarded, taped, and skimmed. We work cleanly and remove all waste.'
+      },
+      {
+        step: '4',
+        title: 'Paint & Final Inspection',
+        description: 'Repaired or new sections are sealed with PVA and painted with a minimum of two coats. We do a final inspection with you to confirm the finish is smooth, corners are clean, and the repair is invisible. Workmanship is guaranteed in writing.'
+      },
+    ],
+    faqs: [
+      {
+        question: 'Why is my ceiling sagging or bulging?',
+        answer: 'The most common cause is water ingress from a roof leak, blocked gutter, or plumbing leak above the ceiling. Water saturates the rhinoboard or plaster, causes it to swell and lose its bond to the brandering (ceiling frame), and the wet weight pulls it down. Other causes include incorrect brandering spacing during original installation, and age-related plaster failure in older homes. We always identify and fix the water source before repairing the ceiling — otherwise the damage returns within months.'
+      },
+      {
+        question: 'Should I repair or replace my ceiling?',
+        answer: 'A repair is appropriate when the damage is localised — a single water stain, a cracked section, or one area of sagging rhinoboard. We recommend full replacement when more than 25–30% of the ceiling is affected, when there is widespread mould (which penetrates deep into the board), or when the brandering (frame) is rotten or incorrectly spaced. During your free inspection, we give an honest assessment of which option delivers better value.'
+      },
+      {
+        question: 'How long does ceiling repair take?',
+        answer: 'A minor rhinoboard patch takes 2–4 hours. A single room full ceiling replacement typically takes 1–2 days — one day for installation and boarding, and a second day for skimming and painting once the plaster has dried. Bathroom ceiling repairs take 3–6 hours. We minimise disruption and clean up fully before leaving.'
+      },
+      {
+        question: 'How much does ceiling repair cost per m² in Johannesburg?',
+        answer: 'Rhinoboard ceiling repair costs R250–R400 per m² in Johannesburg in 2026, depending on damage extent and room accessibility. A new ceiling installation (supply and install, including brandering, rhinoboard, skim plaster, and one coat of paint) costs R300–R500 per m². Bulkhead ceilings cost more — R800–R1,500 per linear metre — because of the additional framing and finishing involved. We provide free, itemised quotes so you know the exact cost before we start.'
+      },
+      {
+        question: 'Can ceiling damage be covered by my home insurance?',
+        answer: 'Yes, in many cases. If ceiling damage was caused by a sudden and unforeseen event — such as a burst pipe, hail damage to the roof, or storm water ingress — most South African home insurance policies will cover the repair. Gradual damage from ongoing neglect or maintenance failures is typically excluded. We can provide a professional written assessment of the damage cause to support your insurance claim.'
+      },
+      {
+        question: 'What is the best ceiling board thickness?',
+        answer: 'For standard residential ceilings with brandering spaced at 450 mm centres, 9.5 mm rhinoboard is the most common specification and is suitable for most rooms. Bathroom and kitchen ceilings should use 9.5 mm moisture-resistant rhinoboard (MR grade). For brandering spaced at 600 mm centres, 12.5 mm board is recommended to prevent mid-span deflection. We always check brandering spacing and condition before recommending a board specification.'
+      },
+      {
+        question: 'Do you service Pretoria and other Gauteng areas?',
+        answer: 'Yes. We carry out ceiling repairs and installation throughout Gauteng — Johannesburg, Sandton, Midrand, Fourways, Randburg, Centurion, Pretoria, Roodepoort, and surrounding suburbs. Our ceiling teams are based in Bryanston and can typically schedule an inspection within 48 hours. Call or WhatsApp +27 82 868 8396 to book.'
+      },
+    ],
+    whyChoose: [
+      'Free site inspection and written quote — no call-out fee',
+      'We fix the root cause (roof leak, gutter, waterproofing) before repairing the ceiling',
+      'All ceiling types: rhinoboard, plaster, bulkhead, PVC, timber',
+      'Moisture-resistant board for bathrooms and kitchens',
+      'Written workmanship guarantee on all ceiling work',
+      'Clean, dust-controlled work — full cleanup included',
+      'Serving all Johannesburg suburbs, Sandton, Midrand, Pretoria, Centurion',
+    ],
+  },
+
+  'gutters': {
+    slug: 'gutters',
+    intro: `Sinqobile Construction installs, repairs, and cleans gutters across Johannesburg and Pretoria. We supply and install seamless aluminium gutters, sectional PVC gutters, downpipes, fascia boards, and barge boards on residential and commercial properties throughout Gauteng. Our seamless gutters are roll-formed on-site to the exact length of your roof — eliminating the join-points where most gutter leaks occur. Whether you need a complete new gutter system on a new build, a replacement of old corroded gutters, a blocked gutter cleared before the summer rains, or a single leaking joint repaired, our team carries out the work neatly and to a guaranteed standard. We serve Johannesburg, Sandton, Midrand, Fourways, Randburg, Centurion, Bryanston, and all Pretoria suburbs.`,
+    subServices: [
+      {
+        name: 'Seamless Gutter Installation',
+        description: 'Seamless aluminium gutters are roll-formed on-site to the exact length of your eaves — no joints between corners means no leak points. We install half-round and square-profile seamless gutters in a range of Colorbond colours to match your roof. Seamless gutters come with a 10-year installation guarantee.'
+      },
+      {
+        name: 'Sectional PVC Gutter Installation',
+        description: 'For budget-conscious projects and outbuildings, we install standard 100 mm and 125 mm PVC sectional gutters. Joints are sealed with solvent cement and silicone. We use heavy-duty fascia brackets spaced at 600 mm centres to ensure the gutter holds profile under Gauteng summer rain loads.'
+      },
+      {
+        name: 'Gutter Repairs & Leak Sealing',
+        description: 'Leaking joints, cracks, and holes are the most common gutter problems in Johannesburg. We reseal failed joints with specialist gutter sealant, patch small cracks with aluminium repair tape, and replace sections that are beyond repair. All repairs are followed by a water test to confirm the system is watertight.'
+      },
+      {
+        name: 'Gutter Cleaning & Clearing',
+        description: 'Blocked gutters overflow against fascia boards and foundations, causing damp and structural damage. We clear leaves, debris, and dirt from your gutters, flush downpipes, and inspect for damage at the same time. We recommend gutter cleaning before summer (October) and after autumn (May). We can also install gutter guards to reduce leaf accumulation.'
+      },
+      {
+        name: 'Downpipe Installation & Repairs',
+        description: 'Downpipes carry water from the gutters to the ground drainage. We supply and install 68 mm and 80 mm round downpipes, offset bends, and shoes in aluminium, PVC, and steel. Blocked or cracked downpipes are rodded clear or replaced. We ensure downpipes discharge to a stormwater drain or splash block, not against the foundation.'
+      },
+      {
+        name: 'Fascia Board Replacement',
+        description: 'Fascia boards support the gutters and close the gap between the roof and the soffit. Rot, insect damage, and years of moisture cause fascias to fail. We replace timber fascias with rot-resistant pre-painted fibre cement or aluminium fascias that require no maintenance and carry a long-term warranty. New fascias are installed before the gutter is refitted.'
+      },
+      {
+        name: 'Barge Board Replacement',
+        description: 'Barge boards protect the roof verge at the gable ends of the house. We replace damaged timber barge boards with fibre cement or aluminium alternatives, properly sealed and painted to match your roof colour. Replacement barge boards prevent water from tracking under the roof tiles at the verge.'
+      },
+    ],
+    pricingNote: 'Gutter installation costs in Johannesburg depend on the gutter profile, material, linear metres required, and accessibility of the roofline. Seamless aluminium gutters cost more than sectional PVC but last significantly longer and require fewer repairs. All prices below are per linear metre installed, including brackets, end caps, and one downpipe outlet per 6 m. We provide free, itemised quotes before any work begins.',
+    pricingTable: [
+      { item: 'Seamless aluminium gutter (per linear metre)', range: 'R120 – R180' },
+      { item: 'Sectional PVC gutter (per linear metre)', range: 'R60 – R100' },
+      { item: 'Downpipe installation (per linear metre)', range: 'R120 – R200' },
+      { item: 'Gutter cleaning (full house)', range: 'R500 – R1,500' },
+      { item: 'Gutter repair / leak sealing', range: 'R300 – R800' },
+      { item: 'Fascia board replacement (per metre)', range: 'R150 – R300' },
+      { item: 'Gutter guard installation (per metre)', range: 'R80 – R150' },
+    ],
+    process: [
+      {
+        step: '1',
+        title: 'Free Inspection & Measurement',
+        description: 'We measure your roofline, check the condition of existing gutters, fascias, and downpipes, and assess fall angles. You receive a written, itemised quote within 24 hours covering supply, installation, and cleanup. No call-out fee.'
+      },
+      {
+        step: '2',
+        title: 'Removal of Old Gutters (if replacing)',
+        description: 'Old gutters and brackets are removed cleanly, the fascia board is inspected for rot and repaired or replaced if needed, and the surface is prepared for new brackets. All old material is removed from site.'
+      },
+      {
+        step: '3',
+        title: 'Gutter Installation',
+        description: 'Seamless gutters are roll-formed on-site to exact lengths. Brackets are fixed to the fascia at the correct pitch (minimum 3 mm fall per metre towards the downpipe outlet) to ensure self-draining flow. Downpipes are connected and discharged to stormwater or a splash block.'
+      },
+      {
+        step: '4',
+        title: 'Water Test & Sign-Off',
+        description: 'We test the installed system with a hose to confirm there are no leaks at joints, the fall is correct, and downpipes discharge freely. You inspect the work with us before we leave. Workmanship is guaranteed in writing.'
+      },
+    ],
+    faqs: [
+      {
+        question: 'How much do seamless gutters cost per metre in South Africa?',
+        answer: 'Seamless aluminium gutter installation in Johannesburg costs R120–R180 per linear metre in 2026, including brackets, end caps, and one downpipe outlet per 6 metres. A standard double-storey home with 30–40 linear metres of guttering typically costs R4,000–R7,000 for a full seamless system. Sectional PVC gutters cost R60–R100 per linear metre but require more maintenance and have a shorter lifespan. We provide free, itemised quotes so you know the exact cost for your property.'
+      },
+      {
+        question: 'What is the difference between seamless and sectional gutters?',
+        answer: 'Sectional gutters come in standard 3 m or 4 m lengths that are joined together with brackets and sealant. Every joint is a potential leak point, and joints can open up as the gutter expands and contracts with temperature. Seamless gutters are roll-formed on-site to the exact length of your eaves — typically 6–20 metres with no joins in the run, only at corners. Seamless gutters last longer, require less maintenance, and look better. We recommend seamless aluminium for all permanent residential installations.'
+      },
+      {
+        question: 'How often should gutters be cleaned?',
+        answer: 'In Johannesburg, we recommend cleaning gutters twice a year — once before the summer rainy season (September/October) to ensure the system can handle high-volume storms, and once after the autumn leaf fall (April/May) to clear accumulated debris. Properties surrounded by large trees may need quarterly cleaning. Blocked gutters overflow against fascia boards and foundations, causing damp that is far more expensive to fix than a routine clean.'
+      },
+      {
+        question: 'What causes gutters to sag or pull away from the fascia?',
+        answer: 'The most common cause is bracket failure — either rusted screws or brackets spaced too far apart. Standard bracket spacing for domestic gutters is 600 mm; wider spacing allows the gutter to deflect under water weight. Other causes include the fascia board itself rotting (which means the screws have nothing solid to grip), debris accumulation adding weight, and gutters that were installed without adequate fall so water pools and adds load. We assess brackets and fascia condition as part of every repair.'
+      },
+      {
+        question: 'Can gutter damage cause damp inside my house?',
+        answer: 'Yes — overflowing or leaking gutters are one of the most common causes of rising and penetrating damp in South African homes. When a gutter overflows against a wall, water saturates the plaster and masonry and can penetrate through to interior walls. Gutters that discharge against the foundation contribute to rising damp. Fixing the gutters is always the first step in any damp remediation — repainting or waterproofing damp walls without fixing the water source is money wasted.'
+      },
+      {
+        question: 'Do you install gutters in Pretoria?',
+        answer: 'Yes. We install gutters throughout Gauteng including Pretoria, Centurion, Midrand, Sandton, Fourways, Randburg, Roodepoort, and all Johannesburg suburbs. Our teams are based in Bryanston and typically schedule installations within 3–5 business days. For urgent gutter repairs before predicted rain, call or WhatsApp +27 82 868 8396 for a priority booking.'
+      },
+    ],
+    whyChoose: [
+      'Seamless gutters roll-formed on-site — no joints, no leaks',
+      'Free measurement and written quote — no call-out fee',
+      'All gutter types: seamless aluminium, sectional PVC, steel',
+      'Downpipes, fascia boards, barge boards in same visit',
+      'Water-tested on completion — guaranteed watertight',
+      'Serving Johannesburg, Pretoria, Sandton, Midrand, Fourways, Centurion',
+      'Written workmanship guarantee on all installations',
+    ],
+  },
+
+  'roof-waterproofing': {
+    slug: 'roof-waterproofing',
+    intro: `Sinqobile Construction provides professional roof waterproofing across Johannesburg and Pretoria. We waterproof all roof types — tiled roofs, IBR and corrugated metal roofs, flat concrete slabs, and Chromadek — using the correct system for each substrate. Our waterproofing teams are experienced with acrylic elastomeric coatings, torch-on bitumen membrane systems, and liquid-applied membranes, and we recommend the right product for your roof based on its condition, age, and drainage geometry. Every waterproofing job starts with a proper surface preparation and inspection — failed waterproofing is almost always the result of inadequate prep, not product failure. We serve all Johannesburg suburbs including Sandton, Midrand, Fourways, Randburg, and Roodepoort, as well as Pretoria, Centurion, and surrounding areas. All work comes with a written guarantee.`,
+    subServices: [
+      {
+        name: 'Tiled Roof Waterproofing',
+        description: 'Concrete and clay tile roofs develop hairline cracks at ridge tiles, valley flashings, and mortar beds over time. We clean the roof surface thoroughly, re-point failed ridge and hip mortar, replace cracked tiles, and apply an acrylic elastomeric waterproofing membrane to the full roof surface. The membrane bridges micro-cracks, reflects UV radiation to reduce heat build-up, and adds 8–12 years of waterproofing life. Most tiled roofs also benefit from a coat of roof paint to restore the colour and protect the tiles.'
+      },
+      {
+        name: 'IBR & Corrugated Metal Roof Waterproofing',
+        description: 'IBR (inverted box rib) and corrugated steel roof sheets develop rust, screw holes, and lap joint failures. We treat rust with a rust converter, replace damaged sheets or screws, seal all penetrations and laps with butyl tape and sealant, and apply a specialist metal roof coating — either a bitumen-based product or a liquid rubber membrane — to the full surface. This system is particularly important in Gauteng where temperature fluctuations cause metal roofs to expand and contract repeatedly.'
+      },
+      {
+        name: 'Flat & Concrete Roof Waterproofing',
+        description: 'Flat concrete roofs (parapet roofs and garage slabs) are the most challenging to waterproof because water ponds instead of draining. We assess the drainage layout first, improve falls where necessary, then apply a torch-on APP bitumen membrane or a cementitious crystalline waterproofing system depending on the slab condition. All upstands, expansion joints, and pipe penetrations are separately treated as these are the primary leak entry points.'
+      },
+      {
+        name: 'Roof Leak Diagnosis & Repair',
+        description: 'Identifying the source of a roof leak is harder than fixing it — water enters at one point and travels before appearing inside. We carry out a systematic inspection of the roof covering, flashings, gutters, valley irons, and roof penetrations (vents, pipes, skylights) to pinpoint the true entry point. We then repair the specific failure before applying a waterproofing treatment to the affected area. A targeted repair costs significantly less than full roof waterproofing and is appropriate when damage is localised.'
+      },
+      {
+        name: 'Torch-On Bitumen Membrane Systems',
+        description: 'Torch-on APP (atactic polypropylene) modified bitumen is the preferred waterproofing system for flat roofs and parapet walls. We apply two layers — a glass fibre reinforced underlay and a SBS-modified cap sheet — torched to the substrate for a fully bonded, seamless membrane. Torch-on systems last 15–20 years when applied correctly on a properly prepared surface. All torch-on work is carried out by experienced operators following SANS 10109 standards.'
+      },
+      {
+        name: 'Acrylic Elastomeric Roof Coatings',
+        description: 'Acrylic waterproofing coatings are applied by brush or roller to tiled and metal roofs as a maintenance treatment or light waterproofing system. They are flexible, UV-resistant, and available in a range of colours to restore the appearance of the roof at the same time. Acrylic coatings require reapplication every 5–8 years depending on UV exposure and foot traffic. We specify high-build products (at least 300 microns dry film thickness) for adequate waterproofing performance.'
+      },
+    ],
+    pricingNote: 'Roof waterproofing costs in Johannesburg depend on the roof type, system selected, roof area, and accessibility. Acrylic coating systems are the most affordable; torch-on bitumen membrane systems cost more but last significantly longer. Prices below are per square metre installed, including surface preparation, primer, and the specified waterproofing system. We provide a free, written quote after inspecting your roof.',
+    pricingTable: [
+      { item: 'Tiled roof — acrylic elastomeric coating (per m²)', range: 'R80 – R130' },
+      { item: 'Metal roof (IBR/corrugated) — liquid membrane (per m²)', range: 'R90 – R150' },
+      { item: 'Flat/concrete roof — torch-on bitumen (per m²)', range: 'R150 – R250' },
+      { item: 'Flat roof — cementitious waterproofing (per m²)', range: 'R120 – R200' },
+      { item: 'Roof leak repair (localised)', range: 'R800 – R3,500' },
+      { item: 'Ridge and hip re-pointing (per m)', range: 'R120 – R220' },
+      { item: 'Flashing repair/replacement (per m)', range: 'R180 – R350' },
+    ],
+    process: [
+      {
+        step: '1',
+        title: 'Free Roof Inspection & Report',
+        description: 'We inspect the full roof covering, flashings, gutters, valleys, and penetrations to identify all failure points — not just the obvious ones. You receive a written inspection report with photos and a recommended scope of work before you commit to anything. No call-out fee.'
+      },
+      {
+        step: '2',
+        title: 'Surface Preparation',
+        description: 'Surface prep is the most critical step. We pressure wash the roof, remove moss, lichen, and loose material, re-point failed mortar, replace broken tiles or damaged sheets, and prime the surface with the correct primer for the specified waterproofing system. Skipping prep is the number-one cause of waterproofing failure.'
+      },
+      {
+        step: '3',
+        title: 'Waterproofing Application',
+        description: 'We apply the specified system — acrylic coating, torch-on membrane, or liquid membrane — at the correct coverage rate and in the correct number of coats or layers. All penetrations, flashings, upstands, and joints receive additional attention as these are the primary entry points for water.'
+      },
+      {
+        step: '4',
+        title: 'Inspection & Written Guarantee',
+        description: 'We carry out a water test before leaving. You receive a written workmanship guarantee specifying the system installed, the guarantee period, and what it covers. Most acrylic systems carry a 5-year workmanship guarantee; torch-on systems carry 10 years.'
+      },
+    ],
+    faqs: [
+      {
+        question: 'How much does it cost to waterproof a roof in South Africa?',
+        answer: 'Roof waterproofing costs in South Africa range from R80 to R250 per square metre in 2026, depending on the roof type and system used. An acrylic elastomeric coating on a tiled roof costs R80–R130/m²; torch-on bitumen membrane on a flat concrete roof costs R150–R250/m². For a typical 120 m² tiled house, expect to pay R9,600–R15,600 for a full acrylic coating treatment, and R18,000–R30,000 for a flat roof torch-on system. Localised leak repairs cost R800–R3,500 depending on the extent of damage. We provide free, itemised quotes after inspecting your roof.'
+      },
+      {
+        question: 'Which type of waterproofing is best for a roof?',
+        answer: 'The best waterproofing system depends on your roof type. For tiled roofs, an acrylic elastomeric coating is the standard — it bridges micro-cracks, reflects UV, and restores the appearance. For flat or parapet concrete roofs, torch-on APP bitumen membrane is the most durable system, lasting 15–20 years when applied correctly. For IBR or corrugated metal roofs, a specialist liquid rubber membrane or bitumen-based coating is appropriate. There is no single "best" product — the right choice depends on roof geometry, drainage, current condition, and budget. We specify the correct system after inspecting your roof.'
+      },
+      {
+        question: 'How long does roof waterproofing last?',
+        answer: 'The lifespan depends on the system and application quality. Acrylic elastomeric roof coatings last 5–8 years before requiring re-application. High-quality torch-on bitumen membrane systems (two-layer APP) last 15–20 years. The quality of surface preparation has a bigger impact on lifespan than the product itself — even the best membrane will fail early if applied to a dirty, cracked, or poorly primed substrate. We follow SANS 10109 standards for all waterproofing work.'
+      },
+      {
+        question: 'How do I know if my roof needs waterproofing or just repairs?',
+        answer: 'If the leak is coming from a single, identifiable point — a cracked tile, a failed valley iron, a loose flashing — a targeted repair is usually sufficient and significantly cheaper than full waterproofing. If the roof has widespread micro-cracking, multiple small leaks in different locations, or the existing waterproofing coating is chalking and losing adhesion, a full treatment is more appropriate. We carry out a free inspection and give you an honest recommendation on whether you need repairs, a coating, or a full membrane system.'
+      },
+      {
+        question: 'Can you waterproof a roof during winter?',
+        answer: 'Most waterproofing systems require a minimum temperature of 10°C and dry conditions for application. In Gauteng, winters are cold but dry — most days between May and August are suitable for waterproofing work. The low humidity and lack of rain actually make winter an ideal time for roof work. We monitor weather conditions daily and will not apply products outside their specified temperature and humidity ranges. Many homeowners find it easier to schedule work in winter when contractors are more available and roofs are dry.'
+      },
+      {
+        question: 'Do you waterproof roofs in Pretoria?',
+        answer: 'Yes. We carry out roof waterproofing throughout Gauteng — Johannesburg, Sandton, Midrand, Fourways, Randburg, Centurion, Pretoria, and surrounding suburbs. Our waterproofing teams are based in Bryanston and typically schedule inspections within 48 hours. Call or WhatsApp +27 82 868 8396 to book a free roof inspection.'
+      },
+    ],
+    whyChoose: [
+      'Free roof inspection with written report — no call-out fee',
+      'All roof types: tiled, IBR, corrugated, flat concrete, Chromadek',
+      'All systems: acrylic coating, torch-on bitumen, liquid membrane, cementitious',
+      'Surface preparation done properly — the most common cause of waterproofing failure',
+      'NHBRC registered — all work to SANS 10109 standards',
+      'Written guarantee: 5 years (acrylic) to 10 years (torch-on)',
+      'Serving Johannesburg, Pretoria, Sandton, Midrand, Centurion, Randburg, Fourways',
     ],
   },
 }
