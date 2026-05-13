@@ -520,8 +520,8 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
   ])
   const areaReviewsRaw = phaseD
     ? (area === 'johannesburg'
-        ? getReviews({ limit: 24 }).filter((r) => r.area && JHB_METRO_AREAS.has(r.area)).slice(0, 6)
-        : getReviews({ area: location.name, limit: 6 }))
+        ? getReviews({ limit: 24, lang }).filter((r) => r.area && JHB_METRO_AREAS.has(r.area)).slice(0, 6)
+        : getReviews({ area: location.name, limit: 6, lang }))
     : []
   const areaReviews = areaReviewsRaw.map((r) => ({
     author: r.author,

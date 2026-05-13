@@ -1,30 +1,71 @@
 import { Star, ExternalLink } from 'lucide-react';
 
+type Lang = 'en' | 'af' | 'zu' | 'st'
+
 interface GoogleReviewsWidgetProps {
   dict: any
+  lang?: Lang
 }
 
-export default function GoogleReviewsWidget({ dict }: GoogleReviewsWidgetProps) {
-  const reviews = [
+interface GReview {
+  name: string
+  rating: number
+  text: string
+  text_af: string
+  text_zu: string
+  text_st: string
+  date: string
+  date_af: string
+  date_zu: string
+  date_st: string
+}
+
+export default function GoogleReviewsWidget({ dict, lang = 'en' }: GoogleReviewsWidgetProps) {
+  const reviews: GReview[] = [
     {
       name: 'Sarah M.',
       rating: 5,
       text: 'Exceptional work on our home renovation! Meshack and his team were professional, punctual, and delivered beyond our expectations. Highly recommend!',
+      text_af: 'Uitsonderlike werk op ons huisopknapping! Meshack en sy span was professioneel, stiptelik, en het bo ons verwagtinge gelewer. Sterk aanbeveel!',
+      text_zu: 'Umsebenzi obabazekayo wokuvuselelwa kwekhaya lethu! UMeshack neqembu lakhe bebobungcweti, befika ngesikhathi, futhi babe nikeze ngokweqile okwakulindelekile. Kunconywa kakhulu!',
+      text_st: 'Mosebetsi o phahameng oa ntlafatso ea ntlo ea rona! Meshack le sehlopha sa hae ba ne ba le botsebi, ba le nako, mme ba fane ka ho feta litebello tsa rona. Re kgothaletsa haholo!',
       date: '2 weeks ago',
+      date_af: '2 weke gelede',
+      date_zu: 'amasonto ama-2 edlule',
+      date_st: 'dibeke tse 2 tse fetileng',
     },
     {
       name: 'John K.',
       rating: 5,
       text: 'Outstanding paving work. The attention to detail was impressive and the project was completed on time. Will definitely use Sinqobile Construction again.',
+      text_af: 'Uitstekende plaveiselwerk. Die aandag aan detail was indrukwekkend en die projek is op tyd voltooi. Sal beslis Sinqobile Construction weer gebruik.',
+      text_zu: 'Umsebenzi obabazekayo wokungcweka. Ukunaka imininingwane bekuyamangaza futhi iphrojekthi yaqedwa ngesikhathi. Sizoqinisekisa ukusebenzisa i-Sinqobile Construction futhi.',
+      text_st: 'Mosebetsi o motle haholo oa peleto. Tlhokomelo ho lintlha e ne e khahleha mme morero o phethiloe ka nako. Re tla sebedisa Sinqobile Construction hape ka mehla.',
       date: '1 month ago',
+      date_af: '1 maand gelede',
+      date_zu: 'inyanga eyodwa edlule',
+      date_st: 'khoeli e le 1 e fetileng',
     },
     {
       name: 'Linda T.',
       rating: 5,
       text: 'Professional service from start to finish. Our bathroom renovation looks amazing! Great communication and quality workmanship throughout.',
+      text_af: 'Professionele diens van begin tot einde. Ons badkamer-opknapping lyk wonderlik! Goeie kommunikasie en kwaliteit vakmanskap regdeur.',
+      text_zu: 'Insiza yobungcweti kusukela ekuqaleni kuze kube sekugcineni. Ukuvuselelwa kwegumbi lethu lokugeza kubukeka kuyamangalisa! Ukuxhumana okuhle nomsebenzi okhwalithi yonke indawo.',
+      text_st: 'Tshebeletso ea botsebi ho tloha qalong ho fihlela qetellong. Ntlafatso ea rona ea kamore ea bohlapelo e shebahala e makatsa! Puisano e ntle le mosebetsi oa boleng nako e telele.',
       date: '3 weeks ago',
+      date_af: '3 weke gelede',
+      date_zu: 'amasonto ama-3 edlule',
+      date_st: 'dibeke tse 3 tse fetileng',
     },
   ];
+
+  const localize = (r: GReview): { text: string; date: string } => {
+    if (lang === 'en') return { text: r.text, date: r.date }
+    const tKey = `text_${lang}` as 'text_af' | 'text_zu' | 'text_st'
+    const dKey = `date_${lang}` as 'date_af' | 'date_zu' | 'date_st'
+    return { text: r[tKey] || r.text, date: r[dKey] || r.date }
+  }
 
   const renderStars = (rating: number) => {
     return (
@@ -47,7 +88,6 @@ export default function GoogleReviewsWidget({ dict }: GoogleReviewsWidgetProps) 
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          {/* Header */}
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               {dict.googleReviews.title}
@@ -72,28 +112,29 @@ export default function GoogleReviewsWidget({ dict }: GoogleReviewsWidgetProps) 
             </a>
           </div>
 
-          {/* Featured Reviews */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {reviews.map((review, index) => (
-              <div
-                key={index}
-                className="bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow duration-300"
-              >
-                <div className="flex items-center justify-between mb-4">
-                  <div>
-                    <h3 className="font-bold text-gray-900">{review.name}</h3>
-                    <p className="text-sm text-gray-500">{review.date}</p>
+            {reviews.map((review, index) => {
+              const l = localize(review)
+              return (
+                <div
+                  key={index}
+                  className="bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow duration-300"
+                >
+                  <div className="flex items-center justify-between mb-4">
+                    <div>
+                      <h3 className="font-bold text-gray-900">{review.name}</h3>
+                      <p className="text-sm text-gray-500">{l.date}</p>
+                    </div>
+                    {renderStars(review.rating)}
                   </div>
-                  {renderStars(review.rating)}
+                  <p className="text-gray-700 leading-relaxed">
+                    "{l.text}"
+                  </p>
                 </div>
-                <p className="text-gray-700 leading-relaxed">
-                  "{review.text}"
-                </p>
-              </div>
-            ))}
+              )
+            })}
           </div>
 
-          {/* Google Badge */}
           <div className="mt-12 text-center">
             <div className="inline-flex items-center space-x-3 bg-gray-50 px-6 py-4 rounded-lg shadow-md">
               <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

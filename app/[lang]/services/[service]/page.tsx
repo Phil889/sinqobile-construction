@@ -222,7 +222,7 @@ export default async function ServicePage({ params: { lang, service } }: Service
   // Only retrofitted services (currently: building) have this populated.
   // Other services degrade gracefully until their own retrofit runs.
   const phaseD = content?.phaseDExtras
-  const serviceReviews = phaseD ? getReviews({ serviceSlug: service, limit: 6 }) : []
+  const serviceReviews = phaseD ? getReviews({ serviceSlug: service, limit: 6, lang }) : []
   const SITE_URL = 'https://www.sinqobileconstruction.co.za'
 
   return (

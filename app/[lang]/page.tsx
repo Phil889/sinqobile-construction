@@ -148,7 +148,7 @@ export default async function Home({
 
       <ProjectTimeline dict={dict} lang={lang} />
 
-      <TestimonialsEnhanced dict={dict} />
+      <TestimonialsEnhanced dict={dict} lang={lang} />
 
       {/* v2.1 Phase 9 — Expert / founder card above FAQ */}
       <section className="py-12 bg-background">
@@ -172,7 +172,7 @@ export default async function Home({
         </div>
       </section>
 
-      <GoogleReviewsWidget dict={dict} />
+      <GoogleReviewsWidget dict={dict} lang={lang} />
 
       <GoogleBusinessCTA dict={dict} />
     </>
