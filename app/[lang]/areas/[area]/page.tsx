@@ -8,6 +8,7 @@ import { ExpertCard } from '@/components/expert-card'
 import { StrategyCTA } from '@/components/strategy-cta'
 import { ReviewWall } from '@/components/review-wall'
 import { getReviews } from '@/lib/reviews-data'
+import { localizeLocation } from '@/lib/area-translations'
 import { CheckCircle, Phone, MapPin, Star, Award, Clock, Shield } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -450,11 +451,12 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: AreaPageProps): Promise<Metadata> {
-  const location = locationData[params.area]
+  const canonical = locationData[params.area]
   const seo = areaSEO[params.area]
 
-  if (!location) return {}
+  if (!canonical) return {}
 
+  const location = localizeLocation(params.area, canonical, params.lang)
   const title = seo?.title || `Construction Services ${location.name} | Sinqobile Construction`
   const description = seo?.description || `Professional construction services in ${location.name}. ${location.projects}+ projects completed. Free quotes — +27 82 868 8396`
 
@@ -499,16 +501,21 @@ export const revalidate = 86400
 export default async function AreaDetailPage({ params: { lang, area } }: AreaPageProps) {
   const dict = await getDictionary(lang)
   const ap = (dict as any).areaPage as Record<string, string>
-  const location = locationData[area]
+  const canonicalLocation = locationData[area]
 
-  if (!location) {
+  if (!canonicalLocation) {
     notFound()
   }
+
+  // Merge canonical EN locationData with per-locale overrides from
+  // lib/area-translations.ts. Locale-specific values win when present;
+  // missing keys fall back to the EN canonical content gracefully.
+  const location = localizeLocation(area, canonicalLocation, lang)
 
   // v2.1 Phase 8/9 extras — data-driven, per-area.
   // Only retrofitted areas (currently: johannesburg) have this populated.
   // Other areas degrade gracefully until their own retrofit runs.
-  const phaseD = location.phaseDExtras
+  const phaseD = canonicalLocation.phaseDExtras
 
   // Reviews for the area-level ReviewWall. The getReviews() helper matches by
   // `area` exactly, but reviews are tagged with specific suburbs (Sandton,
@@ -1020,7 +1027,7 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
           <section className="py-16 bg-white">
             <div className="container mx-auto px-4 max-w-6xl">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-10 text-center">
-                {`What our ${location.name} clients say`}
+                {(ap?.areaReviewsHeading || 'What our %s clients say').replace('%s', location.name)}
               </h2>
               <ReviewWall
                 serviceName={phaseD.expertCardLabel}
