@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Award, Linkedin, MapPin, ShieldCheck } from 'lucide-react'
 
+type Lang = 'en' | 'af' | 'zu' | 'st'
+
 interface AuthorBioProps {
   name?: string
   jobTitle?: string
@@ -9,37 +11,109 @@ interface AuthorBioProps {
   image?: string
   expertise?: string[]
   linkedinUrl?: string
-  lang?: string
+  lang?: Lang
   className?: string
 }
 
-/**
- * E-E-A-T author bio card rendered below blog posts and on key service pages.
- *
- * Visible expertise signals matter to both Google (per Dec 2025 E-E-A-T update)
- * and to AI search engines deciding whether to cite the content.
- */
+const T: Record<Lang, {
+  defaultJobTitle: string
+  defaultBio: string
+  defaultExpertise: string[]
+  aboutAuthor: string
+  writtenBy: string
+  location: string
+  expertiseHeading: string
+  readBio: string
+}> = {
+  en: {
+    defaultJobTitle: 'Founder & NHBRC Registered Builder',
+    defaultBio: 'NHBRC registered builder with 15+ years of hands-on construction experience across Gauteng. Founded Sinqobile Construction in 2010 and has delivered 500+ projects spanning new home builds, renovations, plastering, paving, roofing, and home extensions across Johannesburg, Sandton, Pretoria, and Centurion.',
+    defaultExpertise: [
+      'NHBRC Compliance',
+      'SANS 10400 Building Regulations',
+      'Residential Construction',
+      'Home Renovations',
+      'Project Management',
+      'Construction Cost Estimation',
+    ],
+    aboutAuthor: 'About the Author',
+    writtenBy: 'Written and verified by:',
+    location: 'Sandton, Gauteng — serving the Greater Johannesburg metro',
+    expertiseHeading: 'Expertise & Credentials',
+    readBio: 'Read full bio →',
+  },
+  af: {
+    defaultJobTitle: 'Stigter & NHBRC Geregistreerde Bouer',
+    defaultBio: 'NHBRC-geregistreerde bouer met 15+ jaar praktiese konstruksie-ondervinding regoor Gauteng. Het Sinqobile Construction in 2010 gestig en het 500+ projekte gelewer wat strek oor nuwe huisbou, opknappings, pleisterwerk, plaveisel, dakwerk, en huisuitbreidings regoor Johannesburg, Sandton, Pretoria, en Centurion.',
+    defaultExpertise: [
+      'NHBRC Voldoening',
+      'SANS 10400 Bouregulasies',
+      'Residensiële Konstruksie',
+      'Huisopknappings',
+      'Projekbestuur',
+      'Konstruksiekoste-skatting',
+    ],
+    aboutAuthor: 'Oor die Skrywer',
+    writtenBy: 'Geskryf en geverifieer deur:',
+    location: 'Sandton, Gauteng — bedien die Groter Johannesburg metro',
+    expertiseHeading: 'Kundigheid & Kwalifikasies',
+    readBio: 'Lees volle bio →',
+  },
+  zu: {
+    defaultJobTitle: 'Umsunguli & Umakhi Obhalisiwe yi-NHBRC',
+    defaultBio: 'Umakhi obhalisiwe yi-NHBRC oneminyaka engu-15+ yolwazi lwezandla lokwakha eGauteng. Wasungula i-Sinqobile Construction ngo-2010 futhi unikeze amaphrojekthi angu-500+ aphakathi nokwakhiwa kwezindlu ezintsha, ukuvuselelwa, ukubhinca, ukungcweka, ukufakwa kophahla, nezandiso zezindlu eJohannesburg, eSandton, ePretoria, naseCenturion.',
+    defaultExpertise: [
+      'Ukulandela kwe-NHBRC',
+      'Imithetho Yokwakha ye-SANS 10400',
+      'Ukwakha Izindlu Zasekhaya',
+      'Ukuvuselelwa Kwezindlu',
+      'Ukuphathwa Kwemiphrojekthi',
+      'Ukulinganisa Izindleko Zokwakha',
+    ],
+    aboutAuthor: 'Mayelana Nombhali',
+    writtenBy: 'Kubhalwe futhi kuqinisekiswe ngu:',
+    location: 'eSandton, eGauteng — sisebenzela iJohannesburg metro Enkulu',
+    expertiseHeading: 'Ubuchwepheshe Neziqu',
+    readBio: 'Funda i-bio epheleleyo →',
+  },
+  st: {
+    defaultJobTitle: 'Mothehi & Mohahi o Ngolisitsoeng NHBRC',
+    defaultBio: 'Mohahi o ngolisitsoeng NHBRC ka lilemo tse 15+ tsa boiphihlelo ba kaho ka matsoho Gauteng kaofela. O thehile Sinqobile Construction ka 2010 mme o fane ka merero e 500+ e akarelletsang kaho ea matlo a matjha, ntlafatso, pleister, peleto, marulelo, le keketso ea matlo Johannesburg, Sandton, Pretoria, le Centurion.',
+    defaultExpertise: [
+      'Ho Latela NHBRC',
+      'Melao ea Kaho ea SANS 10400',
+      'Kaho ea Matlo a Bodulo',
+      'Ntlafatso ea Matlo',
+      'Tsamaiso ea Morero',
+      'Tekanyetso ea Litjeo tsa Kaho',
+    ],
+    aboutAuthor: 'Ka Mongoli',
+    writtenBy: 'E ngotsoe le ho netefatsoa ke:',
+    location: 'Sandton, Gauteng — re sebeletsa Johannesburg Metro e Kgolo',
+    expertiseHeading: 'Botsebi & Mangolo',
+    readBio: 'Bala bio e felletseng →',
+  },
+}
+
 export function AuthorBio({
   name = 'Dingwayo Reason Ndlovu',
-  jobTitle = 'Founder & NHBRC Registered Builder',
-  bio = 'NHBRC registered builder with 15+ years of hands-on construction experience across Gauteng. Founded Sinqobile Construction in 2010 and has delivered 500+ projects spanning new home builds, renovations, plastering, paving, roofing, and home extensions across Johannesburg, Sandton, Pretoria, and Centurion.',
+  jobTitle,
+  bio,
   image = '/images/dingwayo-ndlovu.jpg',
-  expertise = [
-    'NHBRC Compliance',
-    'SANS 10400 Building Regulations',
-    'Residential Construction',
-    'Home Renovations',
-    'Project Management',
-    'Construction Cost Estimation',
-  ],
+  expertise,
   linkedinUrl,
   lang = 'en',
   className = '',
 }: AuthorBioProps) {
+  const t = T[lang] || T.en
+  const finalJobTitle = jobTitle ?? t.defaultJobTitle
+  const finalBio = bio ?? t.defaultBio
+  const finalExpertise = expertise ?? t.defaultExpertise
+
   return (
     <aside
       className={`relative overflow-hidden rounded-2xl border border-gray-200 bg-gradient-to-br from-white to-gray-50 p-6 md:p-8 shadow-sm ${className}`}
-      aria-label="About the author"
+      aria-label={t.aboutAuthor}
       itemScope
       itemType="https://schema.org/Person"
     >
@@ -49,9 +123,9 @@ export function AuthorBio({
         </div>
         <div>
           <p className="text-xs font-semibold uppercase tracking-wider text-gray-500">
-            About the Author
+            {t.aboutAuthor}
           </p>
-          <p className="text-sm text-gray-700">Written and verified by:</p>
+          <p className="text-sm text-gray-700">{t.writtenBy}</p>
         </div>
       </div>
 
@@ -60,7 +134,7 @@ export function AuthorBio({
           <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden ring-4 ring-white shadow-lg">
             <Image
               src={image}
-              alt={`${name} – ${jobTitle}, Sinqobile Construction`}
+              alt={`${name} – ${finalJobTitle}, Sinqobile Construction`}
               fill
               className="object-cover"
               sizes="(max-width: 768px) 96px, 128px"
@@ -80,25 +154,25 @@ export function AuthorBio({
             </Link>
           </h3>
           <p className="mt-1 text-sm md:text-base font-medium text-gray-700" itemProp="jobTitle">
-            {jobTitle}
+            {finalJobTitle}
           </p>
           <p className="mt-1 text-sm text-gray-500 flex items-center gap-1">
             <MapPin className="w-3.5 h-3.5" aria-hidden="true" />
-            <span>Sandton, Gauteng — serving the Greater Johannesburg metro</span>
+            <span>{t.location}</span>
           </p>
 
           <p className="mt-3 text-sm md:text-base text-gray-700 leading-relaxed" itemProp="description">
-            {bio}
+            {finalBio}
           </p>
 
-          {expertise.length > 0 && (
+          {finalExpertise.length > 0 && (
             <div className="mt-4">
               <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2 flex items-center gap-1">
                 <Award className="w-3.5 h-3.5" aria-hidden="true" />
-                Expertise & Credentials
+                {t.expertiseHeading}
               </p>
               <ul className="flex flex-wrap gap-2" itemProp="knowsAbout">
-                {expertise.map((tag) => (
+                {finalExpertise.map((tag) => (
                   <li
                     key={tag}
                     className="px-2.5 py-1 text-xs font-medium rounded-full bg-gray-100 text-gray-700 border border-gray-200"
@@ -115,7 +189,7 @@ export function AuthorBio({
               href={`/${lang}/about`}
               className="inline-flex items-center gap-1.5 text-sm font-medium text-yellow-700 hover:text-yellow-800 hover:underline"
             >
-              Read full bio →
+              {t.readBio}
             </Link>
             {linkedinUrl && (
               <Link

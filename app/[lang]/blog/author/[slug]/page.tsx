@@ -11,26 +11,125 @@ import { StrategyCTA } from '@/components/strategy-cta'
 
 const SITE_URL = 'https://www.sinqobileconstruction.co.za'
 
-// Currently only one author — the founder. Extensible if you add more authors.
+type L<T> = { en: T; af: T; zu: T; st: T }
+
 const AUTHORS = {
   'dingwayo-ndlovu': {
     name: 'Dingwayo Reason Ndlovu',
     slug: 'dingwayo-ndlovu',
-    jobTitle: 'Founder & NHBRC Registered Builder',
     image: '/images/dingwayo-ndlovu.jpg',
-    bio: 'Dingwayo founded Sinqobile Construction in 2010. He is an NHBRC registered builder with 15+ years of hands-on construction experience across Gauteng, and has personally overseen 500+ completed projects ranging from new family homes to large-scale renovations and home extensions across Johannesburg, Sandton, Pretoria, and Centurion.',
     matchAuthorNames: ['Dingwayo Reason Ndlovu', 'Dingwayo Ndlovu', 'Sinqobile Construction', 'Sinqobile Construction Team'],
-    expertise: [
-      'NHBRC Compliance',
-      'SANS 10400 Building Regulations',
-      'Residential Construction',
-      'Home Renovations',
-      'Project Management',
-      'Construction Cost Estimation',
-      'Material Sourcing',
-    ],
+    jobTitle: {
+      en: 'Founder & NHBRC Registered Builder',
+      af: 'Stigter & NHBRC Geregistreerde Bouer',
+      zu: 'Umsunguli & Umakhi Obhalisiwe yi-NHBRC',
+      st: 'Mothehi & Mohahi o Ngolisitsoeng NHBRC',
+    } as L<string>,
+    bio: {
+      en: 'Dingwayo founded Sinqobile Construction in 2010. He is an NHBRC registered builder with 15+ years of hands-on construction experience across Gauteng, and has personally overseen 500+ completed projects ranging from new family homes to large-scale renovations and home extensions across Johannesburg, Sandton, Pretoria, and Centurion.',
+      af: 'Dingwayo het Sinqobile Construction in 2010 gestig. Hy is \'n NHBRC-geregistreerde bouer met 15+ jaar praktiese konstruksie-ondervinding regoor Gauteng, en het persoonlik toesig gehou oor 500+ voltooide projekte wat strek van nuwe familiehuise tot grootskaalse opknappings en huisuitbreidings regoor Johannesburg, Sandton, Pretoria, en Centurion.',
+      zu: 'UDingwayo wasungula i-Sinqobile Construction ngo-2010. Ungumakhi obhalisiwe yi-NHBRC oneminyaka engu-15+ yolwazi lwezandla lokwakha eGauteng, futhi ubheke ngobuqu amaphrojekthi angu-500+ aphelelisiwe asukela kumakhaya amasha emindeni kuya ekuvuselelweni okukhulu nasezandisweni zezindlu eJohannesburg, eSandton, ePretoria, naseCenturion.',
+      st: 'Dingwayo o thehile Sinqobile Construction ka 2010. Ke mohahi o ngolisitsoeng NHBRC ka lilemo tse 15+ tsa boiphihlelo ba kaho ka matsoho Gauteng kaofela, mme o hlokometse ka botho merero e 500+ e phethetsoeng e tlohang ho matlo a matjha a malapa ho fihlela ho ntlafatso e kgolo le keketso ea matlo Johannesburg, Sandton, Pretoria, le Centurion.',
+    } as L<string>,
+    expertise: {
+      en: [
+        'NHBRC Compliance',
+        'SANS 10400 Building Regulations',
+        'Residential Construction',
+        'Home Renovations',
+        'Project Management',
+        'Construction Cost Estimation',
+        'Material Sourcing',
+      ],
+      af: [
+        'NHBRC Voldoening',
+        'SANS 10400 Bouregulasies',
+        'Residensiële Konstruksie',
+        'Huisopknappings',
+        'Projekbestuur',
+        'Konstruksiekoste-skatting',
+        'Materiaalverkryging',
+      ],
+      zu: [
+        'Ukulandela kwe-NHBRC',
+        'Imithetho Yokwakha ye-SANS 10400',
+        'Ukwakha Izindlu Zasekhaya',
+        'Ukuvuselelwa Kwezindlu',
+        'Ukuphathwa Kwemiphrojekthi',
+        'Ukulinganisa Izindleko Zokwakha',
+        'Ukutholwa Kwezimpahla',
+      ],
+      st: [
+        'Ho Latela NHBRC',
+        'Melao ea Kaho ea SANS 10400',
+        'Kaho ea Matlo a Bodulo',
+        'Ntlafatso ea Matlo',
+        'Tsamaiso ea Morero',
+        'Tekanyetso ea Litjeo tsa Kaho',
+        'Ho Fumana Lisebelisoa',
+      ],
+    } as L<string[]>,
   },
 } as const
+
+const PAGE_T: L<{
+  home: string
+  blog: string
+  articlesBy: (n: string) => string
+  articlesDescription: (count: number, n: string) => string
+  noArticles: string
+  readArticle: string
+  ctaHeadline: string
+  ctaSub: string
+  ctaText: string
+}> = {
+  en: {
+    home: 'Home',
+    blog: 'Blog',
+    articlesBy: (n) => `Articles by ${n}`,
+    articlesDescription: (count, n) => `${count} construction guides, cost references, and building insights from ${n}'s 15+ years on the ground in Gauteng.`,
+    noArticles: 'No articles published yet.',
+    readArticle: 'Read article →',
+    ctaHeadline: 'Talk Directly to Dingwayo',
+    ctaSub: "Have a construction question that's not covered in our guides? Book a free 15-minute consultation with our founder.",
+    ctaText: 'Get a Free Consultation',
+  },
+  af: {
+    home: 'Tuis',
+    blog: 'Blog',
+    articlesBy: (n) => `Artikels deur ${n}`,
+    articlesDescription: (count, n) => `${count} konstruksie-gidse, kosteverwysings, en bou-insigte uit ${n} se 15+ jaar op die grond in Gauteng.`,
+    noArticles: 'Nog geen artikels gepubliseer nie.',
+    readArticle: 'Lees artikel →',
+    ctaHeadline: 'Praat Direk met Dingwayo',
+    ctaSub: 'Het jy \'n konstruksievraag wat nie in ons gidse gedek word nie? Bespreek \'n gratis 15-minute konsultasie met ons stigter.',
+    ctaText: 'Kry \'n Gratis Konsultasie',
+  },
+  zu: {
+    home: 'Ekhaya',
+    blog: 'Ibhulogi',
+    articlesBy: (n) => `Izindatshana ngu-${n}`,
+    articlesDescription: (count, n) => `${count} izinkomba zokwakha, izinkomba zezindleko, kanye nezilumino zokwakha kusukela eminyakeni engu-15+ ka-${n} esebenza eGauteng.`,
+    noArticles: 'Azikho izindatshana ezishicilelwe okwamanje.',
+    readArticle: 'Funda indatshana →',
+    ctaHeadline: 'Khuluma noDingwayo Ngqo',
+    ctaSub: 'Unombuzo wokwakha ongahlangabezani kwizinkomba zethu? Bhukha ukubonisana kwamahhala kwemizuzu engu-15 nomsunguli wethu.',
+    ctaText: 'Thola Ukubonisana Kwamahhala',
+  },
+  st: {
+    home: 'Lehae',
+    blog: 'Blog',
+    articlesBy: (n) => `Lihlooho tse Ngotsoeng ke ${n}`,
+    articlesDescription: (count, n) => `${count} ditataiso tsa kaho, lipapali tsa litjeo, le maikutlo a kaho ho tsoa lilemong tse 15+ tsa ${n} a sebetsa Gauteng.`,
+    noArticles: 'Ha ho na dihloho tse hatisitsoeng hajoale.',
+    readArticle: 'Bala sehlooho →',
+    ctaHeadline: 'Bua le Dingwayo Ka Otloloha',
+    ctaSub: 'Na u na le potso ea kaho e sa koahelwang dipuisanong tsa rona? Behela puisano ea mahala ea metsotso e 15 le mothehi oa rona.',
+    ctaText: 'Fumana Puisano ea Mahala',
+  },
+}
+
+const DATE_LOCALES: Record<string, string> = { en: 'en-ZA', af: 'af-ZA', zu: 'en-ZA', st: 'en-ZA' }
 
 export async function generateStaticParams() {
   const params: { lang: string; slug: string }[] = []
@@ -50,9 +149,12 @@ export async function generateMetadata({
   const author = AUTHORS[slug as keyof typeof AUTHORS]
   if (!author) return { title: 'Author Not Found' }
 
+  const jobTitle = author.jobTitle[lang]
+  const bio = author.bio[lang]
+
   return {
-    title: `${author.name} — Construction Articles & Insights | Sinqobile Construction`,
-    description: `Articles, building cost guides, and construction insights written by ${author.name}, ${author.jobTitle} at Sinqobile Construction. 15+ years of NHBRC-registered building experience in Gauteng.`,
+    title: `${author.name} — ${PAGE_T[lang].articlesBy(author.name)} | Sinqobile Construction`,
+    description: bio,
     alternates: {
       canonical: `${SITE_URL}/${lang}/blog/author/${slug}`,
       languages: Object.fromEntries(
@@ -62,11 +164,11 @@ export async function generateMetadata({
     openGraph: {
       type: 'profile',
       url: `${SITE_URL}/${lang}/blog/author/${slug}`,
-      title: `${author.name} — ${author.jobTitle}`,
-      description: author.bio,
+      title: `${author.name} — ${jobTitle}`,
+      description: bio,
       images: [
         {
-          url: `/api/og?title=${encodeURIComponent(author.name)}&subtitle=${encodeURIComponent(author.jobTitle)}`,
+          url: `/api/og?title=${encodeURIComponent(author.name)}&subtitle=${encodeURIComponent(jobTitle)}`,
           width: 1200,
           height: 630,
         },
@@ -85,27 +187,28 @@ export default function AuthorPage({
   const author = AUTHORS[slug as keyof typeof AUTHORS]
   if (!author) notFound()
 
+  const t = PAGE_T[lang]
+
   const authorPosts = blogPosts.filter((post) =>
     author.matchAuthorNames.some((name) => post.author === name)
   )
 
   const breadcrumbs = [
-    { name: 'Home', url: `${SITE_URL}/${lang}` },
-    { name: 'Blog', url: `${SITE_URL}/${lang}/blog` },
-    { name: 'Authors', url: `${SITE_URL}/${lang}/blog` },
+    { name: t.home, url: `${SITE_URL}/${lang}` },
+    { name: t.blog, url: `${SITE_URL}/${lang}/blog` },
     { name: author.name, url: `${SITE_URL}/${lang}/blog/author/${slug}` },
   ]
 
   return (
     <>
-      <SchemaMarkup type="person" lang={lang} data={author} />
+      <SchemaMarkup type="person" lang={lang} data={{ ...author, jobTitle: author.jobTitle[lang], bio: author.bio[lang] }} />
       <SchemaMarkup type="breadcrumb" lang={lang} data={{ items: breadcrumbs }} />
       <SchemaMarkup
         type="itemList"
         lang={lang}
         data={{
-          name: `Articles by ${author.name}`,
-          description: `${authorPosts.length} construction articles and guides written by ${author.name}`,
+          name: t.articlesBy(author.name),
+          description: t.articlesDescription(authorPosts.length, author.name),
           items: authorPosts.map((p) => ({
             url: `${SITE_URL}/${lang}/blog/${p.slug}`,
             name: p.title,
@@ -119,11 +222,11 @@ export default function AuthorPage({
         <nav aria-label="Breadcrumb" className="text-sm text-gray-600 mb-6">
           <ol className="flex items-center gap-2 flex-wrap">
             <li>
-              <Link href={`/${lang}`} className="hover:text-yellow-700">Home</Link>
+              <Link href={`/${lang}`} className="hover:text-yellow-700">{t.home}</Link>
             </li>
             <li aria-hidden="true">›</li>
             <li>
-              <Link href={`/${lang}/blog`} className="hover:text-yellow-700">Blog</Link>
+              <Link href={`/${lang}/blog`} className="hover:text-yellow-700">{t.blog}</Link>
             </li>
             <li aria-hidden="true">›</li>
             <li className="text-gray-900 font-medium">{author.name}</li>
@@ -133,24 +236,23 @@ export default function AuthorPage({
         <AuthorBio
           lang={lang}
           name={author.name}
-          jobTitle={author.jobTitle}
-          bio={author.bio}
+          jobTitle={author.jobTitle[lang]}
+          bio={author.bio[lang]}
           image={author.image}
-          expertise={[...author.expertise]}
+          expertise={[...author.expertise[lang]]}
           className="mb-10"
         />
 
         <section aria-labelledby="articles-heading">
           <h2 id="articles-heading" className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-            Articles by {author.name}
+            {t.articlesBy(author.name)}
           </h2>
           <p className="text-gray-600 mb-6">
-            {authorPosts.length} construction guides, cost references, and building insights
-            from {author.name}&apos;s 15+ years on the ground in Gauteng.
+            {t.articlesDescription(authorPosts.length, author.name)}
           </p>
 
           {authorPosts.length === 0 ? (
-            <p className="text-gray-500 italic">No articles published yet.</p>
+            <p className="text-gray-500 italic">{t.noArticles}</p>
           ) : (
             <div className="grid md:grid-cols-2 gap-6">
               {authorPosts.map((post) => (
@@ -179,7 +281,7 @@ export default function AuthorPage({
                       </span>
                       <span className="inline-flex items-center gap-1">
                         <Calendar className="w-3 h-3" aria-hidden="true" />
-                        {new Date(post.date).toLocaleDateString('en-ZA', {
+                        {new Date(post.date).toLocaleDateString(DATE_LOCALES[lang] || 'en-ZA', {
                           year: 'numeric',
                           month: 'short',
                           day: 'numeric',
@@ -196,7 +298,7 @@ export default function AuthorPage({
                       href={`/${lang}/blog/${post.slug}`}
                       className="mt-3 inline-block text-sm font-medium text-yellow-700 hover:underline"
                     >
-                      Read article →
+                      {t.readArticle}
                     </Link>
                   </div>
                 </article>
@@ -210,9 +312,9 @@ export default function AuthorPage({
             category="author-archive"
             position="author-page-end"
             lang={lang}
-            headline="Talk Directly to Dingwayo"
-            subheadline="Have a construction question that's not covered in our guides? Book a free 15-minute consultation with our founder."
-            ctaText="Get a Free Consultation"
+            headline={t.ctaHeadline}
+            subheadline={t.ctaSub}
+            ctaText={t.ctaText}
           />
         </div>
       </div>
