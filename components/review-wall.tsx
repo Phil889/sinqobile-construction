@@ -108,7 +108,7 @@ function ReviewCard({
           </p>
         )}
         <time className="text-xs text-gray-400" dateTime={review.date} itemProp="datePublished">
-          {new Date(review.date).toLocaleDateString('en-ZA', {
+          {new Date(review.date).toLocaleDateString(lang === 'af' ? 'af-ZA' : 'en-ZA', {
             year: 'numeric',
             month: 'long',
           })}

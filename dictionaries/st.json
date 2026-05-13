@@ -1344,7 +1344,8 @@
     "tableService": "Tshebeletso",
     "tablePriceRange": "Lebaka la Theko",
     "comparisonTitle": "Maemo a Boleng ba Kaho — Johannesburg 2026",
-    "citationHooksTitle": "Lintlha tsa Bohlokoa ka Bo-Kontraka ba Kaho Johannesburg"
+    "citationHooksTitle": "Lintlha tsa Bohlokoa ka Bo-Kontraka ba Kaho Johannesburg",
+    "reviewsHeading": "Bareki ba rona ba %s ba re"
   },
   "videoTestimonials": {
     "title": "Utloa ho Bareki ba Rona ba Khotsofetsoeng",

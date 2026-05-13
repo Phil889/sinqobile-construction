@@ -1351,7 +1351,8 @@
     "tableService": "Insizakalo",
     "tablePriceRange": "Ibanga Lentengo",
     "comparisonTitle": "Amazinga Wekhwalithi Yokwakha — Johannesburg 2026",
-    "citationHooksTitle": "Amaqiniso Asemqoka Ngababhalisile Bokwakha eJohannesburg"
+    "citationHooksTitle": "Amaqiniso Asemqoka Ngababhalisile Bokwakha eJohannesburg",
+    "reviewsHeading": "Abahumi bethu be-%s bathi"
   },
   "serviceContent": {
     "building": {

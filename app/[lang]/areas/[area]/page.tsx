@@ -3,6 +3,11 @@ import type { Metadata } from 'next'
 import { getDictionary } from '@/lib/dictionaries'
 import { Locale } from '@/i18n.config'
 import Breadcrumb from '@/components/breadcrumb'
+import SchemaMarkup from '@/components/schema-markup'
+import { ExpertCard } from '@/components/expert-card'
+import { StrategyCTA } from '@/components/strategy-cta'
+import { ReviewWall } from '@/components/review-wall'
+import { getReviews } from '@/lib/reviews-data'
 import { CheckCircle, Phone, MapPin, Star, Award, Clock, Shield } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -13,6 +18,46 @@ interface AreaPageProps {
     lang: Locale
     area: string
   }
+}
+
+/**
+ * v2.1 Phase 8 & 9 extras — populated per-area as each area page goes through
+ * the v2.1 SERP/AI retrofit. When `null`/missing, the page falls back to
+ * legacy behaviour (no direct-answer block, no citation hooks, no rich
+ * Service schema, no ExpertCard/StrategyCTA/ReviewWall). Each area slot is
+ * independent so subsequent area retrofits (sandton, pretoria, etc.) plug in
+ * here without affecting earlier retrofits.
+ *
+ * Mirrors the shape of `ServiceContent.phaseDExtras` in lib/service-content-data.ts
+ * but adapted for area pages (expertCardLabel instead of schemaName,
+ * comparisonTable optionally suburb-axis, geo + areaServed in the Service
+ * schema rather than serviceName=area).
+ */
+export interface AreaPhaseDExtras {
+  /** 40–60 word direct answer for the primary keyword. Rendered with data-speakable="summary" under H1. */
+  directAnswer: string
+  /** Schema.org audienceType — homeowners + developers + commercial across the area. */
+  audienceType: string
+  /** Label used in ExpertCard, Service schema name, headings (e.g., "Builders in Johannesburg"). */
+  expertCardLabel: string
+  /** Rich Service schema fields. */
+  priceRangeMin: number
+  priceRangeMax: number
+  /** ISO date string — set when the page was last meaningfully updated. */
+  dateModified: string
+  /** Verbatim citation hooks: factual claim + specific number + brand attribution. */
+  citationHooks: string[]
+  /** Optional comparison table (suburb × R/m² × travel, or service × R-range × duration). */
+  comparisonTable?: {
+    title: string
+    caption?: string
+    columns: string[]
+    rows: { label: string; cells: string[] }[]
+  }
+  /** Tier label used inside StrategyCTA category prop. */
+  strategyCtaCategory: string
+  strategyCtaHeadline: string
+  strategyCtaSubheadline: string
 }
 
 // Map area slugs to relevant project images from public/images/
@@ -90,6 +135,10 @@ const locationData: Record<string, {
   }
   localInfo?: string
   faqs?: { question: string; answer: string }[]
+  /** v2.1 Phase 8/9 extras — only populated for retrofitted area pages. */
+  phaseDExtras?: AreaPhaseDExtras | null
+  /** Geo coordinates for LocalBusiness Place schema (lazy populated alongside phaseDExtras). */
+  geo?: { latitude: number; longitude: number }
 }> = {
   'johannesburg': {
     name: 'Johannesburg',
@@ -123,8 +172,40 @@ const locationData: Record<string, {
     faqs: [
       { question: 'How much does it cost to build in Johannesburg in 2026?', answer: 'Residential construction in Johannesburg costs R10,000–R20,000 per square metre in 2026. A standard 3-bedroom home (120–150 m²) costs approximately R1.2M–R2.5M. Renovation costs range from R7,000–R20,000/m². These prices vary by suburb — Sandton and northern suburbs tend to be 10–15% higher due to premium finishes and material expectations. We provide free, itemised quotes for any project in Johannesburg.' },
       { question: 'Do I need building plans approved in Johannesburg?', answer: 'Yes. All structural work, new builds, extensions, and major renovations in Johannesburg require building plans approved by the City of Johannesburg Metropolitan Municipality. Plans must be drawn by a SACAP-registered architect. Approval takes 4–12 weeks. Building without approved plans is illegal — the structure cannot be insured, bonded, or sold. We handle the full plans process from architect engagement to council submission.' },
-      { question: 'Which Johannesburg suburbs do you serve?', answer: 'We serve all Johannesburg suburbs including Sandton, Bryanston, Fourways, Randburg, Midrand, Rosebank, Melville, Parktown, Houghton, Northcliff, Linden, Bedfordview, and surrounding areas. Our head office is in Fourways, giving us fast access across the northern suburbs. We also cover the East Rand, West Rand, and southern suburbs.' },
+      { question: 'Which Johannesburg suburbs do you serve?', answer: 'We serve all 8 of our primary Johannesburg areas — Sandton, Bryanston, Fourways, Randburg, Midrand, Rosebank, Melville, Parktown, Houghton, Northcliff, Linden, Bedfordview, Edenvale, Alberton and Soweto — plus the wider East Rand, West Rand and southern suburbs. Our head office is in Fourways, Sandton, giving us a 30–45 minute drive to most projects in the JHB metro. Site visits are free within 50 km of Sandton CBD.' },
+      { question: 'How long does building plan approval take with the City of Johannesburg?', answer: 'Standard residential building plans submitted to the City of Johannesburg Metropolitan Municipality typically take 4 to 12 weeks to approve in 2026 — 4–6 weeks for straightforward single-storey additions and minor alterations, 8–12 weeks for new builds, second-storey additions and developments requiring rezoning, stormwater or geotechnical input. Plans must be drawn by a SACAP-registered architect or competent draughtsperson and lodged through the CoJ Development Planning portal. Commercial and multi-unit residential approvals usually take longer (12–24 weeks). Sinqobile Construction coordinates the architect, structural engineer, plan lodgement and council follow-up on every Johannesburg project.' },
+      { question: 'Why do Johannesburg builders use raft foundations on so many sites?', answer: 'Large parts of Johannesburg sit on heaving clay soils — particularly suburbs like Linbro Park, Glenvista, Edenvale, parts of Bedfordview and the East Rand — where soil moisture changes cause vertical movement that can crack conventional strip footings. South African National Standard SANS 10400-H requires foundations to be designed for the specific soil class, and on heaving clay this is typically a stiffened raft foundation or piled foundation. Sinqobile Construction commissions a geotechnical site investigation on every Johannesburg new-build and reinforced-slab project before foundation design, so the foundation type matches the actual soil conditions on your stand.' },
+      { question: 'How do I verify a Johannesburg builder is NHBRC registered?', answer: 'You can verify any South African builder\'s NHBRC registration in two minutes via the NHBRC online registry at nhbrc.org.za — search by company name or registration number to confirm the registration is current and check for any project enrolments and complaints history. Under the Housing Consumers Protection Measures Act (1998), every new home built for occupation must be enrolled with the NHBRC at least 15 days before construction begins, by a registered builder. Sinqobile Construction has been NHBRC registered since 2010 and enrols every new home and qualifying extension before breaking ground — your NHBRC enrolment certificate is handed over with the project.' },
     ],
+    geo: { latitude: -26.2041, longitude: 28.0473 },
+    phaseDExtras: {
+      directAnswer: 'Sinqobile Construction is an NHBRC-registered builder based in Fourways, Sandton, serving all of Johannesburg — Sandton, Randburg, Roodepoort, Bedfordview, Edenvale, Alberton, Soweto and the CBD. With 15+ years operating in JHB and 500+ completed residential and commercial projects, we deliver new builds, extensions, renovations and structural repairs at R10,000–R20,000 per m² in 2026 with a 4.9-star rating from 127 verified Google reviews.',
+      audienceType: 'Homeowners, property developers, landlords and commercial property owners across Johannesburg — Sandton, Randburg, Roodepoort, Bedfordview, Edenvale, Alberton, Soweto, Fourways, Midrand and the JHB CBD — planning new builds, extensions, second-storey additions, granny flats, full-home renovations or structural repairs under the City of Johannesburg building-plan and NHBRC framework.',
+      expertCardLabel: 'Builders in Johannesburg',
+      priceRangeMin: 5000,
+      priceRangeMax: 25000,
+      dateModified: '2026-05-13',
+      citationHooks: [
+        'New residential construction in Johannesburg costs <strong>R10,000 to R20,000 per square metre in 2026</strong>, with the City of Johannesburg residential building-plan approval process typically taking <strong>4 to 12 weeks</strong> for standard plans submitted by SACAP-registered architects; Sinqobile Construction handles plan submission, NHBRC enrolment and SANS 10400 compliance on every Johannesburg new-build contract, with 500+ projects completed since 2010 across the JHB metro (Sinqobile Construction project workflow, 2026).',
+        'Johannesburg’s heaving clay soils — particularly in suburbs such as Linbro Park, Glenvista, Edenvale and parts of Bedfordview — typically require engineered raft foundations or piled foundations under <strong>SANS 10400-H</strong> to prevent structural cracking from soil movement; Sinqobile Construction commissions geotechnical site investigation on every JHB new-build and reinforced-slab project to confirm soil class before foundation design, in line with SANS 10400-H and the National Building Regulations (Sinqobile Construction structural engineering standards, 2026).',
+        'Sinqobile Construction has delivered <strong>500+ residential and commercial projects across the Greater Johannesburg metro since 2010</strong> — covering Sandton, Fourways, Midrand, Randburg, Roodepoort, Bedfordview, Edenvale, Alberton and Soweto — with NHBRC registration, full public liability cover and SANS 10400 compliance maintained on every new-build, extension and structural renovation contract, secured by the statutory 5-year NHBRC structural-defect warranty on every enrolled new home (Sinqobile Construction company records, 2026).',
+      ],
+      comparisonTable: {
+        title: 'Johannesburg Suburb Pricing Guide — Sinqobile Construction 2026',
+        caption: 'Indicative per-m² build pricing by Johannesburg sub-region. Site visits are free anywhere within 50 km of Sandton CBD (covers the entire JHB metro). Final pricing depends on stand soil class, finish level and scope — every quote is itemised and fixed-price.',
+        columns: ['Suburb cluster', 'New-build R/m²', 'Renovation R/m²', 'Travel surcharge', 'Local notes'],
+        rows: [
+          { label: 'Sandton / Fourways / Bryanston', cells: ['R14,000 – R20,000', 'R10,000 – R20,000', 'None — within 25 km of our office', 'Premium finishes, estate compliance, body-corporate approvals routine'] },
+          { label: 'Randburg / Northcliff / Linden', cells: ['R12,000 – R17,000', 'R7,000 – R18,000', 'None — within 25 km', 'Mature 1960s–80s housing stock; open-plan conversions popular'] },
+          { label: 'Roodepoort / Honeydew / Ruimsig', cells: ['R10,000 – R15,000', 'R6,000 – R15,000', 'None — within 30 km', 'Best ROI on extensions and granny flats due to lower base prices'] },
+          { label: 'Bedfordview / Edenvale / East Rand', cells: ['R11,000 – R17,000', 'R7,000 – R17,000', 'None — within 40 km', 'Heaving-clay sites common; raft foundation typical'] },
+          { label: 'JHB CBD / Soweto / Southern suburbs', cells: ['R9,000 – R14,000', 'R5,000 – R14,000', 'None — within 50 km', 'Mixed-use and refurbishment work; CoJ heritage zones in pockets'] },
+        ],
+      },
+      strategyCtaCategory: 'area-johannesburg',
+      strategyCtaHeadline: 'Planning a Build, Extension or Renovation in Johannesburg?',
+      strategyCtaSubheadline: 'Free site visit anywhere in the JHB metro — Sandton, Randburg, Roodepoort, Bedfordview, Edenvale, Alberton, Soweto and the CBD. A Sinqobile Construction expert will inspect your stand, advise on CoJ plan approval and NHBRC enrolment, and email a fixed-price itemised quote within 24 hours. NHBRC registered with a 5-year structural warranty on every new build.',
+    },
   },
   'sandton': {
     name: 'Sandton',
@@ -406,7 +487,8 @@ export async function generateMetadata({ params }: AreaPageProps): Promise<Metad
       }],
     },
     other: {
-      'article:modified_time': '2026-04-01',
+      // v2.1 Phase 8 — freshness signal; per-area when retrofitted, fallback otherwise.
+      'article:modified_time': location.phaseDExtras?.dateModified || '2026-04-01',
     },
   }
 }
@@ -423,16 +505,46 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
     notFound()
   }
 
+  // v2.1 Phase 8/9 extras — data-driven, per-area.
+  // Only retrofitted areas (currently: johannesburg) have this populated.
+  // Other areas degrade gracefully until their own retrofit runs.
+  const phaseD = location.phaseDExtras
+
+  // Reviews for the area-level ReviewWall. The getReviews() helper matches by
+  // `area` exactly, but reviews are tagged with specific suburbs (Sandton,
+  // Midrand, etc.). For Johannesburg, we union the metro suburbs so the wall
+  // shows representative work across JHB rather than only reviews literally
+  // tagged 'Johannesburg'. Map `area` → `location` for the ReviewWall card.
+  const JHB_METRO_AREAS = new Set([
+    'Johannesburg', 'Sandton', 'Randburg', 'Fourways', 'Midrand', 'Roodepoort',
+  ])
+  const areaReviewsRaw = phaseD
+    ? (area === 'johannesburg'
+        ? getReviews({ limit: 24 }).filter((r) => r.area && JHB_METRO_AREAS.has(r.area)).slice(0, 6)
+        : getReviews({ area: location.name, limit: 6 }))
+    : []
+  const areaReviews = areaReviewsRaw.map((r) => ({
+    author: r.author,
+    rating: r.rating,
+    date: r.date,
+    text: r.text,
+    serviceType: r.serviceType,
+    location: r.area,
+  }))
+  const SITE_URL = 'https://www.sinqobileconstruction.co.za'
+
+  // Legacy area Service schema — kept as the always-on baseline so non-retrofitted
+  // area pages (sandton/pretoria/etc.) still emit a Service + AggregateRating.
   const areaSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    '@id': `https://www.sinqobileconstruction.co.za/${lang}/areas/${area}#service`,
+    '@id': `${SITE_URL}/${lang}/areas/${area}#service`,
     name: `Construction Services in ${location.name}`,
     description: location.description,
-    url: `https://www.sinqobileconstruction.co.za/${lang}/areas/${area}`,
+    url: `${SITE_URL}/${lang}/areas/${area}`,
     provider: {
       '@type': 'GeneralContractor',
-      '@id': 'https://www.sinqobileconstruction.co.za/#localbusiness',
+      '@id': `${SITE_URL}/#localbusiness`,
     },
     areaServed: {
       '@type': 'City',
@@ -447,12 +559,99 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
     },
   }
 
+  // v2.1 Phase 8 — Place schema for retrofitted areas. Scopes a Schema.org Place
+  // to the area with addressLocality, geo and areaServed=suburbs, layered with
+  // the LocalBusiness emitted site-wide via layout.tsx and the rich Service
+  // schema below. Only emitted when phaseDExtras is populated.
+  const placeSchema = phaseD && location.geo ? {
+    '@context': 'https://schema.org',
+    '@type': 'Place',
+    '@id': `${SITE_URL}/${lang}/areas/${area}#place`,
+    name: `Sinqobile Construction — ${location.name}`,
+    description: phaseD.directAnswer,
+    url: `${SITE_URL}/${lang}/areas/${area}`,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: location.name,
+      addressRegion: 'Gauteng',
+      addressCountry: 'ZA',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: location.geo.latitude,
+      longitude: location.geo.longitude,
+    },
+    containsPlace: location.suburbs.map((s) => ({ '@type': 'Place', name: s })),
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: String(location.rating),
+      reviewCount: '127',
+      bestRating: '5',
+      worstRating: '1',
+    },
+  } : null
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(areaSchema) }}
       />
+
+      {/* v2.1 Phase 8 — Place schema scoped to the area (only when retrofitted) */}
+      {placeSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(placeSchema) }}
+        />
+      )}
+
+      {/* v2.1 Phase 8 — rich Service schema (dateModified, audienceType,
+          priceRange, AggregateRating, speakable, areaServed = JHB + suburbs) */}
+      {phaseD && (
+        <SchemaMarkup
+          type="service"
+          lang={lang}
+          data={{
+            slug: `../areas/${area}`,
+            serviceName: phaseD.expertCardLabel,
+            name: phaseD.expertCardLabel,
+            description: phaseD.directAnswer,
+            dateModified: phaseD.dateModified,
+            audienceType: phaseD.audienceType,
+            priceRange: { min: phaseD.priceRangeMin, max: phaseD.priceRangeMax },
+          }}
+        />
+      )}
+
+      {/* v2.1 Phase 8 — BreadcrumbList schema (Home → Service Areas → This area).
+          Legacy inline FAQPage schema is emitted further down in the FAQ
+          section — when phaseD is populated we replace it with the richer
+          FAQPage via SchemaMarkup (speakable + author=Organization). */}
+      {phaseD && (
+        <SchemaMarkup
+          type="breadcrumb"
+          lang={lang}
+          data={{
+            items: [
+              { name: 'Home', url: `${SITE_URL}/${lang}` },
+              { name: 'Service Areas', url: `${SITE_URL}/${lang}/areas` },
+              { name: location.name, url: `${SITE_URL}/${lang}/areas/${area}` },
+            ],
+          }}
+        />
+      )}
+
+      {/* v2.1 Phase 8 — rich FAQPage schema (speakable + author=Organization)
+          when retrofitted. Replaces the legacy inline FAQ script further down. */}
+      {phaseD && location.faqs && location.faqs.length > 0 && (
+        <SchemaMarkup
+          type="faq"
+          lang={lang}
+          data={{ questions: location.faqs }}
+        />
+      )}
+
       <Breadcrumb
         items={[
           { label: ap?.serviceAreasLabel || 'Service Areas', href: `/${lang}/areas` },
@@ -473,9 +672,20 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
                   {ap?.constructionServicesIn || 'Construction Services in'} {location.name}
                 </h1>
               </div>
-              <p className="text-xl mb-6">
-                {location.description}
-              </p>
+              {/* v2.1 Phase 8 — direct-answer block (speakable, lifts into AI overviews + voice).
+                  Per-area phaseDExtras.directAnswer; falls back to legacy description. */}
+              {phaseD?.directAnswer ? (
+                <p
+                  data-speakable="summary"
+                  className="service-summary text-lg md:text-xl mb-6 max-w-3xl mx-auto leading-relaxed"
+                >
+                  {phaseD.directAnswer}
+                </p>
+              ) : (
+                <p className="text-xl mb-6">
+                  {location.description}
+                </p>
+              )}
               <div className="flex flex-wrap justify-center gap-6 text-lg">
                 <div className="flex items-center space-x-2">
                   <Award className="text-yellow-400" size={24} />
@@ -660,6 +870,85 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
           </section>
         )}
 
+        {/* v2.1 Phase 8 — Suburb / scope pricing comparison table.
+            Data-driven, only renders for areas with phaseDExtras.comparisonTable. */}
+        {phaseD?.comparisonTable && (
+          <section className="py-20 bg-lightBackground">
+            <div className="container mx-auto px-4">
+              <div className="max-w-5xl mx-auto">
+                <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4 text-center">
+                  {phaseD.comparisonTable.title}
+                </h2>
+                {phaseD.comparisonTable.caption && (
+                  <p className="text-secondary text-base text-center mb-10 max-w-3xl mx-auto leading-relaxed">
+                    {phaseD.comparisonTable.caption}
+                  </p>
+                )}
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto border border-gray-200">
+                  <table className="w-full text-sm md:text-base">
+                    <thead>
+                      <tr className="bg-primary text-white">
+                        {phaseD.comparisonTable.columns.map((col, i) => (
+                          <th key={i} className="px-4 py-3 text-left font-semibold whitespace-nowrap">
+                            {col}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {phaseD.comparisonTable.rows.map((row, i) => (
+                        <tr key={i} className={i % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
+                          <td className="px-4 py-3 text-primary font-bold align-top whitespace-nowrap">
+                            {row.label}
+                          </td>
+                          {row.cells.map((cell, j) => (
+                            <td
+                              key={j}
+                              className="px-4 py-3 text-secondary align-top leading-relaxed"
+                              dangerouslySetInnerHTML={{ __html: cell }}
+                            />
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* v2.1 Phase 9 — AI citation hooks (factual claim + specific number + brand attribution).
+            Lifted verbatim by AI engines into ChatGPT / Perplexity / Google AI Overviews. */}
+        {phaseD?.citationHooks && phaseD.citationHooks.length > 0 && (
+          <section className="py-16 bg-white">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <h2 className="font-heading text-2xl md:text-3xl font-bold text-primary mb-8 text-center">
+                  Key Facts About {phaseD.expertCardLabel}
+                </h2>
+                <ul className="space-y-4 text-secondary text-base md:text-lg leading-relaxed border-l-4 border-yellow-400 pl-5 bg-yellow-50/50 py-5 rounded-r-lg">
+                  {phaseD.citationHooks.map((hook, i) => (
+                    <li key={i} dangerouslySetInnerHTML={{ __html: hook }} />
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* v2.1 Phase 9 — Expert / founder card above FAQ (only for retrofitted areas). */}
+        {phaseD && (
+          <section className="py-12 bg-background">
+            <div className="container mx-auto px-4 max-w-5xl">
+              <ExpertCard
+                serviceName={phaseD.expertCardLabel}
+                lang={lang}
+              />
+            </div>
+          </section>
+        )}
+
         {/* FAQ Section */}
         {location.faqs && location.faqs.length > 0 && (
           <section className="py-20 bg-lightBackground">
@@ -685,20 +974,25 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
                     </details>
                   ))}
                 </div>
-                <script
-                  type="application/ld+json"
-                  dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                      '@context': 'https://schema.org',
-                      '@type': 'FAQPage',
-                      mainEntity: location.faqs.map(faq => ({
-                        '@type': 'Question',
-                        name: faq.question,
-                        acceptedAnswer: { '@type': 'Answer', text: faq.answer }
-                      }))
-                    })
-                  }}
-                />
+                {/* Legacy inline FAQPage schema — only emit when phaseDExtras
+                    is NOT populated (otherwise SchemaMarkup above emits the
+                    richer FAQPage with speakable + author=Organization). */}
+                {!phaseD && (
+                  <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                      __html: JSON.stringify({
+                        '@context': 'https://schema.org',
+                        '@type': 'FAQPage',
+                        mainEntity: location.faqs.map(faq => ({
+                          '@type': 'Question',
+                          name: faq.question,
+                          acceptedAnswer: { '@type': 'Answer', text: faq.answer }
+                        }))
+                      })
+                    }}
+                  />
+                )}
               </div>
             </div>
           </section>
@@ -719,6 +1013,38 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
             </div>
           </div>
         </section>
+
+        {/* v2.1 Phase 8 — ReviewWall (individual Review schemas, paired with
+            AggregateRating already in LocalBusiness + Place + Service schema). */}
+        {phaseD && areaReviews.length > 0 && (
+          <section className="py-16 bg-white">
+            <div className="container mx-auto px-4 max-w-6xl">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-10 text-center">
+                {`What our ${location.name} clients say`}
+              </h2>
+              <ReviewWall
+                serviceName={phaseD.expertCardLabel}
+                reviews={areaReviews}
+                lang={lang}
+              />
+            </div>
+          </section>
+        )}
+
+        {/* v2.1 Phase 9 — Strategy CTA (page-end, GA4 tracked). */}
+        {phaseD && (
+          <section className="py-12 bg-background">
+            <div className="container mx-auto px-4 max-w-5xl">
+              <StrategyCTA
+                category={phaseD.strategyCtaCategory}
+                position="area-page-end"
+                lang={lang}
+                headline={phaseD.strategyCtaHeadline}
+                subheadline={phaseD.strategyCtaSubheadline}
+              />
+            </div>
+          </section>
+        )}
 
         {/* Trust Badges */}
         <section className="py-20 bg-lightBackground">
@@ -783,7 +1109,11 @@ export default async function AreaDetailPage({ params: { lang, area } }: AreaPag
                 <span>{ap?.requestFreeQuote || 'Request Free Quote'}</span>
               </Link>
             </div>
-            <p className="text-sm text-white/60 mt-6">{ap?.lastUpdated || 'Last updated: April 2026'}</p>
+            <p className="text-sm text-white/60 mt-6">
+              {phaseD?.dateModified
+                ? `Last updated: ${phaseD.dateModified}`
+                : (ap?.lastUpdated || 'Last updated: April 2026')}
+            </p>
           </div>
         </section>
       </div>

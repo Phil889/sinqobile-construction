@@ -641,7 +641,7 @@ export default async function ServicePage({ params: { lang, service } }: Service
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 max-w-6xl">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-10 text-center">
-              {`What our ${(serviceInfo?.name || serviceData.name).toLowerCase()} clients say`}
+              {t(sp?.reviewsHeading || 'What our %s clients say', (serviceInfo?.name || serviceData.name).toLowerCase())}
             </h2>
             <ReviewWall
               serviceName={phaseD.schemaName || serviceName}

@@ -738,12 +738,36 @@
     "callDingwayo": "Call Dingwayo: +27 82 868 8396",
     "timelineTitle": "Our Journey — From Startup to 500+ Projects",
     "timeline": [
-      { "year": "2010", "title": "Founded in Johannesburg", "desc": "Dingwayo Reason Ndlovu registered Sinqobile Construction (PTY) LTD, starting with residential repairs and small renovation projects in the Johannesburg CBD and surrounding suburbs." },
-      { "year": "2013", "title": "NHBRC Registration & First Major Build", "desc": "Achieved NHBRC builder registration, enabling new home construction. Completed our first full residential build — a 3-bedroom home in Midrand delivered on time and under budget." },
-      { "year": "2016", "title": "Expanded to 19 Service Categories", "desc": "Grew from core building work into plumbing, electrical, waterproofing, roofing, paving, and 13 other trades. Hired specialist teams for each trade to maintain quality across all services." },
-      { "year": "2019", "title": "300th Project Milestone", "desc": "Completed our 300th project — a full home renovation in Sandton. By this point, 70% of our work came from client referrals and repeat customers." },
-      { "year": "2022", "title": "All-Gauteng Coverage", "desc": "Expanded service area to cover all 8 major regions: Johannesburg, Sandton, Pretoria, Centurion, Midrand, Randburg, Fourways, and Roodepoort. Added 24/7 emergency repair services." },
-      { "year": "2024", "title": "500+ Projects & 4.9★ Google Rating", "desc": "Passed 500 completed projects with a 4.9-star rating from 127 verified Google reviews. Launched our multilingual website serving English, Afrikaans, Zulu, and Sotho-speaking clients." }
+      {
+        "year": "2010",
+        "title": "Founded in Johannesburg",
+        "desc": "Dingwayo Reason Ndlovu registered Sinqobile Construction (PTY) LTD, starting with residential repairs and small renovation projects in the Johannesburg CBD and surrounding suburbs."
+      },
+      {
+        "year": "2013",
+        "title": "NHBRC Registration & First Major Build",
+        "desc": "Achieved NHBRC builder registration, enabling new home construction. Completed our first full residential build — a 3-bedroom home in Midrand delivered on time and under budget."
+      },
+      {
+        "year": "2016",
+        "title": "Expanded to 19 Service Categories",
+        "desc": "Grew from core building work into plumbing, electrical, waterproofing, roofing, paving, and 13 other trades. Hired specialist teams for each trade to maintain quality across all services."
+      },
+      {
+        "year": "2019",
+        "title": "300th Project Milestone",
+        "desc": "Completed our 300th project — a full home renovation in Sandton. By this point, 70% of our work came from client referrals and repeat customers."
+      },
+      {
+        "year": "2022",
+        "title": "All-Gauteng Coverage",
+        "desc": "Expanded service area to cover all 8 major regions: Johannesburg, Sandton, Pretoria, Centurion, Midrand, Randburg, Fourways, and Roodepoort. Added 24/7 emergency repair services."
+      },
+      {
+        "year": "2024",
+        "title": "500+ Projects & 4.9★ Google Rating",
+        "desc": "Passed 500 completed projects with a 4.9-star rating from 127 verified Google reviews. Launched our multilingual website serving English, Afrikaans, Zulu, and Sotho-speaking clients."
+      }
     ],
     "credentialsTitle": "Professional Registrations & Insurance",
     "nhbrcTitle": "NHBRC Registered",
@@ -1320,7 +1344,8 @@
     "tableService": "Service",
     "tablePriceRange": "Price Range",
     "comparisonTitle": "Build Quality Tiers — Johannesburg 2026",
-    "citationHooksTitle": "Key Facts About Building Contractors in Johannesburg"
+    "citationHooksTitle": "Key Facts About Building Contractors in Johannesburg",
+    "reviewsHeading": "What our %s clients say"
   },
   "videoTestimonials": {
     "title": "Hear From Our Satisfied Customers",
