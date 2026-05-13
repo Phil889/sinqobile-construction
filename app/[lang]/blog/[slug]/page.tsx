@@ -9,6 +9,73 @@ import MarkdownContent from '@/components/markdown-content'
 
 const SITE_URL = 'https://www.sinqobileconstruction.co.za'
 
+const BLOG_T: Record<Locale, {
+  home: string
+  blog: string
+  updated: string
+  relatedTopics: string
+  ctaHeading: string
+  ctaSub: string
+  callPhone: string
+  getFreeQuote: string
+  relatedArticles: string
+  readMore: string
+  dateLocale: string
+}> = {
+  en: {
+    home: 'Home',
+    blog: 'Blog',
+    updated: 'Updated',
+    relatedTopics: 'Related Topics',
+    ctaHeading: 'Ready to Start Your Construction Project?',
+    ctaSub: 'Get expert advice and a free quote from Sinqobile Construction today',
+    callPhone: 'Call: +27 82 868 8396',
+    getFreeQuote: 'Get Free Quote',
+    relatedArticles: 'Related Articles',
+    readMore: 'Read More →',
+    dateLocale: 'en-ZA',
+  },
+  af: {
+    home: 'Tuis',
+    blog: 'Blog',
+    updated: 'Opgedateer',
+    relatedTopics: 'Verwante Onderwerpe',
+    ctaHeading: 'Gereed om Jou Konstruksieprojek te Begin?',
+    ctaSub: 'Kry kundige raad en \'n gratis kwotasie van Sinqobile Construction vandag',
+    callPhone: 'Bel: +27 82 868 8396',
+    getFreeQuote: 'Kry Gratis Kwotasie',
+    relatedArticles: 'Verwante Artikels',
+    readMore: 'Lees Meer →',
+    dateLocale: 'af-ZA',
+  },
+  zu: {
+    home: 'Ekhaya',
+    blog: 'Ibhulogi',
+    updated: 'Kubuyekeziwe',
+    relatedTopics: 'Izihloko Ezihlobene',
+    ctaHeading: 'Usukulungele Ukuqala Iphrojekthi Yakho Yokwakha?',
+    ctaSub: 'Thola izeluleko zochwepheshe ne-quote yamahhala kusukela ku-Sinqobile Construction namuhla',
+    callPhone: 'Shayela: +27 82 868 8396',
+    getFreeQuote: 'Thola Intengo Yamahhala',
+    relatedArticles: 'Izindatshana Ezihlobene',
+    readMore: 'Funda Okwengeziwe →',
+    dateLocale: 'en-ZA',
+  },
+  st: {
+    home: 'Lehae',
+    blog: 'Blog',
+    updated: 'Ho ntlafalitsoe',
+    relatedTopics: 'Lihloho tse Amanang',
+    ctaHeading: 'Na u Ikemiselitse ho Qala Morero oa Kaho?',
+    ctaSub: 'Fumana likeletso tsa botsebi le tekanyetso ea mahala ho tsoa ho Sinqobile Construction kajeno',
+    callPhone: 'Letsetsa: +27 82 868 8396',
+    getFreeQuote: 'Fumana Tekanyetso ea Mahala',
+    relatedArticles: 'Lihlooho tse Amanang',
+    readMore: 'Bala Haholo →',
+    dateLocale: 'en-ZA',
+  },
+}
+
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({
     slug: post.slug,
@@ -84,6 +151,7 @@ export default function BlogPostPage({
     notFound()
   }
 
+  const bt = BLOG_T[lang] || BLOG_T.en
   const relatedPosts = getRelatedPosts(slug, 3)
 
   const absoluteImage = `${SITE_URL}${post.image.startsWith('/') ? post.image : `/${post.image}`}`
@@ -165,9 +233,9 @@ export default function BlogPostPage({
         <div className="bg-lightBackground py-4">
           <div className="container mx-auto px-4">
             <nav aria-label="Breadcrumb" className="flex items-center space-x-2 text-sm text-secondary">
-              <Link href={`/${lang}`} className="hover:text-primary transition-colors">Home</Link>
+              <Link href={`/${lang}`} className="hover:text-primary transition-colors">{bt.home}</Link>
               <span>/</span>
-              <Link href={`/${lang}/blog`} className="hover:text-primary transition-colors">Blog</Link>
+              <Link href={`/${lang}/blog`} className="hover:text-primary transition-colors">{bt.blog}</Link>
               <span>/</span>
               <span className="text-primary font-medium truncate max-w-xs">{post.title}</span>
             </nav>
@@ -194,7 +262,7 @@ export default function BlogPostPage({
                 <div className="flex items-center space-x-2">
                   <Calendar size={18} />
                   <time dateTime={post.date}>
-                    {new Date(post.date).toLocaleDateString('en-ZA', {
+                    {new Date(post.date).toLocaleDateString(bt.dateLocale, {
                       year: 'numeric',
                       month: 'long',
                       day: 'numeric',
@@ -203,9 +271,9 @@ export default function BlogPostPage({
                 </div>
                 {post.dateModified && post.dateModified !== post.date && (
                   <div className="flex items-center space-x-2 text-sm">
-                    <span>Updated:</span>
+                    <span>{bt.updated}:</span>
                     <time dateTime={post.dateModified}>
-                      {new Date(post.dateModified).toLocaleDateString('en-ZA', {
+                      {new Date(post.dateModified).toLocaleDateString(bt.dateLocale, {
                         year: 'numeric',
                         month: 'long',
                         day: 'numeric',
@@ -237,7 +305,7 @@ export default function BlogPostPage({
 
               {/* Keywords */}
               <div className="mt-8 pt-8 border-t border-gray-200">
-                <h3 className="font-semibold text-secondary mb-3">Related Topics:</h3>
+                <h3 className="font-semibold text-secondary mb-3">{bt.relatedTopics}:</h3>
                 <div className="flex flex-wrap gap-2">
                   {post.keywords.map((keyword, index) => (
                     <span
@@ -258,10 +326,10 @@ export default function BlogPostPage({
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="font-heading text-3xl font-bold mb-4">
-                Ready to Start Your Construction Project?
+                {bt.ctaHeading}
               </h2>
               <p className="text-xl mb-8">
-                Get expert advice and a free quote from Sinqobile Construction today
+                {bt.ctaSub}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
@@ -269,13 +337,13 @@ export default function BlogPostPage({
                   className="inline-flex items-center justify-center space-x-2 bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
                 >
                   <Phone size={20} />
-                  <span>Call: +27 82 868 8396</span>
+                  <span>{bt.callPhone}</span>
                 </a>
                 <Link
                   href={`/${lang}/contact`}
                   className="inline-block bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors"
                 >
-                  Get Free Quote
+                  {bt.getFreeQuote}
                 </Link>
               </div>
             </div>
@@ -288,7 +356,7 @@ export default function BlogPostPage({
             <div className="container mx-auto px-4">
               <div className="max-w-6xl mx-auto">
                 <h2 className="font-heading text-3xl font-bold text-primary mb-8 text-center">
-                  Related Articles
+                  {bt.relatedArticles}
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   {relatedPosts.map((relatedPost) => (
@@ -325,7 +393,7 @@ export default function BlogPostPage({
                           href={`/${lang}/blog/${relatedPost.slug}`}
                           className="text-primary font-medium hover:text-accent transition-colors"
                         >
-                          Read More →
+                          {bt.readMore}
                         </Link>
                       </div>
                     </article>
