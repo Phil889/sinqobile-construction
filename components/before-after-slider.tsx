@@ -81,25 +81,21 @@ export default function BeforeAfterSlider({ dict, lang }: BeforeAfterSliderProps
     setSliderPosition(Math.max(5, Math.min((x / rect.width) * 100, 95)))
   }, [])
 
-  const handleMouseDown = () => setIsDragging(true)
-  const handleMouseUp = () => setIsDragging(false)
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!isDragging) return
-    requestAnimationFrame(() => updateSliderPosition(e.clientX))
+  // Click anywhere on the image to instantly position the slider AND start
+  // dragging — matches the standard before/after slider UX.
+  const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
+    setIsDragging(true)
+    updateSliderPosition(e.clientX)
   }
+
+  // Mouse-move uses native document listener while dragging (handler set up
+  // in useEffect below) so the slider keeps following even when the cursor
+  // leaves the container — feels much smoother than the React onMouseMove.
 
   const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
-    e.preventDefault()
     setIsDragging(true)
+    updateSliderPosition(e.touches[0].clientX)
   }
-
-  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
-    e.preventDefault()
-    requestAnimationFrame(() => updateSliderPosition(e.touches[0].clientX))
-  }
-
-  const handleTouchEnd = () => setIsDragging(false)
 
   const goToProject = (index: number) => {
     setCurrentIndex(index)
@@ -111,10 +107,22 @@ export default function BeforeAfterSlider({ dict, lang }: BeforeAfterSliderProps
 
   useEffect(() => {
     if (!isDragging) return
+    const onMove = (e: MouseEvent) => updateSliderPosition(e.clientX)
+    const onTouchMove = (e: TouchEvent) => {
+      if (e.touches[0]) updateSliderPosition(e.touches[0].clientX)
+    }
     const onUp = () => setIsDragging(false)
+    document.addEventListener('mousemove', onMove)
     document.addEventListener('mouseup', onUp)
-    return () => document.removeEventListener('mouseup', onUp)
-  }, [isDragging])
+    document.addEventListener('touchmove', onTouchMove, { passive: true })
+    document.addEventListener('touchend', onUp)
+    return () => {
+      document.removeEventListener('mousemove', onMove)
+      document.removeEventListener('mouseup', onUp)
+      document.removeEventListener('touchmove', onTouchMove)
+      document.removeEventListener('touchend', onUp)
+    }
+  }, [isDragging, updateSliderPosition])
 
   return (
     <section className="py-16 bg-white">
@@ -135,12 +143,7 @@ export default function BeforeAfterSlider({ dict, lang }: BeforeAfterSliderProps
             className="relative aspect-[16/10] rounded-xl overflow-hidden shadow-2xl select-none touch-none"
             style={{ cursor: isDragging ? 'ew-resize' : 'col-resize' }}
             onMouseDown={handleMouseDown}
-            onMouseUp={handleMouseUp}
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseUp}
             onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
           >
             {/* AFTER image — full width background */}
             <div className="absolute inset-0">
