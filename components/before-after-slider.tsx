@@ -63,7 +63,15 @@ export default function BeforeAfterSlider({ dict, lang }: BeforeAfterSliderProps
   const [isDragging, setIsDragging] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
 
-  const projects: Project[] = dict?.beforeAfter?.projects || PROJECTS
+  // Merge: image paths always come from PROJECTS (language-neutral assets);
+  // text fields (title, location, service, labels, description) come from dict
+  // when present, otherwise fall back to PROJECTS. This fixes the prior bug
+  // where dict.beforeAfter.projects was defined but had no beforeImage/afterImage,
+  // causing <Image src={undefined}> to throw and the section to disappear.
+  const projects: Project[] = PROJECTS.map((p, i) => {
+    const dp = dict?.beforeAfter?.projects?.[i]
+    return dp ? { ...p, ...dp, beforeImage: p.beforeImage, afterImage: p.afterImage } : p
+  })
   const currentProject = projects[currentIndex]
 
   const updateSliderPosition = useCallback((clientX: number) => {
