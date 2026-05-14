@@ -38,17 +38,13 @@ export default function HomeFAQ({ dict, lang }: HomeFAQProps) {
             </p>
           </div>
 
-          <div 
-            itemScope 
-            itemType="https://schema.org/FAQPage"
-            className="space-y-4"
-          >
+          {/* FAQPage JSON-LD is emitted by SchemaMarkup helper in app/[lang]/page.tsx
+              (v2.1 canonical source). Microdata removed here to prevent Google
+              "Duplicate field 'FAQPage'" error reported in Search Console. */}
+          <div className="space-y-4">
             {faqItems.map((item, index) => (
               <div
                 key={index}
-                itemScope
-                itemProp="mainEntity"
-                itemType="https://schema.org/Question"
                 className="bg-white rounded-lg shadow-md overflow-hidden"
               >
                 <button
@@ -56,10 +52,7 @@ export default function HomeFAQ({ dict, lang }: HomeFAQProps) {
                   className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
                   aria-expanded={openIndex === index}
                 >
-                  <h3
-                    itemProp="name"
-                    className="font-semibold text-lg text-secondary pr-4"
-                  >
+                  <h3 className="font-semibold text-lg text-secondary pr-4">
                     {item.question}
                   </h3>
                   <ChevronDown
@@ -69,18 +62,10 @@ export default function HomeFAQ({ dict, lang }: HomeFAQProps) {
                     }`}
                   />
                 </button>
-                
+
                 {openIndex === index && (
-                  <div
-                    itemScope
-                    itemProp="acceptedAnswer"
-                    itemType="https://schema.org/Answer"
-                    className="px-6 pb-4"
-                  >
-                    <p 
-                      itemProp="text"
-                      className="text-secondary leading-relaxed"
-                    >
+                  <div className="px-6 pb-4">
+                    <p className="text-secondary leading-relaxed">
                       {item.answer}
                     </p>
                   </div>

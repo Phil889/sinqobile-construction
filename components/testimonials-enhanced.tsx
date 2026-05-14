@@ -193,6 +193,9 @@ export default function TestimonialsEnhanced({ dict, lang = 'en' }: Testimonials
     '@type': 'GeneralContractor',
     '@id': 'https://www.sinqobileconstruction.co.za/#localbusiness',
     name: 'Sinqobile Construction',
+    // Reviews nested under GeneralContractor: omit itemReviewed.
+    // Google flags nested Review.itemReviewed as a directional conflict
+    // — the enclosing GeneralContractor is the implied reviewed entity.
     review: reviews.map((review) => ({
       '@type': 'Review',
       author: {
@@ -206,14 +209,6 @@ export default function TestimonialsEnhanced({ dict, lang = 'en' }: Testimonials
         ratingValue: review.rating.toString(),
         bestRating: '5',
         worstRating: '1',
-      },
-      itemReviewed: {
-        '@type': 'Service',
-        name: review.service,
-        provider: {
-          '@type': 'Organization',
-          name: 'Sinqobile Construction',
-        },
       },
     })),
   }
